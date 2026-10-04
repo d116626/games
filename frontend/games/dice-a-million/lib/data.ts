@@ -1,11 +1,13 @@
 import achievementsJson from "@/public/data/dice-a-million/achievements.json";
 import bestiaryJson from "@/public/data/dice-a-million/bestiary.json";
+import catalogJson from "@/public/data/dice-a-million/catalog.json";
 import metaJson from "@/public/data/dice-a-million/meta.json";
 import roadmapJson from "@/public/data/dice-a-million/roadmap.json";
 import strategyJson from "@/public/data/dice-a-million/strategy.json";
 import type {
   Achievement,
   Boss,
+  CatalogItem,
   Enchantment,
   EnemyDie,
   HandGoal,
@@ -17,6 +19,7 @@ import type { GameMeta } from "@/games/types";
 
 export const meta: GameMeta = metaJson;
 export const achievements = achievementsJson.items as Achievement[];
+export const catalog = catalogJson.items as CatalogItem[];
 export const roadmap = roadmapJson as { stages: Stage[]; hands: HandUnlock[]; goals: HandGoal[] };
 export const bestiary = bestiaryJson as {
   bosses: Boss[];

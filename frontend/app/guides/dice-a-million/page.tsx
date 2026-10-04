@@ -1,10 +1,12 @@
 import { Bestiary } from "@/games/dice-a-million/components/bestiary";
+import { GuideSearch } from "@/games/dice-a-million/components/guide-search";
 import { Hero } from "@/games/dice-a-million/components/hero";
 import { IndexList } from "@/games/dice-a-million/components/index-list";
 import { Roadmap } from "@/games/dice-a-million/components/roadmap";
 import { Strategy } from "@/games/dice-a-million/components/strategy";
 import { game } from "@/games/dice-a-million/game";
 import { bestiary, meta, roadmap } from "@/games/dice-a-million/lib/data";
+import { searchEntries } from "@/games/dice-a-million/lib/search";
 import { GameShell } from "@/components/game/game-shell";
 import { Section } from "@/components/game/section";
 
@@ -19,7 +21,12 @@ const SECTIONS = [
 
 export default function Page() {
   return (
-    <GameShell game={game} hero={<Hero />} sections={SECTIONS} sources={meta.sources}>
+    <GameShell game={game} hero={
+        <>
+          <Hero />
+          <GuideSearch entries={searchEntries} />
+        </>
+      } sections={SECTIONS} sources={meta.sources}>
       <Section id="roadmap" index={1} title="Roadmap to 100%" count={roadmap.stages.length}>
         <Roadmap />
       </Section>

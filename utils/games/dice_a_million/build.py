@@ -4,6 +4,7 @@ from utils.common.export import export_dataset
 from utils.common.paths import raw_dir
 from utils.common.schemas import GameMeta
 from utils.common.sources import fetch_sources
+from utils.games.dice_a_million.catalog import build_catalog
 from utils.games.dice_a_million.constants import GAME, NAME, SOURCE_URLS, SOURCES
 from utils.games.dice_a_million.guides_md import (
     parse_bestiary,
@@ -87,6 +88,7 @@ def run() -> list[Path]:
     return [
         export_dataset(GAME, "meta.json", GameMeta(name=NAME, sources=SOURCES, images=images)),
         export_dataset(GAME, "achievements.json", Achievements(items=achievements)),
+        export_dataset(GAME, "catalog.json", build_catalog()),
         export_dataset(GAME, "roadmap.json", build_roadmap(achievements)),
         export_dataset(GAME, "bestiary.json", build_bestiary()),
         export_dataset(GAME, "strategy.json", STRATEGY),

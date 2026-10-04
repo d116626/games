@@ -31,6 +31,28 @@ export type HandGoal = {
   power6?: string;
 };
 
+export type CatalogItem = {
+  id: string;
+  kind: "dice" | "rings" | "cards" | "hands";
+  name: string;
+  condition?: string;
+  effect: string;
+  faces?: string;
+  icon: string;
+};
+
+/** Entrada da busca: item, chefe, encantamento, dica ou passo do roteiro. */
+export type SearchEntry = {
+  id: string;
+  kind: string;
+  name: string;
+  text: string;
+  condition?: string;
+  faces?: string;
+  icon?: string;
+  href?: string;
+};
+
 export type Boss = { name: string; effect: string; empowered?: string };
 export type EnemyDie = { name: string; effect: string };
 export type Enchantment = { name: string; effect: string; appliesTo: "die" | "ring" };

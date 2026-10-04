@@ -203,7 +203,8 @@ STAGES: list[Stage] = [
             ),
             Step(
                 title="Beat Face 3 holding both, buy piece 3",
-                body="Piece 3 sits in the Face 3 shop. Beat Face 3 with all three pieces and Face 4 opens.",
+                body="Piece 3 sits in the Face 3 shop. Beat Face 3 with all three pieces and Face 4 opens. "
+                "Showing the three parts to the Phone Guy rebuilds J's Die.",
                 unlocks=["J's Die"],
             ),
             Step(

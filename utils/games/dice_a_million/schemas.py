@@ -84,6 +84,22 @@ class Roadmap(CamelModel):
     goals: list[HandGoal]
 
 
+class CatalogItem(CamelModel):
+    """Entrada da wiki da comunidade: dado, anel, carta ou mão (com a imagem do item)."""
+
+    id: str  # hash da imagem (único)
+    kind: Literal["dice", "rings", "cards", "hands"]
+    name: str
+    condition: str | None = None  # como desbloquear; None = disponível desde o início
+    effect: str
+    faces: str | None = None  # faces do dado, quando multivalorado (ex.: 1/2/3, 1..6)
+    icon: str  # relativo a public/
+
+
+class Catalog(CamelModel):
+    items: list[CatalogItem]
+
+
 class TipGroup(CamelModel):
     title: str
     tips: list[str]

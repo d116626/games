@@ -1,12 +1,11 @@
-import { AchievementIcon } from "@/games/dice-a-million/components/achievement-icon";
-import { achievements, bestiary } from "@/games/dice-a-million/lib/data";
-import type { Category } from "@/games/dice-a-million/types";
+import { ItemRow } from "@/games/dice-a-million/components/item-row";
+import { bestiary, catalog } from "@/games/dice-a-million/lib/data";
+import type { CatalogItem } from "@/games/dice-a-million/types";
 
-const GROUPS: { category: Category; title: string }[] = [
-  { category: "dice", title: "Dice" },
-  { category: "rings", title: "Rings" },
-  { category: "cards", title: "Cards" },
-  { category: "secrets", title: "Secrets" },
+const GROUPS: { kind: CatalogItem["kind"]; title: string }[] = [
+  { kind: "dice", title: "Dice" },
+  { kind: "rings", title: "Rings" },
+  { kind: "cards", title: "Cards" },
 ];
 
 function Group({ title, count, children }: { title: string; count: number; children: React.ReactNode }) {
@@ -23,22 +22,18 @@ function Group({ title, count, children }: { title: string; count: number; child
   );
 }
 
-/** Índice de consulta no fim da página: dados, anéis, cartas, segredos e encantamentos. */
+/** Índice de consulta no fim da página: dados, anéis, cartas e encantamentos, com efeito e como desbloquear. */
 export function IndexList() {
   return (
     <div className="space-y-4">
-      {GROUPS.map(({ category, title }) => {
-        const items = achievements.filter((a) => a.category === category);
+      {GROUPS.map(({ kind, title }) => {
+        const items = catalog.filter((i) => i.kind === kind);
         return (
-          <Group key={category} title={title} count={items.length}>
-            <ul className="grid gap-3 md:grid-cols-2">
-              {items.map((a) => (
-                <li key={a.id} className="flex gap-3">
-                  <AchievementIcon src={a.icon} name={a.name} className="size-12" />
-                  <div className="min-w-0">
-                    <h4 className="font-bold leading-tight">{a.name}</h4>
-                    <p className="text-xs text-muted-foreground">{a.how ?? "No known requirement."}</p>
-                  </div>
+          <Group key={kind} title={title} count={items.length}>
+            <ul className="grid gap-4 md:grid-cols-2">
+              {items.map((i) => (
+                <li key={i.id}>
+                  <ItemRow icon={i.icon} name={i.name} faces={i.faces} condition={i.condition} text={i.effect} />
                 </li>
               ))}
             </ul>
@@ -46,13 +41,10 @@ export function IndexList() {
         );
       })}
       <Group title="Enchantments" count={bestiary.enchantments.length}>
-        <ul className="grid gap-3 md:grid-cols-2">
+        <ul className="grid gap-4 md:grid-cols-2">
           {bestiary.enchantments.map((e) => (
             <li key={e.name}>
-              <h4 className="font-bold leading-tight">
-                {e.name} <span className="font-mono text-[10px] uppercase text-muted-foreground">{e.appliesTo}</span>
-              </h4>
-              <p className="text-xs text-muted-foreground">{e.effect}</p>
+              <ItemRow name={e.name} tag={e.appliesTo} text={e.effect} />
             </li>
           ))}
         </ul>

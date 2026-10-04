@@ -42,11 +42,12 @@ Imagens do jogo ficam em `public/games/<jogo>/` (baixadas pelo pipeline). Ícone
 elemento (`<Skull />`) entre Server e Client Components.
 
 ## Componentes do Dice A Million (`games/dice-a-million/components/`)
-Ordem da página: `Hero` → `Roadmap` (etapas em ordem, cadeia de mãos, matriz mão x objetivo) → `Strategy` →
-`Bestiary` (chefes) → `IndexList` (dados, anéis, cartas, segredos e encantamentos, em blocos recolhíveis, no fim).
+Ordem da página: `Hero` → `GuideSearch` (busca em tudo, atalho `/`) → `Roadmap` (etapas em ordem, cadeia de mãos, matriz mão x objetivo) → `Strategy` →
+`Bestiary` (chefes) → `IndexList` (dados, anéis, cartas e encantamentos, com efeito e como desbloquear, em blocos recolhíveis, no fim).
+O catálogo vem do HTML da wiki da Steam (`catalog.py`, imagens em `public/games/dice-a-million/items/`); `lib/search.ts` monta as entradas da busca.
 O roteiro é escrito à mão em `utils/games/dice_a_million/roadmap.py` (com `warning` onde as fontes divergem) e a matriz
 sai do texto das conquistas. Sem checklist: o guia é para ler, não para marcar.
 Dados em `public/data/dice-a-million/` (`lib/data.ts`).
 
 ## Pendentes
-Busca global, índice completo (efeitos de dados, anéis e cartas, vindos da wiki), `Spoiler` para conquistas secretas e `DetailSheet`.
+`Spoiler` para conquistas secretas e `DetailSheet`.

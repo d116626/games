@@ -1,0 +1,115 @@
+/* Tema "Dice A Million": mapa coral, papel creme, contorno preto grosso e sombra dura, como a UI do jogo. */
+.theme-dice {
+  --ink: #17120f;
+  --paper: #fff3df;
+  --coral: #e2685b;
+  --yellow: #ffd84a;
+  --orange: #f6a21e;
+
+  --background: var(--coral);
+  --foreground: var(--ink);
+  --card: var(--paper);
+  --card-foreground: var(--ink);
+  --popover: var(--paper);
+  --popover-foreground: var(--ink);
+  --primary: var(--ink);
+  --primary-foreground: var(--paper);
+  --secondary: #f3dfc2;
+  --secondary-foreground: var(--ink);
+  --muted: #f3dfc2;
+  --muted-foreground: #5c4a3d;
+  --accent: var(--yellow);
+  --accent-foreground: var(--ink);
+  --destructive: #b3261e;
+  --border: var(--ink);
+  --input: var(--ink);
+  --ring: var(--ink);
+  --radius: 0.625rem;
+
+  /* As fontes são carregadas no layout da rota e trocam as do site. */
+  --font-geist-sans: var(--font-atkinson);
+  --font-geist-mono: var(--font-pixel);
+  --font-display: var(--font-anton);
+
+  font-family: var(--font-atkinson), sans-serif;
+  color: var(--ink);
+  background-color: var(--coral);
+  background-image:
+    radial-gradient(60% 40% at 15% 8%, rgb(255 255 255 / 0.14), transparent),
+    radial-gradient(45% 35% at 90% 30%, rgb(120 30 50 / 0.28), transparent),
+    radial-gradient(50% 40% at 10% 75%, rgb(120 30 50 / 0.22), transparent),
+    radial-gradient(rgb(23 18 15 / 0.12) 1px, transparent 1.2px);
+  background-size: auto, auto, auto, 6px 6px;
+}
+
+.theme-dice .grain::before {
+  opacity: 0.04;
+}
+
+.theme-dice .border {
+  border-width: 2px;
+}
+
+.theme-dice .font-display {
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+/* Painel de papel com contorno e sombra dura. */
+.theme-dice .sticker {
+  background: var(--paper);
+  color: var(--ink);
+  border: 3px solid var(--ink);
+  border-radius: var(--radius);
+  box-shadow: 4px 4px 0 var(--ink);
+}
+
+/* Aba preta de HUD com texto pixelado. */
+.theme-dice .hud-tab {
+  background: var(--ink);
+  color: #fff;
+  font-family: var(--font-pixel), monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Placa laranja do botão ROLL. */
+.theme-dice .roll-plate {
+  background: var(--orange);
+  color: var(--ink);
+  border: 3px solid var(--ink);
+  border-radius: 0.375rem;
+  box-shadow: 0 4px 0 var(--ink), inset 0 0 0 2px rgb(255 255 255 / 0.35);
+  font-family: var(--font-pixel), monospace;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: transform 0.08s, box-shadow 0.08s;
+}
+.theme-dice .roll-plate:hover {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 var(--ink), inset 0 0 0 2px rgb(255 255 255 / 0.35);
+}
+.theme-dice .roll-plate:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 var(--ink);
+}
+
+/* Cartão de dado: giro leve ao passar o mouse. */
+@media (prefers-reduced-motion: no-preference) {
+  .theme-dice .tilt {
+    transition: transform 0.15s;
+  }
+  .theme-dice .tilt:hover {
+    transform: rotate(-1.5deg) translateY(-2px);
+  }
+}
+
+/* Versão pequena do painel, para grades densas. */
+.theme-dice .sticker-sm {
+  background: var(--paper);
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 0 var(--ink);
+}

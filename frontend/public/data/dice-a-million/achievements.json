@@ -1,0 +1,1438 @@
+{
+  "items": [
+    {
+      "id": "79b525787a3879c36a4fa58abcbc47d4faa0808d",
+      "name": "Sudoku",
+      "category": "dice",
+      "how": "Pay your first debt.",
+      "tip": "To earn this, simply pay the pips in the first level.",
+      "rarity": 95.8,
+      "icon": "games/dice-a-million/achievements/79b525787a3879c36a4fa58abcbc47d4faa0808d.jpg"
+    },
+    {
+      "id": "fb22ee7c2b536919db28286e7a13f8d0f7533c2d",
+      "name": "Consolation Prize",
+      "category": "rings",
+      "how": "Lose a run.",
+      "tip": "Pretty self explanatory, obtainable once you lose a game!",
+      "rarity": 92.8,
+      "icon": "games/dice-a-million/achievements/fb22ee7c2b536919db28286e7a13f8d0f7533c2d.jpg"
+    },
+    {
+      "id": "e00dd81411121c6a1aca4157b758f8164670ba7a",
+      "name": "Megadie",
+      "category": "dice",
+      "how": "Have at least 20 dice in your bag.",
+      "tip": "To earn this, you must have at least a minimum of 20 dice in your bag. You can get more dice by purchasing more in the shops in between the levels in exchange for pips.",
+      "rarity": 91.0,
+      "icon": "games/dice-a-million/achievements/e00dd81411121c6a1aca4157b758f8164670ba7a.jpg"
+    },
+    {
+      "id": "1b5ffc29312bdfab8c1538a97f3be1ce2926714f",
+      "name": "D10",
+      "category": "dice",
+      "how": "Have a die reach 10 extra value.",
+      "tip": "To earn this, you need to make a die reach 10 extra value. Extra value can be obtained with other dice, such as with the Psychodie that gives extra value equal to the faces of nearby dice.",
+      "rarity": 89.9,
+      "icon": "games/dice-a-million/achievements/1b5ffc29312bdfab8c1538a97f3be1ce2926714f.jpg"
+    },
+    {
+      "id": "d379b36b811eff61462be12a818431a1f8353165",
+      "name": "Star Ring",
+      "category": "rings",
+      "how": "Beat a Boss round.",
+      "tip": "You can obtain this by defeating your first boss!",
+      "rarity": 86.7,
+      "icon": "games/dice-a-million/achievements/d379b36b811eff61462be12a818431a1f8353165.jpg"
+    },
+    {
+      "id": "1405a8b7e0292d07bc4b85af46a33ee14eadd89c",
+      "name": "Time Bomb",
+      "category": "dice",
+      "how": "Beat Face 1.",
+      "tip": "Self explanatory, you can earn this after going through all 5 levels and beating the first boss!",
+      "rarity": 86.4,
+      "icon": "games/dice-a-million/achievements/1405a8b7e0292d07bc4b85af46a33ee14eadd89c.jpg"
+    },
+    {
+      "id": "7346fae634765c162c827b75c9961a7088a93289",
+      "name": "Red Hand",
+      "category": "hands",
+      "how": "Beat Face 1!",
+      "rarity": 86.4,
+      "icon": "games/dice-a-million/achievements/7346fae634765c162c827b75c9961a7088a93289.jpg"
+    },
+    {
+      "id": "8b626f8ee49bc9cd666134207ef3217407a56248",
+      "name": "Rubik's Cube",
+      "category": "dice",
+      "how": "Have 9 dice on the table.",
+      "tip": "This one can be obtained by rolling dice that will roll more dice after you've rolled them! (Examples: Bottle of Caps, which can roll between 1-14 bottle caps on the table once rolled.)",
+      "rarity": 85.7,
+      "icon": "games/dice-a-million/achievements/8b626f8ee49bc9cd666134207ef3217407a56248.jpg"
+    },
+    {
+      "id": "c4d1f65a8ad4dbdc1166f02cc7fb7f9a21151221",
+      "name": "Hoarder Ring",
+      "category": "rings",
+      "how": "Have at least 25 dice in your bag.",
+      "tip": "To earn this, you must have at least a minimum of 25 dice in your bag. You can get more dice by purchasing more in the shops in between the levels in exchange for pips.",
+      "rarity": 84.6,
+      "icon": "games/dice-a-million/achievements/c4d1f65a8ad4dbdc1166f02cc7fb7f9a21151221.jpg"
+    },
+    {
+      "id": "1f28581690b2b256ae333a686d42b19c01f59790",
+      "name": "Piñata",
+      "category": "dice",
+      "how": "Get at least 1000 pips in a single roll.",
+      "tip": "To do this, you can get creative with your builds! I personally like to combo dice that give multipliers (Examples: Glass Die, Cupidie, Oxidie). There's no one true solution to this one. Roll enough so that you can get 1k pips minimum in one roll!",
+      "rarity": 84.5,
+      "icon": "games/dice-a-million/achievements/1f28581690b2b256ae333a686d42b19c01f59790.jpg"
+    },
+    {
+      "id": "e366539798ab44b6d2a721463973ad8bd7d820dd",
+      "name": "Pocket Pencil",
+      "category": "dice",
+      "how": "Have a D20 in your bag.",
+      "tip": "Self explanatory. Get a D20 in your bag! (Can be obtained through shops, dice packs, and mystery bags.)",
+      "rarity": 83.1,
+      "icon": "games/dice-a-million/achievements/e366539798ab44b6d2a721463973ad8bd7d820dd.jpg"
+    },
+    {
+      "id": "853ba2f6aa759147793a53b5db4bbb41d6366ca9",
+      "name": "Last Breath",
+      "category": "rings",
+      "how": "Lose to a boss.",
+      "tip": "Simply lose to a boss. Must die (hah) specifically to a boss.",
+      "rarity": 81.3,
+      "icon": "games/dice-a-million/achievements/853ba2f6aa759147793a53b5db4bbb41d6366ca9.jpg"
+    },
+    {
+      "id": "7d9d2d9354c462ffb7fb798c6a9d24081ccbb8f6",
+      "name": "Diamond Die",
+      "category": "dice",
+      "how": "Have a single die reach at least 100X Multiplier.",
+      "tip": "To obtain this, you must have at least one die reach 100X Multiplier. The best way to do this is to just spam dice that do give multiplier bonuses, (Cupidie, Oxidie, Glass Die, etc.) Stamp multiplier bonuses also contribute to this.",
+      "rarity": 80.3,
+      "icon": "games/dice-a-million/achievements/7d9d2d9354c462ffb7fb798c6a9d24081ccbb8f6.jpg"
+    },
+    {
+      "id": "a66e1368f3ef2d2a6912407e462d9eabf1aa9b09",
+      "name": "Ivory Die",
+      "category": "dice",
+      "how": "Get one stamp multiplier to at least 1.7X.",
+      "tip": "To obtain this, you need to get at least one stamp multiplier to 1.7X. To do that, you can purchase stamp packs that increase the multipliers by 0.3 or 0.5 depending on the stamp pack you obtained.",
+      "rarity": 80.2,
+      "icon": "games/dice-a-million/achievements/a66e1368f3ef2d2a6912407e462d9eabf1aa9b09.jpg"
+    },
+    {
+      "id": "b33747a2678cbe3b347d71f9cd7f2aef20a5d828",
+      "name": "Magic Ring",
+      "category": "rings",
+      "how": "Have at least 5 enchanted dice in your bag.",
+      "rarity": 79.8,
+      "icon": "games/dice-a-million/achievements/b33747a2678cbe3b347d71f9cd7f2aef20a5d828.jpg"
+    },
+    {
+      "id": "163fa62efd5043f54abbdabd14c063dd1904ec5d",
+      "name": "Purple Hand",
+      "category": "hands",
+      "how": "Have at least 5 enchanted dice in your bag. Enchanted dice can be obtained through shops, or you could enchant your dice through cards or enchantment rooms.",
+      "rarity": 79.5,
+      "icon": "games/dice-a-million/achievements/163fa62efd5043f54abbdabd14c063dd1904ec5d.jpg"
+    },
+    {
+      "id": "1d20599b5671a7ee9dcd88a540ea91db3efd62bf",
+      "name": "Equivalent Link",
+      "category": "rings",
+      "how": "Have at least 10k pips.",
+      "rarity": 75.8,
+      "icon": "games/dice-a-million/achievements/1d20599b5671a7ee9dcd88a540ea91db3efd62bf.jpg"
+    },
+    {
+      "id": "5a08ee7c36cc90ee50f5f991d5766deb12fe5f08",
+      "name": "Incubus Die",
+      "category": "dice",
+      "how": "Remove 10 dice in a single run.",
+      "tip": "For this one, you can remove dice in the shop in between stages. It's easier to get this if you're playing as Red Hand, as the stores are discounted. Getting a dice to break while rolling also contributes to this.",
+      "rarity": 75.0,
+      "icon": "games/dice-a-million/achievements/5a08ee7c36cc90ee50f5f991d5766deb12fe5f08.jpg"
+    },
+    {
+      "id": "f6cff0e9a1d6d8c0bbfa923975754b3cc5b33087",
+      "name": "Die of Fortune",
+      "category": "dice",
+      "how": "Have at least 5 rare or legendary dice in your bag.",
+      "tip": "This one shouldn't be too difficult, as you get this as you play the game. Just collect 5 rare or legendary dice!",
+      "rarity": 73.8,
+      "icon": "games/dice-a-million/achievements/f6cff0e9a1d6d8c0bbfa923975754b3cc5b33087.jpg"
+    },
+    {
+      "id": "62cbccd9d83863a9e9eb676386310d6c25009d42",
+      "name": "Bling Bling",
+      "category": "rings",
+      "how": "Spend at least 1000 pips in a single purchase.",
+      "rarity": 73.4,
+      "icon": "games/dice-a-million/achievements/62cbccd9d83863a9e9eb676386310d6c25009d42.jpg"
+    },
+    {
+      "id": "30c3877d27d1f8415f5eb626c4749081e9c8a423",
+      "name": "Philatelist's Ring",
+      "category": "rings",
+      "how": "Get one face to at least 2x stamp multiplier.",
+      "rarity": 72.7,
+      "icon": "games/dice-a-million/achievements/30c3877d27d1f8415f5eb626c4749081e9c8a423.jpg"
+    },
+    {
+      "id": "5c296607515609c6bd615964ae64ba5dfd2d0b93",
+      "name": "Exodie",
+      "category": "dice",
+      "how": "Make a Psychodie affect 5 dice in a single roll.",
+      "tip": "This one can be easily obtained by using a Magnet Die with the Psychodie. You could also use dice that roll more dice on the table so that more dice will be affected by the Psychodie's area of effect.",
+      "rarity": 72.4,
+      "icon": "games/dice-a-million/achievements/5c296607515609c6bd615964ae64ba5dfd2d0b93.jpg"
+    },
+    {
+      "id": "aa5e7d5220b57f5e0154de420325a4a14fe422b6",
+      "name": "Cosmic Die",
+      "category": "dice",
+      "how": "Have exactly 42 pips.",
+      "tip": "I'm gonna be honest I got lucky getting this particular achievement. You just need to have exactly 42 pips.",
+      "rarity": 72.1,
+      "icon": "games/dice-a-million/achievements/aa5e7d5220b57f5e0154de420325a4a14fe422b6.jpg"
+    },
+    {
+      "id": "d281718c74f08770984887f712639f7ccf07eb6c",
+      "name": "Fractal Ring",
+      "category": "rings",
+      "how": "Have at least 20 dice on the table.",
+      "rarity": 71.6,
+      "icon": "games/dice-a-million/achievements/d281718c74f08770984887f712639f7ccf07eb6c.jpg"
+    },
+    {
+      "id": "dad5d485bb4ed335ca3e61b9b327f4db79f370ef",
+      "name": "Translucid D4",
+      "category": "dice",
+      "how": "Roll 4 fours in a single roll.",
+      "tip": "This one takes a bit of luck, or you could also just combo your dice and rings. With a D4 and an equity ring, you could use a choose card to set it to roll to 4, and every other D4 you roll along with it should also land a 4.",
+      "rarity": 68.0,
+      "icon": "games/dice-a-million/achievements/dad5d485bb4ed335ca3e61b9b327f4db79f370ef.jpg"
+    },
+    {
+      "id": "565c473ebf1cc5a8b97671a46c84ce68d02529df",
+      "name": "First Dime",
+      "category": "dice",
+      "how": "Roll 2-faced coin at least 10 times.",
+      "tip": "Self-explanatory, just roll the 2-faced coin for a minimum of 10 times. (Not necessarily in a row.)",
+      "rarity": 67.9,
+      "icon": "games/dice-a-million/achievements/565c473ebf1cc5a8b97671a46c84ce68d02529df.jpg"
+    },
+    {
+      "id": "f5e0b8565a9095b2acf4496a53592aebcef4cff2",
+      "name": "Mimic Die",
+      "category": "dice",
+      "how": "Beat Face 2.",
+      "rarity": 66.7,
+      "icon": "games/dice-a-million/achievements/f5e0b8565a9095b2acf4496a53592aebcef4cff2.jpg"
+    },
+    {
+      "id": "401a78be591e9dff14716b5ca4207e085bc400e0",
+      "name": "Ace up the finger",
+      "category": "rings",
+      "how": "Use a Reroll card to change your hand.",
+      "rarity": 65.9,
+      "icon": "games/dice-a-million/achievements/401a78be591e9dff14716b5ca4207e085bc400e0.jpg"
+    },
+    {
+      "id": "b50973cf1b0472c12bb76f24b6f01abb4cb96590",
+      "name": "Lucky 7!",
+      "category": "dice",
+      "how": "Have at least 77k pips.",
+      "rarity": 65.0,
+      "icon": "games/dice-a-million/achievements/b50973cf1b0472c12bb76f24b6f01abb4cb96590.jpg"
+    },
+    {
+      "id": "9ffdc33d9f7f12769acb444e2d67c71a152c1796",
+      "name": "Odd of Dice",
+      "category": "dice",
+      "how": "Beat the Odd boss.",
+      "rarity": 64.8,
+      "icon": "games/dice-a-million/achievements/9ffdc33d9f7f12769acb444e2d67c71a152c1796.jpg"
+    },
+    {
+      "id": "70713bac8ec34cd6d561fd5e134bddb0cc4531b2",
+      "name": "Black Ring",
+      "category": "rings",
+      "how": "Beat the Blackout boss.",
+      "rarity": 64.7,
+      "icon": "games/dice-a-million/achievements/70713bac8ec34cd6d561fd5e134bddb0cc4531b2.jpg"
+    },
+    {
+      "id": "cd73ead17197728117ebeb7769a83f936a816b82",
+      "name": "Even of Dice",
+      "category": "dice",
+      "how": "Beat the Even boss.",
+      "rarity": 63.9,
+      "icon": "games/dice-a-million/achievements/cd73ead17197728117ebeb7769a83f936a816b82.jpg"
+    },
+    {
+      "id": "3f8a288ad19dec965305af3715a12f36d185c599",
+      "name": "Spring",
+      "category": "rings",
+      "how": "Have at least 5 active areas on the table.",
+      "rarity": 63.6,
+      "icon": "games/dice-a-million/achievements/3f8a288ad19dec965305af3715a12f36d185c599.jpg"
+    },
+    {
+      "id": "0d23fd792b042c1f98cdfb5afe990c6989a23e15",
+      "name": "Magic 8 Ball",
+      "category": "dice",
+      "how": "Roll at least 8 dice in a single roll.",
+      "rarity": 62.8,
+      "icon": "games/dice-a-million/achievements/0d23fd792b042c1f98cdfb5afe990c6989a23e15.jpg"
+    },
+    {
+      "id": "f995cb43f5253a42e91c1446f362c816dcdbb59b",
+      "name": "Atom Die",
+      "category": "dice",
+      "how": "Fully charge up an 8-charge die.",
+      "rarity": 61.7,
+      "icon": "games/dice-a-million/achievements/f995cb43f5253a42e91c1446f362c816dcdbb59b.jpg"
+    },
+    {
+      "id": "64711dfdb14caba49424001ab8ee116bd9eed6af",
+      "name": "Angelical Die",
+      "category": "dice",
+      "how": "Roll a 1 on 5 dice at the same time.",
+      "rarity": 59.4,
+      "icon": "games/dice-a-million/achievements/64711dfdb14caba49424001ab8ee116bd9eed6af.jpg"
+    },
+    {
+      "id": "ac595c598e6820feed1da2202090c1d86c4c3f5f",
+      "name": "Green Hand",
+      "category": "hands",
+      "how": "Have at least 25 dice in your bag as Red Hand. Simply play as red hand an accumulate up to a minimum of 25 dice.",
+      "rarity": 58.9,
+      "icon": "games/dice-a-million/achievements/ac595c598e6820feed1da2202090c1d86c4c3f5f.jpg"
+    },
+    {
+      "id": "1b826c520c6e26fecba58b33138a5cb305881ef8",
+      "name": "Sports Band",
+      "category": "rings",
+      "how": "Have a dice with at least 100 extra value.",
+      "rarity": 58.8,
+      "icon": "games/dice-a-million/achievements/1b826c520c6e26fecba58b33138a5cb305881ef8.jpg"
+    },
+    {
+      "id": "842747ec5dc5fd1d10b440a97dd880ad28bd09d0",
+      "name": "Translucid D6",
+      "category": "dice",
+      "how": "Roll 4 sixes in a single roll.",
+      "rarity": 56.8,
+      "icon": "games/dice-a-million/achievements/842747ec5dc5fd1d10b440a97dd880ad28bd09d0.jpg"
+    },
+    {
+      "id": "6940597d8d82445fd4964d9cd889be74117d7056",
+      "name": "Mimic",
+      "category": "rings",
+      "how": "Remove 20 dice in a single run.",
+      "rarity": 55.7,
+      "icon": "games/dice-a-million/achievements/6940597d8d82445fd4964d9cd889be74117d7056.jpg"
+    },
+    {
+      "id": "d83598f4c65eeb7693148e67b724f3c8e9beb252",
+      "name": "Mono Token",
+      "category": "dice",
+      "how": "Have at least a million pips.",
+      "rarity": 53.2,
+      "icon": "games/dice-a-million/achievements/d83598f4c65eeb7693148e67b724f3c8e9beb252.jpg"
+    },
+    {
+      "id": "a4dee1a431407e24078f636a3dd0fd5354cc345f",
+      "name": "Electric Ring",
+      "category": "rings",
+      "how": "Roll two fully charged dice at the same time.",
+      "rarity": 50.9,
+      "icon": "games/dice-a-million/achievements/a4dee1a431407e24078f636a3dd0fd5354cc345f.jpg"
+    },
+    {
+      "id": "7c030243d4f337e3fecf886e501005a0146bba13",
+      "name": "Good Job Sticker",
+      "category": "rings",
+      "how": "Beat the game...?",
+      "rarity": 50.4,
+      "icon": "games/dice-a-million/achievements/7c030243d4f337e3fecf886e501005a0146bba13.jpg"
+    },
+    {
+      "id": "68deb338fc7b8abe403cb1d2542ca3f763752fa6",
+      "name": "Mahjong Tile",
+      "category": "dice",
+      "how": "Beat Face 3.",
+      "rarity": 49.9,
+      "icon": "games/dice-a-million/achievements/68deb338fc7b8abe403cb1d2542ca3f763752fa6.jpg"
+    },
+    {
+      "id": "fe2c499f1c14e3e3ece8dc4cd5657c91bbf96da2",
+      "name": "D12",
+      "category": "dice",
+      "how": "Have a D7, D8 and D10 in your bag.",
+      "rarity": 48.5,
+      "icon": "games/dice-a-million/achievements/fe2c499f1c14e3e3ece8dc4cd5657c91bbf96da2.jpg"
+    },
+    {
+      "id": "8a1728e7f15255229cbca1e31b7bed55e1642cee",
+      "name": "Popular Ring",
+      "category": "rings",
+      "how": "Have at least 50 dice in your bag.",
+      "rarity": 45.3,
+      "icon": "games/dice-a-million/achievements/8a1728e7f15255229cbca1e31b7bed55e1642cee.jpg"
+    },
+    {
+      "id": "92c19a7edab2711680b2de069229594b38cfe27e",
+      "name": "Fire Die",
+      "category": "dice",
+      "how": "Beat the Pyro Boss.",
+      "rarity": 44.9,
+      "icon": "games/dice-a-million/achievements/92c19a7edab2711680b2de069229594b38cfe27e.jpg"
+    },
+    {
+      "id": "ea6dfe822639786bdda30ef4a424717e4f67f8f2",
+      "name": "D666",
+      "category": "dice",
+      "how": "Inside a Peanut.",
+      "tip": "This one is obtained by random chance whenever you roll a peanut (Rare die). The peanut has a chance of breaking and then it turns into the D666! No tricks to obtaining it faster, unfortunately. Just keep rolling peanuts until they break open!",
+      "rarity": 44.3,
+      "icon": "games/dice-a-million/achievements/ea6dfe822639786bdda30ef4a424717e4f67f8f2.jpg"
+    },
+    {
+      "id": "a1aa865bfd507808b4d3ec76c7c1d4d9807cf01d",
+      "name": "Treasure Ring",
+      "category": "rings",
+      "how": "Have at least 3 legendary dice in your bag.",
+      "rarity": 43.7,
+      "icon": "games/dice-a-million/achievements/a1aa865bfd507808b4d3ec76c7c1d4d9807cf01d.jpg"
+    },
+    {
+      "id": "ac8f56f61d81b94e7297a4734acae7b1df2e84c0",
+      "name": "Pandora's Box",
+      "category": "dice",
+      "how": "Get the smallest Matryoshka Doll.",
+      "rarity": 43.6,
+      "icon": "games/dice-a-million/achievements/ac8f56f61d81b94e7297a4734acae7b1df2e84c0.jpg"
+    },
+    {
+      "id": "922617e3fb1ecc05d3cc114204fdcedb5f651ad2",
+      "name": "Shiny Ring",
+      "category": "rings",
+      "how": "Get 6 stars during a boss round.",
+      "rarity": 43.3,
+      "icon": "games/dice-a-million/achievements/922617e3fb1ecc05d3cc114204fdcedb5f651ad2.jpg"
+    },
+    {
+      "id": "9887097fe6a9e032f5f4f9999034034233636dac",
+      "name": "Magic Scroll",
+      "category": "dice",
+      "how": "Beat the Heretic Boss.",
+      "rarity": 41.4,
+      "icon": "games/dice-a-million/achievements/9887097fe6a9e032f5f4f9999034034233636dac.jpg"
+    },
+    {
+      "id": "7a916135a6fff6f62e40c0eab9fe9a0e149670a6",
+      "name": "Haunted Die",
+      "category": "dice",
+      "how": "Beat The Patient boss.",
+      "rarity": 40.2,
+      "icon": "games/dice-a-million/achievements/7a916135a6fff6f62e40c0eab9fe9a0e149670a6.jpg"
+    },
+    {
+      "id": "a2a809e389e0d1cd2fef9071e5861f059770b2b7",
+      "name": "Ice Die",
+      "category": "dice",
+      "how": "Beat the Frost Boss.",
+      "rarity": 38.6,
+      "icon": "games/dice-a-million/achievements/a2a809e389e0d1cd2fef9071e5861f059770b2b7.jpg"
+    },
+    {
+      "id": "3807ce312283f64945e7498b3f74addc8a0a0b35",
+      "name": "Witch's Ring",
+      "category": "rings",
+      "how": "Beat The Witch boss.",
+      "rarity": 38.0,
+      "icon": "games/dice-a-million/achievements/3807ce312283f64945e7498b3f74addc8a0a0b35.jpg"
+    },
+    {
+      "id": "b919e57d88b65e0c95e88d2435afbc3377335d82",
+      "name": "Wooden Die",
+      "category": "dice",
+      "how": "Get a million pips as Red Hand.",
+      "rarity": 37.5,
+      "icon": "games/dice-a-million/achievements/b919e57d88b65e0c95e88d2435afbc3377335d82.jpg"
+    },
+    {
+      "id": "43047c1bd0bf9cb99a4584f1d07e9833d22312ba",
+      "name": "Knockoff Ring",
+      "category": "rings",
+      "how": "Beat The Copycat boss.",
+      "rarity": 36.8,
+      "icon": "games/dice-a-million/achievements/43047c1bd0bf9cb99a4584f1d07e9833d22312ba.jpg"
+    },
+    {
+      "id": "cfeba12509ce9a9477b47fe80cc1384a1c6ea51e",
+      "name": "Hermit's Stone",
+      "category": "rings",
+      "how": "Beat The Hermit boss.",
+      "rarity": 36.6,
+      "icon": "games/dice-a-million/achievements/cfeba12509ce9a9477b47fe80cc1384a1c6ea51e.jpg"
+    },
+    {
+      "id": "c10aa95a0924f06e97c1179693e3e0db7216a7eb",
+      "name": "Balance Ring",
+      "category": "rings",
+      "how": "Have less than 8 dice in your bag.",
+      "rarity": 36.3,
+      "icon": "games/dice-a-million/achievements/c10aa95a0924f06e97c1179693e3e0db7216a7eb.jpg"
+    },
+    {
+      "id": "a7c45b979c0136e2dd878ab46aa38aac986d68a0",
+      "name": "Bubble Wrap",
+      "category": "rings",
+      "how": "Beat Face 3 as Red Hand.",
+      "rarity": 35.9,
+      "icon": "games/dice-a-million/achievements/a7c45b979c0136e2dd878ab46aa38aac986d68a0.jpg"
+    },
+    {
+      "id": "dd4d2fdc024c3249c3e599effecb80e17dfcfaca",
+      "name": "Solar Mini-Watch",
+      "category": "rings",
+      "how": "Have two watches.",
+      "rarity": 35.3,
+      "icon": "games/dice-a-million/achievements/dd4d2fdc024c3249c3e599effecb80e17dfcfaca.jpg"
+    },
+    {
+      "id": "c56f89771e2a9ab528ff30bed68299c2b4c88475",
+      "name": "Spintop",
+      "category": "dice",
+      "how": "Get a million pips as White Hand.",
+      "rarity": 32.4,
+      "icon": "games/dice-a-million/achievements/c56f89771e2a9ab528ff30bed68299c2b4c88475.jpg"
+    },
+    {
+      "id": "0a9c3e07d48147861d394ed8a6c88b7f1594eae4",
+      "name": "Blue Hand",
+      "category": "hands",
+      "how": "Beat Face 1 Boss without taking any rings. Simply do not take any rings throughout Face 1, then beat the Face 1 Boss! Might take a few attempts.",
+      "rarity": 31.0,
+      "icon": "games/dice-a-million/achievements/0a9c3e07d48147861d394ed8a6c88b7f1594eae4.jpg"
+    },
+    {
+      "id": "217858902b90fc427cc0e1628d2b924852d7f7c7",
+      "name": "D100",
+      "category": "dice",
+      "how": "Beat Face 3 as White Hand.",
+      "rarity": 30.7,
+      "icon": "games/dice-a-million/achievements/217858902b90fc427cc0e1628d2b924852d7f7c7.jpg"
+    },
+    {
+      "id": "83574a946a355f9f44e2656cc9cfc5b4ddd2b0ad",
+      "name": "Ascendant Die",
+      "category": "dice",
+      "how": "Have a die reach 1000 extra value.",
+      "rarity": 30.6,
+      "icon": "games/dice-a-million/achievements/83574a946a355f9f44e2656cc9cfc5b4ddd2b0ad.jpg"
+    },
+    {
+      "id": "3e969d87795fa848d4377ecb2093ab0cfc68b354",
+      "name": "Yellow Hand",
+      "category": "hands",
+      "how": "Have a die reach 1000 extra value. This can be achieved by comboing and stacking dice that provide extra value! (Examples: D7, D8, D10, D12, Psychodie, Exodie, Etc.)",
+      "rarity": 30.4,
+      "icon": "games/dice-a-million/achievements/3e969d87795fa848d4377ecb2093ab0cfc68b354.jpg"
+    },
+    {
+      "id": "56086f1c14acc64abf943c5584d722b85ffddba4",
+      "name": "Anchor",
+      "category": "dice",
+      "how": "Draw 20 dice in one turn.",
+      "rarity": 30.2,
+      "icon": "games/dice-a-million/achievements/56086f1c14acc64abf943c5584d722b85ffddba4.jpg"
+    },
+    {
+      "id": "16b55f657b78ae8927cf0f1e6aa7b1638214e184",
+      "name": "Onion Ring",
+      "category": "rings",
+      "how": "Beat The Cautious boss.",
+      "rarity": 28.8,
+      "icon": "games/dice-a-million/achievements/16b55f657b78ae8927cf0f1e6aa7b1638214e184.jpg"
+    },
+    {
+      "id": "a60656aacdb67f5a584422f02f6b3a7cf7044e1e",
+      "name": "Resurrect",
+      "category": "cards",
+      "how": "Beat Dice Rush.",
+      "rarity": 26.5,
+      "icon": "games/dice-a-million/achievements/a60656aacdb67f5a584422f02f6b3a7cf7044e1e.jpg"
+    },
+    {
+      "id": "7644e4e9f20e1c9f13a38899665842c05cd67806",
+      "name": "Hexagonal Ring",
+      "category": "rings",
+      "how": "Manually remove a Legendary die from your bag.",
+      "rarity": 26.0,
+      "icon": "games/dice-a-million/achievements/7644e4e9f20e1c9f13a38899665842c05cd67806.jpg"
+    },
+    {
+      "id": "dd865944edb4217b3aed9d0ae94b91181a740d9f",
+      "name": "Electric Die",
+      "category": "dice",
+      "how": "Get a million pips as Green Hand.",
+      "rarity": 24.6,
+      "icon": "games/dice-a-million/achievements/dd865944edb4217b3aed9d0ae94b91181a740d9f.jpg"
+    },
+    {
+      "id": "d66f88612c1177de5d9b59457c42f99e7c33d902",
+      "name": "First Piece",
+      "category": "secrets",
+      "rarity": 24.2,
+      "icon": "games/dice-a-million/achievements/d66f88612c1177de5d9b59457c42f99e7c33d902.jpg"
+    },
+    {
+      "id": "3f7a0ecaddbf1c9a7b14dd5d78ddcdbd58959cb6",
+      "name": "Minidie",
+      "category": "dice",
+      "how": "Break its shell.",
+      "tip": "One of the more unique secret dice, you can obtain this by manually \"removing\" a Double Dice (Not the Joined Dice, where there's two dice stuck together, but the one that has a die within a die) in the shop, which breaks the Minidie from out of its shell.",
+      "rarity": 22.9,
+      "icon": "games/dice-a-million/achievements/3f7a0ecaddbf1c9a7b14dd5d78ddcdbd58959cb6.jpg"
+    },
+    {
+      "id": "246a98304b63874c303e5723eb715f8b21f97573",
+      "name": "Reinforcement Ring",
+      "category": "rings",
+      "how": "Beat Face 3 as Green Hand.",
+      "rarity": 22.5,
+      "icon": "games/dice-a-million/achievements/246a98304b63874c303e5723eb715f8b21f97573.jpg"
+    },
+    {
+      "id": "51e64fd70d57134fc1a6f3d57ccad82f222954ee",
+      "name": "Magic Sponge",
+      "category": "dice",
+      "how": "Get a million pips as Purple Hand.",
+      "rarity": 19.3,
+      "icon": "games/dice-a-million/achievements/51e64fd70d57134fc1a6f3d57ccad82f222954ee.jpg"
+    },
+    {
+      "id": "b3217628ba845b4569ee5be2fe55fc6f3e7a7c96",
+      "name": "Second Piece",
+      "category": "secrets",
+      "rarity": 19.3,
+      "icon": "games/dice-a-million/achievements/b3217628ba845b4569ee5be2fe55fc6f3e7a7c96.jpg"
+    },
+    {
+      "id": "fd00bfe232ce02dd4827d4407a21412140a34698",
+      "name": "Blank Ring",
+      "category": "rings",
+      "how": "Get a million pips as Blue Hand.",
+      "rarity": 18.8,
+      "icon": "games/dice-a-million/achievements/fd00bfe232ce02dd4827d4407a21412140a34698.jpg"
+    },
+    {
+      "id": "c52da8d685b3f2a88713c33cb27e915244b90a7b",
+      "name": "Dicecoin",
+      "category": "dice",
+      "how": "Pass a round without ever rolling any die.",
+      "rarity": 18.6,
+      "icon": "games/dice-a-million/achievements/c52da8d685b3f2a88713c33cb27e915244b90a7b.jpg"
+    },
+    {
+      "id": "ef35c8a8415bffcf67feec7340f2e2db703b405d",
+      "name": "Pale Hand",
+      "category": "hands",
+      "how": "Get all stamp multipliers to at least 1.5X.",
+      "rarity": 18.6,
+      "icon": "games/dice-a-million/achievements/ef35c8a8415bffcf67feec7340f2e2db703b405d.jpg"
+    },
+    {
+      "id": "53f3aef27b39deb00298fb4f5d56c5f51af9b977",
+      "name": "Void Ring",
+      "category": "rings",
+      "how": "Beat Face 3 as Purple Hand.",
+      "rarity": 18.1,
+      "icon": "games/dice-a-million/achievements/53f3aef27b39deb00298fb4f5d56c5f51af9b977.jpg"
+    },
+    {
+      "id": "53425645e8d8861e1390ad78b6d3576a92e44da2",
+      "name": "E.T. Die",
+      "category": "dice",
+      "how": "Beat Face 3 as Blue Hand.",
+      "rarity": 18.1,
+      "icon": "games/dice-a-million/achievements/53425645e8d8861e1390ad78b6d3576a92e44da2.jpg"
+    },
+    {
+      "id": "ef747f0f192c69a754e7c7ed9f99fd3743b484c7",
+      "name": "J's Die",
+      "category": "dice",
+      "how": "Rebuild a strange die. This involves getting the shattered die pieces in between stages, there are 3 in total. They gradually become more expensive as you move from stage to stage, so be prepared! (Note: In order to successfully rebuild the die, you must purchase the shattered die in the previous stages, otherwise the next pieces won't appear in the next stages.)",
+      "rarity": 17.2,
+      "icon": "games/dice-a-million/achievements/ef747f0f192c69a754e7c7ed9f99fd3743b484c7.jpg"
+    },
+    {
+      "id": "2ad252c1db26500d1a2ff977c36da70244f771d6",
+      "name": "Business Card",
+      "category": "cards",
+      "how": "Beat Dice Rush as Red Hand.",
+      "rarity": 16.0,
+      "icon": "games/dice-a-million/achievements/2ad252c1db26500d1a2ff977c36da70244f771d6.jpg"
+    },
+    {
+      "id": "c09febb4f2c1e4fd29a26a39576e6fe606ec66ea",
+      "name": "Surge Jewel",
+      "category": "rings",
+      "how": "Have at least 8 rolls as Yellow Hand.",
+      "rarity": 15.9,
+      "icon": "games/dice-a-million/achievements/c09febb4f2c1e4fd29a26a39576e6fe606ec66ea.jpg"
+    },
+    {
+      "id": "16382e22cb6a5eae572db6cf4c6d4719a69974dc",
+      "name": "Amethyst",
+      "category": "dice",
+      "how": "Beat the game in Power I.",
+      "rarity": 14.7,
+      "icon": "games/dice-a-million/achievements/16382e22cb6a5eae572db6cf4c6d4719a69974dc.jpg"
+    },
+    {
+      "id": "6d974ff1b67da0c04fb36c8154ca01adffafe914",
+      "name": "Translucid D20",
+      "category": "dice",
+      "how": "Roll 4 twenties in a single roll.",
+      "rarity": 14.6,
+      "icon": "games/dice-a-million/achievements/6d974ff1b67da0c04fb36c8154ca01adffafe914.jpg"
+    },
+    {
+      "id": "6954c33686ef4c033dc9e9e90bd8b85564a2c2c4",
+      "name": "Cherub's Die",
+      "category": "dice",
+      "how": "Get a million pips as Yellow Hand.",
+      "rarity": 13.2,
+      "icon": "games/dice-a-million/achievements/6954c33686ef4c033dc9e9e90bd8b85564a2c2c4.jpg"
+    },
+    {
+      "id": "2f492fdaee204f05fc661728edca08103c7d4de8",
+      "name": "Bicolor Hand",
+      "category": "hands",
+      "how": "Defeat The Even and The Odd bosses 5 times each.",
+      "rarity": 12.8,
+      "icon": "games/dice-a-million/achievements/2f492fdaee204f05fc661728edca08103c7d4de8.jpg"
+    },
+    {
+      "id": "5d6c89b265ae9e1b79cc618b50f505f274dc932d",
+      "name": "Rubber Band",
+      "category": "rings",
+      "how": "Beat Face 3 as Yellow Hand.",
+      "rarity": 12.7,
+      "icon": "games/dice-a-million/achievements/5d6c89b265ae9e1b79cc618b50f505f274dc932d.jpg"
+    },
+    {
+      "id": "da1efe21a4e710743633f5c9059856ac898e1151",
+      "name": "The Vortex",
+      "category": "vortex",
+      "rarity": 12.4,
+      "icon": "games/dice-a-million/achievements/da1efe21a4e710743633f5c9059856ac898e1151.jpg"
+    },
+    {
+      "id": "c9adfb212bc1dbabd07b544ead602f146446aff1",
+      "name": "D Diablo",
+      "category": "dice",
+      "how": "Have at least 666M pips as Green Hand.",
+      "rarity": 11.8,
+      "icon": "games/dice-a-million/achievements/c9adfb212bc1dbabd07b544ead602f146446aff1.jpg"
+    },
+    {
+      "id": "ad7cc93416fbd7e8c63b44cdce58e495a6efab0a",
+      "name": "Glue Ring",
+      "category": "rings",
+      "how": "Get a million pips as Pale Hand.",
+      "rarity": 11.7,
+      "icon": "games/dice-a-million/achievements/ad7cc93416fbd7e8c63b44cdce58e495a6efab0a.jpg"
+    },
+    {
+      "id": "d71b0656fd3b503e9f13f70865697529b8788f1d",
+      "name": "Love Card",
+      "category": "cards",
+      "how": "Beat Dice Rush as White Hand.",
+      "rarity": 11.2,
+      "icon": "games/dice-a-million/achievements/d71b0656fd3b503e9f13f70865697529b8788f1d.jpg"
+    },
+    {
+      "id": "68689ff714b01929f261bde8458190d1be44e121",
+      "name": "Bone Die",
+      "category": "dice",
+      "how": "Beat Face 3 as Pale Hand.",
+      "rarity": 11.2,
+      "icon": "games/dice-a-million/achievements/68689ff714b01929f261bde8458190d1be44e121.jpg"
+    },
+    {
+      "id": "70860b4267c32464e24ed8aaf4b28fa6365619de",
+      "name": "Fire Ring",
+      "category": "rings",
+      "how": "Beat the Pyro Boss 5 times.",
+      "rarity": 10.5,
+      "icon": "games/dice-a-million/achievements/70860b4267c32464e24ed8aaf4b28fa6365619de.jpg"
+    },
+    {
+      "id": "a9e19c88bab0adb485868233b354cd407fb6dc07",
+      "name": "Thorn Ring",
+      "category": "rings",
+      "how": "Beat the Frost Boss 5 times.",
+      "rarity": 10.3,
+      "icon": "games/dice-a-million/achievements/a9e19c88bab0adb485868233b354cd407fb6dc07.jpg"
+    },
+    {
+      "id": "e3bace5b160515ffe349a79a10743a9fe9fe78d5",
+      "name": "Ectoplasmic Ring",
+      "category": "rings",
+      "how": "Have 4 ghost dice.",
+      "rarity": 10.0,
+      "icon": "games/dice-a-million/achievements/e3bace5b160515ffe349a79a10743a9fe9fe78d5.jpg"
+    },
+    {
+      "id": "476f63ac41a808f95e44f8f2cfeb8730673fd5b7",
+      "name": "Water Ring",
+      "category": "rings",
+      "how": "Beat the Hermit Boss 5 times.",
+      "rarity": 9.9,
+      "icon": "games/dice-a-million/achievements/476f63ac41a808f95e44f8f2cfeb8730673fd5b7.jpg"
+    },
+    {
+      "id": "f9670e9a6df00336bd320d373ebdbed7d0ade09b",
+      "name": "Golden Ticket",
+      "category": "cards",
+      "how": "Beat Dice Rush as Blue Hand.",
+      "rarity": 9.8,
+      "icon": "games/dice-a-million/achievements/f9670e9a6df00336bd320d373ebdbed7d0ade09b.jpg"
+    },
+    {
+      "id": "2715bd9b25fefa6b9d95056d7172065b22edcefb",
+      "name": "Ace of Wands",
+      "category": "cards",
+      "how": "Beat Dice Rush as Green Hand.",
+      "rarity": 9.7,
+      "icon": "games/dice-a-million/achievements/2715bd9b25fefa6b9d95056d7172065b22edcefb.jpg"
+    },
+    {
+      "id": "e66966bc12b60a78383e0d4dac3444d85cef2206",
+      "name": "Sapphire",
+      "category": "dice",
+      "how": "Beat the game in Power II.",
+      "rarity": 9.4,
+      "icon": "games/dice-a-million/achievements/e66966bc12b60a78383e0d4dac3444d85cef2206.jpg"
+    },
+    {
+      "id": "faf766059871085348485ec280cc9105289c9f79",
+      "name": "I can't believe it's not a D6",
+      "category": "challenges",
+      "how": "Complete the challenge",
+      "rarity": 8.7,
+      "icon": "games/dice-a-million/achievements/faf766059871085348485ec280cc9105289c9f79.jpg"
+    },
+    {
+      "id": "676fa0ce13fe76102b071e31bbb5e73df959034c",
+      "name": "Peanuts!",
+      "category": "challenges",
+      "how": "Complete the challenge",
+      "rarity": 8.4,
+      "icon": "games/dice-a-million/achievements/676fa0ce13fe76102b071e31bbb5e73df959034c.jpg"
+    },
+    {
+      "id": "f75ad62b287196e66fb963d756629ed97cc8a59b",
+      "name": "Black Lotus",
+      "category": "cards",
+      "how": "Beat Dice Rush as Purple Hand.",
+      "rarity": 8.1,
+      "icon": "games/dice-a-million/achievements/f75ad62b287196e66fb963d756629ed97cc8a59b.jpg"
+    },
+    {
+      "id": "999504b83f0a7c1622cca6bfbaa2da58229ed0e7",
+      "name": "MiniDisc",
+      "category": "dice",
+      "how": "Make a ring give you 1,000 pips.",
+      "rarity": 7.3,
+      "icon": "games/dice-a-million/achievements/999504b83f0a7c1622cca6bfbaa2da58229ed0e7.jpg"
+    },
+    {
+      "id": "42e209ca54afd8bbca6939a8c31e2bfb29b5d593",
+      "name": "Viral D5",
+      "category": "dice",
+      "how": "Have 10X Multiplier on a die without rolling it.",
+      "rarity": 7.1,
+      "icon": "games/dice-a-million/achievements/42e209ca54afd8bbca6939a8c31e2bfb29b5d593.jpg"
+    },
+    {
+      "id": "99f752ef2e14af8606a7ff5fff2a4e4f699290d3",
+      "name": "Emerald",
+      "category": "dice",
+      "how": "Beat the game in Power III.",
+      "rarity": 7.0,
+      "icon": "games/dice-a-million/achievements/99f752ef2e14af8606a7ff5fff2a4e4f699290d3.jpg"
+    },
+    {
+      "id": "5b0cc1b6884fc6d8693dc6f2c23f775e010e858b",
+      "name": "Aquarium",
+      "category": "dice",
+      "how": "Get promoted as Red Hand.",
+      "rarity": 6.9,
+      "icon": "games/dice-a-million/achievements/5b0cc1b6884fc6d8693dc6f2c23f775e010e858b.jpg"
+    },
+    {
+      "id": "11efc579c6c317348e862e93e1d31e947021aeb8",
+      "name": "The Star",
+      "category": "cards",
+      "how": "Beat Dice Rush as Yellow Hand.",
+      "rarity": 6.7,
+      "icon": "games/dice-a-million/achievements/11efc579c6c317348e862e93e1d31e947021aeb8.jpg"
+    },
+    {
+      "id": "470b1bba4573b2f452f1a2bdd96fedc71523958c",
+      "name": "Sealed Letter",
+      "category": "cards",
+      "how": "Beat Dice Rush as Pale Hand.",
+      "rarity": 6.2,
+      "icon": "games/dice-a-million/achievements/470b1bba4573b2f452f1a2bdd96fedc71523958c.jpg"
+    },
+    {
+      "id": "86cea92f48cd6246c957049d6b889c0ed0226cbd",
+      "name": "Schrödinger's Die",
+      "category": "dice",
+      "how": "Get promoted as Blue Hand.",
+      "rarity": 6.1,
+      "icon": "games/dice-a-million/achievements/86cea92f48cd6246c957049d6b889c0ed0226cbd.jpg"
+    },
+    {
+      "id": "24223832639e5bbf617618f238210eb76d2e07ee",
+      "name": "Amber",
+      "category": "dice",
+      "how": "Beat the game in Power IV.",
+      "rarity": 5.6,
+      "icon": "games/dice-a-million/achievements/24223832639e5bbf617618f238210eb76d2e07ee.jpg"
+    },
+    {
+      "id": "600445886af2a8cffe0343acd6bcaa9affa72784",
+      "name": "Silver Coin",
+      "category": "dice",
+      "how": "Beat The Hollow boss.",
+      "rarity": 5.4,
+      "icon": "games/dice-a-million/achievements/600445886af2a8cffe0343acd6bcaa9affa72784.jpg"
+    },
+    {
+      "id": "a0cd15d47fc92bed54ff7fb0ab5db680b3196060",
+      "name": "Copper Die",
+      "category": "dice",
+      "how": "Get promoted as White Hand.",
+      "rarity": 5.2,
+      "icon": "games/dice-a-million/achievements/a0cd15d47fc92bed54ff7fb0ab5db680b3196060.jpg"
+    },
+    {
+      "id": "fc3d62b880f88d04a6fe0e7e52fc6fe6b6d889bd",
+      "name": "Static Hand",
+      "category": "hands",
+      "how": "To get this hand, you need to donate enough stars in the star shop (the shop after you defeat a boss.) Once you get the message \"You feel something change in Face X\", the next ring reward segment allows you to pay pips for a secret shop. In that shop, you need to sacrifice one die of each tier of rarity (common, uncommon, rare, and legendary, the dice in your bag are also selected at random). Once you've successfully filled those requirements, a chest pops up containing the Static Hand!",
+      "rarity": 5.1,
+      "icon": "games/dice-a-million/achievements/fc3d62b880f88d04a6fe0e7e52fc6fe6b6d889bd.jpg"
+    },
+    {
+      "id": "238121ebb09d7ec60c5bd1b5da5946831641d94f",
+      "name": "Alchemist's Ring",
+      "category": "rings",
+      "how": "Beat The Glutton boss.",
+      "rarity": 5.1,
+      "icon": "games/dice-a-million/achievements/238121ebb09d7ec60c5bd1b5da5946831641d94f.jpg"
+    },
+    {
+      "id": "96d7f55b4b3466420e316707e4dcfe44b6e45af9",
+      "name": "Die of Cthulhu",
+      "category": "dice",
+      "how": "Get promoted as Green Hand.",
+      "rarity": 4.6,
+      "icon": "games/dice-a-million/achievements/96d7f55b4b3466420e316707e4dcfe44b6e45af9.jpg"
+    },
+    {
+      "id": "e45a88b0a26abf358a7495cffafc4264535c4926",
+      "name": "Ruby",
+      "category": "dice",
+      "how": "Beat the game in Power V.",
+      "rarity": 4.4,
+      "icon": "games/dice-a-million/achievements/e45a88b0a26abf358a7495cffafc4264535c4926.jpg"
+    },
+    {
+      "id": "14261cc5262b390c2d74719f32ff45458bbbff70",
+      "name": "Echo Cube",
+      "category": "dice",
+      "how": "Flick this die if you see it.",
+      "tip": "This can be obtained by flicking the Echo Cube at the starting screen. In the background once you've opened the game, random dice will start falling, to which you can click on them to \"flick\" them. Obtaining the Echo Cube then becomes a matter of luck and patience, as you have to wait for the die to fall from the screen, and there are no ways to speed up the process. A general tip would be to just keep clicking in one spot until you finally catch it!",
+      "rarity": 4.4,
+      "icon": "games/dice-a-million/achievements/14261cc5262b390c2d74719f32ff45458bbbff70.jpg"
+    },
+    {
+      "id": "3c7608ce00f86fdf1d92d9b7c55dd028941a252d",
+      "name": "Bicolor Ring",
+      "category": "rings",
+      "how": "Get a million pips as Bicolor Hand.",
+      "rarity": 3.9,
+      "icon": "games/dice-a-million/achievements/3c7608ce00f86fdf1d92d9b7c55dd028941a252d.jpg"
+    },
+    {
+      "id": "8cd3e1ed2367863df488255a8235e158aff58f1e",
+      "name": "Moon Marble",
+      "category": "dice",
+      "how": "Get promoted as Yellow Hand.",
+      "rarity": 3.9,
+      "icon": "games/dice-a-million/achievements/8cd3e1ed2367863df488255a8235e158aff58f1e.jpg"
+    },
+    {
+      "id": "7ce4418f34d0244db1e6b19d602fa5007ad045de",
+      "name": "Glass Devourer",
+      "category": "challenges",
+      "how": "Complete the challenge",
+      "rarity": 3.9,
+      "icon": "games/dice-a-million/achievements/7ce4418f34d0244db1e6b19d602fa5007ad045de.jpg"
+    },
+    {
+      "id": "3abf0fe9eccbd1f754281a993f551053883ccdab",
+      "name": "Prismatic D4",
+      "category": "dice",
+      "how": "Get promoted as pale.",
+      "rarity": 3.9,
+      "icon": "games/dice-a-million/achievements/3abf0fe9eccbd1f754281a993f551053883ccdab.jpg"
+    },
+    {
+      "id": "67a9301f8ad5a7135d58dc09b62ab737a8bf40e3",
+      "name": "Jet",
+      "category": "dice",
+      "how": "Beat the game in Power VI.",
+      "rarity": 3.8,
+      "icon": "games/dice-a-million/achievements/67a9301f8ad5a7135d58dc09b62ab737a8bf40e3.jpg"
+    },
+    {
+      "id": "03ef4c3835e2634ce8e4008dc4cb884572474522",
+      "name": "Pocket TV",
+      "category": "dice",
+      "how": "Get a million pips as static.",
+      "rarity": 3.8,
+      "icon": "games/dice-a-million/achievements/03ef4c3835e2634ce8e4008dc4cb884572474522.jpg"
+    },
+    {
+      "id": "4c0e0bd831603ea83d07af455035332aeb559161",
+      "name": "Evil Eye",
+      "category": "dice",
+      "how": "Remind someone of something.",
+      "tip": "One of the more vague achievements, this can be easily obtained by showing the guy on the telephone by the end of Face 3 a hollow die. Once you show it to him, you immediately unlock it!",
+      "rarity": 3.7,
+      "icon": "games/dice-a-million/achievements/4c0e0bd831603ea83d07af455035332aeb559161.jpg"
+    },
+    {
+      "id": "9f318ed2d6b6f03db7d07fb724148cf8f37a0cfc",
+      "name": "Static Die",
+      "category": "dice",
+      "how": "Beat Face 3 as static.",
+      "rarity": 3.6,
+      "icon": "games/dice-a-million/achievements/9f318ed2d6b6f03db7d07fb724148cf8f37a0cfc.jpg"
+    },
+    {
+      "id": "305d412b7319ae699d9d54f9541af739ca571e86",
+      "name": "Parity Interchanger",
+      "category": "rings",
+      "how": "Beat Face 3 as Bicolor Hand.",
+      "rarity": 3.6,
+      "icon": "games/dice-a-million/achievements/305d412b7319ae699d9d54f9541af739ca571e86.jpg"
+    },
+    {
+      "id": "a51fe4e13a537397f96f81c035e09e7e8ae6f24d",
+      "name": "Spindown Die",
+      "category": "dice",
+      "how": "Get promoted as purple.",
+      "rarity": 3.5,
+      "icon": "games/dice-a-million/achievements/a51fe4e13a537397f96f81c035e09e7e8ae6f24d.jpg"
+    },
+    {
+      "id": "96b6174e89e0331760b7c5694966186673d91d3e",
+      "name": "White Card",
+      "category": "cards",
+      "how": "Beat dicerush as static.",
+      "rarity": 2.7,
+      "icon": "games/dice-a-million/achievements/96b6174e89e0331760b7c5694966186673d91d3e.jpg"
+    },
+    {
+      "id": "b717cfb09b37d257c880e2ad85d09180bfa35288",
+      "name": "Carlos was here",
+      "category": "challenges",
+      "how": "Complete the challenge",
+      "rarity": 2.7,
+      "icon": "games/dice-a-million/achievements/b717cfb09b37d257c880e2ad85d09180bfa35288.jpg"
+    },
+    {
+      "id": "6a905350f11dedb4d35816e94d25c334d6fe945d",
+      "name": "Vortex Apprentice",
+      "category": "vortex",
+      "rarity": 2.6,
+      "icon": "games/dice-a-million/achievements/6a905350f11dedb4d35816e94d25c334d6fe945d.jpg"
+    },
+    {
+      "id": "4206223db9df16474b19f7343fcd6854934f24df",
+      "name": "Tainted Coin",
+      "category": "dice",
+      "how": "Beat the game in Power VI as Red Hand.",
+      "rarity": 2.5,
+      "icon": "games/dice-a-million/achievements/4206223db9df16474b19f7343fcd6854934f24df.jpg"
+    },
+    {
+      "id": "e899926ea2317c7a595b9d667dd78586f844d839",
+      "name": "Black Hand",
+      "category": "hands",
+      "how": "Get the last promotion.",
+      "rarity": 2.3,
+      "icon": "games/dice-a-million/achievements/e899926ea2317c7a595b9d667dd78586f844d839.jpg"
+    },
+    {
+      "id": "65ec187156b0b2da4e273ea03d9f96d7a75ffda6",
+      "name": "Glitched Die",
+      "category": "dice",
+      "how": "Get promoted as static.",
+      "rarity": 2.2,
+      "icon": "games/dice-a-million/achievements/65ec187156b0b2da4e273ea03d9f96d7a75ffda6.jpg"
+    },
+    {
+      "id": "a76658941086ef65a8bcad0647f41d45195b76b6",
+      "name": "Gift Card",
+      "category": "cards",
+      "how": "Beat Dice Rush as Bicolor Hand.",
+      "rarity": 2.2,
+      "icon": "games/dice-a-million/achievements/a76658941086ef65a8bcad0647f41d45195b76b6.jpg"
+    },
+    {
+      "id": "3bedef084e4166c69b7584739f8c40849e0a4b25",
+      "name": "Ace of Stars",
+      "category": "cards",
+      "how": "Beat dicerush in Power VI.",
+      "rarity": 2.1,
+      "icon": "games/dice-a-million/achievements/3bedef084e4166c69b7584739f8c40849e0a4b25.jpg"
+    },
+    {
+      "id": "b8a02f31b6014b0b90cb4e26fab8acf3f68a4cd4",
+      "name": "Shirt Button",
+      "category": "dice",
+      "how": "Beat the game in Power VI as White Hand.",
+      "rarity": 1.8,
+      "icon": "games/dice-a-million/achievements/b8a02f31b6014b0b90cb4e26fab8acf3f68a4cd4.jpg"
+    },
+    {
+      "id": "5e8a85e0282bbbd596bf4efd36580fc3bd8d1831",
+      "name": "Natural 6",
+      "category": "challenges",
+      "how": "Complete the challenge",
+      "rarity": 1.8,
+      "icon": "games/dice-a-million/achievements/5e8a85e0282bbbd596bf4efd36580fc3bd8d1831.jpg"
+    },
+    {
+      "id": "9654a99654afb7d5278bd27239ac3c4765f450e1",
+      "name": "Prime Die",
+      "category": "dice",
+      "how": "Get promoted as binary.",
+      "rarity": 1.6,
+      "icon": "games/dice-a-million/achievements/9654a99654afb7d5278bd27239ac3c4765f450e1.jpg"
+    },
+    {
+      "id": "810d25758d4373855b2c368f27aac38b239b8f63",
+      "name": "???",
+      "category": "dice",
+      "how": "Get the first piece \"Some strange energy radiates from this die.",
+      "rarity": 1.6,
+      "icon": "games/dice-a-million/achievements/810d25758d4373855b2c368f27aac38b239b8f63.jpg"
+    },
+    {
+      "id": "74ad0433d709fd3c5d0aef5c3d37c57c53854253",
+      "name": "The Pact",
+      "category": "dice",
+      "how": "Get a million pips as black.",
+      "rarity": 1.6,
+      "icon": "games/dice-a-million/achievements/74ad0433d709fd3c5d0aef5c3d37c57c53854253.jpg"
+    },
+    {
+      "id": "6b054aca035ef0cb6590bc8cd3c45ef1f606ad61",
+      "name": "Dark Matter D4",
+      "category": "dice",
+      "rarity": 1.6,
+      "icon": "games/dice-a-million/achievements/6b054aca035ef0cb6590bc8cd3c45ef1f606ad61.jpg"
+    },
+    {
+      "id": "93fc00e5e9990f6f3c603b205d981e446652307e",
+      "name": "Blood Ring",
+      "category": "rings",
+      "how": "Beat the game as black.",
+      "rarity": 1.6,
+      "icon": "games/dice-a-million/achievements/93fc00e5e9990f6f3c603b205d981e446652307e.jpg"
+    },
+    {
+      "id": "35054d549d84bc8a36e1b9161d1e0272ad8b3863",
+      "name": "Vortex Local",
+      "category": "vortex",
+      "rarity": 1.6,
+      "icon": "games/dice-a-million/achievements/35054d549d84bc8a36e1b9161d1e0272ad8b3863.jpg"
+    },
+    {
+      "id": "bf31ca0303b8e1ab2bc2c700039474fcf1b5e6fc",
+      "name": "Vortex Master",
+      "category": "vortex",
+      "rarity": 1.4,
+      "icon": "games/dice-a-million/achievements/bf31ca0303b8e1ab2bc2c700039474fcf1b5e6fc.jpg"
+    },
+    {
+      "id": "e9b2dfb96f7b69769419d4e0d3cd28aacc402794",
+      "name": "Ringless",
+      "category": "challenges",
+      "how": "Complete the challenge",
+      "rarity": 1.4,
+      "icon": "games/dice-a-million/achievements/e9b2dfb96f7b69769419d4e0d3cd28aacc402794.jpg"
+    },
+    {
+      "id": "6a41d5f8acf75887c32a977b9e95bc0b83149358",
+      "name": "Cyan Hand",
+      "category": "hands",
+      "rarity": 1.4,
+      "icon": "games/dice-a-million/achievements/6a41d5f8acf75887c32a977b9e95bc0b83149358.jpg"
+    },
+    {
+      "id": "4691347c6174e8ba5af0e1cb28fe521b8c80ad7d",
+      "name": "_r1ng",
+      "category": "rings",
+      "how": "Beat the game in Power VI as Blue Hand.",
+      "rarity": 1.3,
+      "icon": "games/dice-a-million/achievements/4691347c6174e8ba5af0e1cb28fe521b8c80ad7d.jpg"
+    },
+    {
+      "id": "1d92bcf0590552939597448eb0b3f692bbcedd0d",
+      "name": "Author's Die",
+      "category": "dice",
+      "how": "Get promoted as black.",
+      "rarity": 1.3,
+      "icon": "games/dice-a-million/achievements/1d92bcf0590552939597448eb0b3f692bbcedd0d.jpg"
+    },
+    {
+      "id": "85aba602549a7f5190081106b17155b3e8250e5e",
+      "name": "Shadow Glass",
+      "category": "cards",
+      "how": "Beat dicerush as black.",
+      "rarity": 1.2,
+      "icon": "games/dice-a-million/achievements/85aba602549a7f5190081106b17155b3e8250e5e.jpg"
+    },
+    {
+      "id": "cfaf0318e06415260c1b027bad3567f48cf4bdf9",
+      "name": "Die of Lament",
+      "category": "dice",
+      "how": "Beat Face 3 as hollow.",
+      "rarity": 1.1,
+      "icon": "games/dice-a-million/achievements/cfaf0318e06415260c1b027bad3567f48cf4bdf9.jpg"
+    },
+    {
+      "id": "b94d1056aedd26b1f49a21da735269a21118a346",
+      "name": "Slate Ring",
+      "category": "rings",
+      "how": "Get a million pips as hollow.",
+      "rarity": 1.1,
+      "icon": "games/dice-a-million/achievements/b94d1056aedd26b1f49a21da735269a21118a346.jpg"
+    },
+    {
+      "id": "1b102612e8c2d29330b5e0863152c54c8f8120ee",
+      "name": "Tesseract",
+      "category": "dice",
+      "how": "Beat the game in Power VI as Green Hand.",
+      "rarity": 1.0,
+      "icon": "games/dice-a-million/achievements/1b102612e8c2d29330b5e0863152c54c8f8120ee.jpg"
+    },
+    {
+      "id": "ea8aa88d40106018f25d6e9477344fddd1c7bb34",
+      "name": "Cursed!",
+      "category": "challenges",
+      "how": "Complete the challenge",
+      "rarity": 1.0,
+      "icon": "games/dice-a-million/achievements/ea8aa88d40106018f25d6e9477344fddd1c7bb34.jpg"
+    },
+    {
+      "id": "f2d31fb9fc5d809989049834d6509418bc5e366e",
+      "name": "This number doesn't exist",
+      "category": "secrets",
+      "rarity": 0.9,
+      "icon": "games/dice-a-million/achievements/f2d31fb9fc5d809989049834d6509418bc5e366e.jpg"
+    },
+    {
+      "id": "8beb63d22a3c9bb6ebda2594c29440dc3dcd5981",
+      "name": "Crochet Ring",
+      "category": "rings",
+      "how": "Get a million pips as Cyan Hand.",
+      "rarity": 0.9,
+      "icon": "games/dice-a-million/achievements/8beb63d22a3c9bb6ebda2594c29440dc3dcd5981.jpg"
+    },
+    {
+      "id": "c679cbc3868424350bc94d7bf98672f052bbc509",
+      "name": "Burnt Card",
+      "category": "cards",
+      "how": "Beat dicerush as hollow.",
+      "rarity": 0.8,
+      "icon": "games/dice-a-million/achievements/c679cbc3868424350bc94d7bf98672f052bbc509.jpg"
+    },
+    {
+      "id": "a17cef086fd914f5af35a349a2c1c04e70106b2d",
+      "name": "The Halo",
+      "category": "rings",
+      "how": "Beat the game in Power VI as Yellow Hand.",
+      "rarity": 0.8,
+      "icon": "games/dice-a-million/achievements/a17cef086fd914f5af35a349a2c1c04e70106b2d.jpg"
+    },
+    {
+      "id": "001aed70f9e063a793c3c187326c08be9e6b8e33",
+      "name": "Puzzle Piece",
+      "category": "dice",
+      "how": "Beat Face 3 as Cyan Hand.",
+      "rarity": 0.8,
+      "icon": "games/dice-a-million/achievements/001aed70f9e063a793c3c187326c08be9e6b8e33.jpg"
+    },
+    {
+      "id": "e27481db6288f925b08ac5629d963cf1df3562e0",
+      "name": "Voodoo Charm",
+      "category": "rings",
+      "how": "Beat the game in Power VI as Purple Hand.",
+      "rarity": 0.7,
+      "icon": "games/dice-a-million/achievements/e27481db6288f925b08ac5629d963cf1df3562e0.jpg"
+    },
+    {
+      "id": "805d39c4bc9b9783fa4224320e7cc94bfde18138",
+      "name": "Mystery Gift",
+      "category": "dice",
+      "how": "Get promoted as hollow.",
+      "rarity": 0.7,
+      "icon": "games/dice-a-million/achievements/805d39c4bc9b9783fa4224320e7cc94bfde18138.jpg"
+    },
+    {
+      "id": "844f46fab5b9ba6731aec1d1922e9fefb5000561",
+      "name": "Dog Fang Ring",
+      "category": "rings",
+      "how": "Beat the game in Power VI as Pale Hand.",
+      "rarity": 0.7,
+      "icon": "games/dice-a-million/achievements/844f46fab5b9ba6731aec1d1922e9fefb5000561.jpg"
+    },
+    {
+      "id": "a9f845d6656783738d513d926c6a45d5adcb1bce",
+      "name": "Message from the past",
+      "category": "secrets",
+      "rarity": 0.7,
+      "icon": "games/dice-a-million/achievements/a9f845d6656783738d513d926c6a45d5adcb1bce.jpg"
+    },
+    {
+      "id": "27f54fe8f38281ed8900bada7491f007406cf184",
+      "name": "Keygen",
+      "category": "rings",
+      "how": "Beat the game in Power VI as static.",
+      "rarity": 0.6,
+      "icon": "games/dice-a-million/achievements/27f54fe8f38281ed8900bada7491f007406cf184.jpg"
+    },
+    {
+      "id": "8b5be9d30104d823e8c17e3b0ea4d90418d71e0e",
+      "name": "ULTRAHARD",
+      "category": "challenges",
+      "how": "Complete the challenge",
+      "rarity": 0.6,
+      "icon": "games/dice-a-million/achievements/8b5be9d30104d823e8c17e3b0ea4d90418d71e0e.jpg"
+    },
+    {
+      "id": "aa43711dab81a786359f55121e730feb50787709",
+      "name": "Secret Cookie",
+      "category": "dice",
+      "how": "Find a secret cookie.",
+      "rarity": 0.6,
+      "icon": "games/dice-a-million/achievements/aa43711dab81a786359f55121e730feb50787709.jpg"
+    },
+    {
+      "id": "4f38cfd0729592ec3f477cae4f19741d7d0ef0d0",
+      "name": "Punch Card",
+      "category": "cards",
+      "how": "Beat Dice Rush as Cyan Hand.",
+      "rarity": 0.6,
+      "icon": "games/dice-a-million/achievements/4f38cfd0729592ec3f477cae4f19741d7d0ef0d0.jpg"
+    },
+    {
+      "id": "acea165eea821d733c82190f82adcf32e3414ae6",
+      "name": "Ring of the Snake",
+      "category": "dice",
+      "how": "Stay completely silent.",
+      "rarity": 0.6,
+      "icon": "games/dice-a-million/achievements/acea165eea821d733c82190f82adcf32e3414ae6.jpg"
+    },
+    {
+      "id": "3a3569cad37b62a3cb90a3d3889e1f26107a8d99",
+      "name": "IKH)(&$%",
+      "category": "secrets",
+      "rarity": 0.5,
+      "icon": "games/dice-a-million/achievements/3a3569cad37b62a3cb90a3d3889e1f26107a8d99.jpg"
+    },
+    {
+      "id": "2740a87ea4b56f21300501eda3ddaf4e4ae1d86a",
+      "name": "Bullet Die",
+      "category": "dice",
+      "how": "Roll 4 Time Bombs at the same time.",
+      "rarity": 0.5,
+      "icon": "games/dice-a-million/achievements/2740a87ea4b56f21300501eda3ddaf4e4ae1d86a.jpg"
+    },
+    {
+      "id": "82e7d82d65497b64f987da57c511eaccae537924",
+      "name": "Stained Chain",
+      "category": "rings",
+      "how": "Beat the game in Power VI as black.",
+      "rarity": 0.4,
+      "icon": "games/dice-a-million/achievements/82e7d82d65497b64f987da57c511eaccae537924.jpg"
+    },
+    {
+      "id": "96b937964d289e80df13c56f25494d0700fa3a6c",
+      "name": "Ourodie",
+      "category": "dice",
+      "how": "Beat the game in Power VI as hollow.",
+      "rarity": 0.4,
+      "icon": "games/dice-a-million/achievements/96b937964d289e80df13c56f25494d0700fa3a6c.jpg"
+    },
+    {
+      "id": "03feb0ff46f2d8ea9b22351708a3d61b68b1398a",
+      "name": "Ultra Rings",
+      "category": "rings",
+      "how": "Beat the game in Power VI as Bicolor Hand.",
+      "rarity": 0.4,
+      "icon": "games/dice-a-million/achievements/03feb0ff46f2d8ea9b22351708a3d61b68b1398a.jpg"
+    },
+    {
+      "id": "1c386fd556d7b21b9ee1a981536bdf4420faa270",
+      "name": "Marshmallow",
+      "category": "secrets",
+      "rarity": 0.4,
+      "icon": "games/dice-a-million/achievements/1c386fd556d7b21b9ee1a981536bdf4420faa270.jpg"
+    },
+    {
+      "id": "243a4290666fbf88ae00238085565d232db851ea",
+      "name": "Blackjack",
+      "category": "challenges",
+      "how": "Complete the challenge",
+      "rarity": 0.3,
+      "icon": "games/dice-a-million/achievements/243a4290666fbf88ae00238085565d232db851ea.jpg"
+    },
+    {
+      "id": "56a14275e9f589dad9b8b8a79a5441300fc4d9d7",
+      "name": "All You Can Dice",
+      "category": "secrets",
+      "rarity": 0.2,
+      "icon": "games/dice-a-million/achievements/56a14275e9f589dad9b8b8a79a5441300fc4d9d7.jpg"
+    },
+    {
+      "id": "5724d3a58c3f0be651081e3802c35676da9ba39c",
+      "name": "Shape Amulet",
+      "category": "rings",
+      "how": "Beat the game in Power VI as Cyan Hand.",
+      "rarity": 0.1,
+      "icon": "games/dice-a-million/achievements/5724d3a58c3f0be651081e3802c35676da9ba39c.jpg"
+    }
+  ]
+}

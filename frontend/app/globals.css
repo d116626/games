@@ -94,6 +94,11 @@
   html {
     @apply font-sans;
   }
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
 }
 
 /* Granulado do fundo e animação de entrada (hub e páginas de guia). */

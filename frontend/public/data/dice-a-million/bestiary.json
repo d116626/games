@@ -1,0 +1,248 @@
+{
+  "bosses": [
+    {
+      "name": "The Starving",
+      "effect": "-1 hand size. Every turn you draw one less die. (Turn 1 -1 die, turn 2 -2 dice, etc.)",
+      "empowered": "-2 hand size. Every turn you draw one less die. (Turn 1 -1 die, turn 2 -2 dice, etc.)"
+    },
+    {
+      "name": "The Odd",
+      "effect": "2X Multiplier to dice with an odd face. 0X to dice with an even face.",
+      "empowered": "0X to dice with an even face."
+    },
+    {
+      "name": "The Even",
+      "effect": "2X Multiplier to dice with an even face. 0X to dice with an odd face.",
+      "empowered": "0X to dice with an odd face."
+    },
+    {
+      "name": "The Modest",
+      "effect": "Deactivate the effects of half of your rings every roll.",
+      "empowered": "Deactivate the effects of almost all of your rings every roll."
+    },
+    {
+      "name": "The Greedy",
+      "effect": "The objective is extra high.",
+      "empowered": "The objective is extra EXTRA high."
+    },
+    {
+      "name": "The Capricious",
+      "effect": "Dice deactivate until the end of round once they are rolled.",
+      "empowered": "Dice rolled and dice left on your hand deactivate until the end of round."
+    },
+    {
+      "name": "The Pyro",
+      "effect": "After each roll, places a fire that will burn VERY nearby dice.",
+      "empowered": "After each roll, places a fire that will burn VERY nearby dice. Starts with a fire already out."
+    },
+    {
+      "name": "The Frost",
+      "effect": "Freezes the face of all your dice to their lowest.",
+      "empowered": "Freezes the face of all your dice to their lowest. Then, deactivates every die you rolled until the end of the round."
+    },
+    {
+      "name": "The Envious",
+      "effect": "Any die that rolls its highest face is discarded.",
+      "empowered": "Permanently destroys the die that rolled the highest face.(In case of draw, a random one is chosen.)"
+    },
+    {
+      "name": "The Heretic",
+      "effect": "Reduces everything by -10% for every enchanted die in your bag. (To a maximum of 80%.)",
+      "empowered": "You cannot use cards. Reduces everything by -10% for every enchanted die in your bag.(To a maximum of 80%.)"
+    },
+    {
+      "name": "The Sloth",
+      "effect": "Draw 3 less dice. One less roll.",
+      "empowered": "Draw 5 less dice. One less roll."
+    },
+    {
+      "name": "The Hollow",
+      "effect": "Every roll adds 2 hollow dice to your bag. (These don't do anything and will destroy themselves when rolled.)",
+      "empowered": "Every roll adds 5 hollow dice to your bag. (These don't do anything and will destroy themselves when rolled.)"
+    },
+    {
+      "name": "The Hermit",
+      "effect": "Reduces the range of every area effect to its minimum. Charged dice cannot gain charges.",
+      "empowered": "Charged dice and dice with area effects are deactivated."
+    },
+    {
+      "name": "The Negative",
+      "effect": "Divides by half the value of every multiplier greater or equals to 3.",
+      "empowered": "Divides by half the value of every multiplier greater or equals to 2."
+    },
+    {
+      "name": "The Blackout",
+      "effect": "Every die is hidden until rolled. Only their silhouette is visible.",
+      "empowered": "Every die is hidden until rolled. Only their silhouette is visible. -1 hand size."
+    },
+    {
+      "name": "The Glutton",
+      "effect": "0X Multiplier to everything if you roll less than your hand size. Not rolled dice will be exhausted.",
+      "empowered": "0X Multiplier to everything if you roll less than your hand size. Not rolled dice will be exhausted. Also exhausts one random die you rolled."
+    },
+    {
+      "name": "The Cautious",
+      "effect": "Extra value subtracts instead of adding. Every roll adds +1 extra value to every die in your bag.",
+      "empowered": "Extra value subtracts instead of adding. Every roll adds +2 extra value to every die in your bag."
+    },
+    {
+      "name": "The Serpentine",
+      "effect": "Every other roll, gives 0X Multiplier to everything.",
+      "empowered": "Every other roll, gives 0X Multiplier and exhausts everything."
+    },
+    {
+      "name": "The Witch",
+      "effect": "Every turn you'll need to roll one specific face. If you don't, curses one of the dice you rolled.",
+      "empowered": "Every turn you'll need to roll one specific face. If you don't, curses every dice you rolled."
+    },
+    {
+      "name": "The Dusty",
+      "effect": "Every die has a small explosive area effect, that will discard VERY nearby dice.",
+      "empowered": "Every die has an explosive area effect, that will discard nearby dice."
+    },
+    {
+      "name": "The Sixth",
+      "effect": "Dice with face greater than 6 are negative. (They will subtract instead of adding)",
+      "empowered": "Dice with face equals or greater than 6 are negative. (They will subtract instead of adding)"
+    },
+    {
+      "name": "The Patient",
+      "effect": "Half of your dice are deactivated until you roll them once.",
+      "empowered": "Half of your dice are deactivated until you roll them once. One less roll."
+    },
+    {
+      "name": "The Copycat",
+      "effect": "Any dice with a repeated face is divided by the number of dice with that face.",
+      "empowered": "Any dice with a repeated face is multiplied by 0."
+    },
+    {
+      "name": "The Boss",
+      "effect": "Rolls his own dice."
+    }
+  ],
+  "enemyDice": [
+    {
+      "name": "Alpha",
+      "effect": "Subtracts the value on its face. (Can be multiplied.)"
+    },
+    {
+      "name": "Beta",
+      "effect": "Subtracts the value on its face. (Can be multiplied.)"
+    },
+    {
+      "name": "Gamma",
+      "effect": "Divides the value of your dice by the number on its face."
+    },
+    {
+      "name": "Delta",
+      "effect": "Subtracts 1 per nearby die. (Can be multiplied.)"
+    },
+    {
+      "name": "Theta",
+      "effect": "Discards every VERY nearby die."
+    },
+    {
+      "name": "Lambda",
+      "effect": "Extra value of nearby dice is reduced to 0."
+    },
+    {
+      "name": "Xi",
+      "effect": "Divides by 4 the value of nearby dice."
+    },
+    {
+      "name": "Iota",
+      "effect": "Adds X Hollow Dice to your bag. X being the number on its face."
+    },
+    {
+      "name": "Omega",
+      "effect": "Transforms VERY nearby dice rolled by you into Hollow Dice."
+    },
+    {
+      "name": "Epsilon",
+      "effect": "Subtracts the sum of all extra value from dice on the table."
+    },
+    {
+      "name": "Tau",
+      "effect": "Every die whose face is greater than this one's, is worth 0."
+    },
+    {
+      "name": "Omicron",
+      "effect": "If its face shows it, places a fire that will burn VERY nearby dice in next rolls."
+    },
+    {
+      "name": "Psi",
+      "effect": "Rolls negative copies of dice left in your hand. (These will subtract their score and won't activate any effects.)"
+    },
+    {
+      "name": "Rho",
+      "effect": "Adds a curse to nearby dice."
+    }
+  ],
+  "enchantments": [
+    {
+      "name": "Loyalty",
+      "effect": "1 in 2 probability of going back to hand after it's rolled.",
+      "appliesTo": "die"
+    },
+    {
+      "name": "Eternal",
+      "effect": "Can't be destroyed nor discarded on the table. Can't be exhausted either.",
+      "appliesTo": "die"
+    },
+    {
+      "name": "Wealth",
+      "effect": "Multiplies its value by 2x.",
+      "appliesTo": "die"
+    },
+    {
+      "name": "Laconism",
+      "effect": "Doesn't take any space in hand when selected.",
+      "appliesTo": "die"
+    },
+    {
+      "name": "Echo",
+      "effect": "Activates its effect twice.",
+      "appliesTo": "die"
+    },
+    {
+      "name": "Perennial",
+      "effect": "Only loses half of its extra value after the round ends.",
+      "appliesTo": "die"
+    },
+    {
+      "name": "Fragile",
+      "effect": "Destroys itself when rolled.",
+      "appliesTo": "die"
+    },
+    {
+      "name": "Negative",
+      "effect": "Its value subtracts instead of adding.",
+      "appliesTo": "die"
+    },
+    {
+      "name": "Explosive",
+      "effect": "Discards other VERY nearby dice.",
+      "appliesTo": "die"
+    },
+    {
+      "name": "Weak",
+      "effect": "Divides in half every mult. equal or greater to 2X that it would give or recieve.",
+      "appliesTo": "die"
+    },
+    {
+      "name": "Deciduous",
+      "effect": "Extra value subtracts instead of adding.",
+      "appliesTo": "die"
+    },
+    {
+      "name": "Parasite",
+      "effect": "When rolled adds a Hollow Die to your bag.",
+      "appliesTo": "die"
+    },
+    {
+      "name": "Gilded",
+      "effect": "The effects of this ring will be doubled.",
+      "appliesTo": "ring"
+    }
+  ]
+}

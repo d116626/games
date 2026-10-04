@@ -1,0 +1,320 @@
+"""Roteiro de alto nível para completar o jogo (e chegar à promoção final), escrito à mão.
+
+Fontes: guia de conquistas e wiki da Steam, wiki Miraheze (Shattered Die, Powers, Hollow Ring, Black Hand)
+e o tópico "Guide to unlock hidden things". Nomes de conquistas em `unlocks` viram ids no `build_roadmap`.
+Onde as fontes divergem ou não dizem nada, o passo leva um `warning`.
+"""
+
+import re
+
+from utils.games.dice_a_million.schemas import Achievement, HandGoal, HandUnlock, Roadmap, Stage, Step
+
+# (nome da mão, nome da conquista com o ícone | None, regex que a identifica no texto das conquistas)
+HANDS: list[tuple[str, str | None, str]] = [
+    ("White Hand", None, r"white"),
+    ("Red Hand", "Red Hand", r"red"),
+    ("Green Hand", "Green Hand", r"green"),
+    ("Purple Hand", "Purple Hand", r"purple"),
+    ("Blue Hand", "Blue Hand", r"blue"),
+    ("Yellow Hand", "Yellow Hand", r"yellow"),
+    ("Pale Hand", "Pale Hand", r"pale"),
+    ("Bicolor Hand", "Bicolor Hand", r"bicolor|binary"),
+    ("Static Hand", "Static Hand", r"static"),
+    ("Black Hand", "Black Hand", r"black"),
+    ("Hollow Hand", None, r"hollow|hidden|\?\?\?"),
+    ("Cyan Hand", "Cyan Hand", r"cyan"),
+]
+
+GOALS = {
+    "face3": r"beat (?:face 3|the game) as (.+?)\.?$",
+    "million": r"million pips as (.+?)\.?$",
+    "rush": r"beat dice ?rush as (.+?)\.?$",
+    "promotion": r"promoted as (.+?)\.?$",
+    "power6": r"power vi as (.+?)\.?$",
+}
+
+HAND_UNLOCKS: list[tuple[str, str, str | None]] = [
+    ("White Hand", "Unlocked from the start. Begins with a Reroll card.", None),
+    ("Red Hand", "Beat Face 1. White is your only hand at first, so you do it with White.", "White Hand"),
+    ("Green Hand", "Have at least 25 dice in your bag while playing Red Hand.", "Red Hand"),
+    ("Blue Hand", "Beat the Face 1 boss without taking any ring. Might take a few attempts.", None),
+    ("Purple Hand", "Have at least 5 enchanted dice in your bag (shops, Enchant cards or enchantment rooms).", None),
+    ("Yellow Hand", "Get a single die to 1000 extra value. D7, D8, D10, D12, Psychodie and Exodie stack it.", None),
+    ("Pale Hand", "Get every stamp multiplier to at least 1.5X.", None),
+    ("Bicolor Hand", "Defeat The Even and The Odd bosses 5 times each.", None),
+    ("Static Hand", "Reach the secret Static shop (see Dice Rush) and empty it.", None),
+    ("Hollow Hand", "Win a round with an empty bag, then show the Hollow Ring to the Phone Guy after the Face 3 boss.", None),
+    ("Black Hand", "Get the last promotion: promote on Power VI with any hand.", None),
+    ("Cyan Hand", "No source documents how to unlock this one yet.", None),
+]
+
+FACES_WARNING = (
+    "Sources disagree on the piece prices: the Miraheze wiki says 500 / 5,000 / 50,000 pips, "
+    "the Steam wiki says 500 / 50k / 1M. Bring plenty of pips."
+)
+
+STAGES: list[Stage] = [
+    Stage(
+        id="first-wins",
+        title="Learn the loop, beat Face 1",
+        goal="Win your first Face. This unlocks the Red Hand and starts the whole unlock chain.",
+        steps=[
+            Step(
+                title="Pay your first debt",
+                body="Every round asks for a pip target. Reach it with your rolls, then spend what is left in the shop.",
+                unlocks=["Sudoku"],
+            ),
+            Step(
+                title="Restart bad starts",
+                body="If the starting offer has no solid passive ring or strong die, hold R and restart. A weak start rarely survives the first Face.",
+            ),
+            Step(
+                title="Beat any boss, then Face 1",
+                body="Each Face ends with a boss that has a gimmick. Beating Face 1 unlocks the Red Hand.",
+                unlocks=["Star Ring", "Time Bomb", "Red Hand"],
+            ),
+            Step(
+                title="Lose on purpose when you are stuck",
+                body="Losing a run and losing to a boss each unlock something. Cheap to farm when a run is already dead.",
+                unlocks=["Consolation Prize", "Last Breath"],
+            ),
+        ],
+    ),
+    Stage(
+        id="beat-the-game",
+        title="Finish the game once",
+        goal="Beat Face 3. It opens challenges, Vortex and the shattered die that leads to the real finale.",
+        steps=[
+            Step(title="Beat Face 2", body="Beating Face 2 gives you the Mimic Die.", unlocks=["Mimic Die"]),
+            Step(
+                title="Beat Face 3",
+                body="Winning Face 3 counts as beating the game. It unlocks Challenges and the transition to Vortex, "
+                "and the first shattered die piece starts appearing in the Face 1 shop.",
+                unlocks=["Mahjong Tile"],
+            ),
+            Step(
+                title="Check the Strategy and Bosses sections",
+                body="Combos, build priorities and every boss gimmick are below. Most failed Face 3 runs die to a boss you did not plan for.",
+            ),
+        ],
+    ),
+    Stage(
+        id="hands",
+        title="Unlock every hand",
+        goal="Each hand changes hand size, rolls and rules, and most goals later are per hand.",
+        steps=[
+            Step(
+                title="Follow the unlock chain",
+                body="Red comes from Face 1, Green needs Red, and the rest have their own conditions. See the chain right below.",
+                unlocks=["Red Hand", "Green Hand", "Blue Hand", "Purple Hand", "Yellow Hand", "Pale Hand", "Bicolor Hand"],
+            ),
+            Step(
+                title="Blue Hand is the odd one",
+                body="Do not take rings in Face 1 and beat its boss. Do it early, it is the only hand locked behind a handicap.",
+            ),
+            Step(
+                title="Save Static, Hollow and Black for later",
+                body="They need the secret Static shop, an empty bag and a promotion respectively. Each has its own stage below.",
+            ),
+        ],
+    ),
+    Stage(
+        id="powers",
+        title="Climb the Power ladder",
+        goal="Powers I to VI make the game harder. Each hand climbs on its own.",
+        steps=[
+            Step(
+                title="Unlock Power N+1 per hand",
+                body="Beat Face 3 on Power N with a hand to unlock Power N+1 for that hand only. Challenges always play on Power 0.",
+            ),
+            Step(
+                title="Collect the Power gems",
+                body="Beating the game on Power I to VI gives one gem die each, Amethyst up to Jet.",
+                unlocks=["Amethyst", "Sapphire", "Emerald", "Amber", "Ruby", "Jet"],
+            ),
+            Step(
+                title="Expect curses from Power III",
+                body="From Power III every die has a 6% chance of being cursed. Magic Sponge removes curses.",
+            ),
+            Step(
+                title="Power VI per hand is the long grind",
+                body="Each hand has its own Power VI reward (matrix below). It is the hardest repeatable goal of the game.",
+            ),
+        ],
+    ),
+    Stage(
+        id="mastery",
+        title="Master each hand",
+        goal="Every hand has up to five goals. Each gives a die, ring or card.",
+        steps=[
+            Step(
+                title="Work through the matrix hand by hand",
+                body="Beat Face 3, reach 1M pips, beat Dice Rush, get promoted and beat Power VI. Pick the hand that fits your best build.",
+            ),
+            Step(
+                title="Weak hands first on Power 0",
+                body="Do Face 3 and 1M pips on easy settings, and push Power VI only with a build that already snowballs.",
+            ),
+        ],
+    ),
+    Stage(
+        id="dice-rush",
+        title="Open Dice Rush and the Static shop",
+        goal="Dice Rush is a separate mode unlocked mid-run. Clearing it with each hand gives a card.",
+        steps=[
+            Step(
+                title="Donate stars",
+                body="After a boss, donate stars at the shop until the message 'something changes in Face X' appears.",
+            ),
+            Step(
+                title="Go to the black cube",
+                body="A new node shows up on the map (a glitched spot). You need 25k pips to enter.",
+            ),
+            Step(
+                title="Static shop and Static Hand",
+                body="Inside, the Static shop lets you pay to unlock secrets. Sacrifice one die of each rarity "
+                "(common, uncommon, rare, legendary) and a chest with the Static Hand appears.",
+                unlocks=["Static Hand"],
+                warning="One source also says to reroll everything, buy every die and buy the gilded ring. "
+                "Both may be parts of the same shop.",
+            ),
+            Step(
+                title="Beat Dice Rush with every hand",
+                body="Each hand has a card as the reward, and Power VI has its own.",
+                unlocks=["Resurrect", "Ace of Stars"],
+            ),
+        ],
+    ),
+    Stage(
+        id="promotion",
+        title="Promotion: Faces 4 to 6",
+        goal="The deepest content documented. Collect all three shattered die pieces, then beat Face 6.",
+        steps=[
+            Step(
+                title="Buy piece 1 in the Face 1 shop",
+                body="After beating Face 3, the first piece appears in the Face 1 shop. Buy it and keep it in your bag.",
+                unlocks=["First Piece"],
+                warning=FACES_WARNING,
+            ),
+            Step(
+                title="Beat Face 3 holding piece 1",
+                body="That unlocks piece 2 in the Face 2 shops. Buy it. Each piece only appears if you owned the previous one when you beat Face 3.",
+                unlocks=["Second Piece"],
+            ),
+            Step(
+                title="Beat Face 3 holding both, buy piece 3",
+                body="Piece 3 sits in the Face 3 shop. Beat Face 3 with all three pieces and Face 4 opens.",
+                unlocks=["J's Die"],
+            ),
+            Step(
+                title="Beat Face 6 to get promoted",
+                body="Getting promoted gives each hand a die. Do it once per hand.",
+                warning="No source describes a cutscene or named ending. Promotion is the last step anyone has documented.",
+            ),
+            Step(
+                title="Black Hand: promote on Power VI",
+                body="The last promotion unlocks the Black Hand. Any hand works.",
+                unlocks=["Black Hand"],
+            ),
+        ],
+    ),
+    Stage(
+        id="hollow",
+        title="Hollow Hand and the Phone Guy",
+        goal="The trickiest secret. It needs an empty bag.",
+        steps=[
+            Step(
+                title="Empty your bag and win a round",
+                body="Remove every die (the last one cannot be sold). Keep a die that destroys itself, like Pinata or Porcelain Figurine, "
+                "and roll it. Exhausting does not count, they must be removed. Win the round anyway and you are offered the Hollow Ring.",
+                warning="Safest to do it right before the Face 3 boss with a lot of pips saved, to rebuy dice after.",
+            ),
+            Step(
+                title="Show a Hollow die or the ring to the Phone Guy",
+                body="After the Face 3 boss, show it to the phone guy. Hollow dice come from the Mega Die, the Hollow boss or the ring.",
+                unlocks=["Evil Eye"],
+            ),
+            Step(
+                title="Play the Hollow Hand to the phone",
+                body="Pick up the phone as Hollow Hand after Face 3 before rolling (take the arrow to the left). "
+                "Promote as Hollow Hand and answer the call afterwards.",
+                unlocks=["This number doesn't exist", "Message from the past", "Mystery Gift"],
+            ),
+        ],
+    ),
+    Stage(
+        id="vortex",
+        title="Vortex",
+        goal="An endless mode after Face 3. It gives no important unlocks, so play it when you like your build.",
+        steps=[
+            Step(
+                title="Reach the exit",
+                body="You enter it after Face 3. There are 13 levels in total. Reach the exit, level 4, 7 and 10 for the four achievements.",
+                unlocks=["The Vortex", "Vortex Apprentice", "Vortex Local", "Vortex Master"],
+            ),
+            Step(
+                title="Level 13 needs NaN",
+                body="Beating level 13 means reaching a number the game cannot represent. Don't rush it. A build you enjoy gets there on its own.",
+            ),
+        ],
+    ),
+    Stage(
+        id="challenges",
+        title="Challenges",
+        goal="Unlocked after beating the game once. They only give background visuals.",
+        steps=[
+            Step(title="Do them last", body="Challenges only unlock backgrounds, so move on to them once you are an experienced player."),
+            Step(title="Easy ones", body="I can't believe it's not a D6 and Natural 6 are regular runs. Ringless needs a strong early combo.", unlocks=["I can't believe it's not a D6", "Natural 6", "Ringless"]),
+            Step(title="Carlos was here", body="Roll packs until you find the Equity Ring.", unlocks=["Carlos was here"]),
+            Step(title="Peanuts!", body="Chase 666s with +6 stamps and multiplying dice.", unlocks=["Peanuts!"]),
+            Step(title="Glass Devourer", body="Enchant a Mega Die with Eternal (Enchant cards), then roll it once for infinite Hollow dice.", unlocks=["Glass Devourer"]),
+            Step(title="Blackjack", body="Look for Sapphire or Bomb plus multipliers and put every point into +6. Use a calculator.", unlocks=["Blackjack"]),
+            Step(title="Cursed! and ULTRAHARD", body="Easier than Power VI runs. Aim for multipliers.", unlocks=["Cursed!", "ULTRAHARD"]),
+        ],
+    ),
+    Stage(
+        id="cleanup",
+        title="Cleanup: odd secrets",
+        goal="Small unlocks that do not fit anywhere else.",
+        steps=[
+            Step(title="Echo Cube", body="Flick the falling dice in the main menu background. Pure luck and patience.", unlocks=["Echo Cube"]),
+            Step(title="Minidie", body="Manually remove a Double Dice (the die inside a die) in the shop.", unlocks=["Minidie"]),
+            Step(title="Dicecoin", body="Pass a round without rolling a single die.", unlocks=["Dicecoin"]),
+            Step(title="Pandora's Box and the rest", body="Everything else unlocks by playing. Look it up in the Index at the end.", unlocks=["Pandora's Box"]),
+        ],
+    ),
+]
+
+
+def match_hand(text: str) -> str | None:
+    for name, _icon, pattern in HANDS:
+        if re.search(pattern, text, re.I):
+            return name
+    return None
+
+
+def build_roadmap(achievements: list[Achievement]) -> Roadmap:
+    by_name = {a.name: a.id for a in achievements}
+
+    def resolve(names: list[str]) -> list[str]:
+        missing = [n for n in names if n not in by_name]
+        assert not missing, f"unknown achievements in roadmap: {missing}"
+        return [by_name[n] for n in names]
+
+    stages = [
+        stage.model_copy(
+            update={"steps": [s.model_copy(update={"unlocks": resolve(s.unlocks)}) for s in stage.steps]}
+        )
+        for stage in STAGES
+    ]
+    icons = {name: by_name[icon] if icon else None for name, icon, _ in HANDS}
+    hands = [
+        HandUnlock(name=n, icon=icons[n], requirement=req, after=after) for n, req, after in HAND_UNLOCKS
+    ]
+    rows = {name: HandGoal(hand=name, icon=icons[name]) for name, _icon, _p in HANDS}
+    for a in achievements:
+        for goal, pattern in GOALS.items():
+            m = re.search(pattern, a.how or "", re.I)
+            if m and (hand := match_hand(m.group(1))):
+                setattr(rows[hand], goal, a.id)
+    return Roadmap(stages=stages, hands=hands, goals=list(rows.values()))

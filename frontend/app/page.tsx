@@ -12,26 +12,26 @@ export default function Hub() {
         <span className="font-display text-2xl">Games Guide</span>
         <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-white/40">
           {String(GAMES.length).padStart(2, "0")}{" "}
-          {GAMES.length === 1 ? "guia" : "guias"}
+          {GAMES.length === 1 ? "guide" : "guides"}
         </span>
       </header>
 
       <main className="mx-auto max-w-6xl px-6 pb-24 pt-16">
         <h1 className="rise max-w-3xl font-display text-5xl leading-[1.02] md:text-7xl">
-          Guias de jogos, organizados e <em>fáceis de consultar</em>.
+          Game guides, organized and <em>easy to look up</em>.
         </h1>
         <p
           className="rise mt-5 max-w-xl text-muted-foreground"
           style={{ "--delay": "0.1s" } as React.CSSProperties}
         >
-          Cada jogo tem uma página própria, montada a partir de uma base de
-          conhecimento compilada e referenciada.
+          Every game gets its own page, built from a compiled and referenced
+          knowledge base.
         </p>
 
         {GAMES.length === 0 ? (
           <p className="mt-16 rounded-2xl border border-dashed border-border p-8 text-sm text-muted-foreground">
-            Nenhum guia ainda. Crie um com{" "}
-            <code className="font-mono">just new-game &lt;id&gt; &quot;Nome&quot;</code>.
+            No guides yet. Create one with{" "}
+            <code className="font-mono">just new-game &lt;id&gt; &quot;Name&quot;</code>.
           </p>
         ) : (
           <div className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

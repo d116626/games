@@ -1,0 +1,534 @@
+{
+  "stages": [
+    {
+      "id": "first-wins",
+      "title": "Learn the loop, beat Face 1",
+      "goal": "Win your first Face. This unlocks the Red Hand and starts the whole unlock chain.",
+      "steps": [
+        {
+          "title": "Pay your first debt",
+          "body": "Every round asks for a pip target. Reach it with your rolls, then spend what is left in the shop.",
+          "unlocks": [
+            "79b525787a3879c36a4fa58abcbc47d4faa0808d"
+          ]
+        },
+        {
+          "title": "Restart bad starts",
+          "body": "If the starting offer has no solid passive ring or strong die, hold R and restart. A weak start rarely survives the first Face.",
+          "unlocks": []
+        },
+        {
+          "title": "Beat any boss, then Face 1",
+          "body": "Each Face ends with a boss that has a gimmick. Beating Face 1 unlocks the Red Hand.",
+          "unlocks": [
+            "d379b36b811eff61462be12a818431a1f8353165",
+            "1405a8b7e0292d07bc4b85af46a33ee14eadd89c",
+            "7346fae634765c162c827b75c9961a7088a93289"
+          ]
+        },
+        {
+          "title": "Lose on purpose when you are stuck",
+          "body": "Losing a run and losing to a boss each unlock something. Cheap to farm when a run is already dead.",
+          "unlocks": [
+            "fb22ee7c2b536919db28286e7a13f8d0f7533c2d",
+            "853ba2f6aa759147793a53b5db4bbb41d6366ca9"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beat-the-game",
+      "title": "Finish the game once",
+      "goal": "Beat Face 3. It opens challenges, Vortex and the shattered die that leads to the real finale.",
+      "steps": [
+        {
+          "title": "Beat Face 2",
+          "body": "Beating Face 2 gives you the Mimic Die.",
+          "unlocks": [
+            "f5e0b8565a9095b2acf4496a53592aebcef4cff2"
+          ]
+        },
+        {
+          "title": "Beat Face 3",
+          "body": "Winning Face 3 counts as beating the game. It unlocks Challenges and the transition to Vortex, and the first shattered die piece starts appearing in the Face 1 shop.",
+          "unlocks": [
+            "68deb338fc7b8abe403cb1d2542ca3f763752fa6"
+          ]
+        },
+        {
+          "title": "Check the Strategy and Bosses sections",
+          "body": "Combos, build priorities and every boss gimmick are below. Most failed Face 3 runs die to a boss you did not plan for.",
+          "unlocks": []
+        }
+      ]
+    },
+    {
+      "id": "hands",
+      "title": "Unlock every hand",
+      "goal": "Each hand changes hand size, rolls and rules, and most goals later are per hand.",
+      "steps": [
+        {
+          "title": "Follow the unlock chain",
+          "body": "Red comes from Face 1, Green needs Red, and the rest have their own conditions. See the chain right below.",
+          "unlocks": [
+            "7346fae634765c162c827b75c9961a7088a93289",
+            "ac595c598e6820feed1da2202090c1d86c4c3f5f",
+            "0a9c3e07d48147861d394ed8a6c88b7f1594eae4",
+            "163fa62efd5043f54abbdabd14c063dd1904ec5d",
+            "3e969d87795fa848d4377ecb2093ab0cfc68b354",
+            "ef35c8a8415bffcf67feec7340f2e2db703b405d",
+            "2f492fdaee204f05fc661728edca08103c7d4de8"
+          ]
+        },
+        {
+          "title": "Blue Hand is the odd one",
+          "body": "Do not take rings in Face 1 and beat its boss. Do it early, it is the only hand locked behind a handicap.",
+          "unlocks": []
+        },
+        {
+          "title": "Save Static, Hollow and Black for later",
+          "body": "They need the secret Static shop, an empty bag and a promotion respectively. Each has its own stage below.",
+          "unlocks": []
+        }
+      ]
+    },
+    {
+      "id": "powers",
+      "title": "Climb the Power ladder",
+      "goal": "Powers I to VI make the game harder. Each hand climbs on its own.",
+      "steps": [
+        {
+          "title": "Unlock Power N+1 per hand",
+          "body": "Beat Face 3 on Power N with a hand to unlock Power N+1 for that hand only. Challenges always play on Power 0.",
+          "unlocks": []
+        },
+        {
+          "title": "Collect the Power gems",
+          "body": "Beating the game on Power I to VI gives one gem die each, Amethyst up to Jet.",
+          "unlocks": [
+            "16382e22cb6a5eae572db6cf4c6d4719a69974dc",
+            "e66966bc12b60a78383e0d4dac3444d85cef2206",
+            "99f752ef2e14af8606a7ff5fff2a4e4f699290d3",
+            "24223832639e5bbf617618f238210eb76d2e07ee",
+            "e45a88b0a26abf358a7495cffafc4264535c4926",
+            "67a9301f8ad5a7135d58dc09b62ab737a8bf40e3"
+          ]
+        },
+        {
+          "title": "Expect curses from Power III",
+          "body": "From Power III every die has a 6% chance of being cursed. Magic Sponge removes curses.",
+          "unlocks": []
+        },
+        {
+          "title": "Power VI per hand is the long grind",
+          "body": "Each hand has its own Power VI reward (matrix below). It is the hardest repeatable goal of the game.",
+          "unlocks": []
+        }
+      ]
+    },
+    {
+      "id": "mastery",
+      "title": "Master each hand",
+      "goal": "Every hand has up to five goals. Each gives a die, ring or card.",
+      "steps": [
+        {
+          "title": "Work through the matrix hand by hand",
+          "body": "Beat Face 3, reach 1M pips, beat Dice Rush, get promoted and beat Power VI. Pick the hand that fits your best build.",
+          "unlocks": []
+        },
+        {
+          "title": "Weak hands first on Power 0",
+          "body": "Do Face 3 and 1M pips on easy settings, and push Power VI only with a build that already snowballs.",
+          "unlocks": []
+        }
+      ]
+    },
+    {
+      "id": "dice-rush",
+      "title": "Open Dice Rush and the Static shop",
+      "goal": "Dice Rush is a separate mode unlocked mid-run. Clearing it with each hand gives a card.",
+      "steps": [
+        {
+          "title": "Donate stars",
+          "body": "After a boss, donate stars at the shop until the message 'something changes in Face X' appears.",
+          "unlocks": []
+        },
+        {
+          "title": "Go to the black cube",
+          "body": "A new node shows up on the map (a glitched spot). You need 25k pips to enter.",
+          "unlocks": []
+        },
+        {
+          "title": "Static shop and Static Hand",
+          "body": "Inside, the Static shop lets you pay to unlock secrets. Sacrifice one die of each rarity (common, uncommon, rare, legendary) and a chest with the Static Hand appears.",
+          "unlocks": [
+            "fc3d62b880f88d04a6fe0e7e52fc6fe6b6d889bd"
+          ],
+          "warning": "One source also says to reroll everything, buy every die and buy the gilded ring. Both may be parts of the same shop."
+        },
+        {
+          "title": "Beat Dice Rush with every hand",
+          "body": "Each hand has a card as the reward, and Power VI has its own.",
+          "unlocks": [
+            "a60656aacdb67f5a584422f02f6b3a7cf7044e1e",
+            "3bedef084e4166c69b7584739f8c40849e0a4b25"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "promotion",
+      "title": "Promotion: Faces 4 to 6",
+      "goal": "The deepest content documented. Collect all three shattered die pieces, then beat Face 6.",
+      "steps": [
+        {
+          "title": "Buy piece 1 in the Face 1 shop",
+          "body": "After beating Face 3, the first piece appears in the Face 1 shop. Buy it and keep it in your bag.",
+          "unlocks": [
+            "d66f88612c1177de5d9b59457c42f99e7c33d902"
+          ],
+          "warning": "Sources disagree on the piece prices: the Miraheze wiki says 500 / 5,000 / 50,000 pips, the Steam wiki says 500 / 50k / 1M. Bring plenty of pips."
+        },
+        {
+          "title": "Beat Face 3 holding piece 1",
+          "body": "That unlocks piece 2 in the Face 2 shops. Buy it. Each piece only appears if you owned the previous one when you beat Face 3.",
+          "unlocks": [
+            "b3217628ba845b4569ee5be2fe55fc6f3e7a7c96"
+          ]
+        },
+        {
+          "title": "Beat Face 3 holding both, buy piece 3",
+          "body": "Piece 3 sits in the Face 3 shop. Beat Face 3 with all three pieces and Face 4 opens.",
+          "unlocks": [
+            "ef747f0f192c69a754e7c7ed9f99fd3743b484c7"
+          ]
+        },
+        {
+          "title": "Beat Face 6 to get promoted",
+          "body": "Getting promoted gives each hand a die. Do it once per hand.",
+          "unlocks": [],
+          "warning": "No source describes a cutscene or named ending. Promotion is the last step anyone has documented."
+        },
+        {
+          "title": "Black Hand: promote on Power VI",
+          "body": "The last promotion unlocks the Black Hand. Any hand works.",
+          "unlocks": [
+            "e899926ea2317c7a595b9d667dd78586f844d839"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hollow",
+      "title": "Hollow Hand and the Phone Guy",
+      "goal": "The trickiest secret. It needs an empty bag.",
+      "steps": [
+        {
+          "title": "Empty your bag and win a round",
+          "body": "Remove every die (the last one cannot be sold). Keep a die that destroys itself, like Pinata or Porcelain Figurine, and roll it. Exhausting does not count, they must be removed. Win the round anyway and you are offered the Hollow Ring.",
+          "unlocks": [],
+          "warning": "Safest to do it right before the Face 3 boss with a lot of pips saved, to rebuy dice after."
+        },
+        {
+          "title": "Show a Hollow die or the ring to the Phone Guy",
+          "body": "After the Face 3 boss, show it to the phone guy. Hollow dice come from the Mega Die, the Hollow boss or the ring.",
+          "unlocks": [
+            "4c0e0bd831603ea83d07af455035332aeb559161"
+          ]
+        },
+        {
+          "title": "Play the Hollow Hand to the phone",
+          "body": "Pick up the phone as Hollow Hand after Face 3 before rolling (take the arrow to the left). Promote as Hollow Hand and answer the call afterwards.",
+          "unlocks": [
+            "f2d31fb9fc5d809989049834d6509418bc5e366e",
+            "a9f845d6656783738d513d926c6a45d5adcb1bce",
+            "805d39c4bc9b9783fa4224320e7cc94bfde18138"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vortex",
+      "title": "Vortex",
+      "goal": "An endless mode after Face 3. It gives no important unlocks, so play it when you like your build.",
+      "steps": [
+        {
+          "title": "Reach the exit",
+          "body": "You enter it after Face 3. There are 13 levels in total. Reach the exit, level 4, 7 and 10 for the four achievements.",
+          "unlocks": [
+            "da1efe21a4e710743633f5c9059856ac898e1151",
+            "6a905350f11dedb4d35816e94d25c334d6fe945d",
+            "35054d549d84bc8a36e1b9161d1e0272ad8b3863",
+            "bf31ca0303b8e1ab2bc2c700039474fcf1b5e6fc"
+          ]
+        },
+        {
+          "title": "Level 13 needs NaN",
+          "body": "Beating level 13 means reaching a number the game cannot represent. Don't rush it. A build you enjoy gets there on its own.",
+          "unlocks": []
+        }
+      ]
+    },
+    {
+      "id": "challenges",
+      "title": "Challenges",
+      "goal": "Unlocked after beating the game once. They only give background visuals.",
+      "steps": [
+        {
+          "title": "Do them last",
+          "body": "Challenges only unlock backgrounds, so move on to them once you are an experienced player.",
+          "unlocks": []
+        },
+        {
+          "title": "Easy ones",
+          "body": "I can't believe it's not a D6 and Natural 6 are regular runs. Ringless needs a strong early combo.",
+          "unlocks": [
+            "faf766059871085348485ec280cc9105289c9f79",
+            "5e8a85e0282bbbd596bf4efd36580fc3bd8d1831",
+            "e9b2dfb96f7b69769419d4e0d3cd28aacc402794"
+          ]
+        },
+        {
+          "title": "Carlos was here",
+          "body": "Roll packs until you find the Equity Ring.",
+          "unlocks": [
+            "b717cfb09b37d257c880e2ad85d09180bfa35288"
+          ]
+        },
+        {
+          "title": "Peanuts!",
+          "body": "Chase 666s with +6 stamps and multiplying dice.",
+          "unlocks": [
+            "676fa0ce13fe76102b071e31bbb5e73df959034c"
+          ]
+        },
+        {
+          "title": "Glass Devourer",
+          "body": "Enchant a Mega Die with Eternal (Enchant cards), then roll it once for infinite Hollow dice.",
+          "unlocks": [
+            "7ce4418f34d0244db1e6b19d602fa5007ad045de"
+          ]
+        },
+        {
+          "title": "Blackjack",
+          "body": "Look for Sapphire or Bomb plus multipliers and put every point into +6. Use a calculator.",
+          "unlocks": [
+            "243a4290666fbf88ae00238085565d232db851ea"
+          ]
+        },
+        {
+          "title": "Cursed! and ULTRAHARD",
+          "body": "Easier than Power VI runs. Aim for multipliers.",
+          "unlocks": [
+            "ea8aa88d40106018f25d6e9477344fddd1c7bb34",
+            "8b5be9d30104d823e8c17e3b0ea4d90418d71e0e"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cleanup",
+      "title": "Cleanup: odd secrets",
+      "goal": "Small unlocks that do not fit anywhere else.",
+      "steps": [
+        {
+          "title": "Echo Cube",
+          "body": "Flick the falling dice in the main menu background. Pure luck and patience.",
+          "unlocks": [
+            "14261cc5262b390c2d74719f32ff45458bbbff70"
+          ]
+        },
+        {
+          "title": "Minidie",
+          "body": "Manually remove a Double Dice (the die inside a die) in the shop.",
+          "unlocks": [
+            "3f7a0ecaddbf1c9a7b14dd5d78ddcdbd58959cb6"
+          ]
+        },
+        {
+          "title": "Dicecoin",
+          "body": "Pass a round without rolling a single die.",
+          "unlocks": [
+            "c52da8d685b3f2a88713c33cb27e915244b90a7b"
+          ]
+        },
+        {
+          "title": "Pandora's Box and the rest",
+          "body": "Everything else unlocks by playing. Look it up in the Index at the end.",
+          "unlocks": [
+            "ac8f56f61d81b94e7297a4734acae7b1df2e84c0"
+          ]
+        }
+      ]
+    }
+  ],
+  "hands": [
+    {
+      "name": "White Hand",
+      "requirement": "Unlocked from the start. Begins with a Reroll card."
+    },
+    {
+      "name": "Red Hand",
+      "icon": "7346fae634765c162c827b75c9961a7088a93289",
+      "requirement": "Beat Face 1. White is your only hand at first, so you do it with White.",
+      "after": "White Hand"
+    },
+    {
+      "name": "Green Hand",
+      "icon": "ac595c598e6820feed1da2202090c1d86c4c3f5f",
+      "requirement": "Have at least 25 dice in your bag while playing Red Hand.",
+      "after": "Red Hand"
+    },
+    {
+      "name": "Blue Hand",
+      "icon": "0a9c3e07d48147861d394ed8a6c88b7f1594eae4",
+      "requirement": "Beat the Face 1 boss without taking any ring. Might take a few attempts."
+    },
+    {
+      "name": "Purple Hand",
+      "icon": "163fa62efd5043f54abbdabd14c063dd1904ec5d",
+      "requirement": "Have at least 5 enchanted dice in your bag (shops, Enchant cards or enchantment rooms)."
+    },
+    {
+      "name": "Yellow Hand",
+      "icon": "3e969d87795fa848d4377ecb2093ab0cfc68b354",
+      "requirement": "Get a single die to 1000 extra value. D7, D8, D10, D12, Psychodie and Exodie stack it."
+    },
+    {
+      "name": "Pale Hand",
+      "icon": "ef35c8a8415bffcf67feec7340f2e2db703b405d",
+      "requirement": "Get every stamp multiplier to at least 1.5X."
+    },
+    {
+      "name": "Bicolor Hand",
+      "icon": "2f492fdaee204f05fc661728edca08103c7d4de8",
+      "requirement": "Defeat The Even and The Odd bosses 5 times each."
+    },
+    {
+      "name": "Static Hand",
+      "icon": "fc3d62b880f88d04a6fe0e7e52fc6fe6b6d889bd",
+      "requirement": "Reach the secret Static shop (see Dice Rush) and empty it."
+    },
+    {
+      "name": "Hollow Hand",
+      "requirement": "Win a round with an empty bag, then show the Hollow Ring to the Phone Guy after the Face 3 boss."
+    },
+    {
+      "name": "Black Hand",
+      "icon": "e899926ea2317c7a595b9d667dd78586f844d839",
+      "requirement": "Get the last promotion: promote on Power VI with any hand."
+    },
+    {
+      "name": "Cyan Hand",
+      "icon": "6a41d5f8acf75887c32a977b9e95bc0b83149358",
+      "requirement": "No source documents how to unlock this one yet."
+    }
+  ],
+  "goals": [
+    {
+      "hand": "White Hand",
+      "face3": "217858902b90fc427cc0e1628d2b924852d7f7c7",
+      "million": "c56f89771e2a9ab528ff30bed68299c2b4c88475",
+      "rush": "d71b0656fd3b503e9f13f70865697529b8788f1d",
+      "promotion": "a0cd15d47fc92bed54ff7fb0ab5db680b3196060",
+      "power6": "b8a02f31b6014b0b90cb4e26fab8acf3f68a4cd4"
+    },
+    {
+      "hand": "Red Hand",
+      "icon": "7346fae634765c162c827b75c9961a7088a93289",
+      "face3": "a7c45b979c0136e2dd878ab46aa38aac986d68a0",
+      "million": "b919e57d88b65e0c95e88d2435afbc3377335d82",
+      "rush": "2ad252c1db26500d1a2ff977c36da70244f771d6",
+      "promotion": "5b0cc1b6884fc6d8693dc6f2c23f775e010e858b",
+      "power6": "4206223db9df16474b19f7343fcd6854934f24df"
+    },
+    {
+      "hand": "Green Hand",
+      "icon": "ac595c598e6820feed1da2202090c1d86c4c3f5f",
+      "face3": "246a98304b63874c303e5723eb715f8b21f97573",
+      "million": "dd865944edb4217b3aed9d0ae94b91181a740d9f",
+      "rush": "2715bd9b25fefa6b9d95056d7172065b22edcefb",
+      "promotion": "96d7f55b4b3466420e316707e4dcfe44b6e45af9",
+      "power6": "1b102612e8c2d29330b5e0863152c54c8f8120ee"
+    },
+    {
+      "hand": "Purple Hand",
+      "icon": "163fa62efd5043f54abbdabd14c063dd1904ec5d",
+      "face3": "53f3aef27b39deb00298fb4f5d56c5f51af9b977",
+      "million": "51e64fd70d57134fc1a6f3d57ccad82f222954ee",
+      "rush": "f75ad62b287196e66fb963d756629ed97cc8a59b",
+      "promotion": "a51fe4e13a537397f96f81c035e09e7e8ae6f24d",
+      "power6": "e27481db6288f925b08ac5629d963cf1df3562e0"
+    },
+    {
+      "hand": "Blue Hand",
+      "icon": "0a9c3e07d48147861d394ed8a6c88b7f1594eae4",
+      "face3": "53425645e8d8861e1390ad78b6d3576a92e44da2",
+      "million": "fd00bfe232ce02dd4827d4407a21412140a34698",
+      "rush": "f9670e9a6df00336bd320d373ebdbed7d0ade09b",
+      "promotion": "86cea92f48cd6246c957049d6b889c0ed0226cbd",
+      "power6": "4691347c6174e8ba5af0e1cb28fe521b8c80ad7d"
+    },
+    {
+      "hand": "Yellow Hand",
+      "icon": "3e969d87795fa848d4377ecb2093ab0cfc68b354",
+      "face3": "5d6c89b265ae9e1b79cc618b50f505f274dc932d",
+      "million": "6954c33686ef4c033dc9e9e90bd8b85564a2c2c4",
+      "rush": "11efc579c6c317348e862e93e1d31e947021aeb8",
+      "promotion": "8cd3e1ed2367863df488255a8235e158aff58f1e",
+      "power6": "a17cef086fd914f5af35a349a2c1c04e70106b2d"
+    },
+    {
+      "hand": "Pale Hand",
+      "icon": "ef35c8a8415bffcf67feec7340f2e2db703b405d",
+      "face3": "68689ff714b01929f261bde8458190d1be44e121",
+      "million": "ad7cc93416fbd7e8c63b44cdce58e495a6efab0a",
+      "rush": "470b1bba4573b2f452f1a2bdd96fedc71523958c",
+      "promotion": "3abf0fe9eccbd1f754281a993f551053883ccdab",
+      "power6": "844f46fab5b9ba6731aec1d1922e9fefb5000561"
+    },
+    {
+      "hand": "Bicolor Hand",
+      "icon": "2f492fdaee204f05fc661728edca08103c7d4de8",
+      "face3": "305d412b7319ae699d9d54f9541af739ca571e86",
+      "million": "3c7608ce00f86fdf1d92d9b7c55dd028941a252d",
+      "rush": "a76658941086ef65a8bcad0647f41d45195b76b6",
+      "promotion": "9654a99654afb7d5278bd27239ac3c4765f450e1",
+      "power6": "03feb0ff46f2d8ea9b22351708a3d61b68b1398a"
+    },
+    {
+      "hand": "Static Hand",
+      "icon": "fc3d62b880f88d04a6fe0e7e52fc6fe6b6d889bd",
+      "face3": "9f318ed2d6b6f03db7d07fb724148cf8f37a0cfc",
+      "million": "03ef4c3835e2634ce8e4008dc4cb884572474522",
+      "rush": "96b6174e89e0331760b7c5694966186673d91d3e",
+      "promotion": "65ec187156b0b2da4e273ea03d9f96d7a75ffda6",
+      "power6": "27f54fe8f38281ed8900bada7491f007406cf184"
+    },
+    {
+      "hand": "Black Hand",
+      "icon": "e899926ea2317c7a595b9d667dd78586f844d839",
+      "face3": "93fc00e5e9990f6f3c603b205d981e446652307e",
+      "million": "74ad0433d709fd3c5d0aef5c3d37c57c53854253",
+      "rush": "85aba602549a7f5190081106b17155b3e8250e5e",
+      "promotion": "1d92bcf0590552939597448eb0b3f692bbcedd0d",
+      "power6": "82e7d82d65497b64f987da57c511eaccae537924"
+    },
+    {
+      "hand": "Hollow Hand",
+      "face3": "cfaf0318e06415260c1b027bad3567f48cf4bdf9",
+      "million": "b94d1056aedd26b1f49a21da735269a21118a346",
+      "rush": "c679cbc3868424350bc94d7bf98672f052bbc509",
+      "promotion": "805d39c4bc9b9783fa4224320e7cc94bfde18138",
+      "power6": "96b937964d289e80df13c56f25494d0700fa3a6c"
+    },
+    {
+      "hand": "Cyan Hand",
+      "icon": "6a41d5f8acf75887c32a977b9e95bc0b83149358",
+      "face3": "001aed70f9e063a793c3c187326c08be9e6b8e33",
+      "million": "8beb63d22a3c9bb6ebda2594c29440dc3dcd5981",
+      "rush": "4f38cfd0729592ec3f477cae4f19741d7d0ef0d0",
+      "power6": "5724d3a58c3f0be651081e3802c35676da9ba39c"
+    }
+  ]
+}

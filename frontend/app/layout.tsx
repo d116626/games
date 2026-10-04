@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Games Guide",
   description:
-    "Guias de jogos: conhecimento compilado, organizado e visualmente intuitivo.",
+    "Game guides: compiled knowledge, organized and visually intuitive.",
 };
 
 export const viewport: Viewport = {
@@ -32,7 +32,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html
-      lang="pt-BR"
+      lang="en"
       className={`dark ${geistSans.variable} ${geistMono.variable} ${instrumentSerif.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">

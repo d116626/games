@@ -53,7 +53,7 @@ def main(game_id: str, name: str) -> None:
 export const game: Game = {{
   slug: "{game_id}",
   name: "{name}",
-  tagline: "Guia rápido de {name}.",
+  tagline: "Quick guide to {name}.",
   description: "",
   tags: [],
   accent: "#7aa7ff",
@@ -70,7 +70,7 @@ export const metadata = {{ title: `${{game.name}} · Games Guide` }};
 export default function Page() {{
   return (
     <GameShell game={{game}}>
-      <p className="text-muted-foreground">Em construção.</p>
+      <p className="text-muted-foreground">Under construction.</p>
     </GameShell>
   );
 }}

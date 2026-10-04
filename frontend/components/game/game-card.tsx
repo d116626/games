@@ -1,5 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
+import { GameImage } from "@/components/game/game-image";
 import type { Game } from "@/games/types";
 
 export function GameCard({ game, index }: { game: Game; index: number }) {
@@ -9,6 +10,13 @@ export function GameCard({ game, index }: { game: Game; index: number }) {
       className="rise group relative flex flex-col gap-3 overflow-hidden rounded-2xl border border-border bg-card p-6 transition-colors hover:border-white/30"
       style={{ "--delay": `${0.1 + index * 0.06}s` } as React.CSSProperties}
     >
+      {game.cover && (
+        <GameImage
+          src={game.cover}
+          alt=""
+          className="-mx-6 -mt-6 mb-1 h-32 w-[calc(100%+3rem)] max-w-none object-cover opacity-90 transition-opacity group-hover:opacity-100"
+        />
+      )}
       <div
         aria-hidden
         className="absolute inset-x-0 top-0 h-px"

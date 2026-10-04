@@ -1,0 +1,75 @@
+{
+  "name": "Dice A Million",
+  "sources": [
+    {
+      "title": "Combos and strategies (Steam)",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3708947050"
+    },
+    {
+      "title": "Community wiki (Steam)",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3706141055"
+    },
+    {
+      "title": "100% achievements guide (Steam)",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3687261600",
+      "note": "by silver"
+    },
+    {
+      "title": "Steam achievements and store page",
+      "url": "https://steamcommunity.com/stats/3430340/achievements",
+      "note": "official list, icons and artwork"
+    },
+    {
+      "title": "Hidden unlocks discussion (Steam)",
+      "url": "https://steamcommunity.com/app/3430340/discussions/0/802341195824084015/",
+      "note": "Hollow Hand, Static shop, Black Hand"
+    },
+    {
+      "title": "Dice A Million wiki (Miraheze)",
+      "url": "https://diceamillion.miraheze.org/wiki/Shattered_Die",
+      "note": "shattered die, Powers, Hollow Ring, Black Hand"
+    },
+    {
+      "title": "Achievements guide (GamerBlurb)",
+      "url": "https://gamerblurb.com/articles/dice-a-million-achievements-guide"
+    },
+    {
+      "title": "Dice A Million Beginners Guide",
+      "url": "https://www.neonlightsmedia.com/blog/dice-a-million-beginners-guide-tips",
+      "note": "Neon Lights Media"
+    }
+  ],
+  "links": [],
+  "images": [
+    {
+      "src": "games/dice-a-million/hero.jpg",
+      "alt": "Dice A Million key art",
+      "credit": "Steam / countlessnights"
+    },
+    {
+      "src": "games/dice-a-million/logo.png",
+      "alt": "Dice A Million logo",
+      "credit": "Steam / countlessnights"
+    },
+    {
+      "src": "games/dice-a-million/screens/0.jpg",
+      "alt": "Gameplay screenshot 1",
+      "credit": "Steam / countlessnights"
+    },
+    {
+      "src": "games/dice-a-million/screens/1.jpg",
+      "alt": "Gameplay screenshot 2",
+      "credit": "Steam / countlessnights"
+    },
+    {
+      "src": "games/dice-a-million/screens/2.jpg",
+      "alt": "Gameplay screenshot 3",
+      "credit": "Steam / countlessnights"
+    },
+    {
+      "src": "games/dice-a-million/screens/3.jpg",
+      "alt": "Gameplay screenshot 4",
+      "credit": "Steam / countlessnights"
+    }
+  ]
+}

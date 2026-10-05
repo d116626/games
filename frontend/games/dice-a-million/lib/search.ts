@@ -18,10 +18,11 @@ export const searchEntries: SearchEntry[] = [
     id: `boss-${b.name}`,
     kind: "Boss",
     name: b.name,
-    text: [b.effect, b.empowered && `Empowered: ${b.empowered}`].filter(Boolean).join(" "),
+    text: [b.effect, b.tips && `Tip: ${b.tips}`, b.empowered && `Empowered: ${b.empowered}`].filter(Boolean).join(" "),
     href: "#bosses",
   })),
   ...bestiary.enemyDice.map((d) => ({ id: `enemy-${d.name}`, kind: "Enemy die", name: d.name, text: d.effect, href: "#bosses" })),
+  ...bestiary.curses.map((c) => ({ id: `curse-${c.name}`, kind: "Curse", name: c.name, text: c.effect, href: "#index" })),
   ...bestiary.enchantments.map((e) => ({ id: `ench-${e.name}`, kind: "Enchantment", name: e.name, text: e.effect, href: "#index" })),
   ...strategy.flatMap((g) =>
     g.tips.map((t, i) => ({ id: `tip-${g.title}-${i}`, kind: "Strategy", name: g.title, text: t, href: "#strategy" })),

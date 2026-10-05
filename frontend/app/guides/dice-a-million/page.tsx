@@ -26,7 +26,7 @@ export default function Page() {
           <Hero />
           <GuideSearch entries={searchEntries} />
         </>
-      } sections={SECTIONS} sources={meta.sources}>
+      } sections={SECTIONS} sources={meta.sources} updated={meta.updated} issuesUrl="https://github.com/d116626/games/issues/new">
       <Section id="roadmap" index={1} title="Roadmap to 100%" count={roadmap.stages.length}>
         <Roadmap />
       </Section>

@@ -7,7 +7,7 @@ Onde as fontes divergem ou não dizem nada, o passo leva um `warning`.
 
 import re
 
-from utils.games.dice_a_million.schemas import Achievement, HandGoal, HandUnlock, Roadmap, Stage, Step
+from utils.games.dice_a_million.schemas import Achievement, CatalogItem, HandGoal, HandUnlock, Roadmap, Stage, Step
 
 # (nome da mão, nome da conquista com o ícone | None, regex que a identifica no texto das conquistas)
 HANDS: list[tuple[str, str | None, str]] = [
@@ -41,12 +41,42 @@ HAND_UNLOCKS: list[tuple[str, str, str | None]] = [
     ("Purple Hand", "Have at least 5 enchanted dice in your bag (shops, Enchant cards or enchantment rooms).", None),
     ("Yellow Hand", "Get a single die to 1000 extra value. D7, D8, D10, D12, Psychodie and Exodie stack it.", None),
     ("Pale Hand", "Get every stamp multiplier to at least 1.5X.", None),
-    ("Bicolor Hand", "Defeat The Even and The Odd bosses 5 times each.", None),
+    ("Bicolor Hand", "Defeat The Even and The Odd bosses 5 times each. Bicolor itself never meets them, so use another hand.", None),
     ("Static Hand", "Reach the secret Static shop (see Dice Rush) and empty it.", None),
     ("Hollow Hand", "Win a round with an empty bag, then show the Hollow Ring to the Phone Guy after the Face 3 boss.", None),
     ("Black Hand", "Get the last promotion: promote on Power VI with any hand.", None),
-    ("Cyan Hand", "No source documents how to unlock this one yet.", None),
+    ("Cyan Hand", "Not documented. A patch note mentions fixing 'the new hand not unlocking when going to The Vortex', so entering The Vortex is the likely unlock.", None),
 ]
+
+# Dados iniciais e dicas, só onde a wiki Miraheze documenta a mão.
+HAND_NOTES: dict[str, tuple[str, list[str]]] = {
+    "White Hand": ("8 D3 and 5 D4", ["No special rule, so there are no hand-specific synergies."]),
+    "Red Hand": ("8 Bottle Caps", ["Works well with a small-hand combo."]),
+    "Blue Hand": (
+        "10 D3, 1 D6 and 1 D10",
+        [
+            "Extra ring slots let you hoard rings for future synergies and discard the weak ones more freely.",
+            "Rare rings show up more often, so _r1ng and Fractal Ring are likelier.",
+        ],
+    ),
+    "Bicolor Hand": (
+        "",
+        ["Has 6 hand size and 6 dice per turn. Every roll must be all odd or all even, or every die is discarded.", "The Even and The Odd never appear when you play it."],
+    ),
+    "Cyan Hand": (
+        "",
+        ["Added in patch 1.1 with its own combo mechanic and a special Power V modifier. No source describes the rules yet.", "The Capricious and The Glutton never appear when you play it."],
+    ),
+    "Black Hand": (
+        "10 D6 and 5 random occult dice (never Psi or Epsilon)",
+        [
+            "The early game is tough because you start at 0.2 power. Roll occult dice early to raise it.",
+            "Keep about 4 occult dice in the bag at once, more will clog it.",
+            "Scales well with high-value dice like Pinata or D666 once your power is up.",
+            "J's Die and Shattered Die are occult dice with no downside, but they are removed after Face 3 if you go for a promotion.",
+        ],
+    ),
+}
 
 FACES_WARNING = (
     "Sources disagree on the piece prices: the Miraheze wiki says 500 / 5,000 / 50,000 pips, "
@@ -83,7 +113,7 @@ STAGES: list[Stage] = [
     Stage(
         id="beat-the-game",
         title="Finish the game once",
-        goal="Beat Face 3. It opens challenges, Vortex and the shattered die that leads to the real finale.",
+        goal="Beat Face 3. It opens challenges, Vortex and the shattered die that leads to Faces 4 to 6.",
         steps=[
             Step(title="Beat Face 2", body="Beating Face 2 gives you the Mimic Die.", unlocks=["Mimic Die"]),
             Step(
@@ -91,6 +121,11 @@ STAGES: list[Stage] = [
                 body="Winning Face 3 counts as beating the game. It unlocks Challenges and the transition to Vortex, "
                 "and the first shattered die piece starts appearing in the Face 1 shop.",
                 unlocks=["Mahjong Tile"],
+            ),
+            Step(
+                title="Reroll a boss that wrecks your build",
+                body="On the map, before a boss round, you can banish that boss for the rest of the run. "
+                "The first reroll in a run is free, every one after that permanently costs 2 max ring slots (patch 1.0.25).",
             ),
             Step(
                 title="Check the Strategy and Bosses sections",
@@ -135,6 +170,12 @@ STAGES: list[Stage] = [
             Step(
                 title="Expect curses from Power III",
                 body="From Power III every die has a 6% chance of being cursed. Magic Sponge removes curses.",
+            ),
+            Step(
+                title="Power IV raises later rounds",
+                body="The developer compares the boss reroll penalty to what Power IV does: it raises the value of every later round.",
+                warning="Each level adds one stacking rule and some add exclusive mechanics, but no source lists every level. "
+                "Cyan Hand also has a special Power V modifier. Only curses (Power III) and this Power IV effect are documented.",
             ),
             Step(
                 title="Power VI per hand is the long grind",
@@ -210,7 +251,7 @@ STAGES: list[Stage] = [
             Step(
                 title="Beat Face 6 to get promoted",
                 body="Getting promoted gives each hand a die. Do it once per hand.",
-                warning="No source describes a cutscene or named ending. Promotion is the last step anyone has documented.",
+                warning="The game ends with a video and nothing is documented past promotion. The developer plans a new ending for a later update, so there is no true ending to unlock yet.",
             ),
             Step(
                 title="Black Hand: promote on Power VI",
@@ -294,8 +335,9 @@ def match_hand(text: str) -> str | None:
     return None
 
 
-def build_roadmap(achievements: list[Achievement]) -> Roadmap:
+def build_roadmap(achievements: list[Achievement], catalog: list[CatalogItem]) -> Roadmap:
     by_name = {a.name: a.id for a in achievements}
+    hand_effects = {i.name: i.effect for i in catalog if i.kind == "hands"}
 
     def resolve(names: list[str]) -> list[str]:
         missing = [n for n in names if n not in by_name]
@@ -310,7 +352,11 @@ def build_roadmap(achievements: list[Achievement]) -> Roadmap:
     ]
     icons = {name: by_name[icon] if icon else None for name, icon, _ in HANDS}
     hands = [
-        HandUnlock(name=n, icon=icons[n], requirement=req, after=after) for n, req, after in HAND_UNLOCKS
+        HandUnlock(
+            name=n, icon=icons[n], requirement=req, after=after, effect=hand_effects.get(n),
+            starter=HAND_NOTES.get(n, ("", []))[0] or None, tips=HAND_NOTES.get(n, ("", []))[1],
+        )
+        for n, req, after in HAND_UNLOCKS
     ]
     rows = {name: HandGoal(hand=name, icon=icons[name]) for name, _icon, _p in HANDS}
     for a in achievements:

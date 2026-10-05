@@ -37,6 +37,7 @@ class GameMeta(CamelModel):
     """`meta.json`: o que todo jogo exporta, além dos dados próprios dele."""
 
     name: str
+    updated: str | None = None  # data (ISO) em que o pipeline rodou pela última vez
     sources: list[Source] = []
     links: list[Link] = []
     images: list[Image] = []

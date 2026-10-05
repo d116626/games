@@ -1,15 +1,36 @@
-import { Skull } from "lucide-react";
+import { Ban, Lightbulb, RefreshCw, Skull } from "lucide-react";
 import { bestiary } from "@/games/dice-a-million/lib/data";
 
 /** Chefes (com a versão reforçada) e dados inimigos. */
 export function Bestiary() {
   return (
     <div className="space-y-10">
+      <p className="sticker flex gap-3 p-4 text-sm">
+        <RefreshCw className="mt-0.5 size-4 shrink-0" />
+        <span>
+          <b>Boss reroll:</b> on the map, before a boss round, you can banish that boss for the rest of the run. The first
+          reroll in a run is free, every one after that permanently costs 2 max ring slots.
+        </span>
+      </p>
       <ul className="grid gap-4 md:grid-cols-2">
         {bestiary.bosses.map((boss) => (
           <li key={boss.name} className="sticker flex flex-col gap-3 p-4">
             <h3 className="font-display text-3xl leading-none">{boss.name}</h3>
             <p className="text-sm">{boss.effect}</p>
+            {boss.tips && (
+              <p className="flex gap-2 text-sm">
+                <Lightbulb className="mt-0.5 size-4 shrink-0" />
+                <span>
+                  <b>How to beat it:</b> {boss.tips}
+                </span>
+              </p>
+            )}
+            {boss.banned && (
+              <p className="flex gap-2 text-xs text-muted-foreground">
+                <Ban className="mt-0.5 size-3.5 shrink-0" />
+                {boss.banned}
+              </p>
+            )}
             {boss.empowered && (
               <p className="mt-auto flex gap-2 rounded-md bg-(--ink) p-3 text-sm text-white">
                 <Skull className="mt-0.5 size-4 shrink-0 text-(--game-accent)" />

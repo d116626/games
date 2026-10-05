@@ -1,9 +1,11 @@
+from datetime import date
 from pathlib import Path
 
 from utils.common.export import export_dataset
 from utils.common.paths import raw_dir
 from utils.common.schemas import GameMeta
 from utils.common.sources import fetch_sources
+from utils.games.dice_a_million.bosses import BANNED, CURSES, TIPS
 from utils.games.dice_a_million.catalog import build_catalog
 from utils.games.dice_a_million.constants import GAME, NAME, SOURCE_URLS, SOURCES
 from utils.games.dice_a_million.guides_md import (
@@ -73,9 +75,15 @@ def build_achievements() -> list[Achievement]:
 def build_bestiary() -> Bestiary:
     bosses, empowered, enemy, enchants = parse_bestiary()
     return Bestiary(
-        bosses=[Boss(name=f"The {n}", effect=e, empowered=empowered.get(n)) for n, e in bosses.items()],
+        bosses=[
+            Boss(
+                name=(name := f"The {n}"), effect=e, empowered=empowered.get(n), tips=TIPS.get(name), banned=BANNED.get(name)
+            )
+            for n, e in bosses.items()
+        ],
         enemy_dice=[EnemyDie(name=n, effect=e) for n, e in enemy.items()],
         enchantments=[Enchantment(name=n, effect=e, applies_to=t) for n, e, t in enchants],  # type: ignore[arg-type]
+        curses=[EnemyDie(name=n, effect=e) for n, e in CURSES],
     )
 
 
@@ -85,11 +93,12 @@ def run() -> list[Path]:
     print(f"[{GAME}] sources in {raw_dir(GAME)}")
     achievements = build_achievements()
     images = download_images()
+    catalog = build_catalog()
     return [
-        export_dataset(GAME, "meta.json", GameMeta(name=NAME, sources=SOURCES, images=images)),
+        export_dataset(GAME, "meta.json", GameMeta(name=NAME, updated=date.today().isoformat(), sources=SOURCES, images=images)),
         export_dataset(GAME, "achievements.json", Achievements(items=achievements)),
-        export_dataset(GAME, "catalog.json", build_catalog()),
-        export_dataset(GAME, "roadmap.json", build_roadmap(achievements)),
+        export_dataset(GAME, "catalog.json", catalog),
+        export_dataset(GAME, "roadmap.json", build_roadmap(achievements, catalog.items)),
         export_dataset(GAME, "bestiary.json", build_bestiary()),
         export_dataset(GAME, "strategy.json", STRATEGY),
     ]

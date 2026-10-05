@@ -1,6 +1,7 @@
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import type { CSSProperties, ReactNode } from "react";
+import { BackToTop } from "@/components/game/back-to-top";
 import { SectionNav, type SectionLink } from "@/components/game/section-nav";
 import type { Game, Source } from "@/games/types";
 import { cn } from "@/lib/utils";
@@ -12,6 +13,8 @@ export function GameShell({
   hero,
   sections = [],
   sources = [],
+  updated,
+  issuesUrl,
   children,
 }: {
   game: Game;
@@ -20,6 +23,10 @@ export function GameShell({
   /** Seções da página (`<Section id>`); alimenta o índice. */
   sections?: SectionLink[];
   sources?: Source[];
+  /** Data (ISO) da última atualização dos dados. */
+  updated?: string;
+  /** Link para reportar erros no guia. */
+  issuesUrl?: string;
   children: ReactNode;
 }) {
   return (
@@ -61,6 +68,8 @@ export function GameShell({
         <main className="min-w-0 space-y-20 py-8">{children}</main>
       </div>
 
+      <BackToTop />
+
       {sources.length > 0 && (
         <footer className="mx-auto max-w-6xl border-t border-border px-6 py-8">
           <h2 className="font-mono text-[11px] uppercase tracking-[0.2em] text-foreground/70">
@@ -81,6 +90,16 @@ export function GameShell({
               </li>
             ))}
           </ul>
+          {(updated || issuesUrl) && (
+            <p className="mt-5 text-sm text-foreground/70">
+              {updated && <>Data updated {updated}. </>}
+              {issuesUrl && (
+                <a href={issuesUrl} target="_blank" rel="noreferrer" className="font-medium underline underline-offset-4">
+                  Found a mistake? Report it
+                </a>
+              )}
+            </p>
+          )}
         </footer>
       )}
     </div>

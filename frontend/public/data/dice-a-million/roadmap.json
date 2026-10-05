@@ -39,7 +39,7 @@
     {
       "id": "beat-the-game",
       "title": "Finish the game once",
-      "goal": "Beat Face 3. It opens challenges, Vortex and the shattered die that leads to the real finale.",
+      "goal": "Beat Face 3. It opens challenges, Vortex and the shattered die that leads to Faces 4 to 6.",
       "steps": [
         {
           "title": "Beat Face 2",
@@ -54,6 +54,11 @@
           "unlocks": [
             "68deb338fc7b8abe403cb1d2542ca3f763752fa6"
           ]
+        },
+        {
+          "title": "Reroll a boss that wrecks your build",
+          "body": "On the map, before a boss round, you can banish that boss for the rest of the run. The first reroll in a run is free, every one after that permanently costs 2 max ring slots (patch 1.0.25).",
+          "unlocks": []
         },
         {
           "title": "Check the Strategy and Bosses sections",
@@ -118,6 +123,12 @@
           "title": "Expect curses from Power III",
           "body": "From Power III every die has a 6% chance of being cursed. Magic Sponge removes curses.",
           "unlocks": []
+        },
+        {
+          "title": "Power IV raises later rounds",
+          "body": "The developer compares the boss reroll penalty to what Power IV does: it raises the value of every later round.",
+          "unlocks": [],
+          "warning": "Each level adds one stacking rule and some add exclusive mechanics, but no source lists every level. Cyan Hand also has a special Power V modifier. Only curses (Power III) and this Power IV effect are documented."
         },
         {
           "title": "Power VI per hand is the long grind",
@@ -207,7 +218,7 @@
           "title": "Beat Face 6 to get promoted",
           "body": "Getting promoted gives each hand a die. Do it once per hand.",
           "unlocks": [],
-          "warning": "No source describes a cutscene or named ending. Promotion is the last step anyone has documented."
+          "warning": "The game ends with a video and nothing is documented past promotion. The developer plans a new ending for a later update, so there is no true ending to unlock yet."
         },
         {
           "title": "Black Hand: promote on Power VI",
@@ -365,63 +376,108 @@
   "hands": [
     {
       "name": "White Hand",
-      "requirement": "Unlocked from the start. Begins with a Reroll card."
+      "requirement": "Unlocked from the start. Begins with a Reroll card.",
+      "effect": "Starts with a Reroll card.",
+      "starter": "8 D3 and 5 D4",
+      "tips": [
+        "No special rule, so there are no hand-specific synergies."
+      ]
     },
     {
       "name": "Red Hand",
       "icon": "7346fae634765c162c827b75c9961a7088a93289",
       "requirement": "Beat Face 1. White is your only hand at first, so you do it with White.",
-      "after": "White Hand"
+      "after": "White Hand",
+      "effect": "Few initial dice. Shops have a 25% discount.",
+      "starter": "8 Bottle Caps",
+      "tips": [
+        "Works well with a small-hand combo."
+      ]
     },
     {
       "name": "Green Hand",
       "icon": "ac595c598e6820feed1da2202090c1d86c4c3f5f",
       "requirement": "Have at least 25 dice in your bag while playing Red Hand.",
-      "after": "Red Hand"
+      "after": "Red Hand",
+      "effect": "One less roll. You can roll 7 dice.",
+      "tips": []
     },
     {
       "name": "Blue Hand",
       "icon": "0a9c3e07d48147861d394ed8a6c88b7f1594eae4",
-      "requirement": "Beat the Face 1 boss without taking any ring. Might take a few attempts."
+      "requirement": "Beat the Face 1 boss without taking any ring. Might take a few attempts.",
+      "effect": "You can carry up to 12 rings. Start with a random common ring. More chance of rare rings.",
+      "starter": "10 D3, 1 D6 and 1 D10",
+      "tips": [
+        "Extra ring slots let you hoard rings for future synergies and discard the weak ones more freely.",
+        "Rare rings show up more often, so _r1ng and Fractal Ring are likelier."
+      ]
     },
     {
       "name": "Purple Hand",
       "icon": "163fa62efd5043f54abbdabd14c063dd1904ec5d",
-      "requirement": "Have at least 5 enchanted dice in your bag (shops, Enchant cards or enchantment rooms)."
+      "requirement": "Have at least 5 enchanted dice in your bag (shops, Enchant cards or enchantment rooms).",
+      "effect": "Extra card space. More likely to find enchanted dice.",
+      "tips": []
     },
     {
       "name": "Yellow Hand",
       "icon": "3e969d87795fa848d4377ecb2093ab0cfc68b354",
-      "requirement": "Get a single die to 1000 extra value. D7, D8, D10, D12, Psychodie and Exodie stack it."
+      "requirement": "Get a single die to 1000 extra value. D7, D8, D10, D12, Psychodie and Exodie stack it.",
+      "effect": "Gain double extra value. Only 1 roll, buy more rolls at the shop.",
+      "tips": []
     },
     {
       "name": "Pale Hand",
       "icon": "ef35c8a8415bffcf67feec7340f2e2db703b405d",
-      "requirement": "Get every stamp multiplier to at least 1.5X."
+      "requirement": "Get every stamp multiplier to at least 1.5X.",
+      "effect": "Lose all your pips when starting a new round. Gain stamp multipliers according to the amount of pips you had.",
+      "tips": []
     },
     {
       "name": "Bicolor Hand",
       "icon": "2f492fdaee204f05fc661728edca08103c7d4de8",
-      "requirement": "Defeat The Even and The Odd bosses 5 times each."
+      "requirement": "Defeat The Even and The Odd bosses 5 times each. Bicolor itself never meets them, so use another hand.",
+      "effect": "Maintain parity. Every roll must contain only odd dice or only even dice. If not, every die is discarded.",
+      "tips": [
+        "Has 6 hand size and 6 dice per turn. Every roll must be all odd or all even, or every die is discarded.",
+        "The Even and The Odd never appear when you play it."
+      ]
     },
     {
       "name": "Static Hand",
       "icon": "fc3d62b880f88d04a6fe0e7e52fc6fe6b6d889bd",
-      "requirement": "Reach the secret Static shop (see Dice Rush) and empty it."
+      "requirement": "Reach the secret Static shop (see Dice Rush) and empty it.",
+      "effect": "After the boss, donate stars in the shop until you see “something changes” above the Donate button. After that, a glitched spot will appear on the map (at the ring). Go there (25k pips required) and donate 1 Common, 1 Uncommon, 1 Rare, and 1 Legendary die. Embrace chaos. Start with 10 common rarity dice and other 5 of random rarities.",
+      "tips": []
     },
     {
       "name": "Hollow Hand",
-      "requirement": "Win a round with an empty bag, then show the Hollow Ring to the Phone Guy after the Face 3 boss."
+      "requirement": "Win a round with an empty bag, then show the Hollow Ring to the Phone Guy after the Face 3 boss.",
+      "effect": "Every die destroys itself when rolled. When dice are destroyed you gain shards, used for forging dice clones. Also, dice cannot be eternal. More rare and legendary dice.",
+      "tips": []
     },
     {
       "name": "Black Hand",
       "icon": "e899926ea2317c7a595b9d667dd78586f844d839",
-      "requirement": "Get the last promotion: promote on Power VI with any hand."
+      "requirement": "Get the last promotion: promote on Power VI with any hand.",
+      "effect": "Promote on power 6. Start with 5 random occult dice. Multiplies everything by your POWER level. +0.2 POWER when rolling occult dice, -0.1 every turn and for every occult die left in your hand.",
+      "starter": "10 D6 and 5 random occult dice (never Psi or Epsilon)",
+      "tips": [
+        "The early game is tough because you start at 0.2 power. Roll occult dice early to raise it.",
+        "Keep about 4 occult dice in the bag at once, more will clog it.",
+        "Scales well with high-value dice like Pinata or D666 once your power is up.",
+        "J's Die and Shattered Die are occult dice with no downside, but they are removed after Face 3 if you go for a promotion."
+      ]
     },
     {
       "name": "Cyan Hand",
       "icon": "6a41d5f8acf75887c32a977b9e95bc0b83149358",
-      "requirement": "No source documents how to unlock this one yet."
+      "requirement": "Not documented. A patch note mentions fixing 'the new hand not unlocking when going to The Vortex', so entering The Vortex is the likely unlock.",
+      "tips": [
+        "Added in patch 1.1 with its own combo mechanic and a special Power V modifier. No source describes the rules yet.",
+        "The Capricious and The Glutton never appear when you play it."
+      ]
     }
   ],
   "goals": [

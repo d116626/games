@@ -8,12 +8,15 @@
     {
       "name": "The Odd",
       "effect": "2X Multiplier to dice with an odd face. 0X to dice with an even face.",
-      "empowered": "0X to dice with an even face."
+      "empowered": "0X to dice with an even face.",
+      "banned": "Never appears for Bicolor Hand (patch 1.0.22)."
     },
     {
       "name": "The Even",
       "effect": "2X Multiplier to dice with an even face. 0X to dice with an odd face.",
-      "empowered": "0X to dice with an odd face."
+      "empowered": "0X to dice with an odd face.",
+      "tips": "Invert cards and the Even Die and Even Ring make the doubling work for you. Decimal Die negates it entirely by making every value a multiple of 10.",
+      "banned": "Never appears for Bicolor Hand (patch 1.0.22)."
     },
     {
       "name": "The Modest",
@@ -28,7 +31,9 @@
     {
       "name": "The Capricious",
       "effect": "Dice deactivate until the end of round once they are rolled.",
-      "empowered": "Dice rolled and dice left on your hand deactivate until the end of round."
+      "empowered": "Dice rolled and dice left on your hand deactivate until the end of round.",
+      "tips": "Dice are disabled until rolled, but clones are not. Save strong dice for one big roll, or use weak dice so you keep drawing the ones you want.",
+      "banned": "Never appears for Cyan Hand (patch 1.1.1)."
     },
     {
       "name": "The Pyro",
@@ -38,12 +43,14 @@
     {
       "name": "The Frost",
       "effect": "Freezes the face of all your dice to their lowest.",
-      "empowered": "Freezes the face of all your dice to their lowest. Then, deactivates every die you rolled until the end of the round."
+      "empowered": "Freezes the face of all your dice to their lowest. Then, deactivates every die you rolled until the end of the round.",
+      "banned": "Never appears in the Carlos was here challenge (patch 1.0.25)."
     },
     {
       "name": "The Envious",
       "effect": "Any die that rolls its highest face is discarded.",
-      "empowered": "Permanently destroys the die that rolled the highest face.(In case of draw, a random one is chosen.)"
+      "empowered": "Permanently destroys the die that rolled the highest face.(In case of draw, a random one is chosen.)",
+      "tips": "Counters: Reroll Ring, One Ring (most dice roll their lowest face), the Eternal enchantment and Choose face on dice you want to keep. It hard-counters The Third Eye ring."
     },
     {
       "name": "The Heretic",
@@ -73,17 +80,21 @@
     {
       "name": "The Blackout",
       "effect": "Every die is hidden until rolled. Only their silhouette is visible.",
-      "empowered": "Every die is hidden until rolled. Only their silhouette is visible. -1 hand size."
+      "empowered": "Every die is hidden until rolled. Only their silhouette is visible. -1 hand size.",
+      "tips": "Dice are hidden until rolled. Memorise the outlines of your key dice before entering. Porcelain Figurine, Anchor and Spintop are easy to recognise."
     },
     {
       "name": "The Glutton",
       "effect": "0X Multiplier to everything if you roll less than your hand size. Not rolled dice will be exhausted.",
-      "empowered": "0X Multiplier to everything if you roll less than your hand size. Not rolled dice will be exhausted. Also exhausts one random die you rolled."
+      "empowered": "0X Multiplier to everything if you roll less than your hand size. Not rolled dice will be exhausted. Also exhausts one random die you rolled.",
+      "banned": "Never appears for Cyan Hand (patch 1.1.1)."
     },
     {
       "name": "The Cautious",
       "effect": "Extra value subtracts instead of adding. Every roll adds +1 extra value to every die in your bag.",
-      "empowered": "Extra value subtracts instead of adding. Every roll adds +2 extra value to every die in your bag."
+      "empowered": "Extra value subtracts instead of adding. Every roll adds +2 extra value to every die in your bag.",
+      "tips": "Extra value subtracts instead of adding, and every roll adds +1 extra value to your hand. Avoid Psychodie, Foam Die, Bandage and Fishbone Charm. Sell extra-value rings only if they weigh you down.",
+      "banned": "Never appears in Dice Rush or Yellow Hand runs (Miraheze wiki)."
     },
     {
       "name": "The Serpentine",
@@ -98,7 +109,8 @@
     {
       "name": "The Dusty",
       "effect": "Every die has a small explosive area effect, that will discard VERY nearby dice.",
-      "empowered": "Every die has an explosive area effect, that will discard nearby dice."
+      "empowered": "Every die has an explosive area effect, that will discard nearby dice.",
+      "tips": "Rolled dice discard others very close to them. Avoid clone makers (Jacks, Bottle of Caps, Die of Dice) and area dice. Spring can save nearby dice, but may bounce onto others."
     },
     {
       "name": "The Sixth",
@@ -108,12 +120,14 @@
     {
       "name": "The Patient",
       "effect": "Half of your dice are deactivated until you roll them once.",
-      "empowered": "Half of your dice are deactivated until you roll them once. One less roll."
+      "empowered": "Half of your dice are deactivated until you roll them once. One less roll.",
+      "banned": "Never appears in the Peanuts! challenge (patch 1.0.15)."
     },
     {
       "name": "The Copycat",
       "effect": "Any dice with a repeated face is divided by the number of dice with that face.",
-      "empowered": "Any dice with a repeated face is multiplied by 0."
+      "empowered": "Any dice with a repeated face is multiplied by 0.",
+      "tips": "Dice that roll the same face are divided by how many matched. Same-face dice like Iron Die, Golden Die and Sudoku are weakened. Avoid clone makers and dice with similar faces."
     },
     {
       "name": "The Boss",
@@ -243,6 +257,32 @@
       "name": "Gilded",
       "effect": "The effects of this ring will be doubled.",
       "appliesTo": "ring"
+    }
+  ],
+  "curses": [
+    {
+      "name": "Deciduous",
+      "effect": "Extra value subtracts instead of adding."
+    },
+    {
+      "name": "Explosive",
+      "effect": "Discards other VERY nearby dice."
+    },
+    {
+      "name": "Fragile",
+      "effect": "Destroys itself when rolled."
+    },
+    {
+      "name": "Negative",
+      "effect": "Its value subtracts instead of adding."
+    },
+    {
+      "name": "Parasite",
+      "effect": "When rolled adds a Hollow Die to your bag."
+    },
+    {
+      "name": "Weak",
+      "effect": "Divides in half every multiplier equal to or greater than 2X that it would give or receive."
     }
   ]
 }

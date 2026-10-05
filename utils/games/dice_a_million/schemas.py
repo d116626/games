@@ -26,6 +26,8 @@ class Boss(CamelModel):
     name: str
     effect: str
     empowered: str | None = None
+    tips: str | None = None  # como contornar (wiki da comunidade)
+    banned: str | None = None  # quando o chefe nunca aparece (notas de patch oficiais)
 
 
 class EnemyDie(CamelModel):
@@ -43,6 +45,7 @@ class Bestiary(CamelModel):
     bosses: list[Boss]
     enemy_dice: list[EnemyDie]
     enchantments: list[Enchantment]
+    curses: list[EnemyDie]
 
 
 class Step(CamelModel):
@@ -64,6 +67,9 @@ class HandUnlock(CamelModel):
     icon: str | None = None  # id da conquista da mão (a Branca e a Hollow não têm)
     requirement: str
     after: str | None = None  # mão usada para cumprir o requisito, quando importa
+    effect: str | None = None  # regras da mão (wiki da comunidade)
+    starter: str | None = None  # dados iniciais, quando documentados
+    tips: list[str] = []
 
 
 class HandGoal(CamelModel):

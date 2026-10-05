@@ -1,5 +1,6 @@
 {
   "name": "Dice A Million",
+  "updated": "2026-10-04",
   "sources": [
     {
       "title": "Combos and strategies (Steam)",
@@ -28,6 +29,11 @@
       "title": "Dice A Million wiki (Miraheze)",
       "url": "https://diceamillion.miraheze.org/wiki/Shattered_Die",
       "note": "shattered die, Powers, Hollow Ring, Black Hand"
+    },
+    {
+      "title": "Official patch notes and dev posts (Steam news)",
+      "url": "https://store.steampowered.com/news/app/3430340",
+      "note": "Power levels, boss reroll, Cyan Hand, controls, banned bosses, planned ending"
     },
     {
       "title": "Achievements guide (GamerBlurb)",

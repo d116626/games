@@ -49,5 +49,14 @@ O roteiro é escrito à mão em `utils/games/dice_a_million/roadmap.py` (com `wa
 sai do texto das conquistas. Sem checklist: o guia é para ler, não para marcar.
 Dados em `public/data/dice-a-million/` (`lib/data.ts`).
 
+## Interação
+- `HandTracker` (cliente): matriz mão x objetivo com marcação em `localStorage` (`lib/local-store.ts`) e sugestão do próximo objetivo (o de maior % de jogadores).
+- `ItemRef`: botão que abre o cartão do item com a Popover API nativa. `RichText` transforma nomes exatos do catálogo (`lib/items.ts`) em `ItemRef`; nomes curtos ou comuns ficam fora (`SKIP`).
+- Fichas de mão (`HAND_NOTES` em roadmap.py): dados iniciais e dicas só onde a wiki Miraheze documenta (White, Red, Blue, Black).
+
+- `GuideSearch`: a busca vive na URL (`?q=&type=`, via `useSyncExternalStore`), então o link copiado reproduz o resultado; filtro por tipo.
+- `BackToTop`, rodapé com data dos dados (`meta.updated`, gerada pelo pipeline) e link para reportar erros; `@media print` em `theme.css`.
+- Dados escritos à mão com fonte: `bosses.py` (dicas da wiki, chefes que nunca aparecem, maldições), notas de patch oficiais da Steam em `roadmap.py`/`strategy.py`.
+
 ## Pendentes
-`Spoiler` para conquistas secretas e `DetailSheet`.
+`DetailSheet`, tabela completa de Powers (nenhuma fonte lista todos os níveis), preços das peças do dado quebrado (fontes divergem).

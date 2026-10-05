@@ -1,4 +1,5 @@
 import { GameImage } from "@/components/game/game-image";
+import { RichText } from "@/games/dice-a-million/components/rich-text";
 import { meta, strategy } from "@/games/dice-a-million/lib/data";
 
 /** Capturas de tela e dicas de estratégia por tema. */
@@ -20,7 +21,9 @@ export function Strategy() {
             <h3 className="bg-(--game-accent) px-4 py-2 font-display text-2xl leading-none">{group.title}</h3>
             <ul className="list-disc space-y-2 py-4 pl-9 pr-4 text-sm">
               {group.tips.map((t) => (
-                <li key={t}>{t}</li>
+                <li key={t}>
+                  <RichText text={t} />
+                </li>
               ))}
             </ul>
             <p className="border-t-2 border-(--ink) px-4 py-1.5 font-mono text-[10px] uppercase tracking-widest text-muted-foreground">

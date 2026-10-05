@@ -17,6 +17,8 @@ export type Link = { title: string; url: string; description?: string };
 export type GameImage = { src: string; alt: string; credit?: string };
 export type GameMeta = {
   name: string;
+  /** Data (ISO) da última execução do pipeline. */
+  updated?: string;
   sources: Source[];
   links: Link[];
   images: GameImage[];

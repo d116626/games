@@ -113,3 +113,19 @@
   border-radius: 0.5rem;
   box-shadow: 2px 2px 0 var(--ink);
 }
+
+/* Impressão: papel branco, sem sombras, sem controles interativos. */
+@media print {
+  .theme-dice {
+    background: #fff !important;
+    background-image: none !important;
+  }
+  .theme-dice .sticker,
+  .theme-dice .sticker-sm {
+    box-shadow: none;
+    break-inside: avoid;
+  }
+  .theme-dice .grain::before {
+    display: none;
+  }
+}

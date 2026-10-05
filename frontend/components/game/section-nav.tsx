@@ -27,7 +27,7 @@ export function SectionNav({ sections }: { sections: SectionLink[] }) {
   return (
     <nav
       aria-label="Guide sections"
-      className="sticky top-0 z-20 -mx-6 flex gap-2 overflow-x-auto border-b border-border bg-background/80 px-6 py-3 backdrop-blur [scrollbar-width:none] lg:top-8 lg:mx-0 lg:flex-col lg:gap-2 lg:self-start lg:overflow-visible lg:border-0 lg:bg-transparent lg:p-0 lg:backdrop-blur-none"
+      className="print:hidden sticky top-0 z-20 -mx-6 flex gap-2 overflow-x-auto border-b border-border bg-background/80 px-6 py-3 backdrop-blur [scrollbar-width:none] lg:top-8 lg:mx-0 lg:flex-col lg:gap-2 lg:self-start lg:overflow-visible lg:border-0 lg:bg-transparent lg:p-0 lg:backdrop-blur-none"
     >
       {sections.map(({ id, label }, i) => (
         <a

@@ -20,7 +20,15 @@ export type Achievement = {
 
 export type Step = { title: string; body: string; unlocks: string[]; warning?: string };
 export type Stage = { id: string; title: string; goal: string; steps: Step[] };
-export type HandUnlock = { name: string; icon?: string; requirement: string; after?: string };
+export type HandUnlock = {
+  name: string;
+  icon?: string;
+  requirement: string;
+  after?: string;
+  effect?: string;
+  starter?: string;
+  tips?: string[];
+};
 export type HandGoal = {
   hand: string;
   icon?: string;
@@ -41,6 +49,15 @@ export type CatalogItem = {
   icon: string;
 };
 
+/** Dados mínimos para mostrar um item ou conquista num cartão. */
+export type ItemInfo = {
+  name: string;
+  icon?: string;
+  faces?: string;
+  condition?: string;
+  text: string;
+};
+
 /** Entrada da busca: item, chefe, encantamento, dica ou passo do roteiro. */
 export type SearchEntry = {
   id: string;
@@ -53,7 +70,7 @@ export type SearchEntry = {
   href?: string;
 };
 
-export type Boss = { name: string; effect: string; empowered?: string };
+export type Boss = { name: string; effect: string; empowered?: string; tips?: string; banned?: string };
 export type EnemyDie = { name: string; effect: string };
 export type Enchantment = { name: string; effect: string; appliesTo: "die" | "ring" };
 export type TipGroup = { title: string; tips: string[]; source: string };

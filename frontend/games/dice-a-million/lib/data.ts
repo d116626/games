@@ -25,6 +25,7 @@ export const bestiary = bestiaryJson as {
   bosses: Boss[];
   enemyDice: EnemyDie[];
   enchantments: Enchantment[];
+  curses: EnemyDie[];
 };
 export const strategy = strategyJson.groups as TipGroup[];
 

@@ -1,9 +1,16 @@
 import { ArrowRight, TriangleAlert } from "lucide-react";
 import { AchievementIcon } from "@/games/dice-a-million/components/achievement-icon";
+import { HandTracker, type TrackerRow } from "@/games/dice-a-million/components/hand-tracker";
+import { ItemRef } from "@/games/dice-a-million/components/item-ref";
+import { RichText } from "@/games/dice-a-million/components/rich-text";
 import { achievementById, roadmap } from "@/games/dice-a-million/lib/data";
-import type { HandGoal, HandUnlock } from "@/games/dice-a-million/types";
+import { itemInfo } from "@/games/dice-a-million/lib/items";
+import type { Achievement, HandGoal, HandUnlock, ItemInfo } from "@/games/dice-a-million/types";
 
 const pad = (n: number) => String(n).padStart(2, "0");
+
+const infoOf = (a: Achievement): ItemInfo =>
+  itemInfo(a.name) ?? { name: a.name, icon: a.icon, condition: a.how, text: a.tip ?? "" };
 
 function Unlocks({ ids }: { ids: string[] }) {
   if (ids.length === 0) return null;
@@ -13,9 +20,11 @@ function Unlocks({ ids }: { ids: string[] }) {
         const a = achievementById.get(id);
         return (
           a && (
-            <li key={id} className="sticker-sm flex items-center gap-1.5 py-1 pl-1 pr-2.5">
-              <AchievementIcon src={a.icon} name="" className="size-7 rounded-md border-0" />
-              <span className="text-xs font-bold">{a.name}</span>
+            <li key={id} className="sticker-sm">
+              <ItemRef item={infoOf(a)} className="flex min-h-9 items-center gap-1.5 py-1 pl-1 pr-2.5">
+                <AchievementIcon src={a.icon} name="" className="size-7 rounded-md border-0" />
+                <span className="text-xs font-bold">{a.name}</span>
+              </ItemRef>
             </li>
           )
         );
@@ -26,6 +35,29 @@ function Unlocks({ ids }: { ids: string[] }) {
 
 function HandTile({ hand }: { hand: HandUnlock }) {
   const icon = hand.icon ? achievementById.get(hand.icon)?.icon : undefined;
+  const body = (
+    <>
+      <p className="mt-1.5 text-sm">{hand.requirement}</p>
+      <details className="mt-2 text-sm">
+        <summary className="min-h-9 cursor-pointer py-1.5 font-mono text-[11px] uppercase tracking-wider">Rules and notes</summary>
+        <div className="space-y-1.5 pb-1">
+          {hand.effect ? <p>{hand.effect}</p> : <p className="text-muted-foreground">No rules documented yet.</p>}
+          {hand.starter && (
+            <p>
+              <b>Starting dice:</b> {hand.starter}
+            </p>
+          )}
+          {hand.tips && hand.tips.length > 0 && (
+            <ul className="list-disc space-y-1 pl-5">
+              {hand.tips.map((t) => (
+                <li key={t}>{t}</li>
+              ))}
+            </ul>
+          )}
+        </div>
+      </details>
+    </>
+  );
   return (
     <li className="sticker-sm flex gap-3 p-3">
       {icon ? (
@@ -35,14 +67,14 @@ function HandTile({ hand }: { hand: HandUnlock }) {
           {hand.name[0]}
         </span>
       )}
-      <div className="min-w-0">
+      <div className="min-w-0 flex-1">
         <h4 className="font-display text-2xl leading-none">{hand.name}</h4>
         {hand.after && (
           <p className="mt-1 flex items-center gap-1 font-mono text-[10px] uppercase tracking-wider text-muted-foreground">
             <ArrowRight className="size-3" /> play as {hand.after}
           </p>
         )}
-        <p className="mt-1.5 text-sm">{hand.requirement}</p>
+        {body}
       </div>
     </li>
   );
@@ -57,44 +89,14 @@ const COLUMNS: { key: keyof Omit<HandGoal, "hand" | "icon">; label: string }[] =
 ];
 
 function GoalMatrix() {
-  return (
-    <div className="sticker overflow-x-auto">
-      <table className="w-full min-w-[44rem] border-collapse text-left text-sm">
-        <thead>
-          <tr className="hud-tab text-xs">
-            <th className="px-3 py-2 font-normal">Hand</th>
-            {COLUMNS.map((c) => (
-              <th key={c.key} className="px-3 py-2 font-normal">
-                {c.label}
-              </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {roadmap.goals.map((row) => (
-            <tr key={row.hand} className="border-t-2 border-(--ink)/15">
-              <th className="px-3 py-2 font-display text-lg font-normal">{row.hand.replace(" Hand", "")}</th>
-              {COLUMNS.map((c) => {
-                const a = row[c.key] ? achievementById.get(row[c.key]!) : undefined;
-                return (
-                  <td key={c.key} className="px-3 py-2">
-                    {a ? (
-                      <span className="flex items-center gap-2">
-                        <AchievementIcon src={a.icon} name="" className="size-8 rounded-md" />
-                        <span className="text-xs font-semibold leading-tight">{a.name}</span>
-                      </span>
-                    ) : (
-                      <span className="text-muted-foreground">-</span>
-                    )}
-                  </td>
-                );
-              })}
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
+  const rows: TrackerRow[] = roadmap.goals.map((row) => ({
+    hand: row.hand,
+    cells: COLUMNS.map((c) => {
+      const a = row[c.key] ? achievementById.get(row[c.key]!) : undefined;
+      return a ? { id: a.id, label: c.label, rarity: a.rarity, info: infoOf(a) } : null;
+    }),
+  }));
+  return <HandTracker columns={COLUMNS.map((c) => c.label)} rows={rows} />;
 }
 
 /** Roteiro em etapas, em ordem, para chegar à promoção final. Rolagem contínua, sem checklist. */
@@ -131,7 +133,9 @@ export function Roadmap() {
                 </span>
                 <div className="sticker-sm p-4">
                   <h4 className="font-bold">{step.title}</h4>
-                  <p className="mt-1 text-sm">{step.body}</p>
+                  <div className="mt-1 text-sm">
+                    <RichText text={step.body} />
+                  </div>
                   {step.warning && (
                     <p className="mt-2 flex gap-2 rounded-md bg-(--ink) p-2.5 text-xs text-white">
                       <TriangleAlert className="mt-0.5 size-4 shrink-0 text-(--game-accent)" />

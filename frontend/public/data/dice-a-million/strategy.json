@@ -73,6 +73,17 @@
       "source": "Neon Lights Media"
     },
     {
+      "title": "Controls and boss reroll",
+      "tips": [
+        "Hold R to reset, even while looking at menus.",
+        "ALT triggers Auto-Select while that setting is active. Auto-Select now also takes multipliers into account.",
+        "Space confirms the roll when 'Manually confirm score' is on.",
+        "Click the Power Level dots to select a power quickly, like you do with hands.",
+        "Boss reroll: with a boss round next on the map, you can banish that boss for the run. The first reroll in a run is free, every one after that permanently costs 2 max ring slots."
+      ],
+      "source": "Official patch notes (Steam)"
+    },
+    {
       "title": "Small tricks",
       "tips": [
         "You can use a Reroll card on rewards such as rings or boss shop rewards.",

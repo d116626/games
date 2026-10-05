@@ -20,6 +20,11 @@ SOURCES: list[Source] = [
     Source(title="Steam achievements and store page", url=f"https://steamcommunity.com/stats/{APP_ID}/achievements", note="official list, icons and artwork"),
     Source(title="Hidden unlocks discussion (Steam)", url="https://steamcommunity.com/app/3430340/discussions/0/802341195824084015/", note="Hollow Hand, Static shop, Black Hand"),
     Source(title="Dice A Million wiki (Miraheze)", url="https://diceamillion.miraheze.org/wiki/Shattered_Die", note="shattered die, Powers, Hollow Ring, Black Hand"),
+    Source(
+        title="Official patch notes and dev posts (Steam news)",
+        url="https://store.steampowered.com/news/app/3430340",
+        note="Power levels, boss reroll, Cyan Hand, controls, banned bosses, planned ending",
+    ),
     Source(title="Achievements guide (GamerBlurb)", url="https://gamerblurb.com/articles/dice-a-million-achievements-guide"),
     Source(
         title="Dice A Million Beginners Guide",

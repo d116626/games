@@ -2,6 +2,7 @@ from utils.games.dice_a_million.schemas import Strategy, TipGroup
 
 NEON = "Neon Lights Media"
 COMBOS = "Steam: combos and strategies"
+PATCH = "Official patch notes (Steam)"
 
 STRATEGY = Strategy(
     groups=[
@@ -75,6 +76,17 @@ STRATEGY = Strategy(
                 "Cleaning your deck is dangerous until your win conditions are secured.",
                 "Effects read the physical face of a die, not its modified value: a ring that turns a 1 into a 10 won't trigger a prime-number ring.",
                 "Boss debuffs like The Heretic apply before your multipliers. If your base hits zero, multipliers multiply zero.",
+            ],
+        ),
+        TipGroup(
+            title="Controls and boss reroll",
+            source=PATCH,
+            tips=[
+                "Hold R to reset, even while looking at menus.",
+                "ALT triggers Auto-Select while that setting is active. Auto-Select now also takes multipliers into account.",
+                "Space confirms the roll when 'Manually confirm score' is on.",
+                "Click the Power Level dots to select a power quickly, like you do with hands.",
+                "Boss reroll: with a boss round next on the map, you can banish that boss for the run. The first reroll in a run is free, every one after that permanently costs 2 max ring slots.",
             ],
         ),
         TipGroup(

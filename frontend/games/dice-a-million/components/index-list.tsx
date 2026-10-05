@@ -40,6 +40,19 @@ export function IndexList() {
           </Group>
         );
       })}
+      <Group title="Curses" count={bestiary.curses.length}>
+        <p className="mb-3 text-sm text-muted-foreground">
+          From Power III, in the Ultrahard challenge or with the Witch&apos;s Ring, every die has a 6% chance of being cursed. A
+          die holds one curse at a time, and a second one replaces the first. Magic Sponge removes them.
+        </p>
+        <ul className="grid gap-4 md:grid-cols-2">
+          {bestiary.curses.map((c) => (
+            <li key={c.name}>
+              <ItemRow name={c.name} tag="curse" text={c.effect} />
+            </li>
+          ))}
+        </ul>
+      </Group>
       <Group title="Enchantments" count={bestiary.enchantments.length}>
         <ul className="grid gap-4 md:grid-cols-2">
           {bestiary.enchantments.map((e) => (

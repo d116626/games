@@ -232,25 +232,33 @@ STAGES: list[Stage] = [
         goal="The deepest content documented. Collect all three shattered die pieces, then beat Face 6.",
         steps=[
             Step(
-                title="Buy piece 1 in the Face 1 shop",
-                body="After beating Face 3, the first piece appears in the Face 1 shop. Buy it and keep it in your bag.",
+                title="Run 1: beat Face 3 (any hand)",
+                body="Nothing to buy yet. Winning Face 3 for the first time makes the first shattered die piece appear in future Face 1 shops.",
+            ),
+            Step(
+                title="Run 2: buy piece 1, beat Face 3 with it",
+                body="Buy piece 1 in the Face 1 shop and keep it in your bag. After the Face 3 boss, show it to the Phone Guy at the end of the run. "
+                "That unlocks piece 2 for Face 2 shops.",
                 unlocks=["First Piece"],
                 warning=FACES_WARNING,
             ),
             Step(
-                title="Beat Face 3 holding piece 1",
-                body="That unlocks piece 2 in the Face 2 shops. Buy it. Each piece only appears if you owned the previous one when you beat Face 3.",
+                title="Run 3: buy pieces 1 and 2, beat Face 3",
+                body="Piece 1 in Face 1, piece 2 in Face 2. Beat Face 3 holding both and show them to the Phone Guy. That unlocks piece 3 for the Face 3 shop. "
+                "A piece only appears if you owned the previous one when you beat Face 3.",
                 unlocks=["Second Piece"],
             ),
             Step(
-                title="Beat Face 3 holding both, buy piece 3",
-                body="Piece 3 sits in the Face 3 shop. Beat Face 3 with all three pieces and Face 4 opens. "
-                "Showing the three parts to the Phone Guy rebuilds J's Die.",
+                title="Run 4: buy all three, beat Face 3, show them",
+                body="Buy piece 1, 2 and 3 (the last one in the Face 3 shop). Beat Face 3 holding all three and show them to the Phone Guy. "
+                "That rebuilds J's Die (the strange die, achievement 'Rebuild a strange die') and Face 4 opens.",
                 unlocks=["J's Die"],
+                warning="Pay for each piece only in its own Face, so save pips for it. Buying it right before the boss is fine. "
+                "The Steam guides say to show the pieces to the Phone Guy after the Face 3 boss, the wiki only says to beat Face 3 holding them. Do both to be safe.",
             ),
             Step(
-                title="Beat Face 6 to get promoted",
-                body="Getting promoted gives each hand a die. Do it once per hand.",
+                title="Faces 4 to 6, then beat Face 6 to get promoted",
+                body="With Face 4 open, push on to Face 6. Getting promoted gives each hand a die, so do it once per hand.",
                 warning="The game ends with a video and nothing is documented past promotion. The developer plans a new ending for a later update, so there is no true ending to unlock yet.",
             ),
             Step(

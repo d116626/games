@@ -19,6 +19,13 @@ SOURCES: list[Source] = [
     Source(title="100% achievements guide (Steam)", url=SOURCE_URLS["steam-achievements.md"], note="by silver"),
     Source(title="Steam achievements and store page", url=f"https://steamcommunity.com/stats/{APP_ID}/achievements", note="official list, icons and artwork"),
     Source(title="Hidden unlocks discussion (Steam)", url="https://steamcommunity.com/app/3430340/discussions/0/802341195824084015/", note="Hollow Hand, Static shop, Black Hand"),
+    Source(
+        title="Cyan Hand unlock thread (Steam)",
+        url="https://steamcommunity.com/app/3430340/discussions/0/592940620292582648/",
+        note="player confirms same number of sides",
+    ),
+    Source(title="Cyan Hand achievement (TrueAchievements)", url="https://www.trueachievements.com/a661524/cyan-hand-achievement", note="unlock text"),
+    Source(title="Cyan Hand achievement (TrophiesHunter)", url="https://trophieshunter.com/games/dice-a-million-pc/achievements/cyan-hand", note="valid bag examples"),
     Source(title="Dice A Million wiki (Miraheze)", url="https://diceamillion.miraheze.org/wiki/Shattered_Die", note="shattered die, Powers, Hollow Ring, Black Hand"),
     Source(
         title="Official patch notes and dev posts (Steam news)",

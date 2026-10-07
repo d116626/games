@@ -45,7 +45,13 @@ HAND_UNLOCKS: list[tuple[str, str, str | None]] = [
     ("Static Hand", "Reach the secret Static shop (see Dice Rush) and empty it.", None),
     ("Hollow Hand", "Win a round with an empty bag, then show the Hollow Ring to the Phone Guy after the Face 3 boss.", None),
     ("Black Hand", "Get the last promotion: promote on Power VI with any hand.", None),
-    ("Cyan Hand", "Not documented. A patch note mentions fixing 'the new hand not unlocking when going to The Vortex', so entering The Vortex is the likely unlock.", None),
+    (
+        "Cyan Hand",
+        "In-game text: \"Beat the game with all dice in your bag having the same shape\". "
+        "Shape means the same number of sides (all D6, all D3, all one-faced dice...), and the game here is Face 3. "
+        "The check happens when you finish Face 3 and go into The Vortex, so clean the bag before the Face 3 boss.",
+        None,
+    ),
 ]
 
 # Dados iniciais e dicas, só onde a wiki Miraheze documenta a mão.
@@ -65,7 +71,12 @@ HAND_NOTES: dict[str, tuple[str, list[str]]] = {
     ),
     "Cyan Hand": (
         "",
-        ["Added in patch 1.1 with its own combo mechanic and a special Power V modifier. No source describes the rules yet.", "The Capricious and The Glutton never appear when you play it."],
+        [
+            "Added in patch 1.1. Unlock: beat Face 3 with a bag of one shape only (same number of sides). A player did it as Green Hand, adding only more D6.",
+            "One player describes its combo as rolling one die at a time in ascending number of sides (D2, D3, D4, D5...). Single report, not confirmed by the developer.",
+            "It also has a special Power V modifier that no source describes. Aquarium and Anchor broke its combo until patch 1.1.1.",
+            "The Capricious and The Glutton never appear when you play it.",
+        ],
     ),
     "Black Hand": (
         "10 D6 and 5 random occult dice (never Psi or Epsilon)",
@@ -146,6 +157,16 @@ STAGES: list[Stage] = [
             Step(
                 title="Blue Hand is the odd one",
                 body="Do not take rings in Face 1 and beat its boss. Do it early, it is the only hand locked behind a handicap.",
+            ),
+            Step(
+                title="Cyan Hand: keep one shape",
+                body="The game says: \"Beat the game with all dice in your bag having the same shape\". "
+                "So finish Face 3 with every die in the bag having the same number of sides (all D6, all D3, all one-faced dice). "
+                "Remove the odd dice in the shop before the Face 3 boss, the last safe moment. "
+                "Starting with Green Hand (D6 only) and buying only D6 is the easiest route a player reported.",
+                unlocks=["Cyan Hand"],
+                warning="The developer admitted the in-game wording is confusing. Hollow dice have one face, so a Hollow Ring, The Hollow boss or Iota "
+                "would likely break a D6 bag (inference, not tested).",
             ),
             Step(
                 title="Save Static, Hollow and Black for later",

@@ -49,7 +49,8 @@ HAND_UNLOCKS: list[tuple[str, str, str | None]] = [
         "Cyan Hand",
         "In-game text: \"Beat the game with all dice in your bag having the same shape\". "
         "Shape means the same number of sides (all D6, all D3, all one-faced dice...), and the game here is Face 3. "
-        "The check happens when you finish Face 3 and go into The Vortex, so clean the bag before the Face 3 boss.",
+        "Only the bag at the end matters: tested with just 3 D3 in the bag for the last round. "
+        "Beat the Face 3 boss, then enter the final room and the hand unlocks.",
         None,
     ),
 ]
@@ -72,7 +73,7 @@ HAND_NOTES: dict[str, tuple[str, list[str]]] = {
     "Cyan Hand": (
         "",
         [
-            "Added in patch 1.1. Unlock: beat Face 3 with a bag of one shape only (same number of sides). A player did it as Green Hand, adding only more D6.",
+            "Added in patch 1.1. Unlock: beat the Face 3 boss with a bag of one shape only (same number of sides), then enter the final room. Tested with 3 D3 in the bag for the last round. Another player did it as Green Hand with only D6.",
             "One player describes its combo as rolling one die at a time in ascending number of sides (D2, D3, D4, D5...). Single report, not confirmed by the developer.",
             "It also has a special Power V modifier that no source describes. Aquarium and Anchor broke its combo until patch 1.1.1.",
             "The Capricious and The Glutton never appear when you play it.",
@@ -161,12 +162,13 @@ STAGES: list[Stage] = [
             Step(
                 title="Cyan Hand: keep one shape",
                 body="The game says: \"Beat the game with all dice in your bag having the same shape\". "
-                "So finish Face 3 with every die in the bag having the same number of sides (all D6, all D3, all one-faced dice). "
-                "Remove the odd dice in the shop before the Face 3 boss, the last safe moment. "
-                "Starting with Green Hand (D6 only) and buying only D6 is the easiest route a player reported.",
+                "Shape means the same number of sides (all D6, all D3, all one-faced dice). "
+                "Only the final bag counts, earlier rounds can use mixed shapes. Tested: the bag had only 3 D3 for the last round, "
+                "then beat the Face 3 boss and walked into the final room, and the hand unlocked. "
+                "Thin the bag in the shop before the Face 3 boss. Starting with Green Hand (D6 only) and buying only D6 also worked for another player.",
                 unlocks=["Cyan Hand"],
-                warning="The developer admitted the in-game wording is confusing. Hollow dice have one face, so a Hollow Ring, The Hollow boss or Iota "
-                "would likely break a D6 bag (inference, not tested).",
+                warning="The developer admitted the in-game wording is confusing. Not tested: whether dice created during the fight count. "
+                "Hollow dice have one face, so a Hollow Ring, The Hollow boss or Iota would likely break the bag (inference).",
             ),
             Step(
                 title="Save Static, Hollow and Black for later",

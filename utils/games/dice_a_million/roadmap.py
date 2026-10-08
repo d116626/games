@@ -74,7 +74,7 @@ HAND_NOTES: dict[str, tuple[str, list[str]]] = {
         "",
         [
             "Added in patch 1.1. Unlock: beat the Face 3 boss with a bag of one shape only (same number of sides), then enter the final room. Tested with 3 D3 in the bag for the last round. Another player did it as Green Hand with only D6.",
-            "In-game text for the combo: \"Roll a single die, dice stay on the table by following a chain of consecutive dice shapes\". Tested: the chain must be consecutive and always ascending (D2, D3, D4, D5...), and skipping a shape (D3 to D5) breaks it.",
+            "In-game text for the combo: \"Roll a single die, dice stay on the table by following a chain of consecutive dice shapes\". Tested: the chain must be consecutive and always ascending (D2, D3, D4, D5...), and skipping a shape (D3 to D5) breaks it. When it breaks, the dice leave the table and stop scoring, and the chain starts again. Every shape counts in the chain, one-faced dice and D2 included.",
             "It also has a special Power V modifier that no source describes. Aquarium and Anchor broke its combo until patch 1.1.1.",
             "The Capricious and The Glutton never appear when you play it.",
         ],

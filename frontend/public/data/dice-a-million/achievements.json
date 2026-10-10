@@ -58,7 +58,7 @@
       "id": "7346fae634765c162c827b75c9961a7088a93289",
       "name": "Red Hand",
       "category": "hands",
-      "how": "Beat Face 1!",
+      "how": "Beat Face 1.",
       "rarity": 86.4,
       "icon": "games/dice-a-million/achievements/7346fae634765c162c827b75c9961a7088a93289.jpg"
     },
@@ -137,7 +137,8 @@
       "id": "163fa62efd5043f54abbdabd14c063dd1904ec5d",
       "name": "Purple Hand",
       "category": "hands",
-      "how": "Have at least 5 enchanted dice in your bag. Enchanted dice can be obtained through shops, or you could enchant your dice through cards or enchantment rooms.",
+      "how": "Have at least 5 enchanted dice in your bag.",
+      "tip": "Enchanted dice can be obtained through shops, or you could enchant your dice through cards or enchantment rooms.",
       "rarity": 79.5,
       "icon": "games/dice-a-million/achievements/163fa62efd5043f54abbdabd14c063dd1904ec5d.jpg"
     },
@@ -311,7 +312,8 @@
       "id": "ac595c598e6820feed1da2202090c1d86c4c3f5f",
       "name": "Green Hand",
       "category": "hands",
-      "how": "Have at least 25 dice in your bag as Red Hand. Simply play as red hand an accumulate up to a minimum of 25 dice.",
+      "how": "Have at least 25 dice in your bag as Red Hand.",
+      "tip": "Simply play as red hand an accumulate up to a minimum of 25 dice.",
       "rarity": 58.9,
       "icon": "games/dice-a-million/achievements/ac595c598e6820feed1da2202090c1d86c4c3f5f.jpg"
     },
@@ -399,7 +401,7 @@
       "id": "ea6dfe822639786bdda30ef4a424717e4f67f8f2",
       "name": "D666",
       "category": "dice",
-      "how": "Inside a Peanut.",
+      "how": "Inside a peanut.",
       "tip": "This one is obtained by random chance whenever you roll a peanut (Rare die). The peanut has a chance of breaking and then it turns into the D666! No tricks to obtaining it faster, unfortunately. Just keep rolling peanuts until they break open!",
       "rarity": 44.3,
       "icon": "games/dice-a-million/achievements/ea6dfe822639786bdda30ef4a424717e4f67f8f2.jpg"
@@ -520,7 +522,8 @@
       "id": "0a9c3e07d48147861d394ed8a6c88b7f1594eae4",
       "name": "Blue Hand",
       "category": "hands",
-      "how": "Beat Face 1 Boss without taking any rings. Simply do not take any rings throughout Face 1, then beat the Face 1 Boss! Might take a few attempts.",
+      "how": "Beat Face 1 Boss without taking any rings.",
+      "tip": "Simply do not take any rings throughout Face 1, then beat the Face 1 Boss! Might take a few attempts.",
       "rarity": 31.0,
       "icon": "games/dice-a-million/achievements/0a9c3e07d48147861d394ed8a6c88b7f1594eae4.jpg"
     },
@@ -544,7 +547,8 @@
       "id": "3e969d87795fa848d4377ecb2093ab0cfc68b354",
       "name": "Yellow Hand",
       "category": "hands",
-      "how": "Have a die reach 1000 extra value. This can be achieved by comboing and stacking dice that provide extra value! (Examples: D7, D8, D10, D12, Psychodie, Exodie, Etc.)",
+      "how": "Have a die reach 1000 extra value.",
+      "tip": "This can be achieved by comboing and stacking dice that provide extra value! (Examples: D7, D8, D10, D12, Psychodie, Exodie, Etc.)",
       "rarity": 30.4,
       "icon": "games/dice-a-million/achievements/3e969d87795fa848d4377ecb2093ab0cfc68b354.jpg"
     },
@@ -592,6 +596,7 @@
       "id": "d66f88612c1177de5d9b59457c42f99e7c33d902",
       "name": "First Piece",
       "category": "secrets",
+      "how": "Select the first key die in J's phone.",
       "rarity": 24.2,
       "icon": "games/dice-a-million/achievements/d66f88612c1177de5d9b59457c42f99e7c33d902.jpg"
     },
@@ -599,7 +604,7 @@
       "id": "3f7a0ecaddbf1c9a7b14dd5d78ddcdbd58959cb6",
       "name": "Minidie",
       "category": "dice",
-      "how": "Break its shell.",
+      "how": "Break the shell of a Double die.",
       "tip": "One of the more unique secret dice, you can obtain this by manually \"removing\" a Double Dice (Not the Joined Dice, where there's two dice stuck together, but the one that has a die within a die) in the shop, which breaks the Minidie from out of its shell.",
       "rarity": 22.9,
       "icon": "games/dice-a-million/achievements/3f7a0ecaddbf1c9a7b14dd5d78ddcdbd58959cb6.jpg"
@@ -624,6 +629,7 @@
       "id": "b3217628ba845b4569ee5be2fe55fc6f3e7a7c96",
       "name": "Second Piece",
       "category": "secrets",
+      "how": "Select the second key die in J's phone.",
       "rarity": 19.3,
       "icon": "games/dice-a-million/achievements/b3217628ba845b4569ee5be2fe55fc6f3e7a7c96.jpg"
     },
@@ -735,6 +741,7 @@
       "id": "da1efe21a4e710743633f5c9059856ac898e1151",
       "name": "The Vortex",
       "category": "vortex",
+      "how": "Win on Face 6 for the first time (opens the Vortex).",
       "rarity": 12.4,
       "icon": "games/dice-a-million/achievements/da1efe21a4e710743633f5c9059856ac898e1151.jpg"
     },
@@ -830,7 +837,7 @@
       "id": "faf766059871085348485ec280cc9105289c9f79",
       "name": "I can't believe it's not a D6",
       "category": "challenges",
-      "how": "Complete the challenge",
+      "how": "Win the “I can't believe it's not a D6” challenge",
       "rarity": 8.7,
       "icon": "games/dice-a-million/achievements/faf766059871085348485ec280cc9105289c9f79.jpg"
     },
@@ -838,7 +845,7 @@
       "id": "676fa0ce13fe76102b071e31bbb5e73df959034c",
       "name": "Peanuts!",
       "category": "challenges",
-      "how": "Complete the challenge",
+      "how": "Win the “Peanuts!” challenge",
       "rarity": 8.4,
       "icon": "games/dice-a-million/achievements/676fa0ce13fe76102b071e31bbb5e73df959034c.jpg"
     },
@@ -966,7 +973,7 @@
       "id": "14261cc5262b390c2d74719f32ff45458bbbff70",
       "name": "Echo Cube",
       "category": "dice",
-      "how": "Flick this die if you see it.",
+      "how": "Click the Echo Cube when one shows up among your dice.",
       "tip": "This can be obtained by flicking the Echo Cube at the starting screen. In the background once you've opened the game, random dice will start falling, to which you can click on them to \"flick\" them. Obtaining the Echo Cube then becomes a matter of luck and patience, as you have to wait for the die to fall from the screen, and there are no ways to speed up the process. A general tip would be to just keep clicking in one spot until you finally catch it!",
       "rarity": 4.4,
       "icon": "games/dice-a-million/achievements/14261cc5262b390c2d74719f32ff45458bbbff70.jpg"
@@ -991,7 +998,7 @@
       "id": "7ce4418f34d0244db1e6b19d602fa5007ad045de",
       "name": "Glass Devourer",
       "category": "challenges",
-      "how": "Complete the challenge",
+      "how": "Win the “Glass Devourer” challenge",
       "rarity": 3.9,
       "icon": "games/dice-a-million/achievements/7ce4418f34d0244db1e6b19d602fa5007ad045de.jpg"
     },
@@ -999,7 +1006,7 @@
       "id": "3abf0fe9eccbd1f754281a993f551053883ccdab",
       "name": "Prismatic D4",
       "category": "dice",
-      "how": "Get promoted as pale.",
+      "how": "Get promoted as Pale Hand.",
       "rarity": 3.9,
       "icon": "games/dice-a-million/achievements/3abf0fe9eccbd1f754281a993f551053883ccdab.jpg"
     },
@@ -1015,7 +1022,7 @@
       "id": "03ef4c3835e2634ce8e4008dc4cb884572474522",
       "name": "Pocket TV",
       "category": "dice",
-      "how": "Get a million pips as static.",
+      "how": "Get a million pips as Static Hand.",
       "rarity": 3.8,
       "icon": "games/dice-a-million/achievements/03ef4c3835e2634ce8e4008dc4cb884572474522.jpg"
     },
@@ -1032,7 +1039,7 @@
       "id": "9f318ed2d6b6f03db7d07fb724148cf8f37a0cfc",
       "name": "Static Die",
       "category": "dice",
-      "how": "Beat Face 3 as static.",
+      "how": "Beat Face 3 as Static Hand.",
       "rarity": 3.6,
       "icon": "games/dice-a-million/achievements/9f318ed2d6b6f03db7d07fb724148cf8f37a0cfc.jpg"
     },
@@ -1048,7 +1055,7 @@
       "id": "a51fe4e13a537397f96f81c035e09e7e8ae6f24d",
       "name": "Spindown Die",
       "category": "dice",
-      "how": "Get promoted as purple.",
+      "how": "Get promoted as Purple Hand.",
       "rarity": 3.5,
       "icon": "games/dice-a-million/achievements/a51fe4e13a537397f96f81c035e09e7e8ae6f24d.jpg"
     },
@@ -1056,7 +1063,7 @@
       "id": "96b6174e89e0331760b7c5694966186673d91d3e",
       "name": "White Card",
       "category": "cards",
-      "how": "Beat dicerush as static.",
+      "how": "Beat Dice Rush as Static Hand.",
       "rarity": 2.7,
       "icon": "games/dice-a-million/achievements/96b6174e89e0331760b7c5694966186673d91d3e.jpg"
     },
@@ -1064,7 +1071,7 @@
       "id": "b717cfb09b37d257c880e2ad85d09180bfa35288",
       "name": "Carlos was here",
       "category": "challenges",
-      "how": "Complete the challenge",
+      "how": "Win the “Carlos was here” challenge",
       "rarity": 2.7,
       "icon": "games/dice-a-million/achievements/b717cfb09b37d257c880e2ad85d09180bfa35288.jpg"
     },
@@ -1072,6 +1079,7 @@
       "id": "6a905350f11dedb4d35816e94d25c334d6fe945d",
       "name": "Vortex Apprentice",
       "category": "vortex",
+      "how": "Reach Vortex level 4.",
       "rarity": 2.6,
       "icon": "games/dice-a-million/achievements/6a905350f11dedb4d35816e94d25c334d6fe945d.jpg"
     },
@@ -1095,7 +1103,7 @@
       "id": "65ec187156b0b2da4e273ea03d9f96d7a75ffda6",
       "name": "Glitched Die",
       "category": "dice",
-      "how": "Get promoted as static.",
+      "how": "Get promoted as Static Hand.",
       "rarity": 2.2,
       "icon": "games/dice-a-million/achievements/65ec187156b0b2da4e273ea03d9f96d7a75ffda6.jpg"
     },
@@ -1111,7 +1119,7 @@
       "id": "3bedef084e4166c69b7584739f8c40849e0a4b25",
       "name": "Ace of Stars",
       "category": "cards",
-      "how": "Beat dicerush in Power VI.",
+      "how": "Beat Dice Rush in Power VI.",
       "rarity": 2.1,
       "icon": "games/dice-a-million/achievements/3bedef084e4166c69b7584739f8c40849e0a4b25.jpg"
     },
@@ -1127,7 +1135,7 @@
       "id": "5e8a85e0282bbbd596bf4efd36580fc3bd8d1831",
       "name": "Natural 6",
       "category": "challenges",
-      "how": "Complete the challenge",
+      "how": "Win the “Natural 6” challenge",
       "rarity": 1.8,
       "icon": "games/dice-a-million/achievements/5e8a85e0282bbbd596bf4efd36580fc3bd8d1831.jpg"
     },
@@ -1135,15 +1143,15 @@
       "id": "9654a99654afb7d5278bd27239ac3c4765f450e1",
       "name": "Prime Die",
       "category": "dice",
-      "how": "Get promoted as binary.",
+      "how": "Get promoted as Bicolor Hand.",
       "rarity": 1.6,
       "icon": "games/dice-a-million/achievements/9654a99654afb7d5278bd27239ac3c4765f450e1.jpg"
     },
     {
       "id": "810d25758d4373855b2c368f27aac38b239b8f63",
       "name": "???",
-      "category": "dice",
-      "how": "Get the first piece \"Some strange energy radiates from this die.",
+      "category": "challenges",
+      "how": "Win the “??????????” challenge (it unlocks with the Static Die).",
       "rarity": 1.6,
       "icon": "games/dice-a-million/achievements/810d25758d4373855b2c368f27aac38b239b8f63.jpg"
     },
@@ -1151,7 +1159,7 @@
       "id": "74ad0433d709fd3c5d0aef5c3d37c57c53854253",
       "name": "The Pact",
       "category": "dice",
-      "how": "Get a million pips as black.",
+      "how": "Get a million pips as Black Hand.",
       "rarity": 1.6,
       "icon": "games/dice-a-million/achievements/74ad0433d709fd3c5d0aef5c3d37c57c53854253.jpg"
     },
@@ -1159,6 +1167,7 @@
       "id": "6b054aca035ef0cb6590bc8cd3c45ef1f606ad61",
       "name": "Dark Matter D4",
       "category": "dice",
+      "how": "Get 5X POWER as Black Hand.",
       "rarity": 1.6,
       "icon": "games/dice-a-million/achievements/6b054aca035ef0cb6590bc8cd3c45ef1f606ad61.jpg"
     },
@@ -1166,7 +1175,7 @@
       "id": "93fc00e5e9990f6f3c603b205d981e446652307e",
       "name": "Blood Ring",
       "category": "rings",
-      "how": "Beat the game as black.",
+      "how": "Beat the game as Black Hand.",
       "rarity": 1.6,
       "icon": "games/dice-a-million/achievements/93fc00e5e9990f6f3c603b205d981e446652307e.jpg"
     },
@@ -1174,6 +1183,7 @@
       "id": "35054d549d84bc8a36e1b9161d1e0272ad8b3863",
       "name": "Vortex Local",
       "category": "vortex",
+      "how": "Reach Vortex level 7.",
       "rarity": 1.6,
       "icon": "games/dice-a-million/achievements/35054d549d84bc8a36e1b9161d1e0272ad8b3863.jpg"
     },
@@ -1181,6 +1191,7 @@
       "id": "bf31ca0303b8e1ab2bc2c700039474fcf1b5e6fc",
       "name": "Vortex Master",
       "category": "vortex",
+      "how": "Reach Vortex level 10.",
       "rarity": 1.4,
       "icon": "games/dice-a-million/achievements/bf31ca0303b8e1ab2bc2c700039474fcf1b5e6fc.jpg"
     },
@@ -1188,7 +1199,7 @@
       "id": "e9b2dfb96f7b69769419d4e0d3cd28aacc402794",
       "name": "Ringless",
       "category": "challenges",
-      "how": "Complete the challenge",
+      "how": "Win the “Ringless” challenge",
       "rarity": 1.4,
       "icon": "games/dice-a-million/achievements/e9b2dfb96f7b69769419d4e0d3cd28aacc402794.jpg"
     },
@@ -1196,6 +1207,7 @@
       "id": "6a41d5f8acf75887c32a977b9e95bc0b83149358",
       "name": "Cyan Hand",
       "category": "hands",
+      "how": "Beat the game with all dice in your bag having the same shape.",
       "rarity": 1.4,
       "icon": "games/dice-a-million/achievements/6a41d5f8acf75887c32a977b9e95bc0b83149358.jpg"
     },
@@ -1211,7 +1223,7 @@
       "id": "1d92bcf0590552939597448eb0b3f692bbcedd0d",
       "name": "Author's Die",
       "category": "dice",
-      "how": "Get promoted as black.",
+      "how": "Get promoted as Black Hand.",
       "rarity": 1.3,
       "icon": "games/dice-a-million/achievements/1d92bcf0590552939597448eb0b3f692bbcedd0d.jpg"
     },
@@ -1219,7 +1231,7 @@
       "id": "85aba602549a7f5190081106b17155b3e8250e5e",
       "name": "Shadow Glass",
       "category": "cards",
-      "how": "Beat dicerush as black.",
+      "how": "Beat Dice Rush as Black Hand.",
       "rarity": 1.2,
       "icon": "games/dice-a-million/achievements/85aba602549a7f5190081106b17155b3e8250e5e.jpg"
     },
@@ -1227,7 +1239,7 @@
       "id": "cfaf0318e06415260c1b027bad3567f48cf4bdf9",
       "name": "Die of Lament",
       "category": "dice",
-      "how": "Beat Face 3 as hollow.",
+      "how": "Beat Face 3 as Hollow Hand.",
       "rarity": 1.1,
       "icon": "games/dice-a-million/achievements/cfaf0318e06415260c1b027bad3567f48cf4bdf9.jpg"
     },
@@ -1235,7 +1247,7 @@
       "id": "b94d1056aedd26b1f49a21da735269a21118a346",
       "name": "Slate Ring",
       "category": "rings",
-      "how": "Get a million pips as hollow.",
+      "how": "Get a million pips as Hollow Hand.",
       "rarity": 1.1,
       "icon": "games/dice-a-million/achievements/b94d1056aedd26b1f49a21da735269a21118a346.jpg"
     },
@@ -1251,7 +1263,7 @@
       "id": "ea8aa88d40106018f25d6e9477344fddd1c7bb34",
       "name": "Cursed!",
       "category": "challenges",
-      "how": "Complete the challenge",
+      "how": "Win the “Cursed!” challenge",
       "rarity": 1.0,
       "icon": "games/dice-a-million/achievements/ea8aa88d40106018f25d6e9477344fddd1c7bb34.jpg"
     },
@@ -1259,6 +1271,7 @@
       "id": "f2d31fb9fc5d809989049834d6509418bc5e366e",
       "name": "This number doesn't exist",
       "category": "secrets",
+      "how": "Click J's phone when it gives the Hollow no-response message, before talking to it this run.",
       "rarity": 0.9,
       "icon": "games/dice-a-million/achievements/f2d31fb9fc5d809989049834d6509418bc5e366e.jpg"
     },
@@ -1274,7 +1287,7 @@
       "id": "c679cbc3868424350bc94d7bf98672f052bbc509",
       "name": "Burnt Card",
       "category": "cards",
-      "how": "Beat dicerush as hollow.",
+      "how": "Beat Dice Rush as Hollow Hand.",
       "rarity": 0.8,
       "icon": "games/dice-a-million/achievements/c679cbc3868424350bc94d7bf98672f052bbc509.jpg"
     },
@@ -1306,7 +1319,7 @@
       "id": "805d39c4bc9b9783fa4224320e7cc94bfde18138",
       "name": "Mystery Gift",
       "category": "dice",
-      "how": "Get promoted as hollow.",
+      "how": "Get promoted as Hollow Hand.",
       "rarity": 0.7,
       "icon": "games/dice-a-million/achievements/805d39c4bc9b9783fa4224320e7cc94bfde18138.jpg"
     },
@@ -1322,6 +1335,7 @@
       "id": "a9f845d6656783738d513d926c6a45d5adcb1bce",
       "name": "Message from the past",
       "category": "secrets",
+      "how": "Finish the Hollow phone call at the end of the ending.",
       "rarity": 0.7,
       "icon": "games/dice-a-million/achievements/a9f845d6656783738d513d926c6a45d5adcb1bce.jpg"
     },
@@ -1329,7 +1343,7 @@
       "id": "27f54fe8f38281ed8900bada7491f007406cf184",
       "name": "Keygen",
       "category": "rings",
-      "how": "Beat the game in Power VI as static.",
+      "how": "Beat the game in Power VI as Static Hand.",
       "rarity": 0.6,
       "icon": "games/dice-a-million/achievements/27f54fe8f38281ed8900bada7491f007406cf184.jpg"
     },
@@ -1337,7 +1351,7 @@
       "id": "8b5be9d30104d823e8c17e3b0ea4d90418d71e0e",
       "name": "ULTRAHARD",
       "category": "challenges",
-      "how": "Complete the challenge",
+      "how": "Win the “ULTRAHARD” challenge",
       "rarity": 0.6,
       "icon": "games/dice-a-million/achievements/8b5be9d30104d823e8c17e3b0ea4d90418d71e0e.jpg"
     },
@@ -1360,15 +1374,16 @@
     {
       "id": "acea165eea821d733c82190f82adcf32e3414ae6",
       "name": "Ring of the Snake",
-      "category": "dice",
-      "how": "Stay completely silent.",
+      "category": "rings",
+      "how": "Set music, sound effects and master volume to 0.",
       "rarity": 0.6,
       "icon": "games/dice-a-million/achievements/acea165eea821d733c82190f82adcf32e3414ae6.jpg"
     },
     {
       "id": "3a3569cad37b62a3cb90a3d3889e1f26107a8d99",
       "name": "IKH)(&$%",
-      "category": "secrets",
+      "category": "hands",
+      "how": "Unlock the Hollow Hand: win a round with an empty bag, then show a Hollow die to the Phone Guy.",
       "rarity": 0.5,
       "icon": "games/dice-a-million/achievements/3a3569cad37b62a3cb90a3d3889e1f26107a8d99.jpg"
     },
@@ -1384,7 +1399,7 @@
       "id": "82e7d82d65497b64f987da57c511eaccae537924",
       "name": "Stained Chain",
       "category": "rings",
-      "how": "Beat the game in Power VI as black.",
+      "how": "Beat the game in Power VI as Black Hand.",
       "rarity": 0.4,
       "icon": "games/dice-a-million/achievements/82e7d82d65497b64f987da57c511eaccae537924.jpg"
     },
@@ -1392,7 +1407,7 @@
       "id": "96b937964d289e80df13c56f25494d0700fa3a6c",
       "name": "Ourodie",
       "category": "dice",
-      "how": "Beat the game in Power VI as hollow.",
+      "how": "Beat the game in Power VI as Hollow Hand.",
       "rarity": 0.4,
       "icon": "games/dice-a-million/achievements/96b937964d289e80df13c56f25494d0700fa3a6c.jpg"
     },
@@ -1407,7 +1422,8 @@
     {
       "id": "1c386fd556d7b21b9ee1a981536bdf4420faa270",
       "name": "Marshmallow",
-      "category": "secrets",
+      "category": "dice",
+      "how": "Get promoted as Cyan Hand.",
       "rarity": 0.4,
       "icon": "games/dice-a-million/achievements/1c386fd556d7b21b9ee1a981536bdf4420faa270.jpg"
     },
@@ -1415,7 +1431,7 @@
       "id": "243a4290666fbf88ae00238085565d232db851ea",
       "name": "Blackjack",
       "category": "challenges",
-      "how": "Complete the challenge",
+      "how": "Win the “Blackjack” challenge",
       "rarity": 0.3,
       "icon": "games/dice-a-million/achievements/243a4290666fbf88ae00238085565d232db851ea.jpg"
     },
@@ -1423,6 +1439,7 @@
       "id": "56a14275e9f589dad9b8b8a79a5441300fc4d9d7",
       "name": "All You Can Dice",
       "category": "secrets",
+      "how": "Unlock everything (game completion).",
       "rarity": 0.2,
       "icon": "games/dice-a-million/achievements/56a14275e9f589dad9b8b8a79a5441300fc4d9d7.jpg"
     },

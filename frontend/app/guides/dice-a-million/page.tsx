@@ -1,11 +1,10 @@
-import { Bestiary } from "@/games/dice-a-million/components/bestiary";
 import { GuideSearch } from "@/games/dice-a-million/components/guide-search";
 import { Hero } from "@/games/dice-a-million/components/hero";
 import { IndexList } from "@/games/dice-a-million/components/index-list";
 import { Roadmap } from "@/games/dice-a-million/components/roadmap";
 import { Strategy } from "@/games/dice-a-million/components/strategy";
 import { game } from "@/games/dice-a-million/game";
-import { bestiary, meta, roadmap } from "@/games/dice-a-million/lib/data";
+import { meta, roadmap } from "@/games/dice-a-million/lib/data";
 import { searchEntries } from "@/games/dice-a-million/lib/search";
 import { GameShell } from "@/components/game/game-shell";
 import { Section } from "@/components/game/section";
@@ -15,7 +14,6 @@ export const metadata = { title: `${game.name} 100% Guide · Games Guide`, descr
 const SECTIONS = [
   { id: "roadmap", label: "Roadmap" },
   { id: "strategy", label: "Strategy" },
-  { id: "bosses", label: "Bosses" },
   { id: "index", label: "Index" },
 ];
 
@@ -26,17 +24,15 @@ export default function Page() {
           <Hero />
           <GuideSearch entries={searchEntries} />
         </>
-      } sections={SECTIONS} sources={meta.sources} updated={meta.updated} issuesUrl="https://github.com/d116626/games/issues/new">
+      } sections={SECTIONS} sources={meta.sources} updated={meta.updated} issuesUrl="https://github.com/d116626/games/issues/new"
+      disclaimer="Fan-made, unofficial. Game assets © countlessnights / 2 Left Thumbs. Item names, texts and sprites come from the game; tell us and we will remove anything on request.">
       <Section id="roadmap" index={1} title="Roadmap to 100%" count={roadmap.stages.length}>
         <Roadmap />
       </Section>
       <Section id="strategy" index={2} title="Strategy">
         <Strategy />
       </Section>
-      <Section id="bosses" index={3} title="Bosses" count={bestiary.bosses.length}>
-        <Bestiary />
-      </Section>
-      <Section id="index" index={4} title="Index">
+      <Section id="index" index={3} title="Index">
         <IndexList />
       </Section>
     </GameShell>

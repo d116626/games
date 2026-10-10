@@ -79,7 +79,7 @@
         "ALT triggers Auto-Select while that setting is active. Auto-Select now also takes multipliers into account.",
         "Space confirms the roll when 'Manually confirm score' is on.",
         "Click the Power Level dots to select a power quickly, like you do with hands.",
-        "Boss reroll: with a boss round next on the map, you can banish that boss for the run. The first reroll in a run is free, every one after that permanently costs 2 max ring slots."
+        "Boss reroll: with a boss round next on the map, you can banish that boss for the run. The first reroll in a run is free, every one after that permanently costs 2 max ring slots. After any reroll, all later round targets in the run are 1.5x higher."
       ],
       "source": "Official patch notes (Steam)"
     },

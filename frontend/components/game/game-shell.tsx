@@ -15,6 +15,7 @@ export function GameShell({
   sources = [],
   updated,
   issuesUrl,
+  disclaimer,
   children,
 }: {
   game: Game;
@@ -27,6 +28,8 @@ export function GameShell({
   updated?: string;
   /** Link para reportar erros no guia. */
   issuesUrl?: string;
+  /** Aviso de direitos, mostrado no rodapé. */
+  disclaimer?: string;
   children: ReactNode;
 }) {
   return (
@@ -100,6 +103,7 @@ export function GameShell({
               )}
             </p>
           )}
+          {disclaimer && <p className="mt-3 text-xs text-foreground/60">{disclaimer}</p>}
         </footer>
       )}
     </div>

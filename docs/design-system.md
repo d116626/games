@@ -42,21 +42,23 @@ Imagens do jogo ficam em `public/games/<jogo>/` (baixadas pelo pipeline). Ícone
 elemento (`<Skull />`) entre Server e Client Components.
 
 ## Componentes do Dice A Million (`games/dice-a-million/components/`)
-Ordem da página: `Hero` → `GuideSearch` (busca em tudo, atalho `/`) → `Roadmap` (etapas em ordem, cadeia de mãos, matriz mão x objetivo) → `Strategy` →
-`Bestiary` (chefes) → `IndexList` (dados, anéis, cartas e encantamentos, com efeito e como desbloquear, em blocos recolhíveis, no fim).
+Ordem da página: `Hero` → `GuideSearch` (busca em tudo, atalho `/`) → `Roadmap` (etapas em ordem, cadeia de mãos, objetivos por mão) → `Strategy` →
+`IndexList` (o índice, no fim). Cada bloco do índice é um `IndexGroup` recolhível que abre sozinho quando a URL aponta para ele (`#index-bosses`; a busca usa isso):
+dados, anéis, cartas, encantamentos, maldições, chefes (com chefe final e dados inimigos), desafios, Powers e regras da run (alvos por rodada, packs, paradas do mapa).
 O catálogo vem do HTML da wiki da Steam (`catalog.py`, imagens em `public/games/dice-a-million/items/`); `lib/search.ts` monta as entradas da busca.
 O roteiro é escrito à mão em `utils/games/dice_a_million/roadmap.py` (com `warning` onde as fontes divergem) e a matriz
 sai do texto das conquistas. Sem checklist: o guia é para ler, não para marcar.
 Dados em `public/data/dice-a-million/` (`lib/data.ts`).
 
 ## Interação
-- `HandTracker` (cliente): matriz mão x objetivo com marcação em `localStorage` (`lib/local-store.ts`) e sugestão do próximo objetivo (o de maior % de jogadores).
+- `HandTracker` (cliente): um card por mão com seus objetivos (sem tabela, sem scroll horizontal), marcação em `localStorage` (`lib/local-store.ts`) e sugestão do próximo objetivo (o de maior % de jogadores).
 - `ItemRef`: botão que abre o cartão do item com a Popover API nativa. `RichText` transforma nomes exatos do catálogo (`lib/items.ts`) em `ItemRef`; nomes curtos ou comuns ficam fora (`SKIP`).
 - Fichas de mão (`HAND_NOTES` em roadmap.py): dados iniciais e dicas só onde a wiki Miraheze documenta (White, Red, Blue, Black).
 
+- `CatalogGroup`: filtros de raridade, formato e tags em chips (tags: várias ao mesmo tempo, todas valem). Filtros usam a fonte de texto, não a pixelada.
 - `GuideSearch`: a busca vive na URL (`?q=&type=`, via `useSyncExternalStore`), então o link copiado reproduz o resultado; filtro por tipo.
 - `BackToTop`, rodapé com data dos dados (`meta.updated`, gerada pelo pipeline) e link para reportar erros; `@media print` em `theme.css`.
 - Dados escritos à mão com fonte: `bosses.py` (dicas da wiki, chefes que nunca aparecem, maldições), notas de patch oficiais da Steam em `roadmap.py`/`strategy.py`.
 
 ## Pendentes
-`DetailSheet`, tabela completa de Powers (nenhuma fonte lista todos os níveis), preços das peças do dado quebrado (fontes divergem).
+`DetailSheet`. Desafios, Powers e regras da run saem do `db.json` do jogo (`rules.py` -> `rules.json`).

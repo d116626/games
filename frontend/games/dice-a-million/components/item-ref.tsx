@@ -14,7 +14,7 @@ export function ItemRef({ item, children, className }: { item: ItemInfo; childre
         {children}
       </button>
       <div id={id} popover="auto" className="sticker m-auto w-[min(26rem,calc(100vw-2rem))] p-4 backdrop:bg-black/50">
-        <ItemRow icon={item.icon} name={item.name} faces={item.faces} condition={item.condition} text={item.text || "No details."} />
+        <ItemRow {...item} text={item.text || "No details."} />
         <button
           type="button"
           popoverTarget={id}

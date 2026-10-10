@@ -1,65 +1,102 @@
-import { Ban, Lightbulb, RefreshCw, Skull } from "lucide-react";
+import { Ban, ChevronRight, RefreshCw, Skull } from "lucide-react";
+import { ItemRow } from "@/games/dice-a-million/components/item-row";
 import { bestiary } from "@/games/dice-a-million/lib/data";
 
-/** Chefes (com a versão reforçada) e dados inimigos. */
-export function Bestiary() {
+/** Chefes (com a versão reforçada) e o chefe final, no mesmo formato compacto do índice. */
+export function Bosses() {
+  const { finalBoss } = bestiary;
   return (
-    <div className="space-y-10">
-      <p className="sticker flex gap-3 p-4 text-sm">
-        <RefreshCw className="mt-0.5 size-4 shrink-0" />
-        <span>
-          <b>Boss reroll:</b> on the map, before a boss round, you can banish that boss for the rest of the run. The first
-          reroll in a run is free, every one after that permanently costs 2 max ring slots.
-        </span>
-      </p>
-      <ul className="grid gap-4 md:grid-cols-2">
+    <div className="space-y-6">
+      <ul className="space-y-2 text-xs">
+        <li className="flex gap-2">
+          <RefreshCw className="mt-0.5 size-3.5 shrink-0" />
+          <span>
+            <b>Boss reroll:</b> on the map you can banish the next boss. The first reroll in a run is free, each one after costs 2
+            max ring slots, and after any reroll all later round targets are 1.5x higher.
+          </span>
+        </li>
+        <li className="flex gap-2">
+          <Skull className="mt-0.5 size-3.5 shrink-0" />
+          <span>
+            <b>Empowered:</b> always on Faces 4 and 5 (after you win), and on Faces 1 to 3 in ULTRAHARD.
+          </span>
+        </li>
+      </ul>
+
+      <ul className="grid gap-x-8 gap-y-4 md:grid-cols-2">
         {bestiary.bosses.map((boss) => (
-          <li key={boss.name} className="sticker flex flex-col gap-3 p-4">
-            <h3 className="font-display text-3xl leading-none">{boss.name}</h3>
-            <p className="text-sm">{boss.effect}</p>
-            {boss.tips && (
-              <p className="flex gap-2 text-sm">
-                <Lightbulb className="mt-0.5 size-4 shrink-0" />
-                <span>
-                  <b>How to beat it:</b> {boss.tips}
-                </span>
-              </p>
-            )}
-            {boss.banned && (
-              <p className="flex gap-2 text-xs text-muted-foreground">
-                <Ban className="mt-0.5 size-3.5 shrink-0" />
-                {boss.banned}
-              </p>
-            )}
-            {boss.empowered && (
-              <p className="mt-auto flex gap-2 rounded-md bg-(--ink) p-3 text-sm text-white">
-                <Skull className="mt-0.5 size-4 shrink-0 text-(--game-accent)" />
-                <span>
-                  <b className="font-mono text-[11px] uppercase tracking-widest text-(--game-accent)">
-                    Empowered{" "}
-                  </b>
-                  {boss.empowered}
-                </span>
-              </p>
-            )}
+          <li key={boss.name}>
+            <ItemRow
+              icon={boss.icon}
+              name={boss.name}
+              tag={boss.targetMod ? `Target x${boss.targetMod}` : undefined}
+              text={boss.effect}
+            >
+              {boss.empowered && (
+                <p className="mt-1 flex gap-1.5 text-xs">
+                  <Skull className="mt-0.5 size-3.5 shrink-0" />
+                  <span>
+                    <b>Empowered:</b> {boss.empowered}
+                  </span>
+                </p>
+              )}
+              {boss.banned && (
+                <p className="mt-1 flex gap-1.5 text-xs text-muted-foreground">
+                  <Ban className="mt-0.5 size-3.5 shrink-0" />
+                  {boss.banned}
+                </p>
+              )}
+              {boss.tips && (
+                <details className="group mt-1 text-xs">
+                  <summary className="flex cursor-pointer list-none items-center gap-1 font-bold">
+                    <ChevronRight className="size-3.5 transition-transform group-open:rotate-90" />
+                    How to beat it
+                  </summary>
+                  <p className="mt-1 pl-5">{boss.tips}</p>
+                </details>
+              )}
+            </ItemRow>
           </li>
         ))}
       </ul>
 
-      <div>
-        <h3 className="mb-3 flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-[0.2em]">
-          <span className="hud-tab rounded-md px-2 py-1">Enemy dice</span>
-          Rolled against you
-        </h3>
-        <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {bestiary.enemyDice.map((die) => (
-            <li key={die.name} className="sticker-sm flex items-start gap-3 p-3">
-              <span className="font-display text-3xl leading-none">{die.name}</span>
-              <span className="text-sm">{die.effect}</span>
-            </li>
-          ))}
-        </ul>
+      <div className="border-t-2 border-(--ink)/15 pt-4">
+        <ItemRow
+          icon={finalBoss.icon}
+          iconClass="h-16 w-9"
+          name={finalBoss.name}
+          tag={`${finalBoss.hp} HP`}
+          text={`${finalBoss.effect} Waits at the end of Face 6. At ${finalBoss.phaseTwoHp} HP another boss joins: ${finalBoss.phaseTwoBosses.join(", ")}.`}
+        >
+          <details className="group mt-1 text-xs">
+            <summary className="flex cursor-pointer list-none items-center gap-1 font-bold">
+              <ChevronRight className="size-3.5 transition-transform group-open:rotate-90" />
+              Dice it can roll (odds)
+            </summary>
+            <ul className="mt-1 grid gap-x-6 gap-y-0.5 pl-5 sm:grid-cols-2">
+              {finalBoss.attacks.map((attack) => (
+                <li key={attack.dice.join()} className="flex gap-2">
+                  <span className="w-9 shrink-0 text-right tabular-nums">~{attack.chance}%</span>
+                  {attack.dice.join(" + ")}
+                </li>
+              ))}
+            </ul>
+          </details>
+        </ItemRow>
       </div>
     </div>
+  );
+}
+
+/** Dados que os chefes rolam contra você. */
+export function EnemyDice() {
+  return (
+    <ul className="grid gap-x-8 gap-y-4 md:grid-cols-2">
+      {bestiary.enemyDice.map((die) => (
+        <li key={die.name}>
+          <ItemRow icon={die.icon} name={die.name} text={die.effect} />
+        </li>
+      ))}
+    </ul>
   );
 }

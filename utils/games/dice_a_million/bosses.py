@@ -1,5 +1,5 @@
-"""Dicas por chefe (wiki Miraheze) e quando cada chefe nunca aparece (notas de patch oficiais da Steam).
-Escritos à mão e resumidos, porque a wiki tem erros de digitação e seções vazias."""
+"""Dicas por chefe (wiki Miraheze), escritas à mão e resumidas porque a wiki tem erros de digitação e seções vazias.
+Textos, metas e quando cada chefe aparece vêm do jogo (`db.json`)."""
 
 TIPS: dict[str, str] = {
     "The Blackout": "Dice are hidden until rolled. Memorise the outlines of your key dice before entering. "
@@ -17,22 +17,3 @@ TIPS: dict[str, str] = {
     "The Even": "Invert cards and the Even Die and Even Ring make the doubling work for you. Decimal Die negates it "
     "entirely by making every value a multiple of 10.",
 }
-
-BANNED: dict[str, str] = {
-    "The Even": "Never appears for Bicolor Hand (patch 1.0.22).",
-    "The Odd": "Never appears for Bicolor Hand (patch 1.0.22).",
-    "The Capricious": "Never appears for Cyan Hand (patch 1.1.1).",
-    "The Glutton": "Never appears for Cyan Hand (patch 1.1.1).",
-    "The Frost": "Never appears in the Carlos was here challenge (patch 1.0.25).",
-    "The Patient": "Never appears in the Peanuts! challenge (patch 1.0.15).",
-    "The Cautious": "Never appears in Dice Rush or Yellow Hand runs (Miraheze wiki).",
-}
-
-CURSES: list[tuple[str, str]] = [
-    ("Deciduous", "Extra value subtracts instead of adding."),
-    ("Explosive", "Discards other VERY nearby dice."),
-    ("Fragile", "Destroys itself when rolled."),
-    ("Negative", "Its value subtracts instead of adding."),
-    ("Parasite", "When rolled adds a Hollow Die to your bag."),
-    ("Weak", "Divides in half every multiplier equal to or greater than 2X that it would give or receive."),
-]

@@ -19,7 +19,7 @@ function subscribeUrl(cb: () => void) {
 
 function rank(entry: SearchEntry, tokens: string[]) {
   const name = entry.name.toLowerCase();
-  const haystack = `${name} ${entry.kind} ${entry.condition ?? ""} ${entry.text}`.toLowerCase();
+  const haystack = `${name} ${entry.kind} ${entry.rarity ?? ""} ${entry.sides && entry.sides <= 6 ? `d${entry.sides}` : ""} ${entry.condition ?? ""} ${entry.text}`.toLowerCase();
   if (!tokens.every((t) => haystack.includes(t))) return null;
   return tokens.every((t) => name.startsWith(t)) ? 0 : tokens.every((t) => name.includes(t)) ? 1 : 2;
 }
@@ -124,7 +124,7 @@ export function GuideSearch({ entries }: { entries: SearchEntry[] }) {
           </div>
           <ul className="grid max-h-[32rem] gap-4 overflow-y-auto md:grid-cols-2">
             {results.slice(0, MAX_RESULTS).map(({ e }) => {
-              const row = <ItemRow icon={e.icon} name={e.name} tag={e.kind} faces={e.faces} condition={e.condition} text={e.text} />;
+              const row = <ItemRow {...e} tag={e.kind} />;
               return (
                 <li key={e.id}>
                   {e.href ? (

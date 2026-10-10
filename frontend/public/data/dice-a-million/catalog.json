@@ -1,2120 +1,3862 @@
 {
   "items": [
     {
-      "id": "a99524a0f1b5ac23",
+      "id": "dice-bottlecap",
       "kind": "dice",
       "name": "Bottle Cap",
       "effect": "Heads or tails.",
       "faces": "1/2",
-      "icon": "games/dice-a-million/items/a99524a0f1b5ac23.png"
+      "sides": 2,
+      "rarity": "common",
+      "icon": "games/dice-a-million/items/dice/bottle-cap.png"
     },
     {
-      "id": "e444cc4cdc6b8a2c",
+      "id": "dice-d3",
       "kind": "dice",
       "name": "D3",
       "effect": "Three faces.",
-      "faces": "1/2/3",
-      "icon": "games/dice-a-million/items/e444cc4cdc6b8a2c.png"
+      "faces": "1-3",
+      "sides": 3,
+      "rarity": "common",
+      "icon": "games/dice-a-million/items/dice/d3.png"
     },
     {
-      "id": "550c01f967be7a52",
+      "id": "dice-d4",
       "kind": "dice",
       "name": "D4",
       "effect": "Four faces.",
-      "faces": "1..4",
-      "icon": "games/dice-a-million/items/550c01f967be7a52.png"
+      "faces": "1-4",
+      "sides": 4,
+      "rarity": "common",
+      "icon": "games/dice-a-million/items/dice/d4.png"
     },
     {
-      "id": "57ed805777d70bd2",
+      "id": "dice-d6",
       "kind": "dice",
       "name": "D6",
       "effect": "Six faces. The classic one.",
-      "faces": "1..6",
-      "icon": "games/dice-a-million/items/57ed805777d70bd2.png"
+      "faces": "1-6",
+      "sides": 6,
+      "rarity": "common",
+      "icon": "games/dice-a-million/items/dice/d6.png"
     },
     {
-      "id": "c2ceb25f8a457c34",
+      "id": "dice-d20",
       "kind": "dice",
       "name": "D20",
       "effect": "Twenty faces.",
-      "faces": "1..20",
-      "icon": "games/dice-a-million/items/c2ceb25f8a457c34.png"
+      "faces": "1-20",
+      "sides": 7,
+      "rarity": "uncommon",
+      "icon": "games/dice-a-million/items/dice/d20.png"
     },
     {
-      "id": "d31f529087b12b0e",
+      "id": "dice-odd",
       "kind": "dice",
       "name": "Odd Die",
       "effect": "Only odd numbers.",
       "faces": "1/3/5/7/9/11",
-      "icon": "games/dice-a-million/items/d31f529087b12b0e.png"
+      "sides": 6,
+      "rarity": "common",
+      "traits": [
+        "parity",
+        "odd-faces"
+      ],
+      "icon": "games/dice-a-million/items/dice/odd-die.png"
     },
     {
-      "id": "3baaed51ea565b03",
+      "id": "dice-even",
       "kind": "dice",
       "name": "Even Die",
       "effect": "Only even numbers.",
       "faces": "2/4/6/8/10/12",
-      "icon": "games/dice-a-million/items/3baaed51ea565b03.png"
+      "sides": 6,
+      "rarity": "common",
+      "traits": [
+        "parity",
+        "even-faces"
+      ],
+      "icon": "games/dice-a-million/items/dice/even-die.png"
     },
     {
-      "id": "5629e765d1bc1630",
+      "id": "dice-iron",
       "kind": "dice",
       "name": "Iron Die",
-      "effect": "3X Multiplier to dice with the same face as this.(Affects itself.)",
-      "faces": "1/2/3",
-      "icon": "games/dice-a-million/items/5629e765d1bc1630.png"
+      "effect": "3X Multiplier to dice with the same face as this. (Affects itself.)",
+      "faces": "1-3",
+      "sides": 3,
+      "rarity": "uncommon",
+      "traits": [
+        "face"
+      ],
+      "icon": "games/dice-a-million/items/dice/iron-die.png"
     },
     {
-      "id": "aa13fc5aceecbfc8",
+      "id": "dice-gold",
       "kind": "dice",
       "name": "Golden Die",
-      "effect": "5X Multiplier to dice with the same face as this.(Affects itself.)",
-      "faces": "1..5",
-      "icon": "games/dice-a-million/items/aa13fc5aceecbfc8.png"
+      "condition": "Reach a score of 1,000",
+      "effect": "5X Multiplier to dice with the same face as this. (Affects itself.)",
+      "faces": "1-6",
+      "sides": 6,
+      "rarity": "rare",
+      "traits": [
+        "face"
+      ],
+      "icon": "games/dice-a-million/items/dice/golden-die.png"
     },
     {
-      "id": "4f5e986b976e8cf7",
+      "id": "dice-coin",
       "kind": "dice",
       "name": "2-faced coin",
-      "effect": "If the face is odd, 2X Multiplier to dice with an odd face. If the face is even, 2X Multiplier to dice with an even face.",
+      "effect": "If its face is odd, 2X Multiplier to dice with an odd face. If its face is even, 2X Multiplier to dice with an even face.",
       "faces": "1/2",
-      "icon": "games/dice-a-million/items/4f5e986b976e8cf7.png"
+      "sides": 2,
+      "rarity": "uncommon",
+      "traits": [
+        "parity",
+        "face"
+      ],
+      "icon": "games/dice-a-million/items/dice/2-faced-coin.png"
     },
     {
-      "id": "726435b7e60e3dac",
+      "id": "dice-mimic",
       "kind": "dice",
       "name": "Mimic Die",
       "condition": "Beat Face 2.",
       "effect": "Copies the highest value among other dice.",
       "faces": "0",
-      "icon": "games/dice-a-million/items/726435b7e60e3dac.png"
+      "sides": 1,
+      "rarity": "uncommon",
+      "traits": [
+        "face-zero",
+        "single-face"
+      ],
+      "icon": "games/dice-a-million/items/dice/mimic-die.png"
     },
     {
-      "id": "c2ae3ae03c474147",
+      "id": "dice-glass",
       "kind": "dice",
       "name": "Glass Die",
       "effect": "2X Multiplier to everything. Destroys itself if its face is a 6.",
-      "faces": "1..6",
-      "icon": "games/dice-a-million/items/c2ae3ae03c474147.png"
+      "faces": "1-6",
+      "sides": 6,
+      "rarity": "uncommon",
+      "traits": [
+        "face",
+        "destroy"
+      ],
+      "icon": "games/dice-a-million/items/dice/glass-die.png"
     },
     {
-      "id": "474b12f861e9dc03",
+      "id": "dice-joined",
       "kind": "dice",
       "name": "Joined Dice",
       "effect": "How did this get here...?",
       "faces": "1/3/12/13/23/31",
-      "icon": "games/dice-a-million/items/474b12f861e9dc03.png"
+      "sides": 6,
+      "rarity": "uncommon",
+      "icon": "games/dice-a-million/items/dice/joined-dice.png"
     },
     {
-      "id": "0064c2bfd1c04b42",
+      "id": "dice-isaac",
       "kind": "dice",
       "name": "Isaac's Die",
       "effect": "Rerolls every die that rolled its lowest face. If its face is a 5, gives an extra roll and exhausts.",
       "faces": "1-6",
-      "icon": "games/dice-a-million/items/0064c2bfd1c04b42.png"
+      "sides": 6,
+      "rarity": "rare",
+      "traits": [
+        "face",
+        "exhaust"
+      ],
+      "icon": "games/dice-a-million/items/dice/isaac-s-die.png"
     },
     {
-      "id": "db97beec203129a5",
+      "id": "dice-d4translucid",
       "kind": "dice",
       "name": "Translucid D4",
       "condition": "Roll 4 fours in a single roll.",
-      "effect": "X Multiplier to nearby dice. X being the number on its face.",
+      "effect": "Multiplies nearby dice by the number on its face.",
       "faces": "1-4",
-      "icon": "games/dice-a-million/items/db97beec203129a5.png"
+      "sides": 4,
+      "rarity": "rare",
+      "traits": [
+        "face",
+        "nearby"
+      ],
+      "icon": "games/dice-a-million/items/dice/translucid-d4.png"
     },
     {
-      "id": "040f83838d20d8fa",
+      "id": "dice-decimal",
       "kind": "dice",
       "name": "Decimal Die",
       "effect": "Ups the value of every die to their next multiple of 10. Every die in this roll is considered even.",
-      "faces": "10/20..60",
-      "icon": "games/dice-a-million/items/040f83838d20d8fa.png"
+      "faces": "10/20/30/40/50/60",
+      "sides": 6,
+      "rarity": "legendary",
+      "traits": [
+        "parity",
+        "even-faces"
+      ],
+      "icon": "games/dice-a-million/items/dice/decimal-die.png"
     },
     {
-      "id": "c9880d90ded8235b",
+      "id": "dice-d8",
       "kind": "dice",
       "name": "D8",
       "effect": "+8 extra value for every die with a face equals or greater than 8.",
       "faces": "1-8",
-      "icon": "games/dice-a-million/items/c9880d90ded8235b.png"
+      "sides": 7,
+      "rarity": "common",
+      "traits": [
+        "ev",
+        "face"
+      ],
+      "icon": "games/dice-a-million/items/dice/d8.png"
     },
     {
-      "id": "60416d4569e39f3d",
+      "id": "dice-bottle",
       "kind": "dice",
       "name": "Bottle of Caps",
-      "condition": "Rolls as many Bottle Caps as shown on its face.",
-      "effect": "If its face is a 15, destroys itself and adds between 1 and 15 Bottle Caps permanently to your bag.",
+      "effect": "Rolls as many Bottle Caps as shown on its face. If its face is a 15, destroys itself and adds between 1 and 15 Bottle Caps permanently to your bag.",
       "faces": "1-15",
-      "icon": "games/dice-a-million/items/60416d4569e39f3d.png"
+      "sides": 7,
+      "rarity": "uncommon",
+      "traits": [
+        "face",
+        "destroy"
+      ],
+      "icon": "games/dice-a-million/items/dice/bottle-of-caps.png"
     },
     {
-      "id": "221a089406db8ad6",
+      "id": "dice-d100",
       "kind": "dice",
-      "name": "D100.Beat Face 3 as white",
+      "name": "D100",
+      "condition": "Beat Face 3 as White Hand.",
       "effect": "A hundred faces.",
       "faces": "1-100",
-      "icon": "games/dice-a-million/items/221a089406db8ad6.png"
+      "sides": 7,
+      "rarity": "rare",
+      "traits": [
+        "huge"
+      ],
+      "icon": "games/dice-a-million/items/dice/d100.png"
     },
     {
-      "id": "a72b2f4c4ca91d57",
+      "id": "dice-bomb",
       "kind": "dice",
       "name": "Time Bomb",
       "condition": "Beat Face 1.",
       "effect": "Its face is always 50. Discards other nearby dice. (Always acts before the rest.)",
-      "icon": "games/dice-a-million/items/a72b2f4c4ca91d57.png"
+      "faces": "50",
+      "sides": 1,
+      "rarity": "uncommon",
+      "traits": [
+        "face",
+        "discard",
+        "even-faces",
+        "single-face",
+        "nearby"
+      ],
+      "icon": "games/dice-a-million/items/dice/time-bomb.png"
     },
     {
-      "id": "e6c2ce92718cd523",
+      "id": "dice-vampire",
       "kind": "dice",
       "name": "Vampire Die",
       "effect": "Discards nearby dice. Multiplies everything else by the highest face on the discarded dice.",
       "faces": "0",
-      "icon": "games/dice-a-million/items/e6c2ce92718cd523.png"
+      "sides": 1,
+      "rarity": "rare",
+      "traits": [
+        "discard",
+        "face",
+        "face-zero",
+        "nearby"
+      ],
+      "icon": "games/dice-a-million/items/dice/vampire-die.png"
     },
     {
-      "id": "127731731e9f2697",
+      "id": "dice-unbalanced",
       "kind": "dice",
       "name": "Unbalanced Die",
       "effect": "This die has not been tested correctly.",
       "faces": "1/1/1/1/1/51",
-      "icon": "games/dice-a-million/items/127731731e9f2697.png"
+      "sides": 6,
+      "rarity": "uncommon",
+      "traits": [
+        "odd-faces"
+      ],
+      "icon": "games/dice-a-million/items/dice/unbalanced-die.png"
     },
     {
-      "id": "16d493ea43f354da",
+      "id": "dice-multidiv",
       "kind": "dice",
       "name": "Carlos's Die",
       "effect": "X Multiplier to everything. X being the number on its face. (The face with a 0 multiplies by 0.)",
       "faces": "0/1/2/3",
-      "icon": "games/dice-a-million/items/16d493ea43f354da.png"
+      "sides": 4,
+      "rarity": "uncommon",
+      "traits": [
+        "face"
+      ],
+      "icon": "games/dice-a-million/items/dice/carlos-s-die.png"
     },
     {
-      "id": "bb5cd91293dd4fd0",
+      "id": "dice-oddinverse",
       "kind": "dice",
       "name": "Odd of Dice",
       "condition": "Beat the Odd boss.",
       "effect": "If the face of every other die is odd, its value is 31. If not, its discarded.",
       "faces": "31",
-      "icon": "games/dice-a-million/items/bb5cd91293dd4fd0.png"
+      "sides": 1,
+      "rarity": "uncommon",
+      "traits": [
+        "face",
+        "parity",
+        "discard",
+        "odd-faces"
+      ],
+      "icon": "games/dice-a-million/items/dice/odd-of-dice.png"
     },
     {
-      "id": "fbba3a7683e7ac4f",
+      "id": "dice-eveninverse",
       "kind": "dice",
       "name": "Even of Dice",
       "condition": "Beat the Even boss.",
       "effect": "If the face of every other die is even, its value is 40. If not, its discarded.",
       "faces": "40",
-      "icon": "games/dice-a-million/items/fbba3a7683e7ac4f.png"
+      "sides": 1,
+      "rarity": "uncommon",
+      "traits": [
+        "face",
+        "parity",
+        "discard",
+        "even-faces"
+      ],
+      "icon": "games/dice-a-million/items/dice/even-of-dice.png"
     },
     {
-      "id": "00630e7432117a9c",
+      "id": "dice-random",
       "kind": "dice",
       "name": "Static Die",
-      "condition": "Beat Face 3 as static.",
+      "condition": "Beat Face 3 as Static Hand.",
       "effect": "Randomize itself.",
-      "faces": "0",
-      "icon": "games/dice-a-million/items/00630e7432117a9c.png"
+      "sides": 1,
+      "rarity": "rare",
+      "traits": [
+        "randomize",
+        "single-face"
+      ],
+      "icon": "games/dice-a-million/items/dice/static-die.png"
     },
     {
-      "id": "fd8706f020cbc84b",
+      "id": "dice-magnetic",
       "kind": "dice",
       "name": "Magnetic Die",
-      "condition": "Attracts everything on the table. +1 charge to charged dice.",
-      "effect": "1-6",
-      "icon": "games/dice-a-million/items/fd8706f020cbc84b.png"
+      "effect": "Attracts everything on the table. +1 charge to charged dice.",
+      "faces": "1-6",
+      "sides": 6,
+      "rarity": "common",
+      "traits": [
+        "charge"
+      ],
+      "icon": "games/dice-a-million/items/dice/magnetic-die.png"
     },
     {
-      "id": "60f3b41b30151b1e",
+      "id": "dice-ascendant",
       "kind": "dice",
       "name": "Ascendant Die",
       "condition": "Have a die reach 1000 extra value.",
-      "effect": "When the roll ends, if its face is a 3 adds its total value to its extra value. 1-3 (This die always loses its extra value after the round ends, ignoring other effects.)",
-      "icon": "games/dice-a-million/items/60f3b41b30151b1e.png"
+      "effect": "When the roll ends, if its face is a 3 adds its total value to its extra value. (This die always loses its extra value after the round ends, ignoring other effects.)",
+      "faces": "1-3",
+      "sides": 3,
+      "rarity": "rare",
+      "traits": [
+        "face",
+        "ev"
+      ],
+      "icon": "games/dice-a-million/items/dice/ascendant-die.png"
     },
     {
-      "id": "1abec9887d5f234e",
+      "id": "dice-nut",
       "kind": "dice",
       "name": "Peanut",
       "effect": "Just a simple peanut.",
       "faces": "1",
-      "icon": "games/dice-a-million/items/1abec9887d5f234e.png"
+      "sides": 1,
+      "rarity": "rare",
+      "traits": [
+        "odd-faces"
+      ],
+      "icon": "games/dice-a-million/items/dice/peanut.png"
     },
     {
-      "id": "8e0a83bfc0d312a5",
+      "id": "dice-d666",
       "kind": "dice",
       "name": "D666",
-      "effect": "Inside a peanut(just roll peanuts).666 faces. Destroys itself if its face is 666.",
+      "condition": "Inside a peanut.",
+      "effect": "666 faces. Destroys itself if its face is 666.",
       "faces": "1-666",
-      "icon": "games/dice-a-million/items/8e0a83bfc0d312a5.png"
+      "sides": 7,
+      "rarity": "legendary",
+      "traits": [
+        "destroy",
+        "face",
+        "huge"
+      ],
+      "icon": "games/dice-a-million/items/dice/d666.png"
     },
     {
-      "id": "069dd0afad78b5c9",
+      "id": "dice-clone",
       "kind": "dice",
-      "name": "Tesseract.Beat the game in Power VI as green",
-      "effect": "1 in X probability of rolling a copy of other nearby dice. X being its face. 1-3 (Doesn't apply to other Tesseracts.)",
-      "icon": "games/dice-a-million/items/069dd0afad78b5c9.png"
+      "name": "Tesseract",
+      "condition": "Beat the game in Power VI as Green Hand.",
+      "effect": "1 in X probability of rolling a copy of other nearby dice. X being its face. (Doesn't apply to other Tesseracts.)",
+      "faces": "1-3",
+      "sides": 3,
+      "rarity": "legendary",
+      "traits": [
+        "face",
+        "nearby"
+      ],
+      "icon": "games/dice-a-million/items/dice/tesseract.png"
     },
     {
-      "id": "298f37bbba67cdea",
+      "id": "dice-cards",
       "kind": "dice",
       "name": "Surprise Egg",
       "effect": "If the face is a 4, destroys itself and gives a random card.",
       "faces": "1-4",
-      "icon": "games/dice-a-million/items/298f37bbba67cdea.png"
+      "sides": 4,
+      "rarity": "common",
+      "traits": [
+        "face",
+        "destroy"
+      ],
+      "icon": "games/dice-a-million/items/dice/surprise-egg.png"
     },
     {
-      "id": "b79e9141f061f187",
+      "id": "dice-rubik",
       "kind": "dice",
       "name": "Rubik's Cube",
       "condition": "Have 9 dice on the table.",
-      "effect": "When rolled it dismantles in 6 pieces whose face is the same as this.",
+      "effect": "When rolled, splits into 6 pieces with the same face as itself.",
       "faces": "1",
-      "icon": "games/dice-a-million/items/b79e9141f061f187.png"
+      "sides": 1,
+      "rarity": "rare",
+      "traits": [
+        "face",
+        "odd-faces",
+        "single-face"
+      ],
+      "icon": "games/dice-a-million/items/dice/rubik-s-cube.png"
     },
     {
-      "id": "9552d6913e56fc90",
+      "id": "dice-d7",
       "kind": "dice",
       "name": "D7",
       "effect": "Gives 1-7 extra value to other nearby dice, according to its face.",
       "faces": "1-7",
-      "icon": "games/dice-a-million/items/9552d6913e56fc90.png"
+      "sides": 7,
+      "rarity": "common",
+      "traits": [
+        "face",
+        "ev",
+        "nearby"
+      ],
+      "icon": "games/dice-a-million/items/dice/d7.png"
     },
     {
-      "id": "ca8aa885b705e6f0",
+      "id": "dice-dumbbell",
       "kind": "dice",
       "name": "Dumbbell",
-      "effect": "Its face is always a 5. X Multiplier to itself, X being the number of dice on the table.  5",
-      "icon": "games/dice-a-million/items/ca8aa885b705e6f0.png"
+      "effect": "Its face is always a 5. Multiplies itself by the number of dice on the table.",
+      "faces": "5",
+      "sides": 1,
+      "rarity": "rare",
+      "traits": [
+        "face",
+        "odd-faces"
+      ],
+      "icon": "games/dice-a-million/items/dice/dumbbell.png"
     },
     {
-      "id": "f31f288801851e94",
+      "id": "dice-angel",
       "kind": "dice",
       "name": "Angelical Die",
       "condition": "Roll a 1 on 5 dice at the same time.",
-      "effect": "Ups to 111, 222 or 333 other dice's value with faces 1, 2 or 3 according to the face on this.",
-      "faces": "1/2/3",
-      "icon": "games/dice-a-million/items/f31f288801851e94.png"
+      "effect": "Sets to 111, 222 or 333 other dice's value with faces 1, 2 or 3 according to the face on this.",
+      "faces": "1-3",
+      "sides": 3,
+      "rarity": "legendary",
+      "traits": [
+        "face"
+      ],
+      "icon": "games/dice-a-million/items/dice/angelical-die.png"
     },
     {
-      "id": "4f5800eb0b889e84",
+      "id": "dice-luckyblock",
       "kind": "dice",
       "name": "Lucky Block",
       "effect": "Transforms into another die you rolled.",
-      "faces": "?",
-      "icon": "games/dice-a-million/items/4f5800eb0b889e84.png"
+      "sides": 1,
+      "rarity": "uncommon",
+      "traits": [
+        "single-face"
+      ],
+      "icon": "games/dice-a-million/items/dice/lucky-block.png"
     },
     {
-      "id": "08a7522b1d4775b1",
+      "id": "dice-sudoku",
       "kind": "dice",
       "name": "Sudoku",
       "condition": "Pay your first debt.",
-      "effect": "5X Multiplier to everything per die matching its face. 1-9 (Other Sudokus don't count.)",
-      "icon": "games/dice-a-million/items/08a7522b1d4775b1.png"
+      "effect": "5X Multiplier to everything per die matching its face. (Other Sudokus don't count.)",
+      "faces": "1-9",
+      "sides": 7,
+      "rarity": "uncommon",
+      "traits": [
+        "face"
+      ],
+      "icon": "games/dice-a-million/items/dice/sudoku.png"
     },
     {
-      "id": "7b0c9beac9895f5c",
+      "id": "dice-pinata",
       "kind": "dice",
       "name": "Piñata",
       "condition": "Get at least 1000 pips in a single roll.",
       "effect": "Destroys itself when rolled.",
       "faces": "100-200",
-      "icon": "games/dice-a-million/items/7b0c9beac9895f5c.png"
+      "sides": 7,
+      "rarity": "uncommon",
+      "traits": [
+        "destroy",
+        "huge"
+      ],
+      "icon": "games/dice-a-million/items/dice/pi-ata.png"
     },
     {
-      "id": "b57ab938e7fc5052",
+      "id": "dice-amethyst",
       "kind": "dice",
       "name": "Amethyst",
-      "effect": "Beat the game in Power I. 1.5X Multiplier to everything.",
+      "condition": "Beat the game in Power I.",
+      "effect": "1.5X Multiplier to everything.",
       "faces": "0",
-      "icon": "games/dice-a-million/items/b57ab938e7fc5052.png"
+      "sides": 1,
+      "rarity": "rare",
+      "traits": [
+        "face-zero",
+        "gem"
+      ],
+      "icon": "games/dice-a-million/items/dice/amethyst.png"
     },
     {
-      "id": "dc2a8c4c6cf0c8a9",
+      "id": "dice-fossil",
       "kind": "dice",
       "name": "Ancient Die",
       "effect": "Destroys itself and gives one legendary die.",
       "faces": "0",
-      "icon": "games/dice-a-million/items/dc2a8c4c6cf0c8a9.png"
+      "sides": 1,
+      "rarity": "uncommon",
+      "traits": [
+        "charge",
+        "destroy",
+        "face-zero"
+      ],
+      "icon": "games/dice-a-million/items/dice/ancient-die.png"
     },
     {
-      "id": "2ce9b1c576dab66d",
+      "id": "dice-diamond",
       "kind": "dice",
       "name": "Diamond Die",
-      "condition": "Have a single die reach at least 100X Multiplier. 5X Multiplier to everything.",
-      "effect": "Destroys itself if its face is a 3.",
+      "condition": "Have a single die reach at least 100X Multiplier.",
+      "effect": "5X Multiplier to everything. Destroys itself if its face is a 3.",
       "faces": "1-3",
-      "icon": "games/dice-a-million/items/2ce9b1c576dab66d.png"
+      "sides": 3,
+      "rarity": "legendary",
+      "traits": [
+        "destroy",
+        "face"
+      ],
+      "icon": "games/dice-a-million/items/dice/diamond-die.png"
     },
     {
-      "id": "caeb7d757eb125f2",
+      "id": "dice-fortune",
       "kind": "dice",
       "name": "Die of Fortune",
       "condition": "Have at least 5 rare or legendary dice in your bag.",
-      "effect": "If its face is a 6 gives a ghost rare or legendary die.1-6",
-      "icon": "games/dice-a-million/items/caeb7d757eb125f2.png"
+      "effect": "If its face is a 6 gives a ghost rare or legendary die.",
+      "faces": "1-6",
+      "sides": 6,
+      "rarity": "common",
+      "traits": [
+        "face",
+        "ghost"
+      ],
+      "icon": "games/dice-a-million/items/dice/die-of-fortune.png"
     },
     {
-      "id": "b69a9e68ce82aec7",
+      "id": "dice-d10",
       "kind": "dice",
       "name": "D10",
-      "effect": "Have a die reach 10 extra value. +2 extra value per die on the table.",
+      "condition": "Have a die reach 10 extra value.",
+      "effect": "+2 extra value per die on the table.",
       "faces": "1-10",
-      "icon": "games/dice-a-million/items/b69a9e68ce82aec7.png"
+      "sides": 7,
+      "rarity": "common",
+      "traits": [
+        "ev"
+      ],
+      "icon": "games/dice-a-million/items/dice/d10.png"
     },
     {
-      "id": "73bd5feb60ed0f4f",
+      "id": "dice-incubus",
       "kind": "dice",
-      "name": "Incubus Die\t\tRemove 10 dice in a single run",
+      "name": "Incubus Die",
+      "condition": "Remove 10 dice in a single run.",
       "effect": "+10 face value per nearby die, then destroys those dice.",
-      "faces": "?",
-      "icon": "games/dice-a-million/items/73bd5feb60ed0f4f.png"
+      "sides": 1,
+      "rarity": "rare",
+      "traits": [
+        "destroy",
+        "face",
+        "variable-face",
+        "nearby"
+      ],
+      "icon": "games/dice-a-million/items/dice/incubus-die.png"
     },
     {
-      "id": "9829a9035d8d9a3c",
+      "id": "dice-dieofdice",
       "kind": "dice",
       "name": "Die of Dice",
-      "effect": "Rolls the die shown on its face. d2/d3/d4/d6/d20/d100",
-      "icon": "games/dice-a-million/items/9829a9035d8d9a3c.png"
+      "effect": "Rolls the die shown on its face.",
+      "faces": "D2/D3/D4/D6/D20/D100",
+      "sides": 6,
+      "rarity": "uncommon",
+      "traits": [
+        "face-zero"
+      ],
+      "icon": "games/dice-a-million/items/dice/die-of-dice.png"
     },
     {
-      "id": "cb0237180c0af236",
+      "id": "dice-corruptcoin",
       "kind": "dice",
       "name": "Tainted Coin",
-      "condition": "Beat the game in Power VI as red.",
-      "effect": "X Multiplier to everything. X being the number on its face. 0/9 (The face with a 0 multiplies by 0.)",
-      "icon": "games/dice-a-million/items/cb0237180c0af236.png"
+      "condition": "Beat the game in Power VI as Red Hand.",
+      "effect": "Multiplies everything by the number on its face. (The face with a 0 multiplies by 0.)",
+      "faces": "0/9",
+      "sides": 2,
+      "rarity": "rare",
+      "traits": [
+        "face",
+        "odd-faces"
+      ],
+      "icon": "games/dice-a-million/items/dice/tainted-coin.png"
     },
     {
-      "id": "69c8d9cf1c237255",
+      "id": "dice-cosmos",
       "kind": "dice",
       "name": "Cosmic Die",
       "condition": "Have exactly 42 pips.",
       "effect": "The answer to the Ultimate Question of Life, the Universe, and Everything.",
       "faces": "1-50",
-      "icon": "games/dice-a-million/items/69c8d9cf1c237255.png"
+      "sides": 7,
+      "rarity": "legendary",
+      "icon": "games/dice-a-million/items/dice/cosmic-die.png"
     },
     {
-      "id": "f2a42c225eb532ea",
+      "id": "dice-spintop",
       "kind": "dice",
       "name": "Spintop",
-      "condition": "Get a million pips as white.",
-      "effect": "2X Multiplier to nearby dice. This stays on the table until the end of round. 2 (Once placed it cannot be copied in any way.)",
-      "icon": "games/dice-a-million/items/f2a42c225eb532ea.png"
+      "condition": "Get a million pips as White Hand.",
+      "effect": "2X Multiplier to nearby dice. This stays on the table until the end of round. (Once placed it cannot be copied in any way.)",
+      "faces": "1-5",
+      "sides": 5,
+      "rarity": "rare",
+      "traits": [
+        "nearby"
+      ],
+      "icon": "games/dice-a-million/items/dice/spintop.png"
     },
     {
-      "id": "9bd2972ac321bad1",
+      "id": "dice-qi",
       "kind": "dice",
       "name": "Mahjong Tile",
       "condition": "Beat Face 3.",
       "effect": "Its face value is the sum of all extra value in every other die you have. (Maximum of 1000)",
-      "faces": "?",
-      "icon": "games/dice-a-million/items/9bd2972ac321bad1.png"
+      "sides": 1,
+      "rarity": "rare",
+      "traits": [
+        "ev",
+        "face",
+        "variable-face"
+      ],
+      "icon": "games/dice-a-million/items/dice/mahjong-tile.png"
     },
     {
-      "id": "6957d842fe84fd8b",
+      "id": "dice-sapphire",
       "kind": "dice",
       "name": "Sapphire",
       "condition": "Beat the game in Power II.",
       "effect": "Its face is always 25.",
       "faces": "25",
-      "icon": "games/dice-a-million/items/6957d842fe84fd8b.png"
+      "sides": 1,
+      "rarity": "rare",
+      "traits": [
+        "odd-faces",
+        "gem"
+      ],
+      "icon": "games/dice-a-million/items/dice/sapphire.png"
     },
     {
-      "id": "c1b6037d85c155e2",
+      "id": "dice-psycho",
       "kind": "dice",
       "name": "Psychodie",
       "effect": "Nearby dice gain extra value equal to their face.",
       "faces": "0",
-      "icon": "games/dice-a-million/items/c1b6037d85c155e2.png"
+      "sides": 1,
+      "rarity": "uncommon",
+      "traits": [
+        "face",
+        "ev",
+        "face-zero",
+        "single-face",
+        "nearby"
+      ],
+      "icon": "games/dice-a-million/items/dice/psychodie.png"
     },
     {
-      "id": "94cd5fee5e8a6fd8",
+      "id": "dice-pyramid",
       "kind": "dice",
       "name": "Pyramid",
-      "condition": "Draw as many dice as the face shows.",
-      "effect": "Then, its value becomes 0.",
+      "effect": "Draw as many dice as its face shows.",
       "faces": "1-4",
-      "icon": "games/dice-a-million/items/94cd5fee5e8a6fd8.png"
+      "sides": 4,
+      "rarity": "uncommon",
+      "icon": "games/dice-a-million/items/dice/pyramid.png"
     },
     {
-      "id": "feb6f884ca8f6601",
+      "id": "dice-mono",
       "kind": "dice",
       "name": "Mono Token",
       "condition": "Have at least a million pips.",
       "effect": "Its value becomes 1% of the total pips gotten in the previous roll. Then, exhausts.",
       "faces": "0",
-      "icon": "games/dice-a-million/items/feb6f884ca8f6601.png"
+      "sides": 1,
+      "rarity": "legendary",
+      "traits": [
+        "exhaust",
+        "variable-face"
+      ],
+      "icon": "games/dice-a-million/items/dice/mono-token.png"
     },
     {
-      "id": "7e186b45dbb3edba",
+      "id": "dice-delayed",
       "kind": "dice",
       "name": "Time Die",
       "effect": "2X Multiplier to everything in the next roll. Divides everything by 2 in this one.",
       "faces": "1-6",
-      "icon": "games/dice-a-million/items/7e186b45dbb3edba.png"
+      "sides": 6,
+      "rarity": "uncommon",
+      "icon": "games/dice-a-million/items/dice/time-die.png"
     },
     {
-      "id": "0876398a19b2f885",
+      "id": "dice-fire",
       "kind": "dice",
       "name": "Fire Die",
       "condition": "Beat the Pyro Boss.",
       "effect": "Places a fire that will burn VERY nearby dice in next rolls. Immune to burns.",
       "faces": "30-35",
-      "icon": "games/dice-a-million/items/0876398a19b2f885.png"
+      "sides": 6,
+      "rarity": "uncommon",
+      "traits": [
+        "fire",
+        "nearby"
+      ],
+      "icon": "games/dice-a-million/items/dice/fire-die.png"
     },
     {
-      "id": "4a39b213bf435788",
+      "id": "dice-ice",
       "kind": "dice",
       "name": "Ice Die",
       "condition": "Beat the Frost Boss.",
       "effect": "Dice will roll with a lot less strength in the next roll.",
       "faces": "0-5",
-      "icon": "games/dice-a-million/items/4a39b213bf435788.png"
+      "sides": 6,
+      "rarity": "uncommon",
+      "icon": "games/dice-a-million/items/dice/ice-die.png"
     },
     {
-      "id": "a215e7f8bccd0eb4",
+      "id": "dice-pencil",
       "kind": "dice",
       "name": "Pocket Pencil",
-      "effect": "Have a D20 in your bag. 6X Multiplier to dice this is pointing to.",
+      "condition": "Have a D20 in your bag.",
+      "effect": "6X Multiplier to dice this is pointing to.",
       "faces": "3",
-      "icon": "games/dice-a-million/items/a215e7f8bccd0eb4.png"
+      "sides": 1,
+      "rarity": "uncommon",
+      "traits": [
+        "odd-faces",
+        "single-face"
+      ],
+      "icon": "games/dice-a-million/items/dice/pocket-pencil.png"
     },
     {
-      "id": "ed22bcd92a400878",
+      "id": "dice-shy",
       "kind": "dice",
       "name": "Shy Die",
-      "effect": "If this isn't VERY near any other die, its value is the sum of every other dice. If not, it's 0.  0",
-      "icon": "games/dice-a-million/items/ed22bcd92a400878.png"
+      "effect": "If this isn't VERY near any other die, its value is the sum of every other dice. If not, it's 0.",
+      "faces": "0",
+      "sides": 1,
+      "rarity": "uncommon",
+      "traits": [
+        "face-zero",
+        "nearby"
+      ],
+      "icon": "games/dice-a-million/items/dice/shy-die.png"
     },
     {
-      "id": "223a79a9f40e540c",
+      "id": "dice-mega",
       "kind": "dice",
       "name": "Megadie",
-      "condition": "Have at least 20 dice in your bag. 4X Multiplier to everything.",
-      "effect": "Add X Hollow Dice to your bag, X being the number on its face.",
+      "condition": "Have at least 20 dice in your bag.",
+      "effect": "4X Multiplier to everything. Add X Hollow Dice to your bag, X being the number on its face.",
       "faces": "1-6",
-      "icon": "games/dice-a-million/items/223a79a9f40e540c.png"
+      "sides": 6,
+      "rarity": "rare",
+      "traits": [
+        "face"
+      ],
+      "icon": "games/dice-a-million/items/dice/megadie.png"
     },
     {
-      "id": "14356662accd3414",
+      "id": "dice-scroll",
       "kind": "dice",
       "name": "Magic Scroll",
       "condition": "Beat the Heretic Boss.",
       "effect": "Adds a random enchantment to every nearby die, then destroys itself.",
       "faces": "0",
-      "icon": "games/dice-a-million/items/14356662accd3414.png"
+      "sides": 1,
+      "rarity": "rare",
+      "traits": [
+        "destroy",
+        "face-zero",
+        "single-face",
+        "nearby"
+      ],
+      "icon": "games/dice-a-million/items/dice/magic-scroll.png"
     },
     {
-      "id": "d80d8e5a245b6ff9",
+      "id": "dice-button",
       "kind": "dice",
       "name": "Shirt Button",
-      "condition": "Beat the game in Power VI as white.",
+      "condition": "Beat the game in Power VI as White Hand.",
       "effect": "Makes other VERY nearby dice stay on the table until the end of the round.",
-      "faces": "0",
-      "icon": "games/dice-a-million/items/d80d8e5a245b6ff9.png"
+      "faces": "4",
+      "sides": 1,
+      "rarity": "legendary",
+      "traits": [
+        "face-zero",
+        "single-face",
+        "nearby"
+      ],
+      "icon": "games/dice-a-million/items/dice/shirt-button.png"
     },
     {
-      "id": "688a9fa94044f69d",
+      "id": "dice-emerald",
       "kind": "dice",
       "name": "Emerald",
-      "effect": "Beat the game in Power III. +10 extra value to every die on the table.",
+      "condition": "Beat the game in Power III.",
+      "effect": "+8 extra value to every die on the table.",
       "faces": "0",
-      "icon": "games/dice-a-million/items/688a9fa94044f69d.png"
+      "sides": 1,
+      "rarity": "rare",
+      "traits": [
+        "ev",
+        "face-zero",
+        "gem"
+      ],
+      "icon": "games/dice-a-million/items/dice/emerald.png"
     },
     {
-      "id": "ddb993e53fcdd936",
+      "id": "dice-ruby",
       "kind": "dice",
       "name": "Ruby",
       "condition": "Beat the game in Power V.",
       "effect": "Doubles every multiplier obtained in this roll.",
       "faces": "0",
-      "icon": "games/dice-a-million/items/ddb993e53fcdd936.png"
+      "sides": 1,
+      "rarity": "legendary",
+      "traits": [
+        "face-zero",
+        "gem"
+      ],
+      "icon": "games/dice-a-million/items/dice/ruby.png"
     },
     {
-      "id": "6d9b91694e8bfd21",
+      "id": "dice-jet",
       "kind": "dice",
       "name": "Jet",
       "condition": "Beat the game in Power VI.",
       "effect": "Nearby dice will activate one more time.",
       "faces": "9",
-      "icon": "games/dice-a-million/items/6d9b91694e8bfd21.png"
+      "sides": 1,
+      "rarity": "legendary",
+      "traits": [
+        "odd-faces",
+        "gem",
+        "nearby"
+      ],
+      "icon": "games/dice-a-million/items/dice/jet.png"
     },
     {
-      "id": "df88f501a8622305",
+      "id": "dice-d6translucid",
       "kind": "dice",
       "name": "Translucid D6",
       "condition": "Roll 4 sixes in a single roll.",
-      "effect": "X Multiplier to VERY nearby dice. X being the number on its face.",
+      "effect": "Multiplies VERY nearby dice by the number on its face.",
       "faces": "1-6",
-      "icon": "games/dice-a-million/items/df88f501a8622305.png"
+      "sides": 6,
+      "rarity": "rare",
+      "traits": [
+        "face",
+        "nearby"
+      ],
+      "icon": "games/dice-a-million/items/dice/translucid-d6.png"
     },
     {
-      "id": "6c81dc08e05916af",
+      "id": "dice-exo",
       "kind": "dice",
       "name": "Exodie",
       "condition": "Make a Psychodie affect 5 dice in a single roll.",
-      "effect": "Doubles the extra value of other nearby dice. (Maximum of +1000).",
+      "effect": "Doubles the extra value of other nearby dice. (Maximum of +1000)",
       "faces": "0",
-      "icon": "games/dice-a-million/items/6c81dc08e05916af.png"
+      "sides": 1,
+      "rarity": "rare",
+      "traits": [
+        "ev",
+        "face-zero",
+        "single-face",
+        "nearby"
+      ],
+      "icon": "games/dice-a-million/items/dice/exodie.png"
     },
     {
-      "id": "81df5e3781894de8",
+      "id": "dice-paper",
       "kind": "dice",
       "name": "Paper Die",
       "effect": "Places a note that will give +5 extra value to VERY nearby dice in next rolls.",
       "faces": "1-3",
-      "icon": "games/dice-a-million/items/81df5e3781894de8.png"
+      "sides": 3,
+      "rarity": "uncommon",
+      "traits": [
+        "ev",
+        "nearby"
+      ],
+      "icon": "games/dice-a-million/items/dice/paper-die.png"
     },
     {
-      "id": "897d63ec1d1db8ac",
+      "id": "dice-cupid",
       "kind": "dice",
       "name": "Cupidie",
       "effect": "If this only has ONE nearby die, 5X Multiplier to that die and this one. If not, does nothing.",
       "faces": "1-6",
-      "icon": "games/dice-a-million/items/897d63ec1d1db8ac.png"
+      "sides": 6,
+      "rarity": "uncommon",
+      "traits": [
+        "nearby"
+      ],
+      "icon": "games/dice-a-million/items/dice/cupidie.png"
     },
     {
-      "id": "edf53dd14056917a",
+      "id": "dice-matrioshka",
       "kind": "dice",
       "name": "Matryoshka Doll",
       "effect": "What will be inside? Resets after the round ends.",
       "faces": "2",
-      "icon": "games/dice-a-million/items/edf53dd14056917a.png"
+      "sides": 1,
+      "rarity": "uncommon",
+      "traits": [
+        "even-faces"
+      ],
+      "icon": "games/dice-a-million/items/dice/matryoshka-doll.png"
     },
     {
-      "id": "a7f56b034919991a",
+      "id": "dice-dada",
       "kind": "dice",
       "name": "Dada Die",
       "effect": "3X Multiplier to other dice with the same face as this.",
       "faces": "0/1/2/8/11/12",
-      "icon": "games/dice-a-million/items/a7f56b034919991a.png"
+      "sides": 6,
+      "rarity": "common",
+      "traits": [
+        "face"
+      ],
+      "icon": "games/dice-a-million/items/dice/dada-die.png"
     },
     {
-      "id": "8e8736eb2d2b86f8",
+      "id": "dice-lucky7",
       "kind": "dice",
       "name": "Lucky 7!",
       "condition": "Have at least 77k pips.",
       "effect": "If its face is 0 (X), discards every die on the table.",
       "faces": "0/7/77",
-      "icon": "games/dice-a-million/items/8e8736eb2d2b86f8.png"
+      "sides": 3,
+      "rarity": "uncommon",
+      "traits": [
+        "face",
+        "discard",
+        "odd-faces"
+      ],
+      "icon": "games/dice-a-million/items/dice/lucky-7.png"
     },
     {
-      "id": "06a6b5cd5458ef25",
+      "id": "dice-echocube",
       "kind": "dice",
       "name": "Echo Cube",
-      "condition": "Flick this die if you see it.",
-      "effect": "You should click on this die in the main menu after the game starts. Dice will fall from top to bot. Rolls a die from previous roll.",
+      "condition": "Click the Echo Cube when one shows up among your dice.",
+      "effect": "Rolls a random die from the previous roll.",
       "faces": "0/1/3",
-      "icon": "games/dice-a-million/items/06a6b5cd5458ef25.png"
+      "sides": 3,
+      "rarity": "rare",
+      "traits": [
+        "odd-faces"
+      ],
+      "icon": "games/dice-a-million/items/dice/echo-cube.png"
     },
     {
-      "id": "dd26655f39db6d7e",
+      "id": "dice-casino",
       "kind": "dice",
       "name": "Casino Die",
       "effect": "If its face is a 1, changes the face on every other die to its highest one.",
       "faces": "1-6",
-      "icon": "games/dice-a-million/items/dd26655f39db6d7e.png"
+      "sides": 6,
+      "rarity": "uncommon",
+      "traits": [
+        "face"
+      ],
+      "icon": "games/dice-a-million/items/dice/casino-die.png"
     },
     {
-      "id": "911120b11bb91fc6",
+      "id": "dice-electric",
       "kind": "dice",
       "name": "Electric Die",
-      "condition": "Get a million pips as green.",
+      "condition": "Get a million pips as Green Hand.",
       "effect": "Makes all dice on the table give 2X Multiplier to nearby dice. The area range decreases by how many dice are on the table.",
       "faces": "1-6",
-      "icon": "games/dice-a-million/items/911120b11bb91fc6.png"
+      "sides": 6,
+      "rarity": "legendary",
+      "traits": [
+        "nearby"
+      ],
+      "icon": "games/dice-a-million/items/dice/electric-die.png"
     },
     {
-      "id": "3a2b2c2fb0cf9ce7",
+      "id": "dice-diablo",
       "kind": "dice",
       "name": "D Diablo",
-      "effect": "Have at least 666M pips as green. 6X Multiplier to itself per die with 6 faces on the table.1-6",
-      "icon": "games/dice-a-million/items/3a2b2c2fb0cf9ce7.png"
+      "condition": "Have at least 666M pips as Green Hand.",
+      "effect": "6X Multiplier to itself per die with 6 faces on the table.",
+      "faces": "1-6",
+      "sides": 6,
+      "rarity": "rare",
+      "icon": "games/dice-a-million/items/dice/d-diablo.png"
     },
     {
-      "id": "33bc85c1ec14da82",
+      "id": "dice-wood",
       "kind": "dice",
       "name": "Wooden Die",
-      "condition": "Get a million pips as red.",
+      "condition": "Get a million pips as Red Hand.",
       "effect": "If this stays on hand on turn end, +4 to its extra value.",
       "faces": "1-6",
-      "icon": "games/dice-a-million/items/33bc85c1ec14da82.png"
+      "sides": 6,
+      "rarity": "common",
+      "traits": [
+        "ev"
+      ],
+      "icon": "games/dice-a-million/items/dice/wooden-die.png"
     },
     {
-      "id": "f336bc4afc7168d4",
+      "id": "dice-crypto",
       "kind": "dice",
       "name": "Dicecoin",
       "condition": "Pass a round without ever rolling any die.",
       "effect": "Every turn its value increases or decreases. That's the market!",
-      "faces": "?",
-      "icon": "games/dice-a-million/items/f336bc4afc7168d4.png"
+      "sides": 1,
+      "rarity": "uncommon",
+      "traits": [
+        "variable-face"
+      ],
+      "icon": "games/dice-a-million/items/dice/dicecoin.png"
     },
     {
-      "id": "04762a37702e10b0",
+      "id": "dice-copper",
       "kind": "dice",
       "name": "Copper Die",
-      "condition": "Get promoted as white.",
-      "effect": "4X Multiplier to every die on the table.",
+      "condition": "Get promoted as White Hand.",
+      "effect": "4X Multiplier to everything.",
       "faces": "1-3",
-      "icon": "games/dice-a-million/items/04762a37702e10b0.png"
+      "sides": 3,
+      "rarity": "uncommon",
+      "traits": [
+        "charge"
+      ],
+      "icon": "games/dice-a-million/items/dice/copper-die.png"
     },
     {
-      "id": "ff552a037271505a",
+      "id": "dice-anchor",
       "kind": "dice",
       "name": "Anchor",
       "condition": "Draw 20 dice in one turn.",
       "effect": "If this stays on hand, 2X Multiplier to everything. After that, adds one Hollow Die to your bag.",
       "faces": "0",
-      "icon": "games/dice-a-million/items/ff552a037271505a.png"
+      "sides": 1,
+      "rarity": "rare",
+      "traits": [
+        "face-zero"
+      ],
+      "icon": "games/dice-a-million/items/dice/anchor.png"
     },
     {
-      "id": "13ba3ae85cad5e63",
+      "id": "dice-aquarium",
       "kind": "dice",
       "name": "Aquarium",
-      "condition": "Get promoted as red.",
+      "condition": "Get promoted as Red Hand.",
       "effect": "If this stays on hand, rolls a Fishdie.",
       "faces": "5",
-      "icon": "games/dice-a-million/items/13ba3ae85cad5e63.png"
+      "sides": 1,
+      "rarity": "rare",
+      "traits": [
+        "odd-faces",
+        "single-face"
+      ],
+      "icon": "games/dice-a-million/items/dice/aquarium.png"
     },
     {
-      "id": "aeb70b0abe6f4597",
+      "id": "dice-cthu",
       "kind": "dice",
       "name": "Die of Cthulhu",
-      "condition": "Get promoted as green.",
-      "effect": "Places a mini-vortex on the table that will give Xpip per VERY nearby die. X being the face on this.",
+      "condition": "Get promoted as Green Hand.",
+      "effect": "Places a mini-vortex on the table that will give X pips per VERY nearby die. X being the face on this.",
       "faces": "1-10",
-      "icon": "games/dice-a-million/items/aeb70b0abe6f4597.png"
+      "sides": 7,
+      "rarity": "rare",
+      "traits": [
+        "face",
+        "nearby"
+      ],
+      "icon": "games/dice-a-million/items/dice/die-of-cthulhu.png"
     },
     {
-      "id": "5ff88dded6a8e3f1",
+      "id": "dice-pandora",
       "kind": "dice",
       "name": "Pandora's Box",
       "condition": "Get the smallest Matryoshka Doll.",
       "effect": "It opens.",
       "faces": "0",
-      "icon": "games/dice-a-million/items/5ff88dded6a8e3f1.png"
+      "sides": 1,
+      "rarity": "rare",
+      "traits": [
+        "charge",
+        "face-zero"
+      ],
+      "icon": "games/dice-a-million/items/dice/pandora-s-box.png"
     },
     {
-      "id": "ec5502513ae5e92f",
+      "id": "dice-spindown",
       "kind": "dice",
       "name": "Spindown Die",
-      "condition": "Get promoted as purple.",
-      "effect": "Its face is locked. Starts at 20 and decreases in 1 every time is rolled.",
+      "condition": "Get promoted as Purple Hand.",
+      "effect": "Its face is locked. Starts at 20 and decreases by 1 every time is rolled.",
       "faces": "1-20",
-      "icon": "games/dice-a-million/items/ec5502513ae5e92f.png"
+      "sides": 7,
+      "rarity": "uncommon",
+      "traits": [
+        "face"
+      ],
+      "icon": "games/dice-a-million/items/dice/spindown-die.png"
     },
     {
-      "id": "a19eba8a4e58f532",
+      "id": "dice-sponge",
       "kind": "dice",
       "name": "Magic Sponge",
-      "condition": "Get a million pips as purple.",
+      "condition": "Get a million pips as Purple Hand.",
       "effect": "+10 face value per enchanted nearby die. Then, removes the enchanment. If a curse is removed, destroys itself.",
-      "faces": "?",
-      "icon": "games/dice-a-million/items/a19eba8a4e58f532.png"
+      "sides": 1,
+      "rarity": "rare",
+      "traits": [
+        "face",
+        "destroy",
+        "variable-face",
+        "nearby"
+      ],
+      "icon": "games/dice-a-million/items/dice/magic-sponge.png"
     },
     {
-      "id": "dbb8d8f673c8953d",
+      "id": "dice-prime",
       "kind": "dice",
       "name": "Prime Die",
-      "condition": "Get promoted as binary.",
-      "effect": "Only prime numbers. 2/3/5/7/11/13 Ups the value of every die to their next prime number. Every die in this roll is considered prime.",
-      "icon": "games/dice-a-million/items/dbb8d8f673c8953d.png"
+      "condition": "Get promoted as Bicolor Hand.",
+      "effect": "Only prime numbers. Ups the value of every die to their next prime number. Every die in this roll is considered prime.",
+      "faces": "2/3/5/7/11/13",
+      "sides": 6,
+      "rarity": "rare",
+      "traits": [
+        "prime"
+      ],
+      "icon": "games/dice-a-million/items/dice/prime-die.png"
     },
     {
-      "id": "98ab32c2af32e18f",
+      "id": "dice-glitch",
       "kind": "dice",
       "name": "Glitched Die",
-      "condition": "Get promoted as static.",
+      "condition": "Get promoted as Static Hand.",
       "effect": "Randomizes other nearby dice until the end of the roll.",
-      "faces": "?",
-      "icon": "games/dice-a-million/items/98ab32c2af32e18f.png"
+      "faces": "0",
+      "sides": 1,
+      "rarity": "rare",
+      "traits": [
+        "randomize",
+        "face-zero",
+        "single-face",
+        "nearby"
+      ],
+      "icon": "games/dice-a-million/items/dice/glitched-die.png"
     },
     {
-      "id": "515874e814069aa8",
+      "id": "dice-sch",
       "kind": "dice",
       "name": "Schrödinger's Die",
-      "condition": "Get promoted as blue.",
+      "condition": "Get promoted as Blue Hand.",
       "effect": "It's a 0 and a 10 at the same time until it's rolled.",
       "faces": "0/10",
-      "icon": "games/dice-a-million/items/515874e814069aa8.png"
+      "sides": 2,
+      "rarity": "common",
+      "traits": [
+        "even-faces"
+      ],
+      "icon": "games/dice-a-million/items/dice/schr-dinger-s-die.png"
     },
     {
-      "id": "589bfc40908bea65",
+      "id": "dice-alien",
       "kind": "dice",
-      "name": "E.T",
-      "condition": "Die. Beat Face 3 as blue.",
+      "name": "E.T. Die",
+      "condition": "Beat Face 3 as Blue Hand.",
       "effect": "Stores copies of nearby dice. Next time it's rolled, rolls the copies too. (Can only store one copy of each die.)",
       "faces": "3",
-      "icon": "games/dice-a-million/items/589bfc40908bea65.png"
+      "sides": 1,
+      "rarity": "rare",
+      "traits": [
+        "odd-faces",
+        "nearby"
+      ],
+      "icon": "games/dice-a-million/items/dice/e-t-die.png"
     },
     {
-      "id": "cb3bba9c709ef599",
+      "id": "dice-ivory",
       "kind": "dice",
       "name": "Ivory Die",
       "condition": "Get one stamp multiplier to at least 1.7X.",
       "effect": "+0.2 stamp multiplier to the face that it rolled. Then, exhausts.",
       "faces": "1-6",
-      "icon": "games/dice-a-million/items/cb3bba9c709ef599.png"
+      "sides": 6,
+      "rarity": "rare",
+      "traits": [
+        "stampmult",
+        "exhaust"
+      ],
+      "icon": "games/dice-a-million/items/dice/ivory-die.png"
     },
     {
-      "id": "12b0cc7358a07889",
+      "id": "dice-granite",
       "kind": "dice",
       "name": "Granite Die",
       "effect": "Its face is always 0. When it gains extra value, gains double.",
       "faces": "0",
-      "icon": "games/dice-a-million/items/12b0cc7358a07889.png"
+      "sides": 1,
+      "rarity": "uncommon",
+      "traits": [
+        "ev",
+        "face-zero",
+        "single-face"
+      ],
+      "icon": "games/dice-a-million/items/dice/granite-die.png"
     },
     {
-      "id": "df6b0130f67192a6",
+      "id": "dice-jacks",
       "kind": "dice",
       "name": "Jacks",
       "effect": "Rolls another Jack per die matching its face.",
       "faces": "1-4",
-      "icon": "games/dice-a-million/items/df6b0130f67192a6.png"
+      "sides": 4,
+      "rarity": "uncommon",
+      "traits": [
+        "face"
+      ],
+      "icon": "games/dice-a-million/items/dice/jacks.png"
     },
     {
-      "id": "5d7824d047420224",
+      "id": "dice-porcelain",
       "kind": "dice",
       "name": "Porcelain figurine",
       "effect": "2.5X Multiplier to nearby dice. Then, destroys itself.",
       "faces": "0",
-      "icon": "games/dice-a-million/items/5d7824d047420224.png"
+      "sides": 1,
+      "rarity": "common",
+      "traits": [
+        "destroy",
+        "face-zero",
+        "nearby"
+      ],
+      "icon": "games/dice-a-million/items/dice/porcelain-figurine.png"
     },
     {
-      "id": "97538e22f8077bca",
+      "id": "dice-poker",
       "kind": "dice",
       "name": "Suit Die",
-      "effect": "Spades: Changes the value of other dice with face 1 to a 10. Hearts : Its value becomes 11. Clubs : 3X Multiplier to everything. Diamonds : +6 extra value to every other die.",
-      "icon": "games/dice-a-million/items/97538e22f8077bca.png"
+      "effect": ": Changes the value of other dice with face 1 to a 10.: Its value becomes 11.: 3X Multiplier to everything.: +6 extra value to every other die.",
+      "sides": 4,
+      "rarity": "rare",
+      "traits": [
+        "face",
+        "ev",
+        "face-zero"
+      ],
+      "icon": "games/dice-a-million/items/dice/suit-die.png"
     },
     {
-      "id": "26b7444d640fb1fb",
+      "id": "dice-moonmarble",
       "kind": "dice",
       "name": "Moon Marble",
-      "condition": "Get promoted as yellow.",
-      "effect": "Its face is always a 2. 2 X Multiplier to itself, X being the total of extra value of other dice on the table.",
-      "icon": "games/dice-a-million/items/26b7444d640fb1fb.png"
+      "condition": "Get promoted as Yellow Hand.",
+      "effect": "Its face is always a 2. Multiplies itself by the sum of all the extra value on all other dice on the table.",
+      "faces": "2",
+      "sides": 1,
+      "rarity": "legendary",
+      "traits": [
+        "face",
+        "ev",
+        "even-faces",
+        "single-face"
+      ],
+      "icon": "games/dice-a-million/items/dice/moon-marble.png"
     },
     {
-      "id": "aa66d129887d2100",
+      "id": "dice-lament",
       "kind": "dice",
       "name": "Die of Lament",
-      "effect": "Beat Face 3 as hollow. 10X Multiplier to itself per die that's going to destroy on the table.",
+      "condition": "Beat Face 3 as Hollow Hand.",
+      "effect": "10X Multiplier to itself per die that's going to destroy on the table.",
       "faces": "1-6",
-      "icon": "games/dice-a-million/items/aa66d129887d2100.png"
+      "sides": 6,
+      "rarity": "rare",
+      "traits": [
+        "destroy"
+      ],
+      "icon": "games/dice-a-million/items/dice/die-of-lament.png"
     },
     {
-      "id": "8e82b427ef3ada77",
+      "id": "dice-gift",
       "kind": "dice",
       "name": "Mystery Gift",
-      "condition": "Get promoted as hollow.",
+      "condition": "Get promoted as Hollow Hand.",
       "effect": "Gives 3 random ghost dice of at least uncommon rarity. Then, exhausts.",
       "faces": "0",
-      "icon": "games/dice-a-million/items/8e82b427ef3ada77.png"
+      "sides": 1,
+      "rarity": "uncommon",
+      "traits": [
+        "ghost",
+        "exhaust",
+        "face-zero",
+        "single-face"
+      ],
+      "icon": "games/dice-a-million/items/dice/mystery-gift.png"
     },
     {
-      "id": "db0dca31a7f9e102",
+      "id": "dice-bone",
       "kind": "dice",
       "name": "Bone Die",
-      "condition": "Beat Face 3 as pale.",
+      "condition": "Beat Face 3 as Pale Hand.",
       "effect": "If its face is a 6 gives a Choose face card and exhausts.",
       "faces": "1-6",
-      "icon": "games/dice-a-million/items/db0dca31a7f9e102.png"
+      "sides": 6,
+      "rarity": "uncommon",
+      "traits": [
+        "face",
+        "chooseface",
+        "exhaust"
+      ],
+      "icon": "games/dice-a-million/items/dice/bone-die.png"
     },
     {
-      "id": "698bfbd3bfddb02e",
+      "id": "dice-pig",
       "kind": "dice",
       "name": "Piggydie",
       "effect": "Gives between 50 and 100 pips. Its face is always 0.",
       "faces": "0",
-      "icon": "games/dice-a-million/items/698bfbd3bfddb02e.png"
+      "sides": 1,
+      "rarity": "uncommon",
+      "traits": [
+        "charge",
+        "face-zero"
+      ],
+      "icon": "games/dice-a-million/items/dice/piggydie.png"
     },
     {
-      "id": "1293330f8ccd48ea",
+      "id": "dice-mirror",
       "kind": "dice",
       "name": "Mirror Cube",
       "effect": "Rolls a copy of every other rolled die.",
       "faces": "3",
-      "icon": "games/dice-a-million/items/1293330f8ccd48ea.png"
+      "sides": 1,
+      "rarity": "rare",
+      "traits": [
+        "charge",
+        "odd-faces"
+      ],
+      "icon": "games/dice-a-million/items/dice/mirror-cube.png"
     },
     {
-      "id": "0150b23c9614f235",
+      "id": "dice-prism",
       "kind": "dice",
       "name": "Prismatic D4",
-      "condition": "Get promoted as pale.",
-      "effect": "Duplicates the stamp multiplier of the face that it rolled. (Maximum +10)",
+      "condition": "Get promoted as Pale Hand.",
+      "effect": "Doubles the stamp multiplier of the face that it rolled. (Maximum +10)",
       "faces": "1-4",
-      "icon": "games/dice-a-million/items/0150b23c9614f235.png"
+      "sides": 4,
+      "rarity": "rare",
+      "traits": [
+        "charge",
+        "stampmult",
+        "odd-faces"
+      ],
+      "icon": "games/dice-a-million/items/dice/prismatic-d4.png"
     },
     {
-      "id": "63a7352388ba0ec1",
+      "id": "dice-amber",
       "kind": "dice",
       "name": "Amber",
       "condition": "Beat the game in Power IV.",
-      "effect": "Multiplies itself. Its internal multiplier grows by +0.05 every time another die from the roll rolls its highest face. 1 (Only dice with more than one face count.)",
-      "icon": "games/dice-a-million/items/63a7352388ba0ec1.png"
+      "effect": "Multiplies itself. Its internal multiplier grows by +0.05 every time another die from the roll rolls its highest face. (Only dice with more than one face count.)",
+      "faces": "1",
+      "sides": 1,
+      "rarity": "rare",
+      "traits": [
+        "odd-faces",
+        "gem"
+      ],
+      "icon": "games/dice-a-million/items/dice/amber.png"
     },
     {
-      "id": "88b28d023cf0fee4",
+      "id": "dice-fibonacci",
       "kind": "dice",
       "name": "Fibonacci's Die",
       "effect": "If its face is its highest, permanently shifts every face one step upwards in the Fibonacci sequence.",
-      "faces": "0/1/1/2/3/5..",
-      "icon": "games/dice-a-million/items/88b28d023cf0fee4.png"
+      "faces": "0/1/1/2/3/5",
+      "sides": 6,
+      "rarity": "rare",
+      "traits": [
+        "face",
+        "fibonacci"
+      ],
+      "icon": "games/dice-a-million/items/dice/fibonacci-s-die.png"
     },
     {
-      "id": "a8268a5f76f195a4",
+      "id": "dice-thepact",
       "kind": "dice",
       "name": "The Pact",
-      "condition": "Get a million pips as black.",
+      "condition": "Get a million pips as Black Hand.",
       "effect": "Negative. +0.1 stamp multiplier to every face. Then, it exhausts.",
       "faces": "1-6",
-      "icon": "games/dice-a-million/items/a8268a5f76f195a4.png"
+      "sides": 6,
+      "rarity": "rare",
+      "traits": [
+        "negative",
+        "stampmult",
+        "exhaust"
+      ],
+      "icon": "games/dice-a-million/items/dice/the-pact.png"
     },
     {
-      "id": "a81caa90e383a063",
+      "id": "dice-darkmatter",
       "kind": "dice",
       "name": "Dark Matter D4",
-      "condition": "Get 5X POWER as black.",
-      "effect": "X10 Multiplier to itself per nearby die. Multiplies those dice by 0. 1-4 (Has no effect on other Dark Matter D4)",
-      "icon": "games/dice-a-million/items/a81caa90e383a063.png"
+      "condition": "Get 5X POWER as Black Hand.",
+      "effect": "X10 Multiplier to itself per nearby die. Multiplies those dice by 0. (Has no effect on other Dark Matter D4)",
+      "faces": "1-4",
+      "sides": 4,
+      "rarity": "rare",
+      "traits": [
+        "nearby"
+      ],
+      "icon": "games/dice-a-million/items/dice/dark-matter-d4.png"
     },
     {
-      "id": "d9c6d305e730f3c2",
+      "id": "dice-marble",
       "kind": "dice",
       "name": "Marble",
       "effect": "Its face value is 1 for each Marble in your bag. Increases the chance of getting more Marbles.",
-      "faces": "?",
-      "icon": "games/dice-a-million/items/d9c6d305e730f3c2.png"
+      "sides": 1,
+      "rarity": "uncommon",
+      "traits": [
+        "face",
+        "single-face",
+        "variable-face"
+      ],
+      "icon": "games/dice-a-million/items/dice/marble.png"
     },
     {
-      "id": "9693586e69f39a92",
+      "id": "dice-atom",
       "kind": "dice",
       "name": "Atom Die",
       "condition": "Fully charge up an 8-charge die.",
       "effect": "+2 charges to nearby dice. Then, exhausts.",
       "faces": "0",
-      "icon": "games/dice-a-million/items/9693586e69f39a92.png"
+      "sides": 1,
+      "rarity": "uncommon",
+      "traits": [
+        "charge",
+        "exhaust",
+        "face-zero",
+        "nearby",
+        "single-face"
+      ],
+      "icon": "games/dice-a-million/items/dice/atom-die.png"
     },
     {
-      "id": "4dbc74e7a8923405",
+      "id": "dice-cherub",
       "kind": "dice",
       "name": "Cherub's Die",
-      "condition": "Get a million pips as yellow.",
+      "condition": "Get a million pips as Yellow Hand.",
       "effect": "+10 extra value to itself for each nearby die. Then, exhausts those dice.",
       "faces": "3",
-      "icon": "games/dice-a-million/items/4dbc74e7a8923405.png"
+      "sides": 1,
+      "rarity": "rare",
+      "traits": [
+        "ev",
+        "exhaust",
+        "odd-faces",
+        "nearby",
+        "single-face"
+      ],
+      "icon": "games/dice-a-million/items/dice/cherub-s-die.png"
     },
     {
-      "id": "67c7b7fb6dc01aac",
+      "id": "dice-d20translucid",
       "kind": "dice",
       "name": "Translucid D20",
       "condition": "Roll 4 twenties in a single roll.",
-      "effect": "X Multiplier to VERY nearby dice. X being the number on its face. Then, exhausts.",
+      "effect": "Multiplies VERY nearby dice by the number on its face. Then, exhausts.",
       "faces": "1-20",
-      "icon": "games/dice-a-million/items/67c7b7fb6dc01aac.png"
+      "sides": 7,
+      "rarity": "legendary",
+      "traits": [
+        "exhaust",
+        "nearby"
+      ],
+      "icon": "games/dice-a-million/items/dice/translucid-d20.png"
     },
     {
-      "id": "86675716182c6ab9",
+      "id": "dice-windup",
       "kind": "dice",
       "name": "Wind-Up Die",
       "effect": "Rolls 4 random common dice and 1 random uncommon die.",
       "faces": "0",
-      "icon": "games/dice-a-million/items/86675716182c6ab9.png"
+      "sides": 1,
+      "rarity": "uncommon",
+      "traits": [
+        "charge",
+        "face-zero",
+        "single-face"
+      ],
+      "icon": "games/dice-a-million/items/dice/wind-up-die.png"
     },
     {
-      "id": "5ce8bcdcafbc6eb5",
+      "id": "dice-oxidie",
       "kind": "dice",
       "name": "Oxidie",
-      "effect": "When rolled takes one extra roll and gives 4X Multiplier to everything. 1-6 (Doesn't work if there are no rolls left.)",
-      "icon": "games/dice-a-million/items/5ce8bcdcafbc6eb5.png"
+      "effect": "When rolled takes one extra roll and gives 4X Multiplier to everything. (Doesn't work if there are no rolls left.)",
+      "faces": "1-6",
+      "sides": 6,
+      "rarity": "uncommon",
+      "icon": "games/dice-a-million/items/dice/oxidie.png"
     },
     {
-      "id": "1be2e55d42f9fa2f",
+      "id": "dice-hourglass",
       "kind": "dice",
       "name": "Hourglass",
       "effect": "When rolled takes all of your rolls. 2X Multiplier to everything per roll that it consumed.",
       "faces": "0",
-      "icon": "games/dice-a-million/items/1be2e55d42f9fa2f.png"
+      "sides": 1,
+      "rarity": "rare",
+      "traits": [
+        "face-zero",
+        "single-face"
+      ],
+      "icon": "games/dice-a-million/items/dice/hourglass.png"
     },
     {
-      "id": "cb3158ef3875fc8b",
+      "id": "dice-tv",
       "kind": "dice",
       "name": "Pocket TV",
-      "condition": "Get a million pips as static.",
+      "condition": "Get a million pips as Static Hand.",
       "effect": "Guarantees a rare or legendary die in the next shop. Roll this to change it.",
       "faces": "0",
-      "icon": "games/dice-a-million/items/cb3158ef3875fc8b.png"
+      "sides": 1,
+      "rarity": "rare",
+      "traits": [
+        "face-zero",
+        "single-face"
+      ],
+      "icon": "games/dice-a-million/items/dice/pocket-tv.png"
     },
     {
-      "id": "5db7f9c97f4f8404",
+      "id": "dice-5volt",
       "kind": "dice",
       "name": "5 Volt Die",
       "effect": "+25 extra value to every die on the table.",
       "faces": "1-5",
-      "icon": "games/dice-a-million/items/5db7f9c97f4f8404.png"
+      "sides": 5,
+      "rarity": "rare",
+      "traits": [
+        "charge",
+        "ev"
+      ],
+      "icon": "games/dice-a-million/items/dice/5-volt-die.png"
     },
     {
-      "id": "8a3001118765dd85",
+      "id": "dice-alphabet",
       "kind": "dice",
       "name": "Alphabet Block",
-      "effect": "If this only has one nearby die, permanently copies its face onto this one.",
+      "effect": "Permanently copies the sum of the faces on nearby dice onto the face that this rolled.",
       "faces": "A/B/C",
-      "icon": "games/dice-a-million/items/8a3001118765dd85.png"
+      "sides": 3,
+      "rarity": "rare",
+      "traits": [
+        "face",
+        "nearby"
+      ],
+      "icon": "games/dice-a-million/items/dice/alphabet-block.png"
     },
     {
-      "id": "c582019ea031e4b8",
+      "id": "dice-magic8",
       "kind": "dice",
       "name": "Magic 8 Ball",
       "condition": "Roll at least 8 dice in a single roll.",
       "effect": "Every other die on the table will score at least 8. Also changes their face to 8 if they have it and they rolled less.",
       "faces": "8",
-      "icon": "games/dice-a-million/items/c582019ea031e4b8.png"
+      "sides": 1,
+      "rarity": "rare",
+      "traits": [
+        "face",
+        "even-faces"
+      ],
+      "icon": "games/dice-a-million/items/dice/magic-8-ball.png"
     },
     {
-      "id": "836d84d1330ff5c6",
+      "id": "dice-redgiant",
       "kind": "dice",
       "name": "Red Giant",
-      "effect": "+3 face value every time is affected by any area effect. ? Immune to burns.",
-      "icon": "games/dice-a-million/items/836d84d1330ff5c6.png"
+      "effect": "+3 face value every time is affected by any area effect. Immune to burns.",
+      "sides": 1,
+      "rarity": "rare",
+      "traits": [
+        "face",
+        "fire",
+        "variable-face"
+      ],
+      "icon": "games/dice-a-million/items/dice/red-giant.png"
     },
     {
-      "id": "fd646da85b85e6eb",
+      "id": "dice-firstdime",
       "kind": "dice",
       "name": "First Dime",
-      "condition": "Roll 2-faced coin at least 10 times.(not in a row)",
+      "condition": "Roll 2-faced coin at least 10 times.",
       "effect": "If its face is a 1, gives a random card. Destroys itself if its face is a 2.",
       "faces": "1/2",
-      "icon": "games/dice-a-million/items/fd646da85b85e6eb.png"
+      "sides": 2,
+      "rarity": "uncommon",
+      "traits": [
+        "destroy"
+      ],
+      "icon": "games/dice-a-million/items/dice/first-dime.png"
     },
     {
-      "id": "c3f8b61ebbf434e9",
+      "id": "dice-d12",
       "kind": "dice",
       "name": "D12",
       "condition": "Have a D7, D8 and D10 in your bag.",
-      "effect": "Gives 2X Multiplier and 1-12 extra value to other VERY nearby dice.",
+      "effect": "Gives 2X Multiplier and 1-12 extra value to VERY nearby dice.",
       "faces": "1-12",
-      "icon": "games/dice-a-million/items/c3f8b61ebbf434e9.png"
+      "sides": 7,
+      "rarity": "uncommon",
+      "traits": [
+        "ev",
+        "nearby"
+      ],
+      "icon": "games/dice-a-million/items/dice/d12.png"
     },
     {
-      "id": "cab073155caae8c2",
+      "id": "dice-double",
       "kind": "dice",
       "name": "Double Dice",
-      "effect": "Multiplies itself by its face on the inside. 1-6 (Both of its faces count for face effects.)",
-      "icon": "games/dice-a-million/items/cab073155caae8c2.png"
+      "effect": "Multiplies itself by its face on the inside. (Both of its faces count for face effects.)",
+      "faces": "1-6",
+      "sides": 6,
+      "rarity": "uncommon",
+      "traits": [
+        "face",
+        "even-faces",
+        "odd-faces"
+      ],
+      "icon": "games/dice-a-million/items/dice/double-dice.png"
     },
     {
-      "id": "118e9a8b68c206a0",
+      "id": "dice-mini",
       "kind": "dice",
       "name": "Minidie",
-      "condition": "Break its shell.",
-      "effect": "Remove Double dice(image above this) in the shop. Never takes space in hand when selected. When drawn, draw another dice too.",
-      "faces": "6",
-      "icon": "games/dice-a-million/items/118e9a8b68c206a0.png"
+      "condition": "Break the shell of a Double die.",
+      "effect": "Never takes space in hand when selected. When drawn, draw another dice too.",
+      "faces": "1-6",
+      "sides": 6,
+      "rarity": "rare",
+      "icon": "games/dice-a-million/items/dice/minidie.png"
     },
     {
-      "id": "6fe4ec481c8b99a8",
+      "id": "dice-evileye",
       "kind": "dice",
       "name": "Evil Eye",
       "condition": "Remind someone of something.",
-      "effect": "Take the Hollow Dice and show it to the Phone Guy after the Face 3 boss. The Hollow Die can be obtained either by using the MegaDie or by playing against the Hollow boss. No dice can be destroyed nor discarded when this is on the table. 1 in 3 probability of destroying itself when rolled.",
+      "effect": "No dice can be destroyed nor discarded when this is on the table. 1 in 3 probability of destroying itself when rolled.",
       "faces": "0",
-      "icon": "games/dice-a-million/items/6fe4ec481c8b99a8.png"
+      "sides": 1,
+      "rarity": "rare",
+      "traits": [
+        "destroy",
+        "discard",
+        "face-zero"
+      ],
+      "icon": "games/dice-a-million/items/dice/evil-eye.png"
     },
     {
-      "id": "f3a89cbf22128629",
+      "id": "dice-ourodie",
       "kind": "dice",
       "name": "Ourodie",
-      "condition": "Beat the game in Power VI as hollow.",
-      "effect": "When this is affected by any area effect, destroys itself and gives 10X Multiplier to every die left in your hand. 1-6 When destroyed has a 1 in 2 probability of reappearing in your bag.",
-      "icon": "games/dice-a-million/items/f3a89cbf22128629.png"
+      "condition": "Beat the game in Power VI as Hollow Hand.",
+      "effect": "When this is affected by any area effect, destroys itself and gives 10X Multiplier to every die left in your hand. When destroyed has a 1 in 2 probability of reappearing in your bag.",
+      "faces": "1-6",
+      "sides": 6,
+      "rarity": "rare",
+      "traits": [
+        "destroy"
+      ],
+      "icon": "games/dice-a-million/items/dice/ourodie.png"
     },
     {
-      "id": "815e1dd5f515380c",
+      "id": "dice-pearl",
       "kind": "dice",
       "name": "Pearled D4",
       "effect": "If its face is a 4, 8X Multiplier to everything and exhausts.",
       "faces": "1-4",
-      "icon": "games/dice-a-million/items/815e1dd5f515380c.png"
+      "sides": 4,
+      "rarity": "rare",
+      "traits": [
+        "face",
+        "exhaust"
+      ],
+      "icon": "games/dice-a-million/items/dice/pearled-d4.png"
     },
     {
-      "id": "f311d6b2d228fde1",
+      "id": "dice-ink",
       "kind": "dice",
       "name": "Ink Die",
-      "effect": "+0.5 stamp multiplier to your highest level face. 1-3 (In case of draw, a random one is selected.)",
-      "icon": "games/dice-a-million/items/f311d6b2d228fde1.png"
+      "effect": "+0.5 stamp multiplier to your highest level face. (In case of draw, a random one is selected.)",
+      "faces": "1-3",
+      "sides": 3,
+      "rarity": "rare",
+      "traits": [
+        "charge",
+        "stampmult"
+      ],
+      "icon": "games/dice-a-million/items/dice/ink-die.png"
     },
     {
-      "id": "a6e45d3abc335915",
+      "id": "dice-foam",
       "kind": "dice",
       "name": "Foam Die",
       "effect": "Adds +5 extra value and exhausts other nearby dice.",
       "faces": "1-6",
-      "icon": "games/dice-a-million/items/a6e45d3abc335915.png"
+      "sides": 6,
+      "rarity": "uncommon",
+      "traits": [
+        "exhaust",
+        "nearby"
+      ],
+      "icon": "games/dice-a-million/items/dice/foam-die.png"
     },
     {
-      "id": "1985aae1d85663b0",
+      "id": "dice-haunted",
       "kind": "dice",
       "name": "Haunted Die",
       "condition": "Beat The Patient boss.",
       "effect": "Rolls as many copies of itself as hand size you're not using.",
       "faces": "1-6",
-      "icon": "games/dice-a-million/items/1985aae1d85663b0.png"
+      "sides": 6,
+      "rarity": "uncommon",
+      "icon": "games/dice-a-million/items/dice/haunted-die.png"
     },
     {
-      "id": "d7a6337585a07c7c",
+      "id": "dice-author",
       "kind": "dice",
       "name": "Author's Die",
-      "condition": "Get promoted as black.",
+      "condition": "Get promoted as Black Hand.",
       "effect": "Rolls a copy of any die matching its face.",
       "faces": "1-6",
-      "icon": "games/dice-a-million/items/d7a6337585a07c7c.png"
+      "sides": 6,
+      "rarity": "rare",
+      "icon": "games/dice-a-million/items/dice/author-s-die.png"
     },
     {
-      "id": "2b623ecce1991511",
+      "id": "dice-bamboo",
+      "kind": "dice",
+      "name": "Bamboo D4",
+      "effect": "+10 extra value to dice with the same face as this.",
+      "faces": "1-4",
+      "sides": 4,
+      "rarity": "uncommon",
+      "traits": [
+        "face",
+        "ev"
+      ],
+      "icon": "games/dice-a-million/items/dice/bamboo-d4.png"
+    },
+    {
+      "id": "dice-coral",
+      "kind": "dice",
+      "name": "Coral D4",
+      "effect": "+16 extra value to dice with the same face as this. Exhausts if its face is a 4.",
+      "faces": "1-4",
+      "sides": 4,
+      "rarity": "rare",
+      "traits": [
+        "face",
+        "ev",
+        "exhaust"
+      ],
+      "icon": "games/dice-a-million/items/dice/coral-d4.png"
+    },
+    {
+      "id": "dice-jade",
+      "kind": "dice",
+      "name": "Jade D4",
+      "effect": "+22 extra value to every dice on the table. Destroys itself if its face is a 4.",
+      "faces": "1-4",
+      "sides": 4,
+      "rarity": "legendary",
+      "traits": [
+        "ev",
+        "destroy"
+      ],
+      "icon": "games/dice-a-million/items/dice/jade-d4.png"
+    },
+    {
+      "id": "dice-disc",
+      "kind": "dice",
+      "name": "MiniDisc",
+      "condition": "Make a ring give you 1,000 pips.",
+      "effect": "If its face is 1, 5X Multiplier to rings that give pips.",
+      "faces": "0/1",
+      "sides": 2,
+      "rarity": "rare",
+      "traits": [
+        "face"
+      ],
+      "icon": "games/dice-a-million/items/dice/minidisc.png"
+    },
+    {
+      "id": "dice-can",
+      "kind": "dice",
+      "name": "Die in a Can",
+      "effect": "Rolls a random die from your bag.",
+      "faces": "1-5",
+      "sides": 5,
+      "rarity": "uncommon",
+      "icon": "games/dice-a-million/items/dice/die-in-a-can.png"
+    },
+    {
+      "id": "dice-bullet",
+      "kind": "dice",
+      "name": "Bullet Die",
+      "condition": "Roll 4 Time Bombs at the same time.",
+      "effect": "If its face is a 50, discards every other die on the table.",
+      "faces": "0/5/20/30/50",
+      "sides": 5,
+      "rarity": "uncommon",
+      "traits": [
+        "face",
+        "discard"
+      ],
+      "icon": "games/dice-a-million/items/dice/bullet-die.png"
+    },
+    {
+      "id": "dice-spottedd5",
+      "kind": "dice",
+      "name": "Spotted D5",
+      "effect": "If its face is a 5, gives 5X Multiplier to every die left in your hand.",
+      "faces": "1-5",
+      "sides": 5,
+      "rarity": "uncommon",
+      "traits": [
+        "face"
+      ],
+      "icon": "games/dice-a-million/items/dice/spotted-d5.png"
+    },
+    {
+      "id": "dice-virald5",
+      "kind": "dice",
+      "name": "Viral D5",
+      "condition": "Have 10X Multiplier on a die without rolling it.",
+      "effect": "3X Multiplier to every die left in your hand. If its face is a 5, exhausts them.",
+      "faces": "1-5",
+      "sides": 5,
+      "rarity": "rare",
+      "traits": [
+        "face"
+      ],
+      "icon": "games/dice-a-million/items/dice/viral-d5.png"
+    },
+    {
+      "id": "dice-marshmallow",
+      "kind": "dice",
+      "name": "Marshmallow",
+      "condition": "Get promoted as Cyan Hand.",
+      "effect": "Next roll, increase your hand size as much as its face. Then exhausts itself.",
+      "faces": "1-5",
+      "sides": 5,
+      "rarity": "legendary",
+      "traits": [
+        "face"
+      ],
+      "icon": "games/dice-a-million/items/dice/marshmallow.png"
+    },
+    {
+      "id": "dice-pokerchip",
+      "kind": "dice",
+      "name": "Poker Chip",
+      "effect": "If its face is a 2, increases your hand size in the next roll.",
+      "faces": "1/2",
+      "sides": 2,
+      "rarity": "uncommon",
+      "traits": [
+        "face"
+      ],
+      "icon": "games/dice-a-million/items/dice/poker-chip.png"
+    },
+    {
+      "id": "dice-cookie",
+      "kind": "dice",
+      "name": "Secret Cookie",
+      "condition": "Find a secret cookie.",
+      "effect": "If its face has chocolate, splits into 6 pieces that will give +2 extra value to VERY nearby dice.",
+      "faces": ":D/:(",
+      "sides": 2,
+      "rarity": "uncommon",
+      "traits": [
+        "face",
+        "ev",
+        "face-zero",
+        "nearby"
+      ],
+      "icon": "games/dice-a-million/items/dice/secret-cookie.png"
+    },
+    {
+      "id": "dice-floral",
+      "kind": "dice",
+      "name": "Floral Die",
+      "effect": "Places a flower that will give 1.5X Multiplier to VERY nearby dice in next rolls.",
+      "faces": "1-6",
+      "sides": 6,
+      "rarity": "rare",
+      "traits": [
+        "nearby"
+      ],
+      "icon": "games/dice-a-million/items/dice/floral-die.png"
+    },
+    {
+      "id": "dice-puzzle",
+      "kind": "dice",
+      "name": "Puzzle Piece",
+      "condition": "Beat Face 3 as Cyan Hand.",
+      "effect": "+5 extra value per different dice shape on the table.",
+      "faces": "2/5",
+      "sides": 2,
+      "rarity": "uncommon",
+      "traits": [
+        "ev"
+      ],
+      "icon": "games/dice-a-million/items/dice/puzzle-piece.png"
+    },
+    {
+      "id": "dice-music",
+      "kind": "dice",
+      "name": "Musical Block",
+      "effect": "2X Multiplier to nearby dice per other Musical Block on the table. If there are none, does nothing.",
+      "faces": "0",
+      "sides": 1,
+      "rarity": "uncommon",
+      "traits": [
+        "nearby"
+      ],
+      "icon": "games/dice-a-million/items/dice/musical-block.png"
+    },
+    {
+      "id": "dice-swift",
+      "kind": "dice",
+      "name": "Swift Die",
+      "effect": "Gives as many ghost Quickdice as its face shows.",
+      "faces": "1-3",
+      "sides": 3,
+      "rarity": "rare",
+      "traits": [
+        "ghost",
+        "face"
+      ],
+      "icon": "games/dice-a-million/items/dice/swift-die.png"
+    },
+    {
+      "id": "dice-mountain",
+      "kind": "dice",
+      "name": "Mountain D4",
+      "effect": "If its face is a 4, gives 4 ghost Quickdice. Then, exhausts itself.",
+      "faces": "1-4",
+      "sides": 4,
+      "rarity": "uncommon",
+      "traits": [
+        "face",
+        "ghost"
+      ],
+      "icon": "games/dice-a-million/items/dice/mountain-d4.png"
+    },
+    {
+      "id": "dice-silvercoin",
+      "kind": "dice",
+      "name": "Silver Coin",
+      "condition": "Beat The Hollow boss.",
+      "effect": "If its face is a 0, gives 5 ghost Quickdice. If its face is a 5, adds 5 Hollow Dice to your bag.",
+      "faces": "0/5",
+      "sides": 2,
+      "rarity": "rare",
+      "traits": [
+        "face",
+        "ghost"
+      ],
+      "icon": "games/dice-a-million/items/dice/silver-coin.png"
+    },
+    {
+      "id": "dice-rubik_piece",
       "kind": "dice",
       "name": "Rubik's cube piece",
       "effect": "Always 1.",
-      "icon": "games/dice-a-million/items/2b623ecce1991511.png"
+      "faces": "1",
+      "sides": 6,
+      "rarity": "common",
+      "hidden": true,
+      "icon": "games/dice-a-million/items/dice/rubik-s-cube-piece.png"
     },
     {
-      "id": "a58a36acd90d55fc",
+      "id": "dice-gray",
       "kind": "dice",
       "name": "Gray Die",
       "effect": "Doesn't do anything. It will destroy itself after being rolled 10 times. Can't be destroyed or removed in any other way.",
       "faces": "0",
-      "icon": "games/dice-a-million/items/a58a36acd90d55fc.png"
+      "sides": 1,
+      "rarity": "common",
+      "hidden": true,
+      "traits": [
+        "destroy",
+        "face-zero"
+      ],
+      "icon": "games/dice-a-million/items/dice/gray-die.png"
     },
     {
-      "id": "f1097a8c2f268f9d",
+      "id": "dice-firefire",
       "kind": "dice",
       "name": "Fire",
       "effect": "Burns VERY nearby dice.",
-      "icon": "games/dice-a-million/items/f1097a8c2f268f9d.png"
+      "faces": "0",
+      "sides": 1,
+      "rarity": "common",
+      "hidden": true,
+      "traits": [
+        "fire",
+        "single-face",
+        "nearby"
+      ],
+      "icon": "games/dice-a-million/items/dice/fire.png"
     },
     {
-      "id": "23bff1a35b0a6415",
+      "id": "dice-hollow",
       "kind": "dice",
-      "name": "???",
-      "effect": "Get the first piece  Some strange energy radiates from this die. 0  Buy 1st part in the shop 500 pips(only at face 1) (Can be paid throughout the whole Face.)",
-      "icon": "games/dice-a-million/items/23bff1a35b0a6415.png"
+      "name": "Hollow Die",
+      "effect": "Doesn't do anything. It will destroy itself when rolled.",
+      "faces": "0",
+      "sides": 1,
+      "rarity": "common",
+      "hidden": true,
+      "traits": [
+        "destroy",
+        "face-zero"
+      ],
+      "icon": "games/dice-a-million/items/dice/hollow-die.png"
     },
     {
-      "id": "11641fe5027737b9",
+      "id": "dice-paperpaper",
+      "kind": "dice",
+      "name": "Paper note",
+      "effect": "+5 extra value to VERY nearby dice.",
+      "faces": "0",
+      "sides": 1,
+      "rarity": "common",
+      "hidden": true,
+      "traits": [
+        "ev",
+        "single-face",
+        "nearby"
+      ],
+      "icon": "games/dice-a-million/items/dice/paper-note.png"
+    },
+    {
+      "id": "dice-matrioshka2",
+      "kind": "dice",
+      "name": "Medium Matryoshka",
+      "effect": "What will be inside? Resets after the round ends.",
+      "faces": "20",
+      "sides": 1,
+      "rarity": "uncommon",
+      "hidden": true,
+      "traits": [
+        "even-faces"
+      ],
+      "icon": "games/dice-a-million/items/dice/medium-matryoshka.png"
+    },
+    {
+      "id": "dice-matrioshka3",
+      "kind": "dice",
+      "name": "Small Matryoshka",
+      "effect": "What will be inside? Resets after the round ends.",
+      "faces": "50",
+      "sides": 1,
+      "rarity": "uncommon",
+      "hidden": true,
+      "traits": [
+        "even-faces"
+      ],
+      "icon": "games/dice-a-million/items/dice/small-matryoshka.png"
+    },
+    {
+      "id": "dice-matrioshka4",
+      "kind": "dice",
+      "name": "Dwarf Matryoshka",
+      "effect": "You've reached the end. Resets after the round ends.",
+      "faces": "100",
+      "sides": 1,
+      "rarity": "uncommon",
+      "hidden": true,
+      "traits": [
+        "even-faces"
+      ],
+      "icon": "games/dice-a-million/items/dice/dwarf-matryoshka.png"
+    },
+    {
+      "id": "dice-key1",
       "kind": "dice",
       "name": "Shattered Die",
-      "condition": "Get the second piece.",
-      "effect": "Some strange energy radiates from this die. 0  Buy 2nd part in the shop 50k pips(only at face 2 + 1st part) you should show 1st part to the phone guy after face 3 to unlock it",
-      "icon": "games/dice-a-million/items/11641fe5027737b9.png"
+      "effect": "Some strange energy radiates from this die.",
+      "faces": "0",
+      "sides": 1,
+      "rarity": "occult",
+      "hidden": true,
+      "traits": [
+        "face-zero"
+      ],
+      "icon": "games/dice-a-million/items/dice/shattered-die.png"
     },
     {
-      "id": "c7316bd7f7ef8d31",
-      "kind": "dice",
-      "name": "Shattered Die",
-      "effect": "Rebuild a strange die. Some strange energy radiates from this die. 0  Buy 3rd part in the shop 1mil pips(only at face 3 + 1st + 2nd parts)you should show 2nd part to the phone guy after face 3 to unlock it",
-      "icon": "games/dice-a-million/items/c7316bd7f7ef8d31.png"
-    },
-    {
-      "id": "66cbecdb210b62df",
+      "id": "dice-keyfull",
       "kind": "dice",
       "name": "J's Die",
-      "effect": "Buy 3 parts of this die in the shop and show them to the phone guy. Some strange energy radiates from this die. You feel it being important.",
+      "effect": "Some strange energy radiates from this die. You feel it being important.",
       "faces": "4",
-      "icon": "games/dice-a-million/items/66cbecdb210b62df.png"
+      "sides": 1,
+      "rarity": "occult",
+      "hidden": true,
+      "traits": [
+        "even-faces"
+      ],
+      "icon": "games/dice-a-million/items/dice/j-s-die.png"
     },
     {
-      "id": "028890fd9bf2f99d",
+      "id": "dice-fish",
+      "kind": "dice",
+      "name": "Fishdie",
+      "effect": "Copies the value of other random die on the table.",
+      "sides": 1,
+      "rarity": "common",
+      "hidden": true,
+      "traits": [
+        "single-face",
+        "face-zero"
+      ],
+      "icon": "games/dice-a-million/items/dice/fishdie.png"
+    },
+    {
+      "id": "dice-cthu_vortex",
+      "kind": "dice",
+      "name": "Mini-Vortex",
+      "effect": "X pips per VERY nearby die.",
+      "faces": "0",
+      "sides": 1,
+      "rarity": "common",
+      "hidden": true,
+      "traits": [
+        "single-face"
+      ],
+      "icon": "games/dice-a-million/items/dice/mini-vortex.png"
+    },
+    {
+      "id": "dice-cookie_chip",
+      "kind": "dice",
+      "name": "Cookie Chip",
+      "effect": "+2 extra value to VERY nearby dice.",
+      "faces": "0",
+      "sides": 3,
+      "rarity": "common",
+      "hidden": true,
+      "icon": "games/dice-a-million/items/dice/cookie-chip.png"
+    },
+    {
+      "id": "dice-flower",
+      "kind": "dice",
+      "name": "Flower",
+      "effect": "1.5X Multiplier to VERY nearby dice.",
+      "faces": "0",
+      "sides": 1,
+      "rarity": "common",
+      "hidden": true,
+      "traits": [
+        "nearby",
+        "single-face"
+      ],
+      "icon": "games/dice-a-million/items/dice/flower.png"
+    },
+    {
+      "id": "dice-quick",
+      "kind": "dice",
+      "name": "Quickdie",
+      "effect": "Never takes space in hand when selected.",
+      "faces": "1-3",
+      "sides": 3,
+      "rarity": "common",
+      "hidden": true,
+      "traits": [
+        "ghost"
+      ],
+      "icon": "games/dice-a-million/items/dice/quickdie.png"
+    },
+    {
+      "id": "rings-odd",
       "kind": "rings",
       "name": "Odd Ring",
       "effect": "2X Multiplier to dice with an odd face.",
-      "icon": "games/dice-a-million/items/028890fd9bf2f99d.png"
+      "rarity": "common",
+      "traits": [
+        "face",
+        "parity"
+      ],
+      "icon": "games/dice-a-million/items/rings/odd-ring.png"
     },
     {
-      "id": "3026807b83f91be3",
+      "id": "rings-even",
       "kind": "rings",
       "name": "Even Ring",
       "effect": "2X Multiplier to dice with an even face.",
-      "icon": "games/dice-a-million/items/3026807b83f91be3.png"
+      "rarity": "common",
+      "traits": [
+        "face",
+        "parity"
+      ],
+      "icon": "games/dice-a-million/items/rings/even-ring.png"
     },
     {
-      "id": "735aef0cc233bda5",
+      "id": "rings-developer",
       "kind": "rings",
       "name": "Developer",
       "effect": "Dice with a 1 on their face are worth 10.",
-      "icon": "games/dice-a-million/items/735aef0cc233bda5.png"
+      "rarity": "common",
+      "traits": [
+        "face"
+      ],
+      "icon": "games/dice-a-million/items/rings/developer.png"
     },
     {
-      "id": "a66458c3278a8b13",
+      "id": "rings-noble",
       "kind": "rings",
       "name": "Noble Ring",
       "effect": "+1 hand size. (Allows for an extra die to be selected.)",
-      "icon": "games/dice-a-million/items/a66458c3278a8b13.png"
+      "rarity": "rare",
+      "icon": "games/dice-a-million/items/rings/noble-ring.png"
     },
     {
-      "id": "dd0860aac1aaff25",
+      "id": "rings-reroll",
       "kind": "rings",
       "name": "Reroll Ring",
       "effect": "Allows for one die to be rerolled.",
-      "icon": "games/dice-a-million/items/dd0860aac1aaff25.png"
+      "rarity": "rare",
+      "traits": [
+        "activering"
+      ],
+      "icon": "games/dice-a-million/items/rings/reroll-ring.png"
     },
     {
-      "id": "5639434451f0b6c8",
+      "id": "rings-wedding",
       "kind": "rings",
       "name": "Wedding Ring",
       "effect": "Every roll gives a 1% of the target pips of the round. (Maximum of 1000)",
-      "icon": "games/dice-a-million/items/5639434451f0b6c8.png"
+      "rarity": "common",
+      "traits": [
+        "growing"
+      ],
+      "icon": "games/dice-a-million/items/rings/wedding-ring.png"
     },
     {
-      "id": "5cb8ca7a22c20345",
+      "id": "rings-thirdeye",
       "kind": "rings",
       "name": "The Third Eye",
       "effect": "Change the face of a die to its highest one.",
-      "icon": "games/dice-a-million/items/5cb8ca7a22c20345.png"
+      "rarity": "legendary",
+      "traits": [
+        "activering",
+        "face"
+      ],
+      "icon": "games/dice-a-million/items/rings/the-third-eye.png"
     },
     {
-      "id": "d9a547442b114180",
+      "id": "rings-consolation",
       "kind": "rings",
       "name": "Consolation Prize",
       "condition": "Lose a run.",
-      "effect": "Gives 10pips for every die with its lowest face. (Only works on dice with more than one face.)",
-      "icon": "games/dice-a-million/items/d9a547442b114180.png"
+      "effect": "Gives 10 pips for every die with its lowest face. (Only works on dice with more than one face.)",
+      "rarity": "common",
+      "traits": [
+        "face",
+        "growing"
+      ],
+      "icon": "games/dice-a-million/items/rings/consolation-prize.png"
     },
     {
-      "id": "7b21c23f124b8373",
+      "id": "rings-calm",
       "kind": "rings",
       "name": "Jewel of Calm",
       "effect": "+1 roll.",
-      "icon": "games/dice-a-million/items/7b21c23f124b8373.png"
+      "rarity": "uncommon",
+      "icon": "games/dice-a-million/items/rings/jewel-of-calm.png"
     },
     {
-      "id": "228c038f30c70b2b",
+      "id": "rings-wealth",
       "kind": "rings",
       "name": "Bling Bling",
       "condition": "Spend at least 1000 pips in a single purchase.",
       "effect": "Everything in the shop has a 50% discount.",
-      "icon": "games/dice-a-million/items/228c038f30c70b2b.png"
+      "rarity": "rare",
+      "icon": "games/dice-a-million/items/rings/bling-bling.png"
     },
     {
-      "id": "d20ee47dcf98811a",
+      "id": "rings-lastbreath",
       "kind": "rings",
       "name": "Last Breath",
       "condition": "Lose to a boss.",
       "effect": "In the last roll, 4X Multiplier to everything.",
-      "icon": "games/dice-a-million/items/d20ee47dcf98811a.png"
+      "rarity": "uncommon",
+      "icon": "games/dice-a-million/items/rings/last-breath.png"
     },
     {
-      "id": "14fccdccf159d5f6",
+      "id": "rings-asteroids",
       "kind": "rings",
       "name": "Asteroid Ring",
       "effect": "Gives pips every roll. Adds 1 to its value every time a die rolls a 1, 2, or 3.",
-      "icon": "games/dice-a-million/items/14fccdccf159d5f6.png"
+      "rarity": "uncommon",
+      "traits": [
+        "face",
+        "growing"
+      ],
+      "icon": "games/dice-a-million/items/rings/asteroid-ring.png"
     },
     {
-      "id": "a987ea27120cc56b",
+      "id": "rings-equals",
       "kind": "rings",
       "name": "Equity Ring",
       "effect": "Every same dice will always roll the same face.",
-      "icon": "games/dice-a-million/items/a987ea27120cc56b.png"
+      "rarity": "common",
+      "traits": [
+        "face"
+      ],
+      "icon": "games/dice-a-million/items/rings/equity-ring.png"
     },
     {
-      "id": "391f033735063607",
+      "id": "rings-rarity",
       "kind": "rings",
       "name": "Treasure Ring",
       "condition": "Have at least 3 legendary dice in your bag.",
       "effect": "Increases the odds of finding rare or legendary dice.",
-      "icon": "games/dice-a-million/items/391f033735063607.png"
+      "rarity": "rare",
+      "icon": "games/dice-a-million/items/rings/treasure-ring.png"
     },
     {
-      "id": "2bcaeea884d46609",
+      "id": "rings-multiequals",
       "kind": "rings",
       "name": "Equivalent Link",
       "condition": "Have at least 10k pips.",
       "effect": "X Multiplier to every die that rolled the same face, X being the number of dice with the same face.",
-      "icon": "games/dice-a-million/items/2bcaeea884d46609.png"
+      "rarity": "rare",
+      "traits": [
+        "face"
+      ],
+      "icon": "games/dice-a-million/items/rings/equivalent-link.png"
     },
     {
-      "id": "e1c2991ac88d52bf",
+      "id": "rings-area",
       "kind": "rings",
       "name": "Aura Ring",
       "effect": "Increases the range of dice with area effects.",
-      "icon": "games/dice-a-million/items/e1c2991ac88d52bf.png"
+      "rarity": "uncommon",
+      "icon": "games/dice-a-million/items/rings/aura-ring.png"
     },
     {
-      "id": "867b91ca30a9b7ac",
+      "id": "rings-magic",
       "kind": "rings",
       "name": "Magic Ring",
       "condition": "Have at least 5 enchanted dice in your bag.",
-      "effect": "2X Multiplier to [rainbow]enchanted dice[/rainbow].",
-      "icon": "games/dice-a-million/items/867b91ca30a9b7ac.png"
+      "effect": "2X Multiplier to enchanted dice.",
+      "rarity": "uncommon",
+      "icon": "games/dice-a-million/items/rings/magic-ring.png"
     },
     {
-      "id": "27493067e10e88ff",
+      "id": "rings-prime",
       "kind": "rings",
       "name": "Prime Ring",
       "effect": "3X Multiplier to dice with a prime number on its face.",
-      "icon": "games/dice-a-million/items/27493067e10e88ff.png"
+      "rarity": "uncommon",
+      "traits": [
+        "face",
+        "prime"
+      ],
+      "icon": "games/dice-a-million/items/rings/prime-ring.png"
     },
     {
-      "id": "10ae04e5e0b3ae73",
+      "id": "rings-cursed",
       "kind": "rings",
       "name": "Cursed Ring",
       "effect": "Multiplies every die by the lowest face on the table (not counting 0). Then, dice with that face are multiplied by 0.",
-      "icon": "games/dice-a-million/items/10ae04e5e0b3ae73.png"
+      "rarity": "legendary",
+      "traits": [
+        "face"
+      ],
+      "icon": "games/dice-a-million/items/rings/cursed-ring.png"
     },
     {
-      "id": "ed79e416b77baa97",
+      "id": "rings-fractal",
       "kind": "rings",
       "name": "Fractal Ring",
       "condition": "Have at least 20 dice on the table.",
       "effect": "Rolls a copy of every die with its highest face. (These copies have a chance to roll other copies if they roll their highest face.)",
-      "icon": "games/dice-a-million/items/ed79e416b77baa97.png"
+      "rarity": "legendary",
+      "traits": [
+        "face"
+      ],
+      "icon": "games/dice-a-million/items/rings/fractal-ring.png"
     },
     {
-      "id": "14f40545da8469a7",
+      "id": "rings-balance",
       "kind": "rings",
       "name": "Balance Ring",
       "condition": "Have less than 8 dice in your bag.",
       "effect": "Avoid rolling the lowest and highest face of any die. (Only works on dice with more than two faces.)",
-      "icon": "games/dice-a-million/items/14f40545da8469a7.png"
+      "rarity": "rare",
+      "traits": [
+        "face"
+      ],
+      "icon": "games/dice-a-million/items/rings/balance-ring.png"
     },
     {
-      "id": "2e45f4951eac373b",
+      "id": "rings-spring",
       "kind": "rings",
       "name": "Spring",
       "condition": "Have at least 5 active areas on the table.",
       "effect": "Bump a die moving it from its position.",
-      "icon": "games/dice-a-million/items/2e45f4951eac373b.png"
+      "rarity": "uncommon",
+      "traits": [
+        "activering"
+      ],
+      "icon": "games/dice-a-million/items/rings/spring.png"
     },
     {
-      "id": "8fb4bdd37b2d0f04",
+      "id": "rings-hoarder",
       "kind": "rings",
       "name": "Hoarder Ring",
       "condition": "Have at least 25 dice in your bag.",
       "effect": "Draw 5 more dice per turn.",
-      "icon": "games/dice-a-million/items/8fb4bdd37b2d0f04.png"
+      "rarity": "uncommon",
+      "icon": "games/dice-a-million/items/rings/hoarder-ring.png"
     },
     {
-      "id": "d501aaff942dddd9",
+      "id": "rings-rigid",
       "kind": "rings",
       "name": "Conservative Ring",
       "effect": "3X Multiplier to dice with 6 faces.",
-      "icon": "games/dice-a-million/items/d501aaff942dddd9.png"
+      "rarity": "uncommon",
+      "icon": "games/dice-a-million/items/rings/conservative-ring.png"
     },
     {
-      "id": "9d830523cebdeaaf",
+      "id": "rings-void",
       "kind": "rings",
       "name": "Void Ring",
-      "condition": "Beat Face 3 as purple.",
+      "condition": "Beat Face 3 as Purple Hand.",
       "effect": "5X Multiplier to dice with face 0.",
-      "icon": "games/dice-a-million/items/9d830523cebdeaaf.png"
+      "rarity": "rare",
+      "traits": [
+        "face"
+      ],
+      "icon": "games/dice-a-million/items/rings/void-ring.png"
     },
     {
-      "id": "e85d0f27d0ddfe48",
+      "id": "rings-bandage",
       "kind": "rings",
       "name": "Bandage",
       "effect": "+2 extra value to every die on the table.",
-      "icon": "games/dice-a-million/items/e85d0f27d0ddfe48.png"
+      "rarity": "common",
+      "traits": [
+        "ev"
+      ],
+      "icon": "games/dice-a-million/items/rings/bandage.png"
     },
     {
-      "id": "3b5000503a91b4c9",
+      "id": "rings-sportsband",
       "kind": "rings",
       "name": "Sports Band",
       "condition": "Have a dice with at least 100 extra value.",
       "effect": "Doubles the extra value of a die on the table. (Maximum of +1000)",
-      "icon": "games/dice-a-million/items/3b5000503a91b4c9.png"
+      "rarity": "uncommon",
+      "traits": [
+        "activering",
+        "ev"
+      ],
+      "icon": "games/dice-a-million/items/rings/sports-band.png"
     },
     {
-      "id": "6915671c554784ff",
+      "id": "rings-sticker",
       "kind": "rings",
       "name": "Good Job Sticker",
       "condition": "Beat the game...?",
       "effect": "Doubles every multiplier obtained.",
-      "icon": "games/dice-a-million/items/6915671c554784ff.png"
+      "rarity": "legendary",
+      "icon": "games/dice-a-million/items/rings/good-job-sticker.png"
     },
     {
-      "id": "0805fccff5eed643",
+      "id": "rings-booster",
       "kind": "rings",
       "name": "Reinforcement Ring",
-      "condition": "Beat Face 3 as green.",
+      "condition": "Beat Face 3 as Green Hand.",
       "effect": "Draw 10 more dice at the start of every round.",
-      "icon": "games/dice-a-million/items/0805fccff5eed643.png"
+      "rarity": "uncommon",
+      "icon": "games/dice-a-million/items/rings/reinforcement-ring.png"
     },
     {
-      "id": "9b91d98ad8e2a0b1",
+      "id": "rings-tower",
       "kind": "rings",
       "name": "The Tower",
       "effect": "This gains 0.1X Multiplier for every consecutive roll you make rolling your hand size limit. It resets if the condition isn't met.",
-      "icon": "games/dice-a-million/items/9b91d98ad8e2a0b1.png"
+      "rarity": "rare",
+      "icon": "games/dice-a-million/items/rings/the-tower.png"
     },
     {
-      "id": "c593aa7577a8039f",
+      "id": "rings-dejavu",
       "kind": "rings",
       "name": "Deja-Vu Ring",
       "effect": "2.5X Multiplier to dice that have already been rolled this round.",
-      "icon": "games/dice-a-million/items/c593aa7577a8039f.png"
+      "rarity": "uncommon",
+      "icon": "games/dice-a-million/items/rings/deja-vu-ring.png"
     },
     {
-      "id": "b3ddec29163c53be",
+      "id": "rings-lucky",
       "kind": "rings",
       "name": "Lucky Ring",
       "effect": "Allows for a free reroll in every end of round reward.",
-      "icon": "games/dice-a-million/items/b3ddec29163c53be.png"
+      "rarity": "rare",
+      "icon": "games/dice-a-million/items/rings/lucky-ring.png"
     },
     {
-      "id": "670dcfde4571ee08",
+      "id": "rings-square",
       "kind": "rings",
       "name": "Square Ring",
       "effect": "At the start of every round gives a random card.",
-      "icon": "games/dice-a-million/items/670dcfde4571ee08.png"
+      "rarity": "common",
+      "icon": "games/dice-a-million/items/rings/square-ring.png"
     },
     {
-      "id": "93563d049cf510d9",
+      "id": "rings-gear",
       "kind": "rings",
       "name": "Rusty Gear",
       "effect": "4X Multiplier to everything. You draw 4 less dice.",
-      "icon": "games/dice-a-million/items/93563d049cf510d9.png"
+      "rarity": "rare",
+      "icon": "games/dice-a-million/items/rings/rusty-gear.png"
     },
     {
-      "id": "f56cc714196dfe09",
+      "id": "rings-mimicring",
       "kind": "rings",
       "name": "Mimic",
       "condition": "Remove 20 dice in a single run.",
       "effect": "This gains 0.2X Multiplier for every die destroyed on the table.",
-      "icon": "games/dice-a-million/items/f56cc714196dfe09.png"
+      "rarity": "rare",
+      "traits": [
+        "destroy"
+      ],
+      "icon": "games/dice-a-million/items/rings/mimic.png"
     },
     {
-      "id": "3453e700268364ae",
+      "id": "rings-glamour",
       "kind": "rings",
       "name": "Glamorous Ring",
       "effect": "In the first roll, 4X Multiplier to everything.",
-      "icon": "games/dice-a-million/items/3453e700268364ae.png"
+      "rarity": "common",
+      "icon": "games/dice-a-million/items/rings/glamorous-ring.png"
     },
     {
-      "id": "757b9fc441e26d91",
+      "id": "rings-bubble",
       "kind": "rings",
       "name": "Bubble Wrap",
-      "condition": "Beat Face 3 as red.",
+      "condition": "Beat Face 3 as Red Hand.",
       "effect": "At the start of every round, +5 extra value to all your dice.",
-      "icon": "games/dice-a-million/items/757b9fc441e26d91.png"
+      "rarity": "uncommon",
+      "traits": [
+        "ev"
+      ],
+      "icon": "games/dice-a-million/items/rings/bubble-wrap.png"
     },
     {
-      "id": "44b17b0e418796ea",
+      "id": "rings-parity",
       "kind": "rings",
       "name": "Parity Interchanger",
-      "condition": "Beat Face 3 as binary.",
+      "condition": "Beat Face 3 as Bicolor Hand.",
       "effect": "Makes a die with an even face count as odd during this roll and viceversa.",
-      "icon": "games/dice-a-million/items/44b17b0e418796ea.png"
+      "rarity": "uncommon",
+      "traits": [
+        "activering",
+        "face",
+        "parity"
+      ],
+      "icon": "games/dice-a-million/items/rings/parity-interchanger.png"
     },
     {
-      "id": "3305dcbbb100b0b9",
+      "id": "rings-binaryring",
       "kind": "rings",
       "name": "Bicolor Ring",
-      "condition": "Get a million pips as binary.",
+      "condition": "Get a million pips as Bicolor Hand.",
       "effect": "3X Multiplier to everything if every single die rolls an even face or an odd face.",
-      "icon": "games/dice-a-million/items/3305dcbbb100b0b9.png"
+      "rarity": "rare",
+      "traits": [
+        "face",
+        "parity"
+      ],
+      "icon": "games/dice-a-million/items/rings/bicolor-ring.png"
     },
     {
-      "id": "fd4b097e8c88dc9d",
+      "id": "rings-popular",
       "kind": "rings",
       "name": "Popular Ring",
       "condition": "Have at least 50 dice in your bag.",
       "effect": "This gains 0.1X Multiplier for every die in your bag.",
-      "icon": "games/dice-a-million/items/fd4b097e8c88dc9d.png"
+      "rarity": "rare",
+      "icon": "games/dice-a-million/items/rings/popular-ring.png"
     },
     {
-      "id": "f3e5989493977f5f",
+      "id": "rings-voodoo",
       "kind": "rings",
       "name": "Voodoo Charm",
-      "condition": "Beat the game in Power VI as purple.",
+      "condition": "Beat the game in Power VI as Purple Hand.",
       "effect": "4X Multiplier to enchanted dice, but deactivates their enchantments.",
-      "icon": "games/dice-a-million/items/f3e5989493977f5f.png"
+      "rarity": "rare",
+      "icon": "games/dice-a-million/items/rings/voodoo-charm.png"
     },
     {
-      "id": "e93550a458a0db38",
+      "id": "rings-blackring",
       "kind": "rings",
       "name": "Black Ring",
       "condition": "Beat the Blackout boss.",
       "effect": "+2 hand size. Every die you draw has a 1 in 2 probability of being hidden.",
-      "icon": "games/dice-a-million/items/e93550a458a0db38.png"
+      "rarity": "rare",
+      "icon": "games/dice-a-million/items/rings/black-ring.png"
     },
     {
-      "id": "5a3c304bd522fe41",
+      "id": "rings-cell",
       "kind": "rings",
       "name": "Cell Ring",
       "effect": "Whenever an extra die is being rolled during the turn, rolls an extra copy.",
-      "icon": "games/dice-a-million/items/5a3c304bd522fe41.png"
+      "rarity": "rare",
+      "icon": "games/dice-a-million/items/rings/cell-ring.png"
     },
     {
-      "id": "ed63a10b6f2d1321",
+      "id": "rings-fish",
       "kind": "rings",
       "name": "Fishbone Charm",
       "effect": "+4 extra value to dice left in your hand when a roll is made.",
-      "icon": "games/dice-a-million/items/ed63a10b6f2d1321.png"
+      "rarity": "common",
+      "traits": [
+        "ev"
+      ],
+      "icon": "games/dice-a-million/items/rings/fishbone-charm.png"
     },
     {
-      "id": "f121ac41a960d06a",
+      "id": "rings-tooth",
       "kind": "rings",
       "name": "Lucky Tooth",
       "effect": "Gives pips every roll. Adds 3 to its value every time a purchase is made in the shop.",
-      "icon": "games/dice-a-million/items/f121ac41a960d06a.png"
+      "rarity": "uncommon",
+      "traits": [
+        "growing"
+      ],
+      "icon": "games/dice-a-million/items/rings/lucky-tooth.png"
     },
     {
-      "id": "e6032dafbea4ebc0",
+      "id": "rings-awp",
       "kind": "rings",
       "name": "Mini-AWP",
       "effect": "Discards a die on the table.",
-      "icon": "games/dice-a-million/items/e6032dafbea4ebc0.png"
+      "rarity": "rare",
+      "traits": [
+        "activering",
+        "discard"
+      ],
+      "icon": "games/dice-a-million/items/rings/mini-awp.png"
     },
     {
-      "id": "98326f9fbc40bc2a",
+      "id": "rings-hack",
       "kind": "rings",
       "name": "_r1ng",
-      "condition": "Beat the game in Power VI as blue.",
+      "condition": "Beat the game in Power VI as Blue Hand.",
       "effect": "When a round starts, transforms a random die from your bag into a higher rarity one.",
-      "icon": "games/dice-a-million/items/98326f9fbc40bc2a.png"
+      "rarity": "legendary",
+      "icon": "games/dice-a-million/items/rings/r1ng.png"
     },
     {
-      "id": "f919ca472dafedbb",
+      "id": "rings-smiley",
       "kind": "rings",
       "name": "Smiley Medal",
       "effect": "+8 extra value to dice with their highest face. (Only dice with more than one face.)",
-      "icon": "games/dice-a-million/items/f919ca472dafedbb.png"
+      "rarity": "uncommon",
+      "traits": [
+        "ev",
+        "face"
+      ],
+      "icon": "games/dice-a-million/items/rings/smiley-medal.png"
     },
     {
-      "id": "2952457c770ec589",
+      "id": "rings-blank",
       "kind": "rings",
       "name": "Blank Ring",
-      "condition": "Get a million pips as blue.",
+      "condition": "Get a million pips as Blue Hand.",
       "effect": "5X Multiplier to common dice.",
-      "icon": "games/dice-a-million/items/2952457c770ec589.png"
+      "rarity": "rare",
+      "icon": "games/dice-a-million/items/rings/blank-ring.png"
     },
     {
-      "id": "f9bbd44b409ef5c5",
+      "id": "rings-water",
       "kind": "rings",
       "name": "Water Ring",
       "condition": "Beat the Hermit Boss 5 times.",
       "effect": "Pushes all dice to the right side of the table.",
-      "icon": "games/dice-a-million/items/f9bbd44b409ef5c5.png"
+      "rarity": "uncommon",
+      "icon": "games/dice-a-million/items/rings/water-ring.png"
     },
     {
-      "id": "b0befe0eeb8cc644",
+      "id": "rings-stamp",
       "kind": "rings",
       "name": "Philatelist's Ring",
       "condition": "Get one face to at least 2x stamp multiplier.",
       "effect": "Replaces every dice reward at the end of a round with stamps.",
-      "icon": "games/dice-a-million/items/b0befe0eeb8cc644.png"
+      "rarity": "rare",
+      "traits": [
+        "stampmult"
+      ],
+      "icon": "games/dice-a-million/items/rings/philatelist-s-ring.png"
     },
     {
-      "id": "8e56df6374f89a82",
+      "id": "rings-platinum",
       "kind": "rings",
       "name": "Platinum Ring",
       "effect": "+0.2 additional stamp multiplier every time any face is upgraded.",
-      "icon": "games/dice-a-million/items/8e56df6374f89a82.png"
+      "rarity": "uncommon",
+      "traits": [
+        "stampmult"
+      ],
+      "icon": "games/dice-a-million/items/rings/platinum-ring.png"
     },
     {
-      "id": "91c1601a13c0c5ad",
+      "id": "rings-foolsgold",
       "kind": "rings",
       "name": "Fool's Gold",
       "effect": "Every stamp is golden. But every dice whose face has its stamp multiplier at 1x will be multiplied by 0x instead.",
-      "icon": "games/dice-a-million/items/91c1601a13c0c5ad.png"
+      "rarity": "legendary",
+      "traits": [
+        "stampmult"
+      ],
+      "icon": "games/dice-a-million/items/rings/fool-s-gold.png"
     },
     {
-      "id": "c172b8fe59b2d778",
+      "id": "rings-pearl",
       "kind": "rings",
       "name": "Pearl Ring",
       "effect": "Every time a die gains extra value, gains +2.",
-      "icon": "games/dice-a-million/items/c172b8fe59b2d778.png"
+      "rarity": "uncommon",
+      "traits": [
+        "ev"
+      ],
+      "icon": "games/dice-a-million/items/rings/pearl-ring.png"
     },
     {
-      "id": "63269075648990ab",
+      "id": "rings-rubber",
       "kind": "rings",
       "name": "Rubber Band",
-      "condition": "Beat Face 3 as yellow.",
+      "condition": "Beat Face 3 as Yellow Hand.",
       "effect": "Gain half extra value, but every time a die gains extra value on the table, a random die in your hand also gains it.",
-      "icon": "games/dice-a-million/items/63269075648990ab.png"
+      "rarity": "rare",
+      "traits": [
+        "ev"
+      ],
+      "icon": "games/dice-a-million/items/rings/rubber-band.png"
     },
     {
-      "id": "f43b823a84ed8350",
+      "id": "rings-friendship",
       "kind": "rings",
       "name": "Friendship Ring",
       "effect": "Choose a die on the table. From now on, you will draw that die during the first roll of every round as long as you have this ring. (Once it's chosen it cannot be changed.)",
-      "icon": "games/dice-a-million/items/f43b823a84ed8350.png"
+      "rarity": "uncommon",
+      "traits": [
+        "activering"
+      ],
+      "icon": "games/dice-a-million/items/rings/friendship-ring.png"
     },
     {
-      "id": "94e3174eab15f2d2",
+      "id": "rings-slate",
       "kind": "rings",
       "name": "Slate Ring",
-      "condition": "Get a million pips as hollow.",
+      "condition": "Get a million pips as Hollow Hand.",
       "effect": "This gains 0.05X Multiplier for every time you skip any reward.",
-      "icon": "games/dice-a-million/items/94e3174eab15f2d2.png"
+      "rarity": "rare",
+      "icon": "games/dice-a-million/items/rings/slate-ring.png"
     },
     {
-      "id": "b6f33e59707008e5",
+      "id": "rings-electricring",
       "kind": "rings",
       "name": "Electric Ring",
       "condition": "Roll two fully charged dice at the same time.",
       "effect": "Every time a die gains 1 charge, gains an additional one.",
-      "icon": "games/dice-a-million/items/b6f33e59707008e5.png"
+      "rarity": "uncommon",
+      "traits": [
+        "charge"
+      ],
+      "icon": "games/dice-a-million/items/rings/electric-ring.png"
     },
     {
-      "id": "eeff1ef7edf7bae6",
+      "id": "rings-lithium",
       "kind": "rings",
       "name": "Lithium Ring",
       "effect": "Every time a die gains 1 charge, also gains +9 extra value.",
-      "icon": "games/dice-a-million/items/eeff1ef7edf7bae6.png"
+      "rarity": "uncommon",
+      "traits": [
+        "charge",
+        "ev"
+      ],
+      "icon": "games/dice-a-million/items/rings/lithium-ring.png"
     },
     {
-      "id": "2c60c26555f32af7",
+      "id": "rings-radiowave",
       "kind": "rings",
       "name": "Radio Wave",
       "effect": "When rolling a fully charged die, rolls a copy of it.",
-      "icon": "games/dice-a-million/items/2c60c26555f32af7.png"
+      "rarity": "rare",
+      "traits": [
+        "charge"
+      ],
+      "icon": "games/dice-a-million/items/rings/radio-wave.png"
     },
     {
-      "id": "bae83108187d3f48",
+      "id": "rings-dicering",
       "kind": "rings",
       "name": "Dice Ring",
       "effect": "Every roll rolls a Die of dice for every 10 dice in your bag.",
-      "icon": "games/dice-a-million/items/bae83108187d3f48.png"
+      "rarity": "uncommon",
+      "icon": "games/dice-a-million/items/rings/dice-ring.png"
     },
     {
-      "id": "a5e4d6012324cc3d",
+      "id": "rings-firering",
       "kind": "rings",
       "name": "Fire Ring",
       "condition": "Beat the Pyro Boss 5 times.",
       "effect": "3X Multiplier to everything. Randomly burns one of your rolled dice.",
-      "icon": "games/dice-a-million/items/a5e4d6012324cc3d.png"
+      "rarity": "rare",
+      "traits": [
+        "fire"
+      ],
+      "icon": "games/dice-a-million/items/rings/fire-ring.png"
     },
     {
-      "id": "3e9c9e39125e447b",
+      "id": "rings-onering",
       "kind": "rings",
       "name": "One Ring",
       "effect": "Every die that can roll a 1, will always roll that face.",
-      "icon": "games/dice-a-million/items/3e9c9e39125e447b.png"
+      "rarity": "legendary",
+      "traits": [
+        "face"
+      ],
+      "icon": "games/dice-a-million/items/rings/one-ring.png"
     },
     {
-      "id": "b2d40d87235e59a8",
+      "id": "rings-hungry",
       "kind": "rings",
       "name": "Hungry Ring",
-      "effect": "Every time you draw a die that can roll face 0 or ?, you draw another one.",
-      "icon": "games/dice-a-million/items/b2d40d87235e59a8.png"
+      "effect": "Every time you draw a die that can roll face 0 or?, you draw another one.",
+      "rarity": "uncommon",
+      "traits": [
+        "face"
+      ],
+      "icon": "games/dice-a-million/items/rings/hungry-ring.png"
     },
     {
-      "id": "2a7531cafa0adbf0",
+      "id": "rings-thorn",
       "kind": "rings",
       "name": "Thorn Ring",
       "condition": "Beat the Frost Boss 5 times.",
       "effect": "Freezes the face of a die until the end of round.",
-      "icon": "games/dice-a-million/items/2a7531cafa0adbf0.png"
+      "rarity": "rare",
+      "traits": [
+        "activering"
+      ],
+      "icon": "games/dice-a-million/items/rings/thorn-ring.png"
     },
     {
-      "id": "34b2472c0cb0b915",
+      "id": "rings-keygen",
       "kind": "rings",
       "name": "Keygen",
-      "condition": "Beat the game in Power VI as static.",
+      "condition": "Beat the game in Power VI as Static Hand.",
       "effect": "Randomize a die from the roll.",
-      "icon": "games/dice-a-million/items/34b2472c0cb0b915.png"
+      "rarity": "rare",
+      "traits": [
+        "activering",
+        "randomize"
+      ],
+      "icon": "games/dice-a-million/items/rings/keygen.png"
     },
     {
-      "id": "5e517e8ab2849731",
+      "id": "rings-chain",
       "kind": "rings",
       "name": "Stained Chain",
-      "condition": "Beat the game in Power VI as black.",
+      "condition": "Beat the game in Power VI as Black Hand.",
       "effect": "Rolls a boss die. +10 extra value to everything.",
-      "icon": "games/dice-a-million/items/5e517e8ab2849731.png"
+      "rarity": "rare",
+      "traits": [
+        "ev"
+      ],
+      "icon": "games/dice-a-million/items/rings/stained-chain.png"
     },
     {
-      "id": "dea1d93391bfefdb",
+      "id": "rings-martyr",
       "kind": "rings",
       "name": "The Halo",
-      "condition": "Beat the game in Power VI as yellow.",
+      "condition": "Beat the game in Power VI as Yellow Hand.",
       "effect": "Whenever a die is destroyed, +11 extra value to every die left in your hand.",
-      "icon": "games/dice-a-million/items/dea1d93391bfefdb.png"
+      "rarity": "rare",
+      "traits": [
+        "destroy",
+        "ev"
+      ],
+      "icon": "games/dice-a-million/items/rings/the-halo.png"
     },
     {
-      "id": "65c45d76b3239b4d",
+      "id": "rings-blood",
       "kind": "rings",
       "name": "Blood Ring",
-      "condition": "Beat the game as black.",
-      "effect": "Every roll subtracts 1pips (Multipliable). Every roll adds 1% chance of rolling a D666, and resets to 0 when hit.",
-      "icon": "games/dice-a-million/items/65c45d76b3239b4d.png"
+      "condition": "Beat the game as Black Hand.",
+      "effect": "Every roll subtracts 1 pips (Multipliable). Every roll adds 1% chance of rolling a D666, and resets to 0 when hit.",
+      "rarity": "uncommon",
+      "traits": [
+        "growing"
+      ],
+      "icon": "games/dice-a-million/items/rings/blood-ring.png"
     },
     {
-      "id": "06865384b015d2e7",
+      "id": "rings-eraser",
       "kind": "rings",
       "name": "Eraser Ring",
       "effect": "Common dice cannot appear on shops or rewards anymore.",
-      "icon": "games/dice-a-million/items/06865384b015d2e7.png"
+      "rarity": "uncommon",
+      "icon": "games/dice-a-million/items/rings/eraser-ring.png"
     },
     {
-      "id": "f393bac818d9bcff",
+      "id": "rings-surge",
       "kind": "rings",
       "name": "Surge Jewel",
-      "condition": "Have at least 8 rolls as yellow.",
+      "condition": "Have at least 8 rolls as Yellow Hand.",
       "effect": "+3 rolls. Divides everything by 2.",
-      "icon": "games/dice-a-million/items/f393bac818d9bcff.png"
+      "rarity": "rare",
+      "icon": "games/dice-a-million/items/rings/surge-jewel.png"
     },
     {
-      "id": "c72b8396c17d7bb0",
+      "id": "rings-hero",
       "kind": "rings",
       "name": "Hero's Mark",
       "effect": "If you only roll one die, 4X Multiplier to everything.",
-      "icon": "games/dice-a-million/items/c72b8396c17d7bb0.png"
+      "rarity": "uncommon",
+      "icon": "games/dice-a-million/items/rings/hero-s-mark.png"
     },
     {
-      "id": "f2f01ab10dd505c1",
+      "id": "rings-ace",
       "kind": "rings",
       "name": "Ace up the finger",
       "condition": "Use a Reroll card to change your hand.",
-      "effect": "If a die has a 6 in its face, gives a random card and exhausts at the end of the roll.",
-      "icon": "games/dice-a-million/items/f2f01ab10dd505c1.png"
+      "effect": "Dice that rolled face 6 give a random card and exhaust.",
+      "rarity": "uncommon",
+      "traits": [
+        "face",
+        "exhaust"
+      ],
+      "icon": "games/dice-a-million/items/rings/ace-up-the-finger.png"
     },
     {
-      "id": "1cf9a9022b6f3668",
+      "id": "rings-fang",
       "kind": "rings",
       "name": "Dog Fang Ring",
-      "condition": "Beat the game in Power VI as pale.",
+      "condition": "Beat the game in Power VI as Pale Hand.",
       "effect": "If a die rolls its highest face, +0.1 stamp multiplier to that face and exhausts.",
-      "icon": "games/dice-a-million/items/1cf9a9022b6f3668.png"
+      "rarity": "rare",
+      "traits": [
+        "face",
+        "stampmult",
+        "exhaust"
+      ],
+      "icon": "games/dice-a-million/items/rings/dog-fang-ring.png"
     },
     {
-      "id": "bcbb114c3f20e897",
+      "id": "rings-haste",
       "kind": "rings",
       "name": "Haste Ring",
       "effect": "Skip rolls and multiply everything. +0.1 multiplier for each roll you skipped in any way.",
-      "icon": "games/dice-a-million/items/bcbb114c3f20e897.png"
+      "rarity": "uncommon",
+      "icon": "games/dice-a-million/items/rings/haste-ring.png"
     },
     {
-      "id": "f67452c5f828b288",
+      "id": "rings-awatch",
       "kind": "rings",
       "name": "Analog Mini-Watch",
       "effect": "Every 6 rolls, 6X Multiplier to everything.",
-      "icon": "games/dice-a-million/items/f67452c5f828b288.png"
+      "rarity": "common",
+      "traits": [
+        "countdown"
+      ],
+      "icon": "games/dice-a-million/items/rings/analog-mini-watch.png"
     },
     {
-      "id": "f8a3f176fa13ba47",
+      "id": "rings-witch",
       "kind": "rings",
       "name": "Witch's Ring",
       "condition": "Beat The Witch boss.",
       "effect": "5X Multiplier to cursed dice. Dice can spawn cursed while you hold this.",
-      "icon": "games/dice-a-million/items/f8a3f176fa13ba47.png"
+      "rarity": "uncommon",
+      "icon": "games/dice-a-million/items/rings/witch-s-ring.png"
     },
     {
-      "id": "825537c40ee64682",
+      "id": "rings-onion",
       "kind": "rings",
       "name": "Onion Ring",
       "condition": "Beat The Cautious boss.",
       "effect": "Extra dice rolled during the roll gain +15 extra value.",
-      "icon": "games/dice-a-million/items/825537c40ee64682.png"
+      "rarity": "uncommon",
+      "traits": [
+        "ev"
+      ],
+      "icon": "games/dice-a-million/items/rings/onion-ring.png"
     },
     {
-      "id": "ecf895d220c21ca9",
+      "id": "rings-knockoff",
       "kind": "rings",
       "name": "Knockoff Ring",
       "condition": "Beat The Copycat boss.",
       "effect": "More chance of getting dice you already have in your bag.",
-      "icon": "games/dice-a-million/items/ecf895d220c21ca9.png"
+      "rarity": "rare",
+      "icon": "games/dice-a-million/items/rings/knockoff-ring.png"
     },
     {
-      "id": "dbcce6cd8459a431",
+      "id": "rings-star",
       "kind": "rings",
       "name": "Star Ring",
       "condition": "Beat a Boss round.",
       "effect": "Get 2 additional stars during boss rounds.",
-      "icon": "games/dice-a-million/items/dbcce6cd8459a431.png"
+      "rarity": "uncommon",
+      "icon": "games/dice-a-million/items/rings/star-ring.png"
     },
     {
-      "id": "78cd6aabe4a954f6",
-      "kind": "rings",
-      "name": "Ultra Odd Ring",
-      "condition": "Beat the game in Power VI as binary.",
-      "effect": "3X Multiplier to dice with an odd face. 0X to dice with an even face.",
-      "icon": "games/dice-a-million/items/78cd6aabe4a954f6.png"
-    },
-    {
-      "id": "f93fec2678d5b619",
+      "id": "rings-ultraeven",
       "kind": "rings",
       "name": "Ultra Even Ring",
-      "condition": "Beat the game in Power VI as binary.",
+      "condition": "Beat the game in Power VI as Bicolor Hand.",
       "effect": "3X Multiplier to dice with an even face. 0X to dice with an odd face.",
-      "icon": "games/dice-a-million/items/f93fec2678d5b619.png"
+      "rarity": "rare",
+      "traits": [
+        "face",
+        "parity"
+      ],
+      "icon": "games/dice-a-million/items/rings/ultra-even-ring.png"
     },
     {
-      "id": "b18f94e6f94567be",
+      "id": "rings-ultraodd",
+      "kind": "rings",
+      "name": "Ultra Odd Ring",
+      "condition": "Beat the game in Power VI as Bicolor Hand.",
+      "effect": "3X Multiplier to dice with an odd face. 0X to dice with an even face.",
+      "rarity": "rare",
+      "traits": [
+        "face",
+        "parity"
+      ],
+      "icon": "games/dice-a-million/items/rings/ultra-odd-ring.png"
+    },
+    {
+      "id": "rings-glue",
       "kind": "rings",
       "name": "Glue Ring",
-      "condition": "Get a million pips as pale.",
+      "condition": "Get a million pips as Pale Hand.",
       "effect": "Stamp rewards and booster packs will always contain your highest stamp multiplier. (In case of draw, a random one will be chosen)",
-      "icon": "games/dice-a-million/items/b18f94e6f94567be.png"
+      "rarity": "uncommon",
+      "traits": [
+        "stampmult"
+      ],
+      "icon": "games/dice-a-million/items/rings/glue-ring.png"
     },
     {
-      "id": "315801690161a071",
+      "id": "rings-fision",
       "kind": "rings",
       "name": "Fission Ring",
-      "effect": "Every time a die gets exhausted on the table, draw 5 dice and give +5 extra value to every die in your hand.",
-      "icon": "games/dice-a-million/items/315801690161a071.png"
+      "effect": "Whenever dice get exhausted on the table, draw 5 dice and give +5 extra value to every die in your hand.",
+      "rarity": "uncommon",
+      "traits": [
+        "exhaust",
+        "ev"
+      ],
+      "icon": "games/dice-a-million/items/rings/fission-ring.png"
     },
     {
-      "id": "6ffd9f33fbdc0acb",
+      "id": "rings-fusion",
       "kind": "rings",
       "name": "Fusion Ring",
-      "effect": "Every time a die gets exhausted on the table, gain a random card.",
-      "icon": "games/dice-a-million/items/6ffd9f33fbdc0acb.png"
+      "effect": "Whenever dice gets exhausted on the table, gain a random card.",
+      "rarity": "uncommon",
+      "traits": [
+        "exhaust"
+      ],
+      "icon": "games/dice-a-million/items/rings/fusion-ring.png"
     },
     {
-      "id": "7e249a7c019fb54f",
+      "id": "rings-donut",
       "kind": "rings",
       "name": "Donut",
       "effect": "Every time you draw dice above your dice per turn (including rings), +5 extra value to every die in your hand.",
-      "icon": "games/dice-a-million/items/7e249a7c019fb54f.png"
+      "rarity": "uncommon",
+      "traits": [
+        "ev"
+      ],
+      "icon": "games/dice-a-million/items/rings/donut.png"
     },
     {
-      "id": "c6be958e696156c1",
+      "id": "rings-illusionist",
       "kind": "rings",
       "name": "Illusionist's Wand",
       "effect": "Every time you cycle through your whole bag, gain a random card.",
-      "icon": "games/dice-a-million/items/c6be958e696156c1.png"
+      "rarity": "uncommon",
+      "icon": "games/dice-a-million/items/rings/illusionist-s-wand.png"
     },
     {
-      "id": "6a2e6a8dd0ffa320",
+      "id": "rings-dwatch",
       "kind": "rings",
       "name": "Digital Mini-Watch",
       "effect": "Every 4 rolls, +8 extra value to every die on the table.",
-      "icon": "games/dice-a-million/items/6a2e6a8dd0ffa320.png"
+      "rarity": "common",
+      "traits": [
+        "ev",
+        "countdown"
+      ],
+      "icon": "games/dice-a-million/items/rings/digital-mini-watch.png"
     },
     {
-      "id": "aec7a370ac4bf681",
+      "id": "rings-swatch",
       "kind": "rings",
       "name": "Solar Mini-Watch",
-      "condition": "Have two watches.(rings)",
-      "effect": "You should wear digital watch and analog watch at the same time. Every 7 rolls, temporarily get +3 hand size.",
-      "icon": "games/dice-a-million/items/aec7a370ac4bf681.png"
+      "condition": "Have two watches.",
+      "effect": "Every 6 rolls, temporarily get +3 hand size.",
+      "rarity": "uncommon",
+      "traits": [
+        "countdown"
+      ],
+      "icon": "games/dice-a-million/items/rings/solar-mini-watch.png"
     },
     {
-      "id": "3bf33bc9314b5b8d",
+      "id": "rings-hermitstone",
       "kind": "rings",
       "name": "Hermit's Stone",
       "condition": "Beat The Hermit boss.",
       "effect": "Halves the range of area effects. Rolls a copy of dice with area effects.",
-      "icon": "games/dice-a-million/items/3bf33bc9314b5b8d.png"
+      "rarity": "rare",
+      "icon": "games/dice-a-million/items/rings/hermit-s-stone.png"
     },
     {
-      "id": "a62b67aef4bb434f",
+      "id": "rings-hexagon",
       "kind": "rings",
       "name": "Hexagonal Ring",
       "condition": "Manually remove a Legendary die from your bag.",
       "effect": "At the start of every round gives a ghost legendary die.",
-      "icon": "games/dice-a-million/items/a62b67aef4bb434f.png"
+      "rarity": "rare",
+      "traits": [
+        "ghost"
+      ],
+      "icon": "games/dice-a-million/items/rings/hexagonal-ring.png"
     },
     {
-      "id": "99d8351cd07cbabb",
+      "id": "rings-shiny",
       "kind": "rings",
       "name": "Shiny Ring",
       "condition": "Get 6 stars during a boss round.",
       "effect": "+0.5 multiplier for each unspent stars at the end of a Boss round.",
-      "icon": "games/dice-a-million/items/99d8351cd07cbabb.png"
+      "rarity": "rare",
+      "icon": "games/dice-a-million/items/rings/shiny-ring.png"
     },
     {
-      "id": "79f0541a217c9d41",
+      "id": "rings-poker",
+      "kind": "rings",
+      "name": "Poker Ring",
+      "effect": "+1 multiplier for each card you're holding.",
+      "rarity": "uncommon",
+      "icon": "games/dice-a-million/items/rings/poker-ring.png"
+    },
+    {
+      "id": "rings-coppermind",
+      "kind": "rings",
+      "name": "Coppermind",
+      "effect": "0.75X Multiplier to everything. After paying a debt, multiplies your remaning pips by 2.",
+      "rarity": "uncommon",
+      "icon": "games/dice-a-million/items/rings/coppermind.png"
+    },
+    {
+      "id": "rings-shape",
+      "kind": "rings",
+      "name": "Shape Amulet",
+      "condition": "Beat the game in Power VI as Cyan Hand.",
+      "effect": "3X Multiplier to everything if every die you roll has the same shape.",
+      "rarity": "rare",
+      "icon": "games/dice-a-million/items/rings/shape-amulet.png"
+    },
+    {
+      "id": "rings-crochet",
+      "kind": "rings",
+      "name": "Crochet Ring",
+      "condition": "Get a million pips as Cyan Hand.",
+      "effect": "+8 extra value to dice whose shape is not repeated on the table.",
+      "rarity": "uncommon",
+      "traits": [
+        "ev"
+      ],
+      "icon": "games/dice-a-million/items/rings/crochet-ring.png"
+    },
+    {
+      "id": "rings-player",
+      "kind": "rings",
+      "name": "Player's Ring",
+      "effect": "When a card is used, draw 3 dice.",
+      "rarity": "common",
+      "icon": "games/dice-a-million/items/rings/player-s-ring.png"
+    },
+    {
+      "id": "rings-weighted",
+      "kind": "rings",
+      "name": "Weighted Ring",
+      "effect": "Dice with a Face Weight are even more likely to roll their weighted face.",
+      "rarity": "rare",
+      "traits": [
+        "faceweight"
+      ],
+      "icon": "games/dice-a-million/items/rings/weighted-ring.png"
+    },
+    {
+      "id": "rings-leadbar",
+      "kind": "rings",
+      "name": "Lead Bar",
+      "effect": "Whenever a Face Weight triggers, that die gains +8 extra value.",
+      "rarity": "rare",
+      "traits": [
+        "faceweight"
+      ],
+      "icon": "games/dice-a-million/items/rings/lead-bar.png"
+    },
+    {
+      "id": "rings-american",
+      "kind": "rings",
+      "name": "American Knuckle",
+      "effect": "Add a Face Weight to a die on the face it rolled. Then removes this ring.",
+      "rarity": "rare",
+      "traits": [
+        "activering",
+        "faceweight"
+      ],
+      "icon": "games/dice-a-million/items/rings/american-knuckle.png"
+    },
+    {
+      "id": "rings-dcmc",
+      "kind": "rings",
+      "name": "DCMC Ring",
+      "effect": "Draw 7 more dice per turn. Every roll exhausts a random one.",
+      "rarity": "rare",
+      "icon": "games/dice-a-million/items/rings/dcmc-ring.png"
+    },
+    {
+      "id": "rings-ectoplasmic",
+      "kind": "rings",
+      "name": "Ectoplasmic Ring",
+      "condition": "Have 4 ghost dice.",
+      "effect": "Whenever you gain a ghost die, gain a copy of it.",
+      "rarity": "uncommon",
+      "traits": [
+        "ghost"
+      ],
+      "icon": "games/dice-a-million/items/rings/ectoplasmic-ring.png"
+    },
+    {
+      "id": "rings-alchemist",
+      "kind": "rings",
+      "name": "Alchemist's Ring",
+      "condition": "Beat The Glutton boss.",
+      "effect": "For every exhausted dice, gain a ghost Quickdie.",
+      "rarity": "rare",
+      "traits": [
+        "exhaust",
+        "ghost"
+      ],
+      "icon": "games/dice-a-million/items/rings/alchemist-s-ring.png"
+    },
+    {
+      "id": "rings-snake",
+      "kind": "rings",
+      "name": "Ring of the Snake",
+      "condition": "Set music, sound effects and master volume to 0.",
+      "effect": "When a card is used, gives 3 ghost Quickdice.",
+      "rarity": "uncommon",
+      "traits": [
+        "ghost"
+      ],
+      "icon": "games/dice-a-million/items/rings/ring-of-the-snake.png"
+    },
+    {
+      "id": "rings-hollow",
       "kind": "rings",
       "name": "Hollow Ring",
-      "effect": "Every roll adds 1 Hollow Die to your bag. Someone may want this...  Part of a quest. To obtain it, you need to win a round with no dice in your hand or bag. Take this ring and give it to the phone guy after defeating the Face 3 boss.",
-      "icon": "games/dice-a-million/items/79f0541a217c9d41.png"
+      "effect": "Every roll adds 1 Hollow Die to your bag. Someone may want this...",
+      "rarity": "occult",
+      "hidden": true,
+      "icon": "games/dice-a-million/items/rings/hollow-ring.png"
     },
     {
-      "id": "8814867389218c48",
+      "id": "rings-wind",
       "kind": "rings",
       "name": "Wind Ring",
-      "effect": "Choose a die. Moves other dice away from it. As far as I know, you can only get it from the console.",
-      "icon": "games/dice-a-million/items/8814867389218c48.png"
+      "effect": "Choose a die. Moves other dice away from it.",
+      "rarity": "uncommon",
+      "hidden": true,
+      "icon": "games/dice-a-million/items/rings/wind-ring.png"
     },
     {
-      "id": "174d41ce91d33bd8",
+      "id": "cards-extraroll",
       "kind": "cards",
       "name": "Extra roll",
       "effect": "+1 roll.",
-      "icon": "games/dice-a-million/items/174d41ce91d33bd8.png"
+      "icon": "games/dice-a-million/items/cards/extra-roll.png"
     },
     {
-      "id": "dcb968286ad60d76",
+      "id": "cards-chooseface",
       "kind": "cards",
       "name": "Choose face",
       "effect": "Choose a die and lock any face as its result this roll.",
-      "icon": "games/dice-a-million/items/dcb968286ad60d76.png"
+      "icon": "games/dice-a-million/items/cards/choose-face.png"
     },
     {
-      "id": "cc9ea6fba2180a05",
+      "id": "cards-draw",
       "kind": "cards",
       "name": "Draw",
       "effect": "Draw 5 dice from your bag.",
-      "icon": "games/dice-a-million/items/cc9ea6fba2180a05.png"
+      "icon": "games/dice-a-million/items/cards/draw.png"
     },
     {
-      "id": "5b7234fb263730d8",
+      "id": "cards-reroll",
       "kind": "cards",
       "name": "Reroll",
       "effect": "Rerolls your hand or any item being chosen.",
-      "icon": "games/dice-a-million/items/5b7234fb263730d8.png"
+      "icon": "games/dice-a-million/items/cards/reroll.png"
     },
     {
-      "id": "5faa5095d317647d",
+      "id": "cards-enchant",
       "kind": "cards",
       "name": "Enchant",
       "effect": "Adds a random enchantment to a die in your hand.",
-      "icon": "games/dice-a-million/items/5faa5095d317647d.png"
+      "icon": "games/dice-a-million/items/cards/enchant.png"
     },
     {
-      "id": "bd75c4dbb5f8d2eb",
+      "id": "cards-clone",
       "kind": "cards",
       "name": "Clone",
       "effect": "Adds a ghost copy of a die in your hand. It will be destroyed after it's rolled.",
-      "icon": "games/dice-a-million/items/bd75c4dbb5f8d2eb.png"
+      "traits": [
+        "ghost"
+      ],
+      "icon": "games/dice-a-million/items/cards/clone.png"
     },
     {
-      "id": "22eea35e34cf04c7",
+      "id": "cards-doublering",
       "kind": "cards",
       "name": "Double Rings",
       "effect": "Next roll rings will activate an extra time.",
-      "icon": "games/dice-a-million/items/22eea35e34cf04c7.png"
+      "icon": "games/dice-a-million/items/cards/double-rings.png"
     },
     {
-      "id": "1425d13fe6937485",
+      "id": "cards-invert",
       "kind": "cards",
       "name": "Invert",
       "effect": "Next roll even numbers will count as odd and viceversa.",
-      "icon": "games/dice-a-million/items/1425d13fe6937485.png"
+      "traits": [
+        "parity"
+      ],
+      "icon": "games/dice-a-million/items/cards/invert.png"
     },
     {
-      "id": "ea1849a1850b4a51",
+      "id": "cards-power",
       "kind": "cards",
       "name": "Power Up",
       "effect": "+8 extra value to every dice in your hand.",
-      "icon": "games/dice-a-million/items/ea1849a1850b4a51.png"
+      "traits": [
+        "ev"
+      ],
+      "icon": "games/dice-a-million/items/cards/power-up.png"
     },
     {
-      "id": "b2bf001725e1ee6c",
+      "id": "cards-mult",
       "kind": "cards",
       "name": "Multiply",
       "effect": "2X Multiplier to every dice in your hand.",
-      "icon": "games/dice-a-million/items/b2bf001725e1ee6c.png"
+      "icon": "games/dice-a-million/items/cards/multiply.png"
     },
     {
-      "id": "02f07221c998f5e5",
+      "id": "cards-transform",
       "kind": "cards",
       "name": "Transform",
       "effect": "Permanently transforms a die in your hand into another random one.",
-      "icon": "games/dice-a-million/items/02f07221c998f5e5.png"
+      "icon": "games/dice-a-million/items/cards/transform.png"
     },
     {
-      "id": "8ec9ec5a474d9e1d",
+      "id": "cards-reward",
       "kind": "cards",
-      "name": "Auto reward",
+      "name": "Auto. reward",
       "effect": "Activate special rewards in the next round on the map without rolling the dice.",
-      "icon": "games/dice-a-million/items/8ec9ec5a474d9e1d.png"
+      "icon": "games/dice-a-million/items/cards/auto-reward.png"
     },
     {
-      "id": "47f5542d250e945f",
+      "id": "cards-charge",
       "kind": "cards",
       "name": "Charge",
       "effect": "+1 charge to every charged dice in your hand.",
-      "icon": "games/dice-a-million/items/47f5542d250e945f.png"
+      "traits": [
+        "charge"
+      ],
+      "icon": "games/dice-a-million/items/cards/charge.png"
     },
     {
-      "id": "71985492b7cd5048",
+      "id": "cards-resurrect",
       "kind": "cards",
       "name": "Resurrect",
-      "condition": "Beat dicerush.",
+      "condition": "Beat Dice Rush.",
       "effect": "Adds back to your bag the last die that was destroyed on the table.",
-      "icon": "games/dice-a-million/items/71985492b7cd5048.png"
+      "traits": [
+        "destroy"
+      ],
+      "icon": "games/dice-a-million/items/cards/resurrect.png"
     },
     {
-      "id": "c4a1ada76d8efcb6",
+      "id": "cards-blacklotus",
       "kind": "cards",
       "name": "Black Lotus",
-      "condition": "Beat dicerush as purple.",
+      "condition": "Beat Dice Rush as Purple Hand.",
       "effect": "+0.2 stamp multiplier to three random faces.",
-      "icon": "games/dice-a-million/items/c4a1ada76d8efcb6.png"
+      "traits": [
+        "stampmult"
+      ],
+      "icon": "games/dice-a-million/items/cards/black-lotus.png"
     },
     {
-      "id": "3d326e8e16ab8283",
+      "id": "cards-love",
       "kind": "cards",
       "name": "Love Card",
-      "condition": "Beat dicerush as white.",
+      "condition": "Beat Dice Rush as White Hand.",
       "effect": "Every die has a 1 in 2 probability of coming back to hand after being rolled this turn.",
-      "icon": "games/dice-a-million/items/3d326e8e16ab8283.png"
+      "icon": "games/dice-a-million/items/cards/love-card.png"
     },
     {
-      "id": "0485907cff60ffbc",
+      "id": "cards-bastos",
       "kind": "cards",
       "name": "Ace of Wands",
-      "condition": "Beat dicerush as green.",
+      "condition": "Beat Dice Rush as Green Hand.",
       "effect": "No die can be destroyed nor discarded on the table this turn.",
-      "icon": "games/dice-a-million/items/0485907cff60ffbc.png"
+      "traits": [
+        "discard",
+        "destroy"
+      ],
+      "icon": "games/dice-a-million/items/cards/ace-of-wands.png"
     },
     {
-      "id": "94e742dca847dc8c",
+      "id": "cards-letter",
       "kind": "cards",
       "name": "Sealed Letter",
-      "condition": "Beat dicerush as pale.",
+      "condition": "Beat Dice Rush as Pale Hand.",
       "effect": "+0.4 stamp multiplier to your highest level face. (In case of draw, a random one is selected.)",
-      "icon": "games/dice-a-million/items/94e742dca847dc8c.png"
+      "traits": [
+        "stampmult"
+      ],
+      "icon": "games/dice-a-million/items/cards/sealed-letter.png"
     },
     {
-      "id": "d31b92fbb5ca9a62",
+      "id": "cards-white",
       "kind": "cards",
       "name": "White Card",
-      "condition": "Beat dicerush as static.",
+      "condition": "Beat Dice Rush as Static Hand.",
       "effect": "Permanently transforms all of your dice into other random ones. (Can only be used outside a round.)",
-      "icon": "games/dice-a-million/items/d31b92fbb5ca9a62.png"
+      "icon": "games/dice-a-million/items/cards/white-card.png"
     },
     {
-      "id": "8035abd16179ddcb",
+      "id": "cards-business",
       "kind": "cards",
       "name": "Business Card",
-      "condition": "Beat dicerush as red.",
+      "condition": "Beat Dice Rush as Red Hand.",
       "effect": "Every die keeps its extra value at the end of this round.",
-      "icon": "games/dice-a-million/items/8035abd16179ddcb.png"
+      "traits": [
+        "ev"
+      ],
+      "icon": "games/dice-a-million/items/cards/business-card.png"
     },
     {
-      "id": "9fa9bcb558737f15",
+      "id": "cards-gift",
       "kind": "cards",
       "name": "Gift Card",
-      "condition": "Beat dicerush as binary.",
+      "condition": "Beat Dice Rush as Bicolor Hand.",
       "effect": "Choose and draw one die from your bag.",
-      "icon": "games/dice-a-million/items/9fa9bcb558737f15.png"
+      "icon": "games/dice-a-million/items/cards/gift-card.png"
     },
     {
-      "id": "6c8c72286d06ca86",
+      "id": "cards-star",
       "kind": "cards",
       "name": "The Star",
-      "condition": "Beat dicerush as yellow.",
+      "condition": "Beat Dice Rush as Yellow Hand.",
       "effect": "+X extra value to a die. X being its highest face.",
-      "icon": "games/dice-a-million/items/6c8c72286d06ca86.png"
+      "traits": [
+        "ev"
+      ],
+      "icon": "games/dice-a-million/items/cards/the-star.png"
     },
     {
-      "id": "277e74a192f7cd27",
+      "id": "cards-burnt",
       "kind": "cards",
       "name": "Burnt Card",
-      "condition": "Beat dicerush as hollow.",
+      "condition": "Beat Dice Rush as Hollow Hand.",
       "effect": "Every die on the table will be destroyed on the next roll.",
-      "icon": "games/dice-a-million/items/277e74a192f7cd27.png"
+      "traits": [
+        "destroy"
+      ],
+      "icon": "games/dice-a-million/items/cards/burnt-card.png"
     },
     {
-      "id": "23377cd9e409e749",
+      "id": "cards-goldenticket",
       "kind": "cards",
       "name": "Golden Ticket",
-      "condition": "Beat dicerush as blue.",
+      "condition": "Beat Dice Rush as Blue Hand.",
       "effect": "Randomly destroys one of your rings, then turns another one Gilded.",
-      "icon": "games/dice-a-million/items/23377cd9e409e749.png"
+      "icon": "games/dice-a-million/items/cards/golden-ticket.png"
     },
     {
-      "id": "f542db9732b4a272",
+      "id": "cards-shadow",
       "kind": "cards",
       "name": "Shadow Glass",
-      "condition": "Beat dicerush as black.",
+      "condition": "Beat Dice Rush as Black Hand.",
       "effect": "Adds a permanent copy of a die in your hand. Gives both copies a random curse.",
-      "icon": "games/dice-a-million/items/f542db9732b4a272.png"
+      "icon": "games/dice-a-million/items/cards/shadow-glass.png"
     },
     {
-      "id": "e29d385f014f0c2b",
+      "id": "cards-aceofstars",
       "kind": "cards",
       "name": "Ace of Stars",
-      "condition": "Beat dicerush in Power VI.",
-      "effect": "+1star. (Can only be used in boss shops.)",
-      "icon": "games/dice-a-million/items/e29d385f014f0c2b.png"
+      "condition": "Beat Dice Rush in Power VI.",
+      "effect": "+1 stars. (Can only be used in boss shops.)",
+      "icon": "games/dice-a-million/items/cards/ace-of-stars.png"
     },
     {
-      "id": "ed29a0da45cc3722",
+      "id": "cards-punch",
+      "kind": "cards",
+      "name": "Punch Card",
+      "condition": "Beat Dice Rush as Cyan Hand.",
+      "effect": "Increases your hand size in the next roll.",
+      "icon": "games/dice-a-million/items/cards/punch-card.png"
+    },
+    {
+      "id": "cards-skip",
       "kind": "cards",
       "name": "Skip",
-      "effect": "Skips the coming round, converts the next one into Red. You’re not able to get it even through the console.",
-      "icon": "games/dice-a-million/items/ed29a0da45cc3722.png"
+      "effect": "Skips the coming round, converts the next one into Red.",
+      "hidden": true,
+      "icon": "games/dice-a-million/items/cards/skip.png"
     },
     {
-      "id": "41c8edef8595b883",
+      "id": "hands-white",
       "kind": "hands",
       "name": "White Hand",
       "effect": "Starts with a Reroll card.",
-      "icon": "games/dice-a-million/items/41c8edef8595b883.png"
+      "icon": "games/dice-a-million/items/hands/white-hand.png"
     },
     {
-      "id": "065c129aa623a2b7",
+      "id": "hands-red",
       "kind": "hands",
       "name": "Red Hand",
       "condition": "Beat Face 1.",
       "effect": "Few initial dice. Shops have a 25% discount.",
-      "icon": "games/dice-a-million/items/065c129aa623a2b7.png"
+      "icon": "games/dice-a-million/items/hands/red-hand.png"
     },
     {
-      "id": "b9e9b2dcfb544028",
+      "id": "hands-green",
       "kind": "hands",
       "name": "Green Hand",
-      "condition": "Have at least 25 dice in your bag as red.",
+      "condition": "Have at least 25 dice in your bag as Red Hand.",
       "effect": "One less roll. You can roll 7 dice.",
-      "icon": "games/dice-a-million/items/b9e9b2dcfb544028.png"
+      "icon": "games/dice-a-million/items/hands/green-hand.png"
     },
     {
-      "id": "4e9f0ec924099af1",
+      "id": "hands-purple",
       "kind": "hands",
       "name": "Purple Hand",
       "condition": "Have at least 5 enchanted dice in your bag.",
       "effect": "Extra card space. More likely to find enchanted dice.",
-      "icon": "games/dice-a-million/items/4e9f0ec924099af1.png"
+      "icon": "games/dice-a-million/items/hands/purple-hand.png"
     },
     {
-      "id": "4d4ba58ba8a31587",
+      "id": "hands-binary",
       "kind": "hands",
       "name": "Bicolor Hand",
       "condition": "Defeat The Even and The Odd bosses 5 times each.",
       "effect": "Maintain parity. Every roll must contain only odd dice or only even dice. If not, every die is discarded.",
-      "icon": "games/dice-a-million/items/4d4ba58ba8a31587.png"
+      "icon": "games/dice-a-million/items/hands/bicolor-hand.png"
     },
     {
-      "id": "ea5e315c9014e47b",
+      "id": "hands-blue",
       "kind": "hands",
       "name": "Blue Hand",
       "condition": "Beat Face 1 Boss without taking any rings.",
       "effect": "You can carry up to 12 rings. Start with a random common ring. More chance of rare rings.",
-      "icon": "games/dice-a-million/items/ea5e315c9014e47b.png"
+      "icon": "games/dice-a-million/items/hands/blue-hand.png"
     },
     {
-      "id": "5e7cc440d1df4f3d",
+      "id": "hands-static",
       "kind": "hands",
       "name": "Static Hand",
-      "condition": "glitch??????????",
-      "effect": "After the boss, donate stars in the shop until you see “something changes” above the Donate button. After that, a glitched spot will appear on the map (at the ring). Go there (25k pips required) and donate 1 Common, 1 Uncommon, 1 Rare, and 1 Legendary die. Embrace chaos. Start with 10 common rarity dice and other 5 of random rarities.",
-      "icon": "games/dice-a-million/items/5e7cc440d1df4f3d.png"
+      "condition": "??????????",
+      "effect": "Embrace chaos. Start with 10 common rarity dice and other 5 of random rarities.",
+      "icon": "games/dice-a-million/items/hands/static-hand.png"
     },
     {
-      "id": "8603141dce8b0b07",
+      "id": "hands-yellow",
       "kind": "hands",
       "name": "Yellow Hand",
       "condition": "Have a die reach 1000 extra value.",
       "effect": "Gain double extra value. Only 1 roll, buy more rolls at the shop.",
-      "icon": "games/dice-a-million/items/8603141dce8b0b07.png"
+      "icon": "games/dice-a-million/items/hands/yellow-hand.png"
     },
     {
-      "id": "3a8337eb34e1e6cd",
+      "id": "hands-hollow",
       "kind": "hands",
       "name": "Hollow Hand",
-      "condition": "??? You need to win a round with no dice in your hand or bag(you can do it at any round), then take the Hollow Ring and give it to the Phone Guy after the Face 3 boss. I completed this by removing all dice before the boss, leaving only Lucky Blocks, Diamond Die, the Equity Ring, two x2 cards, and the Choose card. With the Choose card, I set the diamond to 3. The Ring made the Lucky Blocks roll identical values, turning them into Diamonds, and the x2 cards provided an additional multiplier.",
+      "condition": "???",
       "effect": "Every die destroys itself when rolled. When dice are destroyed you gain shards, used for forging dice clones. Also, dice cannot be eternal. More rare and legendary dice.",
-      "icon": "games/dice-a-million/items/3a8337eb34e1e6cd.png"
+      "icon": "games/dice-a-million/items/hands/hollow-hand.png"
     },
     {
-      "id": "982a58068604d16a",
+      "id": "hands-pink",
       "kind": "hands",
       "name": "Pale Hand",
       "condition": "Get all stamp multipliers to at least 1.5X.",
       "effect": "Lose all your pips when starting a new round. Gain stamp multipliers according to the amount of pips you had.",
-      "icon": "games/dice-a-million/items/982a58068604d16a.png"
+      "icon": "games/dice-a-million/items/hands/pale-hand.png"
     },
     {
-      "id": "74b78b01484ab429",
+      "id": "hands-black",
       "kind": "hands",
       "name": "Black Hand",
       "condition": "Get the last promotion.",
-      "effect": "Promote on power 6. Start with 5 random occult dice. Multiplies everything by your POWER level. +0.2 POWER when rolling occult dice, -0.1 every turn and for every occult die left in your hand.",
-      "icon": "games/dice-a-million/items/74b78b01484ab429.png"
+      "effect": "Start with 5 random occult dice. Multiplies everything by your POWER level. +0.2 POWER when rolling occult dice, -0.1 every turn and for every occult die left in your hand.",
+      "icon": "games/dice-a-million/items/hands/black-hand.png"
+    },
+    {
+      "id": "hands-cyan",
+      "kind": "hands",
+      "name": "Cyan Hand",
+      "condition": "Beat the game with all dice in your bag having the same shape.",
+      "effect": "Roll a single die. Dice stay on the table by following a chain of consecutive dice shapes.",
+      "icon": "games/dice-a-million/items/hands/cyan-hand.png"
+    }
+  ],
+  "traits": [
+    {
+      "id": "face",
+      "label": "Face",
+      "description": "A die's face refers to its visible number, and not its total final value."
+    },
+    {
+      "id": "destroy",
+      "label": "Destroy",
+      "description": "A destroyed die is permanently deleted from your bag. This action always happens at the end of the turn."
+    },
+    {
+      "id": "discard",
+      "label": "Discard",
+      "description": "A discarded die instantly disappears from the table, not triggering its effects nor giving pips."
+    },
+    {
+      "id": "ev",
+      "label": "Extra value",
+      "description": "A die's extra value will be added to its face value when rolled. Disappears when the round ends."
+    },
+    {
+      "id": "charge",
+      "label": "Charge",
+      "description": "A charged die gains +1 charge when rolled. If it's fully charged, it triggers its effect and its charges go back to 0."
+    },
+    {
+      "id": "ghost",
+      "label": "Ghost",
+      "description": "A ghost die is one-time use only and doesn't count as a die in your bag."
+    },
+    {
+      "id": "exhaust",
+      "label": "Exhaust",
+      "description": "An exhausted die won't appear again during this round."
+    },
+    {
+      "id": "stampmult",
+      "label": "Stamp multiplier",
+      "description": "Stamp multipliers are global multipliers that are permanently upgraded throughout the run and affect every die that rolled that face."
+    },
+    {
+      "id": "fire",
+      "label": "Burn",
+      "description": "A burnt die will be multiplied by 0 but will still activate its effects nonetheless."
+    },
+    {
+      "id": "randomize",
+      "label": "Randomize",
+      "description": "A randomized die will transform into a different one until the end of the roll."
+    },
+    {
+      "id": "negative",
+      "label": "Negative",
+      "description": "A negative die will subtract its value instead of adding it."
+    },
+    {
+      "id": "parity",
+      "label": "Odd / even",
+      "description": "Even numbers are 2, 4, 6, 8, etc. Odd numbers are 1, 3, 5, 7, etc. Number 0 isn't considered odd nor even."
+    },
+    {
+      "id": "prime",
+      "label": "Prime",
+      "description": "A prime number is only divisible by itself and 1. (2, 3, 5, 7, 11, etc.)"
+    },
+    {
+      "id": "fibonacci",
+      "label": "Fibonacci",
+      "description": "The Fibonacci sequence is: 1, 1, 2, 3, 5, 8, 13, 21, etc."
+    },
+    {
+      "id": "chooseface",
+      "label": "Choose face",
+      "description": "Choose face: Choose a die and lock any face as its result next roll."
+    },
+    {
+      "id": "activering",
+      "label": "Active",
+      "description": "The Active symbol indicates that the ring will stop the roll and let you choose a die to trigger its effect with."
+    },
+    {
+      "id": "faceweight",
+      "label": "Face weight",
+      "description": "Face Weights make dice more likely to roll a specific face."
+    },
+    {
+      "id": "odd-faces",
+      "label": "Odd faces",
+      "description": "Every face of this die is an odd number."
+    },
+    {
+      "id": "even-faces",
+      "label": "Even faces",
+      "description": "Every face of this die is an even number."
+    },
+    {
+      "id": "face-zero",
+      "label": "Face 0",
+      "description": "Its face is 0, so what it does comes from its effect."
+    },
+    {
+      "id": "variable-face",
+      "label": "Variable face",
+      "description": "Its face is calculated from something else instead of being a fixed number."
+    },
+    {
+      "id": "single-face",
+      "label": "Single face",
+      "description": "A die with one single face."
+    },
+    {
+      "id": "huge",
+      "label": "Huge",
+      "description": "A die with a huge number of faces."
+    },
+    {
+      "id": "nearby",
+      "label": "Nearby dice",
+      "description": "Its effect touches the dice next to it on the table."
+    },
+    {
+      "id": "gem",
+      "label": "Gem",
+      "description": "A gem die."
+    },
+    {
+      "id": "countdown",
+      "label": "Countdown",
+      "description": "Triggers every few rolls."
+    },
+    {
+      "id": "growing",
+      "label": "Growing value",
+      "description": "Gives pips based on a value that grows during the run."
     }
   ]
 }

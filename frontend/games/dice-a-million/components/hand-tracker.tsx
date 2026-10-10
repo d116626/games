@@ -59,37 +59,34 @@ export function HandTracker({ columns, rows }: { columns: string[]; rows: Tracke
         </p>
       </div>
 
-      <div className="sticker overflow-x-auto">
-        <table className="w-full min-w-[46rem] border-collapse text-left text-sm">
-          <thead>
-            <tr className="hud-tab text-xs">
-              <th className="px-3 py-2 font-normal">Hand</th>
-              {columns.map((c) => (
-                <th key={c} className="px-3 py-2 font-normal">
-                  {c}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {rows.map((row) => (
-              <tr key={row.hand} className="border-t-2 border-(--ink)/15">
-                <th className="px-3 py-2 font-display text-lg font-normal">{row.hand.replace(" Hand", "")}</th>
-                {row.cells.map((c, i) => (
-                  <td key={columns[i]} className="px-3 py-2">
-                    {c ? <Cell cell={c} done={set.has(c.id)} onToggle={() => toggle(c.id)} /> : <span className="text-muted-foreground">-</span>}
-                  </td>
+      <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {rows.map((row) => {
+          const goals = row.cells.flatMap((c, i) => (c ? [{ cell: c, label: columns[i] }] : []));
+          const got = goals.filter((g) => set.has(g.cell.id)).length;
+          return (
+            <li key={row.hand} className="sticker-sm p-3">
+              <h4 className="mb-2 flex items-center justify-between font-display text-xl leading-none">
+                {row.hand.replace(" Hand", "")}
+                <span className="hud-tab rounded px-1.5 py-0.5 font-mono text-[10px]">
+                  {got}/{goals.length}
+                </span>
+              </h4>
+              <ul className="space-y-1.5">
+                {goals.map(({ cell, label }) => (
+                  <li key={cell.id}>
+                    <Goal cell={cell} label={label} done={set.has(cell.id)} onToggle={() => toggle(cell.id)} />
+                  </li>
                 ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+              </ul>
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 }
 
-function Cell({ cell, done, onToggle }: { cell: TrackerCell; done: boolean; onToggle: () => void }) {
+function Goal({ cell, label, done, onToggle }: { cell: TrackerCell; label: string; done: boolean; onToggle: () => void }) {
   return (
     <div className="flex items-center gap-2">
       <button
@@ -98,13 +95,16 @@ function Cell({ cell, done, onToggle }: { cell: TrackerCell; done: boolean; onTo
         aria-checked={done}
         aria-label={`Mark ${cell.info.name} as done`}
         onClick={onToggle}
-        className="grid size-8 shrink-0 cursor-pointer place-items-center rounded-md border-2 border-(--ink) bg-white aria-checked:bg-(--game-accent)"
+        className="grid size-7 shrink-0 cursor-pointer place-items-center rounded-md border-2 border-(--ink) bg-white aria-checked:bg-(--game-accent)"
       >
-        {done && <Check className="size-5 text-black" strokeWidth={3} />}
+        {done && <Check className="size-4 text-black" strokeWidth={3} />}
       </button>
-      <ItemRef item={cell.info} className={`flex items-center gap-2 text-left ${done ? "opacity-50" : ""}`}>
-        {cell.info.icon && <AchievementIcon src={cell.info.icon} name="" className="size-8 rounded-md" />}
-        <span className="text-xs font-semibold leading-tight">{cell.info.name}</span>
+      <ItemRef item={cell.info} className={`flex min-w-0 items-center gap-2 text-left ${done ? "opacity-50" : ""}`}>
+        {cell.info.icon && <AchievementIcon src={cell.info.icon} name="" className="size-8 shrink-0 rounded-md" />}
+        <span className="min-w-0 leading-tight">
+          <span className="block text-[11px] text-muted-foreground">{label}</span>
+          <span className="block truncate text-xs font-semibold">{cell.info.name}</span>
+        </span>
       </ItemRef>
     </div>
   );

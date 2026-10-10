@@ -39,7 +39,7 @@
     {
       "id": "beat-the-game",
       "title": "Finish the game once",
-      "goal": "Beat Face 3. It opens challenges, Vortex and the shattered die that leads to Faces 4 to 6.",
+      "goal": "Beat Face 3. It opens challenges, Dice Rush and the shattered die that leads to Faces 4 to 6.",
       "steps": [
         {
           "title": "Beat Face 2",
@@ -50,18 +50,18 @@
         },
         {
           "title": "Beat Face 3",
-          "body": "Winning Face 3 counts as beating the game. It unlocks Challenges and the transition to Vortex, and the first shattered die piece starts appearing in the Face 1 shop.",
+          "body": "Winning Face 3 counts as beating the game. Your first win unlocks the Challenges menu and Dice Rush (both come with the Good Job Sticker ring), and the first shattered die piece starts appearing in the Face 1 shop.",
           "unlocks": [
             "68deb338fc7b8abe403cb1d2542ca3f763752fa6"
           ]
         },
         {
           "title": "Reroll a boss that wrecks your build",
-          "body": "On the map, before a boss round, you can banish that boss for the rest of the run. The first reroll in a run is free, every one after that permanently costs 2 max ring slots (patch 1.0.25).",
+          "body": "On the map, before a boss round, you can banish that boss for the rest of the run. The first reroll in a run is free, every one after that permanently costs 2 max ring slots (patch 1.0.25). Once you reroll, every later round target in that run is also 1.5x higher.",
           "unlocks": []
         },
         {
-          "title": "Check the Strategy and Bosses sections",
+          "title": "Check the Strategy section and the Bosses index",
           "body": "Combos, build priorities and every boss gimmick are below. Most failed Face 3 runs die to a boss you did not plan for.",
           "unlocks": []
         }
@@ -108,16 +108,22 @@
     {
       "id": "powers",
       "title": "Climb the Power ladder",
-      "goal": "Powers I to VI make the game harder. Each hand climbs on its own.",
+      "goal": "Powers I to VI make the game harder, and each level keeps every rule of the ones below. Each hand climbs on its own.",
       "steps": [
         {
           "title": "Unlock Power N+1 per hand",
-          "body": "Beat Face 3 on Power N with a hand to unlock Power N+1 for that hand only. Challenges always play on Power 0.",
+          "body": "Powers are unlocked and tracked per hand, so each hand climbs the ladder on its own.",
           "unlocks": []
         },
         {
+          "title": "Know what each Power adds",
+          "body": "I: -1 roll. II: you start with two gray dice. III: dice can be cursed. IV: round targets scale faster on later Faces. V: -1 hand size. VI: you lose half of your pips when you leave the shop.",
+          "unlocks": [],
+          "warning": "Two hands change a level. On Power I, Yellow Hand keeps its roll but buying rolls costs more. On Power V, Cyan Hand loses 4 dice per turn instead of 1 hand size."
+        },
+        {
           "title": "Collect the Power gems",
-          "body": "Beating the game on Power I to VI gives one gem die each, Amethyst up to Jet.",
+          "body": "Beating the game on Power I to VI gives one gem die each: Amethyst (I), Sapphire (II), Emerald (III), Amber (IV), Ruby (V) and Jet (VI).",
           "unlocks": [
             "16382e22cb6a5eae572db6cf4c6d4719a69974dc",
             "e66966bc12b60a78383e0d4dac3444d85cef2206",
@@ -129,14 +135,8 @@
         },
         {
           "title": "Expect curses from Power III",
-          "body": "From Power III every die has a 6% chance of being cursed. Magic Sponge removes curses.",
+          "body": "From Power III every new die has a 6% chance of being cursed (a die that already got an enchantment is skipped). Magic Sponge removes curses.",
           "unlocks": []
-        },
-        {
-          "title": "Power IV raises later rounds",
-          "body": "The developer compares the boss reroll penalty to what Power IV does: it raises the value of every later round.",
-          "unlocks": [],
-          "warning": "Each level adds one stacking rule and some add exclusive mechanics, but no source lists every level. Cyan Hand also has a special Power V modifier. Only curses (Power III) and this Power IV effect are documented."
         },
         {
           "title": "Power VI per hand is the long grind",
@@ -165,16 +165,21 @@
     {
       "id": "dice-rush",
       "title": "Open Dice Rush and the Static shop",
-      "goal": "Dice Rush is a separate mode unlocked mid-run. Clearing it with each hand gives a card.",
+      "goal": "Dice Rush opens after your first win. Clearing it with each hand gives a card.",
       "steps": [
         {
+          "title": "Find Dice Rush on Face 3",
+          "body": "After your first win, the Ring Booster stop of Face 3 (after round 3) offers a Dice Rush branch in normal runs (never in challenges). You beat 6 bosses in a row and round targets are a third of normal. The Sloth, Glutton, Cautious and Patient never show up.",
+          "unlocks": []
+        },
+        {
           "title": "Donate stars",
-          "body": "After a boss, donate stars at the shop until the message 'something changes in Face X' appears.",
+          "body": "After a boss, donate stars at the shop. Each donation can reveal the Static shop: 5%, 10%, 25%, 50%, then 100% on the fifth donation of that visit. You get the message 'something changes in Face X'. Faces 2 and 3 also have a 5% chance of showing it on their own at the Ring Booster stop, once you have won.",
           "unlocks": []
         },
         {
           "title": "Go to the black cube",
-          "body": "A new node shows up on the map (a glitched spot). You need 25k pips to enter.",
+          "body": "A new node shows up on the map (a glitched spot). Players report you need 25k pips to enter, which is not confirmed in the game files.",
           "unlocks": []
         },
         {
@@ -211,7 +216,7 @@
           "unlocks": [
             "d66f88612c1177de5d9b59457c42f99e7c33d902"
           ],
-          "warning": "Sources disagree on the piece prices: the Miraheze wiki says 500 / 5,000 / 50,000 pips, the Steam wiki says 500 / 50k / 1M. Bring plenty of pips."
+          "warning": "Piece prices are 500, 50,000 and 1,000,000 pips (confirmed in the game files). Clicking the stand pays with all the pips you have and the rest of the price stays, so you can pay in installments over several shops of the same run."
         },
         {
           "title": "Run 3: buy pieces 1 and 2, beat Face 3",
@@ -275,11 +280,11 @@
     {
       "id": "vortex",
       "title": "Vortex",
-      "goal": "An endless mode after Face 3. It gives no important unlocks, so play it when you like your build.",
+      "goal": "An endless mode that opens the first time you win on Face 6. It gives no important unlocks, so play it when you like your build.",
       "steps": [
         {
           "title": "Reach the exit",
-          "body": "You enter it after Face 3. There are 13 levels in total. Reach the exit, level 4, 7 and 10 for the four achievements.",
+          "body": "Once you have won on Face 6, an entrance appears in the shop of normal runs (not in challenges). There are 13 levels in total. Reach the exit, level 4, 7 and 10 for the four achievements.",
           "unlocks": [
             "da1efe21a4e710743633f5c9059856ac898e1151",
             "6a905350f11dedb4d35816e94d25c334d6fe945d",
@@ -392,7 +397,8 @@
       "name": "White Hand",
       "requirement": "Unlocked from the start. Begins with a Reroll card.",
       "effect": "Starts with a Reroll card.",
-      "starter": "8 D3 and 5 D4",
+      "starter": "8 D3, 5 D4 · card: Reroll",
+      "stats": "5 rolls · hand size 5 · 8 dice per turn · charisma 1",
       "tips": [
         "No special rule, so there are no hand-specific synergies."
       ]
@@ -403,7 +409,8 @@
       "requirement": "Beat Face 1. White is your only hand at first, so you do it with White.",
       "after": "White Hand",
       "effect": "Few initial dice. Shops have a 25% discount.",
-      "starter": "8 Bottle Caps",
+      "starter": "8 Bottle Cap",
+      "stats": "5 rolls · hand size 5 · 8 dice per turn · charisma 1.25",
       "tips": [
         "Works well with a small-hand combo."
       ]
@@ -414,6 +421,8 @@
       "requirement": "Have at least 25 dice in your bag while playing Red Hand.",
       "after": "Red Hand",
       "effect": "One less roll. You can roll 7 dice.",
+      "starter": "30 D6",
+      "stats": "4 rolls · hand size 7 · 10 dice per turn · charisma 1",
       "tips": []
     },
     {
@@ -421,7 +430,8 @@
       "icon": "0a9c3e07d48147861d394ed8a6c88b7f1594eae4",
       "requirement": "Beat the Face 1 boss without taking any ring. Might take a few attempts.",
       "effect": "You can carry up to 12 rings. Start with a random common ring. More chance of rare rings.",
-      "starter": "10 D3, 1 D6 and 1 D10",
+      "starter": "10 D3, 1 D6, 1 D10 · card: Double Rings",
+      "stats": "5 rolls · hand size 4 · 7 dice per turn · charisma 1",
       "tips": [
         "Extra ring slots let you hoard rings for future synergies and discard the weak ones more freely.",
         "Rare rings show up more often, so _r1ng and Fractal Ring are likelier."
@@ -432,6 +442,8 @@
       "icon": "163fa62efd5043f54abbdabd14c063dd1904ec5d",
       "requirement": "Have at least 5 enchanted dice in your bag (shops, Enchant cards or enchantment rooms).",
       "effect": "Extra card space. More likely to find enchanted dice.",
+      "starter": "1 D6, 1 D20, 10 D3 · card: Draw, Enchant",
+      "stats": "6 rolls · hand size 3 · 8 dice per turn · charisma 1",
       "tips": []
     },
     {
@@ -439,6 +451,8 @@
       "icon": "3e969d87795fa848d4377ecb2093ab0cfc68b354",
       "requirement": "Get a single die to 1000 extra value. D7, D8, D10, D12, Psychodie and Exodie stack it.",
       "effect": "Gain double extra value. Only 1 roll, buy more rolls at the shop.",
+      "starter": "17 D4, 3 D7 · card: Power Up",
+      "stats": "1 roll · hand size 5 · 10 dice per turn · charisma 1",
       "tips": []
     },
     {
@@ -446,6 +460,8 @@
       "icon": "ef35c8a8415bffcf67feec7340f2e2db703b405d",
       "requirement": "Get every stamp multiplier to at least 1.5X.",
       "effect": "Lose all your pips when starting a new round. Gain stamp multipliers according to the amount of pips you had.",
+      "starter": "1 Ivory Die, 4 D4, 10 D3",
+      "stats": "5 rolls · hand size 5 · 8 dice per turn · charisma 2",
       "tips": []
     },
     {
@@ -453,6 +469,8 @@
       "icon": "2f492fdaee204f05fc661728edca08103c7d4de8",
       "requirement": "Defeat The Even and The Odd bosses 5 times each. Bicolor itself never meets them, so use another hand.",
       "effect": "Maintain parity. Every roll must contain only odd dice or only even dice. If not, every die is discarded.",
+      "starter": "8 Odd Die, 8 Even Die · ring: Parity Interchanger · card: Invert",
+      "stats": "5 rolls · hand size 6 · 6 dice per turn · charisma 1",
       "tips": [
         "Has 6 hand size and 6 dice per turn. Every roll must be all odd or all even, or every die is discarded.",
         "The Even and The Odd never appear when you play it."
@@ -462,21 +480,28 @@
       "name": "Static Hand",
       "icon": "fc3d62b880f88d04a6fe0e7e52fc6fe6b6d889bd",
       "requirement": "Reach the secret Static shop (see Dice Rush) and empty it.",
-      "effect": "After the boss, donate stars in the shop until you see “something changes” above the Donate button. After that, a glitched spot will appear on the map (at the ring). Go there (25k pips required) and donate 1 Common, 1 Uncommon, 1 Rare, and 1 Legendary die. Embrace chaos. Start with 10 common rarity dice and other 5 of random rarities.",
-      "tips": []
+      "effect": "Embrace chaos. Start with 10 common rarity dice and other 5 of random rarities.",
+      "stats": "5 rolls · hand size 5 · 8 dice per turn · charisma 0.5",
+      "tips": [
+        "After the boss, donate stars in the shop until you see “something changes” above the Donate button. After that, a glitched spot appears on the map (at the ring). Go there (25k pips required) and donate 1 Common, 1 Uncommon, 1 Rare and 1 Legendary die."
+      ]
     },
     {
       "name": "Hollow Hand",
+      "icon": "3a3569cad37b62a3cb90a3d3889e1f26107a8d99",
       "requirement": "Win a round with an empty bag, then show the Hollow Ring to the Phone Guy after the Face 3 boss.",
       "effect": "Every die destroys itself when rolled. When dice are destroyed you gain shards, used for forging dice clones. Also, dice cannot be eternal. More rare and legendary dice.",
+      "starter": "17 D3, 3 Glass Die, 5 Hollow Die · card: Draw",
+      "stats": "5 rolls · hand size 5 · 8 dice per turn · charisma 1",
       "tips": []
     },
     {
       "name": "Black Hand",
       "icon": "e899926ea2317c7a595b9d667dd78586f844d839",
       "requirement": "Get the last promotion: promote on Power VI with any hand.",
-      "effect": "Promote on power 6. Start with 5 random occult dice. Multiplies everything by your POWER level. +0.2 POWER when rolling occult dice, -0.1 every turn and for every occult die left in your hand.",
+      "effect": "Start with 5 random occult dice. Multiplies everything by your POWER level. +0.2 POWER when rolling occult dice, -0.1 every turn and for every occult die left in your hand.",
       "starter": "10 D6 and 5 random occult dice (never Psi or Epsilon)",
+      "stats": "6 rolls · hand size 4 · 8 dice per turn · charisma 1",
       "tips": [
         "The early game is tough because you start at 0.2 power. Roll occult dice early to raise it.",
         "Keep about 4 occult dice in the bag at once, more will clog it.",
@@ -488,9 +513,12 @@
       "name": "Cyan Hand",
       "icon": "6a41d5f8acf75887c32a977b9e95bc0b83149358",
       "requirement": "In-game text: \"Beat the game with all dice in your bag having the same shape\". Shape means the same number of sides (all D6, all D3, all one-faced dice...), and the game here is Face 3. Only the bag at the end matters: tested with just 3 D3 in the bag for the last round. Beat the Face 3 boss, then enter the final room and the hand unlocks.",
+      "effect": "Roll a single die. Dice stay on the table by following a chain of consecutive dice shapes.",
+      "starter": "1 Bottle Cap, 5 D3, 5 D4, 1 D6 · card: Draw",
+      "stats": "8 rolls · hand size 1 · 12 dice per turn · charisma 1",
       "tips": [
         "Added in patch 1.1. Unlock: beat the Face 3 boss with a bag of one shape only (same number of sides), then enter the final room. Tested with 3 D3 in the bag for the last round. Another player did it as Green Hand with only D6.",
-        "In-game text for the combo: \"Roll a single die, dice stay on the table by following a chain of consecutive dice shapes\". Tested: the chain must be consecutive and always ascending (D2, D3, D4, D5...), and skipping a shape (D3 to D5) breaks it. When it breaks, the dice leave the table and stop scoring, and the chain starts again. Every shape counts in the chain, one-faced dice and D2 included.",
+        "In-game text for the combo: \"Roll a single die, dice stay on the table by following a chain of consecutive dice shapes\". Tested: the chain must be consecutive and always ascending (D2, D3, D4, D5...), and skipping a shape (D3 to D5) breaks it. When it breaks, the dice leave the table and stop scoring, and the chain starts again. Every shape counts in the chain, one-faced dice and D2 included. The chain wraps around: after the cross shape (7 or more sides) it starts again at one-faced dice.",
         "It also has a special Power V modifier that no source describes. Aquarium and Anchor broke its combo until patch 1.1.1.",
         "The Capricious and The Glutton never appear when you play it."
       ]
@@ -588,6 +616,7 @@
     },
     {
       "hand": "Hollow Hand",
+      "icon": "3a3569cad37b62a3cb90a3d3889e1f26107a8d99",
       "face3": "cfaf0318e06415260c1b027bad3567f48cf4bdf9",
       "million": "b94d1056aedd26b1f49a21da735269a21118a346",
       "rush": "c679cbc3868424350bc94d7bf98672f052bbc509",
@@ -600,6 +629,7 @@
       "face3": "001aed70f9e063a793c3c187326c08be9e6b8e33",
       "million": "8beb63d22a3c9bb6ebda2594c29440dc3dcd5981",
       "rush": "4f38cfd0729592ec3f477cae4f19741d7d0ef0d0",
+      "promotion": "1c386fd556d7b21b9ee1a981536bdf4420faa270",
       "power6": "5724d3a58c3f0be651081e3802c35676da9ba39c"
     }
   ]

@@ -1,6 +1,6 @@
 {
   "name": "Dice A Million",
-  "updated": "2026-10-08",
+  "updated": "2026-10-09",
   "sources": [
     {
       "title": "Combos and strategies (Steam)",
@@ -49,6 +49,11 @@
       "title": "Official patch notes and dev posts (Steam news)",
       "url": "https://store.steampowered.com/news/app/3430340",
       "note": "Power levels, boss reroll, Cyan Hand, controls, banned bosses, planned ending"
+    },
+    {
+      "title": "Dice A Million reference pages (Casual Game Guides)",
+      "url": "https://www.casualgameguides.com/walkthroughs/dice-a-million",
+      "note": "unofficial, pre-1.1; used only to cross-check unlock conditions, enchantments and boss rules"
     },
     {
       "title": "Achievements guide (GamerBlurb)",

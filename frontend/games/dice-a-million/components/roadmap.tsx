@@ -44,7 +44,12 @@ function HandTile({ hand }: { hand: HandUnlock }) {
           {hand.effect ? <p>{hand.effect}</p> : <p className="text-muted-foreground">No rules documented yet.</p>}
           {hand.starter && (
             <p>
-              <b>Starting dice:</b> {hand.starter}
+              <b>Starts with:</b> {hand.starter}
+            </p>
+          )}
+          {hand.stats && (
+            <p>
+              <b>Stats:</b> {hand.stats}
             </p>
           )}
           {hand.tips && hand.tips.length > 0 && (

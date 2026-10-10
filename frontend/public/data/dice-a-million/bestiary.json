@@ -2,194 +2,345 @@
   "bosses": [
     {
       "name": "The Starving",
+      "icon": "games/dice-a-million/items/bosses/the-starving.png",
       "effect": "-1 hand size. Every turn you draw one less die. (Turn 1 -1 die, turn 2 -2 dice, etc.)",
       "empowered": "-2 hand size. Every turn you draw one less die. (Turn 1 -1 die, turn 2 -2 dice, etc.)"
     },
     {
       "name": "The Odd",
+      "icon": "games/dice-a-million/items/bosses/the-odd.png",
       "effect": "2X Multiplier to dice with an odd face. 0X to dice with an even face.",
       "empowered": "0X to dice with an even face.",
-      "banned": "Never appears for Bicolor Hand (patch 1.0.22)."
+      "banned": "Never appears in: Bicolor Hand runs."
     },
     {
       "name": "The Even",
+      "icon": "games/dice-a-million/items/bosses/the-even.png",
       "effect": "2X Multiplier to dice with an even face. 0X to dice with an odd face.",
       "empowered": "0X to dice with an odd face.",
       "tips": "Invert cards and the Even Die and Even Ring make the doubling work for you. Decimal Die negates it entirely by making every value a multiple of 10.",
-      "banned": "Never appears for Bicolor Hand (patch 1.0.22)."
+      "banned": "Never appears in: Bicolor Hand runs."
     },
     {
       "name": "The Modest",
+      "icon": "games/dice-a-million/items/bosses/the-modest.png",
       "effect": "Deactivate the effects of half of your rings every roll.",
-      "empowered": "Deactivate the effects of almost all of your rings every roll."
+      "empowered": "Deactivate the effects of almost all of your rings every roll.",
+      "banned": "Never appears in: the “Ringless” challenge."
     },
     {
       "name": "The Greedy",
+      "icon": "games/dice-a-million/items/bosses/the-greedy.png",
       "effect": "The objective is extra high.",
-      "empowered": "The objective is extra EXTRA high."
+      "empowered": "The objective is extra EXTRA high.",
+      "targetMod": 2.0
     },
     {
       "name": "The Capricious",
+      "icon": "games/dice-a-million/items/bosses/the-capricious.png",
       "effect": "Dice deactivate until the end of round once they are rolled.",
       "empowered": "Dice rolled and dice left on your hand deactivate until the end of round.",
+      "targetMod": 0.75,
       "tips": "Dice are disabled until rolled, but clones are not. Save strong dice for one big roll, or use weak dice so you keep drawing the ones you want.",
-      "banned": "Never appears for Cyan Hand (patch 1.1.1)."
+      "banned": "Never appears in: Hollow Hand runs, Cyan Hand runs."
     },
     {
       "name": "The Pyro",
+      "icon": "games/dice-a-million/items/bosses/the-pyro.png",
       "effect": "After each roll, places a fire that will burn VERY nearby dice.",
-      "empowered": "After each roll, places a fire that will burn VERY nearby dice. Starts with a fire already out."
+      "empowered": "After each roll, places a fire that will burn VERY nearby dice. Starts with a fire already out.",
+      "targetMod": 0.75
     },
     {
       "name": "The Frost",
+      "icon": "games/dice-a-million/items/bosses/the-frost.png",
       "effect": "Freezes the face of all your dice to their lowest.",
       "empowered": "Freezes the face of all your dice to their lowest. Then, deactivates every die you rolled until the end of the round.",
-      "banned": "Never appears in the Carlos was here challenge (patch 1.0.25)."
+      "banned": "Never appears in: the “Cursed!” challenge, the “Carlos was here” challenge."
     },
     {
       "name": "The Envious",
+      "icon": "games/dice-a-million/items/bosses/the-envious.png",
       "effect": "Any die that rolls its highest face is discarded.",
-      "empowered": "Permanently destroys the die that rolled the highest face.(In case of draw, a random one is chosen.)",
+      "empowered": "Permanently destroys the die that rolled the highest face. (In case of draw, a random one is chosen.)",
       "tips": "Counters: Reroll Ring, One Ring (most dice roll their lowest face), the Eternal enchantment and Choose face on dice you want to keep. It hard-counters The Third Eye ring."
     },
     {
       "name": "The Heretic",
+      "icon": "games/dice-a-million/items/bosses/the-heretic.png",
       "effect": "Reduces everything by -10% for every enchanted die in your bag. (To a maximum of 80%.)",
-      "empowered": "You cannot use cards. Reduces everything by -10% for every enchanted die in your bag.(To a maximum of 80%.)"
+      "empowered": "You cannot use cards. Reduces everything by -10% for every enchanted die in your bag. (To a maximum of 80%.)",
+      "banned": "Never appears in: the “Cursed!” challenge."
     },
     {
       "name": "The Sloth",
+      "icon": "games/dice-a-million/items/bosses/the-sloth.png",
       "effect": "Draw 3 less dice. One less roll.",
-      "empowered": "Draw 5 less dice. One less roll."
+      "empowered": "Draw 5 less dice. One less roll.",
+      "banned": "Never appears in: Dice Rush."
     },
     {
       "name": "The Hollow",
+      "icon": "games/dice-a-million/items/bosses/the-hollow.png",
       "effect": "Every roll adds 2 hollow dice to your bag. (These don't do anything and will destroy themselves when rolled.)",
       "empowered": "Every roll adds 5 hollow dice to your bag. (These don't do anything and will destroy themselves when rolled.)"
     },
     {
       "name": "The Hermit",
+      "icon": "games/dice-a-million/items/bosses/the-hermit.png",
       "effect": "Reduces the range of every area effect to its minimum. Charged dice cannot gain charges.",
-      "empowered": "Charged dice and dice with area effects are deactivated."
+      "empowered": "Charged dice and dice with area effects are deactivated.",
+      "targetMod": 1.25
     },
     {
       "name": "The Negative",
+      "icon": "games/dice-a-million/items/bosses/the-negative.png",
       "effect": "Divides by half the value of every multiplier greater or equals to 3.",
-      "empowered": "Divides by half the value of every multiplier greater or equals to 2."
+      "empowered": "Divides by half the value of every multiplier greater or equals to 2.",
+      "targetMod": 0.75
     },
     {
       "name": "The Blackout",
+      "icon": "games/dice-a-million/items/bosses/the-blackout.png",
       "effect": "Every die is hidden until rolled. Only their silhouette is visible.",
       "empowered": "Every die is hidden until rolled. Only their silhouette is visible. -1 hand size.",
       "tips": "Dice are hidden until rolled. Memorise the outlines of your key dice before entering. Porcelain Figurine, Anchor and Spintop are easy to recognise."
     },
     {
       "name": "The Glutton",
+      "icon": "games/dice-a-million/items/bosses/the-glutton.png",
       "effect": "0X Multiplier to everything if you roll less than your hand size. Not rolled dice will be exhausted.",
       "empowered": "0X Multiplier to everything if you roll less than your hand size. Not rolled dice will be exhausted. Also exhausts one random die you rolled.",
-      "banned": "Never appears for Cyan Hand (patch 1.1.1)."
+      "targetMod": 1.5,
+      "banned": "Never appears in: Dice Rush, Cyan Hand runs, the “Glass Devourer” challenge."
     },
     {
       "name": "The Cautious",
+      "icon": "games/dice-a-million/items/bosses/the-cautious.png",
       "effect": "Extra value subtracts instead of adding. Every roll adds +1 extra value to every die in your bag.",
       "empowered": "Extra value subtracts instead of adding. Every roll adds +2 extra value to every die in your bag.",
       "tips": "Extra value subtracts instead of adding, and every roll adds +1 extra value to your hand. Avoid Psychodie, Foam Die, Bandage and Fishbone Charm. Sell extra-value rings only if they weigh you down.",
-      "banned": "Never appears in Dice Rush or Yellow Hand runs (Miraheze wiki)."
+      "banned": "Never appears in: Dice Rush, Yellow Hand runs."
     },
     {
       "name": "The Serpentine",
+      "icon": "games/dice-a-million/items/bosses/the-serpentine.png",
       "effect": "Every other roll, gives 0X Multiplier to everything.",
       "empowered": "Every other roll, gives 0X Multiplier and exhausts everything."
     },
     {
       "name": "The Witch",
+      "icon": "games/dice-a-million/items/bosses/the-witch.png",
       "effect": "Every turn you'll need to roll one specific face. If you don't, curses one of the dice you rolled.",
-      "empowered": "Every turn you'll need to roll one specific face. If you don't, curses every dice you rolled."
+      "empowered": "Every turn you'll need to roll one specific face. If you don't, curses every dice you rolled.",
+      "banned": "Never appears in: the “Cursed!” challenge."
     },
     {
       "name": "The Dusty",
+      "icon": "games/dice-a-million/items/bosses/the-dusty.png",
       "effect": "Every die has a small explosive area effect, that will discard VERY nearby dice.",
       "empowered": "Every die has an explosive area effect, that will discard nearby dice.",
       "tips": "Rolled dice discard others very close to them. Avoid clone makers (Jacks, Bottle of Caps, Die of Dice) and area dice. Spring can save nearby dice, but may bounce onto others."
     },
     {
       "name": "The Sixth",
+      "icon": "games/dice-a-million/items/bosses/the-sixth.png",
       "effect": "Dice with face greater than 6 are negative. (They will subtract instead of adding)",
-      "empowered": "Dice with face equals or greater than 6 are negative. (They will subtract instead of adding)"
+      "empowered": "Dice with face equals or greater than 6 are negative. (They will subtract instead of adding)",
+      "targetMod": 0.8
     },
     {
       "name": "The Patient",
+      "icon": "games/dice-a-million/items/bosses/the-patient.png",
       "effect": "Half of your dice are deactivated until you roll them once.",
       "empowered": "Half of your dice are deactivated until you roll them once. One less roll.",
-      "banned": "Never appears in the Peanuts! challenge (patch 1.0.15)."
+      "targetMod": 0.8,
+      "banned": "Never appears in: Dice Rush, Hollow Hand runs, the “Peanuts!” challenge."
     },
     {
       "name": "The Copycat",
+      "icon": "games/dice-a-million/items/bosses/the-copycat.png",
       "effect": "Any dice with a repeated face is divided by the number of dice with that face.",
       "empowered": "Any dice with a repeated face is multiplied by 0.",
-      "tips": "Dice that roll the same face are divided by how many matched. Same-face dice like Iron Die, Golden Die and Sudoku are weakened. Avoid clone makers and dice with similar faces."
-    },
-    {
-      "name": "The Boss",
-      "effect": "Rolls his own dice."
+      "tips": "Dice that roll the same face are divided by how many matched. Same-face dice like Iron Die, Golden Die and Sudoku are weakened. Avoid clone makers and dice with similar faces.",
+      "banned": "Never appears in: the “Carlos was here” challenge."
     }
   ],
+  "finalBoss": {
+    "name": "The Boss",
+    "icon": "games/dice-a-million/items/bosses/the-boss.png",
+    "effect": "Rolls his own dice.",
+    "hp": 6,
+    "phaseTwoHp": 3,
+    "phaseTwoBosses": [
+      "The Odd",
+      "The Even",
+      "The Frost",
+      "The Envious",
+      "The Heretic",
+      "The Hollow",
+      "The Hermit",
+      "The Negative"
+    ],
+    "attacks": [
+      {
+        "chance": 12,
+        "dice": [
+          "3 Alpha",
+          "1 Beta"
+        ]
+      },
+      {
+        "chance": 8,
+        "dice": [
+          "1 Alpha",
+          "2 Beta"
+        ]
+      },
+      {
+        "chance": 4,
+        "dice": [
+          "1 Delta",
+          "1 Magnetic Die (Negative)"
+        ]
+      },
+      {
+        "chance": 4,
+        "dice": [
+          "3 Delta"
+        ]
+      },
+      {
+        "chance": 8,
+        "dice": [
+          "2 Theta"
+        ]
+      },
+      {
+        "chance": 8,
+        "dice": [
+          "1 Lambda",
+          "2 Alpha"
+        ]
+      },
+      {
+        "chance": 12,
+        "dice": [
+          "1 Xi"
+        ]
+      },
+      {
+        "chance": 8,
+        "dice": [
+          "1 Xi",
+          "1 Rho"
+        ]
+      },
+      {
+        "chance": 12,
+        "dice": [
+          "2 Alpha",
+          "2 Iota"
+        ]
+      },
+      {
+        "chance": 8,
+        "dice": [
+          "1 Omega"
+        ]
+      },
+      {
+        "chance": 8,
+        "dice": [
+          "1 Tau",
+          "1 Omicron"
+        ]
+      },
+      {
+        "chance": 4,
+        "dice": [
+          "3 Omicron"
+        ]
+      },
+      {
+        "chance": 8,
+        "dice": [
+          "1 Tau",
+          "1 Lambda"
+        ]
+      }
+    ]
+  },
   "enemyDice": [
     {
       "name": "Alpha",
-      "effect": "Subtracts the value on its face. (Can be multiplied.)"
+      "effect": "Subtracts the value on its face. (Can be multiplied.)",
+      "icon": "games/dice-a-million/items/boss-dice/alpha.png"
     },
     {
       "name": "Beta",
-      "effect": "Subtracts the value on its face. (Can be multiplied.)"
+      "effect": "Subtracts the value on its face. (Can be multiplied.)",
+      "icon": "games/dice-a-million/items/boss-dice/beta.png"
     },
     {
       "name": "Gamma",
-      "effect": "Divides the value of your dice by the number on its face."
+      "effect": "Divides the value of your dice by the number on its face.",
+      "icon": "games/dice-a-million/items/boss-dice/gamma.png"
     },
     {
       "name": "Delta",
-      "effect": "Subtracts 1 per nearby die. (Can be multiplied.)"
+      "effect": "Subtracts 1 per nearby die. (Can be multiplied.)",
+      "icon": "games/dice-a-million/items/boss-dice/delta.png"
     },
     {
       "name": "Theta",
-      "effect": "Discards every VERY nearby die."
+      "effect": "Discards every VERY nearby die.",
+      "icon": "games/dice-a-million/items/boss-dice/theta.png"
     },
     {
       "name": "Lambda",
-      "effect": "Extra value of nearby dice is reduced to 0."
+      "effect": "Extra value of nearby dice is reduced to 0.",
+      "icon": "games/dice-a-million/items/boss-dice/lambda.png"
     },
     {
       "name": "Xi",
-      "effect": "Divides by 4 the value of nearby dice."
+      "effect": "Divides by 4 the value of nearby dice.",
+      "icon": "games/dice-a-million/items/boss-dice/xi.png"
     },
     {
       "name": "Iota",
-      "effect": "Adds X Hollow Dice to your bag. X being the number on its face."
+      "effect": "Adds X Hollow Dice to your bag. X being the number on its face.",
+      "icon": "games/dice-a-million/items/boss-dice/iota.png"
     },
     {
       "name": "Omega",
-      "effect": "Transforms VERY nearby dice rolled by you into Hollow Dice."
+      "effect": "Transforms VERY nearby dice rolled by you into Hollow Dice.",
+      "icon": "games/dice-a-million/items/boss-dice/omega.png"
     },
     {
       "name": "Epsilon",
-      "effect": "Subtracts the sum of all extra value from dice on the table."
+      "effect": "Subtracts the sum of all extra value from dice on the table.",
+      "icon": "games/dice-a-million/items/boss-dice/epsilon.png"
     },
     {
       "name": "Tau",
-      "effect": "Every die whose face is greater than this one's, is worth 0."
+      "effect": "Every die whose face is greater than this one's, is worth 0.",
+      "icon": "games/dice-a-million/items/boss-dice/tau.png"
     },
     {
       "name": "Omicron",
-      "effect": "If its face shows it, places a fire that will burn VERY nearby dice in next rolls."
+      "effect": "If its face shows it, places a fire that will burn VERY nearby dice in next rolls.",
+      "icon": "games/dice-a-million/items/boss-dice/omicron.png"
     },
     {
       "name": "Psi",
-      "effect": "Rolls negative copies of dice left in your hand. (These will subtract their score and won't activate any effects.)"
+      "effect": "Rolls negative copies of dice left in your hand. (These will subtract their score and won't activate any effects.)",
+      "icon": "games/dice-a-million/items/boss-dice/psi.png"
     },
     {
       "name": "Rho",
-      "effect": "Adds a curse to nearby dice."
+      "effect": "Adds a curse to nearby dice.",
+      "icon": "games/dice-a-million/items/boss-dice/rho.png"
     }
   ],
   "enchantments": [
@@ -224,50 +375,12 @@
       "appliesTo": "die"
     },
     {
-      "name": "Fragile",
-      "effect": "Destroys itself when rolled.",
-      "appliesTo": "die"
-    },
-    {
-      "name": "Negative",
-      "effect": "Its value subtracts instead of adding.",
-      "appliesTo": "die"
-    },
-    {
-      "name": "Explosive",
-      "effect": "Discards other VERY nearby dice.",
-      "appliesTo": "die"
-    },
-    {
-      "name": "Weak",
-      "effect": "Divides in half every mult. equal or greater to 2X that it would give or recieve.",
-      "appliesTo": "die"
-    },
-    {
-      "name": "Deciduous",
-      "effect": "Extra value subtracts instead of adding.",
-      "appliesTo": "die"
-    },
-    {
-      "name": "Parasite",
-      "effect": "When rolled adds a Hollow Die to your bag.",
-      "appliesTo": "die"
-    },
-    {
       "name": "Gilded",
       "effect": "The effects of this ring will be doubled.",
       "appliesTo": "ring"
     }
   ],
   "curses": [
-    {
-      "name": "Deciduous",
-      "effect": "Extra value subtracts instead of adding."
-    },
-    {
-      "name": "Explosive",
-      "effect": "Discards other VERY nearby dice."
-    },
     {
       "name": "Fragile",
       "effect": "Destroys itself when rolled."
@@ -277,12 +390,20 @@
       "effect": "Its value subtracts instead of adding."
     },
     {
-      "name": "Parasite",
-      "effect": "When rolled adds a Hollow Die to your bag."
+      "name": "Explosive",
+      "effect": "Discards other VERY nearby dice."
     },
     {
       "name": "Weak",
-      "effect": "Divides in half every multiplier equal to or greater than 2X that it would give or receive."
+      "effect": "Divides in half every mult. equal or greater to 2X that it would give or recieve."
+    },
+    {
+      "name": "Deciduous",
+      "effect": "Extra value subtracts instead of adding."
+    },
+    {
+      "name": "Parasite",
+      "effect": "When rolled adds a Hollow Die to your bag."
     }
   ]
 }

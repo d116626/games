@@ -32,6 +32,11 @@ SOURCES: list[Source] = [
         url="https://store.steampowered.com/news/app/3430340",
         note="Power levels, boss reroll, Cyan Hand, controls, banned bosses, planned ending",
     ),
+    Source(
+        title="Dice A Million reference pages (Casual Game Guides)",
+        url="https://www.casualgameguides.com/walkthroughs/dice-a-million",
+        note="unofficial, pre-1.1; used only to cross-check unlock conditions, enchantments and boss rules",
+    ),
     Source(title="Achievements guide (GamerBlurb)", url="https://gamerblurb.com/articles/dice-a-million-achievements-guide"),
     Source(
         title="Dice A Million Beginners Guide",

@@ -1,0 +1,481 @@
+{
+  "challenges": [
+    {
+      "name": "I can't believe it's not a D6",
+      "icon": "games/dice-a-million/achievements/faf766059871085348485ec280cc9105289c9f79.jpg",
+      "rules": [
+        "Only common and uncommon dice.",
+        "Uncommon dice are rarer."
+      ],
+      "hand": "White Hand",
+      "kit": "10 D3 · ring: Odd Ring, Even Ring",
+      "finalFace": 3,
+      "requires": [
+        "D3"
+      ]
+    },
+    {
+      "name": "Peanuts!",
+      "icon": "games/dice-a-million/achievements/676fa0ce13fe76102b071e31bbb5e73df959034c.jpg",
+      "rules": [
+        "Start with 100 peanuts.",
+        "That's all."
+      ],
+      "hand": "Red Hand",
+      "kit": "100 Peanut · card: Power Up",
+      "finalFace": 3,
+      "requires": [
+        "D666",
+        "Red Hand"
+      ],
+      "banned": "Never appears: The Patient."
+    },
+    {
+      "name": "Glass Devourer",
+      "icon": "games/dice-a-million/achievements/7ce4418f34d0244db1e6b19d602fa5007ad045de.jpg",
+      "rules": [
+        "Your Incubus die is hungry...",
+        "No shops."
+      ],
+      "hand": "Green Hand",
+      "kit": "1 Incubus Die, 1 Megadie · ring: Aura Ring · card: Clone, Clone, Clone",
+      "finalFace": 3,
+      "requires": [
+        "Incubus Die",
+        "Green Hand"
+      ],
+      "banned": "Never appears: The Glutton."
+    },
+    {
+      "name": "Blackjack",
+      "icon": "games/dice-a-million/achievements/243a4290666fbf88ae00238085565d232db851ea.jpg",
+      "rules": [
+        "Gain more stamp multiplier for not going over the target.",
+        "If you go over too much, you lose.",
+        "No shops."
+      ],
+      "hand": "Pale Hand",
+      "kit": "2 Ivory Die, 5 D3, 3 D20",
+      "finalFace": 2,
+      "requires": [
+        "Pale Hand",
+        "Ivory Die"
+      ]
+    },
+    {
+      "name": "Natural 6",
+      "icon": "games/dice-a-million/achievements/5e8a85e0282bbbd596bf4efd36580fc3bd8d1831.jpg",
+      "rules": [
+        "Every round besides the first from every Face is a Boss.",
+        "You can't skip rounds."
+      ],
+      "hand": "White Hand",
+      "kit": "8 D3, 5 D4, 1 D20 · card: Multiply",
+      "finalFace": 3,
+      "requires": [
+        "Fire Die",
+        "Ice Die"
+      ]
+    },
+    {
+      "name": "Cursed!",
+      "icon": "games/dice-a-million/achievements/ea8aa88d40106018f25d6e9477344fddd1c7bb34.jpg",
+      "rules": [
+        "Every other roll you'll be asked to roll a specific face.",
+        "If you fail, randomly curse one of your dice."
+      ],
+      "hand": "Purple Hand",
+      "kit": "3 D3, 8 D6, 2 D20 · ring: Noble Ring · card: Choose face",
+      "finalFace": 3,
+      "requires": [
+        "Purple Hand"
+      ],
+      "banned": "Never appears: The Heretic, The Frost, The Witch."
+    },
+    {
+      "name": "Ringless",
+      "icon": "games/dice-a-million/achievements/e9b2dfb96f7b69769419d4e0d3cd28aacc402794.jpg",
+      "rules": [
+        "There's no rings.",
+        "More chance of rare and legendary dice."
+      ],
+      "hand": "White Hand",
+      "kit": "8 D3, 5 D4, 1 Glass Die · card: Multiply",
+      "finalFace": 3,
+      "requires": [
+        "Good Job Sticker"
+      ],
+      "banned": "Never appears: The Modest."
+    },
+    {
+      "name": "??????????",
+      "icon": "games/dice-a-million/achievements/810d25758d4373855b2c368f27aac38b239b8f63.jpg",
+      "rules": [
+        "No shops."
+      ],
+      "hand": "Static Hand",
+      "kit": "20 Static Die",
+      "finalFace": 3,
+      "requires": [
+        "Static Die"
+      ]
+    },
+    {
+      "name": "ULTRAHARD",
+      "icon": "games/dice-a-million/achievements/8b5be9d30104d823e8c17e3b0ea4d90418d71e0e.jpg",
+      "rules": [
+        "Lose all your pips when entering a new round.",
+        "Dice can be cursed.",
+        "All Bosses are their + version."
+      ],
+      "hand": "White Hand",
+      "kit": "10 D3, 5 D4, 1 J.'s Die · card: Reroll, Reroll",
+      "finalFace": 6,
+      "requires": [
+        "Beat Face 3 on Power VI with any hand",
+        "Beat Face 6 with any hand"
+      ]
+    },
+    {
+      "name": "Carlos was here",
+      "icon": "games/dice-a-million/achievements/b717cfb09b37d257c880e2ad85d09180bfa35288.jpg",
+      "rules": [
+        "Test your luck!:)",
+        "No shops."
+      ],
+      "hand": "Green Hand",
+      "kit": "20 Carlos's Die",
+      "finalFace": 3,
+      "requires": [
+        "Green Hand"
+      ],
+      "banned": "Never appears: The Copycat, The Frost."
+    }
+  ],
+  "powers": [
+    {
+      "level": "I",
+      "effect": "-1 roll.",
+      "alt": "Buying rolls at the shop is more expensive. (Yellow Hand exclusive)",
+      "gem": "Amethyst",
+      "gemIcon": "games/dice-a-million/items/dice/amethyst.png"
+    },
+    {
+      "level": "II",
+      "effect": "Start with two gray dice.",
+      "gem": "Sapphire",
+      "gemIcon": "games/dice-a-million/items/dice/sapphire.png"
+    },
+    {
+      "level": "III",
+      "effect": "Dice can be cursed. Cursed dice can't be enchanted.",
+      "gem": "Emerald",
+      "gemIcon": "games/dice-a-million/items/dice/emerald.png"
+    },
+    {
+      "level": "IV",
+      "effect": "Objectives scale more quickly.",
+      "gem": "Amber",
+      "gemIcon": "games/dice-a-million/items/dice/amber.png"
+    },
+    {
+      "level": "V",
+      "effect": "-1 hand size.",
+      "alt": "-4 dice per turn. (Cyan Hand exclusive)",
+      "gem": "Ruby",
+      "gemIcon": "games/dice-a-million/items/dice/ruby.png"
+    },
+    {
+      "level": "VI",
+      "effect": "Lose half of your pips when exiting the shop.",
+      "gem": "Jet",
+      "gemIcon": "games/dice-a-million/items/dice/jet.png"
+    }
+  ],
+  "targets": [
+    {
+      "face": 1,
+      "round": 1,
+      "target": 15,
+      "hard": 15,
+      "boss": false
+    },
+    {
+      "face": 1,
+      "round": 2,
+      "target": 50,
+      "hard": 53,
+      "boss": false
+    },
+    {
+      "face": 1,
+      "round": 3,
+      "target": 100,
+      "hard": 110,
+      "boss": false
+    },
+    {
+      "face": 1,
+      "round": 4,
+      "target": 200,
+      "hard": 233,
+      "boss": false
+    },
+    {
+      "face": 1,
+      "round": 5,
+      "target": 350,
+      "hard": 420,
+      "boss": false
+    },
+    {
+      "face": 1,
+      "round": 6,
+      "target": 500,
+      "hard": 617,
+      "boss": true
+    },
+    {
+      "face": 2,
+      "round": 1,
+      "target": 500,
+      "hard": 767,
+      "boss": false
+    },
+    {
+      "face": 2,
+      "round": 2,
+      "target": 1000,
+      "hard": 1600,
+      "boss": false
+    },
+    {
+      "face": 2,
+      "round": 3,
+      "target": 2500,
+      "hard": 4167,
+      "boss": false
+    },
+    {
+      "face": 2,
+      "round": 4,
+      "target": 4000,
+      "hard": 7200,
+      "boss": false
+    },
+    {
+      "face": 2,
+      "round": 5,
+      "target": 7500,
+      "hard": 14000,
+      "boss": false
+    },
+    {
+      "face": 2,
+      "round": 6,
+      "target": 12000,
+      "hard": 23200,
+      "boss": true
+    },
+    {
+      "face": 3,
+      "round": 1,
+      "target": 12000,
+      "hard": 30000,
+      "boss": false
+    },
+    {
+      "face": 3,
+      "round": 2,
+      "target": 25000,
+      "hard": 65000,
+      "boss": false
+    },
+    {
+      "face": 3,
+      "round": 3,
+      "target": 40000,
+      "hard": 108000,
+      "boss": false
+    },
+    {
+      "face": 3,
+      "round": 4,
+      "target": 80000,
+      "hard": 232000,
+      "boss": false
+    },
+    {
+      "face": 3,
+      "round": 5,
+      "target": 120000,
+      "hard": 360000,
+      "boss": false
+    },
+    {
+      "face": 3,
+      "round": 6,
+      "target": 200000,
+      "hard": 620000,
+      "boss": true
+    },
+    {
+      "face": 4,
+      "round": 1,
+      "target": 500000,
+      "hard": 1966667,
+      "boss": false
+    },
+    {
+      "face": 4,
+      "round": 6,
+      "target": 1000000,
+      "hard": 4200000,
+      "boss": true
+    },
+    {
+      "face": 5,
+      "round": 1,
+      "target": 2000000,
+      "hard": 10333333,
+      "boss": false
+    },
+    {
+      "face": 5,
+      "round": 6,
+      "target": 5000000,
+      "hard": 27500000,
+      "boss": true
+    },
+    {
+      "face": 6,
+      "round": 1,
+      "target": 5000000,
+      "hard": 33000000,
+      "boss": true
+    }
+  ],
+  "targetNotes": [
+    "From Power IV, targets grow faster: the second column below. It applies from level 2 on.",
+    "Boss rounds multiply the target by the boss's Target chip (The Greedy, empowered, doubles it again).",
+    "Rerolling a boss makes every later round target 1.5x higher.",
+    "Dice Rush and the Blackjack challenge use a third of the normal target."
+  ],
+  "packs": [
+    {
+      "name": "Card Boost. Pack",
+      "effect": "Choose 1 out of 3 cards.",
+      "early": 26,
+      "late": 0
+    },
+    {
+      "name": "Dice Boost. Pack",
+      "effect": "Choose 1 out of 3 dice. (At least uncommon)",
+      "early": 16,
+      "late": 0
+    },
+    {
+      "name": "Ring Boost. Box",
+      "effect": "Choose 1 out of 3 rings.",
+      "early": 13,
+      "late": 0
+    },
+    {
+      "name": "Rare Dice Boost. Pack",
+      "effect": "Choose 1 out of 3 rare or legendary dice.",
+      "early": 5,
+      "late": 11
+    },
+    {
+      "name": "Mystery Sack",
+      "effect": "Choose 1 out of 3 random items.",
+      "early": 11,
+      "late": 0
+    },
+    {
+      "name": "Stamp Boost. Pack",
+      "effect": "Choose 1 out of 3 stamps.",
+      "early": 16,
+      "late": 0
+    },
+    {
+      "name": "Rare Ring Boost. Box",
+      "effect": "Choose 1 out of 3 rare or legendary rings.",
+      "early": 0,
+      "late": 6
+    },
+    {
+      "name": "Sp. Card Boost. Pack",
+      "effect": "Choose 1 out of 3 special cards.",
+      "early": 3,
+      "late": 11
+    },
+    {
+      "name": "Ench. Dice Boost. Pack",
+      "effect": "Choose 1 out of 3 enchanted dice.",
+      "early": 11,
+      "late": 0
+    },
+    {
+      "name": "XL Dice Boost. Pack",
+      "effect": "Choose 2 out of 5 dice. (At least uncommon)",
+      "early": 0,
+      "late": 17
+    },
+    {
+      "name": "XL Card Boost. Pack",
+      "effect": "Choose 2 out of 5 cards.",
+      "early": 0,
+      "late": 17
+    },
+    {
+      "name": "XL Ring Boost. Box",
+      "effect": "Choose 2 out of 5 rings.",
+      "early": 0,
+      "late": 11
+    },
+    {
+      "name": "XL Stamp Boost. Pack",
+      "effect": "Choose 2 out of 5 stamps.",
+      "early": 0,
+      "late": 17
+    },
+    {
+      "name": "XL Mystery Sack",
+      "effect": "Choose 2 out of 5 random items.",
+      "early": 0,
+      "late": 11
+    }
+  ],
+  "packNotes": [
+    "Faces 4 to 6, the phone and skip rewards use the second column.",
+    "Special card packs need at least 3 of the 8 special cards unlocked.",
+    "Rare dice packs never show up in “I can't believe it's not a D6”, and ring packs never show up in Ringless."
+  ],
+  "mapStops": [
+    {
+      "name": "???",
+      "effect": "May luck be on your side."
+    },
+    {
+      "name": "Golden Chest",
+      "effect": "Better than gray ones!"
+    },
+    {
+      "name": "Chest",
+      "effect": "Random reward."
+    },
+    {
+      "name": "Ring",
+      "effect": "Ring reward."
+    },
+    {
+      "name": "Magic Room",
+      "effect": "Enchant one of your dice."
+    },
+    {
+      "name": "Weight Room",
+      "effect": "Roll high more often!"
+    }
+  ]
+}

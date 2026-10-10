@@ -7,6 +7,7 @@ Onde as fontes divergem ou não dizem nada, o passo leva um `warning`.
 
 import re
 
+from utils.games.dice_a_million.catalog import item_names, load_db
 from utils.games.dice_a_million.schemas import Achievement, CatalogItem, HandGoal, HandUnlock, Roadmap, Stage, Step
 
 # (nome da mão, nome da conquista com o ícone | None, regex que a identifica no texto das conquistas)
@@ -21,7 +22,7 @@ HANDS: list[tuple[str, str | None, str]] = [
     ("Bicolor Hand", "Bicolor Hand", r"bicolor|binary"),
     ("Static Hand", "Static Hand", r"static"),
     ("Black Hand", "Black Hand", r"black"),
-    ("Hollow Hand", None, r"hollow|hidden|\?\?\?"),
+    ("Hollow Hand", "IKH)(&$%", r"hollow|hidden|\?\?\?"),
     ("Cyan Hand", "Cyan Hand", r"cyan"),
 ]
 
@@ -57,10 +58,10 @@ HAND_UNLOCKS: list[tuple[str, str, str | None]] = [
 
 # Dados iniciais e dicas, só onde a wiki Miraheze documenta a mão.
 HAND_NOTES: dict[str, tuple[str, list[str]]] = {
-    "White Hand": ("8 D3 and 5 D4", ["No special rule, so there are no hand-specific synergies."]),
-    "Red Hand": ("8 Bottle Caps", ["Works well with a small-hand combo."]),
+    "White Hand": ("", ["No special rule, so there are no hand-specific synergies."]),
+    "Red Hand": ("", ["Works well with a small-hand combo."]),
     "Blue Hand": (
-        "10 D3, 1 D6 and 1 D10",
+        "",
         [
             "Extra ring slots let you hoard rings for future synergies and discard the weak ones more freely.",
             "Rare rings show up more often, so _r1ng and Fractal Ring are likelier.",
@@ -74,9 +75,15 @@ HAND_NOTES: dict[str, tuple[str, list[str]]] = {
         "",
         [
             "Added in patch 1.1. Unlock: beat the Face 3 boss with a bag of one shape only (same number of sides), then enter the final room. Tested with 3 D3 in the bag for the last round. Another player did it as Green Hand with only D6.",
-            "In-game text for the combo: \"Roll a single die, dice stay on the table by following a chain of consecutive dice shapes\". Tested: the chain must be consecutive and always ascending (D2, D3, D4, D5...), and skipping a shape (D3 to D5) breaks it. When it breaks, the dice leave the table and stop scoring, and the chain starts again. Every shape counts in the chain, one-faced dice and D2 included.",
+            "In-game text for the combo: \"Roll a single die, dice stay on the table by following a chain of consecutive dice shapes\". Tested: the chain must be consecutive and always ascending (D2, D3, D4, D5...), and skipping a shape (D3 to D5) breaks it. When it breaks, the dice leave the table and stop scoring, and the chain starts again. Every shape counts in the chain, one-faced dice and D2 included. The chain wraps around: after the cross shape (7 or more sides) it starts again at one-faced dice.",
             "It also has a special Power V modifier that no source describes. Aquarium and Anchor broke its combo until patch 1.1.1.",
             "The Capricious and The Glutton never appear when you play it.",
+        ],
+    ),
+    "Static Hand": (
+        "",
+        [
+            "After the boss, donate stars in the shop until you see “something changes” above the Donate button. After that, a glitched spot appears on the map (at the ring). Go there (25k pips required) and donate 1 Common, 1 Uncommon, 1 Rare and 1 Legendary die.",
         ],
     ),
     "Black Hand": (
@@ -90,9 +97,9 @@ HAND_NOTES: dict[str, tuple[str, list[str]]] = {
     ),
 }
 
-FACES_WARNING = (
-    "Sources disagree on the piece prices: the Miraheze wiki says 500 / 5,000 / 50,000 pips, "
-    "the Steam wiki says 500 / 50k / 1M. Bring plenty of pips."
+PIECE_PRICES = (
+    "Piece prices are 500, 50,000 and 1,000,000 pips (confirmed in the game files). Clicking the stand pays with all the pips you have "
+    "and the rest of the price stays, so you can pay in installments over several shops of the same run."
 )
 
 STAGES: list[Stage] = [
@@ -125,22 +132,23 @@ STAGES: list[Stage] = [
     Stage(
         id="beat-the-game",
         title="Finish the game once",
-        goal="Beat Face 3. It opens challenges, Vortex and the shattered die that leads to Faces 4 to 6.",
+        goal="Beat Face 3. It opens challenges, Dice Rush and the shattered die that leads to Faces 4 to 6.",
         steps=[
             Step(title="Beat Face 2", body="Beating Face 2 gives you the Mimic Die.", unlocks=["Mimic Die"]),
             Step(
                 title="Beat Face 3",
-                body="Winning Face 3 counts as beating the game. It unlocks Challenges and the transition to Vortex, "
-                "and the first shattered die piece starts appearing in the Face 1 shop.",
+                body="Winning Face 3 counts as beating the game. Your first win unlocks the Challenges menu and Dice Rush "
+                "(both come with the Good Job Sticker ring), and the first shattered die piece starts appearing in the Face 1 shop.",
                 unlocks=["Mahjong Tile"],
             ),
             Step(
                 title="Reroll a boss that wrecks your build",
                 body="On the map, before a boss round, you can banish that boss for the rest of the run. "
-                "The first reroll in a run is free, every one after that permanently costs 2 max ring slots (patch 1.0.25).",
+                "The first reroll in a run is free, every one after that permanently costs 2 max ring slots (patch 1.0.25). "
+                "Once you reroll, every later round target in that run is also 1.5x higher.",
             ),
             Step(
-                title="Check the Strategy and Bosses sections",
+                title="Check the Strategy section and the Bosses index",
                 body="Combos, build priorities and every boss gimmick are below. Most failed Face 3 runs die to a boss you did not plan for.",
             ),
         ],
@@ -179,26 +187,28 @@ STAGES: list[Stage] = [
     Stage(
         id="powers",
         title="Climb the Power ladder",
-        goal="Powers I to VI make the game harder. Each hand climbs on its own.",
+        goal="Powers I to VI make the game harder, and each level keeps every rule of the ones below. Each hand climbs on its own.",
         steps=[
             Step(
                 title="Unlock Power N+1 per hand",
-                body="Beat Face 3 on Power N with a hand to unlock Power N+1 for that hand only. Challenges always play on Power 0.",
+                body="Powers are unlocked and tracked per hand, so each hand climbs the ladder on its own.",
+            ),
+            Step(
+                title="Know what each Power adds",
+                body="I: -1 roll. II: you start with two gray dice. III: dice can be cursed. "
+                "IV: round targets scale faster on later Faces. "
+                "V: -1 hand size. VI: you lose half of your pips when you leave the shop.",
+                warning="Two hands change a level. On Power I, Yellow Hand keeps its roll but buying rolls costs more. "
+                "On Power V, Cyan Hand loses 4 dice per turn instead of 1 hand size.",
             ),
             Step(
                 title="Collect the Power gems",
-                body="Beating the game on Power I to VI gives one gem die each, Amethyst up to Jet.",
+                body="Beating the game on Power I to VI gives one gem die each: Amethyst (I), Sapphire (II), Emerald (III), Amber (IV), Ruby (V) and Jet (VI).",
                 unlocks=["Amethyst", "Sapphire", "Emerald", "Amber", "Ruby", "Jet"],
             ),
             Step(
                 title="Expect curses from Power III",
-                body="From Power III every die has a 6% chance of being cursed. Magic Sponge removes curses.",
-            ),
-            Step(
-                title="Power IV raises later rounds",
-                body="The developer compares the boss reroll penalty to what Power IV does: it raises the value of every later round.",
-                warning="Each level adds one stacking rule and some add exclusive mechanics, but no source lists every level. "
-                "Cyan Hand also has a special Power V modifier. Only curses (Power III) and this Power IV effect are documented.",
+                body="From Power III every new die has a 6% chance of being cursed (a die that already got an enchantment is skipped). Magic Sponge removes curses.",
             ),
             Step(
                 title="Power VI per hand is the long grind",
@@ -224,15 +234,21 @@ STAGES: list[Stage] = [
     Stage(
         id="dice-rush",
         title="Open Dice Rush and the Static shop",
-        goal="Dice Rush is a separate mode unlocked mid-run. Clearing it with each hand gives a card.",
+        goal="Dice Rush opens after your first win. Clearing it with each hand gives a card.",
         steps=[
             Step(
+                title="Find Dice Rush on Face 3",
+                body="After your first win, the Ring Booster stop of Face 3 (after round 3) offers a Dice Rush branch in normal runs (never in challenges). "
+                "You beat 6 bosses in a row and round targets are a third of normal. The Sloth, Glutton, Cautious and Patient never show up.",
+            ),
+            Step(
                 title="Donate stars",
-                body="After a boss, donate stars at the shop until the message 'something changes in Face X' appears.",
+                body="After a boss, donate stars at the shop. Each donation can reveal the Static shop: 5%, 10%, 25%, 50%, then 100% on the fifth donation of that visit. "
+                "You get the message 'something changes in Face X'. Faces 2 and 3 also have a 5% chance of showing it on their own at the Ring Booster stop, once you have won.",
             ),
             Step(
                 title="Go to the black cube",
-                body="A new node shows up on the map (a glitched spot). You need 25k pips to enter.",
+                body="A new node shows up on the map (a glitched spot). Players report you need 25k pips to enter, which is not confirmed in the game files.",
             ),
             Step(
                 title="Static shop and Static Hand",
@@ -263,7 +279,7 @@ STAGES: list[Stage] = [
                 body="Buy piece 1 in the Face 1 shop and keep it in your bag. After the Face 3 boss, show it to the Phone Guy at the end of the run. "
                 "That unlocks piece 2 for Face 2 shops.",
                 unlocks=["First Piece"],
-                warning=FACES_WARNING,
+                warning=PIECE_PRICES,
             ),
             Step(
                 title="Run 3: buy pieces 1 and 2, beat Face 3",
@@ -318,11 +334,11 @@ STAGES: list[Stage] = [
     Stage(
         id="vortex",
         title="Vortex",
-        goal="An endless mode after Face 3. It gives no important unlocks, so play it when you like your build.",
+        goal="An endless mode that opens the first time you win on Face 6. It gives no important unlocks, so play it when you like your build.",
         steps=[
             Step(
                 title="Reach the exit",
-                body="You enter it after Face 3. There are 13 levels in total. Reach the exit, level 4, 7 and 10 for the four achievements.",
+                body="Once you have won on Face 6, an entrance appears in the shop of normal runs (not in challenges). There are 13 levels in total. Reach the exit, level 4, 7 and 10 for the four achievements.",
                 unlocks=["The Vortex", "Vortex Apprentice", "Vortex Local", "Vortex Master"],
             ),
             Step(
@@ -366,9 +382,30 @@ def match_hand(text: str) -> str | None:
     return None
 
 
+def start_kit(hand: dict[str, object], names: dict[str, dict[str, str]]) -> str | None:
+    """Dados, anéis e cartas com que a mão começa. None quando há dados sorteados (o texto da mão explica)."""
+    kit: dict[str, list] = hand["kit"]  # type: ignore[assignment]
+    if any(d["elem"] == "hidden" for d in kit["dice"]):
+        return None
+    parts = [", ".join(f"{d['q']} {names['dice'][d['elem']]}" for d in kit["dice"])]
+    for label, key, group in (("ring", "ring", "rings"), ("card", "card", "cards")):
+        if kit[key]:
+            parts.append(f"{label}: {', '.join(names[group][i] for i in kit[key])}")
+    return " · ".join(p for p in parts if p)
+
+
+def hand_stats(hand: dict[str, object]) -> str:
+    s: dict[str, float] = hand["stats"]  # type: ignore[assignment]
+    rolls = f"{s['rolls']} roll{'' if s['rolls'] == 1 else 's'}"
+    return f"{rolls} · hand size {s['handsize']} · {s['diceperturn']} dice per turn · charisma {s['charm']:g}"
+
+
 def build_roadmap(achievements: list[Achievement], catalog: list[CatalogItem]) -> Roadmap:
     by_name = {a.name: a.id for a in achievements}
     hand_effects = {i.name: i.effect for i in catalog if i.kind == "hands"}
+    db = load_db()
+    names = item_names(db)
+    game_hands = {str(h["name"]): h for h in db["hands"]}
 
     def resolve(names: list[str]) -> list[str]:
         missing = [n for n in names if n not in by_name]
@@ -385,7 +422,8 @@ def build_roadmap(achievements: list[Achievement], catalog: list[CatalogItem]) -
     hands = [
         HandUnlock(
             name=n, icon=icons[n], requirement=req, after=after, effect=hand_effects.get(n),
-            starter=HAND_NOTES.get(n, ("", []))[0] or None, tips=HAND_NOTES.get(n, ("", []))[1],
+            starter=start_kit(game_hands[n], names) or HAND_NOTES.get(n, ("", []))[0] or None,
+            stats=hand_stats(game_hands[n]), tips=HAND_NOTES.get(n, ("", []))[1],
         )
         for n, req, after in HAND_UNLOCKS
     ]

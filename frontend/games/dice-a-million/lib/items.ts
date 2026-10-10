@@ -8,7 +8,15 @@ for (const a of achievements) {
   byName.set(norm(a.name), { name: a.name, icon: a.icon, condition: a.how, text: a.tip ?? "" });
 }
 for (const i of catalog) {
-  byName.set(norm(i.name), { name: i.name, icon: i.icon, faces: i.faces, condition: i.condition, text: i.effect });
+  byName.set(norm(i.name), {
+    name: i.name,
+    icon: i.icon,
+    faces: i.faces,
+    sides: i.sides,
+    rarity: i.rarity,
+    condition: i.condition,
+    text: i.effect,
+  });
 }
 
 /** Item do catálogo (preferido) ou conquista com esse nome. */

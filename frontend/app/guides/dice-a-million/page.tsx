@@ -5,6 +5,7 @@ import { Roadmap } from "@/games/dice-a-million/components/roadmap";
 import { Strategy } from "@/games/dice-a-million/components/strategy";
 import { game } from "@/games/dice-a-million/game";
 import { meta, roadmap } from "@/games/dice-a-million/lib/data";
+import { INDEX_LINKS } from "@/games/dice-a-million/lib/index-links";
 import { searchEntries } from "@/games/dice-a-million/lib/search";
 import { GameShell } from "@/components/game/game-shell";
 import { Section } from "@/components/game/section";
@@ -12,9 +13,13 @@ import { Section } from "@/components/game/section";
 export const metadata = { title: `${game.name} 100% Guide · Games Guide`, description: game.description };
 
 const SECTIONS = [
-  { id: "roadmap", label: "Roadmap" },
+  {
+    id: "roadmap",
+    label: "Roadmap",
+    children: roadmap.stages.map((s, i) => ({ id: `stage-${s.id}`, label: `${i + 1} · ${s.short}` })),
+  },
   { id: "strategy", label: "Strategy" },
-  { id: "index", label: "Index" },
+  { id: "index", label: "Index", children: INDEX_LINKS },
 ];
 
 export default function Page() {

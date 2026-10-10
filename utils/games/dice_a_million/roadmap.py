@@ -106,6 +106,7 @@ STAGES: list[Stage] = [
     Stage(
         id="first-wins",
         title="Learn the loop, beat Face 1",
+        short="First wins",
         goal="Win your first Face. This unlocks the Red Hand and starts the whole unlock chain.",
         steps=[
             Step(
@@ -132,6 +133,7 @@ STAGES: list[Stage] = [
     Stage(
         id="beat-the-game",
         title="Finish the game once",
+        short="Beat the game",
         goal="Beat Face 3. It opens challenges, Dice Rush and the shattered die that leads to Faces 4 to 6.",
         steps=[
             Step(title="Beat Face 2", body="Beating Face 2 gives you the Mimic Die.", unlocks=["Mimic Die"]),
@@ -156,6 +158,7 @@ STAGES: list[Stage] = [
     Stage(
         id="hands",
         title="Unlock every hand",
+        short="Hands",
         goal="Each hand changes hand size, rolls and rules, and most goals later are per hand.",
         steps=[
             Step(
@@ -187,6 +190,7 @@ STAGES: list[Stage] = [
     Stage(
         id="powers",
         title="Climb the Power ladder",
+        short="Powers",
         goal="Powers I to VI make the game harder, and each level keeps every rule of the ones below. Each hand climbs on its own.",
         steps=[
             Step(
@@ -219,6 +223,7 @@ STAGES: list[Stage] = [
     Stage(
         id="mastery",
         title="Master each hand",
+        short="Mastery",
         goal="Every hand has up to five goals. Each gives a die, ring or card.",
         steps=[
             Step(
@@ -234,6 +239,7 @@ STAGES: list[Stage] = [
     Stage(
         id="dice-rush",
         title="Open Dice Rush and the Static shop",
+        short="Dice Rush",
         goal="Dice Rush opens after your first win. Clearing it with each hand gives a card.",
         steps=[
             Step(
@@ -268,6 +274,7 @@ STAGES: list[Stage] = [
     Stage(
         id="promotion",
         title="Promotion: Faces 4 to 6",
+        short="Promotion",
         goal="The deepest content documented. Collect all three shattered die pieces, then beat Face 6.",
         steps=[
             Step(
@@ -310,6 +317,7 @@ STAGES: list[Stage] = [
     Stage(
         id="hollow",
         title="Hollow Hand and the Phone Guy",
+        short="Hollow Hand",
         goal="The trickiest secret. It needs an empty bag.",
         steps=[
             Step(
@@ -334,6 +342,7 @@ STAGES: list[Stage] = [
     Stage(
         id="vortex",
         title="Vortex",
+        short="Vortex",
         goal="An endless mode that opens the first time you win on Face 6. It gives no important unlocks, so play it when you like your build.",
         steps=[
             Step(
@@ -350,6 +359,7 @@ STAGES: list[Stage] = [
     Stage(
         id="challenges",
         title="Challenges",
+        short="Challenges",
         goal="Unlocked after beating the game once. They only give background visuals.",
         steps=[
             Step(title="Do them last", body="Challenges only unlock backgrounds, so move on to them once you are an experienced player."),
@@ -364,6 +374,7 @@ STAGES: list[Stage] = [
     Stage(
         id="cleanup",
         title="Cleanup: odd secrets",
+        short="Cleanup",
         goal="Small unlocks that do not fit anywhere else.",
         steps=[
             Step(title="Echo Cube", body="Flick the falling dice in the main menu background. Pure luck and patience.", unlocks=["Echo Cube"]),

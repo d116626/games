@@ -109,6 +109,12 @@ class MapStop(CamelModel):
     effect: str
 
 
+class OddsTable(CamelModel):
+    title: str
+    columns: list[str]
+    rows: list[list[str]]
+
+
 class Rules(CamelModel):
     challenges: list[Challenge]
     powers: list[Power]
@@ -117,6 +123,7 @@ class Rules(CamelModel):
     packs: list[Pack]
     pack_notes: list[str]
     map_stops: list[MapStop]
+    odds: list[OddsTable]
 
 
 class Step(CamelModel):
@@ -129,6 +136,7 @@ class Step(CamelModel):
 class Stage(CamelModel):
     id: str
     title: str
+    short: str  # nome curto, para o índice lateral
     goal: str
     steps: list[Step]
 

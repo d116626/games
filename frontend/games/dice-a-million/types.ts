@@ -19,7 +19,7 @@ export type Achievement = {
 };
 
 export type Step = { title: string; body: string; unlocks: string[]; warning?: string };
-export type Stage = { id: string; title: string; goal: string; steps: Step[] };
+export type Stage = { id: string; title: string; short: string; goal: string; steps: Step[] };
 export type HandUnlock = {
   name: string;
   icon?: string;
@@ -119,6 +119,7 @@ export type Power = { level: string; effect: string; alt?: string; gem: string; 
 export type Target = { face: number; round: number; target: number; hard: number; boss: boolean };
 export type Pack = { name: string; effect: string; early: number; late: number };
 export type MapStop = { name: string; effect: string };
+export type OddsTable = { title: string; columns: string[]; rows: string[][] };
 export type Rules = {
   challenges: Challenge[];
   powers: Power[];
@@ -127,6 +128,7 @@ export type Rules = {
   packs: Pack[];
   packNotes: string[];
   mapStops: MapStop[];
+  odds: OddsTable[];
 };
 export type TipGroup = { title: string; tips: string[]; source: string };
 

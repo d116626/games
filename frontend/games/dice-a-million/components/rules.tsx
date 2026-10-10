@@ -1,5 +1,6 @@
 import { Ban, Flag, Gem, Hand, KeyRound, Swords } from "lucide-react";
 import { ItemRow } from "@/games/dice-a-million/components/item-row";
+import { RARITIES } from "@/games/dice-a-million/types";
 import { rules } from "@/games/dice-a-million/lib/data";
 
 const fmt = (n: number) => n.toLocaleString("en-US");
@@ -121,5 +122,52 @@ export function RunRules() {
         ))}
       </ul>
     </>
+  );
+}
+
+/** Chance de raridade por Face (dados e rings), calculada no pipeline. */
+export function Odds() {
+  return (
+    <ul className="grid gap-4 md:grid-cols-2">
+      {rules.odds.map((t) => (
+        <li key={t.title} className="sticker-sm p-3">
+          <h4 className="mb-2 font-display text-xl leading-none">{t.title}</h4>
+          <table className="w-full text-center text-sm tabular-nums">
+            <thead>
+              <tr>
+                {t.columns.map((c, i) => {
+                  const tier = RARITIES.find((r) => r.label === c);
+                  return (
+                    <th key={c} className="pb-1.5 text-xs font-bold">
+                      {tier ? (
+                        <span
+                          className="inline-block rounded border-2 border-(--ink) px-1 py-0.5 text-[9px] font-bold uppercase leading-none"
+                          style={{ backgroundColor: tier.color }}
+                        >
+                          {c}
+                        </span>
+                      ) : (
+                        <span className={i === 0 ? "block text-left" : ""}>{c}</span>
+                      )}
+                    </th>
+                  );
+                })}
+              </tr>
+            </thead>
+            <tbody>
+              {t.rows.map((row) => (
+                <tr key={row[0]} className="border-t border-(--ink)/15">
+                  {row.map((cell, i) => (
+                    <td key={i} className={`py-1 ${i === 0 ? "text-left font-bold" : ""}`}>
+                      {cell}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </li>
+      ))}
+    </ul>
   );
 }

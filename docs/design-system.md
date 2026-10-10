@@ -32,7 +32,7 @@ site estático, sem abas). Os `id` de `sections` devem ser os mesmos dos `<Secti
 | Componente | Uso |
 |---|---|
 | `GameShell` | moldura, índice, acento, rodapé "Sources" |
-| `SectionNav` | índice com scroll-spy (usado pelo `GameShell`) |
+| `SectionNav` | índice com scroll-spy (usado pelo `GameShell`); `SectionLink.children` vira subitens no desktop, visíveis quando a seção está ativa (o Dice A Million usa nas etapas do roadmap, com `Stage.short` numerado, e nos blocos do índice, `lib/index-links.ts`) |
 | `Section` | âncora, número, título e contagem |
 | `Callout` | `tip`, `combo` ou `warning` |
 | `GameImage` | `<img>` para arquivos de `public/`, aplica o `basePath` |
@@ -44,7 +44,7 @@ elemento (`<Skull />`) entre Server e Client Components.
 ## Componentes do Dice A Million (`games/dice-a-million/components/`)
 Ordem da página: `Hero` → `GuideSearch` (busca em tudo, atalho `/`) → `Roadmap` (etapas em ordem, cadeia de mãos, objetivos por mão) → `Strategy` →
 `IndexList` (o índice, no fim). Cada bloco do índice é um `IndexGroup` recolhível que abre sozinho quando a URL aponta para ele (`#index-bosses`; a busca usa isso):
-dados, anéis, cartas, encantamentos, maldições, chefes (com chefe final e dados inimigos), desafios, Powers e regras da run (alvos por rodada, packs, paradas do mapa).
+dados, anéis, cartas, encantamentos, maldições, chefes (com chefe final e dados inimigos), desafios, Powers, odds (tabelas de raridade, calculadas em `rules.py`) e regras da run (alvos por rodada, packs, paradas do mapa).
 O catálogo vem do HTML da wiki da Steam (`catalog.py`, imagens em `public/games/dice-a-million/items/`); `lib/search.ts` monta as entradas da busca.
 O roteiro é escrito à mão em `utils/games/dice_a_million/roadmap.py` (com `warning` onde as fontes divergem) e a matriz
 sai do texto das conquistas. Sem checklist: o guia é para ler, não para marcar.

@@ -4,7 +4,7 @@ import re
 
 from utils.games.dice_a_million.catalog import copy_sprite, item_names, load_db
 from utils.games.dice_a_million.roadmap import start_kit
-from utils.games.dice_a_million.schemas import Challenge, MapStop, Pack, Power, Rules, Target
+from utils.games.dice_a_million.schemas import Challenge, MapStop, OddsTable, Pack, Power, Rules, Target
 
 ROMAN = ["", "I", "II", "III", "IV", "V", "VI"]
 GEMS = ["Amethyst", "Sapphire", "Emerald", "Amber", "Ruby", "Jet"]  # Powers I a VI (dados que o jogo libera ao vencer neles)
@@ -21,6 +21,36 @@ PACK_NOTES = [
     "Special card packs need at least 3 of the 8 special cards unlocked.",
     "Rare dice packs never show up in “I can't believe it's not a D6”, and ring packs never show up in Ringless.",
 ]
+
+
+def pct(count: int, total: int) -> str:
+    return f"{100 * count / total:.1f}%".replace(".0%", "%")
+
+
+def die_rarity(m: float) -> list[str]:
+    """Comum, incomum, raro, lendário: sorteio de dado da loja (semente 0 a 100 em passos de 0,1)."""
+    seeds = [x / 10 for x in range(1001)]
+    legendary = sum(s <= 0.5 + m / 4 for s in seeds)
+    rare = sum(s <= 5 + m for s in seeds) - legendary
+    uncommon = sum(s <= 60 + 2 * m for s in seeds) - legendary - rare
+    return [pct(len(seeds) - legendary - rare - uncommon, len(seeds))] + [pct(n, len(seeds)) for n in (uncommon, rare, legendary)]
+
+
+def ring_rarity(m: float) -> list[str]:
+    """Comum, incomum, raro, lendário: sorteio de ring (semente inteira de 1 a 100)."""
+    legendary = sum(s <= 0.5 + m / 4 for s in range(1, 101))
+    rare = sum(s <= 10 + m for s in range(1, 101)) - legendary
+    uncommon = sum(s <= 60 + 2 * m for s in range(1, 101)) - legendary - rare
+    return [pct(100 - legendary - rare - uncommon, 100)] + [pct(n, 100) for n in (uncommon, rare, legendary)]
+
+
+def build_odds() -> list[OddsTable]:
+    """Chance de raridade por Face, sem bônus de ring ou mão."""
+    columns = ["Face", "Common", "Uncommon", "Rare", "Legendary"]
+    return [
+        OddsTable(title="Dice", columns=columns, rows=[[str(f), *die_rarity(2 * (f - 1))] for f in range(1, 7)]),
+        OddsTable(title="Rings", columns=columns, rows=[[str(f), *ring_rarity(6 * (f - 1))] for f in range(1, 7)]),
+    ]
 
 
 def requirement(req: dict[str, object]) -> str:
@@ -87,5 +117,5 @@ def build_rules(icons: dict[str, str]) -> Rules:
     ]
     return Rules(
         challenges=challenges, powers=powers, targets=targets, target_notes=TARGET_NOTES,
-        packs=packs, pack_notes=PACK_NOTES, map_stops=stops,
+        packs=packs, pack_notes=PACK_NOTES, map_stops=stops, odds=build_odds(),
     )

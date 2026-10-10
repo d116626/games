@@ -2,7 +2,7 @@ import { Bosses, EnemyDice } from "@/games/dice-a-million/components/bestiary";
 import { CatalogGroup } from "@/games/dice-a-million/components/catalog-group";
 import { IndexGroup } from "@/games/dice-a-million/components/index-group";
 import { ItemRow } from "@/games/dice-a-million/components/item-row";
-import { Challenges, Powers, RunRules } from "@/games/dice-a-million/components/rules";
+import { Challenges, Odds, Powers, RunRules } from "@/games/dice-a-million/components/rules";
 import { bestiary, catalog, rules, traits } from "@/games/dice-a-million/lib/data";
 import type { CatalogItem } from "@/games/dice-a-million/types";
 
@@ -56,6 +56,9 @@ export function IndexList() {
       </IndexGroup>
       <IndexGroup id="index-powers" title="Powers" count={rules.powers.length}>
         <Powers />
+      </IndexGroup>
+      <IndexGroup id="index-odds" title="Odds" count={rules.odds.length}>
+        <Odds />
       </IndexGroup>
       <IndexGroup id="index-run" title="Run rules">
         <RunRules />

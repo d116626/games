@@ -7,4 +7,5 @@ export const game: Game = {
   description: "Time budget, endings, Court and Infamy, skills and PS5 trophy roadmap for The Blood of Dawnwalker.",
   tags: ["action RPG", "open world", "trophy guide"],
   accent: "#d6334b",
+  cover: "games/blood-of-dawnwalker/cover.svg",
 };

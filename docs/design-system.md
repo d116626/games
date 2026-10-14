@@ -21,6 +21,7 @@ Cada jogo pode sobrescrever tokens do shadcn e fontes com variáveis CSS, sem to
 - Dice A Million (`.theme-dice`): coral + papel creme, contorno de 2-3px preto e sombra dura, como a UI do jogo.
   Fontes Anton (display), Pixelify Sans (mono) e Atkinson Hyperlegible Next (texto).
   Utilitários: `.sticker`, `.sticker-sm`, `.hud-tab`, `.roll-plate`, `.tilt`.
+- The Blood of Dawnwalker (`.theme-dawn`): noite carmesim e osso, com o relógio de 30 dias (SVG, dia/noite) no hero. Fontes legíveis: Barlow Condensed (display) e Atkinson Hyperlegible Next (texto). Pouca caixa: a informação se organiza por linhas com filete, colunas com régua no topo e linha do tempo numerada (etapas dos troféus, partes da rota); só o contador de segmentos fica num painel (fixo no topo). Utilitários: `.label` (rótulo em caixa-alta), `.seal`, `.seal-ghost` (botões), `.dial-spin`.
 
 ## Estrutura de uma página de jogo
 `GameShell` com `sections=[{id,label}]` e `hero` opcional (substitui o cabeçalho padrão): índice com scroll-spy

@@ -1,0 +1,689 @@
+{
+  "trees": [
+    {
+      "id": "swordmastery",
+      "name": "Swordmastery",
+      "time": "anytime",
+      "summary": "Weapon skills; costs Activation Charges only, never health. Works day and night.",
+      "unlock": "Read the manual (soldier and bandit camps, sword teachers, vendors)."
+    },
+    {
+      "id": "witchcraft",
+      "name": "Witchcraft",
+      "time": "day",
+      "summary": "Hexes and utility magic, mostly daytime. Includes Compel Soul to talk to the dead.",
+      "unlock": "Read the tome (haunted sites, ancient circles, witchcraft vendors)."
+    },
+    {
+      "id": "vampirism",
+      "name": "Vampirism",
+      "time": "night",
+      "summary": "Claw attacks, shapeshifting and mind control. Night only, abilities cost health.",
+      "unlock": "Raise Corruption by drinking blood (animals, humans, Vrakhiri blood samples)."
+    }
+  ],
+  "rules": [
+    "You get 1 skill point per level-up and per completed activity.",
+    "Opening a rank costs 1 skill point, and most perks cost 1-2 time segments too. Maxing an ability takes 4 points and 5 segments; maxing all of Swordmastery is about 90 segments.",
+    "Some ranks cost no time: Mercurial Fervour, Astral Communion, Compel Soul and Shapeshift.",
+    "There are 2 quick-slot sets (day and night) with 4 active abilities each. Passive abilities only work while equipped in them.",
+    "Master Fencer, Forbidden Sigils and Vrakhiri Might add ability slots.",
+    "Each tree has 3 Ultimate perks and only 1 can be active. You need 35 points spent in the tree (39 with the perk itself); Vampirism also needs Corruption level 15.",
+    "There are not enough skill points for one Ultimate in every tree. For the Ultimate trophies, save before spending and use a separate save per tree."
+  ],
+  "abilities": [
+    {
+      "id": "swordmastery-adrenaline-rush",
+      "name": "Adrenaline Rush",
+      "tree": "swordmastery",
+      "kind": "passive",
+      "effect": "Increases Attack Damage after using Active Abilities."
+    },
+    {
+      "id": "swordmastery-artery-strike",
+      "name": "Artery Strike",
+      "tree": "swordmastery",
+      "kind": "active",
+      "effect": "Critical Attack with a chance of Decapitating the target.",
+      "cost": "2 Activation Charges"
+    },
+    {
+      "id": "witchcraft-astral-communion",
+      "name": "Astral Communion",
+      "tree": "witchcraft",
+      "kind": "utility",
+      "effect": "Activates dormant magic in places of power scattered throughout the Valley."
+    },
+    {
+      "id": "vampirism-blood-surge",
+      "name": "Blood Surge",
+      "tree": "vampirism",
+      "kind": "active",
+      "effect": "Explodes target. Bosses receive Damage instead.",
+      "cost": "3 Activation Charges + 25% Health"
+    },
+    {
+      "id": "swordmastery-broad-swing",
+      "name": "Broad Swing",
+      "tree": "swordmastery",
+      "kind": "active",
+      "effect": "Weapon Area Attack.",
+      "cost": "2 Activation Charges"
+    },
+    {
+      "id": "witchcraft-burning-blood",
+      "name": "Burning Blood",
+      "tree": "witchcraft",
+      "kind": "active",
+      "effect": "Deals Damage over time to a target.",
+      "cost": "1 Activation Charge + 15% Health"
+    },
+    {
+      "id": "swordmastery-charge",
+      "name": "Charge",
+      "tree": "swordmastery",
+      "kind": "active",
+      "effect": "Charge dealing Damage and Stunning a target and everyone on your way.",
+      "cost": "1 Activation Charge"
+    },
+    {
+      "id": "witchcraft-compel-soul",
+      "name": "Compel Soul",
+      "tree": "witchcraft",
+      "kind": "utility",
+      "effect": "Allows you to speak with restless souls. Use together with objects associated with the dead to obtain additional information."
+    },
+    {
+      "id": "vampirism-crimson-rush",
+      "name": "Crimson Rush",
+      "tree": "vampirism",
+      "kind": "passive",
+      "effect": "Increases Damage of Active Abilities; the higher your Health percentage is."
+    },
+    {
+      "id": "witchcraft-cycle-of-ruin",
+      "name": "Cycle of Ruin",
+      "tree": "witchcraft",
+      "kind": "passive",
+      "effect": "Extends Duration of currently active Witchcraft Abilities with each landed Attack, Block, and Perfect block."
+    },
+    {
+      "id": "vampirism-death-from-above",
+      "name": "Death from Above",
+      "tree": "vampirism",
+      "kind": "utility",
+      "effect": "Instantly Kill a target below you. Bosses receive Damage instead."
+    },
+    {
+      "id": "swordmastery-dirty-trick",
+      "name": "Dirty Trick",
+      "tree": "swordmastery",
+      "kind": "active",
+      "effect": "Stuns and Damages a target and makes them vulnerable to Active Abilities.",
+      "cost": "1 Activation Charge"
+    },
+    {
+      "id": "witchcraft-life-lock",
+      "name": "Life Lock",
+      "tree": "witchcraft",
+      "kind": "active",
+      "effect": "Blocks damage and Reflects it back to the enemy.",
+      "cost": "1 Activation Charge + 10% Health"
+    },
+    {
+      "id": "witchcraft-mercurial-fervour",
+      "name": "Mercurial Fervour",
+      "tree": "witchcraft",
+      "kind": "utility",
+      "effect": "Gain Haste in exploration by briefly slowing down the world around you."
+    },
+    {
+      "id": "vampirism-mesmerise",
+      "name": "Mesmerise",
+      "tree": "vampirism",
+      "kind": "active",
+      "effect": "Mind Control a target and force him to fight on your side. Can't be used on Bosses.",
+      "cost": "2 Activation Charges + 30% Health"
+    },
+    {
+      "id": "vampirism-piercing-shriek",
+      "name": "Piercing Shriek",
+      "tree": "vampirism",
+      "kind": "active",
+      "effect": "Stuns all enemies in front of you, Weakens their Defence and Attack Damage. Blocking their attacks reflects Damage back at them.",
+      "cost": "1 Activation Charge + 20% Health"
+    },
+    {
+      "id": "witchcraft-ravenous-flock",
+      "name": "Ravenous Flock",
+      "tree": "witchcraft",
+      "kind": "active",
+      "effect": "Area Attack and Stun on target. Attacking the target triggers additional Area Attacks.",
+      "cost": "2 Activation Charges + 40% Health"
+    },
+    {
+      "id": "vampirism-scarlet-shield",
+      "name": "Scarlet Shield",
+      "tree": "vampirism",
+      "kind": "passive",
+      "effect": "Health Regeneration chance after Block."
+    },
+    {
+      "id": "vampirism-shadowstorm",
+      "name": "Shadowstorm",
+      "tree": "vampirism",
+      "kind": "active",
+      "effect": "Slows down Time around you.",
+      "cost": "1 Activation Charge + 15% Health"
+    },
+    {
+      "id": "vampirism-shapeshift",
+      "name": "Shapeshift",
+      "tree": "vampirism",
+      "kind": "utility",
+      "effect": "Shapeshift into a Wolf and gain Haste in exploration."
+    },
+    {
+      "id": "vampirism-shred",
+      "name": "Shred",
+      "tree": "vampirism",
+      "kind": "passive",
+      "effect": "Bleed chance on your Weapon or Claw Attacks."
+    },
+    {
+      "id": "witchcraft-soul-reaping",
+      "name": "Soul Reaping",
+      "tree": "witchcraft",
+      "kind": "active",
+      "effect": "Lifesteals target over time and keep him away.",
+      "cost": "2 Activation Charges + 15% Health"
+    },
+    {
+      "id": "witchcraft-soul-stigma",
+      "name": "Soul Stigma",
+      "tree": "witchcraft",
+      "kind": "active",
+      "effect": "Higher Critical Chance and Critical Damage on target.",
+      "cost": "1 Activation Charge + 35% Health"
+    },
+    {
+      "id": "swordmastery-swiftness",
+      "name": "Swiftness",
+      "tree": "swordmastery",
+      "kind": "passive",
+      "effect": "Boosts Attack Speed after Perfect Block."
+    },
+    {
+      "id": "witchcraft-unholy-vitality",
+      "name": "Unholy Vitality",
+      "tree": "witchcraft",
+      "kind": "passive",
+      "effect": "Regenerates Health after using Active Abilities."
+    },
+    {
+      "id": "vampirism-voracious-bite",
+      "name": "Voracious Bite",
+      "tree": "vampirism",
+      "kind": "utility",
+      "effect": "Restores Health by drinking target's blood.",
+      "cost": "1 Activation Charge"
+    },
+    {
+      "id": "swordmastery-walking-fortress",
+      "name": "Walking Fortress",
+      "tree": "swordmastery",
+      "kind": "passive",
+      "effect": "Perfect Block restores portion of Activation Charge"
+    }
+  ],
+  "perks": [
+    {
+      "id": "swordmastery-counterattack",
+      "name": "Counterattack",
+      "tree": "swordmastery",
+      "effect": "Attack after Perfect Block deals more Damage",
+      "ultimate": false
+    },
+    {
+      "id": "swordmastery-endless-effort",
+      "name": "Endless Effort",
+      "tree": "swordmastery",
+      "effect": "Increases Stamina",
+      "ultimate": false
+    },
+    {
+      "id": "swordmastery-fate-s-favour",
+      "name": "Fate's Favour",
+      "tree": "swordmastery",
+      "effect": "Chance for Weapon Critical Hit",
+      "ultimate": false
+    },
+    {
+      "id": "swordmastery-fleet-of-foot",
+      "name": "Fleet of Foot",
+      "tree": "swordmastery",
+      "effect": "Dodging costs less Stamina.",
+      "ultimate": false
+    },
+    {
+      "id": "swordmastery-growing-momentum",
+      "name": "Growing Momentum",
+      "tree": "swordmastery",
+      "effect": "Increases Weapon Damage with each Attack. Buff resets after receiving Damage.",
+      "ultimate": false
+    },
+    {
+      "id": "swordmastery-last-stand",
+      "name": "Last Stand",
+      "tree": "swordmastery",
+      "effect": "+100% Weapon Damage when Health is below 30%.",
+      "ultimate": true
+    },
+    {
+      "id": "swordmastery-master-fencer",
+      "name": "Master Fencer",
+      "tree": "swordmastery",
+      "effect": "Increases Swordmastery Ability Slots number.",
+      "ultimate": false
+    },
+    {
+      "id": "swordmastery-omniblock",
+      "name": "Omniblock",
+      "tree": "swordmastery",
+      "effect": "Omniblock costs less Stamina.",
+      "ultimate": false
+    },
+    {
+      "id": "swordmastery-pack-mule",
+      "name": "Pack Mule",
+      "tree": "swordmastery",
+      "effect": "Increases Carry Weight.",
+      "ultimate": false
+    },
+    {
+      "id": "swordmastery-perfect-block",
+      "name": "Perfect Block",
+      "tree": "swordmastery",
+      "effect": "Perfect Block restores more Stamina and Activation Charge.",
+      "ultimate": false
+    },
+    {
+      "id": "swordmastery-perfect-riposte",
+      "name": "Perfect Riposte",
+      "tree": "swordmastery",
+      "effect": "Attack in Critical Direction after Perfect Block to deal Critical Damage.",
+      "ultimate": false
+    },
+    {
+      "id": "swordmastery-precision",
+      "name": "Precision",
+      "tree": "swordmastery",
+      "effect": "Deal more Damage with Directional Attacks when directions don't repeat.",
+      "ultimate": false
+    },
+    {
+      "id": "swordmastery-renewed-focus",
+      "name": "Renewed Focus",
+      "tree": "swordmastery",
+      "effect": "Increases Activation Charge Restoration.",
+      "ultimate": false
+    },
+    {
+      "id": "swordmastery-restless-blade",
+      "name": "Restless Blade",
+      "tree": "swordmastery",
+      "effect": "Reduces Cooldowns of Swordmastery Abilities.",
+      "ultimate": false
+    },
+    {
+      "id": "swordmastery-second-skin-i",
+      "name": "Second Skin I",
+      "tree": "swordmastery",
+      "effect": "Decreases Medium Armour penalties.",
+      "ultimate": false
+    },
+    {
+      "id": "swordmastery-second-skin-ii",
+      "name": "Second Skin II",
+      "tree": "swordmastery",
+      "effect": "Decreases Heavy Armour penalties.",
+      "ultimate": false
+    },
+    {
+      "id": "swordmastery-sharp-eye",
+      "name": "Sharp Eye",
+      "tree": "swordmastery",
+      "effect": "Chance to Weaken enemy on Perfect Block. Weak enemy deals less and receives more Damage.",
+      "ultimate": false
+    },
+    {
+      "id": "swordmastery-stinging-blade",
+      "name": "Stinging Blade",
+      "tree": "swordmastery",
+      "effect": "Increases Weapon Damage.",
+      "ultimate": false
+    },
+    {
+      "id": "swordmastery-sustained-focus",
+      "name": "Sustained Focus",
+      "tree": "swordmastery",
+      "effect": "Increases Activation Charges number.",
+      "ultimate": false
+    },
+    {
+      "id": "swordmastery-sword-sage",
+      "name": "Sword Sage",
+      "tree": "swordmastery",
+      "effect": "Reset Active Ability Cooldowns on enemy kill.",
+      "ultimate": true
+    },
+    {
+      "id": "swordmastery-tactical-mastery",
+      "name": "Tactical Mastery",
+      "tree": "swordmastery",
+      "effect": "-1 Activation Charge cost to all Active Abilities (minimum 1).",
+      "ultimate": true
+    },
+    {
+      "id": "swordmastery-vigour",
+      "name": "Vigour",
+      "tree": "swordmastery",
+      "effect": "Increases All Health Types.",
+      "ultimate": false
+    },
+    {
+      "id": "vampirism-blood-theft",
+      "name": "Blood Theft",
+      "tree": "vampirism",
+      "effect": "Attacking restores Recently Lost Vampiric Health.",
+      "ultimate": false
+    },
+    {
+      "id": "vampirism-clawpierce",
+      "name": "Clawpierce",
+      "tree": "vampirism",
+      "effect": "Chance for Claw Critical Hit",
+      "ultimate": false
+    },
+    {
+      "id": "vampirism-closing-wounds",
+      "name": "Closing Wounds",
+      "tree": "vampirism",
+      "effect": "Slowly regenerates Vampiric Health.",
+      "ultimate": false
+    },
+    {
+      "id": "vampirism-crimson-feast",
+      "name": "Crimson Feast",
+      "tree": "vampirism",
+      "effect": "Grants Buffs when drinking Human Blood. Duration: 3 time segments.",
+      "ultimate": false
+    },
+    {
+      "id": "vampirism-dancing-claws",
+      "name": "Dancing Claws",
+      "tree": "vampirism",
+      "effect": "Increases Claw Critical Chance with each Attack. Buff resets after receiving Damage or after a Critical Hit.",
+      "ultimate": false
+    },
+    {
+      "id": "vampirism-dimension-reach",
+      "name": "Dimension Reach",
+      "tree": "vampirism",
+      "effect": "Decrease Planeshift Stamina cost.",
+      "ultimate": false
+    },
+    {
+      "id": "vampirism-endless-ferocity",
+      "name": "Endless Ferocity",
+      "tree": "vampirism",
+      "effect": "Reduces Cooldowns of Vampiric Abilities",
+      "ultimate": false
+    },
+    {
+      "id": "vampirism-endless-hunger",
+      "name": "Endless Hunger",
+      "tree": "vampirism",
+      "effect": "Increase Health Segments number",
+      "ultimate": false
+    },
+    {
+      "id": "vampirism-hastened-corruption",
+      "name": "Hastened Corruption",
+      "tree": "vampirism",
+      "effect": "Corruption fills up faster.",
+      "ultimate": false
+    },
+    {
+      "id": "vampirism-lasting-blood",
+      "name": "Lasting Blood",
+      "tree": "vampirism",
+      "effect": "Vampiric Abilities cost less Health.",
+      "ultimate": false
+    },
+    {
+      "id": "vampirism-lethal-crescendo",
+      "name": "Lethal Crescendo",
+      "tree": "vampirism",
+      "effect": "+20% Claw Damage after killing an enemy or depleting a Health Segment of a Boss. Can stack. Resets at the end of combat.",
+      "ultimate": true
+    },
+    {
+      "id": "vampirism-mandrake-ward",
+      "name": "Mandrake Ward",
+      "tree": "vampirism",
+      "effect": "When Coen receives a fatal blow, he instantly regains part of his Blood Bar, once per night.",
+      "ultimate": false
+    },
+    {
+      "id": "vampirism-nourishing-blood",
+      "name": "Nourishing Blood",
+      "tree": "vampirism",
+      "effect": "Blood Drinking restores more Health.",
+      "ultimate": false
+    },
+    {
+      "id": "vampirism-razorsharp-claws",
+      "name": "Razorsharp Claws",
+      "tree": "vampirism",
+      "effect": "Increases Claw Damage.",
+      "ultimate": false
+    },
+    {
+      "id": "vampirism-renounce-death",
+      "name": "Renounce Death",
+      "tree": "vampirism",
+      "effect": "Gain Lifesteal on Attacks and Immortality instead of dying once per combat. Duration 10S.",
+      "ultimate": true
+    },
+    {
+      "id": "vampirism-restless-claws",
+      "name": "Restless Claws",
+      "tree": "vampirism",
+      "effect": "Decrease Stamina cost of Claw Attacks.",
+      "ultimate": false
+    },
+    {
+      "id": "vampirism-sanguine-renewal",
+      "name": "Sanguine Renewal",
+      "tree": "vampirism",
+      "effect": "Voracious Bite resets all Active Abilities Cooldowns.",
+      "ultimate": true
+    },
+    {
+      "id": "vampirism-shadow-dweller",
+      "name": "Shadow Dweller",
+      "tree": "vampirism",
+      "effect": "Increases Shadowstep range.",
+      "ultimate": false
+    },
+    {
+      "id": "vampirism-vrakhiri-might",
+      "name": "Vrakhiri Might",
+      "tree": "vampirism",
+      "effect": "Increases Vampiric Ability Slots number.",
+      "ultimate": false
+    },
+    {
+      "id": "vampirism-wild-blood",
+      "name": "Wild Blood",
+      "tree": "vampirism",
+      "effect": "Grants Buffs when drinking Animal Blood. Duration: 3 time segments.",
+      "ultimate": false
+    },
+    {
+      "id": "witchcraft-aether-cascade",
+      "name": "Aether Cascade",
+      "tree": "witchcraft",
+      "effect": "+20% Witchcraft Ability Damage for each Witchcraft Ability used Up to 100% Witchcraft Ability Damage Resets after combat",
+      "ultimate": true
+    },
+    {
+      "id": "witchcraft-aether-flow",
+      "name": "Aether Flow",
+      "tree": "witchcraft",
+      "effect": "Reduces Witchcraft Ability Cooldown.",
+      "ultimate": false
+    },
+    {
+      "id": "witchcraft-amalgam",
+      "name": "Amalgam",
+      "tree": "witchcraft",
+      "effect": "Multiple Buffs from Consumables with time segments set as the duration can be applied simultaneously.",
+      "ultimate": false
+    },
+    {
+      "id": "witchcraft-bewitching-influence",
+      "name": "Bewitching Influence",
+      "tree": "witchcraft",
+      "effect": "Better Prices and special offers in stores.",
+      "ultimate": false
+    },
+    {
+      "id": "witchcraft-blasphemous-echo",
+      "name": "Blasphemous Echo",
+      "tree": "witchcraft",
+      "effect": "Increases Witchcraft Abilities Damage for each enemy currently affected by Witchcraft Abilities.",
+      "ultimate": false
+    },
+    {
+      "id": "witchcraft-entwined-torment",
+      "name": "Entwined Torment",
+      "tree": "witchcraft",
+      "effect": "First Witchcraft Ability used in combat targets 2 enemies.",
+      "ultimate": true
+    },
+    {
+      "id": "witchcraft-evil-eye",
+      "name": "Evil Eye",
+      "tree": "witchcraft",
+      "effect": "Chance for Critical Witchcraft Ability cast.",
+      "ultimate": false
+    },
+    {
+      "id": "witchcraft-fate-s-favour",
+      "name": "Fate's Favour",
+      "tree": "witchcraft",
+      "effect": "Chance for Weapon Critical Hit",
+      "ultimate": false
+    },
+    {
+      "id": "witchcraft-font-of-life",
+      "name": "Font of Life",
+      "tree": "witchcraft",
+      "effect": "Grants passive Regeneration of Human Health.",
+      "ultimate": false
+    },
+    {
+      "id": "witchcraft-forager",
+      "name": "Forager",
+      "tree": "witchcraft",
+      "effect": "Double Harvest chance when gathering plants.",
+      "ultimate": false
+    },
+    {
+      "id": "witchcraft-forbidden-sigils",
+      "name": "Forbidden Sigils",
+      "tree": "witchcraft",
+      "effect": "Increases Witchcraft Ability Slots number.",
+      "ultimate": false
+    },
+    {
+      "id": "witchcraft-frugal-witchcraft",
+      "name": "Frugal Witchcraft",
+      "tree": "witchcraft",
+      "effect": "Defeating an enemy with a Witchcraft Ability restores Health based on the amount spent to cast it.",
+      "ultimate": false
+    },
+    {
+      "id": "witchcraft-herbal-remedies-ii",
+      "name": "Herbal Remedies II",
+      "tree": "witchcraft",
+      "effect": "Additional instant Heal from all Consumables.",
+      "ultimate": false
+    },
+    {
+      "id": "witchcraft-lasting-malediction",
+      "name": "Lasting Malediction",
+      "tree": "witchcraft",
+      "effect": "Witchcraft Abilities last longer.",
+      "ultimate": false
+    },
+    {
+      "id": "witchcraft-medicus-i",
+      "name": "Medicus I",
+      "tree": "witchcraft",
+      "effect": "Increases the limit of Consumables in a Quickslot.",
+      "ultimate": false
+    },
+    {
+      "id": "witchcraft-medicus-ii",
+      "name": "Medicus II",
+      "tree": "witchcraft",
+      "effect": "Craft more Items in a single batch.",
+      "ultimate": false
+    },
+    {
+      "id": "witchcraft-nourishing-blood",
+      "name": "Nourishing Blood",
+      "tree": "witchcraft",
+      "effect": "Blood Drinking restores more Health.",
+      "ultimate": false
+    },
+    {
+      "id": "witchcraft-potent-blood",
+      "name": "Potent Blood",
+      "tree": "witchcraft",
+      "effect": "Chance for Witchcraft Abilities to not cost Health.",
+      "ultimate": false
+    },
+    {
+      "id": "witchcraft-runic-bulwark",
+      "name": "Runic Bulwark",
+      "tree": "witchcraft",
+      "effect": "15% chance to apply a random Hex to the opponent on a Perfect Block.",
+      "ultimate": true
+    },
+    {
+      "id": "witchcraft-unholy-fervour",
+      "name": "Unholy Fervour",
+      "tree": "witchcraft",
+      "effect": "Chance for a refund of an Activation Charge after Witchcraft Ability use.",
+      "ultimate": false
+    },
+    {
+      "id": "witchcraft-unnatural-resilience",
+      "name": "Unnatural Resilience",
+      "tree": "witchcraft",
+      "effect": "Grants Armour when any Witchcraft Ability is active.",
+      "ultimate": false
+    },
+    {
+      "id": "witchcraft-witchcraft-mastery",
+      "name": "Witchcraft Mastery",
+      "tree": "witchcraft",
+      "effect": "Witchcraft Abilities deal more Damage. ### Perk Types in Blood of Dawnwalker",
+      "ultimate": false
+    }
+  ]
+}

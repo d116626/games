@@ -1,0 +1,840 @@
+{
+  "difficulty": "5/10",
+  "hours": "about 40",
+  "points": 1290,
+  "counts": {
+    "platinum": 1,
+    "gold": 3,
+    "silver": 5,
+    "bronze": 38
+  },
+  "stages": [
+    {
+      "id": 1,
+      "title": "Set difficulty to Duelist and save your mother",
+      "summary": "Pick Duelist before you start and never change it. Save your mother in the prologue.",
+      "points": [
+        "Duelist is the hardest preset; changing it later makes it Custom and you lose Uphill Battle.",
+        "Give your mother Anca's remedy (hot water and three spoonfuls of herbs) before sunset.",
+        "Help Anca when the tree falls on her house if you want the romance scene."
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Level up Coen",
+      "summary": "Spend about 18-20 days on Court Activities, camps and upgrades. Be level 30-35 before the first boss.",
+      "points": [
+        "Boss levels: Ambrus 25, Xanthe 28, Bakir 30 (Xanthe's soldiers are stronger, but she herself is the weakest).",
+        "Spend only 3-4 days on abilities and perks, or you will not reach level 50 in 30 days.",
+        "Most side-quest, collectable and exploration trophies fit here."
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Defeat the boyars and deal with Brencis",
+      "summary": "At about level 35, drop the three boyars in a night or two to reach Infamy 9 and open the first ending.",
+      "points": [
+        "Manual save before the meeting with Brencis.",
+        "Going too far in Lacra's or Crake's questline closes this meeting."
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Reach the other endings",
+      "summary": "Reload the pre-meeting save, drop the difficulty to Easy (Uphill Battle is already done) and collect the remaining endings.",
+      "points": [
+        "The Folk Hero: refuse the deal and fight Brencis.",
+        "The Patricide and The Knyazmaker: long questlines, many segments. Save before the last quest of each.",
+        "A Hero They Deserve and Together Forever are escapes and do not free your family."
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Clean up",
+      "summary": "Use the remaining days to level up and finish anything missing.",
+      "points": []
+    }
+  ],
+  "trophies": [
+    {
+      "id": 1,
+      "name": "Every Last Drop",
+      "description": "Collect all trophies.",
+      "grade": "platinum",
+      "icon": "games/blood-of-dawnwalker/trophies/01.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/1-every-last-drop",
+      "psnRate": 1.3,
+      "psnTier": "Ultra Rare",
+      "profilesRate": 15.64,
+      "profilesTier": "Rare",
+      "tags": [],
+      "stage": 5,
+      "tip": "Platinum: all other 46 trophies."
+    },
+    {
+      "id": 2,
+      "name": "Selfish",
+      "description": "Sell fish to a fishmonger.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/02.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/2-selfish",
+      "psnRate": 5.0,
+      "psnTier": "Ultra Rare",
+      "profilesRate": 32.44,
+      "profilesTier": "Uncommon",
+      "tags": [
+        "Missable"
+      ],
+      "stage": 2,
+      "tip": "Buy dried fish from the fishmonger (day market, north-east Svartrau City) and sell it back. At Infamy 9 the city gates close, so do this before."
+    },
+    {
+      "id": 3,
+      "name": "Throne of Thorns",
+      "description": "Reach peak Infamy in Vale Sangora.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/03.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/3-throne-of-thorns",
+      "psnRate": 33.0,
+      "psnTier": "Rare",
+      "profilesRate": 43.19,
+      "profilesTier": "Uncommon",
+      "tags": [],
+      "stage": 2,
+      "tip": "Reach Infamy 9 (Edict IX) by clearing camps, ruining Court Activities and defeating the boyars. The level never goes down."
+    },
+    {
+      "id": 4,
+      "name": "Uphill Battle",
+      "description": "Complete the entire game by saving the people of Laslea on Duelist Difficulty preset.",
+      "grade": "gold",
+      "icon": "games/blood-of-dawnwalker/trophies/04.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/4-uphill-battle",
+      "psnRate": 2.0,
+      "psnTier": "Ultra Rare",
+      "profilesRate": 18.74,
+      "profilesTier": "Rare",
+      "tags": [
+        "Missable",
+        "Difficulty Specific",
+        "Time Limited"
+      ],
+      "stage": 3,
+      "tip": "Finish on Duelist and free your family with any of the 4 main endings, before day 30. Never change the difficulty (it becomes Custom and the trophy is lost). Reach level 20-25 first with Court Activities and camps, then take down the three boyars; Infamy 9 unlocks The Turncoat, the ending the PSNProfiles guide uses for this trophy."
+    },
+    {
+      "id": 5,
+      "name": "Better Safe than Sorry",
+      "description": "Behead an enemy with Artery Strike while they're also hexed with Burning Blood.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/05.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/5-better-safe-than-sorry",
+      "psnRate": 9.5,
+      "psnTier": "Very Rare",
+      "profilesRate": 32.04,
+      "profilesTier": "Uncommon",
+      "tags": [],
+      "stage": 5,
+      "tip": "Day only. Curse an enemy with Burning Blood, then land Artery Strike (decapitation chance 10% at rank 1, 70% at max rank; much higher on low-health enemies). Artery Strike books drop from camps or are sold by sword teachers."
+    },
+    {
+      "id": 6,
+      "name": "Make It Rain",
+      "description": "Cause an enemy to explode using an Active Ability.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/06.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/6-make-it-rain",
+      "psnRate": 23.8,
+      "psnTier": "Rare",
+      "profilesRate": 36.5,
+      "profilesTier": "Uncommon",
+      "tags": [],
+      "stage": 5,
+      "tip": "Night only. Learn Blood Surge (drink Xanthe's blood, or take her blood sample from the Treasury in Svartrau City). Cast it on a weak, low-health enemy without a skull."
+    },
+    {
+      "id": 7,
+      "name": "Absolutely Insatiable",
+      "description": "Have 3 Passive Abilities equipped at the same time.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/07.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/7-absolutely-insatiable",
+      "psnRate": 60.0,
+      "psnTier": "Common",
+      "profilesRate": 64.64,
+      "profilesTier": "Common",
+      "tags": [],
+      "stage": 2,
+      "tip": "Equip 3 passive abilities (for example Swiftness, Walking Fortress, Scarlet Shield) in the active ability slots."
+    },
+    {
+      "id": 8,
+      "name": "Arbiter's Blade",
+      "description": "Restore St Mihai's sword to its former glory.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/08.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/8-arbiters-blade",
+      "psnRate": 41.7,
+      "psnTier": "Rare",
+      "profilesRate": 47.51,
+      "profilesTier": "Uncommon",
+      "tags": [
+        "Side Quest"
+      ],
+      "stage": 2,
+      "tip": "Needs the 3 Broken Sword shards (caves in Maragir Wealds, the west fortress and east of St. Tyna's Grove), the hilt from Mihai (Svartrau Cathedral, at night) and the blacksmith Uriashi in Briar Sloughs, then a blessing in her cave."
+    },
+    {
+      "id": 9,
+      "name": "Arbiter's Regalia",
+      "description": "Gather all the parts of the Arbiter's set of armour and unlock their full potential.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/09.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/9-arbiters-regalia",
+      "psnRate": 23.9,
+      "psnTier": "Rare",
+      "profilesRate": 37.53,
+      "profilesTier": "Uncommon",
+      "tags": [
+        "Missable",
+        "Side Quest",
+        "Collectable"
+      ],
+      "stage": 2,
+      "tip": "Craft with Uriashi once Edict reaches 4-6 and the letter arrives. Items: Large Lizard Moult, Relic of St. Dasius, Flask of Quicksilver (Home Sweet Home at the Silts tower) and Silk Threads (Sanzhana quest)."
+    },
+    {
+      "id": 10,
+      "name": "Gear of the Gods",
+      "description": "Fill all equipment slots with Legendary items.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/10.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/10-gear-of-the-gods",
+      "psnRate": 16.1,
+      "psnTier": "Rare",
+      "profilesRate": 35.22,
+      "profilesTier": "Uncommon",
+      "tags": [
+        "Missable",
+        "Collectable"
+      ],
+      "stage": 2,
+      "tip": "Equip 4 armour pieces, 1 sword, 1 necklace and 2 rings of every rarity tier. Never sell legendary items: most have a single copy."
+    },
+    {
+      "id": 11,
+      "name": "Capture the Flag",
+      "description": "Tear down all of Brencis's flags.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/11.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/11-capture-the-flag",
+      "psnRate": 10.6,
+      "psnTier": "Very Rare",
+      "profilesRate": 35.33,
+      "profilesTier": "Uncommon",
+      "tags": [],
+      "stage": 2,
+      "tip": "5 banners over the Svartrau City gates (4 entrance + 1 inner). Each costs 1 segment and gives 100 XP. Reach the gatehouses via the wall stairs (day) or by teleporting (night)."
+    },
+    {
+      "id": 12,
+      "name": "Bird's-Eye View",
+      "description": "Climb all the towers and scout the surrounding areas.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/12.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/12-birds-eye-view",
+      "psnRate": 15.5,
+      "psnTier": "Rare",
+      "profilesRate": 41.75,
+      "profilesTier": "Uncommon",
+      "tags": [
+        "Missable"
+      ],
+      "stage": 2,
+      "tip": "11 towers, one per region plus three inside Svartrau City. Night only (needs Teleportation). Also reveals the points of interest of the region."
+    },
+    {
+      "id": 13,
+      "name": "Feral Hunger",
+      "description": "Lose control and drain someone outside of combat.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/13.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/13-feral-hunger",
+      "psnRate": 47.0,
+      "psnTier": "Rare",
+      "profilesRate": 56.29,
+      "profilesTier": "Common",
+      "tags": [
+        "Missable"
+      ],
+      "tip": "Night only, with very low health (last health segment, about 2-3%). Lose control in a dialogue and drain someone. Closing Wounds makes this nearly impossible; do not pick the 'Give Me Your Hunger' option yourself."
+    },
+    {
+      "id": 14,
+      "name": "Dead Man Talkin'",
+      "description": "Speak with a dead person using the Compel Soul Witchcraft Ability.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/14.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/14-dead-man-talkin",
+      "psnRate": 84.7,
+      "psnTier": "Common",
+      "profilesRate": 86.15,
+      "profilesTier": "Common",
+      "tags": [
+        "Story"
+      ],
+      "stage": 1,
+      "tip": "Story trophy during 'Smoke and Ashes'. Anca teaches Compel Soul (day only)."
+    },
+    {
+      "id": 15,
+      "name": "Master of Arms",
+      "description": "Unlock an Ultimate Perk in the Swordmastery tree.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/15.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/15-master-of-arms",
+      "psnRate": 17.5,
+      "psnTier": "Rare",
+      "profilesRate": 37.64,
+      "profilesTier": "Uncommon",
+      "tags": [
+        "Missable"
+      ],
+      "stage": 5,
+      "tip": "Choose 1 Ultimate in Swordmastery. Needs 35 points spent in the tree plus the perk itself. Skill points are too few for all three trees."
+    },
+    {
+      "id": 16,
+      "name": "Arch Warlock",
+      "description": "Unlock an Ultimate Perk in the Witchcraft tree.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/16.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/16-arch-warlock",
+      "psnRate": 3.1,
+      "psnTier": "Ultra Rare",
+      "profilesRate": 23.84,
+      "profilesTier": "Uncommon",
+      "tags": [
+        "Missable"
+      ],
+      "stage": 5,
+      "tip": "Choose 1 Ultimate in Witchcraft. Same cost as Swordmastery; save before spending and use a separate save per tree."
+    },
+    {
+      "id": 17,
+      "name": "Creature of the Night",
+      "description": "Unlock an Ultimate Perk in the Vampirism tree.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/17.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/17-creature-of-the-night",
+      "psnRate": 18.8,
+      "psnTier": "Rare",
+      "profilesRate": 35.29,
+      "profilesTier": "Uncommon",
+      "tags": [
+        "Missable"
+      ],
+      "stage": 5,
+      "tip": "Choose 1 Ultimate in Vampirism. Needs Corruption level 15: drink blood, use Voracious Bite and consumables."
+    },
+    {
+      "id": 18,
+      "name": "Glass Ceiling",
+      "description": "Reach Level 50.",
+      "grade": "silver",
+      "icon": "games/blood-of-dawnwalker/trophies/18.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/18-glass-ceiling",
+      "psnRate": 3.0,
+      "psnTier": "Ultra Rare",
+      "profilesRate": 19.51,
+      "profilesTier": "Rare",
+      "tags": [
+        "Grind"
+      ],
+      "stage": 5,
+      "tip": "The longest grind: all quests and activities are not enough XP. Be picky with skill points (each perk costs time), finish the Sanzhani chain for an extra day and farm about 4000 XP from city guards at night."
+    },
+    {
+      "id": 19,
+      "name": "A Dawnwalker is Born",
+      "description": "Complete the prologue and venture out into the open world.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/19.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/19-a-dawnwalker-is-born",
+      "psnRate": 83.5,
+      "psnTier": "Common",
+      "profilesRate": 84.92,
+      "profilesTier": "Common",
+      "tags": [
+        "Story"
+      ],
+      "stage": 1
+    },
+    {
+      "id": 20,
+      "name": "A Hero They Deserve",
+      "description": "Escape Vale Sangora, escape responsibility. Phew.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/20.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/20-a-hero-they-deserve",
+      "psnRate": 10.5,
+      "psnTier": "Very Rare",
+      "profilesRate": 35.53,
+      "profilesTier": "Uncommon",
+      "tags": [
+        "Missable"
+      ],
+      "stage": 4,
+      "tip": "Needs Planeshift and Shadowstep, so at night. Leave through the broken bridge west of Briar Sloughs or the main gate south-east of Tantari Woods, then pick 'leave the valley forever'."
+    },
+    {
+      "id": 21,
+      "name": "The Right Fist of the Knyaz",
+      "description": "Kill Ambrus in the duel. Wipe that smirk off his face.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/21.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/21-the-right-fist-of-the-knyaz",
+      "psnRate": 54.7,
+      "psnTier": "Common",
+      "profilesRate": 60.73,
+      "profilesTier": "Common",
+      "tags": [
+        "Missable"
+      ],
+      "stage": 3,
+      "tip": "Kill Ambrus in the duel at Maragir: ruin his activities to about 70% anger, ring the bell at night. Killing him at the mansion or in the finale gives nothing. Poisoning Iulian (The Bittersweet Toast) weakens him for 48 segments."
+    },
+    {
+      "id": 22,
+      "name": "The Mad Khan",
+      "description": "Kill Bakir during the games. Vale Sangora will need a new game master.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/22.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/22-the-mad-khan",
+      "psnRate": 39.4,
+      "psnTier": "Rare",
+      "profilesRate": 47.77,
+      "profilesTier": "Uncommon",
+      "tags": [
+        "Missable"
+      ],
+      "stage": 3,
+      "tip": "Kill Bakir during the Lunar Game (Farkas invites you at about 70% anger). Do not use vampire abilities in the maze, or he finds you and you fight his guards first."
+    },
+    {
+      "id": 23,
+      "name": "The Dark Mistress",
+      "description": "Neutralise the threat posed by Xanthe.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/23.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/23-the-dark-mistress",
+      "psnRate": 45.8,
+      "psnTier": "Rare",
+      "profilesRate": 50.98,
+      "profilesTier": "Common",
+      "tags": [
+        "Missable"
+      ],
+      "stage": 3,
+      "tip": "At about 70% anger, guards ask for help finding lost girls and give a lantern (The Cycle of Love). You can fight or ally with her. Her mansion has two legendary items you cannot return for."
+    },
+    {
+      "id": 24,
+      "name": "Sins of the Past",
+      "description": "Accompany Anca on her daring adventure to the Font of Life.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/24.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/24-sins-of-the-past",
+      "psnRate": 49.7,
+      "psnTier": "Rare",
+      "profilesRate": 54.12,
+      "profilesTier": "Common",
+      "tags": [
+        "Missable",
+        "Side Quest"
+      ],
+      "stage": 2,
+      "tip": "Anca's four-quest chain (22 segments, 1800 XP). Do not drain Anca or progress the story too far; she dies if you leave her without clearing the rooms she asks for."
+    },
+    {
+      "id": 25,
+      "name": "Misery Loves Company",
+      "description": "Discard common sense, follow Lacra, and find the mandrake.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/25.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/25-misery-loves-company",
+      "psnRate": 32.7,
+      "psnTier": "Rare",
+      "profilesRate": 41.63,
+      "profilesTier": "Uncommon",
+      "tags": [
+        "Missable",
+        "Side Quest"
+      ],
+      "stage": 4,
+      "tip": "Reach Lacra's fifth quest (The Night of Horrors). Do not start the sixth quest, Midnight Reckoning, without a manual save: it triggers the ending."
+    },
+    {
+      "id": 26,
+      "name": "The Manumit",
+      "description": "Learn all of Crake's secrets.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/26.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/26-the-manumit",
+      "psnRate": 11.3,
+      "psnTier": "Very Rare",
+      "profilesRate": 30.09,
+      "profilesTier": "Uncommon",
+      "tags": [
+        "Missable",
+        "Side Quest"
+      ],
+      "stage": 4,
+      "tip": "Reach the eighth Crake quest (A Closer Look). Do not start 'Rise at Dawn' without a manual save: it triggers the ending."
+    },
+    {
+      "id": 27,
+      "name": "The Turncoat",
+      "description": "Betray your allies to strike a deal with Brencis and get your family back.",
+      "grade": "silver",
+      "icon": "games/blood-of-dawnwalker/trophies/27.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/27-the-turncoat",
+      "psnRate": 9.9,
+      "psnTier": "Very Rare",
+      "profilesRate": 32.05,
+      "profilesTier": "Uncommon",
+      "tags": [
+        "Missable"
+      ],
+      "stage": 3,
+      "tip": "At Infamy 9 Brencis invites you to a meeting for 10 nights. Accept the deal ('I just want my family back', 'I'll do it'), and do not pick up a weapon. Save first."
+    },
+    {
+      "id": 28,
+      "name": "The Patricide",
+      "description": "Defeat Brencis together with Lacra.",
+      "grade": "silver",
+      "icon": "games/blood-of-dawnwalker/trophies/28.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/28-the-patricide",
+      "psnRate": 23.9,
+      "psnTier": "Rare",
+      "profilesRate": 35.67,
+      "profilesTier": "Uncommon",
+      "tags": [
+        "Missable"
+      ],
+      "stage": 4,
+      "tip": "Finish Lacra's six quests (22 segments). Midnight Reckoning triggers the ending, so save before it."
+    },
+    {
+      "id": 29,
+      "name": "The Knyazmaker",
+      "description": "Defeat Brencis together with Crake.",
+      "grade": "silver",
+      "icon": "games/blood-of-dawnwalker/trophies/29.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/29-the-knyazmaker",
+      "psnRate": 10.3,
+      "psnTier": "Very Rare",
+      "profilesRate": 28.75,
+      "profilesTier": "Uncommon",
+      "tags": [
+        "Missable"
+      ],
+      "stage": 4,
+      "tip": "Finish Crake's ten quests (40 segments). Fall Before Dusk is the ending; save before Rise at Dawn."
+    },
+    {
+      "id": 30,
+      "name": "The Folk Hero",
+      "description": "Defeat Brencis on your own. All the glory is yours. Yours alone. Nobody else's.",
+      "grade": "silver",
+      "icon": "games/blood-of-dawnwalker/trophies/30.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/30-the-folk-hero",
+      "psnRate": 15.2,
+      "psnTier": "Rare",
+      "profilesRate": 33.32,
+      "profilesTier": "Uncommon",
+      "tags": [
+        "Missable"
+      ],
+      "stage": 4,
+      "tip": "At Brencis's meeting pick 'Enough. Time to end this.' and fight him alone. Reload your pre-meeting save after getting a first ending."
+    },
+    {
+      "id": 31,
+      "name": "In the Nick of Time",
+      "description": "Rescue your family before the time runs out.",
+      "grade": "gold",
+      "icon": "games/blood-of-dawnwalker/trophies/31.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/31-in-the-nick-of-time",
+      "psnRate": 34.0,
+      "psnTier": "Rare",
+      "profilesRate": 43.72,
+      "profilesTier": "Uncommon",
+      "tags": [
+        "Missable"
+      ],
+      "stage": 3,
+      "tip": "Awarded for any of the 4 endings that free your family before day 30."
+    },
+    {
+      "id": 32,
+      "name": "The Blood of Dawnwalker",
+      "description": "Finish the story.",
+      "grade": "gold",
+      "icon": "games/blood-of-dawnwalker/trophies/32.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/32-the-blood-of-dawnwalker",
+      "psnRate": 36.3,
+      "psnTier": "Rare",
+      "profilesRate": 49.09,
+      "profilesTier": "Uncommon",
+      "tags": [
+        "Story"
+      ],
+      "stage": 3
+    },
+    {
+      "id": 33,
+      "name": "Untouchable",
+      "description": "Perform 5 Perfect Blocks in a row.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/33.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/33-untouchable",
+      "psnRate": 77.9,
+      "psnTier": "Common",
+      "profilesRate": 82.73,
+      "profilesTier": "Common",
+      "tags": [],
+      "stage": 2,
+      "tip": "5 perfect blocks in a row (L1 plus the right stick direction as the hit lands). A dash resets the chain. Easier after about 10 hours."
+    },
+    {
+      "id": 34,
+      "name": "Delivery Delay",
+      "description": "Destroy 8 vrakhiri transports.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/34.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/34-delivery-delay",
+      "psnRate": 18.7,
+      "psnTier": "Rare",
+      "profilesRate": 35.59,
+      "profilesTier": "Uncommon",
+      "tags": [],
+      "stage": 2,
+      "tip": "Disrupt 8 of the 10 Vrakhiri transports (they roam; reveal them from region towers). Ambrus 4, Bakir 2, Xanthe 4."
+    },
+    {
+      "id": 35,
+      "name": "Shadow Roamer",
+      "description": "Travel 1000 metres using Vampiric Abilities.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/35.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/35-shadow-roamer",
+      "psnRate": 71.5,
+      "psnTier": "Common",
+      "profilesRate": 73.92,
+      "profilesTier": "Common",
+      "tags": [],
+      "stage": 2,
+      "tip": "1000 m with Shadowstep, Planeshift or Shapeshift (Shapeshift needs Corruption level 2 and 1 skill point)."
+    },
+    {
+      "id": 36,
+      "name": "Miser",
+      "description": "Accumulate 5000 denarii. What are you planning to buy, mate?",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/36.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/36-miser",
+      "psnRate": 49.1,
+      "psnTier": "Rare",
+      "profilesRate": 57.38,
+      "profilesTier": "Common",
+      "tags": [],
+      "stage": 2,
+      "tip": "Hold 5000 denarii at once. Loot camps after level 35 (epic items sell for 700-800) and keep legendaries."
+    },
+    {
+      "id": 37,
+      "name": "Balanced Diet",
+      "description": "Quench your thirst by drinking 10 animals, humans, or monsters.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/37.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/37-balanced-diet",
+      "psnRate": 84.6,
+      "psnTier": "Common",
+      "profilesRate": 86.54,
+      "profilesTier": "Common",
+      "tags": [],
+      "stage": 1,
+      "tip": "Drink 10 creatures (rats in the first cave count). Voracious Bite kills count."
+    },
+    {
+      "id": 38,
+      "name": "Mastery",
+      "description": "Level up one Swordmastery, Witchcraft, or Vampiric Ability to its full potential.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/38.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/38-mastery",
+      "psnRate": 32.0,
+      "psnTier": "Rare",
+      "profilesRate": 44.05,
+      "profilesTier": "Uncommon",
+      "tags": [],
+      "stage": 5,
+      "tip": "Fully upgrade one ability (4 upgrades, 4 skill points, 5 segments). Vampirism abilities only need Corruption, not books."
+    },
+    {
+      "id": 39,
+      "name": "The Unquenchable Thirst",
+      "description": "Find out the truth about Vicho.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/39.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/39-the-unquenchable-thirst",
+      "psnRate": 19.1,
+      "psnTier": "Rare",
+      "profilesRate": 35.64,
+      "profilesTier": "Uncommon",
+      "tags": [
+        "Missable",
+        "Side Quest"
+      ],
+      "stage": 2,
+      "tip": "Vicho's chain begins after Lacra's first quest ('A Study in Crimson' in central Svartrau City). Buy his legendary items before the ending: some choices make him die. The quest has a 5-day gap, so start early."
+    },
+    {
+      "id": 40,
+      "name": "The Outcast",
+      "description": "Help Ocha find her new destiny.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/40.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/40-the-outcast",
+      "psnRate": 41.0,
+      "psnTier": "Rare",
+      "profilesRate": 49.33,
+      "profilesTier": "Uncommon",
+      "tags": [
+        "Missable",
+        "Side Quest"
+      ],
+      "stage": 4,
+      "tip": "Finish 'The Heart Wants What It Wants' (tavern in Svartrau City). Best after Lacra's 'Song of the Mountain' so Ocha's village gives more XP."
+    },
+    {
+      "id": 41,
+      "name": "Together Forever",
+      "description": "Stay with your family. It's safe if you stick together. You'll never lose them again. Ever.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/41.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/41-together-forever",
+      "psnRate": 3.9,
+      "psnTier": "Ultra Rare",
+      "profilesRate": 25.67,
+      "profilesTier": "Uncommon",
+      "tags": [
+        "Missable",
+        "Side Quest"
+      ],
+      "stage": 4,
+      "tip": "'Home Sweet Home' at the Silts tower (6 segments to enter). Ignore the well and repeat the loop until you can stay with your family. Sources disagree: Steam and Fextralife say 4 full loops and the choice appears on the 5th; PSNProfiles says 5 rescues and the 6th entry traps you."
+    },
+    {
+      "id": 42,
+      "name": "The Tsarina's Favourite Human",
+      "description": "Complete every task given by the sanzhani.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/42.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/42-the-tsarinas-favourite-human",
+      "psnRate": 12.4,
+      "psnTier": "Very Rare",
+      "profilesRate": 32.13,
+      "profilesTier": "Uncommon",
+      "tags": [
+        "Missable",
+        "Side Quest"
+      ],
+      "stage": 2,
+      "tip": "Complete the Sanzhani chain: 'Good Home' in Svartrau Outskirts unlocks four more quests. It can give back an extra day."
+    },
+    {
+      "id": 43,
+      "name": "Realmwalker",
+      "description": "Visit Anachora for the first time.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/43.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/43-realmwalker",
+      "psnRate": 57.2,
+      "psnTier": "Common",
+      "profilesRate": 60.98,
+      "profilesTier": "Common",
+      "tags": [
+        "Story"
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Antique Aficionado",
+      "description": "Discover Ancient Ruins.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/44.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/44-antique-aficionado",
+      "psnRate": 70.1,
+      "psnTier": "Common",
+      "profilesRate": 74.5,
+      "profilesTier": "Common",
+      "tags": [
+        "Missable"
+      ],
+      "stage": 2
+    },
+    {
+      "id": 45,
+      "name": "Big-City Living",
+      "description": "Visit the City of Svartrau.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/45.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/45-big-city-living",
+      "psnRate": 66.0,
+      "psnTier": "Common",
+      "profilesRate": 68.21,
+      "profilesTier": "Common",
+      "tags": [
+        "Story"
+      ],
+      "stage": 2
+    },
+    {
+      "id": 46,
+      "name": "Tour Guide Training",
+      "description": "Visit all of Vale Sangora's villages.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/46.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/46-tour-guide-training",
+      "psnRate": 28.0,
+      "psnTier": "Rare",
+      "profilesRate": 41.86,
+      "profilesTier": "Uncommon",
+      "tags": [
+        "Missable"
+      ],
+      "stage": 4,
+      "tip": "Visit every village in Vale Sangora."
+    },
+    {
+      "id": 47,
+      "name": "Smuggler",
+      "description": "Earn 1000 denarii selling silver.",
+      "grade": "bronze",
+      "icon": "games/blood-of-dawnwalker/trophies/47.png",
+      "url": "https://psnprofiles.com/trophy/42703-the-blood-of-dawnwalker/47-smuggler",
+      "psnRate": 27.8,
+      "psnTier": "Rare",
+      "profilesRate": 44.24,
+      "profilesTier": "Uncommon",
+      "tags": [
+        "Missable"
+      ],
+      "stage": 2,
+      "tip": "Earn 1000 denarii from selling silver trade goods."
+    }
+  ]
+}

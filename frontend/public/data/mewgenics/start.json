@@ -2,27 +2,67 @@
   "steps": [
     {
       "title": "Collect strays, not perfection",
-      "text": "Early on you have few rooms and little furniture, so breeding is slow. Take every stray out on adventures; the game is about numbers at this stage."
+      "text": "Early on you have few rooms and little furniture, so breeding is slow. Take every stray out on adventures and keep them unless you run out of space; the game is about numbers at this stage. Strays left outside the house are not fed.",
+      "items": []
     },
     {
       "title": "Check the kittens every morning",
-      "text": "Look over the night's kittens. Poor stats, a bad mutation or a disorder that will hurt: send them to Tink. Ten kittens unlock the first details on your cats."
+      "text": "Look over the night's kittens. Poor stats, a bad mutation or a disorder that will hurt: send them to Tink. Ten kittens unlock the first details on your cats, and his first two upgrades show base stats and inbreeding.",
+      "items": []
     },
     {
       "title": "Feed Butch first",
-      "text": "Send him cats that have been to the Sewers or Junkyard. Storage is the first real bottleneck, because the Boneyard and Junkyard drop very good items."
+      "text": "Send him cats that have been to the Sewers or Junkyard. Storage is the first real bottleneck, because the Boneyard and Junkyard drop very good items.",
+      "items": []
     },
     {
       "title": "Then Tracy, Frank and Jack",
-      "text": "Tracy wants cats that are 5+ days old and gives food storage, totems and blank collars. Frank gives rooms. Jack takes injured cats. The basic upgrades of these vendors cost about 45 cats."
+      "text": "Tracy gives food storage, totems and blank collars. Frank gives rooms. Jack sells furniture. The basic upgrades of these vendors cost about 45 cats in total. Storage upgrades only work once you place them in the house like furniture.",
+      "items": []
     },
     {
       "title": "Buy stimulation and appeal",
-      "text": "Furniture with Stimulation improves the stats and abilities that kittens inherit; Appeal brings better strays. Stock refreshes every Sunday, so buy food only in a way that lets you refresh the shop."
+      "text": "Furniture with Stimulation improves the stats and abilities that kittens inherit; Appeal brings better strays. Stock refreshes every Sunday, so buy food only in a way that lets you refresh the shop.",
+      "items": []
     },
     {
       "title": "Read the enemies, take the hard path when sure",
-      "text": "Right-click an enemy to see its movement and attack range. The hard path adds one fight and so one level-up, but skipping it is fine if your team is not ready."
+      "text": "Right-click an enemy to see its movement and attack range. The hard path adds one fight and so one level-up, but skipping it is fine if your team is not ready.",
+      "items": []
+    },
+    {
+      "title": "Know who takes which cats",
+      "text": "Do not wait for an old cat to die: donate it to the right neighbour first. Who takes what:",
+      "items": [
+        {
+          "name": "Butch",
+          "text": "cats that have adventured (Sewers or Junkyard first)."
+        },
+        {
+          "name": "Frank",
+          "text": "any retired cat."
+        },
+        {
+          "name": "Tracy",
+          "text": "cats that are 5+ days old."
+        },
+        {
+          "name": "Jack",
+          "text": "injured cats."
+        },
+        {
+          "name": "Tink",
+          "text": "kittens."
+        },
+        {
+          "name": "Dr. Beanies",
+          "text": "mutated, deformed, diseased or disordered cats, 5 per quest item."
+        },
+        {
+          "name": "Mystery Man",
+          "text": "cats that died, on a run or at home."
+        }
+      ]
     }
   ],
   "npcs": [

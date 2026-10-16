@@ -1,5 +1,6 @@
 "use client";
 
+import { BicepsFlexed, BowArrow, Clover, Heart, Lightbulb, Mouth, Footprints, type LucideIcon } from "lucide-react";
 import { useState } from "react";
 import { Breeding } from "@/games/mewgenics/components/breeding";
 import { CatLab } from "@/games/mewgenics/components/cat-lab";
@@ -9,6 +10,23 @@ import { IndexGroup } from "@/games/mewgenics/components/index-group";
 import { TrophyLink } from "@/games/mewgenics/components/trophy-link";
 import { breeding, classes, trophyIcon } from "@/games/mewgenics/lib/data";
 import { cn } from "@/lib/utils";
+
+/** Ícone de cada atributo, na ordem em que aparecem no gato. São ícones do lucide, não os do jogo; o pareamento é dedução pelos desenhos. */
+const STAT_ICON: Record<string, LucideIcon> = {
+  Strength: BicepsFlexed,
+  Dexterity: BowArrow,
+  Constitution: Heart,
+  Intelligence: Lightbulb,
+  Speed: Footprints,
+  Charisma: Mouth,
+  Luck: Clover,
+};
+
+const STAT_ORDER = Object.keys(STAT_ICON);
+const STAT_RULES = [...classes.statRules].sort((a, b) => {
+  const rank = (stat: string) => (STAT_ORDER.includes(stat) ? STAT_ORDER.indexOf(stat) : STAT_ORDER.length);
+  return rank(a.stat) - rank(b.stat);
+});
 
 const ROLES = ["Damage", "Tank", "Support", "Control"];
 const KITTENS = { yes: "Kittens", no: "No kittens", rare: "Rarely" } as const;
@@ -106,12 +124,18 @@ export function Cats() {
 
       <IndexGroup id="cats-stats" title="Stat rules" count={classes.statRules.length}>
         <ul className="divide-y divide-border border-y-2 border-foreground">
-          {classes.statRules.map((r) => (
-            <li key={r.stat} className="grid gap-x-6 py-2.5 sm:grid-cols-[11rem_1fr]">
-              <span className="font-extrabold">{r.stat}</span>
-              <span>{r.rule}</span>
-            </li>
-          ))}
+          {STAT_RULES.map((r) => {
+            const Icon = STAT_ICON[r.stat];
+            return (
+              <li key={r.stat} className="grid gap-x-6 py-2.5 sm:grid-cols-[11rem_1fr]">
+                <span className="flex items-center gap-2 font-extrabold">
+                  {Icon && <Icon aria-hidden className="size-5 shrink-0" />}
+                  {r.stat}
+                </span>
+                <span>{r.rule}</span>
+              </li>
+            );
+          })}
         </ul>
       </IndexGroup>
     </div>

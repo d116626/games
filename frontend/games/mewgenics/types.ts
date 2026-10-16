@@ -23,7 +23,7 @@ export type TrophyDataset = {
   trophies: Trophy[];
 };
 
-export type Step = { title: string; text: string };
+export type Step = { title: string; text: string; items: { name: string; text: string }[] };
 export type Npc = {
   id: string;
   name: string;

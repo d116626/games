@@ -167,6 +167,15 @@ export function Guide() {
               <div>
                 <h4 className="text-xl font-extrabold leading-snug">{s.title}</h4>
                 <p className="mt-1 max-w-3xl text-[1.02rem]">{s.text}</p>
+                {s.items.length > 0 && (
+                  <ul className="mt-2 max-w-3xl list-disc space-y-1 pl-5 text-[1.02rem] marker:text-(--coral)">
+                    {s.items.map((it) => (
+                      <li key={it.name}>
+                        <b>{it.name}</b>: {it.text}
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             </li>
           ))}

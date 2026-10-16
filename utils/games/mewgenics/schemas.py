@@ -33,9 +33,15 @@ class TrophyDataset(CamelModel):
     trophies: list[Trophy]
 
 
+class StepItem(CamelModel):
+    name: str  # sai em negrito
+    text: str
+
+
 class Step(CamelModel):
     title: str
     text: str
+    items: list[StepItem] = []  # lista opcional depois do texto
 
 
 class Npc(CamelModel):

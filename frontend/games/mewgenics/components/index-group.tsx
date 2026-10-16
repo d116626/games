@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
-/** Bloco recolhível do índice. Abre sozinho quando a URL aponta para ele ou para algo dentro dele (`#index-classes`, `#class-fighter`, `#biome-sewers`), como nos links da busca e de outras seções. */
+/** Bloco recolhível do índice. Abre sozinho quando a URL aponta para ele ou para algo dentro dele (`#cats-collars`, `#class-fighter`, `#biome-sewers`), como nos links da busca e de outras seções. */
 export function IndexGroup({
   id,
   title,

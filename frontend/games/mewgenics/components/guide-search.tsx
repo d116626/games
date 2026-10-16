@@ -25,13 +25,20 @@ function rank(e: SearchEntry, tokens: string[]) {
   return tokens.every((t) => name.startsWith(t)) ? 0 : tokens.every((t) => name.includes(t)) ? 1 : 2;
 }
 
-/** Busca em tudo. Vive na URL (?q=&type=), então um link copiado reproduz o resultado; "/" foca o campo. */
-export function GuideSearch() {
+/** Campo, filtros e resultados. O estado vive na URL (?q=&type=), então várias instâncias (hero e painel) ficam em sincronia. */
+function SearchUI({
+  inputRef,
+  onPick,
+  className,
+}: {
+  inputRef?: React.Ref<HTMLInputElement>;
+  onPick?: () => void;
+  className?: string;
+}) {
   const search = useSyncExternalStore(subscribeUrl, () => location.search, () => "");
   const params = new URLSearchParams(search);
   const query = params.get("q") ?? "";
   const kind = params.get("type") ?? "";
-  const input = useRef<HTMLInputElement>(null);
   const [copied, setCopied] = useState(false);
   const active = query.trim().length >= 2;
 
@@ -43,18 +50,6 @@ export function GuideSearch() {
     history.replaceState(null, "", `${location.pathname}${qs ? `?${qs}` : ""}${location.hash}`);
     urlListeners.forEach((l) => l());
   };
-
-  useEffect(() => {
-    const onKey = (e: KeyboardEvent) => {
-      const typing = e.target instanceof HTMLElement && /^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName);
-      if (e.key === "/" && !typing) {
-        e.preventDefault();
-        input.current?.focus();
-      }
-    };
-    document.addEventListener("keydown", onKey);
-    return () => document.removeEventListener("keydown", onKey);
-  }, []);
 
   // resultados da consulta em todos os tipos; o filtro de tipo só recorta esta lista
   const matches = useMemo(() => {
@@ -75,11 +70,11 @@ export function GuideSearch() {
   const results = kind ? matches.filter(({ e }) => e.kind === kind) : matches;
 
   return (
-    <section aria-label="Search the guide" className="mt-6 print:hidden">
+    <section aria-label="Search the guide" className={className}>
       <label className="panel flex min-h-14 items-center gap-3 px-4 focus-within:outline-3 focus-within:outline-offset-2 focus-within:outline-(--coral)">
         <Search className="size-5 shrink-0" />
         <input
-          ref={input}
+          ref={inputRef}
           value={query}
           onChange={(e) => update(e.target.value, kind)}
           type="search"
@@ -127,7 +122,7 @@ export function GuideSearch() {
           <ul className="max-h-[28rem] divide-y divide-border overflow-y-auto border-y-2 border-foreground">
             {results.map(({ e }) => (
               <li key={`${e.kind}-${e.where ?? ""}-${e.name}-${e.href}`}>
-                <a href={e.href} className="block py-2 hover:bg-(--mustard)/30">
+                <a href={e.href} onClick={onPick} className="block py-2 hover:bg-(--mustard)/30">
                   <span className="flex flex-wrap items-center gap-x-2 gap-y-1">
                     <Tag tone="paper">{e.kind}</Tag>
                     <span className="font-extrabold">{e.name}</span>
@@ -141,5 +136,66 @@ export function GuideSearch() {
         </div>
       )}
     </section>
+  );
+}
+
+/** Busca do guia: inline no topo e, fora dele, um botão flutuante e a tecla "/" abrem a mesma busca num painel. */
+export function GuideSearch() {
+  const heroInput = useRef<HTMLInputElement>(null);
+  const heroBox = useRef<HTMLDivElement>(null);
+  const [heroVisible, setHeroVisible] = useState(true);
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    const el = heroBox.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(([e]) => setHeroVisible(e.isIntersecting));
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      const typing = e.target instanceof HTMLElement && /^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName);
+      if (e.key !== "/" || typing) return;
+      e.preventDefault();
+      if (heroVisible) heroInput.current?.focus();
+      else setOpen(true);
+    };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [heroVisible]);
+
+  return (
+    <>
+      <div ref={heroBox}>
+        <SearchUI inputRef={heroInput} className="mt-6 print:hidden" />
+      </div>
+
+      {!heroVisible && !open && (
+        <button
+          type="button"
+          aria-label="Search the guide"
+          onClick={() => setOpen(true)}
+          className="btn fixed bottom-[max(1rem,env(safe-area-inset-bottom))] left-4 z-30 cursor-pointer print:hidden"
+        >
+          <Search className="size-4" /> Search
+        </button>
+      )}
+
+      {open && (
+        <dialog
+          ref={(d) => {
+            if (d && !d.open) d.showModal();
+          }}
+          onClose={() => setOpen(false)}
+          onClick={(e) => e.target === e.currentTarget && e.currentTarget.close()}
+          aria-label="Search the guide"
+          className="m-auto max-h-[90vh] w-[min(48rem,calc(100vw-1.5rem))] overflow-y-auto rounded-2xl border-[2.5px] border-foreground bg-background p-3 text-foreground backdrop:bg-black/50 print:hidden"
+        >
+          <SearchUI onPick={() => setOpen(false)} />
+        </dialog>
+      )}
+    </>
   );
 }

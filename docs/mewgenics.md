@@ -1,6 +1,9 @@
 # Mewgenics
 
-Guia de PS5 em `/guides/mewgenics`: Guide (primeiros passos + atos com áreas e marcos de casa), Breeding, Cat lab (calculadora) e Index (coleiras, vizinhos, biomas e chefes, chefes da casa, troféus, orientação, regras de stats), com busca global (na URL `?q=&type=`, filtro por tipo com contagem, atalho `/`, "Copy link"; `where` situa inimigos e chefes sem criar um tipo por bioma).
+Guia de PS5 em `/guides/mewgenics`, numa página só com 6 seções por intenção: Guide (primeiros passos + atos com áreas e marcos de casa), Cats (coleiras, Breeding, Cat lab, orientação, regras de stats), Combat (básico, níveis, debuffs, interações escondidas), World (biomas e chefes, chefes da casa, vizinhos, eventos), Quests (itens de quest, side quests do Dr. Beanies, técnicas avançadas) e Trophies, com busca global (na URL `?q=&type=`, filtro por tipo com contagem, atalho `/` e "Copy link"; com o campo do topo fora da tela, `/` e um botão flutuante "Search" abrem a mesma busca num painel `<dialog>`, sincronizada pela URL; `where` situa inimigos e chefes sem criar um tipo por bioma).
+
+
+Estrutura do frontend: `app/guides/mewgenics/page.tsx` monta as seções; Cats, Combat, World e Quests vivem em `components/sections/` e cada uma é um parágrafo de resumo mais `IndexGroup` recolhíveis (ids `cats-collars`, `cats-breeding`, `combat-basics`, `world-biomes`, `quests-items`...). `IndexGroup` abre sozinho quando a URL aponta para o grupo ou para algo dentro dele, que é como a busca chega nos itens (`#class-`, `#biome-`, `#hidden-`...). O nav lateral mostra só as 6 seções e, na ativa, os grupos. Sem rotas por enquanto: tudo continua numa página.
 
 ## Fontes
 - Guias da Steam (lista em `utils/games/mewgenics/constants.py`, `SOURCE_URLS`), baixados para `data/raw/mewgenics/` (fora do git) com `utils/common/html_md.py`. A Steam devolve 429 se for chamada muitas vezes.

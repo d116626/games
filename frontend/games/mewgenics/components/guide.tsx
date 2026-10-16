@@ -47,7 +47,7 @@ function MilestoneRow({ m }: { m: Milestone }) {
           </a>
         ))}
         {m.kind === "breeding" && (
-          <a href="#breeding" className="text-sm font-bold underline underline-offset-4">
+          <a href="#cats-breeding" className="text-sm font-bold underline underline-offset-4">
             Breeding
           </a>
         )}

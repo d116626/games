@@ -98,9 +98,9 @@ export const SEARCH_ENTRIES: SearchEntry[] = [
     text: [q.text, ...q.tips].join(" "),
     href: `#quest-${q.id}`,
   })),
-  ...breeding.houseStats.map((s) => ({ kind: "House stat", name: s.name, text: `${s.effect} ${s.target}`, href: "#breeding" })),
-  ...breeding.odds.map((o) => ({ kind: "Odds", name: o.what, text: `${o.base} ${o.boost}`, href: "#breeding" })),
-  ...classes.statRules.map((r) => ({ kind: "Stat rule", name: r.stat, text: r.rule, href: "#index-stats" })),
+  ...breeding.houseStats.map((s) => ({ kind: "House stat", name: s.name, text: `${s.effect} ${s.target}`, href: "#cats-breeding" })),
+  ...breeding.odds.map((o) => ({ kind: "Odds", name: o.what, text: `${o.base} ${o.boost}`, href: "#cats-breeding" })),
+  ...classes.statRules.map((r) => ({ kind: "Stat rule", name: r.stat, text: r.rule, href: "#cats-stats" })),
   ...trophies.trophies.map((t) => ({
     kind: "Trophy",
     name: t.name,

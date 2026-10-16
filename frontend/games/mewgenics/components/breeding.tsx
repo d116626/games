@@ -114,7 +114,7 @@ export function Breeding() {
 
       <p>
         Orientation and who can have kittens with whom: see the{" "}
-        <a href="#index-orientation" className="font-bold underline underline-offset-4">
+        <a href="#cats-orientation" className="font-bold underline underline-offset-4">
           orientation table
         </a>{" "}
         in the Index.

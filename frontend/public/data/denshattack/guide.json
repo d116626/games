@@ -1,0 +1,76 @@
+{
+  "collectibles": [
+    {
+      "id": "can",
+      "name": "Spray Can",
+      "stated": 134,
+      "found": 134,
+      "how": "Found across the 65 main levels.",
+      "spend": "Sticker sets at castle shops.",
+      "trophy": "Jet Setter"
+    },
+    {
+      "id": "film",
+      "name": "Film Roll",
+      "stated": 65,
+      "found": 65,
+      "how": "One in each of the 65 main levels.",
+      "spend": "Filling in the comics at Fanzine H.Q. levels.",
+      "trophy": "Total Toritetsu"
+    },
+    {
+      "id": "gear",
+      "name": "Gear",
+      "stated": 110,
+      "found": 110,
+      "how": "Found across the 65 main levels.",
+      "spend": "New trains at castle shops.",
+      "trophy": "All Geared Up"
+    },
+    {
+      "id": "zine",
+      "name": "(EN)Zine",
+      "stated": 8,
+      "found": 8,
+      "how": "Not in the levels: you fill in a comic at a Fanzine H.Q. with film rolls.",
+      "trophy": "Fandom Royalty"
+    },
+    {
+      "id": "train",
+      "name": "Train",
+      "stated": 31,
+      "how": "Bought at castle shops.",
+      "spend": "Gears.",
+      "trophy": "True Densha Collector"
+    },
+    {
+      "id": "sticker",
+      "name": "Sticker set",
+      "stated": 40,
+      "how": "Bought at castle shops.",
+      "spend": "Spray cans.",
+      "trophy": "Full Set"
+    },
+    {
+      "id": "onsen",
+      "name": "Onsen",
+      "stated": 7,
+      "found": 7,
+      "how": "Secret levels, unlocked by finding an alternate exit in certain levels. Just dialogue and lore.",
+      "trophy": "Sento Master"
+    },
+    {
+      "id": "dare",
+      "name": "Dare",
+      "stated": 325,
+      "found": 321,
+      "how": "Challenges in each of the 65 main levels, from 'get X score' to 'hit X thing'. Some are about collecting the other items.",
+      "trophy": "Ultimate Challenger"
+    }
+  ],
+  "facts": [
+    "Nothing is missable. You can go back to any level at any point, and everything can be done after finishing the game.",
+    "A Fanzine H.Q. cannot be completed on your first visit, because you need film rolls from later levels. Come back after collecting every film roll in the chapter.",
+    "An onsen only unlocks if you find the alternate exit in its level (for example 1-6-1 for 1-6-O, and the end of 3-1-2 for 3-1-O)."
+  ]
+}

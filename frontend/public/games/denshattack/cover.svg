@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 384" preserveAspectRatio="xMidYMid slice">
+<defs>
+<pattern id="h" width="48" height="48" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+<rect width="24" height="48" fill="#f5b700"/><rect x="24" width="24" height="48" fill="#0d0d10"/>
+</pattern>
+<linearGradient id="g" x1="0" x2="1"><stop offset="0.5" stop-color="#0d0d10" stop-opacity="0"/><stop offset="1" stop-color="#f5b700" stop-opacity="0.25"/></linearGradient>
+</defs>
+<rect width="1200" height="384" fill="#0d0d10"/>
+<rect width="1200" height="384" fill="url(#g)"/>
+<g stroke="#f5b700" stroke-opacity="0.55" fill="none" stroke-linecap="square">
+<path d="M929 10H1071" stroke-width="3.4"/>
+<path d="M903 50H1097" stroke-width="4.0"/>
+<path d="M872 100H1128" stroke-width="4.7"/>
+<path d="M834 160H1166" stroke-width="5.5"/>
+<path d="M786 235H1214" stroke-width="6.6"/>
+<path d="M729 325H1271" stroke-width="7.8"/>
+</g>
+<path d="M1000 -90L760 336M1000 -90L1240 336" stroke="#f5b700" stroke-width="7" stroke-linecap="square"/>
+<g stroke="#ff2e93" stroke-width="4" stroke-opacity="0.85" stroke-linecap="square">
+<path d="M70 252H380M70 274H280M70 296H450"/>
+</g>
+<text x="64" y="205" font-family="Impact, 'Arial Black', sans-serif" font-size="118" fill="#f4f1ea" letter-spacing="2">DENSHA<tspan fill="#f5b700">TTACK!</tspan></text>
+<rect y="336" width="1200" height="48" fill="url(#h)"/>
+</svg>

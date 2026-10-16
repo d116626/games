@@ -1,0 +1,202 @@
+/* Tema "Denshattack!": placa de estação à noite. Preto de trilho, amarelo de faixa de segurança e a barra
+   de letreiro do jogo. Cantos retos, cabeçalhos em caixa alta e listras diagonais. */
+.theme-train {
+  --track: #0d0d10;
+  --track-raised: #17171c;
+  --signal: #f5b700;
+  --pink: #ff3d81;
+  --cyan: #2fd7e6;
+  --lime: #c6f432;
+
+  --background: var(--track);
+  --foreground: #f4f1e8;
+  --card: var(--track-raised);
+  --card-foreground: #f4f1e8;
+  --popover: var(--track-raised);
+  --popover-foreground: #f4f1e8;
+  --primary: var(--signal);
+  --primary-foreground: #0d0d10;
+  --secondary: #23232b;
+  --secondary-foreground: #f4f1e8;
+  --muted: #1f1f26;
+  --muted-foreground: #a7a39a;
+  --accent: var(--signal);
+  --accent-foreground: #0d0d10;
+  --destructive: var(--pink);
+  --border: rgb(244 241 232 / 0.18);
+  --input: rgb(244 241 232 / 0.3);
+  --ring: var(--signal);
+  --radius: 0.25rem;
+
+  --font-geist-sans: var(--font-barlow);
+  --font-geist-mono: var(--font-barlow);
+  --font-display: var(--font-anton);
+
+  font-family: var(--font-barlow), sans-serif;
+  background-color: var(--track);
+  background-image: linear-gradient(to right, rgb(244 241 232 / 0.035) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.theme-train .font-display {
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+}
+
+@layer components {
+  .theme-train .label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--muted-foreground);
+  }
+}
+
+/* Título da seção: placa amarela com o número e faixa de segurança embaixo. */
+.theme-train section > header {
+  position: relative;
+  padding-bottom: 0.9rem;
+}
+.theme-train section > header::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 6px;
+  background: repeating-linear-gradient(-45deg, var(--signal) 0 10px, var(--track) 10px 20px);
+}
+.theme-train section > header > span:first-child {
+  border-radius: 2px;
+  background: var(--signal);
+  color: #0d0d10;
+  font-weight: 800;
+}
+
+.theme-train nav a {
+  font-weight: 700;
+  border-radius: 2px;
+}
+
+/* Letreiro do hero: a barra amarela do jogo, com o texto repetido. */
+.theme-train .ticker {
+  overflow: hidden;
+  white-space: nowrap;
+  background: var(--signal);
+  color: #0d0d10;
+  font-family: var(--font-anton), sans-serif;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-block: 3px solid #0d0d10;
+}
+.theme-train .ticker > div {
+  display: inline-block;
+  padding-block: 0.3rem;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .theme-train .ticker > div {
+    animation: ticker 40s linear infinite;
+  }
+  @keyframes ticker {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+/* Etiquetas e botões de filtro. */
+.theme-train .tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 2px;
+  padding: 0.05rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  line-height: 1.6;
+  text-transform: uppercase;
+  background: var(--signal);
+  color: #0d0d10;
+}
+.theme-train .tag-pink {
+  background: var(--pink);
+}
+.theme-train .tag-cyan {
+  background: var(--cyan);
+}
+.theme-train .tag-lime {
+  background: var(--lime);
+}
+.theme-train .tag-silver {
+  background: #c9ccd2;
+}
+.theme-train .tag-bronze {
+  background: #d98a4b;
+}
+.theme-train .tag-dim {
+  background: var(--secondary);
+  color: var(--foreground);
+}
+
+/* Painel: contorno fino e canto amarelo, como uma placa. */
+.theme-train .panel {
+  border: 1px solid var(--border);
+  border-left: 5px solid var(--signal);
+  border-radius: 2px;
+  background: var(--card);
+}
+
+.theme-train .btn {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 2px;
+  border: 2px solid var(--signal);
+  padding: 0 1.2rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: var(--signal);
+  color: #0d0d10;
+  cursor: pointer;
+  transition: background 0.1s, color 0.1s;
+}
+.theme-train .btn:hover {
+  background: transparent;
+  color: var(--signal);
+}
+.theme-train .btn-ghost {
+  background: transparent;
+  color: var(--foreground);
+  border-color: var(--border);
+}
+.theme-train .btn-ghost:hover {
+  border-color: var(--signal);
+  color: var(--signal);
+}
+
+/* Barra de progresso: trilho com dormentes. */
+.theme-train .bar {
+  height: 0.6rem;
+  background: repeating-linear-gradient(90deg, var(--secondary) 0 6px, var(--track) 6px 8px);
+}
+.theme-train .bar > i {
+  display: block;
+  height: 100%;
+  background: repeating-linear-gradient(90deg, var(--signal) 0 6px, var(--track) 6px 8px);
+}
+
+@media print {
+  .theme-train {
+    background: #fff !important;
+    background-image: none !important;
+    color: #000;
+  }
+  .theme-train li,
+  .theme-train article {
+    break-inside: avoid;
+  }
+}

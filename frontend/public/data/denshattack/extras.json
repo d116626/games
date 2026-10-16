@@ -1,0 +1,212 @@
+{
+  "skinHow": [
+    "Enter the code with the D-pad (or WASD) in a castle shop. U = Up, D = Down, L = Left, R = Right.",
+    "The first castle you can reach is 1-4-C Kumamoto Castle.",
+    "To use a skin, leave the shop and open your garage. To use a voice pack, open the settings and scroll until you find the creator."
+  ],
+  "skins": [
+    {
+      "name": "RTGame",
+      "includes": "Skin + Voicepack",
+      "code": "RURULDLD",
+      "url": "https://www.youtube.com/@RTGame",
+      "image": "games/denshattack/skins/rtgame.webp"
+    },
+    {
+      "name": "Limealicious",
+      "includes": "Skin + Voicepack",
+      "code": "URDLURDL",
+      "url": "https://www.twitch.tv/limealicious",
+      "image": "games/denshattack/skins/limealicious.webp"
+    },
+    {
+      "name": "RinPenrose",
+      "includes": "Skin + Voicepack",
+      "code": "ULULDRDR",
+      "url": "https://www.twitch.tv/rinpenrose",
+      "image": "games/denshattack/skins/rinpenrose.webp"
+    },
+    {
+      "name": "Geega",
+      "includes": "Skin + Voicepack",
+      "code": "UULLDDRR",
+      "url": "https://www.twitch.tv/GEEGA",
+      "image": "games/denshattack/skins/geega.webp"
+    },
+    {
+      "name": "CDawgVA",
+      "includes": "Skin + Voicepack",
+      "code": "UUUDDDLR",
+      "url": "https://www.twitch.tv/cdawg",
+      "image": "games/denshattack/skins/cdawgva.webp"
+    },
+    {
+      "name": "IronMouse",
+      "includes": "Skin + Voicepack",
+      "code": "LDLDRURU",
+      "url": "https://www.twitch.tv/ironmouse",
+      "image": "games/denshattack/skins/ironmouse.webp"
+    },
+    {
+      "name": "IRyS",
+      "includes": "Skin + Voicepack",
+      "code": "UDLRUDLR",
+      "url": "https://www.youtube.com/@IRyS",
+      "image": "games/denshattack/skins/irys.webp"
+    },
+    {
+      "name": "Shiori Novella",
+      "includes": "Skin + Voicepack",
+      "code": "LRUDLRUD",
+      "url": "https://www.youtube.com/@ShioriNovella",
+      "image": "games/denshattack/skins/shiori-novella.webp"
+    },
+    {
+      "name": "EricRod",
+      "includes": "Skin + Voicepack",
+      "code": "LLRRUDUD",
+      "url": "https://www.youtube.com/@LeyendasyVideojuegos",
+      "image": "games/denshattack/skins/ericrod.webp"
+    },
+    {
+      "name": "Rangu",
+      "includes": "Skin + Voicepack",
+      "code": "LRLRUDUD",
+      "url": "https://www.youtube.com/@rangugamer",
+      "image": "games/denshattack/skins/rangu.webp"
+    },
+    {
+      "name": "Enoc",
+      "includes": "Skin + Voicepack",
+      "code": "URURDLDL",
+      "url": "https://www.youtube.com/@Enocguitar",
+      "image": "games/denshattack/skins/enoc.webp"
+    },
+    {
+      "name": "Pazos",
+      "includes": "Skin + Voicepack",
+      "code": "UDUDLRLR",
+      "url": "https://www.twitch.tv/pazos64",
+      "image": "games/denshattack/skins/pazos.webp"
+    },
+    {
+      "name": "Eyepatch Wolf",
+      "includes": "Skin",
+      "code": "RRUULLDD",
+      "url": "https://bsky.app/profile/eyepatchwolf.bsky.social",
+      "image": "games/denshattack/skins/eyepatch-wolf.webp"
+    },
+    {
+      "name": "Zentreya",
+      "includes": "Skin + Voicepack",
+      "code": "UURRDDLL",
+      "url": "https://www.twitch.tv/zentreya",
+      "image": "games/denshattack/skins/zentreya.webp"
+    },
+    {
+      "name": "Victoria Roman",
+      "includes": "Skin + Voicepack",
+      "code": "ULDRULDR",
+      "url": "https://www.youtube.com/@vickyroman_idol",
+      "image": "games/denshattack/skins/victoria-roman.webp"
+    },
+    {
+      "name": "Mint Fantome",
+      "includes": "Skin + Voicepack",
+      "code": "DDLLUURR",
+      "url": "https://www.youtube.com/channel/UCcHHkJ98eSfa5aj0mdTwwLQ",
+      "image": "games/denshattack/skins/victoria-roman.webp"
+    },
+    {
+      "name": "Phoebe Chan",
+      "includes": "Skin + Voicepack",
+      "code": "RDLURDLU",
+      "url": "https://www.twitch.tv/feebee",
+      "image": "games/denshattack/skins/victoria-roman.webp"
+    },
+    {
+      "name": "Mysticlight",
+      "includes": "Skin + Voicepack",
+      "code": "DUDURLRL",
+      "url": "https://www.twitch.tv/MysticLight",
+      "image": "games/denshattack/skins/mysticlight.webp"
+    },
+    {
+      "name": "KarmaDoc",
+      "includes": "Skin",
+      "code": "UUDDLRLR",
+      "url": "https://www.twitch.tv/karmadoc",
+      "image": "games/denshattack/skins/karmadoc.webp"
+    },
+    {
+      "name": "Tokyo Game Show Event",
+      "includes": "Skin",
+      "code": "LURDDRUL",
+      "image": "games/denshattack/skins/tokyo-game-show-event.webp"
+    },
+    {
+      "name": "Newsletter",
+      "includes": "Skin",
+      "code": "URRDLLUD",
+      "image": "games/denshattack/skins/newsletter.webp"
+    },
+    {
+      "name": "Kid Katana Records",
+      "includes": "Skin",
+      "code": "ULDRULDRU",
+      "url": "https://kidkatana.com/",
+      "image": "games/denshattack/skins/kid-katana-records.webp"
+    }
+  ],
+  "skinNotes": [
+    {
+      "topic": "Skin codes",
+      "text": "The older guide lists IRyS as UDLRUDLRUD; the newer one has a different code."
+    },
+    {
+      "topic": "Skin codes",
+      "text": "The newer guide has 6 codes the older one lacks: Zentreya, Victoria Roman, Mint Fantome, Phoebe Chan, Mysticlight, Tokyo Game Show Event."
+    }
+  ],
+  "tracks": [
+    {
+      "where": "Results Theme",
+      "song": "Good Ride",
+      "artist": "Tee Lopes"
+    },
+    {
+      "where": "Garage Theme",
+      "song": "Tune My Ride",
+      "artist": "Sean Bialo"
+    },
+    {
+      "where": "Onsen Theme",
+      "song": "Onsen Confessions",
+      "artist": "Toni Leys"
+    },
+    {
+      "where": "Main Menu Theme",
+      "song": "Black & Yellow",
+      "artist": "Sean Bialo"
+    },
+    {
+      "where": "Map Theme",
+      "song": "Whenever You're Ready",
+      "artist": "Andrew One"
+    },
+    {
+      "where": "Fanzine HQ",
+      "song": "Somewhere We Can Play",
+      "artist": "Andrew One"
+    },
+    {
+      "where": "Stage Select / Map Theme — All Zines Collected",
+      "song": "Still Playing?",
+      "artist": "Andrew One, Liqid, 2 Mello & Tee Lopes"
+    }
+  ],
+  "reward": [
+    "Gold medals (score, time and dares) on every track give you a secret train, the MORZILLA SKATER.",
+    "Completing all 8 (EN)Zines (the Fandom Royalty trophy) plays a bonus music track in the Stage Selector."
+  ]
+}

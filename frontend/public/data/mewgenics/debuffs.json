@@ -1,0 +1,185 @@
+{
+  "debuffs": [
+    {
+      "id": "bleed",
+      "name": "Bleed",
+      "kind": "damage",
+      "what": "1 damage per stack, ignoring shields. Applied at the end of the round, then the stacks grow by 1.",
+      "use": "Put it on bosses and tanky enemies that will take several rounds. Best on a low-priority enemy you then run away from. Thieves specialise in it, and attacking an enemy standing on glass shards also makes it bleed, so glass-spreading abilities bleed from range.",
+      "watch": "A cat downed by bleed gets the double injury 'exsanguinated' (-1 STR and DEX)."
+    },
+    {
+      "id": "burn",
+      "name": "Burn",
+      "kind": "damage",
+      "rating": "top",
+      "what": "Damage at the start of the unit's turn, ignoring shields. If the stacks exceed its HP, the unit dies before it can act.",
+      "use": "Wet, freeze, Water Feeder and Fire Extinguisher remove it. It ignites flammable tiles, destroys flammable gear and burns anything that touches the unit. Burning also blocks the next freeze once and burns away tall grass and brambles, which is why the mage's Fire Aspect is so strong. Fire frees frozen or webbed allies and does double damage to Frostbiter and the Infested Pair.",
+      "watch": "If your cat is about to burn to death, do everything you can with it this turn. A cat downed by burn gets 'immolated' (-1 CHA and LCK). Pyrophina's damage is mostly burn."
+    },
+    {
+      "id": "poison",
+      "name": "Poison",
+      "kind": "damage",
+      "rating": "top",
+      "what": "Damage at the start of the unit's turn. If the stacks exceed its HP, the unit dies next turn.",
+      "use": "Unlike burn it is hard to remove and does not fall each turn. Healing reduces the stacks, so clerics, healing items and regeneration counter it.",
+      "watch": "A cat downed by poison gets 'poisoned' (-1 CON and INT), the worst of the double injuries."
+    },
+    {
+      "id": "leech",
+      "name": "Leech",
+      "kind": "damage",
+      "what": "Drains 1 HP per stack for the unit that applied it.",
+      "use": "The opposite of poison and burn: it rewards allies who act many times. Psychics and butchers, who play with turn order, get the most from it. The necromancer's basic attack applies it."
+    },
+    {
+      "id": "infested",
+      "name": "Infested",
+      "kind": "damage",
+      "what": "A unit that goes down dies at once and spawns spiderlings equal to its infestation level.",
+      "use": "Best on champion enemies, whose spiderlings are champions. Infested is applied before the move's damage, so a 4-damage hunter spell with 1 infested on an enemy under 4 HP gives a free spiderling. Spiderlings do 2-4 damage and flatten 1 HP hordes like maggots and flies.",
+      "watch": "On your own low-health cats, cleanse it."
+    },
+    {
+      "id": "blind",
+      "name": "Blind",
+      "kind": "control",
+      "rating": "top",
+      "what": "30% miss chance. More stacks only add duration (1 stack lost per turn).",
+      "use": "The guide's best debuff. It is also safe to put on your own cats that were mind-controlled, to cut the damage they do. Blind cats you know will be mind-controlled in advance."
+    },
+    {
+      "id": "confusion",
+      "name": "Confusion",
+      "kind": "control",
+      "rating": "top",
+      "what": "Each spell or attack has a 33% chance to hit the user itself.",
+      "use": "Stack 3+ per round on bosses and champions, since they take several turns. It doubles in effect with Luck Down, such as the necromancer's.",
+      "watch": "Keep it off melee cats: the self-damage scales with Strength, not Dexterity."
+    },
+    {
+      "id": "charmed",
+      "name": "Charmed",
+      "kind": "control",
+      "what": "Takes over the unit's AI: it acts as a unit of the other side. Marshmallow (Desert) and Johnny (Bunker) inflict it.",
+      "use": "Stronger than stun, so rarer. A charmed enemy still can attack you, but prefers its former allies, so keep that in mind on bosses.",
+      "watch": "If an enemy charms your cat, a 1-turn debuff (stun, blind, sleep, immobile) is the counter. Charming your own cat hands it to the AI for that turn, like the Cordyceps item, so only do it if the charm comes with healing."
+    },
+    {
+      "id": "possessed",
+      "name": "Possessed and Probed",
+      "kind": "control",
+      "what": "Stronger versions of charmed, from the Boneyard (possessed) and the Moon (probed).",
+      "use": "Use the same counters as charmed. Probed breaks with a weak attack."
+    },
+    {
+      "id": "fear",
+      "name": "Fear",
+      "kind": "control",
+      "what": "Forces the unit to move to a tile for the turn, then loses 1 stack. It also forces the unit to spend any bonus moves it had.",
+      "use": "Most valuable on melee and high-speed enemies, effectively removing them from the fight while you kill their allies.",
+      "watch": "Do not use bonus-move spells (Swift Servant, Wind Step) on a cat with fear stacks."
+    },
+    {
+      "id": "freeze",
+      "name": "Freeze",
+      "kind": "control",
+      "rating": "weak",
+      "what": "The unit is immune to most damage but can be knocked around like a rock. It thaws on its own turn and ends it at once.",
+      "use": "Best on an enemy that acts right after you. If a cat acts right after you, the frozen enemy is immune to that cat's attacks too, so speed order matters. Also denies a turn to multi-turn enemies and bosses."
+    },
+    {
+      "id": "petrified",
+      "name": "Petrified",
+      "kind": "control",
+      "what": "A stronger freeze: the unit still takes damage from multi-hit attacks. Rock-Eater one-shots a petrified enemy and does 25 to a petrified boss.",
+      "use": "Bosses and enemies with backflip cannot dodge it.",
+      "watch": "Keep petrified cats away from Rock Eater enemies such as the Crater's Tremblo."
+    },
+    {
+      "id": "sleep",
+      "name": "Drowsy and Sleep",
+      "kind": "control",
+      "rating": "weak",
+      "what": "Skips one turn like stun or freeze, but enough damage wakes the target.",
+      "use": "Best on low-HP enemies that like to move or teleport, to pin them while you handle their allies. Avoid it on bosses unless they act right after you.",
+      "watch": "Many of your own spells put cats to sleep (Exert, Rest), so a little damage to wake them may be worth it."
+    },
+    {
+      "id": "stun",
+      "name": "Stunned",
+      "kind": "control",
+      "rating": "top",
+      "what": "Denies the unit's turn and, unlike sleep, damage does not wake it.",
+      "use": "A lifesaver on bosses: put it on the enemy closest to your team or with the strongest attack. Stunning high-HP enemies lets you finish their low-HP allies first."
+    },
+    {
+      "id": "immobile",
+      "name": "Immobile",
+      "kind": "control",
+      "what": "The unit cannot move, including dashes, jumps and the Druid Crow's Flutter.",
+      "use": "Best against high-speed enemies and bosses, like fear. Fear opens tiles for your cats; immobile lets them pile on a target that is weak to melee. Gravity spells (fighter, psychic) immobilize flying enemies automatically: Pooters, flies, Crow familiars, and it helps against Draven in Act 3.",
+      "watch": "If your cats are immobilized (Fenrir), teleports and the tank's melee attack still move them."
+    },
+    {
+      "id": "madness",
+      "name": "Madness",
+      "kind": "control",
+      "rating": "weak",
+      "what": "A scuffed charmed. The unit attacks the lowest-health unit.",
+      "use": "Best on a unit surrounded by enemies, so it is less likely to hit your cats.",
+      "watch": "Mitigate it on your own cats by spawning 1 HP familiars like flies. Pestilence plus blood frenzy is powerful for solo runs and terrible in a team: the mad cat butchers its allies."
+    },
+    {
+      "id": "slow",
+      "name": "Slow",
+      "kind": "control",
+      "what": "Movement drops to 2 tiles regardless of speed. Loses 1 stack at the end of the unit's turn.",
+      "use": "Counts as ice, so ice immunity negates it."
+    },
+    {
+      "id": "short-circuit",
+      "name": "Short Circuit",
+      "kind": "control",
+      "what": "All actions are disabled until you cast Break Circuit (6 mana). Comes from one enemy in the Future.",
+      "use": "It punishes low-INT melee cats such as fighters."
+    },
+    {
+      "id": "brace-bruise",
+      "name": "Brace and Bruise",
+      "kind": "modifier",
+      "what": "Brace cuts all incoming damage by 1 per stack, to a minimum of 1. Bruise adds 1 to physical damage taken per stack.",
+      "use": "They counter each other: bruise an enemy with high brace, and brace your bruised allies."
+    },
+    {
+      "id": "tarred",
+      "name": "Tarred",
+      "kind": "modifier",
+      "what": "-2 speed per stack, losing 1 stack per turn.",
+      "use": "If ignited, tarred stacks become burn stacks."
+    },
+    {
+      "id": "trample",
+      "name": "Trample",
+      "kind": "modifier",
+      "what": "Lets the unit walk through allies and enemies, doing 3 damage per stack and displacing them.",
+      "use": "It cannot trample 2x2 or larger units. Walking through corpses and low-HP obstacles destroys them."
+    },
+    {
+      "id": "wet",
+      "name": "Wet",
+      "kind": "modifier",
+      "what": "No effect on its own, but changes how the unit reacts to the environment.",
+      "use": "One-time fire immunity and clears burn. Ice attacks, including slow, always freeze a wet unit. Walking over burning tiles puts them out, over lava makes basalt, over grass makes tall grass, over flowers makes tall flowers.",
+      "watch": "Wet units are Conductive: lightning on adjacent units spreads to them and is more likely to stun."
+    },
+    {
+      "id": "undead",
+      "name": "Undead and Zombie",
+      "kind": "modifier",
+      "what": "Mostly tied to the necromancer and several bosses. Holy spells (mostly the cleric's) damage these units instead of healing them, and apply their negative effects instead of the positive ones.",
+      "use": "Healing an undead enemy hurts it. Cats resurrected by a necromancer ability take no injuries if downed again."
+    }
+  ]
+}

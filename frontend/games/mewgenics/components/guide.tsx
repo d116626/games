@@ -3,7 +3,7 @@
 import { Check } from "lucide-react";
 import { Big, Tag, Thumb } from "@/games/mewgenics/components/chip";
 import { Disagreements } from "@/games/mewgenics/components/disagreements";
-import { route, start, trophyIcon, trophyId } from "@/games/mewgenics/lib/data";
+import { biomes, route, start, trophyIcon, trophyId } from "@/games/mewgenics/lib/data";
 import type { Area, Milestone } from "@/games/mewgenics/types";
 import { useLocalSet } from "@/lib/local-store";
 import { cn } from "@/lib/utils";
@@ -62,6 +62,8 @@ function MilestoneRow({ m }: { m: Milestone }) {
 }
 
 /** O guia numa linha do tempo: antes da primeira corrida, atos com áreas e marcos de casa; marque o que já fez. */
+const biomeIds = new Set(biomes.biomes.map((b) => b.id));
+
 export function Guide() {
   const { set, toggle, reset } = useLocalSet("mewgenics:route-done");
   const available = (a: Area) => !set.has(a.id) && !!a.needs && a.needs.every((id) => set.has(id));
@@ -95,6 +97,11 @@ export function Guide() {
               <span className={cn(done && "line-through")}>{a.name}</span>
               {isNext && <Tag tone="mustard">Next</Tag>}
               {a.unlocks && <Tag tone="pink">Unlocks {a.unlocks}</Tag>}
+              {biomeIds.has(a.id) && (
+                <a href={`#biome-${a.id}`} className="text-sm font-bold underline underline-offset-4">
+                  enemies and bosses
+                </a>
+              )}
               {tid && (
                 <a href={`#trophy-${tid}`} className="text-sm font-bold underline underline-offset-4">
                   trophy

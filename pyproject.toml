@@ -8,6 +8,7 @@ dependencies = [
     "requests>=2.31.0",
     "pydantic>=2.7.0",
     "trafilatura>=2.3.0",
+    "pillow>=12.3.0",
 ]
 
 [tool.uv]

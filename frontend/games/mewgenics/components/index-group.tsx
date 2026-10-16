@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
-/** Bloco recolhível do índice. Abre sozinho quando a URL aponta para ele ou para algo dentro dele (`#index-classes`, `#class-fighter`, `#trophy-3`), como nos links da busca e de outras seções. */
+/** Bloco recolhível do índice. Abre sozinho quando a URL aponta para ele ou para algo dentro dele (`#index-classes`, `#class-fighter`, `#biome-sewers`), como nos links da busca e de outras seções. */
 export function IndexGroup({
   id,
   title,
@@ -19,7 +19,10 @@ export function IndexGroup({
     const open = () => {
       const target = location.hash.length > 1 ? document.getElementById(location.hash.slice(1)) : null;
       if (!target || !ref.current?.contains(target)) return;
-      ref.current.open = true;
+      // abre o bloco e qualquer <details> aninhado que contenha o alvo
+      for (let el: HTMLElement | null = target; el; el = el.parentElement) {
+        if (el instanceof HTMLDetailsElement) el.open = true;
+      }
       target.scrollIntoView();
     };
     open();

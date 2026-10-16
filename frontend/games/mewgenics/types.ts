@@ -108,3 +108,81 @@ export type Milestone = {
 };
 export type Act = { id: number; title: string; summary: string };
 export type RouteDataset = { acts: Act[]; areas: Area[]; milestones: Milestone[]; notes: string[]; discrepancies: Discrepancy[] };
+
+export type Foe = { name: string; text: string; priority: boolean; image?: string };
+export type Biome = {
+  /** Igual ao id da área em `route`. */
+  id: string;
+  summary: string;
+  leans?: string;
+  image?: string;
+  hazards: string[];
+  enemies: Foe[];
+  bosses: Foe[];
+  tips: string[];
+};
+export type HouseBoss = { id: string; name: string; text: string; tips: string[] };
+export type BiomeDataset = { biomes: Biome[]; houseSetup: string[]; houseBosses: HouseBoss[]; act3Tips: string[] };
+
+export type Debuff = {
+  id: string;
+  name: string;
+  kind: "damage" | "control" | "modifier";
+  rating?: "top" | "weak";
+  what: string;
+  use: string;
+  watch?: string;
+};
+export type DebuffDataset = { debuffs: Debuff[] };
+
+export type QuestItem = { id: string; name: string; aka?: string; unlock?: string; text: string; tips: string[]; image?: string };
+export type QuestDataset = {
+  mainRules: string[];
+  mainItems: QuestItem[];
+  mainTips: string[];
+  sideRules: string[];
+  sideItems: QuestItem[];
+  image: string;
+  imageCaption: string;
+  discrepancies: Discrepancy[];
+};
+
+export type CombatTopic = { id: string; title: string; text: string; tips: string[]; images: string[]; caption?: string };
+export type LevelGuide = {
+  sources: string;
+  budget: { what: string; levels: string }[];
+  total: string;
+  scenarios: string[];
+  rewards: { level: string; title: string; text: string }[];
+  mnemonic: string[];
+  tips: string[];
+};
+export type CombatDataset = { goldenRule: string; topics: CombatTopic[]; levels: LevelGuide };
+
+export type GameEvent = { id: string; name: string; text: string; flag?: string; tone?: "good" | "bad"; image?: string };
+export type EventGroup = { id: string; title: string; intro?: string; events: GameEvent[] };
+export type EventDataset = {
+  intro: string;
+  outcomes: string[];
+  rules: string[];
+  groups: EventGroup[];
+  tragedy: { text: string; harmless: string[]; image?: string };
+};
+
+export type Pic = { src: string; caption: string; width: number; height: number };
+export type TechStep = { title: string; text: string; images: Pic[] };
+export type Technique = {
+  id: string;
+  title: string;
+  summary: string;
+  needs: string[];
+  items: Pic[];
+  steps: TechStep[];
+  tips: string[];
+  caveats: string[];
+};
+export type AdvancedDataset = { intro: string; techniques: Technique[] };
+
+export type HiddenTip = { id: string; title: string; text: string; status?: "confirmed" | "disputed"; note?: string };
+export type HiddenGroup = { id: string; title: string; tips: HiddenTip[] };
+export type HiddenDataset = { intro: string; groups: HiddenGroup[] };

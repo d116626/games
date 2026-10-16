@@ -1,11 +1,19 @@
 "use client";
 
 import { useState } from "react";
+import { Advanced } from "@/games/mewgenics/components/advanced";
+import { Hidden } from "@/games/mewgenics/components/hidden";
+import { Biomes, HouseBosses } from "@/games/mewgenics/components/biomes";
+import { Combat } from "@/games/mewgenics/components/combat";
+import { Debuffs } from "@/games/mewgenics/components/debuffs";
+import { Levels } from "@/games/mewgenics/components/levels";
+import { MainQuests, SideQuests } from "@/games/mewgenics/components/quests";
 import { Chip, Tag, Thumb } from "@/games/mewgenics/components/chip";
 import { Disagreements } from "@/games/mewgenics/components/disagreements";
+import { Events } from "@/games/mewgenics/components/events";
 import { IndexGroup } from "@/games/mewgenics/components/index-group";
 import { Trophies } from "@/games/mewgenics/components/trophies";
-import { breeding, classes, start, trophies, trophyIcon, trophyId } from "@/games/mewgenics/lib/data";
+import { advanced, hidden, biomes, breeding, classes, combat, debuffs, events, quests, start, trophies, trophyIcon, trophyId } from "@/games/mewgenics/lib/data";
 import { cn } from "@/lib/utils";
 
 const ROLES = ["Damage", "Tank", "Support", "Control"];
@@ -107,6 +115,50 @@ export function IndexList() {
             </li>
           ))}
         </ul>
+      </IndexGroup>
+
+      <IndexGroup id="index-biomes" title="Biomes and bosses" count={biomes.biomes.length}>
+        <Biomes />
+      </IndexGroup>
+
+      <IndexGroup id="index-house" title="House defence bosses" count={biomes.houseBosses.length}>
+        <HouseBosses />
+      </IndexGroup>
+
+      <IndexGroup id="index-combat" title="Combat basics" count={combat.topics.length}>
+        <Combat />
+      </IndexGroup>
+
+      <IndexGroup id="index-levels" title="Leveling" count={combat.levels.rewards.length}>
+        <Levels />
+      </IndexGroup>
+
+      <IndexGroup
+        id="index-events"
+        title="Events"
+        count={events.groups.reduce((n, g) => n + g.events.length, 0)}
+      >
+        <Events />
+      </IndexGroup>
+
+      <IndexGroup id="index-debuffs" title="Debuffs and status effects" count={debuffs.debuffs.length}>
+        <Debuffs />
+      </IndexGroup>
+
+      <IndexGroup id="index-quests" title="Quest items" count={quests.mainItems.length}>
+        <MainQuests />
+      </IndexGroup>
+
+      <IndexGroup id="index-side" title="Side quests (Dr. Beanies)" count={quests.sideItems.length}>
+        <SideQuests />
+      </IndexGroup>
+
+      <IndexGroup id="index-advanced" title="Advanced techniques" count={advanced.techniques.length}>
+        <Advanced />
+      </IndexGroup>
+
+      <IndexGroup id="index-hidden" title="Hidden interactions" count={hidden.groups.reduce((n, g) => n + g.tips.length, 0)}>
+        <Hidden />
       </IndexGroup>
 
       <IndexGroup id="index-orientation" title="Orientation and kittens" count={breeding.orientation.length}>

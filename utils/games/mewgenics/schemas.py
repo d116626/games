@@ -1,3 +1,5 @@
+from typing import Literal
+
 from utils.common.schemas import CamelModel
 
 # Schemas dos dados próprios do jogo (herdam de CamelModel).
@@ -69,7 +71,7 @@ class Room(CamelModel):
 class RoomPlan(CamelModel):
     id: str
     title: str
-    source: str
+    source: str | None = None  # rótulo mostrado ao lado do título
     summary: str
     rooms: list[Room]
     notes: list[str] = []
@@ -181,3 +183,184 @@ class RouteDataset(CamelModel):
     milestones: list[Milestone]
     notes: list[str]
     discrepancies: list[Discrepancy]
+
+
+class Foe(CamelModel):
+    name: str
+    text: str
+    priority: bool = False  # inimigo que o guia manda matar primeiro
+    image: str | None = None  # tela "X vs Chefe" (só chefes)
+
+
+class Biome(CamelModel):
+    id: str  # igual ao id da área em route
+    summary: str
+    leans: str | None = None  # o que o bioma favorece
+    image: str | None = None  # tela-título do bioma
+    hazards: list[str]
+    enemies: list[Foe]
+    bosses: list[Foe]
+    tips: list[str] = []
+
+
+class HouseBoss(CamelModel):
+    id: str
+    name: str
+    text: str
+    tips: list[str]
+
+
+class BiomeDataset(CamelModel):
+    biomes: list[Biome]
+    house_setup: list[str]
+    house_bosses: list[HouseBoss]
+    act3_tips: list[str]
+
+
+class Debuff(CamelModel):
+    id: str
+    name: str
+    kind: Literal["damage", "control", "modifier"]
+    rating: Literal["top", "weak"] | None = None  # só quando o Greenside classifica explicitamente
+    what: str
+    use: str
+    watch: str | None = None  # cuidado ao ter o status nos seus gatos
+
+
+class DebuffDataset(CamelModel):
+    debuffs: list[Debuff]
+
+
+class QuestItem(CamelModel):
+    id: str
+    name: str
+    aka: str | None = None  # outro nome usado por outra fonte
+    unlock: str | None = None  # de onde vem e para onde levar (itens principais)
+    text: str
+    tips: list[str] = []
+    image: str | None = None  # carta do item no jogo, relativa a public/
+
+
+class QuestDataset(CamelModel):
+    main_rules: list[str]
+    main_items: list[QuestItem]
+    main_tips: list[str]
+    side_rules: list[str]
+    side_items: list[QuestItem]
+    image: str  # captura do evento final de uma quest
+    image_caption: str
+    discrepancies: list[Discrepancy]
+
+
+class CombatTopic(CamelModel):
+    id: str
+    title: str
+    text: str
+    tips: list[str] = []
+    images: list[str] = []  # relativos a public/
+    caption: str | None = None
+
+
+class LevelBudget(CamelModel):
+    what: str
+    levels: str
+
+
+class LevelReward(CamelModel):
+    level: str  # ex.: "1 → 2"
+    title: str
+    text: str
+
+
+class LevelGuide(CamelModel):
+    sources: str
+    budget: list[LevelBudget]
+    total: str
+    scenarios: list[str]
+    rewards: list[LevelReward]
+    mnemonic: list[str]
+    tips: list[str]
+
+
+class CombatDataset(CamelModel):
+    golden_rule: str
+    topics: list[CombatTopic]
+    levels: LevelGuide
+
+
+class GameEvent(CamelModel):
+    id: str
+    name: str
+    text: str
+    flag: str | None = None  # etiqueta curta de conselho do guia (ex.: "Always sleep")
+    tone: Literal["good", "bad"] | None = None
+    image: str | None = None  # relativo a public/
+
+
+class EventGroup(CamelModel):
+    id: str
+    title: str
+    intro: str | None = None
+    events: list[GameEvent]
+
+
+class Tragedy(CamelModel):
+    text: str
+    harmless: list[str]
+    image: str | None = None
+
+
+class EventDataset(CamelModel):
+    intro: str
+    outcomes: list[str]
+    rules: list[str]
+    groups: list[EventGroup]
+    tragedy: Tragedy
+
+
+class Pic(CamelModel):
+    src: str  # relativo a public/
+    caption: str
+    width: int
+    height: int
+
+
+class TechStep(CamelModel):
+    title: str
+    text: str
+    images: list[Pic] = []
+
+
+class Technique(CamelModel):
+    id: str
+    title: str
+    summary: str
+    needs: list[str] = []
+    items: list[Pic] = []  # cartas de itens do jogo
+    steps: list[TechStep] = []
+    tips: list[str] = []
+    caveats: list[str] = []
+
+
+class AdvancedDataset(CamelModel):
+    intro: str
+    techniques: list[Technique]
+
+
+class HiddenTip(CamelModel):
+    id: str
+    title: str
+    text: str
+    status: Literal["confirmed", "disputed"] | None = None  # só o que o próprio post marca
+    note: str | None = None  # confirmação nos comentários ou cruzamento com o Greenside
+
+
+class HiddenGroup(CamelModel):
+    id: str
+    title: str
+    tips: list[HiddenTip]
+
+
+class HiddenDataset(CamelModel):
+    intro: str
+    groups: list[HiddenGroup]

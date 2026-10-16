@@ -1,15 +1,29 @@
 import type {
+  AdvancedDataset,
+  BiomeDataset,
   BreedingDataset,
   ClassDataset,
+  CombatDataset,
+  DebuffDataset,
+  EventDataset,
+  HiddenDataset,
+  QuestDataset,
   RouteDataset,
   StartDataset,
   Trophy,
   TrophyDataset,
 } from "@/games/mewgenics/types";
 import type { GameMeta } from "@/games/types";
+import advancedJson from "@/public/data/mewgenics/advanced.json";
+import biomesJson from "@/public/data/mewgenics/biomes.json";
 import breedingJson from "@/public/data/mewgenics/breeding.json";
 import classesJson from "@/public/data/mewgenics/classes.json";
+import combatJson from "@/public/data/mewgenics/combat.json";
+import debuffsJson from "@/public/data/mewgenics/debuffs.json";
+import eventsJson from "@/public/data/mewgenics/events.json";
+import hiddenJson from "@/public/data/mewgenics/hidden.json";
 import metaJson from "@/public/data/mewgenics/meta.json";
+import questsJson from "@/public/data/mewgenics/quests.json";
 import routeJson from "@/public/data/mewgenics/route.json";
 import startJson from "@/public/data/mewgenics/start.json";
 import trophiesJson from "@/public/data/mewgenics/trophies.json";
@@ -20,6 +34,13 @@ export const start = startJson as StartDataset;
 export const breeding = breedingJson as BreedingDataset;
 export const classes = classesJson as ClassDataset;
 export const route = routeJson as RouteDataset;
+export const advanced = advancedJson as AdvancedDataset;
+export const biomes = biomesJson as BiomeDataset;
+export const combat = combatJson as CombatDataset;
+export const events = eventsJson as EventDataset;
+export const debuffs = debuffsJson as DebuffDataset;
+export const hidden = hiddenJson as HiddenDataset;
+export const quests = questsJson as QuestDataset;
 
 /** Id do troféu pelo nome, para ligar classes, áreas e NPCs à lista de troféus. */
 const byName = new Map<string, Trophy>(trophies.trophies.map((t) => [t.name, t]));

@@ -1,0 +1,341 @@
+"""Biomas e chefes: resumo escrito à mão a partir dos Biome Breakdown, Home Defense e Act 3 Tips do guia do Greenside
+(que por sua vez credita as imagens e mapas à Mewgenics Wiki)."""
+
+from utils.games.mewgenics import biome_images
+from utils.games.mewgenics.schemas import Biome, BiomeDataset, Foe, HouseBoss
+
+F = Foe
+
+BIOMES = [
+    Biome(
+        id="alley",
+        summary="Always your first biome. Very forgiving: even cats with poor stats mostly get through, so it is a good place to try classes.",
+        hazards=[
+            "Rain makes everything wet: burn immunity, stronger lightning, and frost damage freezes.",
+            "Wind knocks every cat back in a random direction at the end of the round. Bear traps move with it.",
+            "Snow spawns ice spikes (1 damage when stepped on). They also disable Radical Rat's bombs.",
+        ],
+        enemies=[
+            F(name="Pooter", text="Flying, 6 HP, ranged 5 damage. Killing it fast helps the whole team."),
+            F(name="Leaper", text="Big rat, 5 damage AOE with knockback. Tanky, but often hurts its own allies."),
+            F(name="Rat", text="Charge can do 5-6 damage if it rams you into a wall. Only 1 movement, so let it come to you."),
+            F(name="Cat Caller", text="Debuffs movement and flees, which costs you rewards. Kill it if it is safe.", priority=True),
+            F(name="Kitten", text="Weak but come in numbers and flee unless one-shot."),
+            F(name="Tom Tom", text="High HP, 2 movement, 6 damage to the 3 tiles in front. Do not line your cats up."),
+        ],
+        bosses=[
+            F(name="Maise", text="Buffs a kitten swarm that does her damage. A damage check: AOE and knockback help."),
+            F(name="Fenrir", text="Spams bear traps and shoots from range. Push him out of tall grass or cut the grass with wind. Has no way to recover from damage over time."),
+            F(name="Magnus", text="Easiest mini-boss. Charges, runs away and spins. Cats in an L shape get dashed twice. Webs and bear traps stop him."),
+            F(name="Lucy", text="Low health, but casts before two of your cats act. Her spells mostly inflict statuses, so a cleric undoes them."),
+            F(name="Queen Hippo", text="Second hardest in Act 1. Focuses her attacks on one cat. She goes down on her own after 4 rounds, so immobilizes and fear can stall her out. Huddle your cats in the centre."),
+            F(name="Radical Rat", text="Bombs need two hits to destroy; one only deactivates them. Rain and water stop them arming. Damage over time keeps him out of his bucket."),
+        ],
+    ),
+    Biome(
+        id="sewers",
+        summary="First optional biome. Strongly favours ranged classes: lots of water, and the enemies use it better than you do.",
+        leans="Ranged",
+        hazards=[
+            "Spiked rocks and harpoons.",
+            "Flooding: the map becomes 90% water, which makes the Boris fight especially dangerous.",
+            "Bug Bites: every unit takes 1 damage and 1 bleed at the end of the round. Low Constitution cats are in danger.",
+            "Butterflies or fireflies heal your units a little each turn.",
+        ],
+        enemies=[
+            F(name="Baby Shark and Sharkie", text="Inflict bleed and pile onto anyone bleeding. If you bleed one of them, the sharks attack each other."),
+            F(name="Daddy Shark", text="Rare. Instantly kills any cat in melee range. 2x2, only 30 HP. Avoid it, then focus it on its turn.", priority=True),
+            F(name="Leech", text="Dash with lifesteal, starts on low health. Kill it quickly."),
+            F(name="Floater", text="8 HP, 5 damage then runs. Ignores water slowdown."),
+            F(name="Fetus", text="12 HP, 5 damage projectile, heals in water. Overwhelms you in numbers if left alone."),
+            F(name="Fetus Gusher", text="Long push attack that hurts more than it looks. They clump, so AOE works."),
+        ],
+        bosses=[
+            F(name="Flushmaster", text="100 HP, knocks you around for 4-7 to every cat. He only turns when he attacks, so he can be backstabbed."),
+            F(name="Rat King", text="2x2, 100 HP, dash for 10 plus trample. Treat him like a rook and use cover. Summons dips, pinkies and poop. Killing his three small heads enrages the main one."),
+            F(name="Boris", text="2x2, 200 HP. Moves a tile for every hit he takes, so he counters every melee attack. A ring of water pushes units at the end of each round. Bring ranged cats, or melee cats with brace and thorns."),
+        ],
+    ),
+    Biome(
+        id="caves",
+        summary="Favours ranged again. The guide calls it the easiest tier 3 biome, with a lightweight boss: a good place to practise a new class.",
+        leans="Ranged",
+        hazards=["Stalactite tiles: standing on one can drop a rock for 5-6 damage, several times a round."],
+        enemies=[
+            F(name="Skull Ooze", text="Short-range melee that destroys your equipment. Keep out of melee.", priority=True),
+            F(name="Spider Cat", text="Starts low, immobilizes and lifesteals.", priority=True),
+            F(name="Mega Fetus", text="Slams the ground when damaged, which also drops stalactites. Keep melee on its right side. Low HP, so melee can handle it."),
+            F(name="Toadie", text="Mimic disguised as a rock or terrain. Hit rocks when you cannot see enemies."),
+            F(name="Brain Drain", text="Negates one spell a round. Bait it with a cheap spell first."),
+            F(name="Bat", text="50% avoidance and flees when hurt."),
+        ],
+        bosses=[
+            F(name="Big Slime", text="2x2, 80 HP. Splits into four 16 HP slimes, then into 8 HP dips. AOE helps late in the fight."),
+            F(name="Baby Spider / Spinerette", text="250 HP slog. Melee hits 10 in a 2x1 line. Webs take your attack action (spells still work, and movement abilities break the web). Spiderlings spawn when she is hurt, and from the corpse of an infested cat. Shot in the back, she enrages."),
+        ],
+        tips=["Use the baby spider form to heal and use items before the real fight.", "Kill one spider cat to bring her down from the ceiling."],
+    ),
+    Biome(
+        id="junkyard",
+        summary="Easier than the Sewers by the guide's reckoning, but built around terrain effects. Safer for melee teams.",
+        hazards=[
+            "Creep: 1 damage per tile and reduced movement.",
+            "Glass shards: 1 damage to walk on; being attacked on one adds 1 bleed per hit.",
+            "Oil: tarred stacks slow you and make burn hit hard.",
+        ],
+        enemies=[
+            F(name="Glass Spitter", text="Covers the ground in shards, bleeds at range, very tanky.", priority=True),
+            F(name="Lumpy", text="Like a Glass Spitter without armour, spreading creep instead."),
+            F(name="Jekyll", text="Kittens that transform after 3 rounds and flee when hurt. A tank with goad handles them."),
+            F(name="Host", text="Stationary. Reflects ranged attacks and counters melee. Flees if it is the last one alive. Attack from a knight's-move position."),
+            F(name="Siren", text="Tougher Cat Caller that lures cats into creep and glass."),
+            F(name="Popeye", text="Tougher Tom Tom with a dash. Slow, but they gang up."),
+        ],
+        bosses=[
+            F(name="Can Creeper", text="Spreads creep and can only be hit from the front. Fighters do well. In phase 2 he swims in the creep; knock him out and he drops to 1 movement."),
+            F(name="Trampy", text="Standard tank and spank. His booze attack does 10 and burns. Easiest mini-boss."),
+            F(name="Chubs n' Nubs", text="Twin dogs, one spins and one leaps. Their ranged attack spreads creep. Get them facing each other with nobody between, hit one, and they shoot each other."),
+        ],
+    ),
+    Biome(
+        id="boneyard",
+        summary="The hardest zone of Act 1. Enemies bend the rules, so bring cheap attacks you can use several times a turn and ways to cut mobility.",
+        hazards=["Wind can be a map event."],
+        enemies=[
+            F(name="Werecat", text="2 movement but jumps and dashes in the same turn. High damage.", priority=True),
+            F(name="Floating Skull", text="High armour, low HP, AOE lifesteal. Floats and teleports."),
+            F(name="Skeleton Cat", text="High armour, 1 HP. After you break the armour, destroy the corpse before its next turn or it resurrects.", priority=True),
+            F(name="Zombie Cat", text="Spreads poisoned tiles. Tanky but slow, easy to kite."),
+            F(name="Tombstone", text="Spawns zombie cats, and a Spookie when destroyed."),
+            F(name="Spookie", text="Little ghost that drains mana."),
+            F(name="Worm", text="Ranged, moves when damaged."),
+        ],
+        bosses=[
+            F(name="Mama Maggot", text="A Maise that mutates her maggots instead of protecting them. Kill the maggots before they mutate; the rest is tank and spank."),
+            F(name="Dybbuk", text="Avoids every attack unless he cannot move. 'Cannot miss' gear does not help against him. Damage over time, AOE and thorns work. The unit that lands the killing blow is possessed, so down it and bring a revive. Do not use buff items: he inherits them."),
+        ],
+    ),
+    Biome(
+        id="desert",
+        summary="First biome of Act 2 and a big step up. Mutations happen far more often here. Playing recklessly is a good way to wipe.",
+        hazards=[
+            "Heat Wave: healing is reduced by 1 and cats recover no HP after battle.",
+            "Water bottles (10-15 coins in two shops) heal 5 and restore the post-battle recovery. Being wet also cancels the heat.",
+            "Dummies: damaging one inflicts 3 sparkle damage on random units, including yours. Keep damage over time off them.",
+            "Bug Bites, as in the Sewers, but worse without HP recovery.",
+        ],
+        enemies=[
+            F(name="Horny Cat", text="7 HP ranged, 1 blind per attack, comes in swarms.", priority=True),
+            F(name="Baby Death Worm", text="Hits anyone ending a move on its row or column. Treat it like a rook. 8 HP."),
+            F(name="Bone Worm", text="Grows every turn, gaining range and damage. Crits and armour-piercing one-shot it. A cheap hit keeps it small."),
+            F(name="Fly Swarm", text="Each hit you land kills a fly and removes an attack. Multi-hit, instant-kill and thorns help."),
+            F(name="Burfer Maggot", text="Surrounds you with thorned tumour blocks you must destroy to move."),
+        ],
+        bosses=[
+            F(name="Dack (mini-boss)", text="Knocks coins out of you and grabs them for backflips. Squishy: concentrated fire and cheap ranged attacks that burn his backflips."),
+            F(name="Gein", text="Pulls you to him if you stop in front, even diagonally. His AOE makes meat chunks and he dashes to them, trampling for 3. Attack from varied angles."),
+            F(name="Marshmallow", text="Licks to charm a cat for a turn, and has a holy shield. If she licks your last cat, you lose the fight. Break the shield with a cheap attack first."),
+            F(name="Morana", text="Fills the arena with corpses and resurrects them, and revives herself. Stacks leech, so it punishes healing-dependent teams. Desecrate cheeses her."),
+            F(name="Zodiac", text="Shoots anything that moves for 7, six times, then must reload and gives up his turn. Use cover, familiars or high-dodge rogues to waste his ammo."),
+            F(name="Gambit", text="Three turns a round around a D6 that sets his attack strength. Your hits can re-roll his die. A butcher hook can pull the die out of his reach."),
+        ],
+        tips=[
+            "Freeze or wet effects make the target wet instead, which restores post-battle healing.",
+            "Destroyed cacti leave water to get wet and refill bottles, but they have 5 thorns: use ranged or AOE.",
+            "Any creep spell, the Number One, Spit and Rottom meat also make targets wet.",
+            "Fire spells get +1 radius and +1 burn here, so fire mages shine.",
+            "If a cat goes down in the mini-boss and you lack bottles for everyone, skip the hard path.",
+            "There is no shame in replaying Act 1 so Frank reaches 25 cats and you arrive with better gear.",
+        ],
+    ),
+    Biome(
+        id="bunker",
+        summary="A damage check: high-HP enemies that deal more damage over time. Wide damage over time and big hits pay off.",
+        hazards=[
+            "Nukes: damaging a warhead causes a big AOE explosion. Mind where you stand.",
+            "Bots: electric damage buffs them and gives an extra turn. That includes friendly bots and your Tinkerer's.",
+        ],
+        enemies=[
+            F(name="Cultist", text="20 HP, 5 damage, comes in packs. Becomes a Zealot after a kill or when Johnny dies, a Bishop with a hat, a Mutant near radiation."),
+            F(name="Cultist Zealot", text="High-damage multi-attack. At low health it becomes a suicide bomber (10 AOE)."),
+            F(name="Cultist Mutant", text="Wide knockback melee and spawns mobs on death. Remove the ooze with terrain abilities."),
+            F(name="Cultist Bishop", text="Heals and buffs, two shields, AOE shock. Drops its hat for another cultist to take.", priority=True),
+            F(name="Security Bot", text="No attack of its own; moves toward you if you hurt its allies, then hits several times for 4 with bleed. Spread your damage dealers."),
+            F(name="Love Bot", text="Heals and buffs, no attack, flees if last.", priority=True),
+            F(name="Atomic Kitten", text="1 HP, 4 shield. Pushes, teleports and explodes on death. Its attacks turn cultists into mutants. Burn or poison kills it at its turn."),
+        ],
+        bosses=[
+            F(name="Lenny", text="Least dangerous. Hugs one cat for 6 a turn; the cat can struggle free. Keep him from his target."),
+            F(name="Bumblefoot", text="Most dangerous mini-boss of Act 2. Eats corpses (8 at the start, do not destroy them) and eats your cats when he runs out. About 4 rounds to win. Keep cats off the map border."),
+            F(name="Johnny", text="Attacks only while a cultist washes him, summoning 3 a round. Can mind-control a cat and AOE for 6. Freeze him when wet, and kill cultists before he dies. Soul Link damages him and his cultists."),
+        ],
+    ),
+    Biome(
+        id="crater",
+        summary="Complicated: the regular enemies are more dangerous than the boss. The chapter starts with the mini-boss, so if the Desert beat you up, go to the Bunker first.",
+        hazards=[
+            "Two hard paths. The first gives only slightly better loot; the second adds a fight and a level.",
+            "No furniture reward here.",
+            "A mandatory event lets you pick a weather: Meteor Storm (easiest), Solar Flare, Strange Eggs, Geomagnetic Storm, Alien Infestation, or The Shimmer.",
+            "The Shimmer applies random debuffs each round but gives every cat a mutation at the end of battle: the way to farm mutations.",
+        ],
+        enemies=[
+            F(name="Amoeba", text="Seeks rocks, even enemies, as weapons: a boulder gives 10 shield, 5 HP and 10 damage. Otherwise it destroys armour and inflicts a permanent 10% miss chance. Three on one cat cause permanent madness.", priority=True),
+            F(name="Crater Creeper", text="Makes Amoebas every turn while spreading creep. On par with a mini-boss.", priority=True),
+            F(name="Infested Kittens", text="Their lick charms. Many of them keep a unit mind-controlled. Low HP.", priority=True),
+            F(name="Tremblo", text="Tanky, eats rocks for shield, and instantly kills any petrified unit, yours too."),
+            F(name="Carnibulb", text="Starts immobile, gains movement per alien bulb and spawns bulbs."),
+            F(name="Alien Bulb", text="1 HP. Mind-controls adjacent cats for a turn at the end of the round."),
+        ],
+        bosses=[
+            F(name="Rocky Bobo", text="Tank and spank. Flop and Rock Song do the damage. He turns to face whoever last hurt him."),
+            F(name="Infested Pair", text="Spawn a bulb when hurt, get an extra turn per active bulb, and spread brambles. Fire cheeses the fight."),
+            F(name="Crater Maker", text="3x3, 2 turns a round, easiest Act 2 boss. His telegraphed attack changes each time he is hit, and one of them (Consume) kills a cat in front of him instantly. Do not melee in front."),
+        ],
+        tips=["Plants, including infested ones, double their burn stacks every turn: one fire mage can carry the hard paths.", "Rock abilities (Rock Smasher, Eat Rock) carry a tank here."],
+    ),
+    Biome(
+        id="core",
+        summary="The guide's pick for easiest in Act 2: tame abilities and slow enemies despite high damage. Demons, fire, and no built-in weather.",
+        hazards=[
+            "Demons take extra damage from holy spells and heals. Most guns and explosives count as fire, which most enemies here are immune to.",
+            "An obelisk at the end of the biome gives 1 mutation to the cat that touches it.",
+        ],
+        enemies=[
+            F(name="Brute", text="Large and slow, instantly kills any cat below 50% HP and destroys its body. Only 20 HP.", priority=True),
+            F(name="Hot Poker", text="Immobilizes, and gives allies an extra turn. Two together march at you. Separate them or focus one."),
+            F(name="Chain Demon", text="Hooks cats into melee range. Treat them like rooks."),
+            F(name="Tall Tumor", text="Drains mana at end of turn and deals damage equal to the mana left. 16 HP.", priority=True),
+            F(name="Tumor Cat / Tumor Head", text="Dash and trample whenever damaged. Prime targets for Hot Pokers."),
+            F(name="Core Freak", text="Tanky, hits hard, blind and slow. Ignores you unless you attack."),
+            F(name="Whisperer", text="Buffs allies, debuffs you, charms adjacent units. 3-tile range."),
+        ],
+        bosses=[
+            F(name="Cerberubs", text="A beefed-up Chubs n' Nubs. Damage makes it shoot lava (5 and burn 4 in front). Use cover, turn it away, and end the fight before lava floods the arena. A cat that dies to burn gets the immolated injury."),
+            F(name="The Coven", text="A damage check: 300 HP and five 50 HP candles. Water or wind puts a candle out. Her fourth spell summons the Tormentor, whose Feast is an instant-kill AOE. Active candles buff him. Kill her before the ritual finishes, or snuff the candles and deal 120 to the Tormentor."),
+        ],
+        tips=["Collecting 3 pieces of the molten set gives fire immunity, which helps against the Rift boss too."],
+    ),
+    Biome(
+        id="moon",
+        summary="Among the most complicated biomes. Low Gravity favours ranged and magic classes.",
+        leans="Ranged",
+        hazards=[
+            "Low Gravity: +2 range on jumps, projectiles and throws, and every physical attack gains +1 knockback. Multi-hit melee is hard unless there is a wall behind the target.",
+            "The hard path rewards a meteor trinket with a random collarless passive. With the Crater's meteor weapon you need only one more meteor item for the full Planet set.",
+        ],
+        enemies=[
+            F(name="Y Blaster", text="Hits anyone moving through its row or column for 2. Dodges melee."),
+            F(name="B Prober", text="Hit from behind, it charms until you damage it. Back your cat against a wall."),
+            F(name="G Alien", text="Map-wide counterspell and extra turns for allies.", priority=True),
+            F(name="Asteroids", text="Flying rocks, immune to statuses. Use rock spells and knockback."),
+            F(name="Saucie", text="Only attacks diagonally. A robot: no electricity. Marks cats within 3 tiles. Pull them in and gang up."),
+            F(name="Astronaut", text="Slow, jumps, stuns with electricity and charges robot allies."),
+            F(name="Waggles", text="One-shots familiars and copies low-HP allies."),
+            F(name="Moon Worm", text="Gains brace per hit and attacks everything in range. Charm them or use your best hits."),
+            F(name="Rover", text="Chain dash like Magnus. Spread your cats out."),
+        ],
+        bosses=[
+            F(name="The Abandoned Ones", text="Two of them, melee for 10-15 plus injuries, 2 tiles of movement. After 40 damage each splits into a head and a body that heals. Stun the body and kill the heads fast."),
+            F(name="The Man in the Moon", text="The guide's hardest Act 2 boss. Keep melee in the centre. A tanky, high-INT cat in front gets eaten and his hands hit him. Spammable attackers in the centre make his hands hit himself. Ranged cats stay at the sides."),
+        ],
+        tips=["Flaming Orb quest: the cat holding it only has to stand in front of the Man in the Moon to be eaten and spat back out, which kills him instantly. No sacrifice needed."],
+    ),
+]
+
+HOUSE_SETUP = [
+    "On the day a house boss arrives you cannot end the day or send cats down the pipe. Put at least one cat in the box to start.",
+    "Pick up to 4 veteran cats. There is no reward for fewer and no penalty for four, so bring four.",
+    "Equipment you bring is prone to breaking. Do not bring mutated cats you want as breeding stock.",
+]
+
+HOUSE_BOSSES = [
+    HouseBoss(
+        id="guillotina1",
+        name="Guillotina",
+        text="2x2, 400 HP (about 450 after a late heal), trample. Basic tank and spank. She cannot one-shot a cat unless it has 3 or less Constitution, so one or two melee cats are fine.",
+        tips=[
+            "She can throw melee cats away and has a 'Kirby suck': any cat on her row or column is pulled into her stomach, where it cannot move or cast and risks an instant swallow.",
+            "Hitting her from the front while a cat is inside forces her to spit it out.",
+            "Treat her like a beefier Boris: stay out of her line, attack from different sides, stack damage over time, and use immobilize, petrify and freeze.",
+            "Winning gives you a Meat Cube to take to the end of the Caves.",
+        ],
+    ),
+    HouseBoss(
+        id="guillotina2",
+        name="Guillotina, round 2",
+        text="Head and body are separate, 250 HP each. Starts a 7-day countdown after you deliver the Meat Cube.",
+        tips=[
+            "The head pulls everyone into a line, shoots for 5-7 along it and throws cats into the body. Focus it first.",
+            "The body can only jump 2 tiles. Put damage over time on it: the stacks linger after the head dies.",
+            "When the head dies the body heals 100, gains movement and a stomp that drops debris.",
+        ],
+    ),
+    HouseBoss(
+        id="guillotina3",
+        name="Guillotina, round 3",
+        text="The head is immobile and the body walks to it, spawning maggots. Immobilization keeps them apart.",
+        tips=[
+            "Each attack on the head lets the body move 2 steps closer.",
+            "When they meet she shrieks: Hex raises the mana cost of every spell by 1 and everyone gets 1 poison.",
+            "Near low health the body summons Mama Maggot. Kill the body, then Mama Maggot, then the head.",
+        ],
+    ),
+    HouseBoss(
+        id="pyrophina",
+        name="Pyrophina",
+        text="Most of her damage is burn.",
+        tips=["Spells and abilities that put fires out, such as Spit and Number One, make the fight much easier."],
+    ),
+    HouseBoss(
+        id="zartana",
+        name="Zartana",
+        text="Does most of her damage by knocking rocks around, and counts as a rock herself.",
+        tips=["Tank rock abilities such as Eat Rock work on her."],
+    ),
+    HouseBoss(
+        id="duel",
+        name="Pyrophina vs Zartana",
+        text="They hurt each other more than you do, and their attacks are arena-wide. You choose who wins; the winner joins your house.",
+        tips=[
+            "A Necromancer's Soul Link on the one you want to lose lets you sit back while they trade blows.",
+            "An Amoeba familiar can carry Zartana to one-shot Pyrophina.",
+            "Use a second save file if you want both outcomes.",
+        ],
+    ),
+    HouseBoss(
+        id="c800",
+        name="C-800",
+        text="Melee cats barely contribute. He throws grenades, then takes a sniper, shotgun or machine gun.",
+        tips=[
+            "He starts with 50 brace and loses it when damaged: spells that strip enemy buffs are valuable.",
+            "Each spell you cast pulls him closer, and in melee range he stuns.",
+            "Monks with several low-damage ranged attacks do well. Tall grass keeps him from hitting you.",
+        ],
+    ),
+    HouseBoss(
+        id="c1000",
+        name="C-1000",
+        text="Has 100% dodge, losing 10% per attack he avoids, and copies one of your cats at the end of each round.",
+        tips=[
+            "Cheap spammable attacks (Spit, Light Shot, Jab) wear the dodge down.",
+            "He copies spells, attacks, armour and disorders: bring a fast cat with severe disorders. Death's Scythe cheeses the fight.",
+        ],
+    ),
+]
+
+ACT3_TIPS = [
+    "Bonus moves and teleports: many Act 3 enemies instantly kill cats in melee range, so moving, attacking and moving away saves lives.",
+    "Armour piercing or breaking (Heavy Mace, Thief abilities): many enemies have shield or armour.",
+    "Reflect or catch projectiles: Reflect as a collarless spell is great, especially in the Future.",
+    "Frying pans: melee enemies in both biomes use multi-hit attacks and hit from behind, so a pan deals damage and takes none.",
+    "Electric immunity (Soulless disorder, Core's Hexagram sigil, Frank Bolts) stops stuns and poison stacks.",
+    "Avoid Kinetic Spikes: Spewer, Zapphauser and Seraphim use retaliation and can lock your cats in a stun loop.",
+    "The Past (Ice Age, Jurassic): low-HP fast enemies and high-HP slow ones, so slow, burn, fear and immobilize help. Hard paths give weapons and heads with random class abilities.",
+    "The Future: high armour and brace, with projectile, trample and AOE damage. Its hard path gives a guaranteed rare furniture piece with double stats.",
+]
+
+
+def build() -> BiomeDataset:
+    biome_images.attach(BIOMES)
+    return BiomeDataset(biomes=BIOMES, house_setup=HOUSE_SETUP, house_bosses=HOUSE_BOSSES, act3_tips=ACT3_TIPS)

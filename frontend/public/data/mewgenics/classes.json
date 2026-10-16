@@ -1,0 +1,440 @@
+{
+  "intro": "A class (collar) is assigned before a run and changes a cat's stats and the abilities it can learn. After finishing a zone, talk to Butch to get the next class. Tiers are Greenside's personal ranking, not a rule; the Crap Guide author stresses that any class can work.",
+  "statRules": [
+    {
+      "stat": "Constitution",
+      "rule": "4 HP per point."
+    },
+    {
+      "stat": "Charisma",
+      "rule": "3 max mana per point, and some mana at the start of battle."
+    },
+    {
+      "stat": "Intelligence",
+      "rule": "Mana gained at the end of each turn. A cat with 5 in every stat has 20 HP, 15 max mana and gains 5 mana a turn."
+    },
+    {
+      "stat": "Strength",
+      "rule": "Melee classes (Fighter, Cleric, Tank, Butcher) scale their basic attack damage with it."
+    },
+    {
+      "stat": "Dexterity",
+      "rule": "Ranged basic attack = base damage + (DEX - 5) / 2. A Hunter with 9 DEX does 6."
+    },
+    {
+      "stat": "Luck",
+      "rule": "+2% crit chance on physical attacks per point. It also affects events, level-up options and every chance-based stat."
+    },
+    {
+      "stat": "Speed",
+      "rule": "Movement and turn order. Above about 10-12 it has diminishing returns."
+    },
+    {
+      "stat": "Diminishing returns",
+      "rule": "Everything except Strength, Dexterity and Luck. 4 CON (16 HP) survives two 10-damage hits; 8 CON (32 HP) survives four. Above 8 CON, spend points on damage."
+    }
+  ],
+  "ranged": [
+    {
+      "name": "Mage Dart",
+      "damage": 5.0,
+      "halfScaling": false
+    },
+    {
+      "name": "Thief Nail",
+      "damage": 5.0,
+      "halfScaling": false
+    },
+    {
+      "name": "Tinkerer Throw",
+      "damage": 5.0,
+      "halfScaling": false
+    },
+    {
+      "name": "Hunter Shot",
+      "damage": 4.0,
+      "halfScaling": false
+    },
+    {
+      "name": "Necromancer Leech",
+      "damage": 3.0,
+      "halfScaling": false
+    },
+    {
+      "name": "Monk lob",
+      "damage": 2.0,
+      "halfScaling": true
+    }
+  ],
+  "classes": [
+    {
+      "id": "fighter",
+      "name": "Fighter",
+      "roles": [
+        "Damage",
+        "Tank"
+      ],
+      "mods": [
+        "+2 STR",
+        "+1 SPD",
+        "-1 INT"
+      ],
+      "unlock": "Start",
+      "family": "melee",
+      "prefer": [
+        "CON",
+        "INT",
+        "CHA"
+      ],
+      "tier": "B",
+      "summary": "The simplest melee class and the most durable damage dealer. Some abilities like low Intelligence, but the good ones cost 6-8 mana.",
+      "pick": "High HP, high INT, low speed, high luck.",
+      "trophy": "Steroids"
+    },
+    {
+      "id": "hunter",
+      "name": "Hunter",
+      "roles": [
+        "Damage",
+        "Controller"
+      ],
+      "mods": [
+        "+3 DEX",
+        "+2 LCK",
+        "-1 CON",
+        "-2 SPD"
+      ],
+      "unlock": "Start",
+      "family": "ranged",
+      "prefer": [
+        "DEX",
+        "SPD",
+        "CHA"
+      ],
+      "tier": "S",
+      "summary": "Attacks, familiars and traps. Great damage and utility from range; the cost is fragility, a minimum range and low speed.",
+      "pick": "High DEX, high HP and high speed (best Hunter material).",
+      "trophy": "Bag Of Seeds"
+    },
+    {
+      "id": "mage",
+      "name": "Mage",
+      "roles": [
+        "Damage",
+        "Controller"
+      ],
+      "mods": [
+        "+2 INT",
+        "+2 CHA",
+        "-1 CON",
+        "-1 STR"
+      ],
+      "unlock": "Start",
+      "family": "ranged",
+      "prefer": [
+        "DEX",
+        "CON",
+        "SPD"
+      ],
+      "tier": "B",
+      "summary": "Hardest-hitting spells in the game, area damage and stuns. Range is only 3 tiles and needs line of sight, so Mages have to get close.",
+      "pick": "High DEX, high HP, middling speed, low CHA and luck.",
+      "trophy": "Spell Book"
+    },
+    {
+      "id": "tank",
+      "name": "Tank",
+      "roles": [
+        "Controller",
+        "Tank"
+      ],
+      "mods": [
+        "+4 CON",
+        "-1 SPD",
+        "-1 DEX"
+      ],
+      "unlock": "Start",
+      "family": "melee",
+      "prefer": [
+        "CON",
+        "SPD",
+        "STR"
+      ],
+      "tier": "S",
+      "summary": "More a controller than a wall: almost every ability, including the basic attack, moves enemies. Pet rocks act as familiars. Goad pulls enemies in.",
+      "pick": "High STR, low HP, low INT, low to middling speed and luck. 7 STR lets them one-shot enemies with 8 HP or less via knockback.",
+      "conflict": "The Crap Guide gives -1 DEX -1 INT instead of -1 SPD -1 DEX.",
+      "trophy": "Tank Toy"
+    },
+    {
+      "id": "cleric",
+      "name": "Cleric",
+      "roles": [
+        "Support",
+        "Damage"
+      ],
+      "mods": [
+        "+2 CHA",
+        "+2 CON",
+        "-1 SPD",
+        "-1 DEX"
+      ],
+      "unlock": "Reach the Sewers for the first time",
+      "family": "melee",
+      "prefer": [
+        "STR",
+        "CON",
+        "INT",
+        "SPD"
+      ],
+      "tier": "S",
+      "summary": "The healer. Strong with armour on overheal, resurrects and damage from healing, but it needs good stats and synergy. Stopping enemies hurts more than healing back.",
+      "pick": "High STR, low HP, high INT, high speed, low luck.",
+      "conflict": "Greenside says Complete the Alley instead.",
+      "trophy": "Prayer Card"
+    },
+    {
+      "id": "thief",
+      "name": "Thief",
+      "roles": [
+        "Damage"
+      ],
+      "mods": [
+        "+4 SPD",
+        "+1 LCK",
+        "-1 STR",
+        "-1 CON"
+      ],
+      "unlock": "Complete the Sewers",
+      "family": "ranged",
+      "prefer": [
+        "DEX",
+        "CON",
+        "CHA"
+      ],
+      "tier": "A",
+      "summary": "The most mobile class. Big single-target damage through status effects and crits, and coins from pickups. Must be kept from being one-shot.",
+      "pick": "High DEX, high HP, low speed, high luck.",
+      "trophy": "Bag Of Bags"
+    },
+    {
+      "id": "necromancer",
+      "name": "Necromancer",
+      "roles": [
+        "All",
+        "Tank"
+      ],
+      "mods": [
+        "+2 CON",
+        "+1 CHA",
+        "-2 STR"
+      ],
+      "unlock": "Complete the Boneyard",
+      "family": "ranged",
+      "prefer": [
+        "DEX",
+        "SPD",
+        "INT"
+      ],
+      "tier": "A",
+      "summary": "Corpses, zombies and leeches. Its basic attack drains life, so it is the best ranged tank. A few abilities only work while downed.",
+      "pick": "High DEX, low HP, high speed, high INT, middling luck.",
+      "trophy": "Cambion Conception"
+    },
+    {
+      "id": "druid",
+      "name": "Druid",
+      "roles": [
+        "All",
+        "Support"
+      ],
+      "mods": [
+        "+3 CHA",
+        "+1 LCK",
+        "-2 CON"
+      ],
+      "special": "Permanent crow familiar that shares its stats",
+      "unlock": "Complete the Crater",
+      "family": "melee",
+      "prefer": [
+        "CON",
+        "SPD",
+        "INT"
+      ],
+      "tier": "B",
+      "summary": "Its basic attack does no damage; the crow does. Summons, songs and forms. Songs work best at the start of a fight, so it wants speed. Summons are controllable (the Hunter's are not).",
+      "pick": "High STR, high HP, high INT and high speed (the cat that has everything).",
+      "trophy": "Tiny Cage"
+    },
+    {
+      "id": "tinkerer",
+      "name": "Tinkerer",
+      "roles": [
+        "Damage",
+        "All"
+      ],
+      "mods": [
+        "+4 INT",
+        "-1 LCK",
+        "-1 CHA"
+      ],
+      "unlock": "Complete the Bunker",
+      "family": "ranged",
+      "prefer": [
+        "CON",
+        "CHA",
+        "DEX"
+      ],
+      "tier": "A",
+      "summary": "No basic attack: it makes a weapon and throws it for 5 damage that scales with DEX. Hit-or-miss, but anything that gives tech is strong, and guns can kill a normal enemy each turn.",
+      "pick": "High DEX, high HP, high CHA, low INT. Low INT is fine: INT without CHA only wastes mana.",
+      "trophy": "Fireworks"
+    },
+    {
+      "id": "butcher",
+      "name": "Butcher",
+      "roles": [
+        "Tank",
+        "Damage",
+        "Controller"
+      ],
+      "mods": [
+        "+3 CON",
+        "+2 STR",
+        "-2 SPD"
+      ],
+      "special": "No weapons; starts with a meat hook",
+      "unlock": "Complete the Core",
+      "family": "melee",
+      "prefer": [
+        "SPD",
+        "CHA",
+        "INT",
+        "STR"
+      ],
+      "tier": "S",
+      "summary": "Like a slow Fighter. The hook pulls units from any distance in 8 directions and basic attacks cleave out meat that heals. Fire cooks meat for double healing.",
+      "pick": "High STR, low HP, low to middling INT, high speed, high luck.",
+      "trophy": "Sack Of Meat"
+    },
+    {
+      "id": "psychic",
+      "name": "Psychic",
+      "roles": [
+        "Controller",
+        "Damage",
+        "Support"
+      ],
+      "mods": [
+        "+1 INT",
+        "+1 CHA",
+        "+1 SPD",
+        "-1 CON"
+      ],
+      "special": "+5 starting mana",
+      "unlock": "Complete the Moon",
+      "family": "mind",
+      "prefer": [
+        "INT",
+        "CHA",
+        "SPD",
+        "CON"
+      ],
+      "tier": "B",
+      "summary": "The controller: status effects and forced movement, many abilities with infinite range limited only by line of sight, and turn-order tricks. Damage scales with neither STR nor DEX.",
+      "pick": "Low STR and low DEX, especially with high HP. Keep it at the back, like a magic Hunter.",
+      "trophy": "Friendship Bracelet"
+    },
+    {
+      "id": "monk",
+      "name": "Monk",
+      "roles": [
+        "Damage"
+      ],
+      "mods": [
+        "+2 INT",
+        "+1 CHA",
+        "-1 STR",
+        "-1 DEX"
+      ],
+      "special": "No weapons, trinkets or healing items; attacks twice per turn",
+      "unlock": "Complete the Lab",
+      "family": "hybrid",
+      "prefer": [
+        "CON",
+        "SPD",
+        "Regen"
+      ],
+      "tier": "B",
+      "summary": "Switches between melee and a lobbed ranged attack with the built-in Stance Switcher, and likes having little equipment, so it suits budget runs.",
+      "pick": "High STR and high DEX, or a cat with mutations that help both range and melee.",
+      "conflict": "The Crap Guide gives +2 CHA instead of +1.",
+      "trophy": "Tiny Pebble"
+    },
+    {
+      "id": "jester",
+      "name": "Jester",
+      "roles": [
+        "Any"
+      ],
+      "mods": [],
+      "special": "+1 extra reroll on level-ups",
+      "unlock": "Complete the Rift",
+      "family": "any",
+      "prefer": [
+        "CON",
+        "SPD",
+        "CHA",
+        "INT"
+      ],
+      "summary": "Gets random abilities from every other class and a few very strong ones of its own. Very strong or very weak depending on luck, like Eden in Isaac.",
+      "pick": "Balanced stats.",
+      "trophy": "Joker Card"
+    },
+    {
+      "id": "collarless",
+      "name": "Collarless",
+      "roles": [
+        "Joke class"
+      ],
+      "mods": [],
+      "unlock": "Start",
+      "family": "any",
+      "prefer": [],
+      "summary": "By design the weakest class: weak, situational and overpriced abilities, and no stat bonus. It can pick skills from other classes on level-up, so it needs a good base attack.",
+      "pick": "Balanced stats with high STR and a melee attack, or high DEX and a ranged one.",
+      "trophy": "Skill Split"
+    }
+  ],
+  "discrepancies": [
+    {
+      "topic": "Cleric unlock",
+      "sides": [
+        "How to Unlock all Classes: reach the Sewers for the first time.",
+        "Greenside: complete the Alley. (That is the same step, since finishing the Alley opens the Sewers.)"
+      ]
+    },
+    {
+      "topic": "Tank modifiers",
+      "sides": [
+        "How to Unlock all Classes: +4 CON, -1 SPD, -1 DEX.",
+        "A Crap Guide To Classes: +4 CON, -1 DEX, -1 INT."
+      ]
+    },
+    {
+      "topic": "Monk modifiers",
+      "sides": [
+        "How to Unlock all Classes: +2 INT, +1 CHA, -1 STR, -1 DEX.",
+        "A Crap Guide To Classes: +2 INT, +2 CHA, -1 STR, -1 DEX."
+      ]
+    },
+    {
+      "topic": "Is the Mage good?",
+      "sides": [
+        "Greenside: B tier (it used to be A). Early Game Tips and the Reddit post say it is the weakest starter.",
+        "Crap Guide: it hits harder than any other class, including what it calls the strongest spell in the game, Meteor Storm."
+      ],
+      "verdict": "Strong with the right spells and stats; it needs more setup than Hunter, Tank or Cleric."
+    }
+  ]
+}

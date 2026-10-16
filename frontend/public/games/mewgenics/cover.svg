@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 384" preserveAspectRatio="xMidYMid slice">
+<rect width="1200" height="384" fill="#f4ead5"/>
+<g stroke="#1d1611" stroke-opacity="0.07" stroke-width="2">
+<path d="M0 64H1200M0 128H1200M0 192H1200M0 256H1200M0 320H1200"/>
+</g>
+<circle cx="250" cy="330" r="150" fill="#f3a6b6"/>
+<circle cx="1010" cy="40" r="110" fill="#f2b632"/>
+<text x="90" y="215" font-family="Impact, 'Arial Black', sans-serif" font-size="150" fill="#1d1611" stroke="#1d1611" stroke-width="3">MEW<tspan fill="#e8553d">GENICS</tspan></text>
+<g transform="translate(860 40) scale(1.05) rotate(-6 150 150)" stroke="#1d1611" stroke-width="8" stroke-linejoin="round" stroke-linecap="round">
+<path d="M58 128 L46 36 L132 84 Z" fill="#f0a23b"/>
+<path d="M242 128 L254 36 L168 84 Z" fill="#f0a23b"/>
+<path d="M70 108 L62 62 L108 86 Z" fill="#f3a6b6" stroke-width="5"/>
+<path d="M230 108 L238 62 L192 86 Z" fill="#f3a6b6" stroke-width="5"/>
+<ellipse cx="150" cy="170" rx="108" ry="90" fill="#f0a23b"/>
+<ellipse cx="150" cy="208" rx="52" ry="38" fill="#fbf4e4" stroke-width="6"/>
+<path d="M150 84V116M122 90L128 114M178 90L172 114" fill="none" stroke-width="7"/>
+<ellipse cx="104" cy="164" rx="22" ry="26" fill="#fff"/>
+<ellipse cx="196" cy="168" rx="17" ry="21" fill="#fff"/>
+<circle cx="110" cy="168" r="9" fill="#1d1611" stroke="none"/>
+<circle cx="190" cy="172" r="7" fill="#1d1611" stroke="none"/>
+<path d="M138 192H162L150 206Z" fill="#e8553d" stroke-width="5"/>
+<path d="M150 206V216M150 216Q138 232 124 222M150 216Q162 232 176 222" fill="none" stroke-width="5"/>
+<path d="M82 206L30 196M84 218L32 226M218 206L270 196M216 218L268 226" fill="none" stroke-width="5"/>
+<path d="M70 252Q150 290 230 252L224 276Q150 314 76 276Z" fill="#e8553d"/>
+<circle cx="150" cy="292" r="22" fill="#f2b632"/>
+</g>
+</svg>

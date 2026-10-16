@@ -22,6 +22,7 @@ Cada jogo pode sobrescrever tokens do shadcn e fontes com variáveis CSS, sem to
   Fontes Anton (display), Pixelify Sans (mono) e Atkinson Hyperlegible Next (texto).
   Utilitários: `.sticker`, `.sticker-sm`, `.hud-tab`, `.roll-plate`, `.tilt`.
 - The Blood of Dawnwalker (`.theme-dawn`): noite carmesim e osso, com o relógio de 30 dias (SVG, dia/noite) no hero. Fontes legíveis: Barlow Condensed (display) e Atkinson Hyperlegible Next (texto). Pouca caixa: a informação se organiza por linhas com filete, colunas com régua no topo e linha do tempo numerada (etapas dos troféus, partes da rota); só o contador de segmentos fica num painel (fixo no topo). Utilitários: `.label` (rótulo em caixa-alta), `.seal`, `.seal-ghost` (botões), `.dial-spin`.
+- Mewgenics (`.theme-cat`): caderno de gato. Papel creme com linhas suaves, tinta preta grossa, coral/mostarda/rosa. Fontes Bowlby One (display) e Nunito (texto). Pouca caixa: linhas com filete, numerais grandes e etiquetas de coleira; só o índice usa painéis. Utilitários: `.tag` (+ `.tag-pink`, `.tag-teal`, `.tag-paper`), `.btn`, `.btn-ghost`, `.sticker` (gato do hero), `.panel`, `.label`, `.wobble`.
 
 ## Estrutura de uma página de jogo
 `GameShell` com `sections=[{id,label}]` e `hero` opcional (substitui o cabeçalho padrão): índice com scroll-spy

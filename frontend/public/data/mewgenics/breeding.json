@@ -1,0 +1,233 @@
+{
+  "houseStats": [
+    {
+      "id": "comfort",
+      "name": "Comfort",
+      "effect": "High comfort makes cats breed more and fight less. Each cat past the fourth in a room lowers it by 1, and so does each poop.",
+      "target": "Keep it positive. 5-10 or more for breeding; 2-5 is enough early on."
+    },
+    {
+      "id": "stimulation",
+      "name": "Stimulation",
+      "effect": "Raises the chance that a kitten inherits the higher of its parents' base stats and their skills and mutations.",
+      "target": "The key stat of the breeding room. Do not push breeding hard before about 20."
+    },
+    {
+      "id": "health",
+      "name": "Health",
+      "effect": "Cures injuries, slows ageing and stops diseases from spreading. Low health lets old cats die suddenly.",
+      "target": "Some everywhere. Contagious diseases only clear with health, a lucky battle or an event."
+    },
+    {
+      "id": "mutation",
+      "name": "Mutation",
+      "effect": "Chance that cats mutate. Most mutations are +2 to one stat and -1 to another, so they are a net gain.",
+      "target": "Put it where strays and kittens sleep, not in the breeding room."
+    },
+    {
+      "id": "appeal",
+      "name": "Appeal",
+      "effect": "Applies to the whole house. Higher appeal brings strays with better stats and skills every day.",
+      "target": "Useful early; matters less once you have a strong core of cats. Keep the items in a storage room."
+    }
+  ],
+  "inherits": [
+    "Base stats, mutations, genetic modifiers and some abilities. Bonus stats (from fights and adventures) are not passed on: a high-stat veteran is worth less than a stray with good base stats.",
+    "Tink's upgrade shows total, base and bonus stats side by side. Without it you cannot tell them apart.",
+    "When a kitten inherits an ability from a parent, the game rolls against the room's Stimulation. If it fails, a random grey ability is used instead.",
+    "A parent's disorders are inherited too, because the game treats them as innate."
+  ],
+  "odds": [
+    {
+      "what": "Kitten gets the higher of its parents' base stat",
+      "base": "50%",
+      "boost": "60% at 50 stimulation, 80% at 300"
+    },
+    {
+      "what": "Kitten inherits one of a parent's spells (actives)",
+      "base": "20%",
+      "boost": "guaranteed at 32"
+    },
+    {
+      "what": "Kitten inherits two spells",
+      "base": "2%",
+      "boost": "guaranteed at 196"
+    },
+    {
+      "what": "Kitten inherits a parent's passive",
+      "base": "5%",
+      "boost": "guaranteed at 95"
+    },
+    {
+      "what": "Mutation in a body slot that both parents have",
+      "base": "-",
+      "boost": "guaranteed in that slot"
+    }
+  ],
+  "roomRules": [
+    "You never need more than 8-12 breeders. Thirty breeders meant 12-15 kittens a night and low comfort.",
+    "Keep the breeding room at 50/50 male and female, with comfort of at least 5 and preferably above 10.",
+    "Keep gay and low-libido cats out. Each night a cat targets one other cat, and if it is a gay cat no kittens are made.",
+    "A bisexual cat that keeps going for the same sex should be treated as gay.",
+    "Cats that fall in love breed nearly every night. Put the pair you want in a spare room until they pair up, then move them.",
+    "Charisma helps breeding chances. Libido controls how often cats initiate and accept.",
+    "Purge: a cat without a 7 in some stat, or without all stats between 5 and 6, does not belong in the breeding room.",
+    "Base stats come first. A cat with good base stats can still gain mutations; a cat with good mutations and bad base stats can never fix its stats."
+  ],
+  "plans": [
+    {
+      "id": "simple",
+      "title": "Three roles",
+      "source": "Early Game Tips, Breeding Basics",
+      "summary": "The simple setup: one room for breeding, one for storage and one fight club.",
+      "rooms": [
+        {
+          "name": "Breeding room",
+          "stats": "High comfort and stimulation",
+          "use": "Your best cats with high base stats. Keep them in love and stop adding strangers."
+        },
+        {
+          "name": "Storage room",
+          "stats": "Appeal items; comfort",
+          "use": "Kittens, strays and cats that are neither good for breeding nor for fights."
+        },
+        {
+          "name": "Fight club",
+          "stats": "Low comfort, high mutation",
+          "use": "Cats before they leave on runs. Winners of a fight get a random stat boost."
+        }
+      ],
+      "notes": [
+        "Take strays that have several 6s or at least one 7. 7s are very important.",
+        "Kittens cannot fight, so you can put mutation furniture in the fight club and move kittens there on their first night."
+      ]
+    },
+    {
+      "id": "deterministic",
+      "title": "Three-room rotation",
+      "source": "Rough guide on deterministic breeding",
+      "summary": "Breed, store and pair in separate rooms, so good cats keep coming. Needs 3+ rooms, Tink's upgrades and a Totem that blocks breeding.",
+      "rooms": [
+        {
+          "name": "1. Breeding room",
+          "stats": "High stimulation, some health, no mutation, comfort 5+",
+          "use": "A handful of breeding cats, all in love with each other. Mark parents and kittens with the same icon."
+        },
+        {
+          "name": "2. Incubation and storage",
+          "stats": "High comfort, some mutation, little health, no-breeding Totem",
+          "use": "Offspring and strays. They cannot breed there, so mutation furniture can slowly give new traits."
+        },
+        {
+          "name": "3. Dating room",
+          "stats": "Comfort 2+, health 1+",
+          "use": "Pair an offspring with a stray here, then move the couple to room 1. When one of a pair dies, discard both."
+        }
+      ],
+      "notes": [
+        "Ideal parents together reach 7 in every stat (6/7/7 plus 7/6/1 can give 7/7/7). One parent should carry the mutations, the other none.",
+        "Skills are a bonus of this plan, not the goal."
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Early",
+      "aim": "High Constitution and Speed. Stats matter less than picking the right class and wearing armour."
+    },
+    {
+      "name": "Early-mid",
+      "aim": "High Constitution, max Speed, and at least 5 stats above 5."
+    },
+    {
+      "name": "Mid",
+      "aim": "High Constitution, max Speed and at least 5 stats above 6. Start placing mutation furniture in your storage room."
+    },
+    {
+      "name": "Mid-late",
+      "aim": "5 to 7 stats at 7, Constitution and Speed maxed. Kittens should inherit 3+ mutations you want, ideally the reroll mutations."
+    },
+    {
+      "name": "Late",
+      "aim": "Same stats, with 5+ wanted mutations. The author carries 3 reroll mutations on his cats."
+    }
+  ],
+  "orientation": [
+    {
+      "pair": "Male (straight) + Female (straight)",
+      "result": "The normal case.",
+      "kittens": "yes"
+    },
+    {
+      "pair": "Male (straight) + Female (bisexual)",
+      "result": "Kittens.",
+      "kittens": "yes"
+    },
+    {
+      "pair": "Male (straight) + Female (gay)",
+      "result": "Almost never love or kittens.",
+      "kittens": "rare"
+    },
+    {
+      "pair": "Male (gay) + Male (bisexual)",
+      "result": "No kittens.",
+      "kittens": "no"
+    },
+    {
+      "pair": "Ditto (?) + anyone",
+      "result": "Kittens. A ditto acts as male or female, so it lets gay cats pass on their traits.",
+      "kittens": "yes"
+    }
+  ],
+  "orientationNotes": [
+    "A ditto is a cat with both a sausage and a donut, shown as ?. It can breed with other dittos too.",
+    "Gay cats can block a breeding event that would have happened. Once you have 20 stimulation, discard most gay and low-libido cats from the breeding room.",
+    "Tink's third upgrade shows orientation as flags. Until then you only notice it from night events."
+  ],
+  "inbreeding": [
+    "Inbred kittens are more often ugly, with birth defects that lower stats. It can happen even when parents are distant relatives.",
+    "Bring in strays: they are not related to anyone. Check the family tree and give each branch its own icon.",
+    "You need Tink's second upgrade to see the inbreeding level. A slightly inbred cat can simply go on a run and then to Tink."
+  ],
+  "furniture": [
+    "Toxic Waste Barrel: +4 Stimulation, -2 Comfort. A breeding powerhouse; offset the comfort in another room.",
+    "Microwave and Newspapers: +1 Comfort each, cheap fillers.",
+    "Daruma Statue: -1 Comfort, +1 Stimulation, +1 Appeal. An early Appeal boost.",
+    "Food Storage: +40 max food, so you can keep breeding without a run.",
+    "Rare furniture doubles the effect. Act 1 hard paths give normal furniture; Act 2 can give rare. Pick the cardboard box, not the golden chest."
+  ],
+  "discrepancies": [
+    {
+      "topic": "Breed for abilities?",
+      "sides": [
+        "Meta Breeding Guide: early on, put cats with grey abilities in the breeding room. Brainstorm, Copycat and the like are very strong, and you can breed an army of them at the start.",
+        "Reddit post: do not focus on abilities. Your stimulation is rarely high enough for reliable ability breeding, so spend it on base stats and mutations."
+      ],
+      "verdict": "Both agree on stimulation: reach about 20 first. Only then does ability breeding work."
+    },
+    {
+      "topic": "Inbreeding",
+      "sides": [
+        "Meta Breeding Guide and the Rough guide (marked outdated since 1.1x): inbreeding is not a serious problem, even a strategy once parents are all 7s.",
+        "Breeding Basics, Greenside and Reddit: avoid it, use strays and the family tree. The Rough guide says the devs made negative traits more likely the more inbred a cat is."
+      ],
+      "verdict": "Treat inbreeding as harmful and rotate in strays."
+    },
+    {
+      "topic": "How much stimulation is enough?",
+      "sides": [
+        "Meta Breeding Guide and the Rough guide: about 20 is the point to start breeding seriously; the Rough guide says you can start from 0.",
+        "Greenside: the odds climb slowly. 50 stimulation gives a 60% chance of the better stat, and it takes 300 to reach 80%."
+      ],
+      "verdict": "20 is a starting point, not a plateau. Keep stacking stimulation in the breeding room."
+    },
+    {
+      "topic": "Comfort target",
+      "sides": [
+        "Rough guide: 5-10 or more for breeding.",
+        "Meta Breeding Guide: about 4, removing cats to keep it there.",
+        "Reddit post: above 10 for lots of kittens; 2-5 is enough early."
+      ]
+    }
+  ]
+}

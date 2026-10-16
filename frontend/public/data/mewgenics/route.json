@@ -1,0 +1,354 @@
+{
+  "acts": [
+    {
+      "id": 1,
+      "title": "Act 1",
+      "summary": "Alley first, then Sewers and Caves or Junkyard and Boneyard. House boss: Guillotina."
+    },
+    {
+      "id": 2,
+      "title": "Act 2",
+      "summary": "Desert opens after Caves and Boneyard. House bosses: Pyrophina and Zaratana."
+    },
+    {
+      "id": 3,
+      "title": "Act 3",
+      "summary": "Opens after the Core and the Moon. Past (Ice Age, Jurassic) or Future biomes."
+    },
+    {
+      "id": 0,
+      "title": "Secret areas",
+      "summary": "Each one opens by finishing the quest items of an act's house bosses."
+    }
+  ],
+  "areas": [
+    {
+      "id": "alley",
+      "act": 1,
+      "name": "The Alley",
+      "requires": "Start",
+      "note": "Beginner-friendly. Weather: rain, wind and snow. Good for trying classes.",
+      "needs": []
+    },
+    {
+      "id": "sewers",
+      "act": 1,
+      "name": "The Sewers",
+      "requires": "Complete the Alley",
+      "unlocks": "Cleric (on reach), Thief (on complete)",
+      "trophy": "The Sewers",
+      "needs": [
+        "alley"
+      ],
+      "path": "A"
+    },
+    {
+      "id": "caves",
+      "act": 1,
+      "name": "The Caves",
+      "requires": "Complete the Sewers",
+      "trophy": "The Caves",
+      "note": "Beating them with a Fighter alive in the party unlocks the Paw Breaker active.",
+      "needs": [
+        "sewers"
+      ],
+      "path": "A"
+    },
+    {
+      "id": "junkyard",
+      "act": 1,
+      "name": "The Junkyard",
+      "requires": "Complete the hard path in the Alley",
+      "trophy": "The Junkyard",
+      "note": "Very good items drop here; the hard path gives valuable furniture.",
+      "needs": [
+        "alley"
+      ],
+      "path": "B"
+    },
+    {
+      "id": "boneyard",
+      "act": 1,
+      "name": "The Boneyard",
+      "requires": "Complete the Junkyard",
+      "unlocks": "Necromancer",
+      "trophy": "The Boneyard",
+      "note": "Wind can be a map event here.",
+      "needs": [
+        "junkyard"
+      ],
+      "path": "B"
+    },
+    {
+      "id": "desert",
+      "act": 2,
+      "name": "The Desert",
+      "requires": "Complete the Caves and the Boneyard",
+      "trophy": "The Desert",
+      "note": "A cactus gives water.",
+      "needs": [
+        "caves",
+        "boneyard"
+      ]
+    },
+    {
+      "id": "bunker",
+      "act": 2,
+      "name": "The Bunker",
+      "requires": "Complete the Desert",
+      "unlocks": "Tinkerer",
+      "trophy": "The Bunker",
+      "needs": [
+        "desert"
+      ],
+      "path": "A"
+    },
+    {
+      "id": "core",
+      "act": 2,
+      "name": "The Core",
+      "requires": "Complete the Bunker",
+      "unlocks": "Butcher",
+      "trophy": "The Core",
+      "needs": [
+        "bunker"
+      ],
+      "path": "A"
+    },
+    {
+      "id": "crater",
+      "act": 2,
+      "name": "The Crater",
+      "requires": "Complete the Desert",
+      "unlocks": "Druid",
+      "trophy": "The Crater",
+      "note": "Pick the shimmer weather effect when offered: it gives mutations.",
+      "needs": [
+        "desert"
+      ],
+      "path": "B"
+    },
+    {
+      "id": "moon",
+      "act": 2,
+      "name": "The Moon",
+      "requires": "Complete the Crater",
+      "unlocks": "Psychic",
+      "trophy": "The Moon",
+      "note": "Final fight is against the Man in the Moon.",
+      "needs": [
+        "crater"
+      ],
+      "path": "B"
+    },
+    {
+      "id": "lab",
+      "act": 3,
+      "name": "The Lab",
+      "requires": "Complete the Core and the Moon",
+      "unlocks": "Monk",
+      "trophy": "The Lab",
+      "needs": [
+        "core",
+        "moon"
+      ]
+    },
+    {
+      "id": "iceage",
+      "act": 3,
+      "name": "The Ice Age",
+      "requires": "Fix the time machine",
+      "trophy": "The Iceage",
+      "needs": [
+        "lab"
+      ]
+    },
+    {
+      "id": "jurassic",
+      "act": 3,
+      "name": "The Jurassic",
+      "requires": "Complete the Ice Age",
+      "trophy": "The Jurassic",
+      "needs": [
+        "iceage"
+      ]
+    },
+    {
+      "id": "future",
+      "act": 3,
+      "name": "The Future",
+      "requires": "Complete the Jurassic",
+      "trophy": "The Future",
+      "note": "Hard path gives a guaranteed rare furniture piece.",
+      "needs": [
+        "jurassic"
+      ]
+    },
+    {
+      "id": "end",
+      "act": 3,
+      "name": "The End",
+      "requires": "Complete the Future",
+      "trophy": "The End",
+      "needs": [
+        "future"
+      ]
+    },
+    {
+      "id": "throbbing",
+      "act": 0,
+      "name": "The Throbbing Domain",
+      "requires": "Finish the three Guillotina item quests",
+      "trophy": "The Throbbing Domain",
+      "note": "Gristle Cube (complete the Caves), Putrid Leech (complete the Boneyard) and Guillotina's Head (the altar here).",
+      "needs": [
+        "caves",
+        "boneyard"
+      ]
+    },
+    {
+      "id": "rift",
+      "act": 0,
+      "name": "The Rift",
+      "requires": "Finish the Pyrophina and Zaratana item quests",
+      "unlocks": "Jester",
+      "trophy": "The Rift",
+      "note": "Black Shard, Scalding Orb and one of the collars."
+    },
+    {
+      "id": "infinite",
+      "act": 0,
+      "name": "The Infinite",
+      "requires": "Finish the Act 3 boss item quests",
+      "trophy": "The Infinite",
+      "note": "Receiver Antenna, Transmitter Antenna and Signal Amplifier."
+    }
+  ],
+  "milestones": [
+    {
+      "id": "butch",
+      "at": "sewers",
+      "kind": "home",
+      "title": "Feed Butch",
+      "when": "A cat has been through the Sewers or the Junkyard",
+      "text": "Retire it and send it to Butch. Storage is the first real bottleneck, and each zone you finish and tell him about unlocks a class.",
+      "npcs": [
+        "butch"
+      ]
+    },
+    {
+      "id": "vendors",
+      "at": "act1",
+      "kind": "home",
+      "title": "Tracy, Frank and Baby Jack",
+      "when": "Butch has his first upgrades",
+      "text": "Tracy takes cats 5+ days old (food storage, totems, blank collars), Frank takes any retired cat (rooms), Jack takes injured cats (furniture). The basic upgrades cost about 45 cats in all. Buy furniture with Stimulation and Appeal.",
+      "npcs": [
+        "tracy",
+        "frank",
+        "jack"
+      ]
+    },
+    {
+      "id": "tink",
+      "at": "act1",
+      "kind": "home",
+      "title": "Take kittens to Tink",
+      "when": "You have 10 kittens to spare",
+      "text": "Take at least his first two upgrades: without them you cannot see base stats or how inbred a cat is.",
+      "npcs": [
+        "tink"
+      ]
+    },
+    {
+      "id": "mystery",
+      "at": "act1",
+      "kind": "home",
+      "title": "Mystery Man",
+      "when": "A cat dies on a run or at home",
+      "text": "He takes dead cats and upgrades for each batch. No need to rush it.",
+      "npcs": [
+        "mystery"
+      ]
+    },
+    {
+      "id": "aim-1",
+      "at": "act1",
+      "kind": "breeding",
+      "title": "Breeding aim: early",
+      "when": "Roughly through Act 1",
+      "text": "High Constitution and Speed. Stats matter less than picking the right class and wearing armour. Then: High Constitution, max Speed, and at least 5 stats above 5.",
+      "npcs": []
+    },
+    {
+      "id": "guillotina",
+      "at": "boneyard",
+      "kind": "event",
+      "title": "Guillotina attacks the house",
+      "when": "You have beaten both the Caves and the Boneyard once",
+      "text": "Sending one weak cat to fight resets the time between attacks.",
+      "npcs": []
+    },
+    {
+      "id": "aim-2",
+      "at": "act2",
+      "kind": "breeding",
+      "title": "Breeding aim: mid",
+      "when": "Roughly through Act 2",
+      "text": "High Constitution, max Speed and at least 5 stats above 6. Start placing mutation furniture in your storage room. Then: 5 to 7 stats at 7, Constitution and Speed maxed. Kittens should inherit 3+ mutations you want, ideally the reroll mutations.",
+      "npcs": []
+    },
+    {
+      "id": "beanies",
+      "at": "lab",
+      "kind": "home",
+      "title": "Dr. Beanies",
+      "when": "You have beaten the Lab",
+      "text": "He can hand out a special quest that brings Steven and the difficulty tiers. He also takes mutated or diseased cats for side quests. The house boss quest items come first.",
+      "npcs": [
+        "beanies"
+      ]
+    },
+    {
+      "id": "steven",
+      "at": "iceage",
+      "kind": "event",
+      "title": "Steven and the difficulty tiers",
+      "when": "You have completed the Ice Age",
+      "text": "Greenside puts the difficulty screen here; the 100% guide puts it after the Lab quest. See the disagreement below.",
+      "npcs": []
+    },
+    {
+      "id": "aim-3",
+      "at": "act3",
+      "kind": "breeding",
+      "title": "Breeding aim: late",
+      "when": "Roughly through Act 3",
+      "text": "Same stats, with 5+ wanted mutations. The author carries 3 reroll mutations on his cats.",
+      "npcs": []
+    }
+  ],
+  "notes": [
+    "Each cat starts at level 0 and the lowest-level cat gets the next level. A 4-cat run can reach level 8; a 3-cat run (or a Neverstone on one cat) can reach level 10.",
+    "Hard path: one extra fight and so one extra level-up. Hard mode is a separate thing: a difficulty tier chosen on the map (Normal, Hard, Crazy, Impossible).",
+    "You do not redo the main quests on a higher difficulty. You unlock the next tier by re-fighting the 3 house bosses of that act.",
+    "Quest items cannot be moved between cats once assigned, and they do not take storage space. If a cat holding a main quest item goes down, it dies instantly."
+  ],
+  "discrepancies": [
+    {
+      "topic": "When do the difficulty tiers unlock?",
+      "sides": [
+        "100% Achievement Guide: after you beat the Lab, Dr. Beanies gives a special quest. Completing it makes Steven appear on the map.",
+        "Greenside: after completing the Ice Age, you get a talk from Steven and the difficulty interface."
+      ],
+      "verdict": "Both describe Steven's arrival around the end of Act 3's opening biomes. Expect it after the Lab and the Ice Age."
+    },
+    {
+      "topic": "The Crater",
+      "sides": [
+        "PSN trophy list: Complete the Desert (same as the Bunker).",
+        "How to Unlock all Classes: Druid unlocks when you complete the Crater."
+      ]
+    }
+  ]
+}

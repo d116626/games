@@ -1,0 +1,88 @@
+{
+  "name": "Mewgenics",
+  "updated": "2026-10-15",
+  "sources": [
+    {
+      "title": "Trophy list (PSNProfiles)",
+      "url": "https://psnprofiles.com/trophies/42741-mewgenics",
+      "note": "names, descriptions, grades and rarity (PS5)"
+    },
+    {
+      "title": "Getting Started Guide (Steam)",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3665699703",
+      "note": "by Greenside; stats, classes, house upgrades, level-ups"
+    },
+    {
+      "title": "Early Game Tips (Steam)",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3673398086",
+      "note": "house, NPCs and combat basics"
+    },
+    {
+      "title": "Breeding Basics (Steam)",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3664011595",
+      "note": "house stats, Tink, inbreeding, orientation"
+    },
+    {
+      "title": "Meta Breeding Guide (Steam)",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3672568623",
+      "note": "early/mid/late breeding plan"
+    },
+    {
+      "title": "Rough guide on deterministic breeding (Steam)",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3667744126",
+      "note": "3-room setup and stat targets"
+    },
+    {
+      "title": "How to Unlock all Classes (Steam)",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3664177473",
+      "note": "unlock conditions and stat modifiers"
+    },
+    {
+      "title": "A Crap Guide To Classes (Steam)",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3667357026",
+      "note": "roles and attributes of each class"
+    },
+    {
+      "title": "3 QOL Tool Tips (Steam)",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3685978478",
+      "note": "storage, poop, Neverstone levelling"
+    },
+    {
+      "title": "100% Achievement Guide (Steam)",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3674095836",
+      "note": "area requirements and neighbour upgrades"
+    },
+    {
+      "title": "r/mewgenics: tips on fights, progress and breeding",
+      "url": "https://www.reddit.com/r/mewgenics/",
+      "note": "long post kept up to date by its author"
+    },
+    {
+      "title": "r/mewgenics: hidden interactions thread",
+      "url": "https://www.reddit.com/r/mewgenics/comments/1r2wb4k/collection_thread_of_interactionshidden/"
+    }
+  ],
+  "links": [
+    {
+      "title": "Mewgenics wiki",
+      "url": "https://mewgenics.wiki.gg",
+      "description": "full wiki: classes, abilities, items, enemies"
+    },
+    {
+      "title": "Difficulty (wiki)",
+      "url": "https://mewgenics.wiki.gg/wiki/Difficulty",
+      "description": "Normal, Hard, Crazy and Impossible"
+    },
+    {
+      "title": "Quest items (wiki)",
+      "url": "https://mewgenics.wiki.gg/wiki/Category:Quest_Items",
+      "description": "every main quest item"
+    },
+    {
+      "title": "Dr. Beanies side quests (wiki)",
+      "url": "https://mewgenics.wiki.gg/wiki/Dr._Beanies#Side_Quests_&_Rewards",
+      "description": "side quests and rewards"
+    }
+  ],
+  "images": []
+}

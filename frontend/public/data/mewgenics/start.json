@@ -1,0 +1,125 @@
+{
+  "steps": [
+    {
+      "title": "Collect strays, not perfection",
+      "text": "Early on you have few rooms and little furniture, so breeding is slow. Take every stray out on adventures; the game is about numbers at this stage."
+    },
+    {
+      "title": "Check the kittens every morning",
+      "text": "Look over the night's kittens. Poor stats, a bad mutation or a disorder that will hurt: send them to Tink. Ten kittens unlock the first details on your cats."
+    },
+    {
+      "title": "Feed Butch first",
+      "text": "Send him cats that have been to the Sewers or Junkyard. Storage is the first real bottleneck, because the Boneyard and Junkyard drop very good items."
+    },
+    {
+      "title": "Then Tracy, Frank and Jack",
+      "text": "Tracy wants cats that are 5+ days old and gives food storage, totems and blank collars. Frank gives rooms. Jack takes injured cats. The basic upgrades of these vendors cost about 45 cats."
+    },
+    {
+      "title": "Buy stimulation and appeal",
+      "text": "Furniture with Stimulation improves the stats and abilities that kittens inherit; Appeal brings better strays. Stock refreshes every Sunday, so buy food only in a way that lets you refresh the shop."
+    },
+    {
+      "title": "Read the enemies, take the hard path when sure",
+      "text": "Right-click an enemy to see its movement and attack range. The hard path adds one fight and so one level-up, but skipping it is fine if your team is not ready."
+    }
+  ],
+  "npcs": [
+    {
+      "id": "butch",
+      "name": "Butch",
+      "role": "Storage and classes",
+      "takes": "Retired cats that have adventured (Sewers or Junkyard first)",
+      "gives": [
+        "Storage upgrades (more item space)",
+        "Unlocks a class each time you finish a zone and talk to him",
+        "Combat tips"
+      ],
+      "tip": "Use the storage filters before you throw anything away; items thrown in the trash by mistake are gone.",
+      "priority": 1,
+      "trophy": "Storage upgrade 7"
+    },
+    {
+      "id": "tracy",
+      "name": "Tracy",
+      "role": "Food, totems and blank collars",
+      "takes": "Cats at least 5 days old",
+      "gives": [
+        "Food storage",
+        "Totems (+5 to a random house stat, with special effects)",
+        "Blank collars (up to 3, duplicate a random class)",
+        "Sells furniture"
+      ],
+      "tip": "Upgrades only work once you physically place the storage in the house. The class of each blank collar shows on the box before a run.",
+      "priority": 2,
+      "trophy": "Mysterious Idol unlock 7"
+    },
+    {
+      "id": "frank",
+      "name": "Frank",
+      "role": "Rooms",
+      "takes": "Any retired cat",
+      "gives": [
+        "More rooms and the attic",
+        "Each room holds 4-5 cats before comfort goes negative"
+      ],
+      "tip": "Until he has 25 cats you are limited to about 8 good cats at a time. Aim for the attic and two rooms.",
+      "priority": 3,
+      "trophy": "House upgrade 4"
+    },
+    {
+      "id": "jack",
+      "name": "Baby Jack",
+      "role": "Furniture shop",
+      "takes": "Injured cats",
+      "gives": [
+        "Furniture with Appeal and Stimulation",
+        "Shack upgrades"
+      ],
+      "tip": "His stock resets every Sunday, so check the calendar in the top left.",
+      "priority": 4,
+      "trophy": "Jack's shack upgrade 4"
+    },
+    {
+      "id": "tink",
+      "name": "Tink",
+      "role": "Breeding information",
+      "takes": "Kittens (10 per batch)",
+      "gives": [
+        "Cat icons, libido, aggression",
+        "Inbreeding level and orientation",
+        "Base stats and family tree",
+        "Breeding tips"
+      ],
+      "tip": "Take at least the first two upgrades. Without them you cannot see a cat's base stats or whether it is inbred. Do not level him past that.",
+      "priority": 5,
+      "trophy": "Tink reward 7"
+    },
+    {
+      "id": "beanies",
+      "name": "Dr. Beanies",
+      "role": "Side quests",
+      "takes": "Mutated, deformed, diseased or disordered cats (5 per quest item)",
+      "gives": [
+        "Side quest items with a penalty, then a rare or legendary reward",
+        "Up to 200 gold per quest"
+      ],
+      "tip": "Last NPC you unlock. Do the house boss quest items first; the side quests can wait.",
+      "priority": 6
+    },
+    {
+      "id": "mystery",
+      "name": "Mystery Man",
+      "role": "Dead cats",
+      "takes": "Cats that die on a run or at home",
+      "gives": [
+        "Upgrades for each batch of dead cats"
+      ],
+      "tip": "Early Game Tips calls the NPC who takes dead cats the Organ Grinder; the trophy list calls him Mystery Man. It is probably the same one.",
+      "priority": 7,
+      "trophy": "Mystery man upgrade 7"
+    }
+  ],
+  "note": "Order and numbers come from Greenside's Getting Started guide, Early Game Tips and the Steam 100% achievement guide. Which NPC to level first is an opinion: all three guides put Butch first."
+}

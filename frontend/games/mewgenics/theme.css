@@ -1,0 +1,180 @@
+/* Tema "Mewgenics": caderno de gato. Papel creme, tinta preta grossa, cores quentes. A informação se organiza
+   por linhas finas, numerais grandes e etiquetas de coleira; pouca caixa. */
+.theme-cat {
+  --paper: #f4ead5;
+  --paper-deep: #e8d9b8;
+  --ink: #1d1611;
+  --coral: #e8553d;
+  --mustard: #f2b632;
+  --pink: #f3a6b6;
+  --teal: #2f8f83;
+
+  --background: var(--paper);
+  --foreground: var(--ink);
+  --card: #fbf4e4;
+  --card-foreground: var(--ink);
+  --popover: #fbf4e4;
+  --popover-foreground: var(--ink);
+  --primary: var(--coral);
+  --primary-foreground: #fff;
+  --secondary: var(--paper-deep);
+  --secondary-foreground: var(--ink);
+  --muted: var(--paper-deep);
+  --muted-foreground: #5a4a3c;
+  --accent: var(--mustard);
+  --accent-foreground: var(--ink);
+  --destructive: #c23a25;
+  --border: rgb(29 22 17 / 0.28);
+  --input: rgb(29 22 17 / 0.4);
+  --ring: var(--coral);
+  --radius: 0.75rem;
+
+  --font-geist-sans: var(--font-nunito);
+  --font-geist-mono: var(--font-nunito);
+  --font-display: var(--font-bowlby);
+
+  font-family: var(--font-nunito), sans-serif;
+  color: var(--ink);
+  background-color: var(--paper);
+  /* Linhas de caderno bem suaves. */
+  background-image: repeating-linear-gradient(to bottom, transparent 0 31px, rgb(29 22 17 / 0.05) 31px 32px);
+}
+
+/* O ruído do shell usa `screen` (feito para fundo escuro); no papel ele só some. */
+.theme-cat .grain::before {
+  mix-blend-mode: multiply;
+  opacity: 0.05;
+}
+
+.theme-cat .font-display {
+  letter-spacing: 0.005em;
+  font-weight: 400;
+}
+
+@layer components {
+  .theme-cat .label {
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted-foreground);
+  }
+}
+
+/* Título da seção: numeral em bloco de tinta e traço grosso embaixo. */
+.theme-cat section > header {
+  padding-bottom: 0.6rem;
+  border-bottom: 3px solid var(--ink);
+}
+.theme-cat section > header > span:first-child {
+  border-radius: 6px;
+  transform: rotate(-3deg);
+  font-family: var(--font-bowlby), sans-serif;
+  font-size: 0.85rem;
+}
+
+/* Navegação: bordas de tinta, item ativo em coral com texto preto. */
+.theme-cat nav a {
+  border-color: var(--ink);
+  font-weight: 700;
+}
+
+/* Etiqueta de coleira: pílula com contorno de tinta. */
+.theme-cat .tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  padding: 0.1rem 0.7rem;
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 1.5;
+  background: var(--mustard);
+  color: var(--ink);
+}
+.theme-cat .tag-pink {
+  background: var(--pink);
+}
+.theme-cat .tag-teal {
+  background: var(--teal);
+  color: #fff;
+}
+.theme-cat .tag-paper {
+  background: var(--card);
+}
+
+/* Botões: pílulas de tinta, com sombra dura que "afunda" ao pressionar. */
+.theme-cat .btn {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 2.5px solid var(--ink);
+  border-radius: 999px;
+  padding: 0 1.4rem;
+  font-weight: 800;
+  background: var(--coral);
+  color: #fff;
+  box-shadow: 3px 3px 0 var(--ink);
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+.theme-cat .btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 var(--ink);
+}
+.theme-cat .btn:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0 0 0 var(--ink);
+}
+.theme-cat .btn-ghost {
+  background: var(--card);
+  color: var(--ink);
+}
+
+/* Adesivo: borda branca em volta do desenho e sombra dura. */
+.theme-cat .sticker {
+  filter: drop-shadow(3px 0 0 #fff) drop-shadow(-3px 0 0 #fff) drop-shadow(0 3px 0 #fff) drop-shadow(0 -3px 0 #fff)
+    drop-shadow(4px 6px 0 rgb(29 22 17 / 0.9));
+}
+
+/* Texto claro sobre o coral. */
+.theme-cat aside > span {
+  color: #fff;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .theme-cat .wobble {
+    animation: wobble 6s ease-in-out infinite;
+    transform-origin: 50% 90%;
+  }
+  @keyframes wobble {
+    0%,
+    100% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(-1deg);
+    }
+  }
+}
+
+@media print {
+  .theme-cat {
+    background: #fff !important;
+    background-image: none !important;
+  }
+  .theme-cat li,
+  .theme-cat article {
+    break-inside: avoid;
+  }
+}
+
+/* Painel do índice: contorno de tinta e sombra dura. */
+.theme-cat .panel {
+  border: 2.5px solid var(--ink);
+  border-radius: 14px;
+  background: var(--card);
+  box-shadow: 4px 4px 0 var(--ink);
+}

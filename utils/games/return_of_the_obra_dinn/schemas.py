@@ -15,9 +15,10 @@ class Fate(CamelModel):
 
 class CrewMember(CamelModel):
     id: str  # slug do nome
-    no: int  # posição na lista de fontes (não é o nº do manifesto do jogo)
+    no: int  # nº 1-60 da lista das fontes (a mesma ordem do manifesto, segundo o projeto obra-dinn-interactive-crew-list)
     name: str
-    role: str
+    role: str  # "quality" no jogo
+    origin: str  # "origin" no manifesto do jogo; ver origins.py
     portrait: str  # relativo a public/
     chapter: int
     part: int | None  # None = seção "Disappearances" do capítulo
@@ -92,14 +93,25 @@ class Topic(CamelModel):
     items: list[str]
 
 
+class Face(CamelModel):
+    """Retângulo de um rosto no sketch, em pixels da imagem original (width x height do `Sketch`)."""
+
+    crew_id: str
+    x: int
+    y: int
+    w: int
+    h: int
+
+
 class Sketch(CamelModel):
-    """O sketch "Life at Sea" (três desenhos numa imagem só). Base para marcar os rostos depois."""
+    """O sketch "Life at Sea" (três desenhos numa imagem só) e onde fica o rosto de cada tripulante."""
 
     src: str  # relativo a public/
     width: int
     height: int
     alt: str
     credit: str
+    faces: list[Face]
 
 
 class GuideDataset(CamelModel):

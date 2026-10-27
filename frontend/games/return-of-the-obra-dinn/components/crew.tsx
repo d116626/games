@@ -1,8 +1,9 @@
 "use client";
 
 import { Check, X } from "lucide-react";
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { GameImage } from "@/components/game/game-image";
+import { Sketch } from "@/games/return-of-the-obra-dinn/components/sketch";
 import { Picker } from "@/games/return-of-the-obra-dinn/components/picker";
 import { Bar, Chip } from "@/games/return-of-the-obra-dinn/components/ui";
 import { answerText, isCorrect, isSolved, OPTIONS } from "@/games/return-of-the-obra-dinn/lib/answers";
@@ -68,32 +69,52 @@ function Cell({
   );
 }
 
-function Row({ c, answer, shown, onToggle }: { c: CrewMember; answer: Answer | undefined; shown: ReadonlySet<string>; onToggle: (key: string) => void }) {
-  const solved = isSolved(c, answer);
+function Row({
+  c,
+  answer,
+  shown,
+  flash,
+  onToggle,
+  onSketch,
+}: {
+  c: CrewMember;
+  answer: Answer | undefined;
+  shown: ReadonlySet<string>;
+  flash: boolean;
+  onToggle: (key: string) => void;
+  onSketch: (crewId: string) => void;
+}) {
+  const bg = cn("transition-colors duration-500", isSolved(c, answer) && "bg-[rgb(143_240_176/0.07)]", flash && "bg-[rgb(255_122_107/0.18)]");
+  const link = "cursor-pointer text-sm font-semibold uppercase tracking-wider text-muted-foreground hover:text-foreground";
+  const how = shown.has(`${c.id}:how`);
   return (
     <Fragment>
-      <tr className={cn("block border-t border-border py-3 md:table-row md:py-0", solved && "bg-[rgb(143_240_176/0.07)]")}>
-        <td className="block px-1 py-2 md:table-cell md:px-3 md:align-top">
-          <GameImage src={c.portrait} alt="Unidentified crew portrait" className="pixel h-32 w-auto max-w-full border-2 border-foreground md:h-auto md:w-28" />
+      <tr id={`crew-${c.id}`} className={cn("block scroll-mt-4 border-t border-border pt-3 md:table-row md:pt-0", bg)}>
+        <td rowSpan={2} className="block px-1 py-1 md:table-cell md:px-3 md:py-2 md:align-top">
+          <span className="font-display text-2xl leading-none text-foreground/70">{c.no}</span>
+        </td>
+        <td rowSpan={2} className="block px-1 py-2 md:table-cell md:px-3 md:align-top">
+          <GameImage src={c.portrait} alt="Unidentified crew portrait" className="pixel h-32 w-auto max-w-full border-2 border-foreground md:h-auto md:w-24" />
         </td>
         {COLUMNS.map((col) => (
           <Cell key={col.id} c={c} col={col} value={answer?.[col.id]} shown={shown.has(`${c.id}:${col.id}`)} onToggle={() => onToggle(`${c.id}:${col.id}`)} />
         ))}
       </tr>
-      <tr className="block md:table-row">
-        <td colSpan={COLUMNS.length + 1} className="block px-1 pb-3 md:table-cell md:px-3">
-          {shown.has(`${c.id}:how`) ? (
-            <p className="text-sm">
-              <span className="label">How to tell </span>
-              {c.how}{" "}
-              <button type="button" onClick={() => onToggle(`${c.id}:how`)} className="cursor-pointer underline decoration-dotted underline-offset-4">
-                Hide
-              </button>
-            </p>
-          ) : (
-            <button type="button" onClick={() => onToggle(`${c.id}:how`)} className="cursor-pointer text-sm font-semibold uppercase tracking-wider text-muted-foreground hover:text-foreground">
-              Show how to tell
+      <tr className={cn("block pb-3 md:table-row md:pb-0", bg)}>
+        <td colSpan={COLUMNS.length} className="block px-1 pb-3 md:table-cell md:px-3">
+          <div className="flex flex-wrap items-baseline gap-x-5 gap-y-1">
+            <button type="button" onClick={() => onToggle(`${c.id}:how`)} className={link}>
+              {how ? "Hide how to tell" : "Show how to tell"}
             </button>
+            <button type="button" onClick={() => onSketch(c.id)} className={link}>
+              Show on sketch
+            </button>
+          </div>
+          {how && (
+            <p className="mt-2 text-sm">
+              <span className="label">How to tell </span>
+              {c.how}
+            </p>
           )}
         </td>
       </tr>
@@ -107,6 +128,29 @@ export function Crew() {
   const [chapter, setChapter] = useState<number | null>(null);
   const [unsolved, setUnsolved] = useState(false);
   const [shown, setShown] = useState<ReadonlySet<string>>(new Set());
+  const [flash, setFlash] = useState<string | null>(null);
+  const [face, setFace] = useState<string | null>(null);
+
+  // Vindo do sketch: tira os filtros (a linha poderia estar escondida), rola até a linha e a destaca por um instante.
+  const pick = (id: string) => {
+    setChapter(null);
+    setUnsolved(false);
+    setFlash(id);
+  };
+  useEffect(() => {
+    if (!flash) return;
+    document.getElementById(`crew-${flash}`)?.scrollIntoView({ block: "center", behavior: "smooth" });
+    const t = setTimeout(() => setFlash(null), 2200);
+    return () => clearTimeout(t);
+  }, [flash]);
+
+  // Da linha para o sketch: rola até o rosto (dentro da caixa do sketch também) e o destaca por um instante.
+  useEffect(() => {
+    if (!face) return;
+    document.getElementById(`face-${face}`)?.scrollIntoView({ block: "center", inline: "center", behavior: "smooth" });
+    const t = setTimeout(() => setFace(null), 2200);
+    return () => clearTimeout(t);
+  }, [face]);
 
   const solved = crew.filter((c) => isSolved(c, answers[c.id])).length;
   const list = SHUFFLED.filter((c) => (chapter === null || c.chapter === chapter) && (!unsolved || !isSolved(c, answers[c.id])));
@@ -120,6 +164,7 @@ export function Crew() {
 
   return (
     <div className="space-y-6">
+      <Sketch onPick={pick} highlight={face} />
       <div>
         <div className="flex flex-wrap items-end gap-x-4 gap-y-2">
           <span className="font-display text-5xl leading-none">
@@ -165,7 +210,8 @@ export function Crew() {
       <table className="block w-full md:table md:table-fixed">
         <thead className="hidden md:table-header-group">
           <tr className="text-left">
-            <th className="label w-36 px-3 pb-2 font-normal">Portrait</th>
+            <th className="label w-12 px-3 pb-2 font-normal">#</th>
+            <th className="label w-32 px-3 pb-2 font-normal">Portrait</th>
             {COLUMNS.map((col) => (
               <th key={col.id} className="label px-3 pb-2 font-normal">
                 {col.label}
@@ -175,7 +221,7 @@ export function Crew() {
         </thead>
         <tbody className="block md:table-row-group">
           {list.map((c) => (
-            <Row key={c.id} c={c} answer={answers[c.id]} shown={shown} onToggle={toggle} />
+            <Row key={c.id} c={c} answer={answers[c.id]} shown={shown} flash={flash === c.id} onToggle={toggle} onSketch={setFace} />
           ))}
         </tbody>
       </table>

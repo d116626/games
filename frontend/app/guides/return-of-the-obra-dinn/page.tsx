@@ -8,7 +8,6 @@ import { Discrepancies } from "@/games/return-of-the-obra-dinn/components/discre
 import { Guide } from "@/games/return-of-the-obra-dinn/components/guide";
 import { GuideSearch } from "@/games/return-of-the-obra-dinn/components/guide-search";
 import { Hero } from "@/games/return-of-the-obra-dinn/components/hero";
-import { Sketch } from "@/games/return-of-the-obra-dinn/components/sketch";
 import { Trophies } from "@/games/return-of-the-obra-dinn/components/trophies";
 import { game } from "@/games/return-of-the-obra-dinn/game";
 import { chapters, crew, meta, trophies } from "@/games/return-of-the-obra-dinn/lib/data";
@@ -50,10 +49,7 @@ export default function Page() {
         <Chapters />
       </Section>
       <Section id="crew" index={3} title="Crew" count={crew.length}>
-        <div className="space-y-10">
-          <Sketch />
-          <Crew />
-        </div>
+        <Crew />
       </Section>
       <Section id="answers" index={4} title="Answer key" count={crew.length}>
         <div className="space-y-10">

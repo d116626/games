@@ -6,6 +6,7 @@ export type CrewMember = {
   no: number;
   name: string;
   role: string;
+  origin: string;
   portrait: string;
   chapter: number;
   /** Ausente = seção "Disappearances" do capítulo. */
@@ -57,5 +58,6 @@ export type Trophy = {
 export type TrophyDataset = { points: number; counts: Record<Grade, number>; trophies: Trophy[] };
 
 export type Topic = { title: string; items: string[] };
-export type Sketch = { src: string; width: number; height: number; alt: string; credit: string };
+export type Face = { crewId: string; x: number; y: number; w: number; h: number };
+export type Sketch = { src: string; width: number; height: number; alt: string; credit: string; faces: Face[] };
 export type GuideDataset = { basics: Topic[]; deduction: Topic[]; causes: Topic[]; sketch: Sketch };

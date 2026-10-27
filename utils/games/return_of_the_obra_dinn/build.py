@@ -7,6 +7,7 @@ from utils.common.schemas import GameMeta
 from utils.games.return_of_the_obra_dinn import chapters, crew, guide, images, trophies
 from utils.games.return_of_the_obra_dinn.constants import GAME, LINKS, NAME, PSN_GUIDE_MD, PSN_TROPHIES_MD, SOURCE_URLS, SOURCES
 from utils.games.return_of_the_obra_dinn.identify import HOW
+from utils.games.return_of_the_obra_dinn.origins import ORIGINS
 from utils.games.return_of_the_obra_dinn.schemas import ChaptersDataset, CrewDataset, CrewMember, Discrepancy
 
 DISCREPANCIES = [
@@ -47,7 +48,7 @@ def run() -> list[Path]:
     portrait = images.portraits(raw)
     members = [
         CrewMember(
-            id=c.id, no=c.no, name=c.name, role=c.role, portrait=portrait[c.id], chapter=where[c.id][0], part=where[c.id][1],
+            id=c.id, no=c.no, name=c.name, role=c.role, origin=ORIGINS[c.id], portrait=portrait[c.id], chapter=where[c.id][0], part=where[c.id][1],
             fate=crew.fate(c, by_id), also_listed=None if crew.same_fate(c.fate_text, psn_fates[c.id]) else psn_fates[c.id],
             how=HOW[c.id],
         )

@@ -1,7 +1,8 @@
 """Texto de apoio escrito à mão. Fontes: Tips & Strategies do PSNProfiles (Kramers001), introdução do guia de
 dicas da Steam 1565813913 e "How you're supposed to identify people" (1552463657)."""
 
-from utils.games.return_of_the_obra_dinn.schemas import GuideDataset, Sketch, Topic
+from utils.games.return_of_the_obra_dinn.faces import FACES
+from utils.games.return_of_the_obra_dinn.schemas import Face, GuideDataset, Sketch, Topic
 
 BASICS = [
     Topic(title="The job", items=[
@@ -92,5 +93,6 @@ def build(sketch: tuple[str, int, int]) -> GuideDataset:
         sketch=Sketch(
             src=src, width=width, height=height, credit="Return of the Obra Dinn (Lucas Pope / 3909 LLC)",
             alt='The three sketches of the book: "Under Way", "Formosan Royalty" and "Justice at Sea".',
+            faces=[Face(crew_id=cid, x=x, y=y, w=w, h=h) for cid, (x, y, w, h) in FACES.items()],
         ),
     )

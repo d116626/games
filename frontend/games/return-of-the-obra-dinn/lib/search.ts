@@ -25,7 +25,7 @@ export const SEARCH_ENTRIES: SearchEntry[] = [
     kind: "Crew",
     name: c.name,
     text: `${c.role} · chapter ${chapters.chapters.find((ch) => ch.n === c.chapter)?.roman}`,
-    keywords: [fateText(c.fate), c.alsoListed, c.how].filter(Boolean).join(" "),
+    keywords: [fateText(c.fate), c.alsoListed, c.origin, c.how].filter(Boolean).join(" "),
     href: `#answer-${c.id}`,
   })),
   ...trophies.trophies.map((t) => ({

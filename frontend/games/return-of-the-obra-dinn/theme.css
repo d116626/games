@@ -222,6 +222,19 @@
   border-color: var(--blood);
   background: rgb(255 122 107 / 0.14);
 }
+.theme-dinn .field {
+  min-height: 2.5rem;
+  border: 2px solid var(--border);
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0 0.6rem;
+  color-scheme: dark;
+}
+.theme-dinn .field:hover,
+.theme-dinn .field:focus-visible {
+  border-color: var(--paper);
+  outline: none;
+}
 .theme-dinn .pick-popup {
   width: 19rem;
   max-width: var(--available-width);

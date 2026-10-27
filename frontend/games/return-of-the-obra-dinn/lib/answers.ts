@@ -6,7 +6,8 @@ import type { CrewMember } from "@/games/return-of-the-obra-dinn/types";
 export const NONE = "none";
 export const BEAST = "beast";
 
-export type Option = { value: string; label: string };
+/** `muted`: o nome já foi escolhido em outra linha (riscado, mas ainda selecionável). */
+export type Option = { value: string; label: string; muted?: boolean };
 
 const norm = (s: string) => s.trim().toLowerCase();
 const byName = new Map(crew.map((c) => [norm(c.name), c.id]));
@@ -33,6 +34,22 @@ const ACCEPTED = new Map(
 export const NAME_OPTIONS: Option[] = [...crew]
   .sort((a, b) => a.name.localeCompare(b.name))
   .map((c) => ({ value: c.id, label: `${c.name} · ${c.role}` }));
+const BY_NAME = [...crew].sort((a, b) => a.name.localeCompare(b.name));
+export const QUALITIES = [...new Set(crew.map((c) => c.role))].sort((a, b) => a.localeCompare(b));
+export const ORIGINS = [...new Set(crew.map((c) => c.origin))].sort((a, b) => a.localeCompare(b));
+
+/**
+ * Lista de nomes de uma linha: filtra pelos palpites de quality e origin do jogador e risca os nomes já usados
+ * em outras linhas (eliminação). A escolha atual nunca sai da lista.
+ */
+export function nameOptions(selected: string | undefined, usedElsewhere: (id: string) => boolean, quality?: string, origin?: string): Option[] {
+  return BY_NAME.filter((c) => c.id === selected || ((!quality || c.role === quality) && (!origin || c.origin === origin))).map((c) => ({
+    value: c.id,
+    label: `${c.name} · ${c.role}`,
+    muted: c.id !== selected && usedElsewhere(c.id),
+  }));
+}
+
 export const KILLER_OPTIONS: Option[] = [
   { value: NONE, label: "No one" },
   { value: BEAST, label: "A beast" },

@@ -4,6 +4,7 @@ import { Combobox } from "@base-ui/react/combobox";
 import { Check, ChevronsUpDown } from "lucide-react";
 import { useRef } from "react";
 import type { Option } from "@/games/return-of-the-obra-dinn/lib/answers";
+import { cn } from "@/lib/utils";
 
 const CLEAR: Option = { value: "", label: "Clear choice" };
 
@@ -62,7 +63,10 @@ export function Picker({
                   <Combobox.ItemIndicator className="grid size-4 place-items-center">
                     <Check className="size-4" />
                   </Combobox.ItemIndicator>
-                  <span className={o.value ? "col-start-2" : "col-start-2 text-muted-foreground"}>{o.label}</span>
+                  <span className={cn("col-start-2", !o.value && "text-muted-foreground", o.muted && "line-through opacity-50")}>
+                    {o.label}
+                    {o.muted && <span className="sr-only"> (already used)</span>}
+                  </span>
                 </Combobox.Item>
               )}
             </Combobox.List>

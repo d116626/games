@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 const ZOOMS = [1, 1.5, 2, 3];
 
 /** O sketch do livro: cada rosto é um botão que leva ao retrato dele na tabela. Zoom para acertar rostos pequenos. */
-export function Sketch({ onPick, highlight }: { onPick: (crewId: string) => void; highlight: string | null }) {
+export function Sketch({ onPick, highlight, solved }: { onPick: (crewId: string) => void; highlight: string | null; solved: ReadonlySet<string> }) {
   const { src, alt, width, height, credit, faces } = guide.sketch;
   const [zoom, setZoom] = useState(0);
   const step = (d: number) => setZoom((z) => Math.min(ZOOMS.length - 1, Math.max(0, z + d)));
@@ -24,6 +24,9 @@ export function Sketch({ onPick, highlight }: { onPick: (crewId: string) => void
           <Plus className="size-4" />
         </button>
         <span className="label">{ZOOMS[zoom]}x</span>
+        <span className="label ml-auto">
+          {faces.length - solved.size} left · {solved.size} solved
+        </span>
       </div>
       <div className="max-h-[80vh] overflow-auto border-2 border-foreground">
         <div className="relative" style={{ width: `${ZOOMS[zoom] * 100}%` }}>
@@ -36,7 +39,8 @@ export function Sketch({ onPick, highlight }: { onPick: (crewId: string) => void
               aria-label="Go to this face in the crew table"
               onClick={() => onPick(f.crewId)}
               className={cn(
-                "absolute cursor-pointer hover:outline-2 hover:outline-(--blood) focus-visible:outline-2 focus-visible:outline-(--blood)",
+                "absolute cursor-pointer",
+                solved.has(f.crewId) ? "bg-[rgb(143_240_176/0.3)] outline-2 outline-(--ok)" : "hover:outline-2 hover:outline-(--blood) focus-visible:outline-2 focus-visible:outline-(--blood)",
                 highlight === f.crewId && "bg-[rgb(255_122_107/0.3)] outline-4 outline-(--blood)",
               )}
               style={{ left: `${(f.x / width) * 100}%`, top: `${(f.y / height) * 100}%`, width: `${(f.w / width) * 100}%`, height: `${(f.h / height) * 100}%` }}
@@ -45,7 +49,7 @@ export function Sketch({ onPick, highlight }: { onPick: (crewId: string) => void
         </div>
       </div>
       <figcaption className="mt-2 text-sm text-muted-foreground">
-        Click a face to jump to its portrait below. Every face is one of the 60 souls. Image: {credit}. Face positions: from{" "}
+        Click a face to jump to its portrait below, or click a portrait to find its face here. Green faces are solved. Image: {credit}. Face positions: from{" "}
         <a className="underline" href="https://github.com/sondregronas/obra-dinn-interactive-crew-list">
           obra-dinn-interactive-crew-list
         </a>{" "}

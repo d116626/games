@@ -101,15 +101,17 @@ SOURCES: list[Source] = []
         f'''from pathlib import Path
 
 from utils.common.export import export_dataset
+from utils.common.html_md import fetch_full_markdown_if_missing
 from utils.common.paths import raw_dir
 from utils.common.schemas import GameMeta
-from utils.common.sources import fetch_sources
 from utils.games.{py}.constants import GAME, NAME, SOURCE_URLS, SOURCES
 
 
 def run() -> list[Path]:
     """fetch (.md -> data/raw) -> process -> JSONs em frontend/public/data/{game_id}."""
-    fetch_sources(GAME, SOURCE_URLS)
+    # html_md (e não trafilatura): mantém títulos, tabelas e imagens das páginas.
+    for name, url in SOURCE_URLS.items():
+        fetch_full_markdown_if_missing(url, raw_dir(GAME) / name)
     print(f"[{{GAME}}] fontes em {{raw_dir(GAME)}}")
     # TODO: ler os .md, montar os schemas do jogo (schemas.py) e exportar com export_dataset.
     return [export_dataset(GAME, "meta.json", GameMeta(name=NAME, sources=SOURCES))]

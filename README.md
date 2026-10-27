@@ -14,8 +14,8 @@ links dos .md ──► data/raw/<jogo>/*.md ──► processamento (Python) �
 ```
 
 1. **Fonte:** as URLs das páginas ficam em `utils/games/<jogo>/constants.py` (`SOURCE_URLS`). O pipeline
-   baixa cada página, extrai o conteúdo principal e converte para `.md` com
-   [trafilatura](https://trafilatura.readthedocs.io), salvando em `data/raw/<jogo>/` só o que ainda não existe.
+   baixa cada página, extrai o conteúdo principal e converte para `.md`
+   (`utils/common/html_md.py`, que mantém títulos, tabelas, imagens e links), salvando em `data/raw/<jogo>/` só o que ainda não existe.
 2. **Processamento:** o pacote Python do jogo lê os `.md`, valida com pydantic e exporta JSON em
    camelCase. Todo jogo exporta ao menos `meta.json` (nome, fontes, links, imagens).
 3. **Página:** a rota `/guides/<jogo>` lê o JSON e monta a UI do jogo, dentro da moldura `GameShell`

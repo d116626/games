@@ -5,6 +5,8 @@ da página é convertido por inteiro; só menus, anúncios e scripts ficam de fo
 """
 
 import re
+import subprocess
+import time
 from pathlib import Path
 from urllib.parse import parse_qs, urljoin, urlparse
 
@@ -153,12 +155,28 @@ def html_to_markdown_full(html: str, url: str) -> str:
     return "\n\n".join(blocks).strip() + "\n"
 
 
+def download(url: str, timeout: int = 60) -> str:
+    """HTML de `url`. A Steam devolve 429 (uma página vazia) para o `requests` mesmo quando o navegador e o
+    `curl` recebem a página normal; nesse caso tenta de novo com o curl, com pausas crescentes."""
+    response = requests.get(url, headers=HEADERS, timeout=timeout)
+    if response.status_code != 429:
+        response.raise_for_status()
+        return response.text
+    for wait in (0, 20, 60):
+        time.sleep(wait)
+        out = subprocess.run(["curl", "-sL", "-w", "\n%{http_code}", "--max-time", str(timeout), url], capture_output=True, text=True).stdout
+        page, _, code = out.rpartition("\n")
+        if code == "200":
+            return page
+    raise RuntimeError(f"429 em {url} (o curl também foi bloqueado); tente de novo mais tarde")
+
+
 def fetch_full_markdown_if_missing(url: str, dest: Path, timeout: int = 60) -> Path:
     """Baixa `url` e salva o markdown completo em `dest` apenas se ainda não existir."""
     if dest.exists():
         return dest
-    response = requests.get(url, headers=HEADERS, timeout=timeout)
-    response.raise_for_status()
+    page = download(url, timeout)
     dest.parent.mkdir(parents=True, exist_ok=True)
-    dest.write_text(html_to_markdown_full(response.text, url), encoding="utf-8")
+    dest.write_text(html_to_markdown_full(page, url), encoding="utf-8")
+    time.sleep(1)  # várias páginas da mesma loja em sequência disparam o limite
     return dest

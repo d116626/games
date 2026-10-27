@@ -1,0 +1,855 @@
+{
+  "crew": [
+    {
+      "id": "robert-witterel",
+      "no": 1,
+      "name": "Robert Witterel",
+      "role": "Captain",
+      "portrait": "games/return-of-the-obra-dinn/crew/robert-witterel.webp",
+      "chapter": 10,
+      "part": 4,
+      "fate": {
+        "cause": "Suicide with a gun",
+        "byBeast": false
+      },
+      "how": "Someone calls to him as \"Captain!\" in the first memory, and there is only one captain on the manifest."
+    },
+    {
+      "id": "william-hoscut",
+      "no": 2,
+      "name": "William Hoscut",
+      "role": "First Mate",
+      "portrait": "games/return-of-the-obra-dinn/crew/william-hoscut.webp",
+      "chapter": 10,
+      "part": 1,
+      "fate": {
+        "cause": "Shot with a gun",
+        "killer": "robert-witterel",
+        "byBeast": false
+      },
+      "how": "In the captain's last memory he speaks of killing his wife's brother. The wife's middle name is her maiden name, and only one man on the manifest has that surname."
+    },
+    {
+      "id": "edward-nichols",
+      "no": 3,
+      "name": "Edward Nichols",
+      "role": "Second Mate",
+      "portrait": "games/return-of-the-obra-dinn/crew/edward-nichols.webp",
+      "chapter": 4,
+      "part": 6,
+      "fate": {
+        "cause": "Shot with a gun",
+        "killer": "chioh-tan",
+        "byBeast": false
+      },
+      "how": "Called by name in Pasqua's murder memory, and again by someone in the rowboats."
+    },
+    {
+      "id": "martin-perrott",
+      "no": 4,
+      "name": "Martin Perrott",
+      "role": "Third Mate",
+      "portrait": "games/return-of-the-obra-dinn/crew/martin-perrott.webp",
+      "chapter": 8,
+      "part": 4,
+      "fate": {
+        "cause": "Spiked",
+        "byBeast": true
+      },
+      "how": "In Abigail's death memory she calls out to \"Martin\". The only Martin on the manifest is the third mate, and the officer standing nearby is dressed like the captain and first mate."
+    },
+    {
+      "id": "john-davies",
+      "no": 5,
+      "name": "John Davies",
+      "role": "Fourth Mate",
+      "portrait": "games/return-of-the-obra-dinn/crew/john-davies.webp",
+      "chapter": 9,
+      "part": 5,
+      "fate": {
+        "cause": "Clubbed",
+        "killer": "henry-brennan",
+        "byBeast": false
+      },
+      "how": "In the memory where Nichols rows back and is shot, a man watches from a window. Line it up with the deck plan: it is the fourth mate's cabin. He is also the only mate left, and dressed like one."
+    },
+    {
+      "id": "alfred-klestil",
+      "no": 6,
+      "name": "Alfred Klestil",
+      "role": "Bosun",
+      "portrait": "games/return-of-the-obra-dinn/crew/alfred-klestil.webp",
+      "chapter": 9,
+      "part": 1,
+      "fate": {
+        "cause": "Torn apart",
+        "byBeast": true
+      },
+      "how": "The one-armed man says \"Verdammt\" and asks for \"my Frenchman\". Only two crew are from a German-speaking country, and one of them has a French mate: the bosun's mate. So he is the bosun."
+    },
+    {
+      "id": "charles-miner",
+      "no": 7,
+      "name": "Charles Miner",
+      "role": "Bosun's Mate",
+      "portrait": "games/return-of-the-obra-dinn/crew/charles-miner.webp",
+      "chapter": 7,
+      "fate": {
+        "cause": "Drowned",
+        "byBeast": true
+      },
+      "alsoListed": "Torn Apart by a beast",
+      "how": "The bosun's mate: he oversees the crew when the bosun is away and stays close to him. His striped shirt is French navy style and he never speaks, so there is no accent to go by."
+    },
+    {
+      "id": "henry-evans",
+      "no": 8,
+      "name": "Henry Evans",
+      "role": "Surgeon",
+      "portrait": "games/return-of-the-obra-dinn/crew/henry-evans.webp",
+      "chapter": 9,
+      "fate": {
+        "cause": "Alive in Africa",
+        "byBeast": false
+      },
+      "how": "The surgeon: he diagnoses the sick men, and the officers consult him instead of the other man in the room."
+    },
+    {
+      "id": "james-wallace",
+      "no": 9,
+      "name": "James Wallace",
+      "role": "Surgeon's Mate",
+      "portrait": "games/return-of-the-obra-dinn/crew/james-wallace.webp",
+      "chapter": 6,
+      "part": 4,
+      "fate": {
+        "cause": "Clawed",
+        "byBeast": false
+      },
+      "alsoListed": "Decapitated by a beast",
+      "how": "In the surgeon's room but never the one asked for a medical opinion: the assistant. He is also seen cleaning up."
+    },
+    {
+      "id": "winston-smith",
+      "no": 10,
+      "name": "Winston Smith",
+      "role": "Carpenter",
+      "portrait": "games/return-of-the-obra-dinn/crew/winston-smith.webp",
+      "chapter": 6,
+      "part": 8,
+      "fate": {
+        "cause": "Speared",
+        "byBeast": true
+      },
+      "how": "Holds a hammer in the carpentry room, is the first out to investigate the beasts, and the other man calls him \"Boss\"."
+    },
+    {
+      "id": "marcus-gibbs",
+      "no": 11,
+      "name": "Marcus Gibbs",
+      "role": "Carpenter Mate",
+      "portrait": "games/return-of-the-obra-dinn/crew/marcus-gibbs.webp",
+      "chapter": 6,
+      "part": 3,
+      "fate": {
+        "cause": "Spiked",
+        "byBeast": true
+      },
+      "how": "Works with tools next to the carpenter and calls him \"boss\"."
+    },
+    {
+      "id": "thomas-sefton",
+      "no": 12,
+      "name": "Thomas Sefton",
+      "role": "Cook",
+      "portrait": "games/return-of-the-obra-dinn/crew/thomas-sefton.webp",
+      "chapter": 5,
+      "part": 2,
+      "fate": {
+        "cause": "Struck by a tail",
+        "byBeast": false
+      },
+      "how": "In his death scene he jokes about cooking the beasts, and he carries a two-pronged cooking fork."
+    },
+    {
+      "id": "emil-o-farrell",
+      "no": 13,
+      "name": "Emil O'Farrell",
+      "role": "Butcher",
+      "portrait": "games/return-of-the-obra-dinn/crew/emil-o-farrell.webp",
+      "chapter": 6,
+      "part": 6,
+      "fate": {
+        "cause": "Spiked",
+        "byBeast": true
+      },
+      "how": "Shows the midshipmen how to butcher the cow, has an Irish accent, and stands with the cook at the execution."
+    },
+    {
+      "id": "christian-wolff",
+      "no": 14,
+      "name": "Christian Wolff",
+      "role": "Gunner",
+      "portrait": "games/return-of-the-obra-dinn/crew/christian-wolff.webp",
+      "chapter": 7,
+      "part": 4,
+      "fate": {
+        "cause": "Shot with a cannon",
+        "byBeast": true
+      },
+      "how": "The captain orders him by name to carry out the execution. German accent."
+    },
+    {
+      "id": "olus-wiater",
+      "no": 15,
+      "name": "Olus Wiater",
+      "role": "Gunner's Mate",
+      "portrait": "games/return-of-the-obra-dinn/crew/olus-wiater.webp",
+      "chapter": 9,
+      "part": 4,
+      "fate": {
+        "cause": "Shot with a gun",
+        "killer": "john-davies",
+        "byBeast": false
+      },
+      "how": "Handles guns with the gunner and has a vaguely Eastern European accent. He is not dressed like a seaman, so he is not one of the Russians."
+    },
+    {
+      "id": "duncan-mckay",
+      "no": 16,
+      "name": "Duncan McKay",
+      "role": "Purser",
+      "portrait": "games/return-of-the-obra-dinn/crew/duncan-mckay.webp",
+      "chapter": 7,
+      "fate": {
+        "cause": "Drowned",
+        "byBeast": true
+      },
+      "how": "Hides in the purser's office during the fight (visible through the slats), carries papers in the escape rowboat, and has a Scottish accent."
+    },
+    {
+      "id": "finley-dalton",
+      "no": 17,
+      "name": "Finley Dalton",
+      "role": "Helmsman",
+      "portrait": "games/return-of-the-obra-dinn/crew/finley-dalton.webp",
+      "chapter": 7,
+      "fate": {
+        "cause": "Drowned",
+        "byBeast": true
+      },
+      "how": "Stands by the ship's wheel in the sketch and in the few scenes he appears in. No lines, and his face is unblurred from the start."
+    },
+    {
+      "id": "edward-spratt",
+      "no": 18,
+      "name": "Edward Spratt",
+      "role": "Artist",
+      "portrait": "games/return-of-the-obra-dinn/crew/edward-spratt.webp",
+      "chapter": 7,
+      "part": 2,
+      "fate": {
+        "cause": "Crushed",
+        "byBeast": true
+      },
+      "how": "The artist. His face is unblurred from the start, but it is not in the sketch, only his initials. Compare the manifest with the sketch."
+    },
+    {
+      "id": "abigail-hoscut-witterel",
+      "no": 19,
+      "name": "Abigail Hoscut Witterel",
+      "role": "Passenger",
+      "portrait": "games/return-of-the-obra-dinn/crew/abigail-hoscut-witterel.webp",
+      "chapter": 7,
+      "part": 8,
+      "fate": {
+        "cause": "Crushed by rigging",
+        "byBeast": false
+      },
+      "alsoListed": "Clubbed by a beast",
+      "how": "She shares the captain's surname, and the captain talks to her body in his last memory. Her own death memory confirms it."
+    },
+    {
+      "id": "nunzio-pasqua",
+      "no": 20,
+      "name": "Nunzio Pasqua",
+      "role": "Passenger",
+      "portrait": "games/return-of-the-obra-dinn/crew/nunzio-pasqua.webp",
+      "chapter": 3,
+      "part": 1,
+      "fate": {
+        "cause": "Knifed",
+        "killer": "edward-nichols",
+        "byBeast": false
+      },
+      "how": "Said to have been murdered, and he is the only Italian speaker on the ship."
+    },
+    {
+      "id": "emily-jackson",
+      "no": 21,
+      "name": "Emily Jackson",
+      "role": "Passenger",
+      "portrait": "games/return-of-the-obra-dinn/crew/emily-jackson.webp",
+      "chapter": 9,
+      "fate": {
+        "cause": "Alive in Africa",
+        "byBeast": false
+      },
+      "how": "One of the two women left once Abigail and the Formosan woman are known. She wears a wedding ring on her left hand (Jane is \"Miss\", unmarried)."
+    },
+    {
+      "id": "miss-jane-bird",
+      "no": 22,
+      "name": "Miss Jane Bird",
+      "role": "Passenger",
+      "portrait": "games/return-of-the-obra-dinn/crew/miss-jane-bird.webp",
+      "chapter": 9,
+      "fate": {
+        "cause": "Alive in Africa",
+        "byBeast": false
+      },
+      "how": "\"Miss\" means unmarried, so she is the one of the two remaining women without a wedding ring."
+    },
+    {
+      "id": "bun-lan-lim",
+      "no": 23,
+      "name": "Bun-Lan Lim",
+      "role": "Passenger",
+      "portrait": "games/return-of-the-obra-dinn/crew/bun-lan-lim.webp",
+      "chapter": 4,
+      "part": 4,
+      "fate": {
+        "cause": "Clawed",
+        "byBeast": false
+      },
+      "how": "Another Formosan passenger calls her \"Miss Lim\"."
+    },
+    {
+      "id": "it-beng-sia",
+      "no": 24,
+      "name": "It-Beng Sia",
+      "role": "Passenger",
+      "portrait": "games/return-of-the-obra-dinn/crew/it-beng-sia.webp",
+      "chapter": 4,
+      "part": 5,
+      "fate": {
+        "cause": "Burned",
+        "byBeast": false
+      },
+      "how": "Bun-Lan Lim calls him by name in one scene on the rowboat."
+    },
+    {
+      "id": "chioh-tan",
+      "no": 25,
+      "name": "Chioh Tan",
+      "role": "Passenger",
+      "portrait": "games/return-of-the-obra-dinn/crew/chioh-tan.webp",
+      "chapter": 5,
+      "part": 1,
+      "fate": {
+        "cause": "Spiked",
+        "byBeast": true
+      },
+      "how": "The last Formosan passenger: once the other three are identified, he is the only one left."
+    },
+    {
+      "id": "hok-seng-lau",
+      "no": 26,
+      "name": "Hok-Seng Lau",
+      "role": "Passenger",
+      "portrait": "games/return-of-the-obra-dinn/crew/hok-seng-lau.webp",
+      "chapter": 3,
+      "part": 2,
+      "fate": {
+        "cause": "Shot with a gun",
+        "killer": "henry-brennan",
+        "byBeast": false
+      },
+      "how": "Addressed by name at his trial and execution, and seen injured by Nichols in Pasqua's murder memory."
+    },
+    {
+      "id": "zungi-sathi",
+      "no": 27,
+      "name": "Zungi Sathi",
+      "role": "Ship's Steward",
+      "portrait": "games/return-of-the-obra-dinn/crew/zungi-sathi.webp",
+      "chapter": 6,
+      "part": 7,
+      "fate": {
+        "cause": "Shot with a gun",
+        "killer": "charles-miner",
+        "byBeast": false
+      },
+      "how": "Never named and never speaks. Compare uniforms to spot a steward, tie every other steward to an officer, and he is the one left (and the steward who looks Indian)."
+    },
+    {
+      "id": "fillip-dahl",
+      "no": 28,
+      "name": "Fillip Dahl",
+      "role": "Captain's Steward",
+      "portrait": "games/return-of-the-obra-dinn/crew/fillip-dahl.webp",
+      "chapter": 8,
+      "part": 1,
+      "fate": {
+        "cause": "Burned",
+        "byBeast": false
+      },
+      "alsoListed": "Poisoned",
+      "how": "The captain cries \"Twenty years my steward!\". He also speaks a little Swedish."
+    },
+    {
+      "id": "paul-moss",
+      "no": 29,
+      "name": "Paul Moss",
+      "role": "1st Mate's Steward",
+      "portrait": "games/return-of-the-obra-dinn/crew/paul-moss.webp",
+      "chapter": 9,
+      "part": 2,
+      "fate": {
+        "cause": "Killed with a sword",
+        "killer": "leonid-volkov",
+        "byBeast": false
+      },
+      "how": "Called \"Paul\" (\"Paul, watch out!\") just before he dies, and there is only one Paul on the manifest."
+    },
+    {
+      "id": "samuel-galligan",
+      "no": 30,
+      "name": "Samuel Galligan",
+      "role": "2nd Mate's Steward",
+      "portrait": "games/return-of-the-obra-dinn/crew/samuel-galligan.webp",
+      "chapter": 4,
+      "part": 3,
+      "fate": {
+        "cause": "Knifed",
+        "killer": "it-beng-sia",
+        "byBeast": false
+      },
+      "how": "A steward in the rowboat with Nichols, whispers to him at the execution, and has an Irish accent."
+    },
+    {
+      "id": "roderick-andersen",
+      "no": 31,
+      "name": "Roderick Andersen",
+      "role": "3rd Mate's Steward",
+      "portrait": "games/return-of-the-obra-dinn/crew/roderick-andersen.webp",
+      "chapter": 7,
+      "part": 5,
+      "fate": {
+        "cause": "Crushed by a cannon",
+        "byBeast": false
+      },
+      "how": "In Spratt's death memory he carries a plate of food with the third mate: he is seeing to the third mate's needs."
+    },
+    {
+      "id": "davey-james",
+      "no": 32,
+      "name": "Davey James",
+      "role": "4th Mate's Steward",
+      "portrait": "games/return-of-the-obra-dinn/crew/davey-james.webp",
+      "chapter": 9,
+      "fate": {
+        "cause": "Alive in Africa",
+        "byBeast": false
+      },
+      "how": "A steward standing with the fourth mate at Lau's execution, covering his ears."
+    },
+    {
+      "id": "peter-milroy",
+      "no": 33,
+      "name": "Peter Milroy",
+      "role": "Midshipman",
+      "portrait": "games/return-of-the-obra-dinn/crew/peter-milroy.webp",
+      "chapter": 7,
+      "part": 6,
+      "fate": {
+        "cause": "Exploded",
+        "byBeast": false
+      },
+      "how": "Another midshipman says \"Tell Pete's mom I tried to pull him back\" and is pulling a rope tied around Pete. He also appears with the other midshipmen at the cow, and he is not \"Charlie\"."
+    },
+    {
+      "id": "thomas-lanke",
+      "no": 34,
+      "name": "Thomas Lanke",
+      "role": "Midshipman",
+      "portrait": "games/return-of-the-obra-dinn/crew/thomas-lanke.webp",
+      "chapter": 9,
+      "part": 6,
+      "fate": {
+        "cause": "Knifed",
+        "killer": "olus-wiater",
+        "byBeast": false
+      },
+      "how": "A midshipman in uniform, called \"fresh\" by the gunner's mate. He is not Pete (he tried to save him) and not Charlie (he is not the one throwing up), so he is Thomas."
+    },
+    {
+      "id": "charles-hershtik",
+      "no": 35,
+      "name": "Charles Hershtik",
+      "role": "Midshipman",
+      "portrait": "games/return-of-the-obra-dinn/crew/charles-hershtik.webp",
+      "chapter": 6,
+      "part": 5,
+      "fate": {
+        "cause": "Burned",
+        "byBeast": false
+      },
+      "how": "Called \"Charlie\" at the cow butchering. He is dressed like the other midshipmen and they treat him casually, so he is not the bosun's mate Charles."
+    },
+    {
+      "id": "omid-gul",
+      "no": 36,
+      "name": "Omid Gul",
+      "role": "Topman",
+      "portrait": "games/return-of-the-obra-dinn/crew/omid-gul.webp",
+      "chapter": 7,
+      "fate": {
+        "cause": "Drowned",
+        "byBeast": true
+      },
+      "alsoListed": "Fell Overboard",
+      "how": "In Spratt's death memory a hammock with his number holds a curved scimitar. Persian, wears a turban, and is a seaman, so he cannot be the Indian steward."
+    },
+    {
+      "id": "timothy-butement",
+      "no": 37,
+      "name": "Timothy Butement",
+      "role": "Topman",
+      "portrait": "games/return-of-the-obra-dinn/crew/timothy-butement.webp",
+      "chapter": 3,
+      "part": 3,
+      "fate": {
+        "cause": "Shot with a gun",
+        "killer": "edward-nichols",
+        "byBeast": false
+      },
+      "how": "In Syed's death memory his hammock shows his number, and his arm carries a tattoo of a woman, seen again in his death scene."
+    },
+    {
+      "id": "huang-li",
+      "no": 38,
+      "name": "Huang Li",
+      "role": "Topman",
+      "portrait": "games/return-of-the-obra-dinn/crew/huang-li.webp",
+      "chapter": 6,
+      "part": 1,
+      "fate": {
+        "cause": "Electrocuted",
+        "byBeast": false
+      },
+      "how": "One of the Chinese topmen, told apart by footwear in Syed's death memory: toe-cover shoes, darker, no striped stockings."
+    },
+    {
+      "id": "jie-zhang",
+      "no": 39,
+      "name": "Jie Zhang",
+      "role": "Topman",
+      "portrait": "games/return-of-the-obra-dinn/crew/jie-zhang.webp",
+      "chapter": 6,
+      "part": 4,
+      "fate": {
+        "cause": "Clawed",
+        "byBeast": false
+      },
+      "alsoListed": "Decapitated by a beast",
+      "how": "Chinese topman with lighter, whitish shoes and stripe-tinted stockings. Compare with Huang Li in the lightning scene."
+    },
+    {
+      "id": "li-hong",
+      "no": 40,
+      "name": "Li Hong",
+      "role": "Topman",
+      "portrait": "games/return-of-the-obra-dinn/crew/li-hong.webp",
+      "chapter": 4,
+      "part": 1,
+      "fate": {
+        "cause": "Speared",
+        "byBeast": true
+      },
+      "how": "Chinese topman with shoes covering up to the ankle. Wei Lee lives until the Doom, so Li Hong is the one whose hammock disappears."
+    },
+    {
+      "id": "wei-lee",
+      "no": 41,
+      "name": "Wei Lee",
+      "role": "Topman",
+      "portrait": "games/return-of-the-obra-dinn/crew/wei-lee.webp",
+      "chapter": 7,
+      "fate": {
+        "cause": "Drowned",
+        "byBeast": true
+      },
+      "how": "The last Chinese sailor with a hammock in Spratt's death memory."
+    },
+    {
+      "id": "nicholas-botterill",
+      "no": 42,
+      "name": "Nicholas Botterill",
+      "role": "Topman",
+      "portrait": "games/return-of-the-obra-dinn/crew/nicholas-botterill.webp",
+      "chapter": 6,
+      "part": 2,
+      "fate": {
+        "cause": "Speared",
+        "byBeast": true
+      },
+      "how": "A crew member says \"They've already done for Nick!\" Nichols is long dead, so there is no other Nick."
+    },
+    {
+      "id": "maba",
+      "no": 43,
+      "name": "Maba",
+      "role": "Topman",
+      "portrait": "games/return-of-the-obra-dinn/crew/maba.webp",
+      "chapter": 7,
+      "part": 7,
+      "fate": {
+        "cause": "Torn apart",
+        "byBeast": true
+      },
+      "how": "From New Guinea and covered in distinctive tribal tattoos. A topman."
+    },
+    {
+      "id": "lewis-walker",
+      "no": 44,
+      "name": "Lewis Walker",
+      "role": "Topman",
+      "portrait": "games/return-of-the-obra-dinn/crew/lewis-walker.webp",
+      "chapter": 10,
+      "part": 3,
+      "fate": {
+        "cause": "Clubbed",
+        "killer": "robert-witterel",
+        "byBeast": false
+      },
+      "how": "A topman: by elimination he is the only English one left (not Russian, Chinese or Persian, and not Nicholas or Timothy). His hammock is the last left on the gun deck."
+    },
+    {
+      "id": "leonid-volkov",
+      "no": 45,
+      "name": "Leonid Volkov",
+      "role": "Topman",
+      "portrait": "games/return-of-the-obra-dinn/crew/leonid-volkov.webp",
+      "chapter": 9,
+      "part": 3,
+      "fate": {
+        "cause": "Shot with a gun",
+        "killer": "emily-jackson",
+        "byBeast": false
+      },
+      "how": "A Russian topman, seen with the topmen in the lightning scene. The other two Russians are not topmen."
+    },
+    {
+      "id": "alarcus-nikishin",
+      "no": 46,
+      "name": "Alarcus Nikishin",
+      "role": "Seaman",
+      "portrait": "games/return-of-the-obra-dinn/crew/alarcus-nikishin.webp",
+      "chapter": 4,
+      "fate": {
+        "cause": "Drowned",
+        "byBeast": true
+      },
+      "how": "One of the three Russians at the card game in Syed's death memory, by elimination from Leonid and Aleksei."
+    },
+    {
+      "id": "aleksei-toporov",
+      "no": 47,
+      "name": "Aleksei Toporov",
+      "role": "Seaman",
+      "portrait": "games/return-of-the-obra-dinn/crew/aleksei-toporov.webp",
+      "chapter": 4,
+      "fate": {
+        "cause": "Drowned",
+        "byBeast": true
+      },
+      "how": "A satchel with a pipe next to his hammock. He carries it and smokes the pipe when Timothy is shot and in the rowboat."
+    },
+    {
+      "id": "nathan-peters",
+      "no": 48,
+      "name": "Nathan Peters",
+      "role": "Seaman",
+      "portrait": "games/return-of-the-obra-dinn/crew/nathan-peters.webp",
+      "chapter": 7,
+      "fate": {
+        "cause": "Drowned",
+        "byBeast": true
+      },
+      "how": "Cries \"You killed my brother!\". His hammock number is visible in scenes, while his brother's is not."
+    },
+    {
+      "id": "lars-linde",
+      "no": 49,
+      "name": "Lars Linde",
+      "role": "Seaman",
+      "portrait": "games/return-of-the-obra-dinn/crew/lars-linde.webp",
+      "chapter": 7,
+      "part": 1,
+      "fate": {
+        "cause": "Clubbed",
+        "killer": "nathan-peters",
+        "byBeast": false
+      },
+      "how": "Nathan Peters calls him \"Dane\", and he is the only Dane on the manifest. He also speaks Danish."
+    },
+    {
+      "id": "john-naples",
+      "no": 50,
+      "name": "John Naples",
+      "role": "Seaman",
+      "portrait": "games/return-of-the-obra-dinn/crew/john-naples.webp",
+      "chapter": 5,
+      "part": 4,
+      "fate": {
+        "cause": "Torn apart",
+        "killer": "fillip-dahl",
+        "byBeast": false
+      },
+      "alsoListed": "Killed with Sword by Fillip Dahl",
+      "how": "The surgeon calls him \"John\" in his death scene. He is a seaman, so he is not the fourth mate."
+    },
+    {
+      "id": "renfred-rajub",
+      "no": 51,
+      "name": "Renfred Rajub",
+      "role": "Seaman",
+      "portrait": "games/return-of-the-obra-dinn/crew/renfred-rajub.webp",
+      "chapter": 2,
+      "part": 2,
+      "fate": {
+        "cause": "Illness",
+        "byBeast": false
+      },
+      "how": "Seen dying in his hammock, with its number, in Syed's death memory."
+    },
+    {
+      "id": "abraham-akbar",
+      "no": 52,
+      "name": "Abraham Akbar",
+      "role": "Seaman",
+      "portrait": "games/return-of-the-obra-dinn/crew/abraham-akbar.webp",
+      "chapter": 7,
+      "part": 3,
+      "fate": {
+        "cause": "Crushed",
+        "byBeast": true
+      },
+      "how": "His hammock number is crossed out but he sits in it. He is the only Indian seaman left once the other three are known."
+    },
+    {
+      "id": "william-wasim",
+      "no": 53,
+      "name": "William Wasim",
+      "role": "Seaman",
+      "portrait": "games/return-of-the-obra-dinn/crew/william-wasim.webp",
+      "chapter": 5,
+      "part": 3,
+      "fate": {
+        "cause": "Crushed by cargo",
+        "byBeast": false
+      },
+      "alsoListed": "Fell down Stairs",
+      "how": "His hammock is empty because he is helping Syed in that memory, and he speaks Hindi."
+    },
+    {
+      "id": "soloman-syed",
+      "no": 54,
+      "name": "Soloman Syed",
+      "role": "Seaman",
+      "portrait": "games/return-of-the-obra-dinn/crew/soloman-syed.webp",
+      "chapter": 2,
+      "part": 1,
+      "fate": {
+        "cause": "Illness",
+        "byBeast": false
+      },
+      "how": "Called \"Syed\" by name, sleeping in his own numbered hammock. The surgeon blames the \"lascar house\" for his illness."
+    },
+    {
+      "id": "hamadou-diom",
+      "no": 55,
+      "name": "Hamadou Diom",
+      "role": "Seaman",
+      "portrait": "games/return-of-the-obra-dinn/crew/hamadou-diom.webp",
+      "chapter": 5,
+      "part": 1,
+      "fate": {
+        "cause": "Spiked",
+        "byBeast": true
+      },
+      "how": "By elimination: with Booth he is one of the last two seamen. Booth speaks English, Diom comes from Sierra Leone and has no lines. His hammock is gone after he dies."
+    },
+    {
+      "id": "henry-brennan",
+      "no": 56,
+      "name": "Henry Brennan",
+      "role": "Seaman",
+      "portrait": "games/return-of-the-obra-dinn/crew/henry-brennan.webp",
+      "chapter": 10,
+      "part": 2,
+      "fate": {
+        "cause": "Knifed",
+        "killer": "robert-witterel",
+        "byBeast": false
+      },
+      "how": "The first mate calls \"Brennan\" to bring the surgeon's kit, and he covers his ear. Apart from Lewis he is the only man still alive in the scene."
+    },
+    {
+      "id": "alexander-booth",
+      "no": 57,
+      "name": "Alexander Booth",
+      "role": "Seaman",
+      "portrait": "games/return-of-the-obra-dinn/crew/alexander-booth.webp",
+      "chapter": 7,
+      "fate": {
+        "cause": "Drowned",
+        "byBeast": true
+      },
+      "how": "The last seaman left by elimination. He speaks English in Linde's death memory and his hammock is still up in Spratt's, so he is not Diom."
+    },
+    {
+      "id": "patrick-o-hagan",
+      "no": 58,
+      "name": "Patrick O'Hagan",
+      "role": "Seaman",
+      "portrait": "games/return-of-the-obra-dinn/crew/patrick-o-hagan.webp",
+      "chapter": 4,
+      "part": 2,
+      "fate": {
+        "cause": "Speared",
+        "byBeast": true
+      },
+      "how": "Irish accent, and Galligan asks \"O'Hagan, you still breathing?\". He is not Russian or Chinese."
+    },
+    {
+      "id": "george-shirley",
+      "no": 59,
+      "name": "George Shirley",
+      "role": "Seaman",
+      "portrait": "games/return-of-the-obra-dinn/crew/george-shirley.webp",
+      "chapter": 7,
+      "part": 4,
+      "fate": {
+        "cause": "Shot with a cannon",
+        "byBeast": true
+      },
+      "how": "His hammock is with the four Chinese sailors and he sits with Wei Lee, with the number covered. In the sketch he plays dice with them."
+    },
+    {
+      "id": "samuel-peters",
+      "no": 60,
+      "name": "Samuel Peters",
+      "role": "Seaman",
+      "portrait": "games/return-of-the-obra-dinn/crew/samuel-peters.webp",
+      "chapter": 1,
+      "part": 1,
+      "fate": {
+        "cause": "Crushed by cargo",
+        "byBeast": false
+      },
+      "how": "He never has a visible hammock while Nathan does: he is the brother who died in the accident."
+    }
+  ]
+}

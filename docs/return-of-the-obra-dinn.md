@@ -1,0 +1,37 @@
+# Return of the Obra Dinn
+
+Guia em `/guides/return-of-the-obra-dinn`: como o jogo funciona, dicas progressivas por capítulo, tabela dos 60 tripulantes com a resposta escondida e troféus. Pipeline: `just pipeline return-of-the-obra-dinn`.
+
+## Fontes
+- Steam (`data/raw/return-of-the-obra-dinn/steam-<id>.md`): djsnowboy267 (1542348328, lista dos 60 com retrato e fate), polkadotc (2961173602, esqueleto cronológico dos capítulos), mergebox (1543209541, resumo da história), mais os guias de mecânica e identificação. Os ids de autor acima vieram de memória, não estão nos `.md`.
+- PSNProfiles (`psn-trophies.md`, `psn-trophy-guide.md`): troféus, raridade, guia de Kramers001 com dicas por capítulo ("onde olhar", "quem é") e contagens (fates e a resolver). O site bloqueia download automático; os `.md` foram convertidos do HTML salvo.
+- Fandom e wiki.gg bloqueiam download (403/401) e não são usados.
+- `sketch-hq.png` (1280x1920): os três sketches "Life at Sea" numa imagem só. Tem um retângulo de seleção desenhado perto de um rosto (artefato da captura).
+
+## Dados (`utils/games/return_of_the_obra_dinn/`)
+- `crew.py`: 60 tripulantes (nome, cargo, retrato, fate). Fate = causa + assassino (id de outro tripulante) + "por uma fera".
+- `chapters.py`: junta o esqueleto cronológico com o guia do PSN. Cada capítulo tem partes (local), entradas com dicas e eventos sem nome (estivador, vaca). Os 60 tripulantes ficam todos em alguma parte; as contagens batem com o cabeçalho do PSN.
+- `identify.py`: `HOW`, como reconhecer cada rosto (texto à mão, escrito a partir do guia de identificação do Steam).
+- `story.py`: resumo de cada capítulo (à mão, condensado do resumo do mergebox). `guide.py`: mecânica e dedução (à mão, conferidas com o PSN e a introdução do Steam).
+- `trophies.py`: 17 troféus (1 platina, 10 ouro, 4 prata, 2 bronze, 1350 pontos). Perdíveis: Captain Did It e Abandon Ship. Não há troféu do capítulo VIII.
+- `images.py`: retratos em WebP sem perda, 2 cores (~2 KB cada), sketch (59 KB) e ícones. Total **0,21 MB** de um limite de 0,5 MB (`BUDGET`).
+- JSONs: `meta`, `guide`, `crew`, `chapters`, `trophies`.
+
+## Divergências
+- Grafia de nomes: Soloman/Solomon Syed, Fillip/Filip Dahl, Hok-Seng Lau/Lan, Andersen/Anderson, Wiater/Wiatrr, Botterill/Boterill, Butement/Buteman; um guia escreve nomes do leste asiático com o sobrenome primeiro. Vale a grafia da lista dos 60.
+- Título do capítulo VIII: "Bargain" (Steam), "The Bargain" (PSN), "Bargaining" (cronológico). Usado: "Bargain".
+- Fates aceitos: o PSN escreve diferente em Charles Miner, James Wallace, Jie Zhang, Abigail, Fillip Dahl, Omid Gul, John Naples e William Wasim. A diferença aparece como `alsoListed` ("PSNProfiles lists: ...").
+
+## Decisões
+- Dicas em camadas: onde olhar, quem é, resposta. Resumo do capítulo e resposta ficam escondidos até o clique.
+- Rótulos próprios dos rostos no sketch (sem as letras do guia de origem) e a ligação rosto-retrato ficam para depois. Ideia: caderno interativo (clicar no rosto, escolher nome/causa/assassino, validar de 3 em 3 como no jogo; as respostas ficam no cliente).
+- Crew começa com o sketch do livro (`components/sketch.tsx`), de referência para achar os rostos, e segue com uma tabela de retratos para preencher como no jogo. Nome, causa e assassino ficam escondidos (botão "Show" por coluna e "Show how to tell" por linha); o menu de cada coluna fica verde/vermelho na hora. Resolvido = as três colunas certas. Linhas em ordem embaralhada fixa (hash do id) e menu de nomes em ordem alfabética, porque a ordem do manifesto entregaria cargo e posição.
+- Os menus (`components/picker.tsx`) usam o `Combobox` do Base UI com o campo de busca dentro do popup e lista de no máximo 14rem com rolagem. O popup é renderizado dentro do `.theme-dinn` (as cores são variáveis do tema; no `<body>` ficariam sem estilo). Há um item "Clear choice" para desfazer.
+- Answer key (`components/answer-key.tsx`): tabela com tudo preenchido (retrato, nome, cargo, capítulo, fate, "como reconhecer"), com aviso de spoiler, dentro de um acordeão fechado (`answer-accordion.tsx`, `<details>` controlado). O conteúdo continua no HTML, então a busca o indexa; um link `#answer-<id>` abre o acordeão (listener de `hashchange`) e rola até a linha. Existe para a busca achar os tripulantes (`#answer-<id>`); as divergências de fontes ficam abaixo dela.
+- Cor de destaque `#e5ffff` (o papel do jogo); sem imagem de capa por enquanto.
+
+## Página (`frontend/games/return-of-the-obra-dinn/`)
+- Tema `.theme-dinn` (`theme.css`; fontes IM Fell English nos títulos e Lora no texto, em `layout.tsx`; a Pixelify Sans foi trocada por cansar a leitura): tinta escura e papel azulado, as duas cores do jogo, xadrez nos títulos, painéis com sombra dura.
+- `lib/data.ts` lê os JSONs; `lib/progress.ts` guarda os resolvidos no `localStorage` (`return-of-the-obra-dinn-progress-v1`).
+- Guide: mecânica, dedução e como marcar a resposta, em passos numerados e texto corrido (sem caixas). Chapters (`chapters.tsx`, `entry.tsx`): 3 botões por entrada com um painel por vez. Crew (`crew.tsx`, `lib/answers.ts`, `lib/progress.ts`): tabela com menus, filtro por capítulo e "Unsolved only"; as escolhas ficam no `localStorage` (`return-of-the-obra-dinn-answers-v1`). A validação aceita também a resposta do PSNProfiles quando difere (`alsoListed`), por coluna. A lista de causas vem das fontes (as 21 do guia principal mais as do PSN), não é a do jogo. Mesmo com os nomes escondidos, a divergência de fontes fica em `Discrepancies` abaixo da tabela. Trophies: com raridade da PSN e aviso de perdível.
+- Busca (`guide-search.tsx`, `lib/search.ts`, mesmo molde do Denshattack): campo no hero, botão flutuante e tecla `/`; estado na URL (`?q=&type=`). Tipos: Guide, Chapter (título e locais), Crew e Trophy. Crew vem do Answer key: o resultado mostra só nome, cargo e capítulo, mas a busca também acha pelo fate e pela dica (`keywords`, campo que não aparece no resultado). Achar um nome leva à linha do gabarito, então a busca revela a resposta de quem o usuário procura.

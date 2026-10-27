@@ -1,0 +1,801 @@
+{
+  "chapters": [
+    {
+      "n": 1,
+      "roman": "I",
+      "title": "Loose Cargo",
+      "fateCount": 2,
+      "solveCount": 1,
+      "summary": "The ship is still in port. A pallet of cargo slips its rope and crushes a seaman; a stowaway hidden in a barrel on it dies too. The dead man's brother blames another seaman for the accident, which matters again in chapter VII.",
+      "parts": [
+        {
+          "n": 1,
+          "location": "On the cargo deck",
+          "fates": [
+            {
+              "crew": "samuel-peters",
+              "identityHint": "His identity can be deduced by listening to another crewmember in a later chapter accusing a third crewmember for being responsible for this victim's demise, even though it was considered an accident.",
+              "clueHint": "Another crewmember appearing in this memory gets his identity deduced because of the accusations against him in a later chapter.",
+              "note": "Was underneath the cargo when it collapsed. Head was crushed."
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "fates": [
+            {
+              "event": "An unidentified stowaway was crushed inside a falling barrel.",
+              "note": "No corpse visible. The game provides this info for you when you view the scene."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "roman": "II",
+      "title": "A Bitter Cold",
+      "fateCount": 3,
+      "solveCount": 2,
+      "summary": "Two Indian seamen die of a lung disease in the night while most of the crew sleeps. The scene shows hammocks, accents and sleeping places, and identifies a dozen or so crew members. Afterwards the butcher slaughters a cow with the three midshipmen.",
+      "parts": [
+        {
+          "n": 1,
+          "location": "On the gun deck",
+          "fates": [
+            {
+              "crew": "soloman-syed",
+              "identityHint": "Listen to conversations in this memory, someone concerned for his well-being addresses him directly by name.",
+              "clueHint": "This memory contains numerous clues to a fair number of identities. Listen to conversations, what languages are used, and locations of other crewmembers. Some identities present are hiding under sheets and can't be highlighted when zooming in on them. Look for distinct visual cues on them instead.",
+              "note": "Dies in their hammock due to lung illness."
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "location": "In the surgeon's room",
+          "fates": [
+            {
+              "crew": "renfred-rajub",
+              "identityHint": "His identity can be deduced by closely examining the location he can be found resting in in an earlier memory.",
+              "clueHint": "Some other identities have a very logical reason being in the room with the sick victim. The conversation further supports said reason.",
+              "note": "Dies from lung illness (the same that killed the previous victim). Was treated but medicine was not administered in time to save them."
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "location": "On the orlop deck",
+          "fates": [
+            {
+              "event": "A large cow was slaughtered for its meat.",
+              "clueHint": "Listen to conversations, someone gets directly mentioned by nickname in a comment to their abrupt reaction to the event happening. Someone else also showcases their quality in relation to said event.",
+              "note": "The game will provide this info when you view the scene. This scene is about giving identifying details for some of the crew present."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "roman": "III",
+      "title": "Murder",
+      "fateCount": 3,
+      "solveCount": 3,
+      "summary": "The second mate and his steward plot with a few seamen to steal the chest carried by the Formosan passengers. A passenger who walks in on the theft is killed, another is framed and shot by firing squad, and the conspirators then flee with the chest and two hostages. A topman who tries to stop them is shot.",
+      "parts": [
+        {
+          "n": 1,
+          "location": "On the cargo deck",
+          "fates": [
+            {
+              "crew": "nunzio-pasqua",
+              "identityHint": "Listen to conversations in this memory. He uses a certain phrase unique to his origin. His death is also referred to in a later chapter.",
+              "clueHint": "Listen to conversations, another identity is being directly addressed by name in this memory.",
+              "note": "Killed after investigating the noise made by the culprit as they attempted to break into the cargo hold."
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "location": "On the main deck",
+          "fates": [
+            {
+              "crew": "hok-seng-lau",
+              "identityHint": "Listen to conversations in this memory, his name is being directly addressed during his trial.",
+              "clueHint": "This memory contains numerous clues to other identities present. Other than three identities being addressed in conversation, the postitions of the other members and who or what they are standing close to hints at their quality on the ship.",
+              "note": "Executed by firing squad for the death of the previous victim. Three bullets miss the victim; if you follow the smoke trails of the shots, you will see that only the culprit’s bullet lands."
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "location": "On the main deck",
+          "fates": [
+            {
+              "crew": "timothy-butement",
+              "identityHint": "He has a very distinct tattoo. Try to locate it again in a previous memory.",
+              "clueHint": "There is one other identity present in this memory, who carries a personal item important to discovering his identity. He might not carry it with his hands though.",
+              "note": "Shot trying to defend the hostage from the culprit. The culprit here is stealing something other than the hostage from the ship; they will flee in row boats with accomplices in an attempt to escape. This context is important to understand the next chapter’s events."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "roman": "IV",
+      "title": "The Calling",
+      "fateCount": 8,
+      "solveCount": 8,
+      "summary": "The conspirators row away in two lifeboats and are attacked by merfolk-like beasts that the chest keeps at bay. Several die in the attack. One of the hostages opens the chest and neutralizes the beasts at the cost of his arm. The second mate hauls two beasts aboard and is shot from below deck by the last Formosan.",
+      "parts": [
+        {
+          "n": 1,
+          "location": "On the open sea",
+          "fates": [
+            {
+              "crew": "li-hong",
+              "identityHint": "While he is hard to distinguish from his fellow countrymen as they all also share the same quality, look at his footwear and find out where he sleeps.",
+              "clueHint": "This memory doesn't contain much useful information, but one other present is holding something distinct to deducing his identity, but he is not holding it with his hands.",
+              "note": "The culprit spears the victim in the attack. Other causes of death, such as spiked, may be accepted as long as the culprit is correctly identified."
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "location": "On the open sea",
+          "fates": [
+            {
+              "crew": "patrick-o-hagan",
+              "identityHint": "Listen to conversations in another memory. His name gets called out, but the scenery is quite chaotic to be fully sure who is being called at. Unfortunately, he is unable to respond to it anyway, given his condition.",
+              "clueHint": "Listen to conversations. Two people are conversing in their native language, worrying about each others' safety, and mentions each others' names. One other present in this scene also holds something distinct to deducing his identity, but he is not holding it with his hands.",
+              "note": "Next to die in the attack. Can be identified from the following victim’s dialogue."
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "location": "On the open sea",
+          "fates": [
+            {
+              "crew": "samuel-galligan",
+              "identityHint": "His clothes reveals some information on his quality. His quality also indirectly showcases why he happens to be part of this mutiny.",
+              "clueHint": "Listen to conversations. A few names gets thrown around here, but whom they belong to can be a difficult matter to determine in this chaotic scenery.",
+              "note": "The culprit stabs the victim in order to get to the treasure chest, which contains magic that repels the attackers. They are not killed by the attacking group."
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "location": "On the open sea",
+          "fates": [
+            {
+              "crew": "bun-lan-lim",
+              "identityHint": "She gets directly adressed by name numerous times from what appears to be a concerned fellow countryman during the events in this chapter.",
+              "clueHint": "This text is merely a red herring, as this memory doesn't contain any useful information on other identities, despite the high bodycount.",
+              "note": "Victim is killed by attackers just before they're forced to retreat. I personally thought the culprit took a bite out of the victim's neck, but that answer is not accepted."
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "location": "On the open sea",
+          "fates": [
+            {
+              "crew": "it-beng-sia",
+              "identityHint": "Someone else yells for him by name in a previous memory.",
+              "clueHint": "Listen to conversations, the victim in this memory is calling out to someone else by name. Sadly, he doesn't get an answer back.",
+              "note": "When the victim opens the chest, the magic melts their arm off (which eventually kills them). It can be hard to see what the actual cause of death is; look at the coloration of the chest and then the corpse. This is confirmed by a similar event in another chapter."
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "location": "Off the port side",
+          "fates": [
+            {
+              "crew": "edward-nichols",
+              "identityHint": "He is directly referred to by name in numerous previous memories.",
+              "clueHint": "Another identity in this memory can be deduced from where they are located. Looking at the deck plans might help further.",
+              "note": "If you look at your crew log, you may notice that the culprit is the last surviving passenger from their country. You can either assume the victim was killed as revenge for the deaths of the culprit's countrymen, or you can assume it was to prevent the treasure chest from boarding again. It's left vague/up to interpretation."
+            }
+          ]
+        },
+        {
+          "fates": [
+            {
+              "crew": "aleksei-toporov",
+              "identityHint": "He has an unhealthy habit, and keeps the tool enabling this habit close to his person at all times, even when he sleeps.",
+              "clueHint": "Check his last located memory. The book accepts multiple causes, but once dragged down, he ain't coming back up.",
+              "note": "Disappears by the time the Obra Dinn reaches the small boats. This death is ambiguous, so causes like falling overboard may also be accepted."
+            },
+            {
+              "crew": "alarcus-nikishin",
+              "identityHint": "This one requires a certain process of elimination, but start looking at his origin and follow up by identifying his fellow countrymen before him.",
+              "clueHint": "Check his last located memory. The book accepts multiple causes, but once dragged down, he ain't coming back up.",
+              "note": "Disappears by the time the Obra Dinn reaches the small boats. This death is ambiguous, so causes like falling overboard may also be accepted."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "roman": "V",
+      "title": "Unholy Captives",
+      "fateCount": 5,
+      "solveCount": 5,
+      "summary": "The beasts are brought aboard. The Formosan and the seaman who restrained him are spiked as the beasts are hoisted, a cook is struck dead by a tail and the crew carrying a beast drops it, crushing a seaman. The captain's steward attacks a seaman to stop the beasts from being locked in the hold and is chained in there himself.",
+      "parts": [
+        {
+          "n": 1,
+          "location": "On the main deck",
+          "fates": [
+            {
+              "crew": "chioh-tan",
+              "identityHint": "His identity is best deduced by process of elimination. Observe the people he is traveling close together with and deduce their identity first.",
+              "clueHint": "Not much useful information to gather from this memory, there are some hints to other members that are close to the pile of bodies.",
+              "note": "One of the captured beasts launches a spike that tears through both victims on this page. “Spiked” and “speared” are interchangeable here."
+            },
+            {
+              "crew": "hamadou-diom",
+              "identityHint": "This victim requires some process of elimination, since his identity is never hinted at directly and can only be solved through his skin color and unique outfit.",
+              "clueHint": "Not much useful information to gather from this memory, there are some hints to other members that are close to the pile of bodies.",
+              "note": "One of the captured beasts launches a spike that tears through both victims on this page. “Spiked” and “speared” are interchangeable here."
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "location": "On the gun deck",
+          "fates": [
+            {
+              "crew": "thomas-sefton",
+              "identityHint": "Listen to conversations in this memory, this victim talks about something very specific to his quality.",
+              "clueHint": "Look around, there are numerous subtle clues to other members present in this memory by observing what they are doing, who they are standing with, and what they are wearing or holding.",
+              "note": "The victim attempts to take a shell that the captured beast is holding. It reacts by hitting the victim with its tail. This death is the direct cause of the following one."
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "location": "On the orlop deck",
+          "fates": [
+            {
+              "crew": "william-wasim",
+              "identityHint": "He shares hammock space with his fellow countrymen. You can hear him speaking his native language to a sick friend in another memory.",
+              "clueHint": "Some members present in this memory can be deduced since they are shown distracted from their occupation because of the commotion. Be careful not to be biased when determining who is who just because this is the 19th century.",
+              "note": "When the previous death occurs, the crew carrying the beast lose their balance and drop the cargo down the stairs. The victim gets caught between it and the wall."
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "location": "On the cargo deck",
+          "fates": [
+            {
+              "crew": "john-naples",
+              "identityHint": "Listen to conversations in this memory. He is being directly addressed by name. It shouldn't be too hard to narrow down, despite him sharing first name with another crewmember.",
+              "clueHint": "Listen to conversations, someone is addressing someone else in this memory by their quality, and from the sounds of it, he sounds very disappointed. There are others present that show their quality either in respons to what has just occured or what they are wearing or holding.",
+              "note": "The culprit attacks the victim in an attempt to prevent the beast from being locked in the cargo hold. They are concerned about the beasts bringing a curse aboard the ship. The culprit is locked away in the same room as the beasts to keep others safe from another “fit of insanity”. “Torn apart” may be used instead of “killed with a sword” (due to presumed blood loss from the leg being torn off)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "roman": "VI",
+      "title": "Soldiers of the Sea",
+      "fateCount": 9,
+      "solveCount": 9,
+      "summary": "During a storm, crab-riding beasts board the ship. A topman is struck by lightning, another is speared in the rigging, and the monsters work their way down the decks, killing the carpenter's mate, the surgeon's mate, a topman, a midshipman, the butcher, a steward and, last, the carpenter.",
+      "parts": [
+        {
+          "n": 1,
+          "location": "In the rigging",
+          "fates": [
+            {
+              "crew": "huang-li",
+              "identityHint": "While it can be hard to distinguish him from his fellow countrymen as they all also share the same quality, look at his footwear and find out where he sleeps.",
+              "clueHint": "All crewmembers appearing in this memory in the rigging are up there for a reason.",
+              "note": "Struck by lightning from a sudden storm. The body is dropped from the rigging down onto the main deck."
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "location": "On the main deck",
+          "fates": [
+            {
+              "crew": "nicholas-botterill",
+              "identityHint": "He is declared dead in a later memory, in which his nickname gets mentioned.",
+              "clueHint": "This text is merely a red herring, as there are no important clues to any identities in this memory despite the amount of crewmembers present.",
+              "note": "Killed as the beasts board the ship. A character in the following scene identifies this victim. “Spiked” may also be accepted."
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "location": "On the gun deck",
+          "fates": [
+            {
+              "crew": "marcus-gibbs",
+              "identityHint": "He can be spotted practicing his occupation in an earlier memory. Also listen to him in this memory, he adresses someone else present as his boss.",
+              "clueHint": "Listen to conversations. Someone is mentioned by their nickname, but it doesn't sound like they are alive anymore.",
+              "note": "Dies trying to protect his comrades. Note that a superior officer tells the victim that \"Nick\" has already been killed by the beasts (and as such can be listed as a victim sometime before this event). “Speared” may also be accepted."
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "location": "On the orlop deck",
+          "fates": [
+            {
+              "crew": "james-wallace",
+              "identityHint": "Search his presence in each memory he appears. He is frequently seen helping people in need or standing close to deceased crewmembers.",
+              "clueHint": "Thoroughly search both available decks in this memory. Some identities can be deduced from where they are located doing their job. Others are using a weapon specific to their origin. You can learn where the owner of the weapon sleeps if you can locate the weapon again in another memory",
+              "note": "Dies in the attack."
+            },
+            {
+              "crew": "jie-zhang",
+              "identityHint": "While it can be hard to distinguish him from his fellow countrymen as they all also share the same quality, look at his footwear and find out where he sleeps.",
+              "clueHint": "Thoroughly search both available decks in this memory. Some identities can be deduced from where they are located doing their job. Others are using a weapon specific to their origin. You can learn where the owner of the weapon sleeps if you can locate the weapon again in another memory.",
+              "note": "Dies in the attack."
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "location": "On the orlop deck",
+          "fates": [
+            {
+              "crew": "charles-hershtik",
+              "identityHint": "In an earlier memory, when someone comments on his reaction to a butchering, he gets directly addressed by his nickname. His clothes further narrows down his identity.",
+              "clueHint": "Only one identity is hinted at as he is hiding in his room, away from the present conflict.",
+              "note": "Victim lights the beast on fire and holds it down, killing them both in the process. The actual cause of death is ambiguous because you can't really tell whether the beast or the fire kills him first, so “speared”, “spiked”, and “burned” should all work."
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "location": "On the orlop deck",
+          "fates": [
+            {
+              "crew": "emil-o-farrell",
+              "identityHint": "His clothes reveal his quality. He is also seen practicing his quality in an earlier memory, causing a fellow crewmember to throw up.",
+              "clueHint": "One member always seem to be around trying to help the deceased. Another hides in his room, away from the conflict.",
+              "note": "Pinned to the wall with spikes by the monster. Dialogue indicates that they bleed out when removed from the wall. Can be identified by the event where the cow is slaughtered. “Spiked” may also be accepted."
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "location": "In the port walk",
+          "fates": [
+            {
+              "crew": "zungi-sathi",
+              "identityHint": "This one requires some process of elimination, but the focus should be on his clothing and looks.",
+              "clueHint": "Search all peepholes in the portwalk, there are clues to some identities. Some can be found at their respective positions providing supplies needed to take down the monsterous enemies, while another hides in his room, away from the fight.",
+              "note": "Pay attention to what the actual moment of death is. You may have noticed from earlier scenes that they were hit by a spike and crawled away, but they don't die until the culprit fires at the attackers. The spike isn’t what gets them in the end."
+            }
+          ]
+        },
+        {
+          "n": 8,
+          "location": "On the cargo deck",
+          "fates": [
+            {
+              "crew": "winston-smith",
+              "identityHint": "He is seen leaving his workplace to check on some commotion outside in an earlier memory.",
+              "clueHint": "Another member is carrying a weapon distinct to his origin. Find the weapon again in another memory to learn where the owner sleeps.",
+              "note": "Skewered by the final beast as it died. “Speared” may also be accepted."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "roman": "VII",
+      "title": "The Doom",
+      "fateCount": 16,
+      "solveCount": 16,
+      "summary": "After dark part of the crew tries to flee in a lifeboat, and a seaman clubs another over the death in chapter I. A kraken attacks. Crew die at the cannons, in the rigging and on deck, and several others vanish into the sea, among them the three in the lifeboat the kraken tosses into the air. The captain's wife is crushed searching for her husband.",
+      "parts": [
+        {
+          "n": 1,
+          "location": "On the main deck",
+          "fates": [
+            {
+              "crew": "lars-linde",
+              "identityHint": "Listen to conversations in this memory, someone addresses him directly by nationality when accusing the victim of being responsible for another crewmembers demise in an earlier chapter.",
+              "clueHint": "Listen to conversations. The culprit mentions a deceased brother on the ship, which means he must share family name with another crewmember. There is also a clue to another member present, who despite being of another ethnicity speaks perfect English. Another member is carrying something specific to his quality.",
+              "note": "The culprit blames the victim for the first death aboard the Obra Dinn and kills in retaliation. This occurs while the culprit and some others are attempting to flee on a row boat. The culprit tells you the victim’s nationality, and can be identified by how he describes his relationship to the first death (if you've figured out the identity of the first victim).  \nA hint for later: when you see the corpse, there are others (besides the culprit) hovering over his body. They haven't actually escaped before the rest of the chapter plays out!"
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "location": "On the bow",
+          "fates": [
+            {
+              "crew": "edward-spratt",
+              "identityHint": "His name is easily deduced by looking at his character profile, unless you are unfamiliar with initials. You can also see him drawing the sketches used in the book when visiting the memory, the \"*Justice at Sea*\" sketch is drawn from.",
+              "clueHint": "There are numerous subtle clues in this memory. Look at crewmembers interacting with each other and where they are sitting in relation to where they sleep. The hammocks shown also indicates who are still alive at this point in the story.",
+              "note": "Killed while using the bathroom on the bow of the gun deck. You can actually identify this person before having ever seen a memory. I did it on accident before figuring out how to actually play the game. Try comparing the name roster with the sketch; there's someone who has a good reason for not having their face in any of the drawings. You may also answer that they were drowned by the beast."
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "location": "On the gun deck",
+          "fates": [
+            {
+              "crew": "abraham-akbar",
+              "identityHint": "This victim requires some process of elimination based on his origin. Even though he sleeps in the same hammock space as his fellow countrymen, his hammock is the only one not showing a number.",
+              "clueHint": "This text is merely a red herring, as there aren't any helpful clues in this memory, despite there being a fair few crewmembers present.",
+              "note": "The monster grabs both the victim and the cannon they were firing through the porthole. Notice that the fuse is already lit at the moment of death!"
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "location": "On the gun deck",
+          "fates": [
+            {
+              "crew": "christian-wolff",
+              "identityHint": "He gets directly addressed by name in an earlier memory. He is also shown showcasing his quality in numerous memories when the ship gets attacked.",
+              "clueHint": "This text is merely a red herring, as there aren't any helpful clues in this memory, despite there being a fair few crewmembers present.",
+              "note": "Killed when the previous victim’s cannon fires into the gun deck. The previous victim can be considered the culprit because they lit the fuse of the cannon before perishing. You can also answer that the victim is shot by the beast, since the beast is the one to aim the cannon after it's been lit."
+            },
+            {
+              "crew": "george-shirley",
+              "identityHint": "He is on such friendly terms with the asian crewmembers on the ship to the point that he sleeps close to them.",
+              "clueHint": "While his body can't be found in this memory, his fate is shared with the other victim in this memory. Other than that, there aren't any useful clues here.",
+              "note": "Killed when the previous victim’s cannon fires into the gun deck. His body is launched off of the boat, so you may also answer that he fell overboard. You can also answer that the victim is shot by the beast, since the beast is the one to aim the cannon after it's been lit."
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "location": "On the gun deck",
+          "fates": [
+            {
+              "crew": "roderick-andersen",
+              "identityHint": "He is shown frequently following and being near another crewmember in numerous memories. Deduce the identity of the crewmember he follows, and you'll be able to deduce this victim. His clothes are also a clue.",
+              "clueHint": "This text is merely a red herring, as there are no helpful clues in this memory, despite the amount of other crewmembers present.",
+              "note": "A cannon rolls into a wall as the boat rocks, crushing the victim between the two."
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "location": "On the main deck",
+          "fates": [
+            {
+              "crew": "peter-milroy",
+              "identityHint": "His name gets mentioned in a later memory by one of the other members present witnessing his sudden demise.",
+              "clueHint": "A fate in this chapter's DISAPPEARANCES section is happening in this memory, so thoroughly look around. Also, there is a clue to another identity present from the amount of items he is carrying.",
+              "note": "Picked up by the beast while trying to get gunpowder to other crew members. The gunpowder lights and explodes. There’s a crewmate that tries to pull them away from the beast with a rope before the powder lights; this is referenced in a death in chapter IX and can help you identify this victim."
+            }
+          ]
+        },
+        {
+          "n": 7,
+          "location": "On the main deck",
+          "fates": [
+            {
+              "crew": "maba",
+              "identityHint": "This victim can either be identified through process of elimination, when you've deduced his quality or through some knowledge on his looks and tattoos. While he is seen doing many different things up until his demise, he is also seen on the part of the ship where only people of that quality are allowed to work.",
+              "clueHint": "Look outside the ship, a few fates can be determined when you spot them.",
+              "note": "Self-explanatory. Ouch. While you’re here, look closely behind the beast, out towards the sky. You might notice three people falling through the air. You can’t zoom in enough to see their faces, but you can deduce who they are from the small boat falling next to them. We saw three men get into a rowboat recently; figure out who they are from that scene, and you'll know who they must be. Their fates are all the same, so you don't actually need to figure out who is who."
+            }
+          ]
+        },
+        {
+          "n": 8,
+          "location": "On the main deck",
+          "fates": [
+            {
+              "crew": "abigail-hoscut-witterel",
+              "identityHint": "Listen to conversations in another memory, someone dear to her addresses her directly by name.",
+              "clueHint": "This memory contains numerous clues to identities through conversation, their locations, and what they are carrying and wearing. Here you'll also be able to determine fates from the DISAPPEARENCE section in this chapter.",
+              "note": "Victim runs out onto the main deck searching for her husband and is killed when the beast brings down some of the rigging onto her head. The victim identifies a “Martin” in this scene.  \nYou can look in the opposite direction of the beast to spot someone falling overboard. They should be close enough to see characteristics of the face, even if you can’t zoom enough to bring them up on the artist sketches. He's the only disappeared soul of this chapter with a certain physical trait. You can also see three more disappeared souls being pulled overboard by the beast. There’s one disappeared soul fate that you cannot see or figure out for now; even if you don't know all the names yet, you can match most of the faces to a fate.  \nMay also accept that the victim was crushed by falling rigging."
+            }
+          ]
+        },
+        {
+          "fates": [
+            {
+              "crew": "omid-gul",
+              "identityHint": "He owns a very distinct weapon reminiscent of his origin. He keeps it close to where he sleeps on the ship. His outfit further narrows down his origin.",
+              "clueHint": "Search his last located memory. It is not safe to climb the rigging when a giant monster capable of sinking large ships attacks. The ambiguity of his fate leaves multiple acceptable causes.",
+              "note": "Can be seen opposite from the beast in part 8. May also accept \"drowned by a terrible beast\"."
+            },
+            {
+              "crew": "nathan-peters",
+              "identityHint": "Listen to conversations, in one memory he mentions a brother while he accused another crewmember of said brother's demise on the ship. The two family members must have something in common that helps deduce both their identities.",
+              "clueHint": "Search his last located memory. It's apparently not wise to abandon ship when a giant monster is about to attack. He shares the same fate as the other crewmembers he abandons ship with.",
+              "note": "One of the three who attempted to leave on a small boat. Can be seen falling in part 7. May also accept \"drowned by a terrible beast\"."
+            },
+            {
+              "crew": "alexander-booth",
+              "identityHint": "This identity requires some process of elimination, and probably best to save for later when there are fewer options to choose from. Despite his ethnicity he is heard speaking with an English accent, and search what hammocks are empty after he's abandoned ship.",
+              "clueHint": "Search his last located memory. It's apparently not wise to abandon ship just before a giant monster attacks. He shares the same fate as the other crewmembers he abandons ship with.",
+              "note": "One of the three who attempted to leave on a small boat. Can be seen falling in part 7. May also accept \"drowned by a terrible beast\"."
+            },
+            {
+              "crew": "duncan-mckay",
+              "identityHint": "This coward hides in his room when the ship is under attack. He is also seen holding items related to his quality, when he abandons ship.",
+              "clueHint": "Search his last located memory. It's unwise to abandon ship just before a giant monster attacks. He shares the same fate as the other crewmembers he abandons ship with.",
+              "note": "One of the three who attempted to leave on a small boat. Can be seen falling in part 7. May also accept \"drowned by a terrible beast\"."
+            },
+            {
+              "crew": "wei-lee",
+              "identityHint": "While it can be difficult to distinguish him from his fellow countrymen as they all also share the same quality, he is actually the easiest to deduce, since he is the last one of his countrymen to perish. Check his hammock from where he is sitting in one memory.",
+              "clueHint": "Search his last located memory. Something is about to grab him when he is climbing the rigging. The ambiguity of his fate leaves multiple confirmable causes.",
+              "note": "Can be seen being held in the air by a tentacle in part 8. May also accept \"torn apart\"."
+            },
+            {
+              "crew": "finley-dalton",
+              "identityHint": "His location in the \"*Justice at Sea*\" sketch indicates his quality on the ship.",
+              "clueHint": "Search his last located memory. From the looks of his situation he doesn't seem to be able to wrap himself out of his fate. The ambiguity of his fate leaves multiple confirmable causes.",
+              "note": "Can be seen dangling above you in part 8. May also accept \"torn apart\"."
+            },
+            {
+              "crew": "charles-miner",
+              "identityHint": "Listen to conversations in another memory. Someone addresses him both as his mate and by origin when asking others about this victim's whereabouts after his disappearance.",
+              "clueHint": "Search his last located memory. Spot who he is with before his disappearence, as his fate is mentioned in a later memory when said who asks about his whereabouts.",
+              "note": "Disappears after part 8. Dialogue in chapter IV indicates his fate."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "roman": "VIII",
+      "title": "Bargain",
+      "fateCount": 5,
+      "solveCount": 2,
+      "summary": "Happens during chapter VII and is only reachable after the other fates are solved. The chained steward opens the chest and is burned. The captain shoots one caged beast and stabs another to make the kraken leave. The third mate frees the last one, is spiked, and gives it the shell. In return it brings the ship home. The surgeon then lures his monkey into the hold and shoots it.",
+      "parts": [
+        {
+          "n": 1,
+          "location": "In the lazarette",
+          "fates": [
+            {
+              "crew": "fillip-dahl",
+              "identityHint": "Listen to conversations in his last located memory before reappearing in this chapter, his quality gets revealed by someone who is very disappointed in him.",
+              "clueHint": "This text is merely a red herring as this is the end of the game and only two identities are left to solve.",
+              "note": "Remember what happened when the treasure chest was opened in chapter IV? If you were confused by what happened then, the victim’s dialogue tells you here: “quicksilver!”. Mercury doesn’t actually burn you like that, but I guess the implication is along the lines of a chemical burn. I ended up guessing correctly for those two victims just because it looked sort of like the chest spit out fire magic or something."
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "fates": [
+            {
+              "event": "An unholy creature’s defiant shrieks were greeted with a fatal bullet.",
+              "note": "The captain has realized the beast attacking the upper decks was drawn in by the ones locked in the cargo hold, and attempts to threaten them to send it away. He shoots the first caged beast.  \nFor reference, this chapter is occurring simultaneously (or at least very nearly) with chapter VII. If you were wondering where the hell all these people were in that chapter, they're down in the cargo hold. Not dead (yet)."
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "fates": [
+            {
+              "event": "A captured beast fought against its jailer and was speared for the trouble.",
+              "note": "The captain has realized the attacking beast was drawn in by the ones locked in the cargo hold, and attempts to threaten them to send it away. This succeeds after the second beast is stabbed."
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "location": "In the lazarette",
+          "fates": [
+            {
+              "crew": "martin-perrott",
+              "identityHint": "Listen to conversations in an earlier memory, someone addresses him directly by name.",
+              "clueHint": "This text is merely a red herring as this is the end of the game and only two identities are left to solve.",
+              "note": "The victim and two others attempt to set the third beast free in hopes it will take mercy on the remaining crew. When it is released, it spikes the victim. The victim still returns its stolen shell (from the treasure chest), and in return asks it to ensure the Obra Dinn returns home. This is implied to be the reason why the ship itself makes it back to you for inspection, after all the fates have been sealed. They probably should've asked for the ship to make it back with the remaining survivors."
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "fates": [
+            {
+              "event": "A friendly but not entirely pleasant monkey companion was sacrificed in the pursuit of knowledge.",
+              "note": "The surgeon tricks his monkey into entering the empty hold and shoots it. By killing it and taking a piece, he creates a path for someone using the death compass to see what happened in the chamber. This is why he mailed you a monkey's paw after successfully completing the rest of the entries; it was your path into the hidden room. In some previous scenes, you can see the monkey sitting on the surgeon’s shoulder."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 9,
+      "roman": "IX",
+      "title": "Escape",
+      "fateCount": 10,
+      "solveCount": 10,
+      "summary": "The kraken has gone. The bosun, missing an arm, dies below deck. A steward is killed while loading the last lifeboat and his killer is shot by a passenger; the four in that boat survive and reach Africa. A gunner's mate stabs a midshipman who tries to report a mutiny, the fourth mate shoots the gunner's mate and a seaman clubs the fourth mate. The midshipman bleeds to death.",
+      "parts": [
+        {
+          "n": 1,
+          "location": "In the officer's mess",
+          "fates": [
+            {
+              "crew": "alfred-klestil",
+              "identityHint": "Listen to conversations in this memory. The victim mentions his mate and reveals his mate's origin when asking about his whereabouts. Deduce the identity of his mate, then the identity of this victim should be fairly simple to guess.",
+              "clueHint": "Listen to conversations. The identity of another not present in this memory is mentioned by origin and partly on his quality, as well as his fate.",
+              "note": "The victim was present on the main deck during the attack and is now missing an arm. You can assume it was forcibly removed. The dialogue tells you what happened to the victim’s mate in the attack (who disappears between the last memory of the attack and this scene)."
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "location": "On the stern deck",
+          "fates": [
+            {
+              "crew": "paul-moss",
+              "identityHint": "Listen to conversations in this memory. Someone shouts his name when warning him. His clothes also hint at his quality.",
+              "clueHint": "Another member present in this memory is carrying something that differentiate her from the other female member.",
+              "note": "The victim is killed while trying to help some others escape on the last small boat. The dialogue tells you their name."
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "location": "On the stern deck",
+          "fates": [
+            {
+              "crew": "leonid-volkov",
+              "identityHint": "This identity requires a certain process of elimination. Try to learn his quality by where he is located in another memory and his origin from his spoken language and whom he speaks with.",
+              "clueHint": "This text is merely a red herring, as there aren't any helpful clues to identities in this memory, despite the commotion going on.",
+              "note": "This victim is the culprit of the previous murder; if you know one, you can fill in the other.  \nYou will need to identify this culprit from the two remaining women on the ship. “Miss” as a title means a woman isn’t married, so try to see which one is the married woman. You may want to revisit other scenes including them to investigate this. There's also only the two of them, so if you really can't find what you're looking for, fill in some other fates you know are right and then guess. If you're right, the game should hopefully lock in your responses and let you know which one is right."
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "location": "On the aft gun deck",
+          "fates": [
+            {
+              "crew": "olus-wiater",
+              "identityHint": "He is seen in another memory in his respective location performing his job when the ship is under attack. His clothes and the items he holds on his person in almost every memory are further indicators of his quality.",
+              "clueHint": "This text is merely a red herring as there are no helpful clues in this memory, despite all the commotion going on.",
+              "note": "The victim is shot after attacking a crewmate with a knife for trying to report mutiny. The culprit kills the victim to try and save the fleeing crewmate."
+            }
+          ]
+        },
+        {
+          "n": 5,
+          "location": "On the aft gun deck",
+          "fates": [
+            {
+              "crew": "john-davies",
+              "identityHint": "He can be identified either through process of elimination or finding him in a location specific to his quality in another memory.",
+              "clueHint": "This text is merely a red herring as there are no helpful clues in this memory, despite the commotion going on.",
+              "note": "The culprit finds the victim immediately after the previous memory and strikes them dead in retaliation."
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "location": "In the midshipmen cabin",
+          "fates": [
+            {
+              "crew": "thomas-lanke",
+              "identityHint": "This identity requires some process of elimination through his quality, but his clothes and where his body is located is a start.",
+              "clueHint": "Listen to conversations, two names get mentioned, one in relation to an event that happened in an earlier memory, the other directly addressed to another member present in this memory, but said member is a bit far away and have trouble hearing it.",
+              "note": "The victim is the crewmate that was stabbed in the fourth memory of this chapter. He crawls away before bleeding out.  \nThey mention having tried to pull a friend named Pete to safety just before Pete was killed; this is a reference to the victim who exploded in chapter IIX."
+            }
+          ]
+        },
+        {
+          "fates": [
+            {
+              "crew": "henry-evans",
+              "identityHint": "He mostly seem to be close to corpses or helping people in pain or suffering when present in memories. Must be related to his quality.",
+              "clueHint": "You can learn his fate and whereabouts by skimming through the book.",
+              "note": "These are the four who escaped the Obra Dinn on the last small boat. You can determine where they went from the map on the title page of chapter IX. They can’t get very far in a little boat without supplies, so where's the closest place could they have gone?"
+            },
+            {
+              "crew": "emily-jackson",
+              "identityHint": "This identity requires some process of elimination, but since there aren't many females aboard the ship, deducing her identity should be fairly straightforward. Closely study her person, she is wearing something that gives her a title that wouldn't fit with a certain name in the crew manifest.",
+              "clueHint": "Her fate is quite obscure from her last located memory, but she shares the same fate as everyone else on board the boat trying to escape. One of these members' fate can be deduced from skimming through the book.",
+              "note": "These are the four who escaped the Obra Dinn on the last small boat. You can determine where they went from the map on the title page of chapter IX. They can’t get very far in a little boat without supplies, so where's the closest place could they have gone?"
+            },
+            {
+              "crew": "miss-jane-bird",
+              "identityHint": "This identity requires some process of elimination, but since there aren't many females aboard the ship, deducing her identity should be fairly straighforward. Closely study the other female appearing alongside this identity in most memories. She is wearing something that gives her a title that wouldn't fit with a certain name in the crew manifest.",
+              "clueHint": "Her fate is quite obscure from her last located memory, but she shares the same fate as everyone else on board the boat trying to escape. One of these members' fate can be deduced from skimming through the book.",
+              "note": "These are the four who escaped the Obra Dinn on the last small boat. You can determine where they went from the map on the title page of chapter IX. They can’t get very far in a little boat without supplies, so where's the closest place could they have gone?"
+            },
+            {
+              "crew": "davey-james",
+              "identityHint": "His clothes and whom he follows around in other memories indicates his quality.",
+              "clueHint": "His fate is quite obscure from the his last located memory, but he shares the same fate as everyone else on board the boat trying to escape. One of these members' fate can be deduced by skimming through the book.",
+              "note": "These are the four who escaped the Obra Dinn on the last small boat. You can determine where they went from the map on the title page of chapter IX. They can’t get very far in a little boat without supplies, so where's the closest place could they have gone?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "roman": "X",
+      "title": "The End",
+      "fateCount": 4,
+      "solveCount": 4,
+      "summary": "The captain locks himself in his quarters. The first mate, a seaman and a topman storm it one after another and are shot, knifed and clubbed. Alone with his dead wife, the captain confesses his regrets and shoots himself.",
+      "parts": [
+        {
+          "n": 1,
+          "location": "Outside the captain's quarters",
+          "fates": [
+            {
+              "crew": "william-hoscut",
+              "identityHint": "Listen to conversations in a later memory. The culprit who killed him mentions his relation to another member. He is also seen leaving his residence in an earlier memory.",
+              "clueHint": "Listen to conversations. Someone else gets addressed directly by their quality.",
+              "note": "The victim and two remaining passengers attempt to overtake the captain and steer the boat to shore. They want to sell anything they can and get away from the Obra Dinn. The victim is shot when they attempt to storm the captain’s quarters."
+            }
+          ]
+        },
+        {
+          "n": 2,
+          "location": "Inside the captain's quarters",
+          "fates": [
+            {
+              "crew": "henry-brennan",
+              "identityHint": "Listen to conversations in an earlier memory. Someone calls his name for aid, but he is seen having trouble hearing it.",
+              "clueHint": "This text is merely a red herring, as there are no helpful clues on any identities in this memory.",
+              "note": "This victim makes it a little further than the last, but has their throat slashed in the fight that ensues. The victim can actually still be heard gurgling in the next scene. Kinda gross, but nice detail."
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "location": "Inside the captain's quarters",
+          "fates": [
+            {
+              "crew": "lewis-walker",
+              "identityHint": "This identity is best deduced through process of elimination once you've discovered his quality. He is best left for later when there are fewer options to choose from.",
+              "clueHint": "This text is merely a red herring, as there are no helpful clues in this memory.",
+              "note": "While the previous two victims storm the cabin from the front, this victim climbs around to the back and attempts to knife the culprit. They land a hit but are quickly killed before they can overtake the culprit."
+            }
+          ]
+        },
+        {
+          "n": 4,
+          "location": "Inside the captain's quarters",
+          "fates": [
+            {
+              "crew": "robert-witterel",
+              "identityHint": "Listen to conversations in an earlier memory, someone addresses him directly by his quality. His quality is further hinted at by his clothes and whereabouts in the memories of this chapter.",
+              "clueHint": "Listen to conversations. One identity is directly addressed by name, while another is mentioned by relation to that name.",
+              "note": "The final soul on the Obra Dinn. He laments to his dead wife, whose remains lay in the captain's quarters, about what he has done. He identifies the man he has shot as her brother, which means the last name of the man he shot should match her maiden (middle) name. He asks for her forgiveness and promptly blasts a hole in his abdomen with the gun."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "discrepancies": [
+    {
+      "topic": "Spelling of names",
+      "text": "The guides spell some names differently: Soloman/Solomon Syed, Fillip/Filip Dahl, Hok-Seng Lau/Lan, Roderick Andersen/Anderson, Olus Wiater/Wiatrr, Nicholas Botterill/Boterill, Timothy Butement/Buteman. One guide also writes the East Asian names family name first (Li Huang, Zhang Jie, Hong Li, Lee Wei). This guide uses the spelling of the crew list guide."
+    },
+    {
+      "topic": "Chapter VIII title",
+      "text": "It is \"Bargain\" in the Steam guides, \"The Bargain\" at PSNProfiles and \"Bargaining\" in the chronological guide."
+    },
+    {
+      "topic": "Wording of fates",
+      "text": "The game accepts more than one answer for several deaths, and the guides do not always pick the same one. Where PSNProfiles differs, it is shown next to the main answer as \"also listed\": John Naples (killed with a sword), James Wallace and Jie Zhang (decapitated), Abigail (clubbed by a beast), Fillip Dahl (poisoned), Omid Gul (fell overboard), Charles Miner (torn apart) and William Wasim (fell down stairs)."
+    }
+  ]
+}

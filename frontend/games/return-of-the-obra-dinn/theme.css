@@ -1,0 +1,272 @@
+/* Tema "Obra Dinn": tela de 1 bit do Mac clássico. Tinta escura e papel azulado, as duas cores do jogo,
+   com tramado em xadrez nos títulos e botões de contorno duro. */
+.theme-dinn {
+  --ink: #26260f;
+  --ink-raised: #31311a;
+  --paper: #e5ffff;
+  --blood: #ff7a6b;
+  --ok: #8ff0b0;
+
+  --background: var(--ink);
+  --foreground: var(--paper);
+  --card: var(--ink-raised);
+  --card-foreground: var(--paper);
+  --popover: var(--ink-raised);
+  --popover-foreground: var(--paper);
+  --primary: var(--paper);
+  --primary-foreground: var(--ink);
+  --secondary: #3d3d22;
+  --secondary-foreground: var(--paper);
+  --muted: #3a3a20;
+  --muted-foreground: #a9bfb9;
+  --accent: var(--paper);
+  --accent-foreground: var(--ink);
+  --destructive: var(--blood);
+  --border: rgb(229 255 255 / 0.28);
+  --input: rgb(229 255 255 / 0.4);
+  --ring: var(--paper);
+  --radius: 0;
+
+  --font-geist-sans: var(--font-lora);
+  --font-geist-mono: var(--font-lora);
+  --font-display: var(--font-fell);
+
+  font-family: var(--font-lora), serif;
+  background-color: var(--ink);
+  color: var(--paper);
+}
+
+.theme-dinn .font-display {
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+@layer components {
+  .theme-dinn .label {
+    font-family: var(--font-lora), serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted-foreground);
+  }
+}
+
+/* Título da seção: papel invertido e faixa em xadrez embaixo. */
+.theme-dinn section > header {
+  position: relative;
+  padding-bottom: 0.9rem;
+}
+.theme-dinn section > header::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 6px;
+  background: repeating-conic-gradient(var(--paper) 0 25%, var(--ink) 0 50%) 0 0 / 6px 6px;
+}
+.theme-dinn section > header > span:first-child {
+  border-radius: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-lora), serif;
+}
+
+.theme-dinn nav a {
+  border-radius: 0;
+}
+
+/* Imagens do jogo: pixels duros, sem suavização. */
+.theme-dinn .pixel {
+  image-rendering: pixelated;
+}
+
+/* Painel: contorno fino com sombra dura, como janela do Mac. */
+.theme-dinn .panel {
+  border: 2px solid var(--paper);
+  background: var(--card);
+  box-shadow: 4px 4px 0 rgb(229 255 255 / 0.25);
+}
+
+.theme-dinn .tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0 0.5rem;
+  font-family: var(--font-lora), serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  line-height: 1.6;
+  text-transform: uppercase;
+  background: var(--paper);
+  color: var(--ink);
+}
+.theme-dinn .tag-dim {
+  background: var(--secondary);
+  color: var(--paper);
+}
+.theme-dinn .tag-warn {
+  background: var(--blood);
+  color: var(--ink);
+}
+.theme-dinn .tag-outline {
+  background: transparent;
+  color: var(--paper);
+  box-shadow: inset 0 0 0 1px var(--paper);
+}
+
+.theme-dinn .btn {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 2px solid var(--paper);
+  padding: 0 1.1rem;
+  font-family: var(--font-lora), serif;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: var(--paper);
+  color: var(--ink);
+  cursor: pointer;
+}
+.theme-dinn .btn:hover {
+  background: transparent;
+  color: var(--paper);
+}
+.theme-dinn .btn-ghost {
+  background: transparent;
+  color: var(--paper);
+  border-color: var(--border);
+}
+.theme-dinn .btn-ghost:hover {
+  border-color: var(--paper);
+  background: var(--secondary);
+}
+
+/* Dica ou resposta atrás de um botão: <details class="reveal"> abre sem JavaScript. */
+.theme-dinn .reveal > summary {
+  display: inline-flex;
+  min-height: 2.5rem;
+  cursor: pointer;
+  list-style: none;
+  align-items: center;
+  gap: 0.5rem;
+  border: 2px solid var(--border);
+  padding: 0 0.9rem;
+  font-family: var(--font-lora), serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.theme-dinn .reveal > summary::-webkit-details-marker {
+  display: none;
+}
+.theme-dinn .reveal > summary::before {
+  content: "+";
+}
+.theme-dinn .reveal[open] > summary::before {
+  content: "\2212";
+}
+.theme-dinn .reveal > summary:hover,
+.theme-dinn .reveal[open] > summary {
+  border-color: var(--paper);
+  background: var(--secondary);
+}
+.theme-dinn .reveal > div {
+  margin-top: 0.6rem;
+  border-left: 3px solid var(--paper);
+  padding-left: 0.9rem;
+}
+
+/* Variante larga (tabelas): sem a barra lateral do conteúdo. */
+.theme-dinn .reveal.wide > div {
+  margin-top: 1.25rem;
+  border-left: 0;
+  padding-left: 0;
+}
+
+.theme-dinn .bar {
+  height: 0.6rem;
+  border: 1px solid var(--paper);
+}
+.theme-dinn .bar > i {
+  display: block;
+  height: 100%;
+  background: repeating-conic-gradient(var(--paper) 0 25%, var(--ink) 0 50%) 0 0 / 4px 4px;
+}
+
+/* Menu de resposta do caderno: verde se certa, vermelha se errada (o ícone ao lado repete o estado). */
+.theme-dinn .pick {
+  display: flex;
+  min-height: 2.5rem;
+  width: 100%;
+  min-width: 0;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.5rem;
+  border: 2px solid var(--border);
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0 0.6rem;
+}
+.theme-dinn .pick:hover,
+.theme-dinn .pick:focus-visible,
+.theme-dinn .pick[data-popup-open] {
+  border-color: var(--paper);
+}
+.theme-dinn .pick[data-answer="ok"] {
+  border-color: var(--ok);
+  background: rgb(143 240 176 / 0.14);
+}
+.theme-dinn .pick[data-answer="bad"] {
+  border-color: var(--blood);
+  background: rgb(255 122 107 / 0.14);
+}
+.theme-dinn .pick-popup {
+  width: 19rem;
+  max-width: var(--available-width);
+  border: 2px solid var(--paper);
+  background: var(--ink-raised);
+  color: var(--paper);
+  box-shadow: 4px 4px 0 rgb(229 255 255 / 0.25);
+}
+.theme-dinn .pick-input {
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  border: 0;
+  border-bottom: 2px solid var(--border);
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0 0.75rem;
+  outline: none;
+}
+.theme-dinn .pick-input:focus {
+  border-bottom-color: var(--paper);
+}
+.theme-dinn .pick-item {
+  display: grid;
+  cursor: pointer;
+  grid-template-columns: 1rem 1fr;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.9rem;
+  line-height: 1.3;
+  user-select: none;
+}
+.theme-dinn .pick-item[data-highlighted] {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+@media print {
+  .theme-dinn {
+    background: #fff !important;
+    color: #000;
+  }
+  .theme-dinn li,
+  .theme-dinn article {
+    break-inside: avoid;
+  }
+}

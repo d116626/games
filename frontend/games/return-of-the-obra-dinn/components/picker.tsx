@@ -1,7 +1,7 @@
 "use client";
 
 import { Combobox } from "@base-ui/react/combobox";
-import { Check, ChevronsUpDown } from "lucide-react";
+import { Check, ChevronsUpDown, X } from "lucide-react";
 import { useRef } from "react";
 import type { Option } from "@/games/return-of-the-obra-dinn/lib/answers";
 import { cn } from "@/lib/utils";
@@ -40,16 +40,22 @@ export function Picker({
         ref={(node) => {
           theme.current = node?.closest<HTMLElement>(".theme-dinn") ?? null;
         }}
-        aria-label={label}
+        aria-label={state === "idle" ? label : `${label} (${state === "ok" ? "correct" : "wrong"})`}
         data-answer={state}
         aria-invalid={state === "bad"}
         className="pick"
       >
         <span className="min-w-0 flex-1 truncate text-left">
-          {selected ? selected.label : <span className="text-muted-foreground">{placeholder}</span>}
+          {selected ? (selected.short ?? selected.label) : <span className="text-muted-foreground">{placeholder}</span>}
         </span>
         <Combobox.Icon className="shrink-0">
-          <ChevronsUpDown className="size-4" />
+          {state === "ok" ? (
+            <Check className="size-4 text-(--ok)" />
+          ) : state === "bad" ? (
+            <X className="size-4 text-(--blood)" />
+          ) : (
+            <ChevronsUpDown className="size-4" />
+          )}
         </Combobox.Icon>
       </Combobox.Trigger>
       <Combobox.Portal container={theme}>

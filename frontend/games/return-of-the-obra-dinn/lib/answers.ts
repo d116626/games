@@ -7,7 +7,8 @@ export const NONE = "none";
 export const BEAST = "beast";
 
 /** `muted`: o nome já foi escolhido em outra linha (riscado, mas ainda selecionável). */
-export type Option = { value: string; label: string; muted?: boolean };
+/** `short`: texto do botão do menu quando escolhido (o nome sem o cargo). */
+export type Option = { value: string; label: string; short?: string; muted?: boolean };
 
 const norm = (s: string) => s.trim().toLowerCase();
 const byName = new Map(crew.map((c) => [norm(c.name), c.id]));
@@ -33,7 +34,7 @@ const ACCEPTED = new Map(
 /** Em ordem alfabética: na ordem do manifesto, a posição do retrato entregaria o nome. */
 export const NAME_OPTIONS: Option[] = [...crew]
   .sort((a, b) => a.name.localeCompare(b.name))
-  .map((c) => ({ value: c.id, label: `${c.name} · ${c.role}` }));
+  .map((c) => ({ value: c.id, label: `${c.name} · ${c.role}`, short: c.name }));
 const BY_NAME = [...crew].sort((a, b) => a.name.localeCompare(b.name));
 export const QUALITIES = [...new Set(crew.map((c) => c.role))].sort((a, b) => a.localeCompare(b));
 export const ORIGINS = [...new Set(crew.map((c) => c.origin))].sort((a, b) => a.localeCompare(b));
@@ -46,6 +47,7 @@ export function nameOptions(selected: string | undefined, usedElsewhere: (id: st
   return BY_NAME.filter((c) => c.id === selected || ((!quality || c.role === quality) && (!origin || c.origin === origin))).map((c) => ({
     value: c.id,
     label: `${c.name} · ${c.role}`,
+    short: c.name,
     muted: c.id !== selected && usedElsewhere(c.id),
   }));
 }

@@ -222,6 +222,27 @@
   border-color: var(--blood);
   background: rgb(255 122 107 / 0.14);
 }
+/* Botão quadrado só com ícone (ações da linha, menu). */
+.theme-dinn .icon-btn {
+  display: grid;
+  width: 2.25rem;
+  height: 2.25rem;
+  flex-shrink: 0;
+  cursor: pointer;
+  place-items: center;
+  border: 2px solid var(--border);
+  background: transparent;
+  color: var(--paper);
+}
+.theme-dinn .icon-btn:hover,
+.theme-dinn .icon-btn:focus-visible {
+  border-color: var(--paper);
+}
+.theme-dinn .icon-btn[aria-pressed="true"] {
+  border-color: var(--paper);
+  background: var(--paper);
+  color: var(--ink);
+}
 .theme-dinn .field {
   min-height: 2.5rem;
   border: 2px solid var(--border);

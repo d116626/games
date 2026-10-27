@@ -16,6 +16,7 @@ export function GameShell({
   updated,
   issuesUrl,
   disclaimer,
+  wide = false,
   children,
 }: {
   game: Game;
@@ -30,8 +31,11 @@ export function GameShell({
   issuesUrl?: string;
   /** Aviso de direitos, mostrado no rodapé. */
   disclaimer?: string;
+  /** Páginas com blocos largos (tabelas, painéis lado a lado): sobe a largura máxima de 72rem para 90rem. */
+  wide?: boolean;
   children: ReactNode;
 }) {
+  const max = wide ? "max-w-[90rem]" : "max-w-6xl";
   return (
     <div
       className="grain relative isolate min-h-dvh overflow-x-clip"
@@ -46,7 +50,7 @@ export function GameShell({
           }}
         />
       )}
-      <header className="mx-auto max-w-6xl px-6 pt-[max(1rem,env(safe-area-inset-top))]">
+      <header className={cn("mx-auto px-6 pt-[max(1rem,env(safe-area-inset-top))]", max)}>
         <Link
           href="/"
           className="inline-flex min-h-11 items-center gap-1.5 text-sm font-medium text-foreground/80 transition-colors hover:text-foreground"
@@ -63,7 +67,8 @@ export function GameShell({
 
       <div
         className={cn(
-          "mx-auto max-w-6xl px-6 pb-10 pt-6",
+          "mx-auto px-6 pb-10 pt-6",
+          max,
           sections.length > 0 && "lg:grid lg:grid-cols-[13rem_1fr] lg:gap-12",
         )}
       >
@@ -74,7 +79,7 @@ export function GameShell({
       <BackToTop />
 
       {sources.length > 0 && (
-        <footer className="mx-auto max-w-6xl border-t border-border px-6 py-8">
+        <footer className={cn("mx-auto border-t border-border px-6 py-8", max)}>
           <h2 className="font-mono text-[11px] uppercase tracking-[0.2em] text-foreground/70">
             Sources
           </h2>

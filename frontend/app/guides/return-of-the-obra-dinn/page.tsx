@@ -30,6 +30,7 @@ export default function Page() {
   return (
     <GameShell
       game={game}
+      wide
       hero={
         <>
           <Hero />

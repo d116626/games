@@ -8,4 +8,5 @@ export const game: Game = {
     "Return of the Obra Dinn guide: how to deduce each fate, progressive hints for every chapter, the full list of 60 crew, causes of death and killers behind spoiler buttons, and the PS5 trophy list.",
   tags: ["PS5", "Mystery", "Deduction"],
   accent: "#e5ffff",
+  cover: "games/return-of-the-obra-dinn/cover.webp",
 };

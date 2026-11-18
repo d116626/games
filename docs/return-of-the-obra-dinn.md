@@ -14,7 +14,7 @@ Guia em `/guides/return-of-the-obra-dinn`: como o jogo funciona, dicas progressi
 - `identify.py`: `HOW`, como reconhecer cada rosto (texto à mão, escrito a partir do guia de identificação do Steam).
 - `story.py`: resumo de cada capítulo (à mão, condensado do resumo do mergebox). `guide.py`: mecânica e dedução (à mão, conferidas com o PSN e a introdução do Steam).
 - `trophies.py`: 17 troféus (1 platina, 10 ouro, 4 prata, 2 bronze, 1350 pontos). Perdíveis: Captain Did It e Abandon Ship. Não há troféu do capítulo VIII.
-- `images.py`: retratos em WebP sem perda, 2 cores (~2 KB cada), sketch (59 KB) e ícones. Total **0,21 MB** de um limite de 0,5 MB (`BUDGET`).
+- `images.py`: retratos em WebP sem perda, 2 cores (~2 KB cada), sketch (59 KB), capa do hub (`cover.webp`, 800x256, 61 KB: faixa do sketch com rostos, sem texto, em paleta de 8 cores sem perdas; configurada em `game.ts`) e ícones. Total **0,27 MB** de um limite de 0,5 MB (`BUDGET`).
 - JSONs: `meta`, `guide`, `crew`, `chapters`, `trophies`.
 
 ## Divergências

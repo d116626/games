@@ -1,0 +1,183 @@
+/* Tema "Grand Theft Auto VI": Leonida ao entardecer. Roxo-noite, rosa neon e laranja de pôr do sol,
+   cantos arredondados e títulos em fonte pesada. */
+.theme-vice {
+  --night: #130b24;
+  --night-raised: #1e1236;
+  --pink: #ff4f9a;
+  --orange: #ff9a3c;
+  --cyan: #35e0e8;
+  --sunset: linear-gradient(90deg, #ff4f9a, #ff9a3c);
+
+  --background: var(--night);
+  --foreground: #fbf3f6;
+  --card: var(--night-raised);
+  --card-foreground: #fbf3f6;
+  --popover: var(--night-raised);
+  --popover-foreground: #fbf3f6;
+  --primary: var(--pink);
+  --primary-foreground: #130b24;
+  --secondary: #2a1b48;
+  --secondary-foreground: #fbf3f6;
+  --muted: #241640;
+  --muted-foreground: #b5a6c9;
+  --accent: var(--pink);
+  --accent-foreground: #130b24;
+  --destructive: #ff5a5a;
+  --border: rgb(251 243 246 / 0.16);
+  --input: rgb(251 243 246 / 0.3);
+  --ring: var(--pink);
+  --radius: 0.75rem;
+
+  --font-geist-sans: var(--font-dm-sans);
+  --font-geist-mono: var(--font-dm-sans);
+  --font-display: var(--font-bowlby);
+
+  font-family: var(--font-dm-sans), sans-serif;
+  background-color: var(--night);
+  background-image: radial-gradient(60rem 28rem at 85% -6rem, rgb(255 79 154 / 0.22), transparent),
+    radial-gradient(50rem 24rem at 10% -4rem, rgb(255 154 60 / 0.12), transparent);
+  background-repeat: no-repeat;
+}
+
+.theme-vice .font-display {
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+@layer components {
+  .theme-vice .label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--muted-foreground);
+  }
+}
+
+.theme-vice .sunset {
+  background: var(--sunset);
+}
+.theme-vice .sunset-text {
+  background: var(--sunset);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Título da seção: placa rosa com o número e uma linha de pôr do sol embaixo. */
+.theme-vice section > header {
+  position: relative;
+  padding-bottom: 0.9rem;
+}
+.theme-vice section > header::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--sunset);
+}
+.theme-vice section > header > span:first-child {
+  background: var(--pink);
+  color: #130b24;
+  font-weight: 800;
+}
+
+.theme-vice nav a {
+  font-weight: 700;
+}
+
+.theme-vice .tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 999px;
+  padding: 0.05rem 0.65rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: #130b24;
+}
+.theme-vice .tag-pink {
+  background: var(--pink);
+}
+.theme-vice .tag-orange {
+  background: var(--orange);
+}
+.theme-vice .tag-cyan {
+  background: var(--cyan);
+}
+.theme-vice .tag-silver {
+  background: #cfd3dc;
+}
+.theme-vice .tag-bronze {
+  background: #d98a4b;
+}
+.theme-vice .tag-dim {
+  background: var(--secondary);
+  color: var(--foreground);
+}
+
+.theme-vice .panel {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card);
+}
+
+.theme-vice .btn {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  border: 2px solid var(--pink);
+  padding: 0 1.2rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: var(--pink);
+  color: #130b24;
+  cursor: pointer;
+  transition: background 0.1s, color 0.1s;
+}
+.theme-vice .btn:hover {
+  background: transparent;
+  color: var(--pink);
+}
+.theme-vice .btn-ghost {
+  background: transparent;
+  color: var(--foreground);
+  border-color: var(--border);
+}
+.theme-vice .btn-ghost:hover {
+  border-color: var(--pink);
+  color: var(--pink);
+}
+
+.theme-vice .bar {
+  height: 0.6rem;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--secondary);
+}
+.theme-vice .bar > i {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: var(--sunset);
+}
+
+@media print {
+  .theme-vice {
+    background: #fff !important;
+    background-image: none !important;
+    color: #000;
+  }
+  .theme-vice li,
+  .theme-vice article {
+    break-inside: avoid;
+  }
+}

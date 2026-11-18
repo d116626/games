@@ -15,6 +15,9 @@ from utils.games.return_of_the_obra_dinn.crew import Raw
 BUDGET = 500_000  # bytes, todas as imagens do jogo
 SKETCH_SRC = "sketch-hq.png"
 SKETCH = "sketch.webp"
+COVER = "cover.webp"
+COVER_SIZE = (800, 256)  # mesma proporção das capas dos outros jogos (1200x384); o card mostra ~400 px
+COVER_TOP = 260  # recorte do sketch com rostos grandes (e longe do artefato de seleção)
 DARK, LIGHT = (51, 51, 25), (229, 255, 254)  # as duas cores da arte do jogo
 
 
@@ -48,3 +51,13 @@ def sketch() -> tuple[str, int, int]:
     dest.parent.mkdir(parents=True, exist_ok=True)
     src.save(dest, "WEBP", lossless=True, method=6)
     return f"games/{GAME}/{SKETCH}", src.width, src.height
+
+
+def cover() -> str:
+    """Capa do hub: faixa do sketch (rostos do "Under Way"), sem texto: o card já mostra o nome. Devolve o caminho relativo a public/."""
+    src = Image.open(raw_dir(GAME) / SKETCH_SRC).convert("RGB")
+    h = round(src.width * COVER_SIZE[1] / COVER_SIZE[0])
+    dest = assets_dir(GAME) / COVER
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    src.crop((0, COVER_TOP, src.width, COVER_TOP + h)).resize(COVER_SIZE, Image.Resampling.LANCZOS).convert("P", palette=Image.Palette.ADAPTIVE, colors=8).save(dest, "WEBP", lossless=True, method=6)
+    return f"games/{GAME}/{COVER}"

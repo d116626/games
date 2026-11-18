@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 384" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#130b24"/><stop offset="0.55" stop-color="#4a1a63"/><stop offset="1" stop-color="#ff4f9a"/></linearGradient>
+<linearGradient id="sun" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd24a"/><stop offset="1" stop-color="#ff4f9a"/></linearGradient>
+<clipPath id="disc"><circle cx="850" cy="230" r="150"/></clipPath>
+</defs>
+<rect width="1200" height="384" fill="url(#sky)"/>
+<g clip-path="url(#disc)">
+<rect x="700" y="80" width="300" height="300" fill="url(#sun)"/>
+<g fill="#4a1a63"><rect x="700" y="250" width="300" height="5"/><rect x="700" y="276" width="300" height="9"/><rect x="700" y="306" width="300" height="13"/><rect x="700" y="338" width="300" height="17"/></g>
+</g>
+<rect y="330" width="1200" height="54" fill="#130b24"/>
+<g fill="#130b24">
+<path d="M1030 384 C1034 300 1040 250 1062 196 L1070 198 C1052 252 1046 302 1046 384Z"/>
+<path d="M1066 198 C1040 170 1000 168 972 190 C1004 180 1036 186 1066 198Z"/>
+<path d="M1066 198 C1052 164 1020 142 982 146 C1018 152 1044 172 1066 198Z"/>
+<path d="M1066 198 C1076 160 1106 140 1142 142 C1110 154 1088 172 1066 198Z"/>
+<path d="M1066 198 C1096 180 1134 182 1160 204 C1128 194 1096 192 1066 198Z"/>
+<path d="M1066 198 C1070 176 1068 156 1056 134 C1074 152 1080 176 1066 198Z"/>
+</g>
+<text x="90" y="128" font-family="Impact, 'Arial Black', sans-serif" font-size="46" fill="#fbf3f6" letter-spacing="6">GRAND THEFT AUTO</text>
+<text x="86" y="312" font-family="Impact, 'Arial Black', sans-serif" font-size="200" fill="#fbf3f6" stroke="#130b24" stroke-width="3">V<tspan fill="#ffd24a">I</tspan></text>
+</svg>

@@ -57,6 +57,7 @@ def run() -> list[Path]:
     trophy_md = read(PSN_TROPHIES_MD)
     trophies.download_icons(trophy_md)
     sketch = images.sketch()
+    images.cover()
     size = images.folder_size()
     if size > images.BUDGET:
         raise ValueError(f"imagens somam {size} bytes (limite {images.BUDGET})")

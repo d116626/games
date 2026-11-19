@@ -2,9 +2,34 @@
   "name": "Grand Theft Auto VI",
   "sources": [
     {
+      "title": "GTA 6 Story Missions Guide & Walkthrough (GTABase)",
+      "url": "https://www.gtabase.com/gta-6/missions/",
+      "note": "main source: the 122 story entries in order, with a line, the protagonist and the walkthroughs"
+    },
+    {
+      "title": "GTA 6 Full Walkthrough - All Missions (PowerPyx)",
+      "url": "https://www.powerpyx.com/gta-6-full-walkthrough-all-missions/",
+      "note": "heists, Jason-only and Lucia-only missions, start locations, requirements, rewards"
+    },
+    {
+      "title": "GTA 6 Trophy Guide & Roadmap (PowerPyx)",
+      "url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+      "note": "game facts, trophy roadmap, what unlocks when"
+    },
+    {
+      "title": "GTA 6 Money Guide, Fast Travel and Switch Characters (PowerPyx)",
+      "url": "https://www.powerpyx.com/gta-6-money-guide-how-to-get-money-fast/",
+      "note": "what each chapter opens"
+    },
+    {
       "title": "Grand Theft Auto VI Trophies (PSNProfiles)",
       "url": "https://psnprofiles.com/trophies/43531-grand-theft-auto-vi",
       "note": "trophy list, grades and rarity"
+    },
+    {
+      "title": "GTA 6 Trophy Guide & Achievements List (GTABase)",
+      "url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series",
+      "note": "hidden trophies and unlock tips"
     }
   ],
   "links": [],

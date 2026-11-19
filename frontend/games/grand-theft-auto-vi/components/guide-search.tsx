@@ -79,7 +79,7 @@ function SearchUI({
           value={query}
           onChange={(e) => update(e.target.value, kind)}
           type="search"
-          placeholder="Search trophies...  ( / )"
+          placeholder="Search missions, trophies...  ( / )"
           className="min-w-0 flex-1 bg-transparent py-3 text-base font-semibold outline-none placeholder:font-normal placeholder:text-muted-foreground"
         />
         {query && (

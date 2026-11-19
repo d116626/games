@@ -10,7 +10,7 @@ export function Hero() {
           Auto <span className="sunset-text">VI</span>
         </h1>
         <p className="mt-4 max-w-xl text-lg">
-          The trophy checklist is up. Missions, the map and collectibles will follow as the community maps Leonida.
+          The story missions in order, tips to start and the trophy checklist. The map, side missions and collectibles will follow as Leonida gets mapped.
         </p>
       </div>
       <div aria-hidden className="sunset -mx-6 h-3" />

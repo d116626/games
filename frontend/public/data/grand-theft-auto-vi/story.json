@@ -1,0 +1,3839 @@
+{
+  "chapters": [
+    {
+      "n": 0,
+      "summary": "Lucia talks to a prison counselor about her arrest and her chances of early release. A flashback then shows the payday loan robbery that put her there.",
+      "goal": "Learn the basics as Lucia.",
+      "unlocks": [],
+      "side": [],
+      "opens": []
+    },
+    {
+      "n": 1,
+      "summary": "Jason works for Brian in the Keys with Cal and Donnie: smuggling runs, collecting rent, a dive trip for Kenton. Lucia is released early, the two set up home and open a bank account, and then Mattia's \"simple job\" ends in trouble at Vice City Hospital.",
+      "goal": "Settle in the Keys, get Lucia home and survive the hospital job.",
+      "unlocks": [
+        "Taxi fast travel",
+        "BuckMe bank account",
+        "Meditation"
+      ],
+      "side": [
+        "Kirk and the Skunk Ape, at night only",
+        "Shirley's two missions, gone once Tourist Trap starts"
+      ],
+      "trophy": 3,
+      "opens": [
+        {
+          "text": "Taxi fast travel works after Gone Fishing: call the taxi, set a marker on the map and pay $100 to skip the ride.",
+          "mission": "gone-fishing"
+        },
+        {
+          "text": "Money you earn in Chapter 1 is lost when the chapter ends, so do not farm it. Just follow the story."
+        },
+        {
+          "text": "The one possibly missable trophy item: after Down to Earth, accept Lucia's morning meditation on the balcony. Unclear if it counts for Positive Mental Attitude, so do it.",
+          "mission": "down-to-earth"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "summary": "A motel in Port Gellhorn. Lucia runs things while Jason recovers: she pays the motel bill, hunts for painkillers, gets a car from Moses and a new look. Then the two start pulling stick-ups together and need $15,000 to move to Vice City.",
+      "goal": "Earn $15,000 and move to Vice City.",
+      "unlocks": [
+        "Switch between Jason and Lucia",
+        "Moses buys stolen cars",
+        "RydeMe fast travel",
+        "Scooter Bros app"
+      ],
+      "side": [
+        "Kyle, Moses, Bret Vogel and Billy start here"
+      ],
+      "trophy": 4,
+      "opens": [
+        {
+          "text": "After Coffee Break you can switch between Jason and Lucia in the open world.",
+          "mission": "coffee-break"
+        },
+        {
+          "text": "Moses unlocks: you can sell him stolen cars without trackers, and the Scooter Bros app arrives.",
+          "mission": "moses"
+        },
+        {
+          "text": "The RydeMe app replaces the taxi for fast travel."
+        },
+        {
+          "text": "Prepare for Vice City only starts once you have at least $15,000 saved and the other pending Chapter 2 missions are done.",
+          "mission": "prepare-for-vice-city"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "summary": "Vice City. Dre'Quan, Boobie and Lucia's mother Mia help them settle while Jason picks up work from Tyrone. They meet Raul and his crew, run jobs for him, and spend the second half preparing the Cartel Heist at Sinfrontera National Bank.",
+      "goal": "Pull off the Cartel Heist.",
+      "unlocks": [
+        "Bank jobs",
+        "Key Cloner and Randy's cars",
+        "Jewelry store robberies",
+        "$120,000 at the end"
+      ],
+      "side": [
+        "Yago's races, Andy, Yasmani, Randy, Tyrone and Dunk start here"
+      ],
+      "trophy": 5,
+      "opens": [
+        {
+          "text": "Credit Check unlocks bank jobs and the Dye Pack Jammer you need to fence marked bills.",
+          "mission": "credit-check"
+        },
+        {
+          "text": "Yasmani's Jewelry Jobs open jewelry store robberies, which pay $10,000 to $25,000 each."
+        },
+        {
+          "text": "Clonin' Keys, Makin' GS unlocks the Key Cloner and Randy's Wish List of high-end cars.",
+          "mission": "clonin-keys-makin-gs"
+        },
+        {
+          "text": "You receive $120,000 automatically at the end of the chapter."
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "summary": "Ocean Beach. A new base, a lawyer called Abe Gonzalez and a string of jobs. The long VCIA Takedown builds up an airport heist, with Lucia working with Nate and Kordell and Jason scouting the airport. Jason also chases blackmail material, and a kidnapping involving Rafa pulls them in. It closes with Sunset and Starting From Zero.",
+      "goal": "Pull off the airport heist and deal with what it leaves behind.",
+      "unlocks": [
+        "Large bank vaults, the fastest money"
+      ],
+      "side": [
+        "Eddie Acosta and Pilot Pete start here"
+      ],
+      "trophy": 6,
+      "opens": [
+        {
+          "text": "The optional mission That's Where the Money Is... unlocks large bank vault robberies, the fastest money in the game. Doing it is effectively the point of no return before the ending.",
+          "mission": "thats-where-the-money-is"
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "summary": "The final stretch: boost a car, a new plan, a favour for Mattia, a contraband hunt with Vinny and the Operation Savage Glory shipment, then more dealings with Abe. It ends with The End of the Road.",
+      "goal": "Finish the story.",
+      "unlocks": [
+        "Free-roam after the credits",
+        "The 100% checklist"
+      ],
+      "side": [],
+      "trophy": 7,
+      "opens": [
+        {
+          "text": "The last chapter. After the story you go back to free-roam and the 100% Completion checklist becomes visible under Progress > Stats."
+        }
+      ]
+    }
+  ],
+  "missions": [
+    {
+      "id": "prologue",
+      "n": 1,
+      "name": "Prologue",
+      "chapter": 0,
+      "kind": "main",
+      "who": [
+        "lucia"
+      ],
+      "summary": "Lucia meets with a prison counselor to talk about her arrest and her chances of early release.",
+      "giver": "Lucia Caminos",
+      "location": "Hamlet Prison",
+      "requirement": "None, start the game",
+      "objectives": [
+        "Talk to Your Cellmates",
+        "Follow the Prison Guard",
+        "Rob the Payday Loan Store",
+        "Lose the Cops",
+        "Return to the Coffee Shop"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/missions/gta-6/prologue",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-prologue-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "gone-fishing",
+      "n": 2,
+      "name": "Gone Fishing",
+      "chapter": 1,
+      "kind": "main",
+      "who": [
+        "jason"
+      ],
+      "summary": "A smuggling run with Cal and Donnie goes wrong, and Jason has to head into Kingfishers territory in Pelican Valley.",
+      "giver": "Cal Hampton",
+      "location": "Mariana County",
+      "requirement": "starts immediately after Prologue",
+      "reward": "Jason’s House in Key Lento",
+      "objectives": [
+        "Follow the Plane and Collect the Packages",
+        "Watch the Deal in the Swamp",
+        "Search the Camp for Donnie",
+        "Get into the Shack and Untie Donnie",
+        "Head to the Plane",
+        "Escape in the Sea Plane"
+      ],
+      "notes": [
+        "This optional, missable task boosts your Professional reputation."
+      ],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/gone-fishing",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-gone-fishing-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "gear-up",
+      "n": 3,
+      "name": "Gear Up",
+      "chapter": 1,
+      "kind": "main",
+      "who": [
+        "jason"
+      ],
+      "summary": "Jason visits the local Ammu-Nation to pick up a new longarm.",
+      "giver": "Jason Duval",
+      "location": "Mariana County > Key Lento",
+      "requirement": "Finished Chapter 1 \"Gone Fishing\".",
+      "reward": "Longarm Weapon of your choice",
+      "objectives": [
+        "Go to Ammu-Nation",
+        "Buy a Longarm from Andrew",
+        "Survive the Kingfishers Ambush"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/gear-up",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-gear-up-pick-up-another-gun-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "unwanted-attention",
+      "n": 4,
+      "name": "Unwanted Attention",
+      "chapter": 1,
+      "kind": "main",
+      "who": [
+        "jason"
+      ],
+      "summary": "Cal and Jason head to Hamlet to recover a payment owed to Brian from the police impound.",
+      "giver": "Cal Hampton",
+      "location": "Mariana County > Key Lento",
+      "requirement": "Finished Chapter 1 \"Gone Fishing\".",
+      "reward": "Police radio scanner + $150 (at car dropoff)",
+      "objectives": [
+        "Meet Cal",
+        "Drive to the Impound in Hamlet",
+        "Find the Phoenix in the Impound",
+        "Lose the Cops",
+        "Respray the Phoenix and Deliver It",
+        "Change Your Look"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/unwanted-attention",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-unwanted-attention-go-see-cal-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "pipework",
+      "n": 5,
+      "name": "Pipework",
+      "chapter": 1,
+      "kind": "main",
+      "who": [
+        "jason"
+      ],
+      "summary": "While collecting rent from Mandy, one of Brian's tenants, Jason ends up doing some home repairs.",
+      "giver": "Brian Heder, Mandy",
+      "location": "Mariana County > Key Lento",
+      "requirement": "Finished Chapter 1 main quests – Gear Up, Lab Fees, Just a Scratch, Unwanted Attention.",
+      "reward": "Macizo Cigar (if you pick it up from the floor when Mandy throws it out)",
+      "objectives": [
+        "Meet Mandy",
+        "Follow Mandy",
+        "Pick Up the Plunger",
+        "Fix the Sink"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/pipework",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-pipework-collect-mandys-rent-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "lab-fees",
+      "n": 6,
+      "name": "Lab Fees",
+      "chapter": 1,
+      "kind": "main",
+      "who": [
+        "jason"
+      ],
+      "summary": "Jason collects Brian's rent from a gift shop that hides more than souvenirs.",
+      "giver": "Jason Duval",
+      "location": "Mariana County > Key Lento",
+      "requirement": "Finished Chapter 1 \"Gone Fishing\".",
+      "reward": "$600",
+      "objectives": [
+        "Talk to the Clerk",
+        "Enter the Lab and Collect the Acid",
+        "Call Brian",
+        "Stash the Acid in Brian's Lockup"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/lab-fees",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-lab-fees-collect-brians-rent-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "just-a-scratch",
+      "n": 7,
+      "name": "Just a Scratch",
+      "chapter": 1,
+      "kind": "main",
+      "who": [
+        "jason"
+      ],
+      "summary": "Jason takes his battered Ganado to Joey at Coastal Auto Care for some much-needed repairs.",
+      "giver": "Jason Duval",
+      "location": "Mariana County > Key Lento",
+      "requirement": "Finished Chapter 1 \"Gone Fishing\".",
+      "reward": "free engine repair & repaint for your car",
+      "objectives": [
+        "Drive to Coastal Auto Care",
+        "Talk to Joey",
+        "Repair the Engine and Get a Respray"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/just-a-scratch",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-just-a-scratch-fix-your-car-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "get-shirleys-rum",
+      "name": ". Get Shirley's Rum",
+      "chapter": 1,
+      "kind": "missable",
+      "who": [
+        "jason"
+      ],
+      "summary": "Jason's neighbor Shirley is thirsty for rum and asks him to pick some up from the store.",
+      "giver": "Shirley",
+      "location": "Mariana County > Key Lento",
+      "requirement": "Finished Chapter 1 Main Mission: Gear Up, Lab Fees, Just a Scratch, Unwanted Attention. Shirley will then call you over on the way to Main Mission: Pipework (Collect Mandy’s Rent). This quest is missable, becomes permanently unavailable when starting Chapter 1 \"Tourist Trap (Take Up Mattia’s Offer)\". It’s not needed for any trophies or completion requirements, so missing it doesn’t lock you out of anything.",
+      "reward": "Focus Increase, Professional Criminal Rating Increase",
+      "objectives": [
+        "Talk to Shirley",
+        "Ask the Clerk for Shirley's Rum",
+        "Bring the Rum to Shirley"
+      ],
+      "notes": [
+        "Both of Shirley's missions can only be completed in Chapter 1 and disappear for good once you start Tourist Trap."
+      ],
+      "tags": [
+        "Missable"
+      ],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/get-shirleys-rum",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-get-shirleys-rum-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "steal-the-scooter",
+      "name": ". Steal the Scooter",
+      "chapter": 1,
+      "kind": "missable",
+      "who": [
+        "jason"
+      ],
+      "summary": "Shirley has an unusual plan involving her neighbor's mobility scooter.",
+      "giver": "Shirley",
+      "location": "Mariana County > Key Lento",
+      "requirement": "Finish Chapter 1 Side Mission \"Get Shirley’s Rum\". This quest is missable, becomes permanently unavailable when starting Chapter 1 \"Tourist Trap (Take Up Mattia’s Offer)\". It’s not needed for any trophies or completion requirements, so missing it doesn’t lock you out of anything.",
+      "objectives": [
+        "Talk to Shirley",
+        "Steal Peggy's Scooter",
+        "Deliver the Scooter to Shirley"
+      ],
+      "notes": [
+        "The two Shirley Side Missions can only be completed in Chapter 1, once you start the main mission Tourist Trap and then enter Chapter 2 then these objectives disappear.",
+        "This quest is missable, becomes permanently unavailable when starting Chapter 1 “Tourist Trap (Take Up Mattia’s Offer)“."
+      ],
+      "tags": [
+        "Missable"
+      ],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/steal-the-scooter",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-steal-the-scooter-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "hey-arnold",
+      "n": 8,
+      "name": "Hey Arnold!",
+      "chapter": 1,
+      "kind": "main",
+      "who": [
+        "jason"
+      ],
+      "summary": "Brian's long-time broker Arnold has stopped answering, and Jason and Cal help track him down.",
+      "giver": "Brian Heder",
+      "location": "Mariana County > Key Lento",
+      "requirement": "Finished Chapter 1 \"Pipework\", then wait a few minutes and you’ll get a call from Brian that marks this quest.",
+      "objectives": [
+        "Meet Brian",
+        "Pick Up Cal",
+        "Find Arnold",
+        "Chase Arnold",
+        "Decide Arnold's Fate"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/hey-arnold",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-hey-arnold-meet-brian-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "island-dreams",
+      "n": 9,
+      "name": "Island Dreams",
+      "chapter": 1,
+      "kind": "main",
+      "who": [
+        "jason"
+      ],
+      "summary": "Kenton needs Jason to lead a bachelor party on a dive to a shipwreck, with some treasure hunting on the side.",
+      "giver": "Kenton",
+      "location": "Mariana County > Key Lento",
+      "requirement": "Finished Chapter 1 \"Hey Arnold! (Meet Brian)\"",
+      "reward": "$400",
+      "objectives": [
+        "Meet Kenton",
+        "Go to the Diving Spot",
+        "Escort the Bachelor Party through the Trench",
+        "Search for Treasure near the Wreck",
+        "Rescue Dobbs",
+        "Escort the Bachelor Party to the Boat"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/island-dreams",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-island-dreams-work-for-kenton-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "feng-shui",
+      "n": 10,
+      "name": "Feng Shui",
+      "chapter": 1,
+      "kind": "main",
+      "who": [
+        "jason"
+      ],
+      "summary": "Jason and Cal hang out at home and rearrange the furniture before Lucia arrives.",
+      "giver": "Cal Hampton",
+      "location": "Mariana County > Key Lento > Jason’s House",
+      "requirement": "Finished Chapter 1 \"Island Dreams (Work for Kenton)\".",
+      "objectives": [
+        "Get Ready for Lucia",
+        "Move the Furniture",
+        "Play Tenebrae Lux",
+        "Play Street Trash III"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/feng-shui",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-feng-shui-meet-cal-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "pick-up-groceries",
+      "name": "Pick Up Groceries",
+      "chapter": 1,
+      "kind": "optional",
+      "who": [
+        "jason"
+      ],
+      "summary": "Buy some groceries and bring them home before Lucia arrives.",
+      "giver": "Lucia Caminos",
+      "location": "Mariana County > Key Lento",
+      "requirement": "Finished Chapter 1 \"Feng Shui (Meet Cal)\"",
+      "reward": "love increase with Lucia",
+      "objectives": [
+        "Buy Some Groceries",
+        "Drop Off the Groceries"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/pick-up-groceries",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-pick-up-groceries-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "buy-flowers",
+      "name": "Buy Flowers",
+      "chapter": 1,
+      "kind": "optional",
+      "who": [
+        "jason"
+      ],
+      "summary": "Order some flowers for Lucia and have them delivered to the house.",
+      "giver": "Lucia Caminos",
+      "location": "Mariana County > Key Lento",
+      "requirement": "Finished Chapter 1 \"Feng Shui (Meet Cal)\"",
+      "reward": "love increase with Lucia",
+      "objectives": [
+        "Buy Flowers for Lucia"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/buy-flowers",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-buy-flowers-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "buy-lucia-a-necklace",
+      "name": "Buy Lucia a Necklace",
+      "chapter": 1,
+      "kind": "optional",
+      "who": [
+        "jason"
+      ],
+      "summary": "Buy Lucia a necklace from The Siren's Chest jewelry store as a gift.",
+      "giver": "Lucia Caminos",
+      "location": "Mariana County > Key Lento",
+      "requirement": "Finished Chapter 1 \"Feng Shui (Meet Cal)\"",
+      "reward": "love increase with Lucia",
+      "objectives": [
+        "Go to The Siren's Chest",
+        "Buy a Necklace"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/buy-lucia-a-necklace",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-buy-lucia-a-necklace-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "get-the-chop",
+      "name": "Get The Chop",
+      "chapter": 1,
+      "kind": "optional",
+      "who": [
+        "jason"
+      ],
+      "summary": "Visit Barnacle Beauties to get a new haircut or tidy up your beard.",
+      "giver": "Lucia Caminos",
+      "location": "Mariana County > Key Lento",
+      "requirement": "Finished Chapter 1 \"Feng Shui (Meet Cal)\"",
+      "reward": "love increase with Lucia",
+      "objectives": [
+        "Get a New Haircut"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/get-the-chop",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-get-the-chop-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "get-lucias-clothes",
+      "name": "Get Lucia's Clothes",
+      "chapter": 1,
+      "kind": "optional",
+      "who": [
+        "jason"
+      ],
+      "summary": "Lucia asks Jason to collect some clothes from her friend Andy at the Manatee's Rest bar.",
+      "giver": "Lucia Caminos",
+      "location": "Mariana County > Key Lento",
+      "requirement": "Finished Chapter 1 \"Feng Shui (Meet Cal)\"",
+      "reward": "love increase with Lucia",
+      "objectives": [
+        "Answer Andy's Call",
+        "Talk to Andy",
+        "Follow Andy and Collect the Clothes"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/get-lucias-clothes",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-get-lucias-clothes-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "coming-home",
+      "n": 11,
+      "name": "Coming Home",
+      "chapter": 1,
+      "kind": "main",
+      "who": [
+        "jason"
+      ],
+      "summary": "Lucia is getting out of Hamlet Correctional and needs a ride home.",
+      "giver": "Lucia Caminos",
+      "location": "Vice Dale County > Hamlet",
+      "requirement": "Finished Chapter 1 \"Feng Shui (Meet Cal)\"",
+      "reward": "None, but Lucia is released from prison and lives at Jason’s house",
+      "objectives": [
+        "Prepare for Lucia's Release",
+        "Wait for Lucia's Call",
+        "Pick Up Lucia at the Prison",
+        "Celebrate at the Rusty Anchor",
+        "Hang Out with Your Friends",
+        "Dance with Lucia and Meet Mattia",
+        "Deal with D-Man",
+        "Run from the Cops"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/coming-home",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-coming-home-lucias-release-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "clean-up-after-donnie",
+      "n": 12,
+      "name": "Clean Up After Donnie",
+      "chapter": 1,
+      "kind": "main",
+      "who": [
+        "jason"
+      ],
+      "summary": "A lost package from Donnie's botched delivery is sending a signal near a fishing spot in Hamlet.",
+      "giver": "Donnie",
+      "location": "Vice Dale County > Hamlet",
+      "requirement": "the morning after \"Coming Home (Lucia’s Release)\", Donnie gives you a call which marks the quest in Hamlet.",
+      "reward": "$600",
+      "objectives": [
+        "Search the Area for the Package",
+        "Examine the Package",
+        "Search the Shack for the Cocaine",
+        "Deliver the Cocaine to Donnie's Trailer"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/clean-up-after-donnie",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-clean-up-after-donnie-donnies-drop-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "buck-me",
+      "n": 13,
+      "name": "Buck Me",
+      "chapter": 1,
+      "kind": "main",
+      "who": [
+        "jason"
+      ],
+      "summary": "Lucia needs a bank account for her community service pay, so Jason meets her at the Fleeca bank.",
+      "giver": "Lucia Caminos",
+      "location": "Mariana County > Key Lento",
+      "requirement": "About half a day after \"Coming Home (Lucia’s Release)\", Lucia will call you to meet her at the bank because neither Jason nor Lucia have a bank account.",
+      "reward": "BuckMe App (bank account)",
+      "objectives": [
+        "Go to the Fleeca Bank",
+        "Ask About Opening an Account",
+        "Open BuckMe",
+        "Move Money into Family Savings"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/buck-me",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-buck-me-set-up-bank-account-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "down-to-earth",
+      "n": 14,
+      "name": "Down to Earth",
+      "chapter": 1,
+      "kind": "main",
+      "who": [
+        "jason"
+      ],
+      "summary": "Brian wants Jason at the marina for a new job, and Lucia decides to come along.",
+      "giver": "Brian Heder",
+      "location": "Mariana County > Key Lento",
+      "requirement": "Finished Chapter 1 Missions \"Clean Up After Donnie (Donnie’s Drop)\" & \"Buck Me (Set Up Bank Account)\"",
+      "objectives": [
+        "Meet Brian at the Marina",
+        "Clean the Boat",
+        "Fly to Bobcat Bay",
+        "Deal with the Smugglers",
+        "Make the Drops",
+        "Hurry Home"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/down-to-earth",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-down-to-earth-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "find-the-lost-drugs",
+      "name": "Find the Lost Drugs",
+      "chapter": 1,
+      "kind": "optional",
+      "who": [
+        "jason"
+      ],
+      "summary": "Follow the signals and search four areas of the swamp for lost drug packages.",
+      "giver": "Brian Heder, Donnie",
+      "location": "Mariana County",
+      "requirement": "Starts via call after Chapter 1 \"Down to Earth\"",
+      "reward": "No direct reward, but can sell the lost drugs for money to a fence",
+      "objectives": [
+        "How It Works",
+        "Search the Recreation Area",
+        "Search the Burned Houses",
+        "Search Pelican Valley",
+        "Search Thorpe Adventures"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/find-the-lost-drugs",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-find-the-lost-drugs-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "deposit-cash-into-buckme",
+      "n": 15,
+      "name": "Deposit Cash Into BuckMe",
+      "chapter": 1,
+      "kind": "main",
+      "who": [
+        "jason"
+      ],
+      "summary": "Deposit some cash into your BuckMe checking account at any ATM.",
+      "giver": "BuckMe App (Banking App)",
+      "location": "Mariana County > Key Lento",
+      "requirement": "Finished Chapter 1 \"Buck Me (Set Up Bank Account)\"",
+      "objectives": [
+        "Find an ATM",
+        "Deposit Your Cash"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/deposit-cash-into-buckme",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-deposit-cash-into-buckme-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "save-for-the-future",
+      "n": 16,
+      "name": "Save for the Future",
+      "chapter": 1,
+      "kind": "main",
+      "who": [
+        "jason"
+      ],
+      "summary": "Keep adding money to your Family Savings to reach the next goal and unlock new BuckMe perks.",
+      "giver": "BuckMe App (Banking App)",
+      "location": "Mariana County > Key Lento",
+      "requirement": "Finished Chapter 1 \"Buck Me (Set Up Bank Account)\"",
+      "reward": "Upgrades to your BuckMe account at each family saving level (higher checking account limits, passive voucher perks that reduce prices)",
+      "objectives": [
+        "How the Mission Works",
+        "Family Savings Goals and Perks"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/save-for-the-future",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-save-for-the-future-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "day-release",
+      "n": 17,
+      "name": "Day Release",
+      "chapter": 1,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Kat and Mattia invite Jason and Lucia out for a day of partying, starting at the Rusty Anchor.",
+      "giver": "Mattia",
+      "location": "Mariana County > Key Lento",
+      "requirement": "Starts via call after Chapter 1 \"Down to Earth\"",
+      "objectives": [
+        "Meet Kat and Mattia at the Rusty Anchor",
+        "Drive to the Yacht",
+        "Race the Jet Skis",
+        "Shoot the Champagne Bottles",
+        "Find Mattia",
+        "Follow Mattia to Huxley Motel",
+        "Party at the Nine1Nine",
+        "Find Jason"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/day-release",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-day-release-meet-mattia-kat-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "clock-out",
+      "name": "Clock Out",
+      "chapter": 1,
+      "kind": "optional",
+      "who": [
+        "jason"
+      ],
+      "summary": "Lucia finished work early and needs a ride home before 4pm.",
+      "giver": "Lucia Caminos",
+      "location": "Mariana County > Key Lento",
+      "requirement": "At some point during the day after Chapter 1 \"Day Release (Meet Mattia & Kat)\", Lucia will give you a call that she finished her shift early and wants you to come pick her up. During the phone call you can choose \"accept\" to get this optional mission. Declining will skip this. You must pick her up before 4pm or the mission fails (time shows on minimap, phone, and top left of world map).",
+      "reward": "builds love with Lucia",
+      "objectives": [
+        "Accept Lucia's Call",
+        "Pick Up Lucia",
+        "Drive Her Home"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/clock-out",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-clock-out-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "clear-skies",
+      "n": 18,
+      "name": "Clear Skies",
+      "chapter": 1,
+      "kind": "main",
+      "who": [
+        "jason"
+      ],
+      "summary": "Brian has a job for Jason and Donnie that starts in Southwind.",
+      "giver": "Brian Heder, Donnie",
+      "location": "Mariana County > Southwind",
+      "requirement": "Starts via call after Chapter 1 \"Down to Earth\"",
+      "objectives": [
+        "Talk to Brian in Southwind",
+        "Take Off and Intercept Pilot Pete",
+        "Observe the Deal",
+        "Rescue Donnie",
+        "Hold Off the Final Chapter and Escape"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/clear-skies",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-clear-skies-join-donnie-on-a-job-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "building-a-life",
+      "n": 19,
+      "name": "Building a Life",
+      "chapter": 1,
+      "kind": "main",
+      "who": [
+        "jason"
+      ],
+      "summary": "Jason and Lucia work on their new home together, and Jason gives Lucia a lesson with a gun.",
+      "giver": "Jason Duval, Lucia Caminos",
+      "location": "starts immediately after “Clear Skies” at Jason’s House",
+      "requirement": "automatically starts immediately after Chapter 1 \"Clear Skies\"",
+      "objectives": [
+        "Help Build the Coffee Table",
+        "Pick Up the Glass Top"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/building-a-life",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-building-a-life-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "swamped",
+      "n": 20,
+      "name": "Swamped",
+      "chapter": 1,
+      "kind": "main",
+      "who": [
+        "jason"
+      ],
+      "summary": "Brian asks Jason to meet him at the marina before heading out to see the Kingfishers.",
+      "giver": "Brian Heder",
+      "location": "Mariana County > Key Lento",
+      "requirement": "Finished Chapter 1 main quests – Day Release (Meet Mattia & Kat), Clear Skies (Join Donnie On A Job), Building a Life",
+      "objectives": [
+        "Drive to the Kingfishers Camp",
+        "Inspect the Pig Pen",
+        "Escape with Brian",
+        "Rescue Lori"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/swamped",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-swamped-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "don-gone",
+      "n": 21,
+      "name": "Don Gone",
+      "chapter": 1,
+      "kind": "main",
+      "who": [
+        "jason"
+      ],
+      "summary": "Brian sends Jason to clear out Donnie's trailer in Key Lento.",
+      "giver": "Brian Heder",
+      "location": "Mariana County > Key Lento",
+      "requirement": "automatically starts immediately after Chapter 1 \"Swamped\"",
+      "reward": "Missable – can pick up unique weapon variant “Donnie’s H&L .38” from the trunk of Donnie’s car before destroying it.",
+      "objectives": [
+        "Collect Donnie's Bag",
+        "Pack Donnie's Belongings",
+        "Leave Key Lento in Donnie's Car",
+        "Destroy Donnie's Car"
+      ],
+      "notes": [
+        "MISSABLE UNIQUE WEAPON VARIANT: Before destroying Donnie’s car, open the trunk to find his unique weapon “Donnie’s H&L .38”."
+      ],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/don-gone",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-don-gone-head-to-donnies-trailer-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "donnies-lost-drugs",
+      "name": "Donnie's Lost Drugs",
+      "chapter": 1,
+      "kind": "optional",
+      "who": [
+        "jason"
+      ],
+      "summary": "Donnie's boat sank off Corsair Key with drugs still on board, and Brian wants them back.",
+      "giver": "Brian Heder",
+      "location": "Leonida Straits Ocean in north-east of Mariana County",
+      "requirement": "automatically starts immediately after Chapter 1 \"Swamped\"",
+      "reward": "$1200 if fencing the lost drugs to Brian",
+      "objectives": [
+        "Get a Boat",
+        "Search Underwater for the Cocaine",
+        "Sell the Drugs"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/donnies-lost-drugs",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-donnies-lost-drugs-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "recalibration",
+      "n": 22,
+      "name": "Recalibration",
+      "chapter": 1,
+      "kind": "main",
+      "who": [
+        "jason"
+      ],
+      "summary": "Cal is going through a hard time, so Jason and Lucia try to cheer him up.",
+      "giver": "Lucia Caminos",
+      "location": "Mariana County > Key Lento > Jason’s House",
+      "requirement": "Automatically starts when Lucia gives you a call at some point during/after \"Don Gone\" and \"Donnie’s Lost Drugs\", then the quest starts automatically when you return home to Lucia.",
+      "objectives": [
+        "Buy a Six-Pack for Cal",
+        "Talk to Cal",
+        "Go Fishing",
+        "Grill the Fish",
+        "Take Lucia Home"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/recalibration",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-recalibration-talk-to-lucia-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "tourist-trap",
+      "n": 23,
+      "name": "Tourist Trap",
+      "chapter": 1,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Mattia offers Jason and Lucia a simple job that could lead to well-paid work.",
+      "giver": "Lucia Caminos, Mattia",
+      "location": "Mariana County > Key Lento",
+      "requirement": "automatically starts immediately after \"Recalibration\".",
+      "objectives": [
+        "Accept Mattia's Job",
+        "Get the Bag from the Locker",
+        "Return to the Car",
+        "Follow the Cop",
+        "Pick Up the Bag",
+        "Escape with Jason",
+        "Escape to Open Water"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/tourist-trap",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-tourist-trap-take-up-mattias-offer-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "home-sweet-home",
+      "n": 24,
+      "name": "Home Sweet Home",
+      "chapter": 1,
+      "kind": "main",
+      "who": [
+        "lucia"
+      ],
+      "summary": "Lucia goes back to Jason's house to collect some of his things before the two of them skip town.",
+      "giver": "Lucia Caminos",
+      "location": "Mariana County > Key Lento > Jason’s House",
+      "requirement": "automatically starts immediately after \"Tourist Trap (Take Up Mattia’s Offer)\"",
+      "objectives": [
+        "Grab Jason's Stash",
+        "Escape the Area"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/home-sweet-home",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-home-sweet-home-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "discharge-time",
+      "n": 25,
+      "name": "Discharge Time",
+      "chapter": 1,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Lucia heads to Vice City Hospital, but trouble is waiting for her there.",
+      "giver": "Lucia Caminos",
+      "location": "Vice City Hospital",
+      "requirement": "automatically starts immediately after \"Home Sweet Home\" (direct mission transition)",
+      "objectives": [
+        "Find Jason's Room",
+        "Defend Yourself",
+        "Crawl to the Gun",
+        "Defend the Ambulance"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/discharge-time",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-discharge-time-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "whats-in-the-bag",
+      "n": 26,
+      "name": "What's in the Bag?",
+      "chapter": 2,
+      "kind": "main",
+      "who": [
+        "lucia"
+      ],
+      "summary": "Jason and Lucia wake up in a Port Gellhorn motel and finally take a look inside the bag.",
+      "giver": "Lucia Caminos",
+      "location": "Kelly County > Starlet Motel",
+      "requirement": "Finished Chapter 1 \"Discharge Time\"",
+      "reward": "trophy/achievement Paradise Lost, and can now play as Lucia in the open world",
+      "objectives": [
+        "Wake Up at the Motel",
+        "Look Inside the Bag"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/whats-in-the-bag",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-whats-in-the-bag-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "ambulance-chaser",
+      "n": 27,
+      "name": "Ambulance Chaser",
+      "chapter": 2,
+      "kind": "main",
+      "who": [
+        "lucia"
+      ],
+      "summary": "The ambulance from the hospital escape is still nearby, and Lucia needs to get rid of it before the cops find it.",
+      "giver": "Lucia Caminos",
+      "location": "Kelly County > Starlet Motel",
+      "requirement": "Finished Chapter 2 \"What’s in the Bag?\".",
+      "objectives": [
+        "Find the Ambulance",
+        "Stop the Ambulance",
+        "Destroy the Ambulance"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/ambulance-chaser",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-ambulance-chaser-move-the-ambulance-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "take-care-of-jason",
+      "n": 28,
+      "name": "Take Care of Jason",
+      "chapter": 2,
+      "kind": "main",
+      "who": [
+        "lucia"
+      ],
+      "summary": "Keep checking in on Jason at the motel until he's back on his feet.",
+      "giver": "Jason Duval",
+      "location": "Kelly County > Starlet Motel",
+      "requirement": "Finished Chapter 2 \"What’s in the Bag?\".",
+      "reward": "Relationship Increase",
+      "objectives": [
+        "Check In on Jason Regularly"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/take-care-of-jason",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-take-care-of-jason-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "overnight-charges",
+      "n": 29,
+      "name": "Overnight Charges",
+      "chapter": 2,
+      "kind": "main",
+      "who": [
+        "lucia"
+      ],
+      "summary": "Go to the motel's front desk and find out how much is owed for the room.",
+      "giver": "Linda",
+      "location": "Kelly County > Starlet Motel",
+      "requirement": "Finished Chapter 2 \"What’s in the Bag?\".",
+      "objectives": [
+        "See Linda, the Manager"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/overnight-charges",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-overnight-charges-see-linda-the-manager-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "just-moved-in",
+      "n": 30,
+      "name": "Just Moved In",
+      "chapter": 2,
+      "kind": "main",
+      "who": [
+        "lucia"
+      ],
+      "summary": "Pick up some supplies from the Alpha convenience store near the motel.",
+      "giver": "Jason Duval, Lucia Caminos",
+      "location": "Kelly County > Starlet Motel",
+      "requirement": "Finished Chapter 2 \"What’s in the Bag?\".",
+      "reward": "Relationship Increase",
+      "objectives": [
+        "Buy Supplies",
+        "Return to the Motel"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/just-moved-in",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-just-moved-in-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "girls-trip",
+      "n": 31,
+      "name": "Girls' Trip",
+      "chapter": 2,
+      "kind": "main",
+      "who": [
+        "lucia"
+      ],
+      "summary": "Jason needs painkillers to recover from his surgery, so Lucia asks around the motel.",
+      "giver": "Vicki",
+      "location": "Kelly County > Starlet Motel",
+      "requirement": "Complete Chapter 2 Main Missions \"Overnight Charges (See Linda, The Manager)\" &\"Just Moved In\".",
+      "reward": "$50 via BuckMe, Vicki pays you back the money for the pills.",
+      "objectives": [
+        "Ask Around the Motel",
+        "Confront Vicki",
+        "Go to Delights",
+        "Find Dunk",
+        "Deal with the Kolts at the Car Wash",
+        "Take Dunk Home"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/girls-trip",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-girls-trip-find-painkillers-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "pick-up-a-gun",
+      "name": "Pick Up a Gun",
+      "chapter": 2,
+      "kind": "optional",
+      "who": [
+        "lucia"
+      ],
+      "summary": "Head to Gellhorn Outfitters to buy a gun or grab one of your weapons from the locker.",
+      "giver": "Lucia Caminos",
+      "location": "Kelly County > Port Gellhorn > Gellhorn Outfitters (Ammu-Nation Gun Shop)",
+      "requirement": "Finished Chapter 2 \"Girl’s Trip (Find Painkillers)\"",
+      "reward": "Gun",
+      "objectives": [
+        "Get a Gun"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/pick-up-a-gun",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-pick-up-a-gun-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "moses",
+      "n": 32,
+      "name": "Moses",
+      "chapter": 2,
+      "kind": "main",
+      "who": [
+        "lucia"
+      ],
+      "summary": "Vicki said a mechanic named Moses could set Lucia up with a ride, so take a low-key car to his shop.",
+      "giver": "Moses",
+      "location": "Kelly County > Port Gellhorn",
+      "requirement": "Finished Chapter 2 \"Girl’s Trip (Find Painkillers)\"",
+      "reward": "Slim Jim (break into locked cars without triggering alarm) + App: Scooter Bros (have your personal vehicle delivered anywhere) + Lucia gets a free registered car + can sell stolen cars (without trackers) at Moses garage and register vehicles with him",
+      "objectives": [
+        "Bring a Car to Moses",
+        "Scan the Vehicles with WAiNK",
+        "Pick Up the Slim Jim",
+        "Register Your New Vehicle"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/moses",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-moses-take-a-vehicle-to-moses-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "new-look",
+      "n": 33,
+      "name": "New Look",
+      "chapter": 2,
+      "kind": "main",
+      "who": [
+        "lucia"
+      ],
+      "summary": "Visit the Pearl House Hair Salon to give Lucia a new hairstyle.",
+      "giver": "Lucia Caminos",
+      "location": "Kelly County > Port Gellhorn",
+      "requirement": "Finished Chapter 2 \"Girl’s Trip (Find Painkillers)\"",
+      "objectives": [
+        "Change Your Hair"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/new-look",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-new-look-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "how-do-i-look",
+      "n": 34,
+      "name": "How Do I Look?",
+      "chapter": 2,
+      "kind": "main",
+      "who": [
+        "lucia"
+      ],
+      "summary": "Buy Lucia some new clothes, or pick them up cheap at Bargain World.",
+      "giver": "Lucia Caminos",
+      "location": "Kelly County > Port Gellhorn",
+      "requirement": "Finished Chapter 2 \"Girl’s Trip (Find Painkillers)\"",
+      "objectives": [
+        "Buy a New Outfit"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/how-do-i-look",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-how-do-i-look-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "painkiller-supplier",
+      "n": 35,
+      "name": "Painkiller Supplier",
+      "chapter": 2,
+      "kind": "main",
+      "who": [
+        "lucia"
+      ],
+      "summary": "Dunk will call when he has a lead on some painkillers for Jason.",
+      "giver": "Dunk",
+      "location": "Kelly County > Port Gellhorn",
+      "requirement": "Finished Chapter 2 \"Girl’s Trip (Find Painkillers)\"",
+      "reward": "None – but starts the next mission Slam Dunk (Find Painkillers)",
+      "objectives": [
+        "Wait for Dunk's Call"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/painkiller-supplier",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-painkiller-supplier-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "daily-driver",
+      "n": 36,
+      "name": "Daily Driver",
+      "chapter": 2,
+      "kind": "main",
+      "who": [
+        "lucia"
+      ],
+      "summary": "Moses wants an '82 Canis Crawler taken back from some clients who didn't pay.",
+      "giver": "Moses",
+      "location": "Kelly County > Port Gellhorn",
+      "requirement": "Finished Chapter 2 Main Mission \"Moses (Take A Vehicle to Moses)\"",
+      "reward": "Reward: $1250 + $500 if car delivered in good condition. Also shortly after this, Moses will send you a text message and gifts you the Port Gellhorn Garage for storing vehicles. You also unlock Vice City Real Estate App on your phone for buying all Garages.",
+      "objectives": [
+        "Find the '82 Crawler",
+        "Deliver the Car to Moses"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/daily-driver",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-daily-driver-steal-the-crawler-for-moses-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "behind-on-payments",
+      "n": 37,
+      "name": "Behind on Payments",
+      "chapter": 2,
+      "kind": "main",
+      "who": [
+        "lucia"
+      ],
+      "summary": "Linda is holding the necklace as collateral until the $900 owed for the motel room is paid.",
+      "giver": "Linda",
+      "location": "Kelly County > Starlet Motel",
+      "requirement": "Finished Chapter 2 \"Overnight Charges\"",
+      "objectives": [
+        "Get $900",
+        "Pay Linda"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/behind-on-payments",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-behind-on-payments-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "slam-dunk",
+      "n": 38,
+      "name": "Slam Dunk",
+      "chapter": 2,
+      "kind": "main",
+      "who": [
+        "lucia"
+      ],
+      "summary": "Go to Dunk's trailer and find out how he plans to get stronger painkillers for Jason.",
+      "giver": "Dunk",
+      "location": "Kelly County > Port Gellhorn > Dunk’s Trailer",
+      "requirement": "Finished all previous Main Missions in Chapter 2, then wait for Dunk to call you (Painkiller Supplier)",
+      "reward": "Painkillers for Jason, Dunk unlocked as a Fence, $1700 via BuckMe from Dunk on the next day. When he calls you the next day, he also marks 2 robbery locations on the map. Optionally, looting Bill’s body also gives around $1000.",
+      "objectives": [
+        "Meet Dunk at His Trailer",
+        "Grab Doctor Bill",
+        "Go to the Docks",
+        "Pick Up Doctor Bill",
+        "Survive the Meeting",
+        "Take Dunk Back to His Trailer"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/slam-dunk",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-slam-dunk-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "breakfast-run",
+      "n": 39,
+      "name": "Breakfast Run",
+      "chapter": 2,
+      "kind": "main",
+      "who": [
+        "lucia"
+      ],
+      "summary": "Head back to the motel to check how Jason's doing.",
+      "giver": "Jason Duval, Lucia Caminos",
+      "location": "Kelly County > Starlet Motel",
+      "requirement": "Completed Chapter 2 \"Slam Dunk\" and wait for call from Jason",
+      "reward": "Trust trophy/achievement & both Jason and Lucia now have a personal vehicle.",
+      "objectives": [
+        "Go to Hank's Waffles",
+        "Rob the Diner",
+        "Rob the Liquor Store and the Thrift Store",
+        "Lose the Cops"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/breakfast-run",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-breakfast-run-check-on-jason-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "coffee-break",
+      "n": 40,
+      "name": "Coffee Break",
+      "chapter": 2,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "After their string of stick-ups, Jason and Lucia sit down over coffee to plan their next move.",
+      "giver": "Jason Duval, Lucia Caminos",
+      "location": "Kelly County > Starlet Motel",
+      "requirement": "Finished Chapter 2 \"Breakfast Run\".",
+      "reward": "can now freely switch between playing Lucia or Jason",
+      "objectives": [
+        "Go to the Motel Kitchen with Lucia",
+        "Buy Lucia a Coffee",
+        "Interact with Your Partner"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/coffee-break",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-coffee-break-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "hit-avery-pawn",
+      "name": "Hit Avery Pawn",
+      "chapter": 2,
+      "kind": "optional",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Lucia suggests hitting Avery Pawn in Port Gellhorn together, a shop full of valuables.",
+      "giver": "Lucia Caminos",
+      "location": "Kelly County > Port Gellhorn",
+      "requirement": "Finished Chapter 2 \"Coffee Break\".",
+      "reward": "Varying amount of money depending on the amount you steal",
+      "objectives": [
+        "Rob the Pawn Shop",
+        "Lose the Cops",
+        "Fence the Stolen Goods"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/hit-avery-pawn",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-hit-avery-pawn-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "hit-kingpin-bowling",
+      "name": "Hit Kingpin Bowling",
+      "chapter": 2,
+      "kind": "optional",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "The bowling alley has been taken over by Kolt & Associates and looks like a good next target.",
+      "giver": "Lucia Caminos",
+      "location": "Kelly County > Port Gellhorn",
+      "requirement": "Finished Chapter 2 \"Coffee Break\".",
+      "reward": "Varying amount of money depending on how much you steal and sell to a fence. Can also steal unique Collectible Weapon “Gutterball Moreland 850” and Collectible Luxury Watch from the bowling alley.",
+      "objectives": [
+        "Prepare for the Job",
+        "Rob the Compound",
+        "Flee the Compound"
+      ],
+      "notes": [
+        "The trophy isn't missable."
+      ],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/hit-kingpin-bowling",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-hit-kingpin-bowling-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "impounded-vehicle",
+      "name": "Impounded Vehicle",
+      "chapter": 2,
+      "kind": "optional",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Lucia's car has been impounded and she needs to get it back.",
+      "giver": "Lucia Caminos",
+      "location": "Kelly County > Port Gellhorn",
+      "requirement": "Finished Chapter 2 \"Coffee Break\".",
+      "reward": "Regain access to Lucia’s personal vehicle.",
+      "objectives": [
+        "Steal Lucia's Car from the Impound"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/impounded-vehicle",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-impounded-vehicle-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "prepare-for-vice-city",
+      "n": 41,
+      "name": "Prepare for Vice City",
+      "chapter": 2,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Make at least $15,000 while Dre'Quan sorts out a place to stay in Vice City.",
+      "giver": "Lucia Caminos",
+      "location": "Kelly County > Coffee room of Starlet Motel",
+      "requirement": "Finished Chapter 2 \"Coffee Break\"",
+      "reward": "No direct reward but is needed to get the main mission Checking Out (Move to Vice City).",
+      "objectives": [
+        "Earn at Least $15,000"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/prepare-for-vice-city",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-prepare-for-vice-city-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "afternoon-delight",
+      "n": 42,
+      "name": "Afternoon Delight",
+      "chapter": 2,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Vicki wants to rob her boss at Delights and split the cash.",
+      "giver": "Vicki",
+      "location": "Kelly County > Port Gellhorn",
+      "requirement": "Finished Chapter 2 \"Coffee Break\", clean up other pending main quests and wait for call from Vicki",
+      "reward": "$10,000 the next day via BuckMe from Vicki",
+      "objectives": [
+        "Find a Way Backstage",
+        "Rob the Delights Safe",
+        "Escape the Bikers"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/afternoon-delight",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-afternoon-delight-rob-vickis-boss-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "checking-out",
+      "n": 43,
+      "name": "Checking Out",
+      "chapter": 2,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "When they're ready, Jason and Lucia pack up and leave the motel to meet Dre'Quan in Vice City.",
+      "giver": "Jason Duval, Lucia Caminos",
+      "location": "Kelly County > Scarlet Motel",
+      "requirement": "Finished all Chapter 2 main quests and have at least $15,000",
+      "objectives": [
+        "Start the Mission",
+        "Regroup with Lucia",
+        "Defend Yourself and Follow Jason",
+        "Jump to the Car and Escape"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/checking-out",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-checking-out-move-to-vice-city-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "welcome-to-vice-city",
+      "n": 44,
+      "name": "Welcome to Vice City",
+      "chapter": 3,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Jason and Lucia arrive in Vice City and look up Jason's old friend Dre'Quan.",
+      "giver": "Automatically started after previous mission",
+      "location": "Automatically started after previous mission",
+      "requirement": "Complete Chapter 2 \"Checking Out\"",
+      "reward": "Bayside Apartments, 201 (Chapter 3 Apartment), Pay ‘n’ Sprays buy and register cars with Standard Trackers (from Moses over text after mission is complete), Ts Ass Drug Money trophy/achievement",
+      "objectives": [
+        "Go to the Jack of Hearts",
+        "Enter the Jack of Hearts",
+        "Throw Money to the Dancers",
+        "Go to the Apartment"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/welcome-to-vice-city",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-welcome-to-vice-city-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "dealers-choice",
+      "n": 45,
+      "name": "Dealer's Choice",
+      "chapter": 3,
+      "kind": "main",
+      "who": [
+        "jason"
+      ],
+      "summary": "Boobie says Jason owes him a favor for the apartment and sends him on a drug deal with Dre'Quan.",
+      "giver": "Dre'Quan Priest",
+      "location": "Vice City > Crosstown",
+      "requirement": "Complete Chapter 3 \"Welcome to Vice City\"",
+      "reward": "$1,500 (for selling Pure product)",
+      "objectives": [
+        "Drive to the pick-up location",
+        "Choose which product to take",
+        "Drive to the deal location",
+        "Take the money",
+        "Deal with the confrontation",
+        "Take Dre’Quan to Southside"
+      ],
+      "notes": [],
+      "tags": [
+        "Jason only"
+      ],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/dealers-choice",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-dealers-choice-go-see-drequan-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "meet-the-heders",
+      "n": 46,
+      "name": "Meet the Heders",
+      "chapter": 3,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Jason and Lucia go on a double date with Brian and Lori Heder.",
+      "giver": "Brian",
+      "location": "Vice City > Bayside",
+      "requirement": "Complete Chapter 3 \"Dealer’s Choice\"",
+      "reward": "Cut-off Tool (to open orange SCOOP containers)",
+      "objectives": [
+        "Go to the restaurant",
+        "Meet Brian at the bar",
+        "Go to the van",
+        "Open the van’s rear doors",
+        "Go to the dockyard",
+        "Search the dockyard for the Scoop containers",
+        "Break into the container",
+        "Steal the car from the container",
+        "Break the car out of the container",
+        "Lose the cops",
+        "Drive to the lockup"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/meet-the-heders",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-meet-the-heders-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "dubious-provenance",
+      "n": 47,
+      "name": "Dubious Provenance",
+      "chapter": 3,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Jason and Lucia take the statue to an antique store in Capri to find out what it really is.",
+      "giver": "Jason Duval, Lucia Caminos",
+      "location": "Vice City > Bayside (Part 1), Mariana County > Capri (Parts 2 & 3)",
+      "requirement": "Complete Chapter 3 \"Dealer’s Choice\"",
+      "reward": "Dependent on outcome:",
+      "objectives": [
+        "Go to the antique store",
+        "(Optional) Explore Capri Together",
+        "(Optional) Call Halifax about the Statue",
+        "Get into Evelyn Andrews Antiques",
+        "Get inside the through the window",
+        "Let Jason in",
+        "Find the statue",
+        "Go to the motel",
+        "Search for Halifax in the motel",
+        "Go to Mayram’s house",
+        "Chase Halifax",
+        "Approach Halifax",
+        "Call Jason"
+      ],
+      "notes": [
+        "This isn’t required for overall completion or progressing the story, but you miss out on some extra monetary rewards."
+      ],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/dubious-provenance",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-dubious-provenance-visit-the-antique-store-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "mami-knows-best",
+      "n": 48,
+      "name": "Mami Knows Best",
+      "chapter": 3,
+      "kind": "main",
+      "who": [
+        "lucia"
+      ],
+      "summary": "Lucia catches up with her mom, Mia, who has just opened her own real estate business.",
+      "giver": "Mia Caminos",
+      "location": "Vice City > Peacock Bay",
+      "requirement": "Complete Chapter 3 \"Dealer’s Choice\"",
+      "objectives": [
+        "Drive to the house",
+        "Follow Mia",
+        "Explore the house",
+        "Help Mia",
+        "Clear the junk from the front lawn",
+        "Follow Mia",
+        "Grab the mattress",
+        "Save Mia",
+        "Get in the excavator",
+        "Smash up the gang member’s property",
+        "Get in Mia’s car",
+        "Drive to Mia’s office"
+      ],
+      "notes": [],
+      "tags": [
+        "Lucia only"
+      ],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/mami-knows-best",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-mami-knows-best-catch-up-with-mia-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "get-your-wheels",
+      "name": "Get Your Wheels",
+      "chapter": 3,
+      "kind": "optional",
+      "who": [],
+      "summary": "Get yourself a set of wheels in Vice City.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/get-your-wheels",
+      "detailed": false
+    },
+    {
+      "id": "south-leonida-real-estate",
+      "n": 49,
+      "name": "South Leonida Real Estate",
+      "chapter": 3,
+      "kind": "main",
+      "who": [
+        "lucia"
+      ],
+      "summary": "Lucia meets up with Mia again and has another run-in with the M7 gang.",
+      "giver": "Mia",
+      "location": "Mariana County > Hamlet",
+      "requirement": "Complete Chapter 3 \"Mami Knows Best\"",
+      "reward": "$2,000 from Mia many in-game days after completing the mission",
+      "objectives": [
+        "Go to the house",
+        "Find Mia",
+        "Go outside",
+        "Follow the car",
+        "Search the building for Mia",
+        "Get in the car",
+        "Drive to the property",
+        "Drive to the next property",
+        "Follow Mia",
+        "Protect Mia/Find Viper",
+        "Get back to Mia"
+      ],
+      "notes": [],
+      "tags": [
+        "Lucia only"
+      ],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/south-leonida-real-estate",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-south-leonida-real-estate-meet-mia-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "tyrone",
+      "n": 50,
+      "name": "Tyrone",
+      "chapter": 3,
+      "kind": "main",
+      "who": [
+        "jason"
+      ],
+      "summary": "Jason goes to see Tyrone about some work.",
+      "giver": "Tyrone",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/tyrone",
+      "detailed": false
+    },
+    {
+      "id": "here-kitty-kitty",
+      "n": 51,
+      "name": "Here, Kitty Kitty",
+      "chapter": 3,
+      "kind": "main",
+      "who": [
+        "jason"
+      ],
+      "summary": "Jason goes to see Tyrone and ends up looking for a man named Charles.",
+      "giver": "Tyrone",
+      "location": "Vice City > La Perle",
+      "requirement": "Complete Chapter 3 \"Dubious Provenance\" Part 1",
+      "reward": "Tyrone unlocked as a Drop Off – Goods",
+      "objectives": [
+        "Go to Charles’ apartment",
+        "Find out where Charles is",
+        "Go to the camp in La Perle",
+        "Chase after Charles",
+        "Approach Charles",
+        "Search Charles’ body"
+      ],
+      "notes": [],
+      "tags": [
+        "Jason only"
+      ],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/here-kitty-kitty",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-here-kitty-kitty-speak-with-tyrone-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "send-money-to-lorena",
+      "n": 52,
+      "name": "Send Money to Lorena",
+      "chapter": 3,
+      "kind": "main",
+      "who": [],
+      "summary": "Send some money to Lorena.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/send-money-to-lorena",
+      "detailed": false
+    },
+    {
+      "id": "encrypted-hard-drive",
+      "n": 53,
+      "name": "Encrypted Hard Drive",
+      "chapter": 3,
+      "kind": "main",
+      "who": [],
+      "summary": "Find out more about the encrypted hard drive from the bag.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/encrypted-hard-drive",
+      "detailed": false
+    },
+    {
+      "id": "car-service",
+      "n": 54,
+      "name": "Car Service",
+      "chapter": 3,
+      "kind": "main",
+      "who": [
+        "lucia"
+      ],
+      "summary": "Lucia steals a car for Raul.",
+      "giver": "Raul",
+      "location": "Vice City > Salton",
+      "requirement": "Complete Chapter 3 \"Meet the Heders\"",
+      "reward": "$3000 + Randy unlocked as Drop-off – Vehicles + Wanted areas in Port Gellhorn & Key Lento are cleared",
+      "objectives": [
+        "Search the chop shop for the Schafter V12",
+        "Steal the Schafter V12",
+        "Escape the area",
+        "Deliver the car to Leonida Auto World"
+      ],
+      "notes": [],
+      "tags": [
+        "Lucia only"
+      ],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/car-service",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-car-service-steal-the-car-for-raul-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "send-more-money-to-lorena",
+      "n": 55,
+      "name": "Send More Money to Lorena",
+      "chapter": 3,
+      "kind": "main",
+      "who": [],
+      "summary": "Send another payment to Lorena.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/send-more-money-to-lorena",
+      "detailed": false
+    },
+    {
+      "id": "top-billing",
+      "n": 56,
+      "name": "Top Billing",
+      "chapter": 3,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Jason, Lucia and Dre'Quan go to see the Real Dimez in concert.",
+      "giver": "Dre’Quan",
+      "location": "Vice City > Crosstown",
+      "requirement": "Complete Chapter 3 \"Car Service (Steal The Car for Raul)\"",
+      "objectives": [
+        "Go backstage",
+        "Find the Dimez",
+        "Go to the Dimez in the parking lot",
+        "Follow Roxy",
+        "Go to Peewees",
+        "Order from the clerk",
+        "Get in Bae-Luxe’s car",
+        "Go to the house party",
+        "Find Roxy",
+        "Lure Jacki away from the door",
+        "Go to Roxy",
+        "Deal with Kaamal",
+        "Cut the power",
+        "Follow Roxy"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/top-billing",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-top-billing-watch-the-real-dimez-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "boobie-time",
+      "n": 57,
+      "name": "Boobie Time",
+      "chapter": 3,
+      "kind": "main",
+      "who": [
+        "jason"
+      ],
+      "summary": "Jason spends some time driving Boobie around Vice City.",
+      "giver": "Boobie",
+      "location": "Vice City > Crosstown",
+      "requirement": "Complete Chapter 3 \"Dubious Provenance (Part 1)\"",
+      "reward": "Yasmani unlocked as a Drop Off – Goods",
+      "objectives": [
+        "Get in Boobie’s car",
+        "Go to the pick-up location",
+        "Go to the club",
+        "Retrieve the cash bag",
+        "Return to Boobie",
+        "Get in your car",
+        "Go to the smoke shop",
+        "Enter the smoke shop"
+      ],
+      "notes": [],
+      "tags": [
+        "Jason only"
+      ],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/boobie-time",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-boobie-time-talk-to-boobie-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "first-impressions",
+      "n": 58,
+      "name": "First Impressions",
+      "chapter": 3,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Jason and Lucia meet Raul for the first time.",
+      "giver": "Raul",
+      "location": "Vice Beach > Waxman Island",
+      "requirement": "Complete Chapter 3 \"Car Service (Steal The Car for Raul)\"",
+      "reward": "$3,000",
+      "objectives": [
+        "Get in the car",
+        "Go to the meetup",
+        "Hold off the cops",
+        "Drive to Rialto Islands",
+        "Go to the parking lot",
+        "Get out of your car",
+        "Get in the van",
+        "Drive Raul to the drop-off"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/first-impressions",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-first-impressions-meeting-with-raul-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "caught-slipping",
+      "n": 59,
+      "name": "Caught Slipping",
+      "chapter": 3,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Jason and Lucia have to stop a burglary.",
+      "giver": "Jason/Lucia",
+      "location": "Vice City > Bayside",
+      "requirement": "Complete Chapter 3 \"Boobie Time\" & \"First Impressions\"",
+      "objectives": [
+        "Catch the thief",
+        "Search the thief’s bag",
+        "Catch the thief",
+        "Search the thief’s bag",
+        "Go to Big House Storage",
+        "Follow Jason"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/caught-slipping",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-caught-slipping-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "crosstown-traffic",
+      "n": 60,
+      "name": "Crosstown Traffic",
+      "chapter": 3,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Lucia tails a gang member for Raul, while Jason goes to meet Karim.",
+      "giver": "Raul",
+      "location": "Lucia – Vice City > Stockyard / Jason – Vice City > La Perle",
+      "requirement": "Complete Chapter 3 \"Car Service (Steal The Car for Raul)\"",
+      "reward": "$3,000",
+      "objectives": [
+        "Follow the boat",
+        "Go to the next station",
+        "Get on the metro",
+        "Confront the Guardia Brother",
+        "Hijack the boat",
+        "Push the emergency stop button",
+        "Defend the boat"
+      ],
+      "notes": [],
+      "tags": [
+        "Lucia only",
+        "Jason only"
+      ],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/crosstown-traffic",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-crosstown-traffic-meet-raul-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "credit-check",
+      "n": 61,
+      "name": "Credit Check",
+      "chapter": 3,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Raul invites Jason and Lucia to his base to meet his crew.",
+      "giver": "Raul",
+      "location": "Vice City > Crosstown",
+      "requirement": "Complete Chapter 3 \"Crosstown Traffic\"",
+      "reward": "$6,000 + Dye Pack Jammer (allows stealing Marked Bills) + Bank Jobs / Big Bank Jobs / Payday Loans marked as Robbery Targets on map (green robbery icons)",
+      "objectives": [
+        "Talk to Andrea",
+        "Choose a pair of masks",
+        "Talk to Karim",
+        "Pick up the dye pack jammer",
+        "Leave the planning room",
+        "Go to the Fleeca Bank",
+        "Park outside the bank",
+        "Enter the bank",
+        "Rob the bank",
+        "Leave the bank",
+        "Go to the next Fleeca Bank",
+        "Park outside the bank",
+        "Tell your partner to wait",
+        "Enter the bank",
+        "Rob the bank",
+        "Leave the area",
+        "Go to the next Fleeca Bank",
+        "Park outside the bank",
+        "Tell your partner to wait",
+        "Enter the bank",
+        "Rob the bank",
+        "Leave the bank",
+        "Lose the cops",
+        "Go to your apartment",
+        "Answer the door"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/credit-check",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-credit-check-meet-rauls-crew-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "clonin-keys-makin-gs",
+      "n": 62,
+      "name": "Steal the Zorrusso for Randy",
+      "chapter": 3,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Jason and Lucia steal a high-end Zorrusso for Randy.",
+      "giver": "Randy",
+      "location": "Vice Beach > Ocean Beach",
+      "requirement": "Complete Chapter 3 \"Crosstown Traffic\"",
+      "reward": "$21,250 + $10,000 bonus if car is delivered in good condition + Key Cloner (allows stealing high-end cars) + can sell Key Cloner cars to Randy + Randy’s Wish List optional questline",
+      "objectives": [
+        "Install the key cloner",
+        "Search the area for the Zorruso",
+        "Steal the Zorrusso",
+        "Drive the Zorrusso to Randy",
+        "Follow Randy"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/clonin-keys-makin-gs",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-clonin-keys-makin-gs-steal-the-zorrusso-for-randy-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "rauls-next-job",
+      "n": 63,
+      "name": "Raul's Next Job",
+      "chapter": 3,
+      "kind": "main",
+      "who": [],
+      "summary": "Raul gets in touch about his next job.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/rauls-next-job",
+      "detailed": false
+    },
+    {
+      "id": "race-against-yago",
+      "name": "Race Against Yago",
+      "chapter": 3,
+      "kind": "missable",
+      "who": [
+        "jason"
+      ],
+      "summary": "Take on Yago in a race. Time-sensitive and missable.",
+      "giver": "Yago",
+      "location": "Vice City > Salton",
+      "requirement": "Finished Yago’s 2nd side mission Bumper to Bumper (Mentor Yago), then wait and play other quests until Yago message you (takes few in-game days)",
+      "reward": "Varying amount depending on placement in race ($3800 for 1st place)",
+      "objectives": [
+        "Finish the race"
+      ],
+      "notes": [
+        "This has the “Limited Time” hourglass icon on it, do it as soon as possible to not miss out on it."
+      ],
+      "tags": [
+        "Time-sensitive",
+        "Missable"
+      ],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/race-against-yago",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-race-against-yago-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "sinfrontera-national-bank",
+      "n": 64,
+      "name": "Sinfrontera National Bank",
+      "chapter": 3,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Jason and Lucia scope out a bank as preparations for a big heist begin.",
+      "giver": "Raul",
+      "location": "Vice City > Tequesta",
+      "requirement": "Complete Chapter 3 \"Credit Check\"",
+      "objectives": [
+        "Enter the bank",
+        "Follow Jason",
+        "Check for security features",
+        "Join Raul"
+      ],
+      "notes": [],
+      "arc": "The Cartel Heist",
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/sinfrontera-national-bank",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-sinfrontera-national-bank-scope-out-the-bank-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "security-expert",
+      "n": 65,
+      "name": "Security Expert",
+      "chapter": 3,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Jason and Lucia meet a security expert who could help with the heist.",
+      "giver": "Raul",
+      "location": "Leonard County > Waning Sands",
+      "requirement": "Complete Chapter 3 \"Sinfrontera National Bank\"",
+      "objectives": [
+        "Find Nicole",
+        "Park the vehicle",
+        "Find Nicole",
+        "Pick up Nicole",
+        "Escape with Nicole",
+        "Escape the area",
+        "Take Nicole to the planning room"
+      ],
+      "notes": [],
+      "arc": "The Cartel Heist",
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/security-expert",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-security-expert-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "heist-planning",
+      "n": 66,
+      "name": "Heist Planning",
+      "chapter": 3,
+      "kind": "main",
+      "who": [],
+      "summary": "Go over the plan for the upcoming heist.",
+      "objectives": [],
+      "notes": [],
+      "arc": "The Cartel Heist",
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/heist-planning",
+      "detailed": false
+    },
+    {
+      "id": "ride-or-die",
+      "n": 67,
+      "name": "Ride or Die",
+      "chapter": 3,
+      "kind": "main",
+      "who": [
+        "jason"
+      ],
+      "summary": "Jason helps out Dre'Quan.",
+      "giver": "Dre’Quan",
+      "location": "Vice City > Crosstown",
+      "requirement": "Complete Chapter 3 \"Credit Check\"",
+      "objectives": [
+        "Go to the Eris store",
+        "Objective 2",
+        "Find a pair of DWNPLY sneakers",
+        "Return to Dre’Quan",
+        "Follow Dre’Quan to the VIP lounge",
+        "Approach DWNPLY",
+        "Hand DWNPLY the shoes",
+        "Take DWNPLY’s keys",
+        "Escape with Dre’Quan",
+        "Search the parking lot for DWNPLY’s car",
+        "Steal DWNPLY’s car",
+        "Drive to the Speedshop",
+        "Escape with DWNPLY’s car"
+      ],
+      "notes": [],
+      "tags": [
+        "Jason only"
+      ],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/ride-or-die",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-ride-or-die-meet-drequan-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "company-property",
+      "n": 68,
+      "name": "Company Property",
+      "chapter": 3,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Jason and Lucia meet Brian and help with a weapons shipment.",
+      "giver": "Brian",
+      "location": "Vice-Dale County > Hamlet",
+      "requirement": "Complete Chapter 3 \"Security Expert\"",
+      "reward": "Outcome determines how many explosives you have available in “Hidden Charges”",
+      "objectives": [
+        "Follow Brian",
+        "Drive to the airfield",
+        "Place the weapons crate in the truck",
+        "Pick up a weapons crate",
+        "Escape with Pete",
+        "Escape the area",
+        "Protect the cargo",
+        "Return to the planning room",
+        "Land the plane"
+      ],
+      "notes": [],
+      "arc": "The Cartel Heist",
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/company-property",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-company-property-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "the-missing-link",
+      "n": 69,
+      "name": "The Missing Link",
+      "chapter": 3,
+      "kind": "main",
+      "who": [
+        "lucia"
+      ],
+      "summary": "Lucia meets Andrea, and the trail leads her to a cockfight.",
+      "giver": "Andrea",
+      "location": "Mariana County > Watson Bay",
+      "requirement": "Complete Chapter 3 \"Company Property\"",
+      "reward": "If picked up during the mission – Monty’s 1992 Pistol weapon",
+      "objectives": [
+        "Follow Andrea",
+        "Check in with Andrea",
+        "Follow Andrea",
+        "Enter the room",
+        "Knock out Monty",
+        "Clear a path for Andrea",
+        "Get in the car",
+        "Go to the site",
+        "Go and meet Lucia",
+        "Pick up Monty",
+        "Keep Monty walking",
+        "Knock Monty down",
+        "Lower Monty",
+        "Wait for Monty to answer",
+        "Raise Monty",
+        "Lower Monty",
+        "Wait for Monty to answer",
+        "Deal with Monty"
+      ],
+      "notes": [],
+      "arc": "The Cartel Heist",
+      "tags": [
+        "Lucia only"
+      ],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/the-missing-link",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-the-missing-link-meet-andrea-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "safe-word",
+      "n": 70,
+      "name": "Safe Word",
+      "chapter": 3,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Lucia steals a practice safe and learns a new skill.",
+      "giver": "Nicole",
+      "location": "Vice City > Stockyard",
+      "requirement": "Complete Chapter 3 \"Company Property\"",
+      "reward": "If you complete the safecracking practice at the end of the mission: Gil’s Kalinga .50 Pistol, $1,500",
+      "objectives": [
+        "Drive to Gil’s mansion",
+        "Find a way into the mansion",
+        "Follow Gil’s assistant",
+        "Go to your mark",
+        "Skim the pool",
+        "Look at Samantha",
+        "Spread lotion on Sasha",
+        "Punch Rodney",
+        "Take punches from Rodney",
+        "Knock out Rodney",
+        "Enter the mansion",
+        "Enter Gil’s office",
+        "Search Gil’s office",
+        "Open the window",
+        "Attach the winch to the safe",
+        "Escape with the safe",
+        "Deliver the safe to Felipe",
+        "Practice on the safe"
+      ],
+      "notes": [],
+      "arc": "The Cartel Heist",
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/safe-word",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-safe-word-steal-the-practice-safe-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "cooties",
+      "n": 71,
+      "name": "Cooties",
+      "chapter": 3,
+      "kind": "main",
+      "who": [
+        "lucia"
+      ],
+      "summary": "Lucia helps shoot a music video.",
+      "giver": "Dre’Quan",
+      "location": "Vice City > Crosstown",
+      "requirement": "Complete Chapter 3 \"Ride or Die\"",
+      "reward": "Bae-Luxe’s Bat variant weapon",
+      "objectives": [
+        "Shoot the music video",
+        "Escape with DWNPLY’s car",
+        "Drive to the studio"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/cooties",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-cooties-shoot-the-music-video-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "bricked-up",
+      "n": 72,
+      "name": "Bricked Up",
+      "chapter": 3,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Jason and Lucia do some work for Boobie.",
+      "giver": "Boobie",
+      "location": "Vice City > Bayside",
+      "requirement": "Complete Chapter 3 \"Hidden Charges\" & all other remaining main missions",
+      "reward": "$3,500 (if you pick up Boobie’s drugs on the way out of the apartment)",
+      "objectives": [
+        "Go to Venture Apartments",
+        "Park away from Venture Apartments",
+        "Ask for Raymond in the lobby",
+        "Escape Venture Apartments",
+        "Help Lucia",
+        "Get in a car",
+        "Pick up Jason",
+        "Lose the cops",
+        "Go to the Jack of Hearts"
+      ],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/bricked-up",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-bricked-up-return-to-the-apartment-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "hidden-charges",
+      "n": 73,
+      "name": "Hidden Charges",
+      "chapter": 3,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Jason and Lucia get the explosives ready for the heist.",
+      "giver": "Karim",
+      "location": "Vice City > Stockyard",
+      "requirement": "Complete Chapter 3 \"Company Property\" & \"Cooties\"",
+      "reward": "Increased time limit in “The Cartel Heist” depending on how many bombs are placed",
+      "objectives": [
+        "Get in the van",
+        "Drive to the garage",
+        "Park in the garage",
+        "Plant the charge at one of the cell towers",
+        "Plant the charge at one of the cell towers",
+        "Plant the charge at the cell tower"
+      ],
+      "notes": [],
+      "arc": "The Cartel Heist",
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/hidden-charges",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-hidden-charges-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "the-cartel-heist",
+      "n": 74,
+      "name": "The Cartel Heist",
+      "chapter": 3,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "The plan is set and it is time to hit the bank.",
+      "giver": "Raul",
+      "location": "Vice City > Stockyard",
+      "requirement": "Complete \"Hidden Charges\" and all other Chapter 3 main missions",
+      "reward": "$120,000, Break the Bank trophy/achievement",
+      "objectives": [
+        "Get in the car",
+        "Drive toward the cell towers",
+        "Park the vehicle",
+        "Go to the bank",
+        "Enter the bank",
+        "Wait for Karim’s signal",
+        "Knock out a security guard",
+        "Enter the elevator",
+        "Intimidate the security guard",
+        "Confront La Polilla Negra Security",
+        "Take the elevator to the roof",
+        "Secure the backup terminal",
+        "Open the vault",
+        "Loot the vault",
+        "Hold off the cops",
+        "Regroup with Raul",
+        "Deal with the SWAT team",
+        "Search the SWAT truck",
+        "Get to the bus",
+        "Help Nicole",
+        "Find a way down to the basement",
+        "Go to the delivery bay",
+        "Leave the bank",
+        "Steal the Brigade",
+        "Escape the area",
+        "Defend the bus",
+        "Push back the helicopter",
+        "Catch up to the bus",
+        "Pull alongside the bus",
+        "Escape on the freeway"
+      ],
+      "notes": [],
+      "arc": "The Cartel Heist",
+      "tags": [],
+      "sources": [
+        "gtabase",
+        "powerpyx"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/the-cartel-heist",
+      "powerpyxUrl": "https://www.powerpyx.com/gta-6-the-cartel-heist-walkthrough/",
+      "detailed": true
+    },
+    {
+      "id": "ocean-beach",
+      "n": 75,
+      "name": "Ocean Beach",
+      "chapter": 4,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Jason and Lucia set up shop in Ocean Beach.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/ocean-beach",
+      "detailed": false
+    },
+    {
+      "id": "another-life",
+      "n": 76,
+      "name": "Another Life",
+      "chapter": 4,
+      "kind": "main",
+      "who": [
+        "lucia"
+      ],
+      "summary": "Lucia thinks back on her past.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/another-life",
+      "detailed": false
+    },
+    {
+      "id": "pool-day",
+      "n": 77,
+      "name": "Pool Day",
+      "chapter": 4,
+      "kind": "main",
+      "who": [],
+      "summary": "Time for a day at the pool.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/pool-day",
+      "detailed": false
+    },
+    {
+      "id": "company-cars",
+      "n": 78,
+      "name": "Company Cars",
+      "chapter": 4,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Jason and Lucia pick up some new wheels.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/company-cars",
+      "detailed": false
+    },
+    {
+      "id": "lawyer-up",
+      "n": 79,
+      "name": "Lawyer Up",
+      "chapter": 4,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Jason and Lucia meet a lawyer, Abe Gonzalez.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/lawyer-up",
+      "detailed": false
+    },
+    {
+      "id": "its-a-date",
+      "n": 80,
+      "name": "It's a Date!",
+      "chapter": 4,
+      "kind": "main",
+      "who": [],
+      "summary": "Time for a date night.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/its-a-date",
+      "detailed": false
+    },
+    {
+      "id": "party-hard",
+      "n": 81,
+      "name": "Party Hard",
+      "chapter": 4,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Jason and Lucia work personal security for a celebrity.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/party-hard",
+      "detailed": false
+    },
+    {
+      "id": "heavy-lifting",
+      "n": 82,
+      "name": "Heavy Lifting",
+      "chapter": 4,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Jason and Lucia have a delivery to make.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/heavy-lifting",
+      "detailed": false
+    },
+    {
+      "id": "pay-abes-fee",
+      "n": 83,
+      "name": "Pay Abe's Fee",
+      "chapter": 4,
+      "kind": "main",
+      "who": [],
+      "summary": "Abe's services don't come cheap, so it's time to pay his fee.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/pay-abes-fee",
+      "detailed": false
+    },
+    {
+      "id": "photo-shoot",
+      "n": 84,
+      "name": "Photo/Shoot",
+      "chapter": 4,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Jason, Lucia and Dre'Quan shoot a promo.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/photo-shoot",
+      "detailed": false
+    },
+    {
+      "id": "bad-driver",
+      "name": "Bad Driver!",
+      "chapter": 4,
+      "kind": "optional",
+      "who": [],
+      "summary": "Track down Felipe.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/bad-driver",
+      "detailed": false
+    },
+    {
+      "id": "making-gainz",
+      "n": 85,
+      "name": "Making Gainz",
+      "chapter": 4,
+      "kind": "main",
+      "who": [
+        "lucia"
+      ],
+      "summary": "Raul has a plan, and Lucia gets to know someone new.",
+      "objectives": [],
+      "notes": [],
+      "arc": "VCIA Takedown",
+      "tags": [
+        "Lucia only"
+      ],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/making-gainz",
+      "detailed": false
+    },
+    {
+      "id": "blood-sweat-and-gear",
+      "n": 86,
+      "name": "Blood Sweat and Gear",
+      "chapter": 4,
+      "kind": "main",
+      "who": [
+        "lucia"
+      ],
+      "summary": "Lucia hits the gym for a workout.",
+      "objectives": [],
+      "notes": [],
+      "arc": "VCIA Takedown",
+      "tags": [
+        "Lucia only"
+      ],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/blood-sweat-and-gear",
+      "detailed": false
+    },
+    {
+      "id": "watch-it",
+      "n": 87,
+      "name": "Watch It",
+      "chapter": 4,
+      "kind": "main",
+      "who": [
+        "jason"
+      ],
+      "summary": "Jason and Dre'Quan meet a club owner.",
+      "objectives": [],
+      "notes": [],
+      "tags": [
+        "Jason only"
+      ],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/watch-it",
+      "detailed": false
+    },
+    {
+      "id": "call-nate",
+      "n": 88,
+      "name": "Call Nate",
+      "chapter": 4,
+      "kind": "main",
+      "who": [
+        "lucia"
+      ],
+      "summary": "Lucia gives Nate a call.",
+      "objectives": [],
+      "notes": [],
+      "arc": "VCIA Takedown",
+      "tags": [
+        "Lucia only"
+      ],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/call-nate",
+      "detailed": false
+    },
+    {
+      "id": "cash-injections",
+      "n": 89,
+      "name": "Cash Injections",
+      "chapter": 4,
+      "kind": "main",
+      "who": [
+        "lucia"
+      ],
+      "summary": "Lucia hangs out with Nate and helps out an associate.",
+      "objectives": [],
+      "notes": [],
+      "arc": "VCIA Takedown",
+      "tags": [
+        "Lucia only"
+      ],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/cash-injections",
+      "detailed": false
+    },
+    {
+      "id": "amateur-hour",
+      "n": 90,
+      "name": "Amateur Hour",
+      "chapter": 4,
+      "kind": "main",
+      "who": [
+        "lucia"
+      ],
+      "summary": "Lucia helps Cisco confront a director.",
+      "objectives": [],
+      "notes": [],
+      "arc": "VCIA Takedown",
+      "tags": [
+        "Lucia only"
+      ],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/amateur-hour",
+      "detailed": false
+    },
+    {
+      "id": "dirty-work",
+      "n": 91,
+      "name": "Dirty Work",
+      "chapter": 4,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Jason and Lucia deal with Raina and make some new inroads.",
+      "objectives": [],
+      "notes": [],
+      "arc": "VCIA Takedown",
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/dirty-work",
+      "detailed": false
+    },
+    {
+      "id": "nate-will-be-in-touch",
+      "n": 92,
+      "name": "Nate Will Be in Touch",
+      "chapter": 4,
+      "kind": "main",
+      "who": [],
+      "summary": "Help out Kordell's crew while you wait to hear from Nate.",
+      "objectives": [],
+      "notes": [],
+      "arc": "VCIA Takedown",
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/nate-will-be-in-touch",
+      "detailed": false
+    },
+    {
+      "id": "too-much-baggage",
+      "n": 93,
+      "name": "Too Much Baggage",
+      "chapter": 4,
+      "kind": "main",
+      "who": [
+        "jason"
+      ],
+      "summary": "Jason scopes out the airport and does some baggage handling.",
+      "objectives": [],
+      "notes": [],
+      "arc": "VCIA Takedown",
+      "tags": [
+        "Jason only"
+      ],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/too-much-baggage",
+      "detailed": false
+    },
+    {
+      "id": "adventures-in-babysitting",
+      "n": 94,
+      "name": "Adventures in Babysitting",
+      "chapter": 4,
+      "kind": "main",
+      "who": [
+        "jason"
+      ],
+      "summary": "Jason works nightclub security for Andrés.",
+      "objectives": [],
+      "notes": [],
+      "tags": [
+        "Jason only"
+      ],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/adventures-in-babysitting",
+      "detailed": false
+    },
+    {
+      "id": "rafa",
+      "n": 95,
+      "name": "Rafa",
+      "chapter": 4,
+      "kind": "main",
+      "who": [
+        "jason"
+      ],
+      "summary": "Something comes up involving Rafa.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/rafa",
+      "detailed": false
+    },
+    {
+      "id": "fresh-evidence",
+      "n": 96,
+      "name": "Fresh Evidence",
+      "chapter": 4,
+      "kind": "main",
+      "who": [
+        "jason"
+      ],
+      "summary": "Jason and Dre'Quan go after some blackmail material.",
+      "objectives": [],
+      "notes": [],
+      "tags": [
+        "Jason only"
+      ],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/fresh-evidence",
+      "detailed": false
+    },
+    {
+      "id": "power-play",
+      "n": 97,
+      "name": "Power Play",
+      "chapter": 4,
+      "kind": "main",
+      "who": [],
+      "summary": "Help out Kordell's crew and gather some intel.",
+      "objectives": [],
+      "notes": [],
+      "arc": "VCIA Takedown",
+      "tags": [
+        "Lucia only"
+      ],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/power-play",
+      "detailed": false
+    },
+    {
+      "id": "childs-play",
+      "n": 98,
+      "name": "Child's Play",
+      "chapter": 4,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Jason and Lucia help out an acquaintance.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/childs-play",
+      "detailed": false
+    },
+    {
+      "id": "this-is-a-free-call-from",
+      "name": "This Is a Free Call From…",
+      "chapter": 4,
+      "kind": "missable",
+      "who": [
+        "lucia"
+      ],
+      "summary": "Someone needs Lucia to pick them up. Time-sensitive and missable.",
+      "objectives": [],
+      "notes": [],
+      "tags": [
+        "Lucia only",
+        "Time-sensitive",
+        "Missable"
+      ],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/this-is-a-free-call-from",
+      "detailed": false
+    },
+    {
+      "id": "headliners",
+      "n": 99,
+      "name": "Headliners",
+      "chapter": 4,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "The Dimez perform at VYB, and Jason and Lucia help with the launch party.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/headliners",
+      "detailed": false
+    },
+    {
+      "id": "close-surveillance",
+      "n": 100,
+      "name": "Close Surveillance",
+      "chapter": 4,
+      "kind": "main",
+      "who": [
+        "jason"
+      ],
+      "summary": "Jason uses a spy drone to keep an eye on some bodybuilders.",
+      "objectives": [],
+      "notes": [],
+      "arc": "VCIA Takedown",
+      "tags": [
+        "Jason only"
+      ],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/close-surveillance",
+      "detailed": false
+    },
+    {
+      "id": "delivery-method",
+      "n": 101,
+      "name": "Delivery Method",
+      "chapter": 4,
+      "kind": "main",
+      "who": [
+        "jason"
+      ],
+      "summary": "Jason goes undercover to help Andrea.",
+      "objectives": [],
+      "notes": [],
+      "arc": "VCIA Takedown",
+      "tags": [
+        "Jason only"
+      ],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/delivery-method",
+      "detailed": false
+    },
+    {
+      "id": "team-building",
+      "n": 102,
+      "name": "Team Building",
+      "chapter": 4,
+      "kind": "main",
+      "who": [
+        "lucia"
+      ],
+      "summary": "Lucia meets Kordell and has to prove herself.",
+      "objectives": [],
+      "notes": [],
+      "arc": "VCIA Takedown",
+      "tags": [
+        "Lucia only"
+      ],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/team-building",
+      "detailed": false
+    },
+    {
+      "id": "fully-catered",
+      "n": 103,
+      "name": "Fully Catered",
+      "chapter": 4,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Jason and Lucia steal a catering truck.",
+      "objectives": [],
+      "notes": [],
+      "arc": "VCIA Takedown",
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/fully-catered",
+      "detailed": false
+    },
+    {
+      "id": "heist-plans-in-place",
+      "n": 104,
+      "name": "Heist Plans in Place",
+      "chapter": 4,
+      "kind": "main",
+      "who": [],
+      "summary": "Everything is ready for the airport heist.",
+      "objectives": [],
+      "notes": [],
+      "arc": "VCIA Takedown",
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/heist-plans-in-place",
+      "detailed": false
+    },
+    {
+      "id": "vcia-takedown",
+      "n": 105,
+      "name": "VCIA Takedown",
+      "chapter": 4,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "The airport heist is a go.",
+      "objectives": [],
+      "notes": [],
+      "arc": "VCIA Takedown",
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/vcia-takedown",
+      "detailed": false
+    },
+    {
+      "id": "tie-up-loose-ends",
+      "n": 106,
+      "name": "Tie Up Loose Ends",
+      "chapter": 4,
+      "kind": "main",
+      "who": [],
+      "summary": "After the heist, there are still some loose ends to tie up.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/tie-up-loose-ends",
+      "detailed": false
+    },
+    {
+      "id": "thats-where-the-money-is",
+      "name": "That's Where the Money Is…",
+      "chapter": 4,
+      "kind": "optional",
+      "who": [],
+      "summary": "Wait at the café for someone to show up.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/thats-where-the-money-is",
+      "detailed": false
+    },
+    {
+      "id": "call-valentina-back",
+      "n": 107,
+      "name": "Call Valentina Back",
+      "chapter": 4,
+      "kind": "main",
+      "who": [],
+      "summary": "Valentina wants to hear back from you.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/call-valentina-back",
+      "detailed": false
+    },
+    {
+      "id": "sunset",
+      "n": 108,
+      "name": "Sunset",
+      "chapter": 4,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Jason and Lucia go looking for answers.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/sunset",
+      "detailed": false
+    },
+    {
+      "id": "chapter-4-finale",
+      "n": 109,
+      "name": "Starting From Zero",
+      "chapter": 4,
+      "kind": "main",
+      "who": [],
+      "summary": "The final mission of Chapter 4.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/chapter-4-finale",
+      "detailed": false
+    },
+    {
+      "id": "bird-in-the-hand",
+      "n": 110,
+      "name": "Bird in the Hand",
+      "chapter": 5,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Jason and Lucia boost a new ride.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/bird-in-the-hand",
+      "detailed": false
+    },
+    {
+      "id": "taking-liberties",
+      "n": 111,
+      "name": "Taking Liberties",
+      "chapter": 5,
+      "kind": "main",
+      "who": [],
+      "summary": "A new plan comes together.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/taking-liberties",
+      "detailed": false
+    },
+    {
+      "id": "vc-baby",
+      "n": 112,
+      "name": "VC Baby",
+      "chapter": 5,
+      "kind": "main",
+      "who": [],
+      "summary": "Mattia gets in touch and asks for help.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/vc-baby",
+      "detailed": false
+    },
+    {
+      "id": "doggie-bag",
+      "n": 113,
+      "name": "Doggie Bag",
+      "chapter": 5,
+      "kind": "main",
+      "who": [],
+      "summary": "Meet Vinny and go hunting for some contraband.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/doggie-bag",
+      "detailed": false
+    },
+    {
+      "id": "operation-savage-glory",
+      "n": 114,
+      "name": "Operation Savage Glory",
+      "chapter": 5,
+      "kind": "main",
+      "who": [],
+      "summary": "A valuable shipment needs to be recovered.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/operation-savage-glory",
+      "detailed": false
+    },
+    {
+      "id": "honest-abe",
+      "n": 115,
+      "name": "Honest Abe",
+      "chapter": 5,
+      "kind": "main",
+      "who": [],
+      "summary": "Time to negotiate a deal with Abe.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/honest-abe",
+      "detailed": false
+    },
+    {
+      "id": "unfinished-business",
+      "n": 116,
+      "name": "Unfinished Business",
+      "chapter": 5,
+      "kind": "main",
+      "who": [],
+      "summary": "There's still some unfinished business to take care of.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/unfinished-business",
+      "detailed": false
+    },
+    {
+      "id": "pay-abes-fee-chapter-5",
+      "n": 117,
+      "name": "Pay Abe's Fee",
+      "chapter": 5,
+      "kind": "main",
+      "who": [],
+      "summary": "Abe's help comes at a price once again.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/pay-abes-fee-chapter-5",
+      "detailed": false
+    },
+    {
+      "id": "protective-custody",
+      "n": 118,
+      "name": "Protective Custody",
+      "chapter": 5,
+      "kind": "main",
+      "who": [
+        "jason",
+        "lucia"
+      ],
+      "summary": "Jason and Lucia work together and meet with Abe.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/protective-custody",
+      "detailed": false
+    },
+    {
+      "id": "the-end-of-the-road",
+      "n": 119,
+      "name": "The End of the Road",
+      "chapter": 5,
+      "kind": "main",
+      "who": [],
+      "summary": "The final mission of the GTA 6 story.",
+      "objectives": [],
+      "notes": [],
+      "tags": [],
+      "sources": [
+        "gtabase"
+      ],
+      "url": "https://www.gtabase.com/gta-6/missions/the-end-of-the-road",
+      "detailed": false
+    }
+  ],
+  "discrepancies": [
+    "Story length: GTABase says about 50 to 80 hours, PowerPyx says 60 to 80.",
+    "Mission count: GTABase lists 122 story entries (119 main missions plus a few short story tasks); other outlets count around 91 to 93 main missions. This guide numbers the 119 main missions in GTABase order. Missions can show up in a slightly different order in your game.",
+    "Last chapter: the PowerPyx roadmap says both Top Of The World, Ma and You Gotta Know When to Get Off unlock with Starting From Zero in Chapter 4, but its own walkthrough (and GTABase) has a Chapter 5 that ends with The End of the Road. The trophy list says Complete Chapter 4 and Complete the final mission, so this guide ties the second one to the last mission of Chapter 5."
+  ]
+}
